@@ -1,0 +1,99 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgmrIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgmrIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSomTv_DwhPortfoliocheck_Test",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_DwhPortfoliocheck_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "SomTv_DwhPortfoliocheck_Test",
+        "references": [],
+        "type": "SomTv_DwhPortfoliocheck_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "InboundEmail"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "env",
+            "references": [],
+            "type": "InboundEnvelope"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "attachment",
+            "references": [],
+            "type": "BinaryAttachment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "testInbound",
+            "references": [],
+            "type": "SomTv_DwhPortfoliocheck"
+        }
+    ]
+}

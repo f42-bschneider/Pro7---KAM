@@ -1,0 +1,780 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgdtIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgdtIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAccountTypeBoxes",
+            "parameters": [
+                {
+                    "name": "opps",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oppIds",
+                    "type": "Set"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 78
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAccountTypeBoxToTarget",
+            "parameters": [
+                {
+                    "name": "opps",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oppIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 100
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getVenRecordTypeIds",
+            "parameters": [],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 110
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "checkOtherOpps",
+            "parameters": [
+                {
+                    "name": "oppIds",
+                    "type": "Set"
+                },
+                {
+                    "name": "accountIdsTarget",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 126
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAccountsToUpdate",
+            "parameters": [
+                {
+                    "name": "accountIds",
+                    "type": "Set"
+                },
+                {
+                    "name": "accountIdsCustomer",
+                    "type": "Set"
+                },
+                {
+                    "name": "accountIdsTarget",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 146
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAccountsToUpdate",
+            "parameters": [
+                {
+                    "name": "accountIdsTarget",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 164
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAccountTypeBoxInvestorTrue",
+            "parameters": [
+                {
+                    "name": "venCapTables",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 180
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAccountTypeBoxInvestorFalse",
+            "parameters": [
+                {
+                    "name": "venCapTables",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 196
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAccountsToUpdateTrue",
+            "parameters": [
+                {
+                    "name": "accountIdsInvestorTrue",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 209
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAccountsToUpdateFalse",
+            "parameters": [
+                {
+                    "name": "accountIdsInvestorFalse",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "Ven_Account_Type",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Ven_Account_Type",
+        "references": [],
+        "type": "Ven_Account_Type"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 126,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "accountIdsCustomer",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "accountIdsTarget",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "venRecordTypeIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "accountIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "accountIdsTargetV2",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "accountIdTarget",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "accountIdsTarget",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "venRecordTypeIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "venRecordTypeIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "venRecordType",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "accountIdsTarget",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "accountIdsToRemove",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "accountIdToRemove",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "accountIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "accountIdsCustomer",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "accountIdsTarget",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "accountIdsTarget",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "venCapTables",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "accountIdsInvestorTrue",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "venCapTable",
+            "references": [],
+            "type": "Ven_Share__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 173
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "venCapTables",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "accountIdsInvestorFalse",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "venCapTable",
+            "references": [],
+            "type": "Ven_Share__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 189
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "accountIdsInvestorTrue",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 200
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 209
+            },
+            "modifiers": [],
+            "name": "accountIdsInvestorFalse",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 213
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

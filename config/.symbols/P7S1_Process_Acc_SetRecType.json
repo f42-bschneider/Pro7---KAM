@@ -1,0 +1,162 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d48AAA",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AccRecTypeVar",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 19,
+                        "line": 50
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "AccId",
+                    "references": [],
+                    "type": "Id"
+                },
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 23,
+                        "line": 52
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "RecTypeId",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 48
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AccRecTypeVar",
+                "references": [],
+                "type": "AccRecTypeVar"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010d48AAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "InvocableMethod"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "UpdateAccountRecordType",
+            "parameters": [
+                {
+                    "name": "ProcessVars",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Process_Acc_SetRecType",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_Process_Acc_SetRecType",
+        "references": [],
+        "type": "P7S1_Process_Acc_SetRecType"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "ProcessVars",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "pv",
+            "references": [],
+            "type": "AccRecTypeVar"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        }
+    ]
+}

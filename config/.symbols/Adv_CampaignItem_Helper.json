@@ -1,0 +1,363 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_CampaignItem_Helper",
+            "parameters": [
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "oldCampaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gZHAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gZHAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 74
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "save",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 78
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isReady",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 42
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "load",
+            "parameters": [
+                {
+                    "name": "theCampaignItemId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Adv_CampaignItem_Helper",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 46
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "lazyLoad",
+            "parameters": [
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "oldCampaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Adv_CampaignItem_Helper",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 54
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "lazyLoad",
+            "parameters": [
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Adv_CampaignItem_Helper",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 58
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "allReady",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 69
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAllCampaignItemIds",
+            "parameters": [],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Helper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "campaignItemId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isWaitingForCountries",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isWaitingForRegions",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isWaitingForCities",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isWaitingForKeyValues",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "data",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_Helper",
+        "references": [],
+        "type": "Adv_CampaignItem_Helper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "oldCampaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "theCampaignItemId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "oldCampaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "helper",
+            "references": [],
+            "type": "Adv_CampaignItem_Helper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "allReady",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "helper",
+            "references": [],
+            "type": "Adv_CampaignItem_Helper"
+        }
+    ]
+}

@@ -1,0 +1,448 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dudAAA",
+    "innerClasses": [],
+    "interfaces": [
+        "P7S1_Liferay_EmailService"
+    ],
+    "key": "01p570000010dudAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "templateIdByName",
+            "parameters": [
+                {
+                    "name": "developerName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getEmailTemplatePrefix",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sendEmailFromTemplate",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "name": "portalLoginEvent",
+                    "type": "P7S1_PortalLoginEvent__c"
+                },
+                {
+                    "name": "emailTemplateId",
+                    "type": "Id"
+                },
+                {
+                    "name": "emailAddress",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLoginEvent__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 55
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sendEmailFromTemplate",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "name": "emailTemplateId",
+                    "type": "Id"
+                },
+                {
+                    "name": "portalLoginEvent",
+                    "type": "P7S1_PortalLoginEvent__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLoginEvent__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 59
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createEmail",
+            "parameters": [
+                {
+                    "name": "emailTemplateId",
+                    "type": "Id"
+                },
+                {
+                    "name": "tempContactId",
+                    "type": "Id"
+                },
+                {
+                    "name": "portalLoginId",
+                    "type": "Id"
+                },
+                {
+                    "name": "portal",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SingleEmailMessage",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 69
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setSenderMail",
+            "parameters": [
+                {
+                    "name": "email",
+                    "type": "SingleEmailMessage"
+                },
+                {
+                    "name": "portal",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_EmailServiceImpl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SENDER_EMAIL_ADFACTORY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SENDER_EMAIL_LIFERAY",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 6
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_EmailServiceImpl",
+        "references": [],
+        "type": "P7S1_Liferay_EmailServiceImpl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "developerName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 138,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "emailTemplateId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 162,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "emailAddress",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "tempContact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "sendEmailResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "emailTemplateId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 137,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "emailTemplateId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "tempContactId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "portalLoginId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "portal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "portal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "senderMail",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "orgWideEmailList",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

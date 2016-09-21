@@ -1,0 +1,394 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000JTIMIA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000JTIMIA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 28
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getStyleEverywhere",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "pdfNewPageReference",
+            "parameters": [
+                {
+                    "name": "objectId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "pdfSaveAsAttachment",
+            "parameters": [
+                {
+                    "name": "objectId",
+                    "type": "Id"
+                },
+                {
+                    "name": "filename",
+                    "type": "String"
+                },
+                {
+                    "name": "testFlag",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 95
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "pdfSaveAsAttachmentIfSaveParam",
+            "parameters": [
+                {
+                    "name": "objectId",
+                    "type": "Id"
+                },
+                {
+                    "name": "filename",
+                    "type": "String"
+                },
+                {
+                    "name": "testFlag",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 17,
+                "line": 106
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "PdfGenerator",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "htmlStyleEverywhere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "renderAsPdf",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 12
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "DEBUG",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 14
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "renderAsPdfUrlParameterName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 15
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "renderAsPdfUrlParameterTrueValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 72
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "SAVE_PAGE_PARAM_NAME",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "PdfGenerator",
+        "references": [],
+        "type": "PdfGenerator"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "objectId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "pdfPageReference",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "objectId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "filename",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "testFlag",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "pdfPageReference",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "pdfBlob",
+            "references": [],
+            "type": "Blob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "attachment",
+            "references": [],
+            "type": "Attachment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "returnUrl",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "objectId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "filename",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "testFlag",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "saveParam",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "pGenerator",
+            "references": [],
+            "type": "PdfGenerator"
+        }
+    ]
+}

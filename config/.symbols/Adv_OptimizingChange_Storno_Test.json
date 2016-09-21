@@ -1,0 +1,204 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KoDpAAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KoDpAAK",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testOptimizingChangeStorno",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createADvendioOptimizingVersion",
+            "parameters": [
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__OptimizingVersion__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createADvendioOptimizingChange",
+            "parameters": [
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "objOV",
+                    "type": "ADvendio__OptimizingVersion__c"
+                },
+                {
+                    "name": "objCI",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__OptimizingChange__c",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_Storno_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "Adv_OptimizingChange_Storno_Test",
+        "references": [],
+        "type": "Adv_OptimizingChange_Storno_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "objOV",
+            "references": [],
+            "type": "ADvendio__OptimizingVersion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "objCI",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "objOCAvail",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "objOV",
+            "references": [],
+            "type": "ADvendio__OptimizingVersion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 129,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "objOV",
+            "references": [],
+            "type": "ADvendio__OptimizingVersion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 163,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "objCI",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "objOC",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        }
+    ]
+}

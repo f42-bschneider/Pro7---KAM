@@ -1,0 +1,262 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KoDUAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KoDUAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "checkAmountReduced",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_ReduceAmount",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 6
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_OptimizingChange_ReduceAmount",
+        "references": [],
+        "type": "Adv_OptimizingChange_ReduceAmount"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 122,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 142,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 166,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 196,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 223,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 253,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "setCampaignItemID",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "mapCI",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "objOC",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "objCI",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

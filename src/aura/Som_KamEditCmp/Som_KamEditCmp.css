@@ -1,0 +1,48 @@
+.THIS .space-top{
+    margin-top: 20px;
+}
+
+.THIS .btn-icon{
+    font-size:18px;
+}
+
+.THIS .uiOutputText{
+    background-color: #E5E5E5!important;
+}
+
+.THIS .fade{
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.THIS .outputtext{
+    background-color: #E5E5E5!important;
+    pointer-events: none;
+}
+
+.THIS .nav-buttons-top{
+    padding-top: 0px;
+}
+
+
+.THIS .overlay-read{
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.THIS .navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.THIS .navbar-buttons{
+    margin-right:30px; 
+    margin-left:20px
+}

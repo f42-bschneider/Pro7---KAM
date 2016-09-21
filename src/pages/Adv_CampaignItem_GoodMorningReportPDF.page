@@ -1,0 +1,123 @@
+<!--
+    Page Name    : Adv_CampaignItem_GoodMorningReportPDF
+    Description  : This page is used to render the Good Morning Report as PDF
+    Created By   : Cognizant Technology Solutions
+    Created On   : 5/7/2014
+-->
+<apex:page controller="Adv_CampaignItem_GoodMorningReport" cache="true"  showHeader="false" renderAs="pdf" > 
+
+  <apex:stylesheet value="{!URLFOR($Resource.ReportsStyles, 'qstyles.css')}"/>
+        <apex:outputPanel layout="block" styleClass="line"/>
+
+       <b><apex:outputText value="{!i_sFileName}"/> </b>
+       <br></br>
+
+       <apex:repeat value="{!i_oListPDFWrapper}" var="aPageOfQuotes" id="theList">
+         <div style="{!aPageOfQuotes.i_sPageBreak}">
+        <!-- Display Columns of Report -->
+        <apex:dataTable value="{!aPageOfQuotes.i_oListCampaignItem}" var="c" id="theTable" headerClass="tablehead" rowClasses="odd,even" style="font-size: 8pt; " border="2pt">
+
+                      <apex:column style="text-align:center;font-family : Arial;color:white;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Flag_GM}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_Unterlieferungsflag__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Status_Pos_GM}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_PositionStatus__c}"/>
+                      </apex:column>
+
+                       <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Kampagnen_Nr_GM}</apex:facet>
+                                <apex:outputField value="{!c.SomDig_Mediakampagnennummer__c}"/>
+
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Kampagne_GM}</apex:facet>
+                          <apex:outputText value="{!c.ADvendio__Media_Campaign__r.Name}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$ObjectType.ADvendio__Campaign_Item__c.Fields.SomDig_Werbetreibender__c.Label}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_Werbetreibender__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Agentur_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__Media_Campaign__r.ADvendio__Agency__r.Name}"/>
+                      </apex:column>
+
+                        <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Pos_Nr_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__PositionNumber__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Werbemittel_GM}</apex:facet>
+                          <apex:outputField value="{!c.Name}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Start_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__from_Date__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Ende_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__until_Date__c}"/>
+                      </apex:column>
+
+                       <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Abrechnungsart_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__Billing_category__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$ObjectType.ADvendio__Campaign_Item__c.Fields.ADvendio__Quantity__c.Label}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__Quantity__c}"/>
+                      </apex:column>
+
+                     <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$Label.IST_aktuell_GM}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_AiClicksIst__c}"/>
+                      </apex:column>
+
+                       <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$ObjectType.ADvendio__Campaign_Item__c.Fields.SomDig_Risk__c.Label}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_Risk__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$Label.SOLL_aktuell_GM}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_AIClicksSollBisHeute__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.DFP_Prognose_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__PerformanceIndicator__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.DFP_Prognose_Vortag_GM}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_LeistungskennzahlVortag__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.MN2_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__Amount_net_net__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.eTKP_GM}</apex:facet>
+                          <apex:outputField value="{!c.ADvendio__eCPC__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Inhaber_GM}</apex:facet>
+                          <apex:outputField value="{!c.SomDig_Inhaber_Kuerzel__c}"/>
+                      </apex:column>
+
+          </apex:dataTable>
+        </div>
+        </apex:repeat>
+</apex:page>

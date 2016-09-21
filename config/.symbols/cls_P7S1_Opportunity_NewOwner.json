@@ -1,0 +1,269 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cls_P7S1_Opportunity_NewOwner",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KBHXIA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KBHXIA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 11
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 15
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "SetNewOwner",
+            "parameters": [
+                {
+                    "name": "p_oListNew",
+                    "type": "LIST"
+                },
+                {
+                    "name": "p_oMapOld",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_Opportunity_NewOwner",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "cls_P7S1_Opportunity_NewOwner",
+        "references": [],
+        "type": "cls_P7S1_Opportunity_NewOwner"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 138,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "p_oListNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "p_oMapOld",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "l_oNewOpp",
+            "references": [],
+            "type": "Opportunity"
+        }
+    ]
+}

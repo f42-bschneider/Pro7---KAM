@@ -1,0 +1,433 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Je11IAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Je11IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 34
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestLcmModule",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_Module__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 44
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestLcmVersion",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_oLcmModule",
+                    "type": "Lcm_Module__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_Version__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestLcmRequirement",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_oLcmVersion",
+                    "type": "Lcm_Version__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_Requirement__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 68
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestLcmTestCase",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_oLcmRequiremnt",
+                    "type": "Lcm_Requirement__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_TestCase__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 83
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestLcmTestPhase",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_oLcmVersion",
+                    "type": "Lcm_Version__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_TestPhase__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 94
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestLcmTestTask",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_oTestCase",
+                    "type": "Lcm_TestCase__c"
+                },
+                {
+                    "name": "p_oTestPhase",
+                    "type": "Lcm_TestPhase__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_TestTask__c",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 104
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "RunTest",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_Lcm_TestTask_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 26
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Lcm_Module_TestData",
+            "references": [],
+            "type": "Lcm_Module__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 27
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Lcm_Version_TestData",
+            "references": [],
+            "type": "Lcm_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 28
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Lcm_Requirement_TestData",
+            "references": [],
+            "type": "Lcm_Requirement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Lcm_TestCase_TestData",
+            "references": [],
+            "type": "Lcm_TestCase__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Lcm_TestPhase_TestData",
+            "references": [],
+            "type": "Lcm_TestPhase__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 31
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Lcm_TestTask_TestData",
+            "references": [],
+            "type": "Lcm_TestTask__c"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 23
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "cls_Lcm_TestTask_Test",
+        "references": [],
+        "type": "cls_Lcm_TestTask_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "p_oLcmModule",
+            "references": [],
+            "type": "Lcm_Module__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "p_oLcmVersion",
+            "references": [],
+            "type": "Lcm_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "p_oLcmRequiremnt",
+            "references": [],
+            "type": "Lcm_Requirement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "p_oLcmVersion",
+            "references": [],
+            "type": "Lcm_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "p_oTestCase",
+            "references": [],
+            "type": "Lcm_TestCase__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 125,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "p_oTestPhase",
+            "references": [],
+            "type": "Lcm_TestPhase__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "l_oTestTask",
+            "references": [],
+            "type": "Lcm_TestTask__c"
+        }
+    ]
+}

@@ -1,0 +1,391 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gTcAAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTcAAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 25
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "init",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 33
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "getStandardNewsletter",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 45
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "createOrGetNewsletterAbo",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 60
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "subscribe",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 79
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "unsubscribe",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 98
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendNewsletterSubscribeEmail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Newsletter_NewsletterServcieImpl_T",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 23
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Newsletter_NewsletterServcieImpl_T",
+        "references": [],
+        "type": "P7S1_Newsletter_NewsletterServcieImpl_T"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "abo",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "abo",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "oldDate",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "abo",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "ple",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        }
+    ]
+}

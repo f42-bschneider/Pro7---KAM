@@ -1,0 +1,121 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgdzIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgdzIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testVenKPIChooseTemplate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Ven_KPI_ChooseTemplate_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Ven_KPI_ChooseTemplate_Test",
+        "references": [],
+        "type": "Ven_KPI_ChooseTemplate_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "testAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "testOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "testKPIBlock",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "testKPI",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "testKPI2",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "venChooseKPITemplateController",
+            "references": [],
+            "type": "Ven_KPI_ChooseTemplate"
+        }
+    ]
+}

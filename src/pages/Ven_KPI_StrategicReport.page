@@ -1,0 +1,367 @@
+<!-- 
+
+ @author: ADvendio.com (helge.kosuch@advendio.com)
+ @author: ADvendio.com (stefan.voss@advendio.com)
+
+ -->
+<apex:page standardcontroller="Opportunity" extensions="Ven_KPI_StrategicReport" renderAs="{!renderAs}" showHeader="false" sidebar="false">
+<head>
+    <style type="text/css">     
+        @page {
+            size: A4 landscape;
+            margin: 5mm;
+            margin-top: 30mm;
+            
+            @top-center {
+                content: element(pageHeader);
+            }
+        }
+/*  
+        th {
+            border-style:solid;
+            border-width:1px;
+        }
+        td {
+            border-style:solid;
+            border-width:1px;
+        }
+        tr {page-break-inside:avoid;}
+        
+        table {
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        
+        table.at {
+            border-collapse: separate;
+            border-spacing: 1mm;
+        }
+        
+        table.at.table {
+            border-top: 2px;
+            border-top-style: solid;
+            border-top-color: #94B3D6;
+        }
+        
+        .circle {
+            width: 2.5mm;
+            height: 2.5mm;
+            border-radius: 50%;
+        }
+        
+        .circle.green {background: green;}
+        .circle.yellow {background: yellow;}
+        .circle.red {background: red;}
+        
+        
+        .at {padding: 1mm; text-align:left; border-style: none; font-size: 6pt; font-family: Verdana, Arial Unicode MS}
+        
+        .at.head {font-size: 11pt; font-weight: bold;}
+        
+        .at.col {background-color: #DCE6F0;}
+        .at.col.Status{text-align:center;}
+        .at.col {}
+        .at.col.Lever{width: 21mm; background-color: #C5D9F0;}
+        .at.col.Rationale{width: 34mm; background-color: #C5D9F0;}
+        .at.col.Activities{width: 109mm}
+        .at.col.Impact{width: 23mm}
+        .at.col.Owner{width: 25mm}
+        .at.col.DueDate{width: 13mm; text-align: center;}
+        .at.col.EffectiveDate{width:13mm; text-align: center;}
+        .at.col.Status{width: 11mm; text-align:center;}
+        
+        
+        .at.col.LastModified{width: 85mm;}
+        .at.col.LastUpdate{width: 20mm; text-align: right;}
+        .at.col.Period{width: 15mm; text-align: center;}
+    
+        .at.colHead.Name{width: 68mm;}
+        .at.colHead.LastModified{width: 19mm;}
+        .at.colHead.LastUpdate{width: 17mm; padding-left: 10mm}
+        .at.colHead.Period{width: 9mm; padding-left: 10mm}
+        
+        
+        .at.colHead {font-weight: bold;}
+        .at.colHead.Lever{width: 21mm}
+        .at.colHead.Rationale{width: 34mm}
+        .at.colHead.Activities{width: 109mm}
+        .at.colHead.Impact{width: 23mm}
+        .at.colHead.Owner{width: 20mm}
+        .at.colHead.DueDate{width: 13mm}
+        .at.colHead.EffectiveDate{width: 13mm}
+        .at.colHead.Status{width: 11mm; text-align:center;}
+*/
+
+        .action-tracking-headline {
+            border-bottom: 2px #94B3D6 solid;
+            font-weight: bold;
+        }
+        
+        table.action-tracking {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table.action-tracking th {
+            font-weight: bold;
+        }
+        
+        table.action-tracking td, th {
+            border-top: 2mm white solid;
+        }
+        
+        .task-border-left {
+            border-left: 0.5mm white solid;
+        }
+        
+        table.action-tracking td.task-backgroundColor-1 {
+            background-color: #C5D9F0;
+        }
+        
+        table.action-tracking td.task-backgroundColor-2 {
+            background-color: #DCE6F0;
+        }
+        
+        .task-status {
+            border-left: 5mm white solid;
+            text-align: center;
+            width: 12.5mm;
+        }
+        
+        .task-dueDate {
+            text-align: center;
+        }
+        
+        .circle {
+            width: 2.5mm;
+            height: 2.5mm;
+            border-radius: 50%;
+            margin-left: 5mm;
+            margin-right: 5mm;
+        }
+        
+        .green {background: green;}
+        .yellow {background: yellow;}
+        .red {background: red;}
+
+
+
+
+
+
+
+
+
+        #pageHeader {
+            position: running(pageHeader);
+            margin-top: 10mm;
+            margin-left: 2mm;
+            margin-right: 2mm;
+        }
+        
+        table.pageHeader {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table.pageHeader td.label {
+            font-weight: bold;
+        }
+        
+        table.pageHeader td.label-space {
+            padding-left: 10mm;
+        }
+        
+        table.pageHeader td.value {
+            background-color: #DCE6F0;
+        }
+        
+        div.pageHeader-accountName {
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        
+        body {
+            font-size: 6pt;
+        }
+        
+        tr {
+            page-break-inside: avoid;
+        }
+        
+        table.kpiTable {
+            width: 100%;
+            border-collapse: collapse;
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+<apex:form >
+    <!-- 
+    <br/>
+    «&nbsp;<a href="/{!Opportunity.id}">Zurück zu Opportunity: {!Opportunity.name}</a>
+    <br/>
+    <br/>
+        
+    <apex:pageMessages />
+        
+    <h1>Financial Model</h1>
+    -->
+    
+    <!-- Page Header -->
+    <apex:outputText rendered="{!If((renderAs == 'pdf'), true, false)}">
+        <div id="pageHeader">
+            <div class="pageHeader-accountName">
+                {!pageHeader.accountName}
+            </div>
+            
+            <table class="pageHeader">
+                <tr>
+                    <td class="label">
+                        <apex:outputText value="Monthly Strategic Investment Reporting" />
+                    </td>
+                    <td class="label label-space">
+                        <apex:outputText value="Last modified" />
+                    </td>
+                    <td class="value">
+                        {!pageHeader.lastModified}
+                    </td>
+                    <td class="label label-space">
+                        <apex:outputText value="Last update" />
+                    </td>
+                    <td class="value">
+                        {!pageHeader.lastUpdate}
+                    </td>
+                    <td class="label label-space">
+                        <apex:outputText value="Period" />
+                    </td>
+                    <td class="value">
+                        {!pageHeader.period}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </apex:outputText>
+    
+    <!-- KPI Tables -->
+    <div id="kpiTables">
+        <apex:repeat value="{!kpiTables}" var="kpiTable">
+            <table class="kpiTable">
+                <tr>
+                    <apex:repeat value="{!kpiTable.kpiTableColumnMap}" var="kpiTableColumnPos">
+                        <apex:outputText rendered="{!IF((!ISNULL(kpiTable.kpiTableColumnMap[kpiTableColumnPos].headerTitle)), true, false)}">
+                            <td colspan="{!kpiTable.kpiTableColumnMap[kpiTableColumnPos].headerTitleColspan}" style="font-weight:bold; background-color:{!kpiTable.kpiTableColumnMap[kpiTableColumnPos].headerTitleBackgroundColor};">
+                                <apex:outputText value="{!kpiTable.kpiTableColumnMap[kpiTableColumnPos].headerTitle}" />
+                            </td>
+                        </apex:outputText>
+                    </apex:repeat>
+                </tr>
+                <tr>
+                    <apex:repeat value="{!kpiTable.kpiTableColumnMap}" var="kpiTableColumnPos">
+                        <td style="font-weight:bold;">
+                            <apex:outputText value="{!kpiTable.kpiTableColumnMap[kpiTableColumnPos].headerDateStr}" />
+                        </td>
+                    </apex:repeat>
+                </tr>
+                
+                <apex:repeat value="{!kpiTable.kpiTableRows}" var="kpiTableRow">
+                    <tr>
+                        <apex:repeat value="{!kpiTable.kpiTableColumnMap}" var="kpiTableColumnPos">
+                            <td style="background-color:{!kpiTableRow.kpiTableCellMap[kpiTable.kpiTableColumnMap[kpiTableColumnPos].cellKey].backgroundColor}; font-weight:{!kpiTableRow.kpiTableCellMap[kpiTable.kpiTableColumnMap[kpiTableColumnPos].cellKey].fontWeight}; border-bottom:{!kpiTableRow.kpiTableCellMap[kpiTable.kpiTableColumnMap[kpiTableColumnPos].cellKey].borderBottom};">
+                                <apex:outputText value="{!kpiTableRow.kpiTableCellMap[kpiTable.kpiTableColumnMap[kpiTableColumnPos].cellKey].value}" />
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </apex:repeat>
+    </div>
+    
+    
+    <!-- Action Tracking -->
+    <div class="action-tracking-headline">
+        <apex:outputText value="Action Tracking" />
+    </div>
+    
+    <table class="action-tracking">
+        <tr>
+            <th class="headline">Lever</th>
+            <th class="headline task-border-left">Rationale</th>
+            <th class="headline task-border-left">Activities</th>
+            <th class="headline task-border-left">Impact (quant.)</th>
+            <th class="headline task-border-left">Owner</th>
+            <th class="headline task-border-left">Due Date</th>
+            <th class="headline task-border-left">Effective Date</th>
+            <th class="headline task-status">Status</th>
+        </tr>
+        <apex:repeat value="{!taskLines}" var="task">
+            <tr>
+                <td class="task-backgroundColor-1">{!task.lever}</td>
+                <td class="task-backgroundColor-1 task-border-left">{!task.rationale}</td>
+                <td class="task-backgroundColor-2 task-border-left">{!task.activities}</td>
+                <td class="task-backgroundColor-2 task-border-left">{!task.impact}</td>
+                <td class="task-backgroundColor-2 task-border-left">{!task.owner}</td>
+                <td class="task-backgroundColor-2 task-dueDate task-border-left">{!task.dueDateString}</td>
+                <td class="task-backgroundColor-2 task-border-left">{!task.effectiveDate}</td>
+                <td class="task-backgroundColor-2 task-status">
+                    <apex:outputText rendered="{!task.isClosed}">
+                        <div class="circle green"></div>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!(!task.isClosed && task.dueDate < heute)}">
+                        <div class="circle red"></div>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!(!task.isClosed && task.dueDate >= heute)}">
+                        <div class="circle yellow"></div>
+                    </apex:outputText>
+                </td>
+            </tr>
+        </apex:repeat>
+    </table>
+    
+    <!-- 
+    <table class="at">
+        <tr>
+            <td class="at colHead">Action Tracking</td>
+        </tr>
+    </table>
+
+    <table class="at table">
+        <tr>
+            <th class="at colHead Lever">Lever</th>
+            <th class="at colHead Rationale">Rationale</th>
+            <th class="at colHead Activities">Activities</th>
+            <th class="at colHead Impact">Impact (quant.)</th>
+            <th class="at colHead Owner">Owner</th>
+            <th class="at colHead DueDate">Due Date</th>
+            <th class="at colHead EffectiveDate">Effective Date</th>
+            <th class="at colHead Status">Status</th>
+            
+        </tr>
+        <apex:repeat value="{!taskLines}" var="task">
+            <tr>
+                <td class="at col Lever">{!task.lever}</td>
+                <td class="at col Rationale">{!task.rationale}</td>
+                <td class="at col Activities">{!task.activities}</td>
+                <td class="at col Impact">{!task.impact}</td>
+                <td class="at col Owner">{!task.owner}</td>
+                <td class="at col DueDate">{!task.dueDateString}</td>
+                <td class="at col EffectiveDate">{!task.effectiveDate}</td>
+                <td class="at col Status">
+                    <apex:outputText rendered="{!task.isClosed}">
+                        <div align="center"><div class="circle green" /></div>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!(!task.isClosed && task.dueDate < heute)}">
+                        <div align="center"><div class="circle red" /></div>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!(!task.isClosed && task.dueDate >= heute)}">
+                        <div align="center"><div class="circle yellow" /></div>
+                    </apex:outputText>
+                </td>
+            </tr>
+        </apex:repeat>
+    </table>
+     -->
+</apex:form>
+</body>
+</apex:page>

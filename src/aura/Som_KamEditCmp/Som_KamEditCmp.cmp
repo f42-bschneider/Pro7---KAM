@@ -1,0 +1,430 @@
+<aura:component controller="Som_Kam_CmpCtrl">
+
+    <!-- **************
+    *
+    * Component to edit acc plan and all associated objects
+    *
+    ****************-->
+
+    <aura:attribute name="accPlanId" type="String" access="public" default="null"/>
+    <aura:attribute name="accId" type="String" access="public" />
+    <aura:attribute name="data" type="Object" access="private"/>
+    <aura:attribute name="dataTmpMain" type="Object" access="private"/>
+    <aura:attribute name="dataTmpStratProf" type="Object" access="private"/>
+    <aura:attribute name="renderSpinner" type="Boolean" access="private" default="false"/>
+
+    <aura:attribute name="isRead" type="Boolean" access="private" default="true"/>
+    <aura:attribute name="showAll" type="Boolean" access="private" default="true"/>
+    <aura:attribute name="showButtons" type="Boolean" access="private" default="false"/>
+    <aura:attribute name="inviteAll" type="Boolean" access="private" default="false"/>
+    <aura:attribute name="isMainView" type="Boolean" access="private" default="true"/>
+
+    <!-- event listeners for the strategy profile section -->
+    <aura:handler name="okClicked" event="c:Som_KamStrategyProfileSummaryEvent" action="{!c.onStratProfOk}"/>
+    <aura:handler name="cancelClicked" event="c:Som_KamStrategyProfileSummaryEvent" action="{!c.onStratProfCancel}"/>
+
+    <!-- method to set accId and accPlanId -->
+    <aura:method name="setAccIdAndAccPlanId" action="{!c.onAccIdAndAccPlanIdSet}" access="PUBLIC">
+        <aura:attribute name="accId" type="String"/>
+        <aura:attribute name="accPlanId" type="String"/>
+    </aura:method>
+
+
+    <c:f42_SpinnerCmp visible="{!v.renderSpinner}"></c:f42_SpinnerCmp>
+
+
+    <div class="f42">
+
+        <div class="container-fluid">
+
+            <div class="slds">
+
+                <!-- ### NEW SLDS - Kickoff Modal ### -->
+                <div aria-hidden="true" tabindex="-1" aria-labelledby="header43" role="dialog" class="slds-modal slds-fade-in-hide" aura:id="kickoffModal">
+
+                    <div class="slds-modal__container">
+
+                        <div class="slds-modal__content slds-p-around--medium">
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_Kickoff}</label>
+                                <ui:outputDate class="form-control outputtext"
+                                    value="{!v.data.accPlan.accPlan.Som_Kickoff__c}"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_EmailText}</label>
+                                <ui:inputTextArea class="form-control outputtext"
+                                    resizable="false"
+                                    rows="10"
+                                    value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
+                            </div>
+
+                            <p>
+                                <ui:inputRadio aura:id="r1" value="true" name="inviteKickoff" text="inviteUninvited" change="{!c.onInviteKickoffChange}"/>
+                                {!' '+$Label.c.Som_lbl_InviteUninvitedAccPlanTeams}
+                            </p>
+
+                            <p>
+                                <ui:inputRadio aura:id="r0" name="inviteKickoff" text="inviteAll" change="{!c.onInviteKickoffChange}"/>
+                                {!' '+$Label.c.Som_lbl_InviteAllAccPlanTeams}
+                            </p>
+                        </div>
+
+                        <div class="slds-modal__footer">
+                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.hideKickoffModal}">
+                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#logout" class="" category="utility" size="small" name="down" />
+                                Cancel
+                            </button>
+                            &nbsp;
+                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.onInviteKickoff}">
+                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#email" class="" category="utility" size="small" name="down" />
+                                {!' '+$Label.c.Som_lbl_InviteFor +' '} {!$Label.c.Som_lbl_Kickoff}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ### NEW SLDS - Review Modal ### -->
+                <div aria-hidden="true" tabindex="-1" aria-labelledby="header43" role="dialog" class="slds-modal slds-fade-in-hide" aura:id="reviewModal">
+
+                    <div class="slds-modal__container">
+
+                        <div class="slds-modal__content slds-p-around--medium">
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_Review}</label>
+                                <ui:outputDate class="form-control outputtext"
+                                    value="{!v.data.accPlan.accPlan.Som_Review__c}"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_EmailText}</label>
+                                <ui:inputTextArea class="form-control outputtext"
+                                    rows="10"
+                                    resizable="false"
+                                    value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
+                            </div>
+                        </div>
+
+                        <div class="slds-modal__footer">
+                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.hideReviewModal}">
+                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#logout" class="" category="utility" size="small" name="down" />
+                                Cancel
+                            </button>
+                            &nbsp;
+                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.onInviteReview}" >
+                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#email" class="" category="utility" size="small" name="down" />
+                                {!' '+$Label.c.Som_lbl_InviteFor +' '} {!$Label.c.Som_lbl_Review}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- *** Hides background when modal is open *** -->
+                <div class="slds-backdrop slds-backdrop--hide" aura:id="backdrop" />
+
+            </div>
+
+            <!-- ### OLD genrally not needed anymore Delete Modal ###
+            <div class="modal fade" aura:id="deleteModal" id="deleteModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" >
+                        <div class="modal-body">
+                            {!$Label.c.Som_lbl_ReallyDeleteThis+ ' '} {!$Label.c.Som_lbl_AccountPlan}?
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger btn-sm" onclick="{!c.onDelete}" data-dismiss="modal">
+                                <i class="ionicons ion-trash-b btn-icon"></i> {!' '+$Label.c.Ven_lbl_Delete}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- ### OLD Bootstrap - Kickoff Modal ###
+            <div class="modal fade" aura:id="kickoffModal" id="kickoffModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" >
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_Kickoff}</label>
+                                <ui:outputDate class="form-control outputtext"
+                                    value="{!v.data.accPlan.accPlan.Som_Kickoff__c}"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_EmailText}</label>
+                                <ui:inputTextArea class="form-control outputtext"
+                                    resizable="false"
+                                    rows="10"
+                                    value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
+                            </div>
+
+
+                            <p>
+                                <ui:inputRadio aura:id="r1" value="true" name="inviteKickoff" text="inviteUninvited" change="{!c.onInviteKickoffChange}"/>
+                                {!' '+$Label.c.Som_lbl_InviteUninvitedAccPlanTeams}
+                            </p>
+
+                            <p>
+                                <ui:inputRadio aura:id="r0" name="inviteKickoff" text="inviteAll" change="{!c.onInviteKickoffChange}"/>
+                                {!' '+$Label.c.Som_lbl_InviteAllAccPlanTeams}
+                            </p>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.onInviteKickoff}" data-dismiss="modal">
+                                <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_InviteFor +' '} {!$Label.c.Som_lbl_Kickoff}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- ### Review Modal ###
+            <div class="modal fade" aura:id="reviewModal" id="reviewModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" >
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_Review}</label>
+                                <ui:outputDate class="form-control outputtext"
+                                    value="{!v.data.accPlan.accPlan.Som_Review__c}"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_EmailText}</label>
+                                <ui:inputTextArea class="form-control outputtext"
+                                    rows="10"
+                                    resizable="false"
+                                    value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.onInviteReview}" data-dismiss="modal">
+                                <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_InviteFor +' '} {!$Label.c.Som_lbl_Review}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <div style="{!not(v.showAll) ? '' : 'display:none'}">
+                <div style="margin-top:30px!important" class="alert alert-danger" role="alert">{!$Label.c.Som_lbl_AccPlanRedirectNoAccess}</div>
+            </div>
+
+
+            <!-- ### Main View => without Review Strategy Profiles Section ### -->
+            <div style="{!v.isMainView ? '' : 'display:none'}">
+
+                <!-- ### Navbar ### -->
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">{!$Label.c.Som_lbl_AccountPlanner}</div>
+                    </div>
+
+
+                    <div class="navbar-collapse collapse navbar-buttons" style="{!v.showButtons ? '' : 'display:none'}">
+                        <ul class="nav navbar-nav navbar-left" style="margin-top:8px">
+                            <li>
+                                <button type="button" class="btn btn-default" onclick="{!c.onAccount}">
+                                    <i class="ionicons ion-chevron-left btn-icon"></i> {!' '+$Label.c.Ven_lbl_Account +': ' + v.data.accPlan.accPlan.Som_Account__r.Name}
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" style="padding-top:8px">
+                            <li>
+                                <div class="btn-group" role="group" style="{!v.showButtons ? '' : 'display:none'}">
+                                    <button type="button" class="btn btn-default" onclick="{!c.onEdit}" style="{!and(v.isRead, v.accPlanId != null) ? '' : 'display:none'}">
+                                        <i class="ionicons ion-edit btn-icon"></i> {!' '+$Label.c.Som_lbl_Edit}
+                                    </button>
+
+                                    <button type="button" class="btn btn-default" onclick="{!c.onSave}" style="{!not(v.isRead) ? '' : 'display:none'}">
+                                        <i class="ionicons ion-checkmark-round btn-icon"></i> {!' '+$Label.c.Ven_lbl_Save}
+                                    </button>
+
+                                    <button type="button" class="btn btn-default" onclick="{!c.onCancel}" style="{!not(v.isRead) ? '' : 'display:none'}">
+                                        <i class="ionicons ion-close-round btn-icon"></i> {!' '+$Label.c.Ven_lbl_Cancel}
+                                    </button>
+
+                                    <!-- OLD Delete button not needed anymore
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#deleteModal" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}">
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#deleteModal" style="display:none">
+                                        <i class="ionicons ion-trash-b btn-icon"></i> {!' '+$Label.c.Ven_lbl_Delete}
+                                    </button>-->
+
+                                    <!-- OLD Open modal with bootstrap
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#kickoffModal" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}">
+                                        <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_Kickoff}
+                                    </button>
+
+                                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#reviewModal" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}">
+                                        <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_Review}
+                                    </button>-->
+
+                                    <button type="button" class="btn btn-default" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}" onclick="{!c.showKickoffModal}">
+                                        <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_Kickoff}
+                                    </button>
+
+                                    <button type="button" class="btn btn-default" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}" onclick="{!c.showReviewModal}">
+                                        <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_Review}
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- ### show all ### -->
+                <div style="{!v.showAll ? '' : 'display:none'}">
+
+                    <!-- ### Account Plan Informations ### -->
+                    <div class="row space-top">
+
+                        <div class="{!v.isRead ? 'col-md-8 overlay-read' : 'col-md-8'}">
+
+                            <div class="panel panel-default space-top">
+
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{!$Label.c.Som_lbl_AccountPlanInfos}</h3>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="row">
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>{!$Label.c.Ven_lbl_Account}</label>
+                                                <ui:outputText class="form-control" value="{!v.data.accName}"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>{!$Label.c.Som_lbl_Year}</label>
+                                                <ui:outputText class="form-control" value="{!v.data.accPlan.accPlan.Som_Year__c}"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>{!$Label.c.Som_lbl_Kickoff}</label>
+                                                <ui:inputDate aura:id="kickoffDate" class="form-control" value="{!v.data.accPlan.accPlan.Som_Kickoff__c}" displayDatePicker="true"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>{!$Label.c.Som_lbl_Review}</label>
+                                                <ui:inputDate aura:id="reviewDate" class="form-control" value="{!v.data.accPlan.accPlan.Som_Review__c}" displayDatePicker="true"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>{!$Label.c.Som_lbl_EmailText}</label>
+                                                <ui:inputTextArea class="form-control" rows="6" value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 space-top">
+                            <c:P7S1_AccountDashboardMediaCmp aura:id="dashboard" height="325px"/>
+                        </div>
+                    </div>
+
+
+                    <!-- ### Account Plan Team Assignments ### -->
+                    <div class="{!v.isRead ? 'overlay-read' : ''}">
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{!$Label.c.Som_lbl_AccPlanTeamAssigns}</h3>
+                            </div>
+
+                            <div class="panel-body" id="accPlanTeams">
+                                <h5 style="color:orange">*{!$Label.c.Som_lbl_AtLeast1AccTeamSelected}</h5>
+
+                                <div class="row">
+                                    <aura:iteration items="{!v.data.accPlanTeams}" var="accPlanTeam">
+                                        <div class="col-md-3">
+                                            <div class="well" style="height:160px">
+                                                <c:Som_KamTeamAssignmentCmp accPlanTeam="{!accPlanTeam}"/>
+                                            </div>
+                                        </div>
+                                    </aura:iteration>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ### Account Plan Details Summary ### -->
+                    <div class="{!v.isRead ? 'overlay-read' : ''}" style="{!v.data.accPlan.accPlanDetails.length > 0 ? '' : 'display:none'}">
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{!$Label.c.Som_lbl_Kickoff}/{!$Label.c.Som_lbl_Review}</h3>
+                            </div>
+
+                            <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" aura:id="accPlanDetailSummary"/>
+                        </div>
+                    </div>
+
+                    <!-- ### Account Plan Strategy Profile Summary ### -->
+                    <div class="{!v.isRead ? 'overlay-read' : ''}" style="{!v.data.accPlan.stratProfileTopics.length > 0 ? '' : 'display:none'}">
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{!$Label.c.Som_lbl_StrategyProfileSummary}</h3>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-default" onclick="{!c.onReviewStrategies}" style="pointer-events:all">
+                                        {!$Label.c.Som_lbl_Review +' '} {!$Label.c.Som_lbl_StrategyProfiles}
+                                    </button>
+                                </div>
+
+                                <div style="height:20px"/>
+
+                                <div class="row">
+                                    <aura:iteration items="{!v.data.accPlan.stratProfileTopics}" var="stratProf">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>{!stratProf.Name}</label>
+                                                <ui:inputTextArea rows="20"
+                                                    class="form-control"
+                                                    value="{!stratProf.Som_Description__c}"
+                                                    change="{!c.onStratProfChange}"
+                                                    resizable="false"/>
+                                            </div>
+                                        </div>
+                                    </aura:iteration>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ### Review Strategy Profiles Section ### -->
+            <div style="{!not(v.isMainView) ? '' : 'display:none'}">
+                <c:Som_KamStrategyProfileSummary accPlan="{!v.data.accPlan}"
+                    isRead="{!v.isRead}"
+                    aura:id="stratSummary"/>
+            </div>
+        </div>
+
+    </div>
+
+</aura:component>

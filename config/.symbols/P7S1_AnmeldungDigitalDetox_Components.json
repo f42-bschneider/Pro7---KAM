@@ -1,0 +1,310 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 76
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_AnmeldungDigitalDetox_Components",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010e4cAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010e4cAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 110
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "updateRecord",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 125
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "updateRecordZusage",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 143
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "searchrecord",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AnmeldungDigitalDetox_Components",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "DEFAULT_LANGUAGE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 5
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "feedbackCode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isSelected",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "language",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "eigeneSnowboardschuheVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "eigenerSnowboardVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "skischuheSnowboardschuheVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "skistoeckeVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "skiSnowboardVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isdetails",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "eishockeyVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "eisstockVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sobjectRecord",
+            "references": [],
+            "type": "P7S1_B2BAktionsmitgliederFeedback__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 56
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "initialized",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 58
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "code",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 68
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "email",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_AnmeldungDigitalDetox_Components",
+        "references": [],
+        "type": "P7S1_AnmeldungDigitalDetox_Components"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "listCM",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

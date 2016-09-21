@@ -1,0 +1,15 @@
+<apex:page standardController="ADvendio__MediaCampaign__c" extensions="Adv_MediaCampaign_PopUp">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function() {
+            var i_bcheckM = '{!i_bcheckM}';
+            //alert(i_bcheckM );
+
+            if(i_bcheckM == 'true'){
+                parent.postMessage("child frame", "*");
+                alert('Es wurde ein Produkt ausgewählt, welches produziert werden muß. Bitte eine entsprechende Dienstleistungs-Position anlegen.');
+            }
+        });
+    </script>
+
+</apex:page>

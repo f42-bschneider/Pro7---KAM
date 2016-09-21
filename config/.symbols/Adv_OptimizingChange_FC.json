@@ -1,0 +1,517 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010cdjAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010cdjAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setFC",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 50
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "deleteOCs",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_FC",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 7
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_OptimizingChange_FC",
+        "references": [],
+        "type": "Adv_OptimizingChange_FC"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 129,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 153,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 183,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 210,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 240,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "ovIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "oc",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "optiVersionID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "mapCIOpti",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "listNewOC",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "identifier",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "mapFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "cID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "newCIIdentifier",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 133,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 157,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 187,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 214,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 244,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "optiVersionID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "listOC",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "mapCIOpti",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "listDelOCs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "cID",
+            "references": [],
+            "type": "Id"
+        }
+    ]
+}

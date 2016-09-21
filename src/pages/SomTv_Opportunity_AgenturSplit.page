@@ -1,0 +1,285 @@
+<apex:page StandardController="SomTv_Agentursplit__c" extensions="SomTv_Opportunity_AgenturSplit" id="page" sidebar="true">
+
+<style>
+    .resultOK{
+        border: 1px solid green;
+        background-color:#93EBA9;
+    }    
+    
+    
+    .resultNotOK{
+        border: 1px solid red;    
+        background-color:#FCBCBF;    
+    }
+</style>    
+    
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   calculateResult();
+}, false);    
+    
+    
+function confirmDelete(delID) {
+    delAgenturSplit(delID);    
+    return false;
+}
+    
+    
+function checkBeforeSave(){
+    resetColors();    
+    
+    /* 1. Check if Fields are correctly populated */
+    var fieldsOK = checkFields();
+
+    /* If so, Check if result is 100*/
+    if(fieldsOK){
+        if(!checkForDoubles()){
+            var result = calculateResult();
+            if(result == 100)   
+                saveAgentursplits();
+            else
+                alert("Die Summe der Anteile muss 100 ergeben!");
+        }
+        else
+            alert("Jede Agentur darf nur einmal vorkommen!");
+    }else
+        alert("Felder nicht korrekt ausgefüllt!");
+} 
+
+
+function checkFields(){
+
+    var fieldsOK = true;
+    var matches = [];
+    var elems = document.getElementsByTagName("*");
+    for (var i=0; i<elems.length; i++) {
+         if (elems[i].id.indexOf("agentur-") == 0){
+
+             var index = elems[i].id.split('-')[1];
+
+             var agenturFeld = document.getElementById('agentur-' + index).firstChild;
+             var agentur = agenturFeld.value;
+             
+             var anteilFeld = document.getElementById('anteil-' + index).firstChild;             
+             var anteil = anteilFeld.value;             
+            
+            
+             /* Cases when fields are not OK */
+             /*1. Anteil not empty, but agentur empty or default value */
+             if(anteil != '' && (agentur == '' || agentur == '000000000000000')){
+
+                 anteilFeld.parentNode.parentNode.parentNode.style.background = '#FCBCBF';
+                 fieldsOK = false;                 
+             }
+             
+             /*2. Anteil empty, but agentur is selected (not default value)*/             
+             if(anteil == '' && agentur != '000000000000000' && agentur != ''){
+             
+                 anteilFeld.parentNode.parentNode.parentNode.style.background = '#FCBCBF';             
+                 fieldsOK = false;                 
+             }             
+         }
+    }   
+    return fieldsOK;
+}
+    
+    
+function checkForDoubles(){
+    var hasDoubles = false;
+    
+    var matches = [];
+    var agenturen = [];
+    var doubles = [];
+    
+    var elems = document.getElementsByTagName("*");
+    for (var i=0; i<elems.length; i++) {
+         if (elems[i].id.indexOf("agentur-") == 0){
+
+             var index = elems[i].id.split('-')[1];
+             var agenturFeld = document.getElementById('agentur-' + index).firstChild;
+             var agentur = agenturFeld.value;
+
+             if(agentur != '' && agentur != '000000000000000'){             
+
+                  /* Check if the agentur is in the agenturDoubles array*/
+                  if(contains(agenturen, agentur)){
+                      doubles.push(agentur);
+                      hasDoubles = true;
+                  }
+
+                  agenturen.push(agentur);    
+             }
+         }
+    }    
+
+    /* Run through elements again and highlight doubles*/
+    for (var i=0; i<elems.length; i++) {
+         if (elems[i].id.indexOf("agentur-") == 0){
+
+             var indexD = elems[i].id.split('-')[1];
+             var agenturFeldDouble = document.getElementById('agentur-' + indexD).firstChild;
+             var agenturDouble = agenturFeldDouble.value;
+
+             
+             /* If the element is in the doubles array, highlight it*/ 
+             if(contains(doubles, agenturDouble)){
+                 agenturFeldDouble.parentNode.parentNode.parentNode.style.background = '#FCBCBF';            
+                 console.log(agenturDouble);
+             }   
+         }
+    }  
+
+    return hasDoubles;
+} 
+
+
+
+
+
+/* Array contains method*/
+function contains(arr, value) {
+    var i = arr.length;
+    while (i--) {
+        if (arr[i] === value) return true;
+    }
+    return false;
+}
+
+
+/* reset backgrounds */
+function resetColors(){
+
+    var matches = [];
+    var elems = document.getElementsByTagName("*");
+    for (var i=0; i<elems.length; i++) {
+         if (elems[i].id.indexOf("agentur-") == 0){
+         
+             var index = elems[i].id.split('-')[1];         
+             var anteilFeld = document.getElementById('anteil-' + index).firstChild;             
+                      
+             anteilFeld.parentNode.parentNode.parentNode.style.background = '';                     
+         }
+    }
+}
+
+
+function editOutputBox(result){
+
+    document.getElementById('anteilResult').innerHTML = 'Summe der Anteile: ' + result;
+    var resultBox = document.getElementById('resultBox');
+
+    if(result == 100)
+        resultBox.className = 'resultOK';
+    else
+        resultBox.className = 'resultNotOK';
+
+}  
+    
+
+/* Calculate the result */    
+function calculateResult(){
+    var anteile = document.getElementsByClassName("anteilInputField");
+    
+    var result = 0;
+    for(var i = 0; i < anteile.length; i++)
+        if(anteile[i].value != '')
+            result += parseInt(anteile[i].value);
+        
+        
+    editOutputBox(result);
+    return result;
+}
+
+
+  
+/* Add Rest to a Field */
+function addRest(index){
+    /* When moving the button, this has to be edited! */
+    var anteilsFeld = document.getElementById('anteil-' + index).firstChild;
+    var result = calculateResult();
+        
+    if(result <= 100){        
+        anteilsFeld.value = 100 - (result - anteilsFeld.value);     
+        editOutputBox(100);    
+    }else
+        alert("Die Summe der Anteile darf 100 nicht überschreiten.");
+
+}
+
+</script>
+
+
+<apex:form id="form">
+    <apex:actionFunction action="{!delAgenturSplit}" name="delAgenturSplit" rerender="table, msg" status="status" oncomplete="calculateResult()">
+        <apex:param value="" assignTo="{!iDelIndex}" name="iDelIndex"/>
+    </apex:actionFunction>
+    
+    <apex:actionFunction action="{!saveAgentursplits}" name="saveAgentursplits" rerender="table, msg" status="status"/>
+    
+    
+    <apex:actionStatus id="status">
+        <apex:facet name="start">
+        <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.25; z-index: 1000; background-color: black;">
+            &nbsp;
+        </div>
+        <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%">
+            <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;">
+                <img src="/img/loading.gif" style="float: left; margin: 8px;" />
+                <span style="display: inline-block; padding: 10px 0px;">Bitte warten...</span>
+            </div>
+        </div>
+        </apex:facet>
+    </apex:actionStatus>    
+    
+
+    <apex:sectionHeader subtitle="{!objOpp.Name}" title="Agentursplits verwalten"/>
+
+    <apex:pageblock id="block">
+    
+        <apex:pageBlockButtons >
+           <input type="button" class="btn" value="Speichern" onclick="checkBeforeSave()" />
+           <apex:commandButton value="Abbrechen" action="{!cancel}"/>
+        </apex:pageBlockButtons>
+    
+        <apex:pageMessages id="msg" />
+        <apex:pageblocksection columns="1" title="Agentursplits" id="section">
+            <apex:pageblocktable value="{!listWrapper}" var="o" id="table">
+                
+                <!-- Del Button -->
+                <apex:column >
+                    <apex:commandLink value="Löschen" onclick="return confirmDelete('{!o.iIndex}');"/>
+                </apex:column>
+                
+                <!-- Agentur -->
+                <apex:column headerValue="Agentur" id="agenturColumn">
+                    <span id="agentur-{!o.iIndex}"><apex:inputField value="{!o.objAS.SomTv_Agentur__c}" /> </span> 
+                </apex:column>
+               
+               <!-- Anteil -->
+                <apex:column headerValue="Anteil">
+                    <span id="anteil-{!o.iIndex}"><apex:inputField styleClass="anteilInputField" value="{!o.objAS.SomTv_Prozent_Anteil__c}" onkeyup="calculateResult()" /></span>
+                    <apex:outputPanel styleClass="btn" onclick="addRest('{!o.iIndex}')">Rest hinzufügen</apex:outputPanel>
+                </apex:column>
+                
+           </apex:pageblocktable>
+        </apex:pageblocksection>
+        
+        
+        <table>
+            <tr>
+                <td><apex:commandButton value=" Zeile hinzufügen " action="{!addRow}" reRender="table" status="status"/></td>
+                <td>
+                    <div id="resultBox" style="width:140px;padding:5px;font-size:11px">
+                        <span id="anteilResult" style=""></span>
+                    </div>                
+                </td>                
+            </tr>
+        </table>
+        
+
+    </apex:pageblock>
+    
+
+
+</apex:form>
+</apex:page>

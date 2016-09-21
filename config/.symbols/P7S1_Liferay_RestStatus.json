@@ -1,0 +1,101 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_RestStatus",
+            "parameters": [],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_RestStatus",
+            "parameters": [
+                {
+                    "name": "success",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010duwAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010duwAAA",
+    "methods": [],
+    "name": "P7S1_Liferay_RestStatus",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "success",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_RestStatus",
+        "references": [],
+        "type": "P7S1_Liferay_RestStatus"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "success",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

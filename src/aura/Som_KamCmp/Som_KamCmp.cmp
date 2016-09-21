@@ -1,0 +1,48 @@
+<aura:component >
+
+    <!-- **************
+    *
+    * Wrapper commponent for the account planner app
+    *
+    ****************-->
+
+    <ltng:require styles="    /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
+                    /resource/f42_ionicons/ionicons/css/ionicons.min.css"
+
+        scripts="/resource/jquery,
+                    /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js"/>
+
+        <!-- /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery-1.9.1.js *** Replaced by newer JS version 2.2.4-->
+        <!-- /resource/toastr/toastr.min.js, /resource/toastr/toastr.min.css *** Does not work with Locker-Service-->
+        <!-- afterScriptsLoaded="{!c.onInitScripts}" -->
+
+    <aura:attribute name="showAccountPlan" type="Boolean" default="false" access="private"/>
+    <aura:attribute name="showAccountPlanDetail" type="Boolean" default="false" access="private"/>
+    <aura:attribute name="accId" type="String" default="" access="private" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler event="c:f42_ToastEvt" action="{!c.callToast}" />
+
+    <div class="f42">
+
+        <div class="container-fluid">
+            <div style="height:30px"></div>
+
+            <aura:if isTrue="{!v.showAccountPlan}">
+                <c:Som_KamEditCmp aura:id="accPlanEdit"/>
+            </aura:if>
+
+
+            <aura:if isTrue="{!v.showAccountPlanDetail}">
+                <c:Som_KamDetailEditCmp aura:id="accPlanDetailEdit" />
+            </aura:if>
+
+        </div>
+
+    </div>
+
+    <!-- *** Component for toast messages *** -->
+    <c:f42_Toast aura:id="toastr" />
+
+
+</aura:component>

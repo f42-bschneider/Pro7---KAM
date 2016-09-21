@@ -1,0 +1,177 @@
+<apex:page standardController="Opportunity" extensions="Ven_FinancialModelData_Upload">
+    <apex:form id="uplForm">
+        <apex:actionFunction action="{!gotoStep1}" name="gotoStep1" rerender="pageBlock" />
+        <apex:actionFunction action="{!upload}" name="upload" rerender="pageBlock" />
+        <apex:actionFunction action="{!updateSF}" name="save" rerender="pageBlock" />
+
+        <apex:pageBlock id="pageBlock">
+            <apex:pageMessages escape="false"/>
+            <apex:outputtext value="{!responseString}" escape="false"/>
+            <apex:pageBlockButtons location="Bottom">
+                <apex:commandButton value="Upload" action="{!upload}" rendered="{!IF(isStep1,true,false)}"/>
+                <apex:commandButton value="Save" action="{!updateSF}" rendered="{!IF(isStep2,true,false)}"/>
+                <apex:commandButton value="Zurück zur Opportunity" action="{!backToOpp}"/>
+            </apex:pageBlockButtons>
+    
+            <div style="float:left;width: 650px;border-bottom-style:solid;border-bottom-width:2px; margin-bottom:5px;padding-bottom:5px;">
+                <!--<div style="float:left;padding-right:10px;">
+                    <apex:image value="/img/samples/flag_green.gif" width="40px"/>
+                </div>-->
+                <div style="float:left;">
+                    <div style="font-size:8pt">
+                        Financial Model Upload
+                    </div>
+                    <div style="font-size:16pt;font-weight:bold;">
+                        {!opp.Name}
+                    </div>
+                </div>
+            </div>
+            
+            <div style="clear:left" />
+            
+            <apex:outputText rendered="{!isStep1}">
+                <div style="padding-bottom:20px;">
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_1_1.png')}" />
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_1_2.png')}" />
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_1_3.png')}" />
+                </div>
+                <div>
+                    <apex:inputFile value="{!fileContent}" lang="de" style="font-size:10pt;"/>
+                </div>
+            </apex:outputText>
+            
+            <apex:outputText rendered="{!isStep2}">
+                <div style="padding-bottom:20px;">
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_2_1.png')}" onclick="gotoStep1()"/>
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_2_2.png')}" />
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_2_3.png')}" />
+                </div>
+
+                <!-- Actual Daten -->
+                <apex:outputText rendered="{!IF(actual.existsXLS, 'true', 'false')}"> <!-- -->
+                    <div style="width: 500px">
+                        <div style="padding-left: 5px;padding-top: 20px;font-size:12pt;font-weight:bold;width: 100%;border-bottom-style:solid;border-bottom-width:2px;">
+                            Actuals
+                        </div>
+                        <apex:outputText rendered="{!IF(actual.existsSF, 'true', 'false')}"> <!--  --> 
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                Aktuell sind für die Opportunity "{!opp.Name}" Plandaten in Version {!actual.version} vorhanden.<br/>
+                                Wie möchten Sie beim Upload vorgehen?
+                            </div>
+                            <apex:selectRadio value="{!actual.doUpdate}" layout="pageDirection">
+                                <apex:selectOption itemValue="true" itemLabel="Actuals v{!actual.newVersion} anlegen und alte Daten ersetzen" ><br/></apex:selectOption>
+                                <apex:selectOption itemValue="false" itemLabel="Bestehende Daten behalten" ><br/></apex:selectOption>
+                            </apex:selectRadio>
+                        </apex:outputText>
+                        <apex:outputText rendered="{!IF(actual.existsSF, 'false', 'true')}">
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                Aktuell sind für die Opportunity "{!opp.Name}" keine Actual-Daten vorhanden.<br/>
+                                Wie möchten Sie beim Upload vorgehen?
+                            </div>
+                            
+                            <apex:selectRadio value="{!actual.doUpdate}" layout="pageDirection">
+                                    <apex:selectOption itemValue="true" itemLabel="Actuals v{!actual.newVersion} anlegen" ><br/></apex:selectOption>
+                                    <apex:selectOption itemValue="false" itemLabel="Daten nicht anlegen" ><br/></apex:selectOption>
+                            </apex:selectRadio><p/>
+                        </apex:outputText>
+                    </div>
+                </apex:outputText>
+
+                <!-- Plandaten -->
+                <apex:outputText rendered="{!IF(plan.existsXLS, 'true', 'false')}"> <!-- -->
+                    <div style="width: 500px">
+                        <div style="padding-left: 5px;padding-top: 20px;font-size:12pt;font-weight:bold;width: 100%;border-bottom-style:solid;border-bottom-width:2px;">
+                            Plan
+                        </div>
+                        <apex:outputText rendered="{!IF(plan.existsSF, 'true', 'false')}"> <!--  --> 
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                Aktuell sind für die Opportunity "{!opp.Name}" Plandaten in Version {!plan.version} vorhanden.<br/>
+                                Wie möchten Sie beim Upload vorgehen?
+                            </div>
+                            <apex:selectRadio value="{!plan.doUpdate}" layout="pageDirection">
+                                <apex:selectOption itemValue="true" itemLabel="Plan v{!plan.newVersion} anlegen und alte Daten ersetzen" ><br/></apex:selectOption>
+                                <apex:selectOption itemValue="false" itemLabel="Bestehende Daten behalten" ><br/></apex:selectOption>
+                            </apex:selectRadio>
+                        </apex:outputText>
+                        <apex:outputText rendered="{!IF(plan.existsSF, 'false', 'true')}">
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                Aktuell sind für die Opportunity "{!opp.Name}" keine Plandaten vorhanden.<br/>
+                                Wie möchten Sie beim Upload vorgehen?
+                            </div>
+                            
+                            <apex:selectRadio value="{!plan.doUpdate}" layout="pageDirection">
+                                    <apex:selectOption itemValue="true" itemLabel="Plan v{!plan.newVersion} anlegen" ><br/></apex:selectOption>
+                                    <apex:selectOption itemValue="false" itemLabel="Daten nicht anlegen" ><br/></apex:selectOption>
+                            </apex:selectRadio><p/>
+                        </apex:outputText>
+                    </div>
+                </apex:outputText>
+
+                <!-- BudgetDaten -->
+                <apex:outputText rendered="{!IF(budget.existsXLS, 'true', 'false')}"> <!-- -->
+                    <div style="width: 500px">
+                        <div style="padding-left: 5px;padding-top: 20px;font-size:12pt;font-weight:bold;width: 100%;border-bottom-style:solid;border-bottom-width:2px;">
+                            Budget
+                        </div>
+                        <apex:outputText rendered="{!IF(budget.existsSF, 'true', 'false')}"> <!--  --> 
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                Aktuell sind für die Opportunity "{!opp.Name}" Budgetdaten in Version {!budget.version} vorhanden.<br/>
+                                Wie möchten Sie beim Upload vorgehen?
+                            </div>
+                            <apex:selectRadio value="{!budget.doUpdate}" layout="pageDirection">
+                                <apex:selectOption itemValue="true" itemLabel="Budget v{!budget.newVersion} anlegen und alte Daten ersetzen" ><br/></apex:selectOption>
+                                <apex:selectOption itemValue="false" itemLabel="Bestehende Daten behalten" ><br/></apex:selectOption>
+                            </apex:selectRadio>
+                        </apex:outputText>
+                        <apex:outputText rendered="{!IF(budget.existsSF, 'false', 'true')}">
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                Aktuell sind für die Opportunity "{!opp.Name}" keine Budgetdaten vorhanden.<br/>
+                                Wie möchten Sie beim Upload vorgehen?
+                            </div>
+                            
+                            <apex:selectRadio value="{!budget.doUpdate}" layout="pageDirection">
+                                    <apex:selectOption itemValue="true" itemLabel="Budget v{!budget.newVersion} anlegen" ><br/></apex:selectOption>
+                                    <apex:selectOption itemValue="false" itemLabel="Daten nicht anlegen" ><br/></apex:selectOption>
+                            </apex:selectRadio><p/>
+                        </apex:outputText>
+                    </div>
+                </apex:outputText>
+            </apex:outputText>
+            <apex:outputText rendered="{!isStep3}">
+                <div style="padding-bottom:20px;">
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_3_1.png')}" />
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_3_2.png')}" />
+                    <apex:image url="{!URLFOR($Resource.FM_Upload, 'FM_UPL_3_3.png')}" />
+                </div>
+                <div style="width: 500px">
+                    <div style="padding-left: 5px;padding-top: 20px;font-size:12pt;font-weight:bold;width: 100%;border-bottom-style:solid;border-bottom-width:2px;">
+                        Upload Protokoll
+                    </div>
+                    
+                    <apex:outputText rendered="{!IF(plan.doUpdate, 'true', 'false')}">
+                        Plan v{!plan.newVersion} Upload erfolgreich<br/>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!IF(actual.doUpdate, 'true', 'false')}">
+                        Actuals v{!actual.newVersion} Upload erfolgreich<br/>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!IF(budget.doUpdate, 'true', 'false')}">
+                        Budget v{!budget.newVersion} Upload erfolgreich<br/>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!IF(unMatchedKPIsIsEmpty, 'false', 'true')}">
+                        <div style="padding-left: 5px;padding-top: 20px;font-size:12pt;font-weight:bold;width: 100%;border-bottom-style:solid;border-bottom-width:2px;">
+                            KPIs
+                        </div>
+                        Das importierte Financial Model weißt eine Differenz der enthaltenen KPI’s auf. KPI’s werden zentral durch Opperation &amp; Strategy verwaltet.<br/>
+                        Zur Erweiterung dieser Inhalte m&uuml;ssen die in der folgenden Liste enthaltenen KPI’s bei Opperation &amp; Strategy beantragt werden.<br/><br/>
+                        <apex:repeat value="{!unMatchedKPIs}" var="kpi">
+                            <div style="padding-left: 5px;padding-top: 5px;">
+                                {!kpi}
+                            </div>
+                        </apex:repeat>
+                    </apex:outputText>
+                </div>
+            </apex:outputText>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

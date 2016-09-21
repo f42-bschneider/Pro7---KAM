@@ -1,0 +1,564 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Km5ZIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Km5ZIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testCampaignTrigger",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 150
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaign",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Campaign",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 157
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaignMember",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaign",
+                    "type": "Campaign"
+                },
+                {
+                    "name": "contact",
+                    "type": "Contact"
+                },
+                {
+                    "name": "status",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "CampaignMember",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 167
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaignMemberStatus",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaign",
+                    "type": "Campaign"
+                },
+                {
+                    "name": "label",
+                    "type": "String"
+                },
+                {
+                    "name": "sortOrder",
+                    "type": "Integer"
+                },
+                {
+                    "name": "isDefault",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "CampaignMemberStatus",
+            "type": null
+        }
+    ],
+    "name": "SomTv_B2BAktionsmitgliederHistory_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "SomTv_B2BAktionsmitgliederHistory_Test",
+        "references": [],
+        "type": "SomTv_B2BAktionsmitgliederHistory_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "acc1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "con1",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "con2",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "con3",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "con4",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "con5",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "cam1",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "cam2",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "cms1",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "cms2",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "cms3",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "cms4",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "listCM",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "cm1",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "cm2",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "cm3",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "cm4",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "cm5",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "cm6",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "cm7",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "cm8",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "cm9",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "cm10",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "listCMUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "listCMdel",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "testCampaign",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "campaign",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 124,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "testCampaignMember",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "campaign",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 119,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "label",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 134,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "sortOrder",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 153,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "isDefault",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "testCampaignMemberStatus",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        }
+    ]
+}

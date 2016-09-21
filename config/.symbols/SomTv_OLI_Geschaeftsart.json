@@ -1,0 +1,317 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgnZIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnZIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateOpportunityLineItems",
+            "parameters": [
+                {
+                    "name": "mapNewOpps",
+                    "type": "Map"
+                },
+                {
+                    "name": "mapOldOpps",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "filterAndUpdate",
+            "parameters": [
+                {
+                    "name": "list_new_OLIs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 74
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "updateGeschaeftsart",
+            "parameters": [
+                {
+                    "name": "listOLIs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_OLI_Geschaeftsart",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_OLI_Geschaeftsart",
+        "references": [],
+        "type": "SomTv_OLI_Geschaeftsart"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "mapNewOpps",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "mapOldOpps",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "setOppIdsWithChangedMotherOpp",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "setOppIdsWithChangedRecordType",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "listOLIs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "oldOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "list_new_OLIs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "listChangesOLIs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "listOLIs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "setOpportunityIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "setProduct2Ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "mapOpportunities",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "mapProduct2s",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "product2",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "motherRecordType",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

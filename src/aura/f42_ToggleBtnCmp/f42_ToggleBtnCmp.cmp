@@ -1,0 +1,30 @@
+<aura:component >
+    <ltng:require styles="/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
+			/resource/f42_bootstrapToggle/f42_bootstrapToggle/css/bootstrap-toggle.min.css"
+                   	scripts="/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                    /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js,
+                                    /resource/f42_bootstrapToggle/f42_bootstrapToggle/js/bootstrap-toggle.min.js"
+                        afterScriptsLoaded="{!c.doInitScripts}">
+    </ltng:require>
+
+    <aura:handler name="change" value="{!v.value}" action="{!c.doHandleValueChange}"></aura:handler>
+
+    <aura:attribute name="value" type="Boolean" required="true" access="public"></aura:attribute>
+    <aura:attribute name="disabled" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="stageOn" type="String" default="ON" access="public"></aura:attribute>
+    <aura:attribute name="stageOff" type="String" default="OFF" access="public"></aura:attribute>
+
+    <div class="f42">
+        <div style="position:fixed;opacity:1">
+        	<input
+        		type="checkbox"
+        		aura:id="toggleBtn"
+        		checked="{!v.value}"
+        		data-toggle="toggle"
+        		data-on="{!v.stageOn}"
+        		data-off="{!v.stageOff}">
+    	</input>
+        </div>
+    </div>
+
+</aura:component>

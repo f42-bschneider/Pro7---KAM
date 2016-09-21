@@ -1,0 +1,83 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010fhKAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010fhKAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setPDFCheckboxes",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_PDFCheckboxes",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 7
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_CampaignItem_PDFCheckboxes",
+        "references": [],
+        "type": "Adv_CampaignItem_PDFCheckboxes"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

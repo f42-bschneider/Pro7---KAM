@@ -1,0 +1,606 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_OLI_AdfExportCtrl",
+            "parameters": [
+                {
+                    "name": "adfProjectId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_OLI_AdfExportCtrl",
+            "parameters": [
+                {
+                    "name": "stdCtrl",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010jTvAAI",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 37
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "Base_ExcelXmlExport",
+                    "parameters": [
+                        {
+                            "name": "data",
+                            "type": "SomTv_OLI_AdfExportData"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 31,
+                        "line": 42
+                    },
+                    "modifiers": [
+                        "virtual",
+                        "public"
+                    ],
+                    "name": "export",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 52
+                    },
+                    "modifiers": [
+                        "private",
+                        "virtual"
+                    ],
+                    "name": "generateHeader",
+                    "parameters": [
+                        {
+                            "name": "header",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 59
+                    },
+                    "modifiers": [
+                        "private",
+                        "virtual"
+                    ],
+                    "name": "generateOpening",
+                    "parameters": [
+                        {
+                            "name": "opening",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 89
+                    },
+                    "modifiers": [
+                        "private",
+                        "virtual"
+                    ],
+                    "name": "generateCellString",
+                    "parameters": [
+                        {
+                            "name": "cellString",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 115
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "cellValue",
+                    "parameters": [
+                        {
+                            "name": "value",
+                            "type": "Object"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 127
+                    },
+                    "modifiers": [
+                        "private",
+                        "virtual"
+                    ],
+                    "name": "generateClosing",
+                    "parameters": [
+                        {
+                            "name": "closing",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                }
+            ],
+            "name": "Base_ExcelXmlExport",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 35
+                    },
+                    "modifiers": [
+                        "protected"
+                    ],
+                    "name": "data",
+                    "references": [],
+                    "type": "SomTv_OLI_AdfExportData"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 28,
+                    "line": 33
+                },
+                "modifiers": [
+                    "private",
+                    "abstract"
+                ],
+                "name": "Base_ExcelXmlExport",
+                "references": [],
+                "type": "Base_ExcelXmlExport"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 61,
+                        "line": 37
+                    },
+                    "modifiers": [],
+                    "name": "data",
+                    "references": [],
+                    "type": "SomTv_OLI_AdfExportData"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 44
+                    },
+                    "modifiers": [],
+                    "name": "strHeader",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 45
+                    },
+                    "modifiers": [],
+                    "name": "opening",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 46
+                    },
+                    "modifiers": [],
+                    "name": "cellString",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 47
+                    },
+                    "modifiers": [],
+                    "name": "closing",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 54,
+                        "line": 52
+                    },
+                    "modifiers": [],
+                    "name": "header",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 55,
+                        "line": 59
+                    },
+                    "modifiers": [],
+                    "name": "opening",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 82
+                    },
+                    "modifiers": [],
+                    "name": "col",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 58,
+                        "line": 89
+                    },
+                    "modifiers": [],
+                    "name": "cellString",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 30,
+                        "line": 91
+                    },
+                    "modifiers": [],
+                    "name": "cells",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 25,
+                        "line": 94
+                    },
+                    "modifiers": [],
+                    "name": "isFirstColumn",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 95
+                    },
+                    "modifiers": [],
+                    "name": "cellIt",
+                    "references": [],
+                    "type": "Iterator"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 28,
+                        "line": 98
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "Object"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 28,
+                        "line": 105
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "Object"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 115
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "Object"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 117
+                    },
+                    "modifiers": [],
+                    "name": "cellString",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 55,
+                        "line": 127
+                    },
+                    "modifiers": [],
+                    "name": "closing",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 145
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "ExcelXmlExport",
+                    "parameters": [
+                        {
+                            "name": "data",
+                            "type": "SomTv_OLI_AdfExportData"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "ExcelXmlExport",
+            "namespace": null,
+            "parentClass": "Base_ExcelXmlExport",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 19,
+                    "line": 143
+                },
+                "modifiers": [
+                    "private"
+                ],
+                "name": "ExcelXmlExport",
+                "references": [],
+                "type": "ExcelXmlExport"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 55,
+                        "line": 145
+                    },
+                    "modifiers": [],
+                    "name": "data",
+                    "references": [],
+                    "type": "SomTv_OLI_AdfExportData"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010jTvAAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 15
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "init",
+            "parameters": [
+                {
+                    "name": "adfProjectId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 22
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "xlsxContent",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "SomTv_OLI_AdfExportCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "dataContainer",
+            "references": [],
+            "type": "SomTv_OLI_AdfExportData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "content",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_OLI_AdfExportCtrl",
+        "references": [],
+        "type": "SomTv_OLI_AdfExportCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "adfProjectId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "stdCtrl",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "adfProjectId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "xls",
+            "references": [],
+            "type": "Base_ExcelXmlExport"
+        }
+    ]
+}

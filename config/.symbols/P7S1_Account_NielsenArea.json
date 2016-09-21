@@ -1,0 +1,204 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KkXzIAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KkXzIAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setNielsenArea",
+            "parameters": [
+                {
+                    "name": "mapAccount",
+                    "type": "Map"
+                },
+                {
+                    "name": "listAccount",
+                    "type": "LIST"
+                },
+                {
+                    "name": "bIsUpdate",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 72
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "CheckValidPostalCode",
+            "parameters": [
+                {
+                    "name": "sPostalCode",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_NielsenArea",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cachedListPCs",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Account_NielsenArea",
+        "references": [],
+        "type": "P7S1_Account_NielsenArea"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "mapAccount",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "listAccount",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "bIsUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "objAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "sPostalCode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "P7S1_PostalCode2State__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "iPostalCode",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "iFrom",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "iTo",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "sPostalCode",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

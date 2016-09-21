@@ -1,0 +1,177 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010jphAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010jphAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 27,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testSumPackageDeliveries",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_PackageSumDelive_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_PackageSumDelive_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_PackageSumDelive_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "adSite",
+            "references": [],
+            "type": "ADvendio__Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "lstAdP",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "lstAdS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "lstAdPrice",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "adM",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "ciP",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "lstComponents",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "ci01",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "ci02",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+<apex:page standardController="P7S1_OpportunityApproval__c" action="{!URLFOR($Action.P7S1_OpportunityApproval__c.New, null, [Name='autofilled'], true)}" />

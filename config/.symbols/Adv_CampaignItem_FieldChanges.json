@@ -1,0 +1,189 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ccMAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ccMAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setLineDescription",
+            "parameters": [
+                {
+                    "name": "newCampaignItemsList",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldCampaignItemsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 43
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAdServerStatus",
+            "parameters": [
+                {
+                    "name": "newCampaignItemsList",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldCampaignItemsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 57
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "stornoMitOderOhneLeistungsfluss",
+            "parameters": [
+                {
+                    "name": "ci",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_FieldChanges",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_FieldChanges",
+        "references": [],
+        "type": "Adv_CampaignItem_FieldChanges"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "newCampaignItemsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 134,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "oldCampaignItemsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "descriptionParts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "newCampaignItemsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 133,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "oldCampaignItemsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 87,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

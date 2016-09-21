@@ -1,0 +1,415 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010duuAAA",
+    "innerClasses": [],
+    "interfaces": [
+        "P7S1_Liferay_RestService"
+    ],
+    "key": "01p570000010duuAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "liferayUserActivate",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Liferay_RestStatus",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 72
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "liferayUserDelete",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Liferay_RestStatus",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 100
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getHttpRequestUpdateUser",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "HttpRequest",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 105
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getHttpRequestDeleteUser",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "HttpRequest",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 111
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getHttpRequest",
+            "parameters": [
+                {
+                    "name": "enpoint",
+                    "type": "String"
+                },
+                {
+                    "name": "body",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "HttpRequest",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_RestServiceImpl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 9
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "oAuthService",
+            "references": [],
+            "type": "P7S1_Liferay_OAuthService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ENDPOINT_LIFERAY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "API_PATH_USER_UPDATE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "API_PATH_USER_DELETE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "HTTP_METHOD_POST",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_RestServiceImpl",
+        "references": [],
+        "type": "P7S1_Liferay_RestServiceImpl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "http",
+            "references": [],
+            "type": "Http"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "HttpResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "liferayUserReceived",
+            "references": [],
+            "type": "P7S1_Liferay_User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "http",
+            "references": [],
+            "type": "Http"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "HttpResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "liferayUserReceived",
+            "references": [],
+            "type": "P7S1_Liferay_User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "enpoint",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "HttpRequest"
+        }
+    ]
+}

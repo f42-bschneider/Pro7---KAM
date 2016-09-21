@@ -1,0 +1,1259 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 110
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_MediaCampaign_Split",
+            "parameters": [
+                {
+                    "name": "controller",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgmaIAC",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 582
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "ItemWrapper",
+                    "parameters": [
+                        {
+                            "name": "selected",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "invoiced",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "item",
+                            "type": "ADvendio__Campaign_Item__c"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "ItemWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 564
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "selected",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 568
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "invoiced",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 573
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "item",
+                    "references": [],
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 560
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "ItemWrapper",
+                "references": [],
+                "type": "ItemWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 582
+                    },
+                    "modifiers": [],
+                    "name": "selected",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 582
+                    },
+                    "modifiers": [],
+                    "name": "invoiced",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 90,
+                        "line": 582
+                    },
+                    "modifiers": [],
+                    "name": "item",
+                    "references": [],
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000KgmaIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 206
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "split",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 316
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "back",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 498
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "validateSelectedItem",
+            "parameters": [
+                {
+                    "name": "itmWrappers",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 153
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getInvoiceItem",
+            "parameters": [
+                {
+                    "name": "items",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 177
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "groupComponentItemByPacketItem",
+            "parameters": [
+                {
+                    "name": "items",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 330
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cloneChildren",
+            "parameters": [
+                {
+                    "name": "mIdPsObj",
+                    "type": "Map"
+                },
+                {
+                    "name": "chObjName",
+                    "type": "String"
+                },
+                {
+                    "name": "fieldRef",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 370
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "insertClone",
+            "parameters": [
+                {
+                    "name": "originalObjs",
+                    "type": "LIST"
+                },
+                {
+                    "name": "clonedObjs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 395
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cloneChildren",
+            "parameters": [
+                {
+                    "name": "mIdPsObj",
+                    "type": "Map"
+                },
+                {
+                    "name": "parentObjName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 421
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "groupChildrenByParentId",
+            "parameters": [
+                {
+                    "name": "children",
+                    "type": "LIST"
+                },
+                {
+                    "name": "fieldRefToParent",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 455
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "updatePacketItem",
+            "parameters": [
+                {
+                    "name": "oldIDNewItem",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 484
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getPageReference",
+            "parameters": [
+                {
+                    "name": "objId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 550
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "addMessage",
+            "parameters": [
+                {
+                    "name": "labelVal",
+                    "type": "String"
+                },
+                {
+                    "name": "message",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Split",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 11
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showBtnSplit",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "itmWrappers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 100
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "mPacketIdComponentItem",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 101
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "mIdInvoicedItem",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 10
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "MAX_RECORD_ITERATE_VF",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "mSObjFieldsInitData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 45
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "parentChildrenObject",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 76
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "parentfield",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_MediaCampaign_Split",
+        "references": [],
+        "type": "Adv_MediaCampaign_Split"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "itm",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "sp",
+            "references": [],
+            "type": "Savepoint"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 209
+            },
+            "modifiers": [],
+            "name": "newMC",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "selectedItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "mInitFieldData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "childObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "clonedObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 229
+            },
+            "modifiers": [],
+            "name": "originalObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 266
+            },
+            "modifiers": [],
+            "name": "hasChild",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 272
+            },
+            "modifiers": [],
+            "name": "oldIDnewPObj",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 498
+            },
+            "modifiers": [],
+            "name": "itmWrappers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 500
+            },
+            "modifiers": [],
+            "name": "mSelectedItem",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 501
+            },
+            "modifiers": [],
+            "name": "componentItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 503
+            },
+            "modifiers": [],
+            "name": "itemsToClone",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 509
+            },
+            "modifiers": [],
+            "name": "wrapper",
+            "references": [],
+            "type": "ItemWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 516
+            },
+            "modifiers": [],
+            "name": "compoItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 523
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 525
+            },
+            "modifiers": [],
+            "name": "selectedItm",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 536
+            },
+            "modifiers": [],
+            "name": "compoItm",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "mInvoiceItem",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "itm",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 161
+            },
+            "modifiers": [],
+            "name": "invItm",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "mPackItmIdComponents",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "itm",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 184
+            },
+            "modifiers": [],
+            "name": "itms",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "mIdPsObj",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "chObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 330
+            },
+            "modifiers": [],
+            "name": "fieldRef",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 333
+            },
+            "modifiers": [],
+            "name": "originalObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 336
+            },
+            "modifiers": [],
+            "name": "clonedObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 341
+            },
+            "modifiers": [],
+            "name": "mParentIdChildren",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 344
+            },
+            "modifiers": [],
+            "name": "pId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "chObj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 348
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 370
+            },
+            "modifiers": [],
+            "name": "originalObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 370
+            },
+            "modifiers": [],
+            "name": "clonedObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 372
+            },
+            "modifiers": [],
+            "name": "mIdObj",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 378
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 395
+            },
+            "modifiers": [],
+            "name": "mIdPsObj",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 395
+            },
+            "modifiers": [],
+            "name": "parentObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 398
+            },
+            "modifiers": [],
+            "name": "chObjName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 400
+            },
+            "modifiers": [],
+            "name": "fieldRef",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 402
+            },
+            "modifiers": [],
+            "name": "mIdSObj",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 421
+            },
+            "modifiers": [],
+            "name": "children",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 421
+            },
+            "modifiers": [],
+            "name": "fieldRefToParent",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 423
+            },
+            "modifiers": [],
+            "name": "mPIDChildren",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 427
+            },
+            "modifiers": [],
+            "name": "so",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 429
+            },
+            "modifiers": [],
+            "name": "originalParentId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 433
+            },
+            "modifiers": [],
+            "name": "objs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 455
+            },
+            "modifiers": [],
+            "name": "oldIDNewItem",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 457
+            },
+            "modifiers": [],
+            "name": "packetCompoItms",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 459
+            },
+            "modifiers": [],
+            "name": "ccItem",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 461
+            },
+            "modifiers": [],
+            "name": "packetItemId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 465
+            },
+            "modifiers": [],
+            "name": "packetItem",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 484
+            },
+            "modifiers": [],
+            "name": "objId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 485
+            },
+            "modifiers": [],
+            "name": "retUrl",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 550
+            },
+            "modifiers": [],
+            "name": "labelVal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 550
+            },
+            "modifiers": [],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

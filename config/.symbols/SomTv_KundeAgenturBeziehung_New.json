@@ -1,0 +1,390 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_KundeAgenturBeziehung_New",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KkvyIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KkvyIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 45
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveData",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 82
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cancel",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 89
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createVZ",
+            "parameters": [
+                {
+                    "name": "sRolle",
+                    "type": "String"
+                },
+                {
+                    "name": "userID",
+                    "type": "Id"
+                },
+                {
+                    "name": "gueltigVon",
+                    "type": "Date"
+                }
+            ],
+            "references": [],
+            "returnType": "SomTv_Verkaeuferzuordnung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 100
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getKundenverkaeufer",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 111
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getEinkaufsagenturverkaeufer",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 121
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getPlanungsagenturverkaeufer",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "SomTv_KundeAgenturBeziehung_New",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objNewKAB",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sKverkaeufer",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sPAverkaeufer",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sEAverkaeufer",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objAccount",
+            "references": [],
+            "type": "Account"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_KundeAgenturBeziehung_New",
+        "references": [],
+        "type": "SomTv_KundeAgenturBeziehung_New"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "idAccount",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "sType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "listVZ",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "p1",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "p1",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "sRolle",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "userID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "gueltigVon",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "objVZ",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "listKundenverkeufer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "listEAverkeufer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "listPAverkeufer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

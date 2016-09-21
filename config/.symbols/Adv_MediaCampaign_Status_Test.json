@@ -1,0 +1,100 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KghpIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KghpIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 6
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testMediaCampaignStatusUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Status_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_MediaCampaign_Status_Test",
+        "references": [],
+        "type": "Adv_MediaCampaign_Status_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "l_oCampaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "l_oCampaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "cil",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

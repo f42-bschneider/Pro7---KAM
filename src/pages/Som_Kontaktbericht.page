@@ -1,0 +1,10 @@
+<apex:page standardController="Event" extensions="cls_Som_Kontaktbericht" action="{!createVisitReport}">
+	<apex:form id="buttonForm">
+		<apex:pageBlock title="Kontaktbericht-Erstellung">
+			<apex:pageMessages />
+			<apex:pageBlockButtons location="Bottom">
+				<apex:commandButton value="Zurück zum Event" action="{!backToEvent}"/>
+			</apex:pageBlockButtons>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

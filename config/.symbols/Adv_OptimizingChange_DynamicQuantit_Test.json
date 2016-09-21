@@ -1,0 +1,254 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010f8AAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010f8AAAQ",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testdynamicQuantity",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_DynamicQuantit_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_OptimizingChange_DynamicQuantit_Test",
+        "references": [],
+        "type": "Adv_OptimizingChange_DynamicQuantit_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstAdS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "lstAdPrice",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "adCP",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "lstComponents",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "ci01",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "ci02",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "version",
+            "references": [],
+            "type": "ADvendio__OptimizingVersion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "change10",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "change11",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "change20",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "change21",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "changes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "change",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "change",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        }
+    ]
+}

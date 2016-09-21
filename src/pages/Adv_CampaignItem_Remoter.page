@@ -1,0 +1,96 @@
+<apex:page controller="Adv_CampaignItem_Remoter" id="page">
+
+<script src="/soap/ajax/28.0/connection.js" type="text/javascript"></script>
+<script src="/soap/ajax/28.0/apex.js" type="text/javascript"></script>
+
+<script>
+      var records = getParameterByName('records');
+      var mcID = getParameterByName('mcID');         
+
+
+      window.onload=function()
+      {
+        sforce.connection.sessionId = "{!$Api.Session_ID}";      
+
+
+
+        Visualforce.remoting.Manager.invokeAction('{!$RemoteAction.Adv_CampaignItem_Remoter.checkAvailability}',records, 
+            function(result, event){
+                if (event.status) {
+                    if(result == "success"){                      
+                        
+                        var results = sforce.connection.query("SELECT Id, ADvendio__Booking_in_Processing__c FROM ADvendio__MediaCampaign__c WHERE Id='" + mcID + "' LIMIT 1").getArray("records");
+                        if (("" + results[0].ADvendio__Booking_in_Processing__c) == "true") {
+                            alert("This media campaign is being booked right now.\n\nPlease try later again.");
+                        } else {
+                            var answer = true; 
+                            if (answer) {
+                                results[0].ADvendio__Booking_in_Processing__c = true;
+                                sforce.connection.update(results);
+                                window.location.reload(true);
+                                post('{!$Label.ADvendio__ServiceURL}MediaCloudServlets_{!$Label.ADvendio__ServiceVersion}/MediaCloudService', {
+                                    operation: 'order',
+                                    endpoint: '{!$Api.Enterprise_Server_URL_280}',
+                                    sessionid: '{!$Api.Session_ID}',
+                                    orgid: '{!$Organization.Id}',
+                                    smail: '{!$User.Email}',
+                                    campaignid: mcID,
+                                    recordid: records
+                                });
+                            }
+
+                        }
+                    }else{
+                        console.log(result);
+                        document.getElementById('result').innerHTML = result;
+                    }
+                } else 
+                    document.getElementById('result').innerHTML = result;
+            }, 
+            {escape: true}
+        );
+      };
+      
+      
+      
+      
+
+      function post(path, params) {
+            method = 'post';
+            // The rest of this code assumes you are not using a library.
+            // It can be made less wordy if you use one.
+            var form = document.createElement("form");
+            form.setAttribute('method', method);
+            form.setAttribute('action', path);
+            form.setAttribute('target', '_blank');
+        
+            for (var key in params) {
+                if (params.hasOwnProperty(key)) {
+                    var hiddenField = document.createElement('input');
+                    hiddenField.setAttribute('type', 'hidden');
+                    hiddenField.setAttribute('name', key);
+                    hiddenField.setAttribute('value', params[key]);
+        
+                    form.appendChild(hiddenField);
+                }
+            }
+        
+            document.body.appendChild(form);
+            form.submit();
+      };
+      
+      
+      
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }      
+</script>
+<div id="result">
+
+</div>
+
+<apex:outputLink value="/{!campaignID}">Zurück zur Mediakampagne</apex:outputLink>
+</apex:page>

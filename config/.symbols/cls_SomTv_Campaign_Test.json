@@ -1,0 +1,274 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KKJdIAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KKJdIAO",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testCls_SomTv_Campaign",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 97
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testCls_SomTv_Campaign_MN3",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_SomTv_Campaign_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 5
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "cls_SomTv_Campaign_Test",
+        "references": [],
+        "type": "cls_SomTv_Campaign_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "rtId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "now",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "cam1",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "cam2",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "cam3",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "camDefaultVal",
+            "references": [],
+            "type": "P7S1_CampaignMemberStatusDefaultValues__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "eventCampaignId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "medienCampaignId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "rt",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "cam4",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "lst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "cam5",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "lst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "rtId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        }
+    ]
+}

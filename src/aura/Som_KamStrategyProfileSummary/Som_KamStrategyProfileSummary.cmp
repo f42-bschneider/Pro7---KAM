@@ -1,0 +1,97 @@
+<aura:component >
+
+    <aura:attribute name="accPlan" type="Object" access="public"/>
+    <aura:attribute name="isRead" type="Boolean" access="public"/>
+    <aura:attribute name="topicOptions" type="Object[]" access="private"/>
+    <aura:attribute name="previousTopic" type="String" access="private"/>
+    <aura:attribute name="profSummary" type="Object" access="private"/>
+    <aura:attribute name="profDetails" type="Object[]" access="private"/>
+
+    <aura:attribute name="innerHeight" type="String" access="private"/>
+
+    <aura:method name="setAccPlan" action="{!c.onAccPlanSet}" access="PUBLIC">
+        <aura:attribute name="accPlan" type="Object"/>
+    </aura:method>
+
+    <aura:registerEvent name="okClicked" type="c:Som_KamStrategyProfileSummaryEvent"/>
+    <aura:registerEvent name="cancelClicked" type="c:Som_KamStrategyProfileSummaryEvent"/>
+
+
+
+    <div class="f42">
+
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-brand">{!$Label.c.Som_lbl_AccountPlanner}</div>
+                </div>
+
+                <div class="navbar-collapse collapse" style="margin-right:30px; margin-left:20px">
+                    <ul class="nav navbar-nav navbar-right" style="padding-top:8px">
+                        <li>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default" onclick="{!c.onOk}">
+                                    <i class="ionicons ion-checkmark-round btn-icon"></i> {!' '+$Label.c.Som_lbl_Back}
+                                </button>
+
+                                <button type="button" class="btn btn-default" onclick="{!c.onCancel}" style="{!v.isRead ? 'display:none' : ''}">
+                                    <i class="ionicons ion-close-round btn-icon"></i> {!' '+$Label.c.Ven_lbl_Cancel}
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="panel panel-default space-top">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">{!$Label.c.Som_lbl_StrategyProfile}</h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label>{!$Label.c.Som_lbl_Topic}</label>
+                                <ui:inputSelect class="form-control" aura:id="topic" change="{!c.onTopicChange}"/>
+                            </div>
+
+                            <div class="form-group" id="{!v.profSummary.stratProfId}">
+                                <label>{!$Label.c.Som_lbl_Summary}</label>
+
+                                <c:f42_InputTextArea aura:id="summary"
+                                    referenceId="{!v.profSummary.stratProfId}"
+                                    change="{!c.onSummaryDescriptionChange}"
+                                    resizable="false"
+                                    rows="20"
+                                    class="{!v.isRead ? 'form-control outputtext' : 'form-control'}"
+                                    value="{!v.profSummary.Description}"/>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-7" style="{!'height:'+v.innerHeight}">
+                            <aura:iteration items="{!v.profDetails}" var="profDetail">
+                                <div class="form-group" id="{!profDetail.stratProfId}">
+                                    <label>{!profDetail.Name}</label>
+                                    <c:f42_InputTextArea change="{!c.onDetailDescriptionChange}"
+                                        referenceId="{!profDetail.stratProfId}"
+                                        rows="8"
+                                        resizable="false"
+                                        class="{!v.isRead ? 'form-control outputtext' : 'form-control'}"
+                                        value="{!profDetail.Description}"/>
+                                </div>
+                            </aura:iteration>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</aura:component>

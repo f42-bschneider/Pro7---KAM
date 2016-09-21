@@ -1,0 +1,83 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_RestResponse",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010dusAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dusAAA",
+    "methods": [],
+    "name": "P7S1_Liferay_RestResponse",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "success",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "errors",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "result",
+            "references": [],
+            "type": "SObject"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_RestResponse",
+        "references": [],
+        "type": "P7S1_Liferay_RestResponse"
+    },
+    "variables": []
+}

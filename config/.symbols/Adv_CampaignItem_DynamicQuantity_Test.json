@@ -1,0 +1,297 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KghPIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KghPIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "myUnitTest1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 88
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "myUnitTest2",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_DynamicQuantity_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 28,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_DynamicQuantity_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_DynamicQuantity_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "lstAdS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "asp",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "lstAdPrice",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "adM",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "adCP",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "ci01",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "ci02",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "lstAdS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "asp",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "lstAdPrice",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "adM",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "adCP",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "ci01",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "ci02",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

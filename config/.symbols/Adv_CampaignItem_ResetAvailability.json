@@ -1,0 +1,328 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010frFAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010frFAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAvailability",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_ResetAvailability",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 5
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_CampaignItem_ResetAvailability",
+        "references": [],
+        "type": "Adv_CampaignItem_ResetAvailability"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 119,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 182,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 231,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 277,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 326,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "setCIID",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "ciOld",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "setPacketIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "mapPaketCountYT",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "packet",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "iYT",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "comp",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "listUpdateCI",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

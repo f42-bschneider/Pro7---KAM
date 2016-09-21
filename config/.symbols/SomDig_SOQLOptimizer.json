@@ -1,0 +1,56 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000001QAgmAAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000001QAgmAAG",
+    "methods": [],
+    "name": "SomDig_SOQLOptimizer",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 2
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "bCampaignItemStorno_Run",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "iDynamicQuantityRun",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "SomDig_SOQLOptimizer",
+        "references": [],
+        "type": "SomDig_SOQLOptimizer"
+    },
+    "variables": []
+}

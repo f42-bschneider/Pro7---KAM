@@ -1,0 +1,1217 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnfdAAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnfdAAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "inactiveMblProhibitsValidAdPrice",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 25
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "validAdPriceConformsToMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 45
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidAbrechnungsartBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 63
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidAuftragstypBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 85
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidBtFaehigkeitBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 107
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidCpxFaehigkeitBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 129
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidFcFaehigkeitBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 151
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidGtFaehigkeitBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 171
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidMediagattungsDifferenzierungBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 196
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidRotationstypBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 218
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidTkpFaehigkeitBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 240
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidWbFaehigkeitBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 262
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "invalidWerbeformgruppeBreaksMbl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 284
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "debuggingModeAllowsAdPriceCreation",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 307
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestInventory",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 351
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMetabuchungslogik",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Metabuchungslogik__c",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdPrice_Metabuchungslogik_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 350
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Metabuchungslogik_TestData",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 28,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_AdPrice_Metabuchungslogik_Test",
+        "references": [],
+        "type": "Adv_AdPrice_Metabuchungslogik_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "mbl",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "mbl",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "standard",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 161
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "instream",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 188
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 199
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 247
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 252
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 254
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 265
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 269
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 270
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 274
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 276
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 289
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 290
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 296
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 308
+            },
+            "modifiers": [],
+            "name": "inpage",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 309
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 318
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 323
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 326
+            },
+            "modifiers": [],
+            "name": "forschung",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 327
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "mbl",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 351
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

@@ -1,0 +1,726 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_CampaignItem_DeliverPrio",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_CampaignItem_DeliverPrio",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KghMIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KghMIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 11
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 15
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 69
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "calculatePriority",
+            "parameters": [
+                {
+                    "name": "listNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 31,
+                "line": 212
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "sendToManyElementsNotification",
+            "parameters": [
+                {
+                    "name": "listCampaignItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 31,
+                "line": 224
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "sendNoPriorityFoundNotification",
+            "parameters": [
+                {
+                    "name": "listCampaignItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 238
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "sendNotification",
+            "parameters": [
+                {
+                    "name": "listCampaignItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "toRecipients",
+                    "type": "LIST"
+                },
+                {
+                    "name": "ccRecipients",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_DeliverPrio",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 61,
+                "line": 23
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cachedPrioDatasets",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 42
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "emailTemplateMissing",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 43
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cachedEmailTemplate",
+            "references": [],
+            "type": "EmailTemplate"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_DeliverPrio",
+        "references": [],
+        "type": "Adv_CampaignItem_DeliverPrio"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 140,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 112,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 142,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "listNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "step1",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "step2",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "step3",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "toManyElementsError",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "noPriorityError",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "prio",
+            "references": [],
+            "type": "SomDig_DeliverPrio__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "isDatevalid",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "isAbrechnungsart",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "isAuftragstyp",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "isBelegungseinheit",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "isMediagattungsdifferenz",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "isRotationstyp",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "isWerbeform_Kurzform",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "shortform",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 212
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 213
+            },
+            "modifiers": [],
+            "name": "toRecipients",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "ccRecipients",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "toRecipients",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "toRecipients",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 127,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "ccRecipients",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 240
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 246
+            },
+            "modifiers": [],
+            "name": "replace",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 247
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 251
+            },
+            "modifiers": [],
+            "name": "newBody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

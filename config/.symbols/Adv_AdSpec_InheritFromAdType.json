@@ -1,0 +1,284 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnZQAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnZQAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromAdSpecTrigger",
+            "parameters": [
+                {
+                    "name": "adSpecsList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 25
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromAdTypeTrigger",
+            "parameters": [
+                {
+                    "name": "newAdTypesMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "oldAdTypesMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 67
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "translatePicklistValueForFcPeriod",
+            "parameters": [
+                {
+                    "name": "fcPeriod",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdSpec_InheritFromAdType",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_AdSpec_InheritFromAdType",
+        "references": [],
+        "type": "Adv_AdSpec_InheritFromAdType"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "adTypeIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "adTypesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "newAdTypesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "oldAdTypesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "adSpecsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "newAdType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "oldAdType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "changed",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "fcPeriod",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "translationsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "translatedFcPeriod",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

@@ -1,0 +1,330 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KkvzIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KkvzIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testKundenagenturbeziehungNew",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 79
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createAccountTeamMember",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "sRole",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "AccountTeamMember",
+            "type": null
+        }
+    ],
+    "name": "SomTv_KundeAgenturBeziehung_New_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "SomTv_KundeAgenturBeziehung_New_Test",
+        "references": [],
+        "type": "SomTv_KundeAgenturBeziehung_New_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "objAccAgentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "objAccKunde",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "userIDSales",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "objUserSales",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "objATMSales",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "userIDAF",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "objUserAf",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "objATMAf",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "userIDMarketing",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "objUserMarketing",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung_New"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "listKundenverkaeufer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "listEinkaufsagenturverkaeufer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "listPlanungsagenturverkaeufer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "listKB",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "listVZ",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "sRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "AccountTeamMember",
+            "references": [],
+            "type": "AccountTeamMember"
+        }
+    ]
+}

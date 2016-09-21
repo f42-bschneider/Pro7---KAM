@@ -1,0 +1,82 @@
+<apex:page controller="SomTv_KundeAgenturBeziehung_New" tabStyle="SomTv_KundeAgenturBeziehung__c">
+
+<style>
+    .picklistVerkaeufer{
+        width:200px;
+    }
+    
+    .input{
+        width:150px;
+    }
+</style>
+
+
+    <apex:form >
+        <apex:actionFunction reRender="kVerkaeuferPL, EAVerkaeuferPL" name="refreshPicklists" />
+        
+    
+        <apex:sectionHeader subtitle="New Kundenagenturbeziehung" title="Beziehung edit" />
+        <apex:pageMessages id="msg" />
+        <apex:pageBlock >
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Speichern" action="{!saveData}" />
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true" html-formnovalidate="formnovalidate" />
+            </apex:pageBlockButtons>
+        
+            <apex:pageBlockSection title="Kundenagenturbeziehung Info">
+                <apex:inputField value="{!objNewKAB.Kunde__c}" onchange="refreshPicklists()" />        
+                <apex:inputField value="{!objNewKAB.Name}" required="true" styleClass="input" />        
+                <apex:inputField value="{!objNewKAB.Agentur__c}" onchange="refreshPicklists()" required="true" />        
+                <apex:inputField value="{!objNewKAB.GueltigBis__c}"/>                        
+                <apex:inputField value="{!objNewKAB.GueltigVon__c}"/>    
+            </apex:pageBlockSection>
+            
+            
+            <apex:pageBlockSection title="Verkäuferzuordnung Info" columns="1">
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel for="KVerkaeufer" value="Kundenverkäufer" />   
+                                 
+                    <apex:outputPanel id="kVerkaeuferPL">
+                        <apex:selectList styleClass="picklistVerkaeufer" value="{!sKVerkaeufer}" id="KVerkaeufer" size="1" rendered="{!Kundenverkaeufer.size > 0}">
+                            <apex:selectOptions value="{!Kundenverkaeufer}"/>
+                        </apex:selectList>                        
+                        
+                        <apex:outputpanel rendered="{!Kundenverkaeufer.size == 0}">
+                            Keine AccountTeamMember gefunden.
+                        </apex:outputpanel>                                        
+                    </apex:outputPanel> 
+                </apex:pageblockSectionItem>            
+                
+                
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel for="EAVerkaeufer" value="Einkaufsagenturverkäufer" />  
+                    
+                    <apex:outputPanel id="EAVerkaeuferPL">
+                        <apex:selectList styleClass="picklistVerkaeufer" value="{!sEAverkaeufer}" id="EAVerkaeufer" size="1" rendered="{!Einkaufsagenturverkaeufer.size > 0}">
+                            <apex:selectOptions value="{!Einkaufsagenturverkaeufer}"/>
+                        </apex:selectList>  
+                        
+                        <apex:outputpanel rendered="{!Einkaufsagenturverkaeufer.size == 0}">
+                            Keine AccountTeamMember gefunden.
+                        </apex:outputpanel>
+                    </apex:outputPanel>                     
+                </apex:pageblockSectionItem>            
+                
+                
+
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel for="PAverkaeufer" value="Planungsagenturverkäufer" />                
+                    <apex:selectList styleClass="picklistVerkaeufer" value="{!sPAverkaeufer}" id="PAverkaeufer" size="1">
+                        <apex:selectOptions value="{!Planungsagenturverkaeufer}"/>
+                    </apex:selectList>                            
+                </apex:pageblockSectionItem>                                           
+                
+                
+            </apex:pageBlockSection>            
+        
+        
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,278 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false" language="{!language}" controller="P7S1_AnmeldungDigitalDetox_Absage" action="{!absage}">
+    <style type="text/css">
+
+        BODY, TH, TD {
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        color: #666666;
+        }
+
+        .body {
+        margin:0px;
+        padding:0px;
+        border:0px;
+        background-color: #FFF;
+        }
+
+        A {
+       color: #FF0033;
+        }
+
+        .mandatoryerror {
+            background-color: #FF0033;
+        }
+
+        input[type=text] {
+          background: url(https://news.sevenonemedia.de/art_resource.php?sid=2iwk2.2b2er5e) repeat-x scroll 0% 0%;
+          border-bottom: 1px solid #EFEFEF;
+          border-bottom-left-radius: 4px 4px;
+          border-bottom-left-radius: 4px 4px;
+          border-bottom-right-radius: 4px 4px;
+          border-bottom-right-radius: 4px 4px;
+          border: none;
+          border-right: 1px solid #EFEFEF;
+          border-top-left-radius: 4px 4px;
+          border-top-left-radius: 4px 4px;
+          border-top-right-radius: 4px 4px;
+          border-top-right-radius: 4px 4px;
+          color: #333;
+          font-size: 12px;
+          height: 20px;
+          width: 200px;
+          padding-left: 3px;
+          padding-right: 3px;
+        }
+
+        input [type=checkbox] {
+            width: auto;
+            float: right;
+        }
+
+        input.submit{
+            background: url(https://news.sevenonemedia.de/art_resource.php?sid=2iwjz.fie7tt) no-repeat;
+            width: 182px;
+            height: 23px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            padding-bottom: 4px;
+            *padding-bottom: 1px;
+            color: #fff;
+            background-position: 0 0;
+        }
+
+        input.submit:hover {
+            background-position: 0 -23px;
+        }
+
+        .error-holder {
+            color: #FF0033;
+            border: 1px solid #FF0033;
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+
+        .hid {
+          display: none;
+        }
+
+        .prev-input {
+            border: 0px;
+            color: #FF0033;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+    </style>
+    <apex:outputPanel >
+      <table border="0" cellpadding="0" cellspacing="0" width="645">
+        <tbody>
+
+          <tr>
+            <td align="left" valign="top" width="637">
+
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="637"><a href="https://www.sevenonemedia.de/" target="_blank"><img alt="SevenOne Media - Wir bewegen Marken" border="0" src="https://news.sevenonemedia.de/art_resource.php?sid=1hev2.1choo8f" width="637"/></a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="62"><img alt="" border="0" height="41" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" style="display: block;" width="62"/></td>
+                    <td align="left" valign="top" width="281">
+                      <div>
+                        <img alt="-" border="0" src="https://news.sevenonemedia.de/art_resource.php?sid=3vp5d.3s50rm" style="display: block;"/>
+                      </div>
+                    </td>
+                    <td align="left" valign="top" width="280">
+                      <div>
+                        <img alt="Sender" height="41" src="https://news.sevenonemedia.de/art_resource.php?sid=4n186.a71q0h" style="display: block; border-width: 0px; border-style: solid;" width="280"/>
+                      </div>
+                    </td>
+                    <td align="left" valign="top" width="14"><img alt="" border="0" height="1" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" style="display: block;" width="14"/>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </td>
+
+            <td align="left" bgcolor="#cccccc" valign="top" width="4"><img alt="" border="0" height="114" src="https://news.sevenonemedia.de/art_resource.php?sid=1jc0n.32nrsl" width="4"/></td>
+            <td align="left" bgcolor="#f0f0f0" valign="top" width="4"><img alt="" border="0" height="114" src="https://news.sevenonemedia.de/art_resource.php?sid=1jc0p.eq7bij" width="4"/></td>
+          </tr>
+
+
+          <tr>
+            <td align="left" valign="top" width="637">
+              <apex:outputPanel layout="inline" id="main_panel">
+
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" colspan="2" valign="top"><img alt="" border="0" height="1" src="https://news.sevenonemedia.de/art_resource.php?sid=2jd30.1kib0cf" width="637"/></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" width="62"><img alt="" border="0" height="14" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/></td>
+                    <td align="left" valign="top" width="575"><!--img alt="" height="129" src="http://news.sevenonemedia.de/art_resource.php?sid=73fo4.ck81nh" width="562"/-->
+                    <apex:image id="theImage" value="{!$Resource.P7S1_AnmeldungDigitalDetox_Logo}" width="562"/>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" valign="top" width="62">
+                        <img alt="" border="0" height="41" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/>
+                    </td>
+
+                    <td align="left" valign="top" width="575">
+                        <apex:form >
+                            <br/>
+                            {!feedback.P7S1_AnredeBrief__c},<br/>
+                            <br/>
+                            <br/>
+                            <apex:outputText escape="false" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_Absage}"/>
+                            <br/>
+                            &nbsp;
+                            <table border="0" cellpadding="0" cellspacing="0" summary="" width="350">
+                                <tbody>
+                                    <tr class="even first ">
+                                        <td><img alt="" src="https://news.sevenonemedia.de/art_resource.php?sid=1iktr.1b6l4ob"/></td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr class="odd ">
+                                        <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">{!$Label.P7S1_VIRTUALTHEMOUNTAIN_DANKE_2}</td>
+                                        <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">&nbsp;</td>
+                                    </tr>
+                                    <tr class="even last ">
+                                        <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">
+                                        <apex:outputText escape="false" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_DANKE_3}"/>
+                                        </td>
+                                        <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>&nbsp;
+                        </apex:form>
+                    </td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+            </apex:outputPanel>
+             <apex:actionStatus id="status_for_all">
+                    <apex:facet name="start">
+                      <div style="text-align: center;">
+                        <img src="/img/loading.gif" alt="Loading graphic"/>
+                      </div>
+                    </apex:facet>
+            </apex:actionStatus>
+            &nbsp;
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="637"><img alt="" border="0" height="6" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="637"/></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td align="left" bgcolor="#cccccc" style="background-image: url(&quot;https://news.sevenonemedia.de/art_resource.php?sid=1jbw3.1rqlqm0&quot;); background-repeat: repeat-y;" valign="top" width="4">&nbsp;</td>
+            <td align="left" bgcolor="#f0f0f0" style="background-image: url(&quot;https://news.sevenonemedia.de/art_resource.php?sid=1jc0i.2k3sna8&quot;); background-repeat: repeat-y;" valign="top" width="4">&nbsp;</td>
+          </tr>
+          <tr>
+
+            <td align="left" valign="top" width="637">
+
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="637"><img alt="" border="0" height="14" src="https://news.sevenonemedia.de/art_resource.php?sid=1heux.1sfdf0t" width="637"/></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="62">
+                      <img alt="" border="0" height="17" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/>
+                    </td>
+                    <td align="left" valign="middle" width="575">
+                      <font color="#666666" face="Arial, sans-serif" size="-2">
+                        <span style="font-family: arial,sans-serif; color: rgb(102, 102, 102); font-size: 9px;">(Änderungen, Druckfehler vorbehalten)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Pflichtfeld</span>
+                      </font>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+              <br/>
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="62"><img alt="" border="0" height="51" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/></td>
+                    <td align="left" valign="top" width="126"><font color="#666666" face="Arial, sans-serif" size="-2"><span style="font-family: arial,sans-serif; color: rgb(102, 102, 102); font-size: 9px;">SevenOne Media GmbH<br/>
+                        Medienallee 4<br/>
+                        85774 Unterföhring</span></font></td>
+                    <td align="left" valign="top" width="142"><font color="#666666" face="Arial, sans-serif" size="-2"><span style="font-family: arial,sans-serif; color: rgb(102, 102, 102); font-size: 9px;">Tel. + 49 (0) 89 / 95 07 - 40<br/>
+                        Fax + 49 (0) 89 / 95 07 - 43 99<br/>
+                      <a href="https://www.sevenonemedia.de" style="color: rgb(102, 102, 102); text-decoration: none;" target="_blank">www.sevenonemedia.de</a><br/>
+                      <a href="mailto:info@sevenonemedia.de" style="color: rgb(102, 102, 102); text-decoration: none;">info@sevenonemedia.de</a></span></font></td>
+                    <td align="left" valign="top" width="174"><font color="#666666" face="Arial, sans-serif" size="-2"><span style="font-family: arial, sans-serif; font-size: 9px;">Geschäftsführer:<br/>
+                        Thomas Wagner (Vorsitzender),<br/>
+                        Sabine Eckhardt, Dr. Jens Mittnacht,<br/>
+                        Guido Modenbach, Georg Nitzl,<br/>
+                        Thomas Port</span></font></td>
+                    <td align="left" valign="top" width="133"><font color="#666666" face="Arial, sans-serif" size="-2"><span style="font-family: arial,sans-serif; color: rgb(102, 102, 102); font-size: 9px;">Firmensitz: Unterföhring<br/>
+                        HRB 133924 AG München<br/>
+                        USt-ID.-Nr. DE 812906844<br/>
+                        St. Nr. 9143/104/10137</span></font></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="637">
+                <tbody>
+                  <tr>
+                    <td align="left" valign="top" width="60"><img alt="" border="0" height="31" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="60"/></td>
+                    <td align="left" valign="top" width="560"><img alt="" height="31" src="https://news.sevenonemedia.de/art_resource.php?sid=4n3oq.295q5p6" style="display: block; border-width: 0px; border-style: solid;" width="560"/></td>
+                    <td align="left" valign="top" width="17"><img alt="" border="0" height="31" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="17"/></td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </td>
+
+            <td align="left" bgcolor="#cccccc" valign="bottom" width="4"><img alt="" border="0" height="113" src="https://news.sevenonemedia.de/art_resource.php?sid=1jc0t.rn6qf1" width="4"/></td>
+            <td align="left" bgcolor="#f0f0f0" valign="bottom" width="4"><img alt="" border="0" height="113" src="https://news.sevenonemedia.de/art_resource.php?sid=1jc0x.12khemg" width="4"/></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </apex:outputPanel>
+
+</apex:page>

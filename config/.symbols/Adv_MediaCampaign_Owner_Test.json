@@ -1,0 +1,264 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgknIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgknIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "owner_Should_Be_Current_User_On_Insert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "owner_Should_Be_Betreuer_PAM_On_Insert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 35
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "owner_Should_Be_Betreuer_Sales_On_Insert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 51
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "owner_Should_Be_Betreuer_PAM_On_Update",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 72
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reload_MediaCampaign_And_Assert_OwnerId",
+            "parameters": [
+                {
+                    "name": "p_oMediaCampaign",
+                    "type": "ADvendio__MediaCampaign__c"
+                },
+                {
+                    "name": "p_sOwnerId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Owner_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Adv_MediaCampaign_Owner_Test",
+        "references": [],
+        "type": "Adv_MediaCampaign_Owner_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "PAM_UserId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "SalesUserId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "PAM_UserId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "SalesUserId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "p_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "p_sOwnerId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

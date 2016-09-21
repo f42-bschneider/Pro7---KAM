@@ -1,0 +1,442 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KoDnAAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KoDnAAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setLineDescription",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 154
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "descriptionForDiscountType",
+            "parameters": [
+                {
+                    "name": "discountName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_LineDesc",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 144
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "MAPPING",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_OptimizingChange_LineDesc",
+        "references": [],
+        "type": "Adv_OptimizingChange_LineDesc"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 122,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 142,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 188,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 240,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 289,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 341,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "optiVersionID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "relevantOCsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "setCampaignItemID",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "oc",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "oldLineDescriptionMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "identifierNewLineDescriptionMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "newOCsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "identifierOCsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "identifier",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "fieldNameOCMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "oldLineDescription",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "ciId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "newCiIdentifier",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "oc",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "tmpDescription",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "tmp",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "discountName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+.THIS.container {	width: 100%;
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.THIS .center {
+	margin: 0px auto;
+}
+
+.THIS .content {
+	max-width: 768px;
+	font-size: 12px;
+	color: #3c3d3e;
+}
+
+.THIS .fade{
+	background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.THIS .err-msg {
+	font-size: 0.75rem;
+	color:rgb(194, 57, 52);
+}

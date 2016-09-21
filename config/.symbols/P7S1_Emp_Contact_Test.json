@@ -1,0 +1,303 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kf2dIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kf2dIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertDoesNothing",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 23
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "updateEmpWithSync",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 61
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "updateEmpWithoutSync",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 206
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "loadContacts",
+            "parameters": [
+                {
+                    "name": "emp",
+                    "type": "P7S1_Emp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 210
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reloadEmp",
+            "parameters": [
+                {
+                    "name": "emp",
+                    "type": "P7S1_Emp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 214
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reloadContact",
+            "parameters": [
+                {
+                    "name": "con",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "Contact",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Emp_Contact_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Emp_Contact_Test",
+        "references": [],
+        "type": "P7S1_Emp_Contact_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        }
+    ]
+}

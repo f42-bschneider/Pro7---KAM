@@ -1,0 +1,58 @@
+<apex:component >
+
+<style>
+.ticket {
+  float: left;
+  vertical-align: top;
+  width: 150px;
+  margin: 5px;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  word-wrap: break-word;
+}
+
+.ticket .head {
+  color: #000;
+  line-height: 20px;
+  margin: -1px -1px 0;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  font-weight:bold;
+  font-size: 11px;
+}
+
+.ticket .head .number{
+    margin:4px;
+}
+.ticket .head .owner{
+    float:right;
+    margin-right:4px;
+}
+.ticket .body{
+    padding: 4px;
+}
+.link{
+    text-decoration:none;
+    color:black;
+}
+
+
+</style>
+
+<apex:attribute name="case" description="Case which represents a Ticket" type="Case" required="true"/>
+<apex:attribute name="profileImageUrl" description="Chatter user icon from the Case Owner" type="Case" required="true"/>
+
+    <div class="ticket">
+        <div class="head" style="background-color:{!case.Lcm_KanColor__c}">
+            <span class="number"><apex:outputLink target="_blank" styleClass="link" value="/{!case.ID}">{!case.CaseNumber}</apex:outputLink></span>
+            <span class="owner">{!case.Owner.FirstName} <apex:outputText rendered="{!case.Rank__c != null}" value="({!case.Rank__c})" /> </span>
+        </div>
+
+        <div class="body">
+            <div style="float:left;width:calc(100% - 45px)">{!case.Subject}</div>
+            <apex:image style="float:right;padding:3px" height="35px" id="profileImage" url="{!profileImageUrl}" />
+
+        </div>
+    </div>
+</apex:component>

@@ -1,0 +1,243 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010heSAAQ",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 45
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "LookupObj",
+                    "parameters": [
+                        {
+                            "name": "label",
+                            "type": "String"
+                        },
+                        {
+                            "name": "objId",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "LookupObj",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 40
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "label",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 43
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "objId",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 38
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "LookupObj",
+                "references": [],
+                "type": "LookupObj"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 45
+                    },
+                    "modifiers": [],
+                    "name": "label",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 47,
+                        "line": 45
+                    },
+                    "modifiers": [],
+                    "name": "objId",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010heSAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getLookups",
+            "parameters": [
+                {
+                    "name": "objType",
+                    "type": "String"
+                },
+                {
+                    "name": "searchTerm",
+                    "type": "String"
+                },
+                {
+                    "name": "labelApiName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Lookup_CmpCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 16
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "RESULT_LIMIT",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Lookup_CmpCtrl",
+        "references": [],
+        "type": "P7S1_Lookup_CmpCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "objType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "searchTerm",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "labelApiName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "lookupObjs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "SObject"
+        }
+    ]
+}

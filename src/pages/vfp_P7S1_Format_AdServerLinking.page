@@ -1,0 +1,49 @@
+<apex:page controller="cls_P7S1_Format_AdServerLinking" tabStyle="P7S1_Format__c">
+    <apex:form >
+        <apex:sectionHeader title="Format" subtitle="{!i_oFormatObj.Name}"/>
+        <apex:pageBlock >
+            <apex:actionFunction name="SearchRecord" action="{!Search}" status="status" reRender="parentOP"/>
+            <b>Search AdServerId</b> &nbsp;&nbsp;&nbsp;&nbsp;<apex:inputText value="{!i_sSearchText}"/>
+            <apex:commandButton value="Search" onclick="SearchRecord(); return false;"/>
+            <apex:actionStatus startText="Searching Records..." startStyle="color:red;" id="status"></apex:actionStatus>
+        </apex:pageBlock>
+        <apex:outputPanel id="parentOP">
+        <apex:pageBlock id="pb" rendered="{!IF(i_clsModelList.size > 0,true,false)}">
+            <apex:pageMessages />
+            <apex:pageblockTable value="{!i_clsModelList}" var="i_clsObj">
+                  <apex:column >
+                      <apex:inputCheckbox value="{!i_clsObj.i_Check}" styleClass="case"/>
+                  </apex:column>
+                  <apex:column headerValue="Name">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.Name}"/>
+                  </apex:column>
+                  <apex:column headerValue="Format">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.P7S1_Format__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="AdServer Login">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.ADvendio__AdServer_Login__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="AdServer Id">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.ADvendio__AdServer_ID__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="UniqueKey">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.ADvendio__UniqueKey__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="Mediagattungs-Segment">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.SomDig_MediagattungsSegment__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="Parent AdServer ID">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.ADvendio__Parent_AdServer_ID__c}"/>
+                  </apex:column>
+                  <apex:column headerValue="Site">
+                      <apex:outputField value="{!i_clsObj.i_oAdObj.ADvendio__Site__c}"/>
+                  </apex:column>
+            </apex:pageblockTable>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

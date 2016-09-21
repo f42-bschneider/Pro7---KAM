@@ -1,0 +1,238 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KiYNIA0",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable"
+    ],
+    "key": "01pD0000000KiYNIA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 3
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 10
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 42
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_AutoAprvBatch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_Account_AutoAprvBatch",
+        "references": [],
+        "type": "P7S1_Account_AutoAprvBatch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "dNow",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "setAccountIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "setWorkItemIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ProcessInstanceWorkitem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "ProcessWorkitemRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "ProcessResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "listAccount",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        }
+    ]
+}

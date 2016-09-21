@@ -1,0 +1,26 @@
+<aura:component >
+    <ltng:require styles="/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <aura:attribute name="options" type="Object[]" required="true" access="global"/>
+    <aura:attribute name="value" type="String" required="true" access="global"/>
+    <aura:attribute name="required" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="isValid" type="Boolean" default="true" required="false" access="global"/>
+    <aura:attribute name="setEmptyOption" type="Boolean" default="true" required="false" access="global"/>
+    <aura:attribute name="smallFont" type="Boolean" default="false" required="false" access="global"/>
+
+    <aura:handler name="change" value="{!v.required}" action="{!c.onRequireChange}"/>
+
+    <div class="f42">
+        <ui:inputSelect class="{!(v.smallFont ? 'smallFont ' : '') + 'form-control'}" aura:id="inputSelect" change="{!c.onValueChange}">
+            <aura:if isTrue="{!v.setEmptyOption}">
+                <ui:inputSelectOption text="" label="-"/>
+            </aura:if>
+
+            <aura:iteration items="{!v.options}" var="opt">
+                 <ui:inputSelectOption text="{!opt.text}" label="{!opt.label}" value="{!opt.text == v.value}"/>
+            </aura:iteration>
+        </ui:inputSelect>
+    </div>
+</aura:component>

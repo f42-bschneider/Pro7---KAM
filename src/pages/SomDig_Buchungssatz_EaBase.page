@@ -1,0 +1,166 @@
+<apex:page doctype="HTML-5.0" standardController="ADvendio__InvoiceItem__c" extensions="SomDig_Buchungssatz_EaBase" title="Erlösaufteilung zu dem InvoiceItem" id="myPage">
+	<apex:form id="myForm">
+		<apex:sectionHeader id="SectionHeader" title="Erlösaufteilung"/>
+
+		<apex:pageBlock id="myBlock">
+
+			<apex:pageMessages id="Messages" escape="false"/>
+
+			<apex:pageBlockButtons location="top">
+	        	<apex:commandButton value="Berechnen" action="{!runProcess}" reRender="Messages,Results"/>
+			</apex:pageBlockButtons>
+
+			<apex:pageBlockSection title="Informationen" columns="1">
+				<apex:outputPanel >
+				Dieses Tool dient vor allem um die mögliche Fehler der EA-Prozess zu erkennen.
+				Es wird nicht geprüft ob für die aktuelle Rechnungssposition schon Buchungssätze erstellt worden sind.
+				Es wird auch keine reale Buchungssätze für die aktuelle Rechnungssposition erstellt und/oder abgespeichert. 
+				</apex:outputPanel>
+			</apex:pageBlockSection>
+
+			<apex:pageBlockSection id="Settings" title="Einstellungen" columns="2">
+				<apex:outputLabel value="Wählen Sie den Prozesstyp aus: " for="ProcessType"/>
+				<apex:SelectList id="ProcessType" value="{!selectedProcessType}" size="1" multiselect="false">
+					<apex:SelectOptions value="{!allProcessTypes}"/>
+				</apex:SelectList>
+
+				<apex:outputPanel >
+					<apex:outputLabel value="Geben Sie das Datum ein, an dem der Prozess gestartet werden soll: " for="RunningDate"/>
+					<ul>
+						<li>
+							<b>Bei Ultimo-5 "Fast Close"</b>:<br/>
+							Aktuelle werden
+							<ul>
+								<li style="margin-left: 0px;">
+									alle Rechnungspositionen von <b>PreInvoices</b> mit einem Rechnungsdatum in den vergangenen Monaten oder/und in dem folgenden Monat von dem ausgewählten Datum,
+								</li>
+								<li style="margin-left: 0px;">
+									alle Rechnungspositionen von <b>fakturierten Rechnungen</b> mit einem Rechnungsdatum in den vergangenen Monaten, jedoch vor dem ausgewählten Datum,
+								</li>
+							</ul>
+							berücksichtigt.<br/><br/>
+							Außerdem wird das ausgewählten Datum in der Hochrechnung für mögliche Extrapolation und Antizipation bei Rechnungspositionen von PreInvoices genutzt.
+							<br/><br/>
+						</li>
+						<li>
+							<b>Bei Ultimo+4</b>:<br/>
+							Aktuelle werden
+							<ul>
+								<li style="margin-left: 0px;">
+									alle Rechnungspositionen von <b>fakturierten Rechnungen</b> mit einem Rechnungsdatum in den vergangenen Monaten, jedoch vor dem ausgewählten Datum,
+								</li>
+							</ul>
+							berücksichtigt.
+						</li>
+					</ul>
+				</apex:outputPanel>
+				<apex:input id="RunningDate" value="{!processRunningDate}" type="date"/>
+
+			</apex:pageBlockSection>
+
+			<apex:outputPanel id="Results">
+			<apex:pageBlockSection title="Erlösaufteilung" columns="1" rendered="{!hasData}">
+                 <apex:pageBlockSection columns="2">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Status der aktuellen Rechnungsposition: "/>
+                        <apex:outputField value="{!RevenueDistributionResults[0].invoiceItem.ADvendio__Invoice__r.ADvendio__Status__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Rechnungsdatum der aktuellen Rechnungsposition: "/>
+                        <apex:outputField value="{!RevenueDistributionResults[0].invoiceItem.ADvendio__Invoice__r.ADvendio__InvoiceDate__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Abrechnung-Startdatum der aktuellen Rechnungsposition: "/>
+                        <apex:outputField value="{!RevenueDistributionResults[0].invoiceItem.ADvendio__Invoice__r.ADvendio__AccountingDate__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Abrechnung-Enddatum der aktuellen Rechnungsposition: "/>
+                        <apex:outputField value="{!RevenueDistributionResults[0].invoiceItem.ADvendio__Invoice__r.ADvendio__AccountingEndDate__c}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputText value="Angewandte Logik: "/>
+                        <apex:outputText >
+                        	<apex:repeat value="{!RevenueDistributionResults[0].matchedLogics}" var="logic">{!logic};&nbsp;</apex:repeat>
+                        </apex:outputText>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="1" rendered="{!NOT(hasResults)}">
+	 				<apex:outputPanel >Keine Erlösaufteilung!</apex:outputPanel>
+	 			</apex:pageBlockSection>
+                <apex:pageBlockSection title="Buchungssätze (SAP relevante Informationen)" columns="1" rendered="{!hasResults}">
+					<apex:outputPanel >
+						<table border="1">			
+							<tr>
+								<th>Belegnummer</th>
+								<th>Belegkopftext</th>
+								<th>Buchungsschlüssel</th>
+								<th>Sachkonto</th>
+								<th>Betrag</th>
+								<th>Steuerkennzeichen</th>
+								<th>Buchungstext</th>
+								<th>Innenauftragsnummer</th>
+								<th>Kostenstelle</th>
+								<th>Zuordnung</th>
+								<th>Referenz</th>
+								<th>Steuerrelevanz</th>
+							</tr>
+							<apex:repeat value="{!RevenueDistributionResults}" var="rdr">
+								<apex:repeat value="{!rdr.accountingRecordsGroups}" var="grp">
+									<apex:repeat value="{!grp.accountingRecords}" var="ar">
+									<tr>
+										<td>{!ar.accountingRecord.SomDig_Belegnummer__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Belegkopftext__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Soll_Haben_Kennzeichen__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Erloeskonto_Sachkonto__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Betrag__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Steuerkennzeichen__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Buchungstext__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Innenauftragsnummer__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Kostenstelle__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Zuordnung__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Referenz__c}</td>
+										<td>{!ar.accountingRecord.SomDig_Steuerrelevanz__c}</td>
+									</tr>
+									</apex:repeat>
+								</apex:repeat>
+							</apex:repeat>
+						</table>
+					</apex:outputPanel>
+				</apex:pageBlockSection>
+	            <apex:pageBlockSection title="PRAP" columns="1" rendered="{!hasPRAPs}">
+					<apex:outputPanel >
+						<table border="1">			
+							<tr>
+								<th>{!$ObjectType.SomDig_PRAP__c.fields.SomDig_Abrechnungsmonat__c.label}</th>
+								<th>{!$ObjectType.SomDig_PRAP__c.fields.SomDig_Abrechnungsmonatsende__c.label}</th>
+								<th>{!$ObjectType.SomDig_PRAP__c.fields.SomDig_AbzugrenzendeErloese__c.label}</th>
+								<th>{!$ObjectType.SomDig_PRAP__c.fields.SomDig_AbgerechneteErloese__c.label}</th>
+								<th>{!$ObjectType.SomDig_PRAP__c.fields.SomDig_Status__c.label}</th>
+								<th>{!$ObjectType.SomDig_PRAP__c.fields.SomDig_NochAbzugrenzendeErloese__c.label}</th>
+							</tr>
+			            	<apex:repeat value="{!RevenueDistributionResults}" var="rdr">
+								<apex:repeat value="{!rdr.prapRecords}" var="prap">
+								<tr>
+	            					<td><apex:outputField value="{!prap.prapRecord.SomDig_Abrechnungsmonat__c}"/></td>
+	            					<td><apex:outputField value="{!prap.prapRecord.SomDig_Abrechnungsmonatsende__c}"/></td>
+	            					<td><apex:outputField value="{!prap.prapRecord.SomDig_AbzugrenzendeErloese__c}"/></td>
+	            					<td><apex:outputField value="{!prap.prapRecord.SomDig_AbgerechneteErloese__c}"/></td>
+	            					<td><apex:outputField value="{!prap.prapRecord.SomDig_Status__c}"/></td>
+	            					<td><apex:outputText value="{!prap.remainingAmount}"/></td>
+	            				</tr>
+	            				</apex:repeat>
+	            			</apex:repeat>
+	            			<tr>
+	            				<td colspan="6" align="center"><apex:commandButton value="PRAPs abspeichern" action="{!savePRAP}" reRender="Messages,Results"/></td>
+	            			</tr>
+	            		</table>
+	            	</apex:outputPanel>
+	            </apex:pageBlockSection>
+			</apex:pageBlockSection>
+			</apex:outputPanel>
+
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

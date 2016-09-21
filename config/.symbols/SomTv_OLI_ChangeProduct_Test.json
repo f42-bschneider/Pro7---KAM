@@ -1,0 +1,731 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgnMIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnMIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "missing_Id_should_display_error",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 23
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "inactive_product_should_display_error",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 57
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "inactive_pricebook_entry_should_display_error",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 91
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "missing_product_should_display_error",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 118
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "choosing_old_product_should_display_error",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 146
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "changeProduct_should_create_and_delete_OLIs",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 178
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "cancel_should_redirect_back",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_OLI_ChangeProduct_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "SomTv_OLI_ChangeProduct_Test",
+        "references": [],
+        "type": "SomTv_OLI_ChangeProduct_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "save",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "messages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "product_1",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "product_2",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "pricebook_entry_1",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "pricebook_entry_2",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "save",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "messages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "product_1",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "product_2",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "pricebook_entry_1",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "pricebook_entry_2",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "save",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "messages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "product",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "pricebook_entry",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "save",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "messages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "product",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 120
+            },
+            "modifiers": [],
+            "name": "pricebook_entry",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "save",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "messages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "product_1",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "product_2",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "pricebook_entry_1",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "pricebook_entry_2",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 161
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "save",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "new_oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "redirect_url",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "changeProduct_page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "SomTv_OLI_ChangeProduct"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 188
+            },
+            "modifiers": [],
+            "name": "cancel",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

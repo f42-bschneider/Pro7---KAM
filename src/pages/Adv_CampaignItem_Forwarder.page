@@ -1,0 +1,6 @@
+<apex:page standardController="ADvendio__Campaign_Item__c" extensions="Adv_CampaignItem_Forwarder" action="{!forward}">
+
+
+
+
+</apex:page>

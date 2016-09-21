@@ -1,0 +1,208 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KKxwIAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KKxwIAG",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testKampagnenLinkTargetController1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 25
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testKampagnenLinkTargetController2",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "KampagnenLinkTargetController_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "KampagnenLinkTargetController_Test",
+        "references": [],
+        "type": "KampagnenLinkTargetController_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "kltc",
+            "references": [],
+            "type": "KampagnenLinkTargetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "acc1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "con1",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "cam1",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "cms1",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "cms2",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "kltc",
+            "references": [],
+            "type": "KampagnenLinkTargetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "campaignMember",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "cm",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "cm",
+            "references": [],
+            "type": "CampaignMember"
+        }
+    ]
+}

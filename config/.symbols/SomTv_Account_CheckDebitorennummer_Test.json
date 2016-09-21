@@ -1,0 +1,154 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgnIIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnIIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testAccountDebitorenNummerChecker",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_Account_CheckDebitorennummer_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "SomTv_Account_CheckDebitorennummer_Test",
+        "references": [],
+        "type": "SomTv_Account_CheckDebitorennummer_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "acc1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "acc2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "acc3",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "ext2",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "ext3",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "adnc",
+            "references": [],
+            "type": "SomTv_Account_CheckDebitorennummer"
+        }
+    ]
+}

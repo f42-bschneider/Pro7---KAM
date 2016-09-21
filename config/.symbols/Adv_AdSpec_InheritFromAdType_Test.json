@@ -1,0 +1,251 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnZRAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnZRAA0",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adSpecInsertShouldInheritValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 22
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adSpecUpdateShouldNotInheritValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 44
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adTypeUpdateShouldUpdateValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 65
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adTypeUpdateShouldOnlyUpdateChangedValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdSpec_InheritFromAdType_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 28,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_AdSpec_InheritFromAdType_Test",
+        "references": [],
+        "type": "Adv_AdSpec_InheritFromAdType_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        }
+    ]
+}

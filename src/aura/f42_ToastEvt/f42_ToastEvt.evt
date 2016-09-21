@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Toast Event" >
+    <aura:attribute name="type" type="String" access="public"/>
+    <aura:attribute name="msg" type="String" access="public"/>
+</aura:event>

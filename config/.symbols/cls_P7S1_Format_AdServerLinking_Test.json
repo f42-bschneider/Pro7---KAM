@@ -1,0 +1,198 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000K0c6IAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K0c6IAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testFormat_AdServerLinking",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_Format_AdServerLinking_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "cls_P7S1_Format_AdServerLinking_Test",
+        "references": [],
+        "type": "cls_P7S1_Format_AdServerLinking_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "I_oFormatObj",
+            "references": [],
+            "type": "P7S1_Format__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "I_sRdTypeId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "I_oAdServerIdObj",
+            "references": [],
+            "type": "ADvendio__AdServer_ID__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "I_oAdServerIdO",
+            "references": [],
+            "type": "ADvendio__AdServer_ID__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "I_clsOb",
+            "references": [],
+            "type": "cls_P7S1_Format_AdServerLinking"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "I_pg2",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "I_pg3",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "I_oAdServerList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "I_oAdServerIdOb",
+            "references": [],
+            "type": "ADvendio__AdServer_ID__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "I_clsObj",
+            "references": [],
+            "type": "cls_P7S1_Format_AdServerLinking"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "I_pg",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "I_pg1",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

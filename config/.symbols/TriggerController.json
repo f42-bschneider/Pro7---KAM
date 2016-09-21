@@ -1,0 +1,541 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 47
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "TriggerController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 67
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "TriggerController",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000JGQUIA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000JGQUIA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 101
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "run",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 129
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runAfterDelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 134
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runAfterInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 139
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runAfterUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 144
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runAfterUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 149
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runBeforeDelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 154
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 159
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runBeforeUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 164
+            },
+            "modifiers": [
+                "virtual",
+                "protected"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "TriggerController",
+    "namespace": "ADvendio",
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 35,
+            "line": 6
+        },
+        "modifiers": [
+            "virtual",
+            "public",
+            "with sharing"
+        ],
+        "name": "TriggerController",
+        "references": [],
+        "type": "TriggerController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 129,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 131,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        }
+    ]
+}        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 131,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "TriggerController"
+        }
+    ]
+}

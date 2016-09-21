@@ -1,0 +1,433 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KB9SIAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KB9SIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "init1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "init2",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "init3",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 46
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "init4",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 60
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testDumpFrontPageCont",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 87
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBatch1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 97
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBatch2",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 105
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBatch3",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 113
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testUtil",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 118
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testMetadataSettingCont",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "z_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 3
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "z_Test",
+        "references": [],
+        "type": "z_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "setting",
+            "references": [],
+            "type": "z_MetaDumpSetting__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "settings",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "setting",
+            "references": [],
+            "type": "z_MetaDumpSetting__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "z_SchemaTemp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "recordid",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "schema",
+            "references": [],
+            "type": "z_SchemaTemp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "cont",
+            "references": [],
+            "type": "z_DumpFrontPageCont"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "str",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "z_MetaDumpSetting__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "ssc",
+            "references": [],
+            "type": "StandardSetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "cont",
+            "references": [],
+            "type": "z_MetadataSettingCont"
+        }
+    ]
+}

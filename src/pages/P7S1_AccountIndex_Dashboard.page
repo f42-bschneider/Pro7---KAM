@@ -1,0 +1,20 @@
+<apex:page standardController="P7S1_AccountIndex__c" sidebar="false" showHeader="false" standardStylesheets="false" >
+    
+    <apex:includeScript value="/lightning/lightning.out.js" />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:P7S1_AccountDashboardApp", function() {
+          $Lightning.createComponent("c:P7S1_AccountDashboardCmp",
+          { accountId : "{!P7S1_AccountIndex__c.P7S1_Account__c}",
+            accountIndexId : "{!P7S1_AccountIndex__c.Id}",
+            isAccountIndex : "true" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+    
+</apex:page>

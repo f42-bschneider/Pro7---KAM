@@ -1,0 +1,225 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "KampagnenLinkTargetController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1hsIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K1hsIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "updateMember",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "KampagnenLinkTargetController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 4
+        },
+        "modifiers": [
+            "without sharing",
+            "global"
+        ],
+        "name": "KampagnenLinkTargetController",
+        "references": [],
+        "type": "KampagnenLinkTargetController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "campaignId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "statusId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "redirectURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "userEmail",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "sAction",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "campaignMemberId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "campaignMemberStatus",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "cms",
+            "references": [],
+            "type": "CampaignMemberStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "campaignMember",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "cm",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "campaignMember",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "cm",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "redirect",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

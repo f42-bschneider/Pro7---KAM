@@ -1,0 +1,553 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cls_SomTv_Campaign",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KKJcIAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KKJcIAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 20
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 29
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 37
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterDelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 45
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 53
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkParentCampaign",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 125
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "prefillCampaignMemberStatus",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 175
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateMN3OfCampaignByIds",
+            "parameters": [
+                {
+                    "name": "campaignIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_SomTv_Campaign",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 4
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "cls_SomTv_Campaign",
+        "references": [],
+        "type": "cls_SomTv_Campaign"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 114,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "lstRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "parentIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "mRecordTypes",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "cam_old",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "mParents",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "AggregateResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "mRecordTypes",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "listDefaults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "lstCMS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "iSortOrder",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "sRCName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "cms",
+            "references": [],
+            "type": "P7S1_CampaignMemberStatusDefaultValues__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "campaignIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "recordTypes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "campaigns",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 189
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+<aura:component >
+
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
+				/resource/f42_ionicons/ionicons/css/ionicons.min.css,
+				/resource/f42_FontAwesome/f42_FontAwesome/css/font-awesome.min.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                		/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js,
+                                		/resource/f42_TableSorter,
+                                		/resource/f42_FixedHeader"
+
+ 		afterScriptsLoaded="{!c.doInitScripts}"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+    <aura:attribute name="stageNames" type="Object[]" required="true" access="global"/>
+
+    <aura:handler event="aura:doneRendering" action="{!c.doUpdateTableSorter}"></aura:handler>
+
+    <aura:attribute name="summaryItems" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="currentYear" type="Integer" access="public"></aura:attribute>
+    <aura:attribute name="userId" type="String" access="public"></aura:attribute>
+
+    <aura:attribute name="itemChanged" type="Boolean" default="false" access="public"/>
+    <aura:attribute name="itemChangedStage" type="Boolean" default="false" access="global"/>
+
+    <aura:registerEvent name="summaryItemClick" type="c:Ven_OppPipeSummaryEvt"></aura:registerEvent>
+    <aura:registerEvent name="summaryItemChanged" type="c:Ven_OppPipeSummaryEvt"></aura:registerEvent>
+
+    <div style="height:600px">
+	    <table aura:id="oppPipeTable" class="table table-bordered table-striped table-hover">
+			<thead>
+				<tr class="fixTr">
+					<th style="width:40px"></th>
+
+					<th class="opp-header" style="width:50px" onclick="{!c.doHandleTableHeaderClick}">Ownership <i class="fa fa-sort"></i></th>
+					<th class="opp-header" style="width:120px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Opp +' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:120px; z-index:1;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Status+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:60px;" onclick="{!c.doHandleTableHeaderClick}">CL <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:70px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Im}1 <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_DealType+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:70px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Country+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:70px;" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Cash+' '} {!$Label.c.Ven_lbl_Yield+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:60px;" onclick="{!c.doHandleTableHeaderClick}">Eff. {!' '+$Label.c.Ven_lbl_Yield+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="opp-header" style="width:90px" onclick="{!c.doHandleTableHeaderClick}">var. comp. <i class="fa fa-sort"></i></th>
+
+					<th class="gmv-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Gmv+' '+ v.currentYear} <i class="fa fa-sort"></i></th>
+
+					<th class="gmv-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Gmv+' '+ (v.currentYear+1)} <i class="fa fa-sort"></i></th>
+
+					<th class="gmv-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_Gmv} {!' '+$Label.c.Ven_lbl_Total+' '} <i class="fa fa-sort"></i></th>
+
+					<th class="potential-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_NetPotential+' '+ v.currentYear} <i class="fa fa-sort"></i></th>
+
+					<th class="potential-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_NetPotential+' '+ (v.currentYear+1)} <i class="fa fa-sort"></i></th>
+
+					<th class="potential-header" style="100px" onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_NetPotential+' '} {!$Label.c.Ven_lbl_Total+' '} <i class="fa fa-sort"></i></th>
+
+					<th onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_LastModified+' Date '} <i class="fa fa-sort"></i></th>
+
+					<th onclick="{!c.doHandleTableHeaderClick}">{!$Label.c.Ven_lbl_LastModified+' By '} <i class="fa fa-sort"></i></th>
+
+
+				</tr>
+			</thead>
+
+			<tbody>
+				<aura:iteration items="{!v.summaryItems}" var="item">
+
+					<tr style="{!item.showItem ? '' : 'display:none'}" >
+						<td style="width:1px!important">
+							<button style="{!v.itemChanged ? 'display:none' : ''}" class="btn btn-primary goDetail btn-xs" data-id="{!item.Id}" onclick="{!c.goDetail}">
+								<i class="ionicons ion-android-more-horizontal" data-id="{!item.Id}"></i>
+							</button>
+						</td>
+
+						<td class="{!v.userId == item.OwnerId ? 'own-opp' : 'team-opp'}">
+							{!v.userId == item.OwnerId ? 'Own' : 'Team'}
+						</td>
+
+						<td style="width:30px!important; cursor:pointer; text-decoration:underline"
+							data-oppid="{!item.Id}" onclick="{!c.doGoOpp}">
+							{!item.Name}
+						</td>
+
+						<td data-oppid="{!item.Id}">
+							<span style="display:none;">{!item.StageName}</span> <!-- needed for sorting -->
+
+							<c:f42_Select2Cmp value="{!item.StageName}"
+								options="{!v.stageNames}"
+								required="true"
+								onChange="{!c.onStageChange}"
+								setEmptyOption="false"/>
+
+							<!--<ui:inputSelect class="form-control input-sm smallFont" change="{!c.onStageChange}">
+					            <aura:iteration items="{!v.stageNames}" var="sn">
+					                 <ui:inputSelectOption text="{!sn.text}" label="{!sn.label}" value="{!sn.text == item.StageName}"/>
+					            </aura:iteration>
+					        </ui:inputSelect>-->
+						</td>
+
+						<td class="text-right" data-oppid="{!item.Id}">
+							<span style="display:none">{!item.Probability}</span>
+							<c:f42_InputNumber value="{!item.Probability}"
+								min="0"
+								max="100"
+								required="true"
+								isInteger="true"
+								isValid="true"
+								textAlign="right"
+								inputSize="input-sm"
+								onChange="{!c.onItemChange}"/>
+						</td>
+
+						<td>{!item.Owner.FirstName + ' ' + item.Owner.LastName}</td>
+
+						<td>{!item.Ven_DealType__c}</td>
+
+						<td>{!item.Ven_Country__r.Name_EN__c}</td>
+
+						<td class="text-right" data-oppid="{!item.Id}">
+							<span style="display:none">{!item.Ven_EstimateCashYieldCurrentYear__c}</span>
+
+							<c:f42_InputNumber value="{!item.Ven_EstimateCashYieldCurrentYear__c}"
+								min="0"
+								max="100"
+								required="true"
+								isInteger="false"
+								isValid="true"
+								textAlign="right"
+								inputSize="input-sm"
+								onChange="{!c.onItemChange}"
+								decimalPlaces="1"/>
+						</td>
+
+						<td class="text-right">{!item.Ven_EffectiveYield__c + '%'}</td>
+
+						<td>
+							<aura:renderIf isTrue="{!item.Ven_Ep__c}">EP<br/></aura:renderIf>
+							<aura:renderIf isTrue="{!item.Ven_EpLight__c}">EP light<br/></aura:renderIf>
+							<aura:renderIf isTrue="{!item.Ven_RevShare__c}">Rev Share</aura:renderIf>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalGmvCurrentYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalGmvNextYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalGmv__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_NetPotentialCurrentYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_NetPotentialNextYear__c}"></ui:outputNumber>
+						</td>
+
+						<td class="text-right">
+							<ui:outputNumber value="{!item.Ven_TotalNetPotential__c}"></ui:outputNumber>
+						</td>
+
+						<td>{!item.Ven_LastModifiedDate__c}</td>
+
+						<td>{!item.Ven_LastModifiedBy__c}</td>
+					</tr>
+				</aura:iteration>
+			</tbody>
+		</table>
+	</div>
+</aura:component>

@@ -1,0 +1,1242 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Account_SalesTeamEditorCtrl",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gHSAAY",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 490
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "vkzSelect",
+                    "parameters": [
+                        {
+                            "name": "vkz",
+                            "type": "SomTv_Verkaeuferzuordnung__c"
+                        },
+                        {
+                            "name": "type",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "vkzSelect",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 45,
+                        "line": 484
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "vkz",
+                    "references": [],
+                    "type": "SomTv_Verkaeuferzuordnung__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 485
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "text",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 486
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "id",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 487
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "type",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 488
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "showError",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 482
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "vkzSelect",
+                "references": [],
+                "type": "vkzSelect"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 55,
+                        "line": 490
+                    },
+                    "modifiers": [],
+                    "name": "vkz",
+                    "references": [],
+                    "type": "SomTv_Verkaeuferzuordnung__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 67,
+                        "line": 490
+                    },
+                    "modifiers": [],
+                    "name": "type",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010gHSAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 66
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkAccessRights",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 81
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "loadAccData",
+            "parameters": [
+                {
+                    "name": "idAcc",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 114
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "prefillVkZ",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 125
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "prefillKVK",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 139
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "addErrorKVKOnCustomer",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 146
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "prefillEavPav",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 220
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "changeTvSalesEav",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 232
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "checkBeforeSave",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 251
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveRelevant",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 262
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveNotRelevant",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 270
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveData",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 373
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkMemberInAccTeam",
+            "parameters": [
+                {
+                    "name": "strAccId",
+                    "type": "String"
+                },
+                {
+                    "name": "strUserId",
+                    "type": "String"
+                },
+                {
+                    "name": "strRole",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 382
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createAccTeamMember",
+            "parameters": [
+                {
+                    "name": "tvSalesUser",
+                    "type": "String"
+                },
+                {
+                    "name": "roleName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 403
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkRelevantFields",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 442
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkKABs",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 453
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "closeModal",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 457
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "openModal",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 464
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "changeAccOwner",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 473
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cancel",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "RemoteAction"
+                }
+            ],
+            "location": {
+                "column": 30,
+                "line": 164
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "searchUser",
+            "parameters": [
+                {
+                    "name": "searchTerm",
+                    "type": "String"
+                },
+                {
+                    "name": "figure",
+                    "type": "String"
+                },
+                {
+                    "name": "curAgency",
+                    "type": "String"
+                },
+                {
+                    "name": "curCust",
+                    "type": "String"
+                },
+                {
+                    "name": "curAccId",
+                    "type": "String"
+                },
+                {
+                    "name": "curAccType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 204
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAllSubRoleIds",
+            "parameters": [
+                {
+                    "name": "roleIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_SalesTeamEditorCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 19
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "accId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 20
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "firstOfYear",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 21
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "errorKVKAgency",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "currentAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "customerAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objKAB",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "lstKAB",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "lstVkZ",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 28
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "tvSalesEavName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "tvSalesEavId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 31
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showKAB",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showModal",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "hasAccess",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 16
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_Account_SalesTeamEditorCtrl",
+        "references": [],
+        "type": "P7S1_Account_SalesTeamEditorCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "mapParam",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "idAcc",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "newListVkZ",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "lstAtmKVK",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "vs",
+            "references": [],
+            "type": "vkzSelect"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 253
+            },
+            "modifiers": [],
+            "name": "kab",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 258
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 276
+            },
+            "modifiers": [],
+            "name": "sp",
+            "references": [],
+            "type": "Savepoint"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 280
+            },
+            "modifiers": [],
+            "name": "tvSalesUser",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 281
+            },
+            "modifiers": [],
+            "name": "tvSalesPAVUser",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "mapRole2Field",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 293
+            },
+            "modifiers": [],
+            "name": "lstInsertVkz",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "vkzs",
+            "references": [],
+            "type": "vkzSelect"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 373
+            },
+            "modifiers": [],
+            "name": "strAccId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 373
+            },
+            "modifiers": [],
+            "name": "strUserId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 373
+            },
+            "modifiers": [],
+            "name": "strRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 374
+            },
+            "modifiers": [],
+            "name": "lstCheckAtm",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 382
+            },
+            "modifiers": [],
+            "name": "tvSalesUser",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 382
+            },
+            "modifiers": [],
+            "name": "roleName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 385
+            },
+            "modifiers": [],
+            "name": "lstOldATM",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 389
+            },
+            "modifiers": [],
+            "name": "newATM",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 420
+            },
+            "modifiers": [],
+            "name": "sel",
+            "references": [],
+            "type": "vkzSelect"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 465
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 474
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "searchTerm",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "figure",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "curAgency",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "curCust",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 116,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "curAccId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 133,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "curAccType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "parentRoles",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "allSubRoleIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 185
+            },
+            "modifiers": [],
+            "name": "roleStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "inputAcc",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "userIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 188
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "lstUser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "roleIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "currentRoleIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "userRole",
+            "references": [],
+            "type": "UserRole"
+        }
+    ]
+}

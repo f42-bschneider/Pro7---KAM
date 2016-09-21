@@ -1,0 +1,55 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KghnIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KghnIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testMediaCampaignDatesUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Dates_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_MediaCampaign_Dates_Test",
+        "references": [],
+        "type": "Adv_MediaCampaign_Dates_Test"
+    },
+    "variables": []
+}

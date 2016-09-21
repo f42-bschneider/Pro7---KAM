@@ -1,0 +1,2 @@
+<apex:page standardController="Opportunity" extensions="Ven_OppPipeline_CmpCtrl" action="{!redirect}">
+</apex:page>

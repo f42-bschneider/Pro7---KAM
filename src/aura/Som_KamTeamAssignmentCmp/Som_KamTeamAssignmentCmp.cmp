@@ -1,0 +1,65 @@
+<aura:component >
+
+    <!-- **************
+    *
+    * Component show acc plan team with matching team members for an account
+    *
+    ****************-->
+
+
+    <aura:attribute name="accPlanTeam" type="Object" access="public"/>
+    <aura:attribute name="selectIsValid" type="Boolean" access="private"/>
+    <aura:attribute name="isNew" type="Boolean" access="public" default="false"/>
+
+    <aura:handler name="init" action="{!c.onInit}" value="{!this}" />
+    <aura:handler name="change" value="{!v.selectIsValid}" action="{!c.setIsValid}"/>
+
+    <div class="f42">
+        <div class="row" style="height:28px">
+            <div class="col-sm-12" style="{!and(v.accPlanTeam.isSelected, not(v.isNew)) ? '' : 'display:none'}">
+                <div style="float:right; margin-bottom:5px;">
+                    <aura:iteration items="{!v.accPlanTeam.allStatus}" var="status">
+                        <div class="badge" style="{!
+                            if(v.accPlanTeam.status == status,
+                                if(status == 'Created',
+                                    'background-color:#FF0033;',
+                                    if(status == 'Invited',
+                                        'background-color:#F9C209;',
+                                        if(status == 'Kickoff',
+                                            'background-color:#2865AC;',
+                                            if(status == 'Review',
+                                                'background-color:#4CAE42;',
+                                                ''
+                                            )
+                                        )
+                                    )
+                                ),
+                                ''
+                            )+'margin-left:2px'
+                        }">
+                            {!status}
+                        </div>
+                    </aura:iteration>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <ui:inputCheckbox change="{!c.setIsValid}"  value="{!v.accPlanTeam.isSelected}"/> {!' '+ v.accPlanTeam.accPlanTeam.Name}
+            </div>
+        </div>
+
+        <div class="row space-top">
+            <div class="col-sm-12">
+                <c:f42_InputSelect aura:id="select2"
+                    value="{!v.accPlanTeam.selectedUserId}"
+                    options="{!v.accPlanTeam.teamMembers}"
+                    required="{!v.accPlanTeam.isSelected}"
+                    isValid="{!v.selectIsValid}"/>
+            </div>
+        </div>
+
+    </div>
+
+</aura:component>

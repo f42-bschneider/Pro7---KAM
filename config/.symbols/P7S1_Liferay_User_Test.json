@@ -1,0 +1,177 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010duzAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010duzAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 12
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "init",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 19
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "deserialize",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 27
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "serialize1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "serialize2",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_User_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_USER_JSON",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 8
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Liferay_User_Test",
+        "references": [],
+        "type": "P7S1_Liferay_User_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "liferayUser",
+            "references": [],
+            "type": "P7S1_Liferay_User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "liferayUser",
+            "references": [],
+            "type": "P7S1_Liferay_User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "liferayUser",
+            "references": [],
+            "type": "P7S1_Liferay_User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "liferayUser",
+            "references": [],
+            "type": "P7S1_Liferay_User"
+        }
+    ]
+}

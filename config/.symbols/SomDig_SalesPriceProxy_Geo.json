@@ -1,0 +1,338 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ctlAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ctlAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "handleInsertOrUpdate",
+            "parameters": [
+                {
+                    "name": "listSelectedCities",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "handleInsertOrUpdate",
+            "parameters": [
+                {
+                    "name": "listSelectedCountries",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "handleInsertOrUpdate",
+            "parameters": [
+                {
+                    "name": "listSelectedRegions",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 30
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "upsertProxies",
+            "parameters": [
+                {
+                    "name": "setCampaignItemIds",
+                    "type": "Set"
+                },
+                {
+                    "name": "geoType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_SalesPriceProxy_Geo",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomDig_SalesPriceProxy_Geo",
+        "references": [],
+        "type": "SomDig_SalesPriceProxy_Geo"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "listSelectedCities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "selectedCity",
+            "references": [],
+            "type": "ADvendio__Selected_City__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "listSelectedCountries",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "selectedCountry",
+            "references": [],
+            "type": "ADvendio__Selected_Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "listSelectedRegions",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "selectedRegion",
+            "references": [],
+            "type": "ADvendio__Selected_Region__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "geoType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "listProxies",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "considerTargetingSurcharge",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "selectedCountry",
+            "references": [],
+            "type": "ADvendio__Selected_Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "selectedRegion",
+            "references": [],
+            "type": "ADvendio__Selected_Region__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "selectedCity",
+            "references": [],
+            "type": "ADvendio__Selected_City__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "helper",
+            "references": [],
+            "type": "Adv_CampaignItem_Helper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        }
+    ]
+}

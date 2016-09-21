@@ -1,0 +1,32 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010heVAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010heVAAQ",
+    "methods": [],
+    "name": "P7S1_OpportunityTeamMember_Handler_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 36
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_OpportunityTeamMember_Handler_Test",
+        "references": [],
+        "type": "P7S1_OpportunityTeamMember_Handler_Test"
+    },
+    "variables": []
+}

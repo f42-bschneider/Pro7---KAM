@@ -1,0 +1,555 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010duvAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010duvAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 28
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "init",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 40
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserActivateSuccess",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 59
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserDeleteSuccess",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 80
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserDeleteFailed",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 101
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserDeleteAuthFailed",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 121
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserActivationAuthFailed",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 141
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserActivateFailed",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 160
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserActivateException",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 179
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "liferayUserDeleteException",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 198
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testInitLiferayRestStatus",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_RestService_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "USERID",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_USER_JSON_ACTIVATE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_USER_JSON_DELETE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_USER_JSON_DELETE_FAILED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_USER_JSON_FAILED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 19
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_AUTH_FAILED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 20
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_RESP_SUCCESS",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "LIFERAY_RESP_FAILED",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 11
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "P7S1_Liferay_RestService_Test",
+        "references": [],
+        "type": "P7S1_Liferay_RestService_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "liferayRestService",
+            "references": [],
+            "type": "P7S1_Liferay_RestService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "restStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "lifeRayRestStatus",
+            "references": [],
+            "type": "P7S1_Liferay_RestStatus"
+        }
+    ]
+}

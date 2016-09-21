@@ -1,0 +1,217 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000K0JIIA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K0JIIA0",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "HttpGet"
+                }
+            ],
+            "location": {
+                "column": 21,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "doGet",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 88
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "queryGetAddressesByCompanyID",
+            "parameters": [
+                {
+                    "name": "pProRexId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 117
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "modifyCountry",
+            "parameters": [
+                {
+                    "name": "p_sCountry",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "GetAddressesByCompanyID",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "RestResource"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 13
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "GetAddressesByCompanyID",
+        "references": [],
+        "type": "GetAddressesByCompanyID"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "RestResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "pProRexId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "ResponseWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "pProRexId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "l_sCountry",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "accounts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "p_sCountry",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

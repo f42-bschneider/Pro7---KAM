@@ -1,0 +1,321 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 8
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "P7S1_RollupBatch",
+            "parameters": [
+                {
+                    "name": "rID",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KiUtIAK",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Stateful",
+        "Database.Batchable"
+    ],
+    "key": "01pD0000000KiUtIAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 14
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 38
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 100
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_RollupBatch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 3
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "r",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 4
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "iUpdates",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 5
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "iTotal",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_RollupBatch",
+        "references": [],
+        "type": "P7S1_RollupBatch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "rID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "sQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "mapOldValues",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "parentRecords",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "parentIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "objParent",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "dValue",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "listUpdateRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        }
+    ]
+}

@@ -1,0 +1,340 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_OLI_Clone",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgnNIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnNIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 49
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "startClone",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 103
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "displayErrMsg",
+            "parameters": [
+                {
+                    "name": "strMsg",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 111
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "back",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "SomTv_OLI_Clone",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "listOppLineItem",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 6
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_OLI_Clone",
+        "references": [],
+        "type": "SomTv_OLI_Clone"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "listOpptId",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "describeResult",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "fieldsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "opptItem",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "sp",
+            "references": [],
+            "type": "Savepoint"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "listOpptLineItemToSave",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "oppt",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "errMsg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "opptLineItem",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "retURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "page",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "strMsg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "retURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "page",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

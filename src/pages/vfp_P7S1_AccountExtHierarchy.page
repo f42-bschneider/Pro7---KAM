@@ -1,0 +1,5 @@
+<apex:page standardController="account" tabStyle="Account" > 
+    <div style="height: 400px" class="bodyDiv" onclick="resizeFrame();">
+        <c:vfc_P7S1_AccountExtHierarchy currentId="{!Account.id}" />
+    </div>
+</apex:page>

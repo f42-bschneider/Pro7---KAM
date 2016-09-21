@@ -1,0 +1,101 @@
+<!--
+    Page Name    : Adv_MediaCampaign_ReportPDFPDF
+    Description  : This page is used to render the Campaign Report as PDF
+    Created By   : Cognizant Technology Solutions
+    Created On   : 5/6/2014
+-->
+<apex:page controller="Adv_MediaCampaign_Report" cache="true"  showHeader="false" renderAs="pdf" >
+
+    <apex:stylesheet value="{!URLFOR($Resource.ReportsStyles, 'qstyles.css')}"/>
+        <apex:outputPanel layout="block" styleClass="line"/>
+
+       <b><apex:outputText value="{!i_sFileName}"/> </b>
+       <br></br>
+
+       <apex:repeat value="{!i_oListPDFWrapper}" var="listMediaCampaign" id="theList">
+         <div style="{!listMediaCampaign.i_sPageBreak}">
+        <!-- Display Columns of Report -->
+        <apex:dataTable value="{!listMediaCampaign.i_oListCampaignItem}" var="media" id="theTable" headerClass="tablehead" rowClasses="odd,even" style="font-size: 8pt; " border="2pt">
+
+
+                       <apex:column style="text-align:center;font-family : Arial;color:white;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Flag}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_PAMStatusFlag__c}"/>
+                      </apex:column>
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Status}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_StatusPAMCockpit__c}"/>
+                      </apex:column>
+
+                    <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.risk}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_IsRiskStatus__c}"/>
+                      </apex:column>
+
+
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Kampagnennummer}</apex:facet>
+                          <apex:outputField value="{!media.ADvendio__Offer_Number__c}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Kampagne}</apex:facet>
+                          <apex:outputField value="{!media.Name}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$Label.Werbetreibender}</apex:facet>
+                          <apex:outputField value="{!media.ADvendio__Account__r.Name}"/>
+                      </apex:column>
+                    <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$Label.Agentur}</apex:facet>
+                          <apex:outputField value="{!media.ADvendio__Agency__r.Name}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Start}</apex:facet>
+                          <apex:outputField value="{!media.ADvendio__Campaign_Start_Date__c}"/>
+                      </apex:column>
+
+
+                       <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.Ende}</apex:facet>
+                          <apex:outputField value="{!media.ADvendio__Campaign_End_Date__c}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Abrechnungsart}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_Abrechnungsart__c}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.N_chster_Positions_Start}</apex:facet>
+                          <apex:outputField value="{!media.SomDigNaechsterPositionStart__c}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header">{!$Label.N_chster_Positions_Ende}</apex:facet>
+                          <apex:outputField value="{!media.SomDigNaechsterPositionEnde__c}"/>
+                      </apex:column>
+                    <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$Label.Letzter_Positions_Ende}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_LetzterPositionEnde__c}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Screenshot_versendet}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_ScreenshotFlag__c}"/>
+                      </apex:column>
+
+
+                       <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;" >
+                          <apex:facet name="header">{!$Label.Kommentar}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_PAMKommentar__c}"/>
+                      </apex:column>
+                      <apex:column style="text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                          <apex:facet name="header" >{!$Label.Inhaber}</apex:facet>
+                          <apex:outputField value="{!media.SomDig_Inhaber_Kuerzel__c}"/>
+                      </apex:column>
+
+
+          </apex:dataTable>
+        </div>
+        </apex:repeat>
+
+
+
+</apex:page>

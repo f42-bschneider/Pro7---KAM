@@ -1,0 +1,380 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Som_KamStrategyProfileTopic",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p3E0000004aBSQAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p3E0000004aBSQAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 23
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 28
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeDelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 33
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createStrategyProfilesForAccPlansAccDetailPlans",
+            "parameters": [
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 60
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "deleteStrategyProfilesFromAccPlansAccDetailPlans",
+            "parameters": [
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Som_KamStrategyProfileTopic",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Som_KamStrategyProfileTopic",
+        "references": [],
+        "type": "Som_KamStrategyProfileTopic"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "accPlanIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "newTopics",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "accPlan",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "spt",
+            "references": [],
+            "type": "Som_KamStrategyProfileTopic__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "accPlanDetail",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "spt",
+            "references": [],
+            "type": "Som_KamStrategyProfileTopic__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 114,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "sptIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "spt",
+            "references": [],
+            "type": "Som_KamStrategyProfileTopic__c"
+        }
+    ]
+}

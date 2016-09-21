@@ -1,0 +1,187 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgnOIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnOIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "myUnitTest",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_OLI_Clone_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 5
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "SomTv_OLI_Clone_Test",
+        "references": [],
+        "type": "SomTv_OLI_Clone_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "closeDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "priceBookEntryNew",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "product",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "pb2",
+            "references": [],
+            "type": "Pricebook2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "pricebookList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "pricebooktest",
+            "references": [],
+            "type": "Pricebook2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "pgRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "cOppt",
+            "references": [],
+            "type": "SomTv_OLI_Clone"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "listOppLineItem",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "oppt",
+            "references": [],
+            "type": "OpportunityLineItem"
+        }
+    ]
+}

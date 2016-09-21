@@ -1,0 +1,460 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KIO3IAO",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KIO3IAO",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "selectSObject",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                },
+                {
+                    "name": "filter",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "selectSObject",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                },
+                {
+                    "name": "moreFields",
+                    "type": "Set"
+                },
+                {
+                    "name": "filter",
+                    "type": "String"
+                },
+                {
+                    "name": "setParentId",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 106
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getSelectedField",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                },
+                {
+                    "name": "addFieldCreateable",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 142
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "countSObject",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                },
+                {
+                    "name": "filter",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 172
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "clone",
+            "parameters": [
+                {
+                    "name": "sobjects",
+                    "type": "LIST"
+                },
+                {
+                    "name": "initialData",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_CloneUtils",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "cls_P7S1_CloneUtils",
+        "references": [],
+        "type": "cls_P7S1_CloneUtils"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "filter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "moreFields",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "filter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 112,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "setParentId",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "parentIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "addFieldCreateable",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "describeResult",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "fieldsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "filter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "ars",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "ar",
+            "references": [],
+            "type": "AggregateResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "sobjects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "initialData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "cloned",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

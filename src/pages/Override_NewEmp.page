@@ -1,0 +1,1 @@
+<apex:page standardController="P7S1_Emp__c" action="{!URLFOR($Action.P7S1_Emp__c.New, null, ['Name'='autofilled'], true)}" />

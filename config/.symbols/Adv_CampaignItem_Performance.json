@@ -1,0 +1,347 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_CampaignItem_Performance",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KghYIAS",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Stateful",
+        "Database.Batchable",
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000KghYIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setRecordIds",
+            "parameters": [
+                {
+                    "name": "recIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addRecordId",
+            "parameters": [
+                {
+                    "name": "recId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 49
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 72
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "records",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 98
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 109
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Performance",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 8
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "batchSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 11
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "recIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 14
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 17
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 5
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_Performance",
+        "references": [],
+        "type": "Adv_CampaignItem_Performance"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "recIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "recId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "toUpdateRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        }
+    ]
+}

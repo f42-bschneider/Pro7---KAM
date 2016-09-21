@@ -1,0 +1,329 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_MediaCampaign_WtAgBeziehung",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgkqIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgkqIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 9
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 13
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 17
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "copyCustomAccountLockupsToADvendioAccountLookups",
+            "parameters": [
+                {
+                    "name": "l_oListNewMediaCampaigns",
+                    "type": "LIST"
+                },
+                {
+                    "name": "l_oMapOldMediaCampaigns",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_WtAgBeziehung",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_MediaCampaign_WtAgBeziehung",
+        "references": [],
+        "type": "Adv_MediaCampaign_WtAgBeziehung"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 87,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 123,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 143,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 145,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "l_oListNewMediaCampaigns",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 162,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "l_oMapOldMediaCampaigns",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "l_oMapWtAgBeziehungen",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "l_oWtAgBeziehung",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "l_oWtAgBeziehung",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        }
+    ]
+}

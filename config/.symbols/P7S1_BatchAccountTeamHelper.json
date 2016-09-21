@@ -1,0 +1,256 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_BatchAccountTeamHelper",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gHJAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gHJAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Batch_Execute",
+            "parameters": [
+                {
+                    "name": "lstObjects",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 43
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Batch_Finish",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 50
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "buildSearchString",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 64
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getFieldnamesFromObject",
+            "parameters": [
+                {
+                    "name": "objName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 78
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getFieldMapFromObject",
+            "parameters": [
+                {
+                    "name": "objName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "P7S1_BatchAccountTeamHelper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_BatchAccountTeamHelper",
+        "references": [],
+        "type": "P7S1_BatchAccountTeamHelper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "lstObjects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "updWtAgList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "objA",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "wtag",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "wherePart",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "objName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "mapFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "strFields",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "SObjectField"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "objName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

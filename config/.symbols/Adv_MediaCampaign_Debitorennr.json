@@ -1,0 +1,380 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_MediaCampaign_Debitorennr",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_MediaCampaign_Debitorennr",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgkkIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgkkIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 18
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 23
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getDebitor",
+            "parameters": [
+                {
+                    "name": "mediaCampaigns",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mediaCampaignsOld",
+                    "type": "Map"
+                },
+                {
+                    "name": "init",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Debitorennr",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 4
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_MediaCampaign_Debitorennr",
+        "references": [],
+        "type": "Adv_MediaCampaign_Debitorennr"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 121,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 141,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 143,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mediaCampaigns",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mediaCampaignsOld",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 140,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "init",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "debitorNumberByAccount",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "mapIsBarterCampaign",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "mcUpdates",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "pl",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "ext",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

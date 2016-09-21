@@ -1,0 +1,750 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_AdPrice_AssignKeys",
+            "parameters": [
+                {
+                    "name": "placementsList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p57000000KnZPAA0",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable"
+    ],
+    "key": "01p57000000KnZPAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 12
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "Iterable",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 21
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "adPricesList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 28
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 32
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromAdPriceTrigger",
+            "parameters": [
+                {
+                    "name": "newAdPricesMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "oldAdPricesMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromPlacementTrigger",
+            "parameters": [
+                {
+                    "name": "newPlacementsMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "oldPlacementsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 70
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "assignKeysToAdPrices",
+            "parameters": [
+                {
+                    "name": "placementsMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "adPricesMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 143
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getPlacementIdTargetingProvidersMap",
+            "parameters": [
+                {
+                    "name": "placementsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 159
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getTargetingProviderKeysMap",
+            "parameters": [
+                {
+                    "name": "placementsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdPrice_AssignKeys",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 6
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "i_placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "FESTPLATZIERUNGEN",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "ROTATIONSAUSSCHLUSS",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Adv_AdPrice_AssignKeys",
+        "references": [],
+        "type": "Adv_AdPrice_AssignKeys"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "placementsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "adPricesList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "newAdPricesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 124,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "oldAdPricesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "relevantPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "relevantAdPricesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "placementIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "newPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 130,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "oldPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "relevantPlacementsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 124,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "adPricesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "deleteableAssignmentsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "insertableAssignmentsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "placementIdTargetingProvidersMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "targetingProviderKeysMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "placementIdAdPricesMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "adPriceIdAssignmentsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "assignment",
+            "references": [],
+            "type": "ADvendio__KeyAdPriceAssignment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "placementId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "targetingProvidersSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "isFestplatzierung",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "existingAssignmentsMatrix",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "assignment",
+            "references": [],
+            "type": "ADvendio__KeyAdPriceAssignment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "targetingProvider",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "placementIdTargetingProvidersMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "targetingProvider",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 116,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "targetingProviderKeysMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 161
+            },
+            "modifiers": [],
+            "name": "targetingProvidersSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "targetingProvider",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        }
+    ]
+}

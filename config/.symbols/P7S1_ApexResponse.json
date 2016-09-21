@@ -1,0 +1,264 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 31
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_ApexResponse",
+            "parameters": [],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_ApexResponse",
+            "parameters": [
+                {
+                    "name": "key",
+                    "type": "Object"
+                },
+                {
+                    "name": "value",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 45
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_ApexResponse",
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_ApexResponse",
+            "parameters": [
+                {
+                    "name": "response",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 63
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_ApexResponse",
+            "parameters": [
+                {
+                    "name": "isSuccess",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "msg",
+                    "type": "String"
+                },
+                {
+                    "name": "key",
+                    "type": "Object"
+                },
+                {
+                    "name": "value",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p3E0000004a7kQAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p3E0000004a7kQAA",
+    "methods": [],
+    "name": "P7S1_ApexResponse",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isSuccess",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "values",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_ApexResponse",
+        "references": [],
+        "type": "P7S1_ApexResponse"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "isSuccess",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "Object"
+        }
+    ]
+}

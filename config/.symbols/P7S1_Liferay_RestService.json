@@ -1,0 +1,93 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dutAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dutAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 15
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "liferayUserActivate",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Liferay_RestStatus",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 23
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "liferayUserDelete",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Liferay_RestStatus",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_RestService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 18,
+            "line": 7
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Liferay_RestService",
+        "references": [],
+        "type": "P7S1_Liferay_RestService"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        }
+    ]
+}

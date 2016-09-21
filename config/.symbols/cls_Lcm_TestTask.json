@@ -1,0 +1,304 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Je10IAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Je10IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "RunTrigger",
+            "parameters": [
+                {
+                    "name": "p_bIsBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_bIsAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_bIsInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_bIsUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_bIsDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_bIsUnDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_olNew",
+                    "type": "LIST"
+                },
+                {
+                    "name": "p_mNewMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "p_olOld",
+                    "type": "LIST"
+                },
+                {
+                    "name": "p_mOldMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 43
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getTestCases",
+            "parameters": [
+                {
+                    "name": "p_oListTestTasks",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "cls_Lcm_TestTask",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "cls_Lcm_TestTask",
+        "references": [],
+        "type": "cls_Lcm_TestTask"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "p_bIsBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "p_bIsAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "p_bIsInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "p_bIsUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "p_bIsDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "p_bIsUnDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "p_olNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "p_mNewMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "p_olOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "p_mOldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "l_oTestCase",
+            "references": [],
+            "type": "Lcm_TestCase__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "l_oTask",
+            "references": [],
+            "type": "Lcm_TestTask__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "l_oMapTestCase",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "l_oTask",
+            "references": [],
+            "type": "Lcm_TestTask__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "p_oListTestTasks",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "l_oSetTestCaseIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "l_oTestTask",
+            "references": [],
+            "type": "Lcm_TestTask__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "l_oMapTestCases",
+            "references": [],
+            "type": "Map"
+        }
+    ]
+}

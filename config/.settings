@@ -1,0 +1,17 @@
+{
+    "projectName": "Pro7 - KAM",
+    "username": "p7s1.bschneider@factory42.com.kam",
+    "id": "893ee1c0-3c62-11e6-848f-bbd982069fa7",
+    "namespace": "",
+    "environment": "sandbox",
+    "loginUrl": "https://test.salesforce.com/",
+    "workspace": "/Users/benjaminschneider/Documents/dev/Workspace_Sublime",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource",
+        "AuraDefinitionBundle"
+    ]
+}

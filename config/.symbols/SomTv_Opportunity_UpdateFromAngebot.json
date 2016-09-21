@@ -1,0 +1,722 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_Opportunity_UpdateFromAngebot",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgnPIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnPIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 24
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 35
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 46
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 59
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "calculateSomTv_MN3",
+            "parameters": [
+                {
+                    "name": "lstNewAngebots",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldAngebots",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 102
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "validateAngebot",
+            "parameters": [
+                {
+                    "name": "lstNewAngebots",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 162
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "validateAngebot",
+            "parameters": [
+                {
+                    "name": "lstNewAngebots",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mOppId2Angebots",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 226
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "updateOppornity",
+            "parameters": [
+                {
+                    "name": "lstNewAngebots",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_Opportunity_UpdateFromAngebot",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "RECORDTYPEFORTVOPP",
+            "references": [],
+            "type": "Set"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "SomTv_Opportunity_UpdateFromAngebot",
+        "references": [],
+        "type": "SomTv_Opportunity_UpdateFromAngebot"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 114,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "lstNewAngebots",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "mapOldAngebots",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "lstNewAngebots",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "isOK",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "mOppId2ChangedAngebots",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "mOppId2ExistedAngebots",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "angebotIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "angebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "lst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "angebots",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "angebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "lst",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 162
+            },
+            "modifiers": [],
+            "name": "lstNewAngebots",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 162
+            },
+            "modifiers": [],
+            "name": "mOppId2Angebots",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "isOK",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 173
+            },
+            "modifiers": [],
+            "name": "angebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "lstAngebots",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 184
+            },
+            "modifiers": [],
+            "name": "otherAngebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "lstNewAngebots",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "mOpps",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 242
+            },
+            "modifiers": [],
+            "name": "mOppId2Angebot",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "angebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 259
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 260
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "angebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 276
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 277
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 279
+            },
+            "modifiers": [],
+            "name": "anzahlAngeboten",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 279
+            },
+            "modifiers": [],
+            "name": "anzahlAngenommen",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 279
+            },
+            "modifiers": [],
+            "name": "anzahlAbgelehnt",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 280
+            },
+            "modifiers": [],
+            "name": "angebot",
+            "references": [],
+            "type": "SomTv_Angebot__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 290
+            },
+            "modifiers": [],
+            "name": "StageName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

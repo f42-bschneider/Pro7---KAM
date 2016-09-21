@@ -1,0 +1,202 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Newsletter_SiteController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gTfAAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTfAAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "unsubscibeNewsletter",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Newsletter_SiteController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "abonnement",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "errorCode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 12
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "abonnementId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 13
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "newsletterUnsubscribeSuccessUrl",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 7
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_Newsletter_SiteController",
+        "references": [],
+        "type": "P7S1_Newsletter_SiteController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "params",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "usrAbo",
+            "references": [],
+            "type": "UpsertResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "pl",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "usrPl",
+            "references": [],
+            "type": "UpsertResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "errorMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "errorMsg",
+            "references": [],
+            "type": "Message"
+        }
+    ]
+}

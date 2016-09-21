@@ -1,0 +1,426 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Som_Kam_RedirectCtrl",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p3E0000004a8xQAA",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 153
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "AccountPlan",
+                    "parameters": [
+                        {
+                            "name": "accPlan",
+                            "type": "Som_Kam__c"
+                        },
+                        {
+                            "name": "accPlanUrl",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AccountPlan",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 27,
+                        "line": 149
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "accPlan",
+                    "references": [],
+                    "type": "Som_Kam__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 151
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "accPlanUrl",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 148
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AccountPlan",
+                "references": [],
+                "type": "AccountPlan"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 39,
+                        "line": 153
+                    },
+                    "modifiers": [],
+                    "name": "accPlan",
+                    "references": [],
+                    "type": "Som_Kam__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 55,
+                        "line": 153
+                    },
+                    "modifiers": [],
+                    "name": "accPlanUrl",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 167
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "AccountPlanDetail",
+                    "parameters": [
+                        {
+                            "name": "accPlanDetail",
+                            "type": "Som_KamDetail__c"
+                        },
+                        {
+                            "name": "accPlanDetailUrl",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AccountPlanDetail",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 163
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "accPlanDetail",
+                    "references": [],
+                    "type": "Som_KamDetail__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 165
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "accPlanDetailUrl",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 162
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AccountPlanDetail",
+                "references": [],
+                "type": "AccountPlanDetail"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 51,
+                        "line": 167
+                    },
+                    "modifiers": [],
+                    "name": "accPlanDetail",
+                    "references": [],
+                    "type": "Som_KamDetail__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 73,
+                        "line": 167
+                    },
+                    "modifiers": [],
+                    "name": "accPlanDetailUrl",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p3E0000004a8xQAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "backToAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "redirect",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "Som_Kam_RedirectCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "parameter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accountPlan",
+            "references": [],
+            "type": "AccountPlan"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "accountPlanDetails",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Som_Kam_RedirectCtrl",
+        "references": [],
+        "type": "Som_Kam_RedirectCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "thisYear",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "accPlans",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "accPlanDetails",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "apd",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "apd",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        }
+    ]
+}

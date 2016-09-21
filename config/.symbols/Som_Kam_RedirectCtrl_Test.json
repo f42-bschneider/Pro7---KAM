@@ -1,0 +1,654 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p3E0000004aAeQAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p3E0000004aAeQAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 17
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBackToAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 39
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsKamAndNoAccPlanYet",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 67
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsKamAccPlanExists",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 95
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsKamAccPlanAndDetailPlanExists",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 128
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsntKamNoAccPlan",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 152
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsntKamNoAccPlanDetail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 178
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsntKamAndAccPlanDetail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 208
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testRedirectIsntKamAndSeveralAccPlanDetails",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Som_Kam_RedirectCtrl_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 30,
+            "line": 15
+        },
+        "modifiers": [
+            "public",
+            "without sharing",
+            "testMethod"
+        ],
+        "name": "Som_Kam_RedirectCtrl_Test",
+        "references": [],
+        "type": "Som_Kam_RedirectCtrl_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "users",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "accPlan",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "accPlan",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "accPlanDetail",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "accPlan",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 162
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "accPlan",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 184
+            },
+            "modifiers": [],
+            "name": "accPlanDetail",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 188
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 189
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 191
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 213
+            },
+            "modifiers": [],
+            "name": "accPlan",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 215
+            },
+            "modifiers": [],
+            "name": "accPlanDetail",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 223
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Som_Kam_RedirectCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

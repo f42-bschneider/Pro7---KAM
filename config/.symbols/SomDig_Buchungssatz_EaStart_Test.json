@@ -1,0 +1,89 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010czpAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010czpAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 21,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testEaStartPagination",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Buchungssatz_EaStart_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "SomDig_Buchungssatz_EaStart_Test",
+        "references": [],
+        "type": "SomDig_Buchungssatz_EaStart_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "crtl",
+            "references": [],
+            "type": "SomDig_Buchungssatz_EaStart"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        }
+    ]
+}

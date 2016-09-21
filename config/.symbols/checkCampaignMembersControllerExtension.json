@@ -1,0 +1,848 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "checkCampaignMembersControllerExtension",
+            "parameters": [
+                {
+                    "name": "controller",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1i3IAC",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "TestCase",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 4
+                },
+                "modifiers": [
+                    "private"
+                ],
+                "name": "TestCase",
+                "references": [],
+                "type": "TestCase"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 10,
+                        "line": 244
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "TableRow",
+                    "parameters": [
+                        {
+                            "name": "accParam",
+                            "type": "Account"
+                        },
+                        {
+                            "name": "contactsStringParam",
+                            "type": "String"
+                        },
+                        {
+                            "name": "contactsParam",
+                            "type": "Set"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "TableRow",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 18,
+                        "line": 239
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "acc",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 17,
+                        "line": 240
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "contactsString",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 241
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "contacts",
+                    "references": [],
+                    "type": "Set"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 18,
+                        "line": 242
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "selected",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 8,
+                    "line": 238
+                },
+                "modifiers": [],
+                "name": "TableRow",
+                "references": [],
+                "type": "TableRow"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 27,
+                        "line": 244
+                    },
+                    "modifiers": [],
+                    "name": "accParam",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 44,
+                        "line": 244
+                    },
+                    "modifiers": [],
+                    "name": "contactsStringParam",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 78,
+                        "line": 244
+                    },
+                    "modifiers": [],
+                    "name": "contactsParam",
+                    "references": [],
+                    "type": "Set"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000K1i3IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 30
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "refreshData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 111
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addAccounts",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 136
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "removeContacts",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 160
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "addExceptionAsMessage",
+            "parameters": [
+                {
+                    "name": "e",
+                    "type": "Exception"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 168
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "insertTestAccount",
+            "parameters": [
+                {
+                    "name": "user",
+                    "type": "User"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 184
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "insertTestUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 14,
+                "line": 202
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "checkCampaignMembersControllerExtension",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "tableRows",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 20
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "thisCampaign",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 22
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "CampaignMembersByContactId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 23
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "campaignAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "testCaseSelector",
+            "references": [],
+            "type": "TestCase"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "DEBUG",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 8
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "lll",
+            "references": [],
+            "type": "LoggingLevel"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "checkCampaignMembersControllerExtension",
+        "references": [],
+        "type": "checkCampaignMembersControllerExtension"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "zielgruppe_B2B_Aktionen",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "zielgruppe_B2B_Aktion",
+            "references": [],
+            "type": "Zielgruppe_B2B_Aktion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "campaignAccounts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "campaignMember",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "preexistingCampaignContactIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "offendingContactsByAccountId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "preexistingCampaignContacts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "thisAccountsOffendingContacts",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "nonCampaignAccounts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "nonCampaignAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "offendingContacts",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "contactListString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "zielgruppe_B2B_AktionenToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "tableRow",
+            "references": [],
+            "type": "TableRow"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "campaignMembersToDelete",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "tableRow",
+            "references": [],
+            "type": "TableRow"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "e",
+            "references": [],
+            "type": "Exception"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 161
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 185
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "testCampaign1",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "user1",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "zielgruppenTestAccount1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "z",
+            "references": [],
+            "type": "Zielgruppe_B2B_Aktion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 213
+            },
+            "modifiers": [],
+            "name": "zielgruppenTestContact1",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 216
+            },
+            "modifiers": [],
+            "name": "zielgruppenCampaignMember1",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "notZielgruppenTestAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "notZielgruppenTestContact1",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "notZielgruppenCampaignMember1",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "checkCampaignMembersControllerExtension"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 234
+            },
+            "modifiers": [],
+            "name": "requeryCMs",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

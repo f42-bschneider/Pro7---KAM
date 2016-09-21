@@ -1,0 +1,136 @@
+<apex:page controller="Lcm_Kanban" sidebar="false" title="Kanban Board">
+
+<style>
+.body{
+    font-family: Verdana,Arial,sans-serif;
+}
+
+.board{
+    border-collapse: collapse;
+}
+
+.board .th{
+  height: 24px;
+  color: #333;
+}
+.stations{
+    width:25%;
+    text-align:center;
+    font-size:14px;
+    border-right:2px #555555 solid;
+    border-left:2px #555555 solid;
+}
+</style>
+
+<apex:sectionHeader title="Kanban for Cases" subtitle="Kanban Board" />
+
+<apex:form >
+   <apex:actionFunction name="refreshBoard" reRender="boardPanel"/>
+    
+    <apex:pageblock >
+        <apex:pageblockSection >
+            
+            <apex:pageblockSectionItem >
+                <apex:outputText >Sprint</apex:outputText>
+                <apex:selectList value="{!sReleaseID}" multiselect="false" size="1" onchange="refreshBoard()">
+                    <apex:selectOption itemLabel="Bitte wählen" itemValue="Bitte wählen" />
+                    <apex:selectOptions value="{!Releases}"/>
+                </apex:selectList>            
+            </apex:pageblockSectionItem>
+            
+            <apex:pageblockSectionItem >
+                <apex:outputText >Projekt</apex:outputText>
+                <apex:selectList value="{!sProject}" multiselect="false" size="1" onchange="refreshBoard()">
+                    <apex:selectOption itemLabel="Alle" itemValue="Alle" />
+                    <apex:selectOptions value="{!Projects}"/>
+                </apex:selectList>            
+            </apex:pageblockSectionItem> 
+            
+
+
+            <apex:pageblockSectionItem >
+                <apex:outputText >User</apex:outputText>
+                <apex:selectList value="{!sUser}" multiselect="false" size="1" onchange="refreshBoard()">
+                    <apex:selectOption itemLabel="Alle" itemValue="Alle" />
+                    <apex:selectOptions value="{!Users}"/>
+                </apex:selectList>            
+            </apex:pageblockSectionItem>                        
+            
+        </apex:pageblockSection>
+        
+    </apex:pageblock>
+    
+
+    
+    <br/>    
+    <input type="button" value="Refresh" onClick="window.location.reload()" />    
+    <br/>
+
+  <apex:outputPanel id="boardPanel">
+    <table class="board" width="100%" >
+
+        <thead style="vertical-align: middle; ">
+            <tr>
+                <apex:repeat value="{!Stations}" var="s" first="1">
+                    <th colspan="2" class="stations">
+                        <span>{!s}</span>
+                    </th>
+                </apex:repeat>
+            </tr>
+
+
+            <tr>
+                <apex:repeat value="{!Stations}" var="s" first="1">
+
+                    <!--
+                    <apex:outputPanel layout="none" rendered="{!s == 'Backlog'}">
+                        <th colspan="2"><span>&nbsp;</span></th>
+                    </apex:outputPanel>-->
+
+
+                    <apex:outputPanel layout="none" rendered="{!s != 'Backlog'}">
+                        <th style="width:12.5%;border-bottom:1px #aaaaaa solid;border-left:2px #555555 solid;text-align:center;font-weight:normal">Doing</th>
+                        <th style="width:12.5%;border-bottom:1px #aaaaaa solid;border-right:2px #555555 solid;text-align:center;font-weight:normal">Done</th>
+                    </apex:outputPanel>
+                </apex:repeat>
+            </tr>
+        </thead>
+
+
+        <tbody style="vertical-align: top">
+            <tr style="height:400px;">
+               <apex:repeat value="{!Stations}" var="s" first="1">
+                    <td style="border-right:1px #aaaaaa solid;border-left:2px #555555 solid;">
+                        <apex:repeat value="{!Tickets[s]}" var="t">
+                             <apex:outputPanel style="display:block" rendered="{!t.objCase.Lcm_KanStatus__c == 'doing'}">
+                                <c:Lcm_KanbanTicket profileImageUrl="{!t.photoUrl}" case="{!t.objCase}"  />
+                             </apex:outputPanel>
+                        </apex:repeat>
+                    </td>
+
+                    <td style="border-right:2px #555555 solid;">
+                        <apex:repeat value="{!Tickets[s]}" var="t">
+                            <apex:outputPanel style="display:block" rendered="{!t.objCase.Lcm_KanStatus__c == 'done'}">
+                                <c:Lcm_KanbanTicket profileImageUrl="{!t.photoUrl}" case="{!t.objCase}" />
+                             </apex:outputPanel>
+                        </apex:repeat>
+                    </td>
+                </apex:repeat>
+            </tr>
+        </tbody>
+
+    </table>
+  </apex:outputPanel>
+
+  <table cellspacing="10">
+      <tr>
+          <td style="background-color:#009ACD;color:white;padding: 3px">Advendio</td>
+          <td style="background-color:#EEB4B4;color:white;padding: 3px">Sales Excellence</td>
+          <td style="background-color:#FF8C00;color:white;padding: 3px">Ventures</td>
+          <td style="background-color:#008B00;color:white;padding: 3px">CRM</td>
+      </tr>
+  </table>
+</apex:form>
+
+
+</apex:page>

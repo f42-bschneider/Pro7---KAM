@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>f42_Select2Evt</members>
+        <members>f42_SelectListCmp</members>
+        <members>f42_Svg</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <version>34.0</version>
+</Package>

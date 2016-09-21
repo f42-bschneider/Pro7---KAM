@@ -1,0 +1,380 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d3tAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010d3tAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 24
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testAccountUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 47
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testAccountAccessUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 70
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testOpportunityApprovalUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 93
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 128
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestUser",
+            "parameters": [
+                {
+                    "name": "i",
+                    "type": "Integer"
+                },
+                {
+                    "name": "idProfile",
+                    "type": "Id"
+                },
+                {
+                    "name": "idRole",
+                    "type": "String"
+                },
+                {
+                    "name": "unit",
+                    "type": "String"
+                },
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_SetSalesFields_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 17
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "insertUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "currentUserId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 19
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cnt",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 15
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Account_SetSalesFields_Test",
+        "references": [],
+        "type": "P7S1_Account_SetSalesFields_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "lstAcc",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "lstAtm",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "lstAccAccess",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "lstOpp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "lstOppApproval",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "idProfile",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "idRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "unit",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

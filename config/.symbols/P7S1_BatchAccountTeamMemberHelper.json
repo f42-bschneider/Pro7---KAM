@@ -1,0 +1,461 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_BatchAccountTeamMemberHelper",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gHVAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gHVAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Batch_Execute",
+            "parameters": [
+                {
+                    "name": "lstObjects",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 85
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "fillAccountVerkaeufer",
+            "parameters": [
+                {
+                    "name": "a",
+                    "type": "Account"
+                },
+                {
+                    "name": "roleName",
+                    "type": "String"
+                },
+                {
+                    "name": "verkaeuferID",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 94
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "populateAccTeamMember",
+            "parameters": [
+                {
+                    "name": "accID",
+                    "type": "Id"
+                },
+                {
+                    "name": "userID",
+                    "type": "Id"
+                },
+                {
+                    "name": "roleName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "AccountTeamMember",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 104
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "deleteOldAccTeamMember",
+            "parameters": [
+                {
+                    "name": "accIDs",
+                    "type": "Set"
+                },
+                {
+                    "name": "roleName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 113
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Batch_Finish",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 120
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "buildSearchString",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "P7S1_BatchAccountTeamMemberHelper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_BatchAccountTeamMemberHelper",
+        "references": [],
+        "type": "P7S1_BatchAccountTeamMemberHelper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "lstObjects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "activeUserIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "insertAccTeamMember",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "accMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "lstAccount",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "accIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "objA",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "vkz",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "lsr",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "newShare",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "newcnt",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "sr",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "roleName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "verkaeuferID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "accID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "userID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "roleName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "newATM",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "accIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "roleName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "lstOldATM",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

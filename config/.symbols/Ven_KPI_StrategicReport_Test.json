@@ -1,0 +1,264 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kge1IAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kge1IAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testVenKPIStrategicReport",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Ven_KPI_StrategicReport_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Ven_KPI_StrategicReport_Test",
+        "references": [],
+        "type": "Ven_KPI_StrategicReport_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "testAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "testOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "testKpi",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "testKpiBlock",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "testKpiBlockEntry",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlockEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "testKpiTemplate",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplate__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "testKpiTemplateEntry",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplateEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "venActualDataId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "venBudgetDataId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "venPlanDataId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "recordType",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "testFinancialModelVersionActualData",
+            "references": [],
+            "type": "Ven_Financial_Model_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "testFinancialModelDataActualData",
+            "references": [],
+            "type": "Ven_Financial_Model_Data__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "testFinancialModelVersionBudgetData",
+            "references": [],
+            "type": "Ven_Financial_Model_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "testFinancialModelDataBudgetData",
+            "references": [],
+            "type": "Ven_Financial_Model_Data__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "testFinancialModelVersionPlanData",
+            "references": [],
+            "type": "Ven_Financial_Model_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "testFinancialModelDataPlanData",
+            "references": [],
+            "type": "Ven_Financial_Model_Data__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "testTask",
+            "references": [],
+            "type": "Task"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "venStrategicReportController",
+            "references": [],
+            "type": "Ven_KPI_StrategicReport"
+        }
+    ]
+}

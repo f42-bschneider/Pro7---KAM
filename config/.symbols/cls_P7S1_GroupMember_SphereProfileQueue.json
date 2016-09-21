@@ -1,0 +1,282 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KePBIA0",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Queueable"
+    ],
+    "key": "01pD0000000KePBIA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "context",
+                    "type": "QueueableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 12
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "DeleteGroupMember",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 23
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "InsertGroupMember",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 32
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "InsertGroupMember",
+            "parameters": [
+                {
+                    "name": "p_oListUsers",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_GroupMember_SphereProfileQueue",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_oSetUserIds",
+            "references": [],
+            "type": "Set"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "cls_P7S1_GroupMember_SphereProfileQueue",
+        "references": [],
+        "type": "cls_P7S1_GroupMember_SphereProfileQueue"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "context",
+            "references": [],
+            "type": "QueueableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "l_oListGMs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "l_oListUsers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "p_oListUsers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "l_oSetUserIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "l_oInsertGm",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "l_oMapGroups",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "l_oGroup",
+            "references": [],
+            "type": "Group"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "l_oMapProfile",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "l_sProfileName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "l_sGroupName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 6,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "l_sGroupId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "l_oGm",
+            "references": [],
+            "type": "GroupMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "l_oGm",
+            "references": [],
+            "type": "GroupMember"
+        }
+    ]
+}

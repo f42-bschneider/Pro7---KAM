@@ -1,0 +1,227 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "P7S1_InvokeUpdateTriggerBatch",
+            "parameters": [
+                {
+                    "name": "query",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010d46AAA",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable"
+    ],
+    "key": "01p570000010d46AAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 14
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 23
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 28
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "invoke",
+            "parameters": [
+                {
+                    "name": "query",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "P7S1_InvokeUpdateTriggerBatch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 8
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 6
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_InvokeUpdateTriggerBatch",
+        "references": [],
+        "type": "P7S1_InvokeUpdateTriggerBatch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "batch",
+            "references": [],
+            "type": "P7S1_InvokeUpdateTriggerBatch"
+        }
+    ]
+}

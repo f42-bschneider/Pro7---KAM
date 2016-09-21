@@ -1,0 +1,468 @@
+<!--
+    Page Name    : VFp_CampaignItem_Position_Report
+    Description  : This page is used to as a custom Report to show the Media Campaign
+    Created By   : Cognizant Technology Solutions
+    Created On   : 5/7/2014
+-->
+<apex:page controller="Adv_CampaignItem_PositionReport">
+    <script>
+        function setFocusOnLoad() {}
+
+        // Event handler for pressing 'Enter' on the OfferNumber search field: trigger 'Search' click instead of executing 'Export' button
+        function handleEnter(event) {
+            if (window.event && window.event.keyCode == 13 || event.which == 13) {
+                event.preventDefault();
+                document.querySelector("input.btn[value={!$Label.Search}]").click();
+            }
+        }
+    </script>
+    <style type="text/css">
+        .loading-icon {
+            background-image: url(/img/loading.gif);
+            width: 16px;
+            height: 16px;
+        }
+        .bottomNav {
+            border: 1px solid #e0e3e5;
+            background: #CEE6E6;
+            padding: 5px;
+            border-top: 1px solid #fff;
+        }
+        a.alpha-link {
+            font-weight: normal;
+            font-size: 91%;
+            padding: 0 7px;
+            color: #015BA7 !important;
+        }
+        a.alpha-link+a.alpha-link {
+            border-left: 1px solid #CFCECE;
+        }
+        a.alpha-link:hover {
+            background-color: #e0f5fc !important;
+            font-weight: bold;
+        }
+        a.alpha-select {
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #C6E1FF;
+            color: #000000 !important;
+        }
+        .search-block {
+            text-align: center;
+        }
+        .search-block input {
+            margin: 0px 15px 0px 5px;
+        }
+        .search-block-button {
+            min-width: 110px;
+        }
+        .process-block {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .process-block input {
+            margin: 0px 15px;
+        }
+        .process-block-button {
+            min-width: 110px;
+        }
+        .page-buttons input {
+            min-width: 110px;
+        }
+        .LabelCol{
+            color:#4A4A56;font-size:0.917em;font-weight:bold;
+        }
+        .data2Col {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        /*
+            .vfHelpText a            {position:relative;}
+            .vfHelpText a span       {display: none;}
+            .vfHelpText a:hover span {
+                display: block;
+                position:absolute;
+                top:1.25em;
+                padding:2px 5px;
+                left:-15em; width:15em;
+                z-index:100;
+                border:1px solid orange;
+                background-color:#FEFDB9;
+                color:black;
+            }
+            a:hover {
+                background:#ffffff; //BG color is a must for IE6
+                text-decoration:none;
+            }
+            a.tooltip span {
+                display:none;
+                padding:2px 3px;
+                margin-left:8px;
+                width:250px;
+            }
+            a.tooltip:hover span{
+                display:inline;
+                position:absolute;
+                background:#FFC;
+                border:1px solid #cccccc;
+                color:#000000;
+            }
+        */
+    </style>
+
+   <apex:form id="TheForm">
+       <apex:pageBlock title="{!$Label.Select_Filters_for_Position_Report}" id="selectionBlock" mode="maindetail" >
+        <apex:pageMessages />
+        <br/>
+        <apex:panelGrid columns="20">
+            <!-- Filter to select the Campaign Number -->
+            <apex:outputText value="{!$Label.Kampagnennummer} {!$Label.Search}" styleclass="LabelCol"/>
+            <apex:inputText value="{!i_sSearchOfferNumber}" size="8" onkeydown="handleEnter(event)" />
+            <apex:commandButton value="{!$Label.Search}" action="{!refreshController}" reRender="TablePanel,selectionBlock" status="TableUpdateStatus"/>
+            <br></br>
+            <!-- Filter to select the Users -->
+            <apex:outputText value="{!$Label.Select_Users}" styleclass="LabelCol"/>
+            <apex:selectList id="unselected_list" required="false"
+                value="{!i_sListUserselected}" multiselect="true" size="5" style="width:180px">
+                <apex:selectOptions value="{!User}"/>
+                <apex:actionSupport action="{!refreshController}" event="onchange" reRender="TablePanel,selectionBlock" status="TableUpdateStatus" />
+            </apex:selectList>
+            <br></br>
+            <!-- Filter to select the Status -->
+            <apex:outputText value="{!$Label.Positionsstatus_PR}" styleclass="LabelCol"/>
+            <apex:selectList multiselect="true" value="{!i_sListSelectedStatus}" size="5">
+               <apex:selectOptions value="{!PositionStatus}" />
+               <apex:actionSupport action="{!refreshController}" event="onchange" reRender="TablePanel,selectionBlock" status="TableUpdateStatus" />
+            </apex:selectList>
+            <br></br>
+            <!-- Filter to select the Agency -->
+            <apex:outputText value="{!$ObjectType.ADvendio__MediaCampaign__c.Fields.ADvendio__Agency__c.Label}" styleclass="LabelCol"/>
+            <apex:selectList value="{!i_sListSelectedAgency}" multiselect="true" size="5">
+                <apex:selectOptions value="{!Agency}"/>
+                <apex:actionSupport action="{!refreshController}" event="onchange" reRender="TablePanel,selectionBlock" status="TableUpdateStatus" />
+            </apex:selectList>
+            <br></br>
+            <!-- Filter to select the Advertiser -->
+            <apex:outputText value="{!$ObjectType.SomDig_WtAgBeziehung__c.Fields.SomDig_Werbetreibender__c.Label}" styleclass="LabelCol"/>
+            <apex:selectList value="{!i_sListSelectedAdvertiser}" multiselect="true" size="5">
+                <apex:selectOptions value="{!Advertiser}"/>
+                <apex:actionSupport action="{!refreshController}" event="onchange" reRender="TablePanel,selectionBlock" status="TableUpdateStatus" />
+            </apex:selectList>
+            <br></br>
+            <!-- Filter to select the Campaign -->
+            <apex:outputText value="{!$Label.Kampagne}" styleclass="LabelCol"/>
+            <apex:selectList value="{!i_sListSelectedCampaign}" multiselect="true" size="5">
+                <apex:selectOptions value="{!Campaign}"/>
+                <apex:actionSupport action="{!refreshController}" event="onchange" reRender="TablePanel,selectionBlock" status="TableUpdateStatus" />
+            </apex:selectList>
+            <br></br>
+        </apex:panelGrid>
+    </apex:pageBlock>
+      <apex:pageBlock id="TablePanel" mode="maindetail">
+          <apex:pageBlockButtons location="top">
+              <apex:commandButton value="{!$Label.Save}" id="saveButton" reRender="TablePanel" action="{!saveInline}" status="TableUpdateStatus" title="{!$Label.SaveToolTip}"/>
+          </apex:pageBlockButtons>
+          <div>
+          <!-- Filter to select the Export type -->
+          <apex:selectList value="{!i_sSelectedContentType}" multiselect="false" size="1">
+                        <apex:selectOptions value="{!ExportReport}"/>
+                    </apex:selectList>
+            <apex:commandbutton value="{!$Label.Export}" action="{!CreateReport}"></apex:commandbutton>
+            <!-- Alpha Numeric Sorting -->
+            <span style="float: right; margin: 5px 5px 5px 5px;"> <apex:repeat value="{!i_sListAlpha}" var="a">
+                  <apex:commandLink value="{!a}" action="{!refreshController}" rerender="TablePanel,selectionBlock"
+                     styleClass="alpha-link{!if(i_sAlphaFilter=a,' alpha-select','')}" status="TableUpdateStatus">
+                     <apex:param name="i_sAlphaFilter" value="{!a}" assignTo="{!i_sAlphaFilter}" />
+                  </apex:commandLink>
+               </apex:repeat>
+            </span>
+         </div>
+
+         <apex:actionStatus id="TableUpdateStatus">
+            <apex:inputHidden value="{!i_sAlphaFilter}" id="hiddenField" />
+            <apex:facet name="start">
+               <apex:outputPanel layout="block" styleClass="message infoM4">
+                  <apex:panelGrid columns="2" styleClass="messageTable" columnClasses="messageCell" style="padding:0px;margin:0px;">
+                     <apex:panelGroup >
+                        <img class="loading-icon" src="/s.gif" />
+                     </apex:panelGroup>
+                     <apex:panelGroup >
+                        <div class="messageText">{!$Label.Please_wait}</div>
+                     </apex:panelGroup>
+                  </apex:panelGrid>
+               </apex:outputPanel>
+            </apex:facet>
+
+            <apex:facet name="stop">
+            <apex:outputpanel >
+             <!-- Display Column Headings of Report -->
+             <table class="list">
+             <thead class="rich-table-thead">
+             <tr class="headerRow">
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus" >
+                         <apex:param name="i_sSortField" value="SomDig_StatusFlagPosition__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Flag_Pos}{!IF(i_sSortField=='SomDig_StatusFlagPosition__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_StatusFlagPosition__c.inlineHelpText}" style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_StatusFlagPosition__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_PositionStatus__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Status_Pos}{!IF(i_sSortField=='SomDig_PositionStatus__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_PositionStatus__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_PositionStatus__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__PositionNumber__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Pos_Nr_PR}{!IF(i_sSortField=='ADvendio__PositionNumber__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__PositionNumber__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__PositionNumber__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_LineItemInAdServer__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.DFP_Pos_Nr_PR}{!IF(i_sSortField=='SomDig_LineItemInAdServer__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_LineItemInAdServer__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_LineItemInAdServer__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="Name" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Werbemittel_PR}{!IF(i_sSortField=='Name',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.Name.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.Name.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__Media_Campaign__r.ADvendio__Account__r.Name" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Werbetreibender_PR}{!IF(i_sSortField=='ADvendio__Media_Campaign__r.ADvendio__Account__r.Name',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                          <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.Account.fields.Name.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.Account.fields.Name.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__from_Date__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Start_PR}{!IF(i_sSortField=='ADvendio__from_Date__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                          <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__from_Date__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__from_Date__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__until_Date__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Ende_PR}{!IF(i_sSortField=='ADvendio__until_Date__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__until_Date__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__until_Date__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__Billing_category__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Abrechnungsart_PR}{!IF(i_sSortField=='ADvendio__Billing_category__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Billing_category__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Billing_category__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__Quantity__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Menge_PR}{!IF(i_sSortField=='ADvendio__Quantity__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Quantity__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Quantity__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_AIClicksSollBisHeute__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.SOLL_aktuell_PR}{!IF(i_sSortField=='SomDig_AIClicksSollBisHeute__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_AIClicksSollBisHeute__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_AIClicksSollBisHeute__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_AiClicksIst__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.IST_aktuell_PR}{!IF(i_sSortField=='SomDig_AiClicksIst__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_AiClicksIst__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_AiClicksIst__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_Risk__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.risk}{!IF(i_sSortField=='SomDig_Risk__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_Risk__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_Risk__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="ADvendio__PerformanceIndicator__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.DFP_Prognose_PR}{!IF(i_sSortField=='ADvendio__PerformanceIndicator__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__PerformanceIndicator__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__PerformanceIndicator__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="Status_Screenshot__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Screenshot_PR}{!IF(i_sSortField=='Status_Screenshot__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.Status_Screenshot__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.Status_Screenshot__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_PAMKommentar__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Kommentar_PR}{!IF(i_sSortField=='SomDig_PAMKommentar__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_PAMKommentar__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_PAMKommentar__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+
+
+
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink >
+                         <apex:outputText value="{!$Label.MB3_PR}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Amount_B3__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Amount_B3__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink >
+                         <apex:outputText value="{!$Label.MN2_PR}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Amount_net_net__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__Amount_net_net__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink >
+                         <apex:outputText value="{!$Label.eTKP_PR}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__eCPC__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.ADvendio__eCPC__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                  <th class="headerRow" scope="col" colspan="1">
+                     <apex:commandLink action="{!SortToggle}" rerender="TablePanel" status="TableUpdateStatus">
+                         <apex:param name="i_sSortField" value="SomDig_Inhaber_Kuerzel__c" assignTo="{!i_sSortField}" />
+                         <apex:outputText value="{!$Label.Inhaber}{!IF(i_sSortField=='SomDig_Inhaber_Kuerzel__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                         <img src="/resource/Help_Icon" class="helpIcon" title="{!$ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_Inhaber_Kuerzel__c.inlineHelpText}"
+                         style="visibility: {!IF($ObjectType.ADvendio__Campaign_Item__c.fields.SomDig_Inhaber_Kuerzel__c.inlineHelpText=" ","hidden","displayed")}">
+                            </img>
+                     </apex:commandLink>
+                 </th>
+                 </tr>
+                 </thead>
+                 <apex:repeat value="{!MediaCampaign}" var="media">
+                     <!-- Display Grouped Row by Campaign Name -->
+                     <tr bgcolor="#ddddee" class="dataRow even  first  last" onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">
+
+                         <td class="dataCell" colspan="19">
+                         <b><u>
+                         <apex:outputField value="{!media.ADvendio__Offer_Number__c}"/> /
+                         <a href="/{!media.ADvendio__Account__c}" target="_blank" id="{!media.ADvendio__Account__c}" onblur="LookupHoverDetail.getHover('{!media.ADvendio__Account__c}').hide();" onfocus="LookupHoverDetail.getHover('{!media.ADvendio__Account__c}', '/{!media.ADvendio__Account__c}/m?retURL=%2F{!media.ADvendio__Account__c}&isAjaxRequest=1').show();" onmouseout="LookupHoverDetail.getHover('{!media.ADvendio__Account__c}').hide();" onmouseover="LookupHoverDetail.getHover('{!media.ADvendio__Account__c}', '/{!media.ADvendio__Account__c}/m?retURL=%2F{!media.ADvendio__Account__c}&isAjaxRequest=1').show();">{!media.ADvendio__Account__r.Name}</a> /
+
+                         <a href="/{!media.Id}" target="_blank" id="{!media.Id}" onblur="LookupHoverDetail.getHover('{!media.Id}').hide();" onfocus="LookupHoverDetail.getHover('{!media.Id}', '/{!media.Id}/m?retURL=%2F{!media.Id}&isAjaxRequest=1').show();" onmouseout="LookupHoverDetail.getHover('{!media.Id}').hide();" onmouseover="LookupHoverDetail.getHover('{!media.Id}', '/{!media.Id}/m?retURL=%2F{!media.Id}&isAjaxRequest=1').show();">{!media.Name}</a></u></b> - {!media.ADvendio__Advertising_Media__r.size} records
+                         </td>
+
+                     </tr>
+                     <!-- Display Columns of Report -->
+                     <apex:repeat value="{!media.ADvendio__Advertising_Media__r}" var="item">
+                         <tr class="dataRow even  first  last" onmouseover="if (window.hiOn){hiOn(this);} " onmouseout="if (window.hiOff){hiOff(this);} " onblur="if (window.hiOff){hiOff(this);}" onfocus="if (window.hiOn){hiOn(this);}">
+                             <td><apex:outputField value="{!item.SomDig_StatusFlagPosition__c}"/></td>
+                             <td><apex:outputField value="{!item.SomDig_PositionStatus__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__PositionNumber__c}"/></td>
+                            <td>
+                                 <a href="{!item.SomDig_LineItemInAdServer__c}" target="_blank">
+                                     <apex:outputField value="{!item.SomDig_LineItemInAdServer__c}"/>
+                                 </a>
+                             </td>
+                             <td>
+                                 <a href="/{!item.Id}" target="_blank" id="{!item.Id}" onblur="LookupHoverDetail.getHover('{!item.Id}').hide();" onfocus="LookupHoverDetail.getHover('{!item.Id}', '/{!item.Id}/m?retURL=%2F{!item.Id}&isAjaxRequest=1').show();" onmouseout="LookupHoverDetail.getHover('{!item.Id}').hide();" onmouseover="LookupHoverDetail.getHover('{!item.Id}', '/{!item.Id}/m?retURL=%2F{!item.Id}&isAjaxRequest=1').show();">
+                                     <apex:outputField value="{!item.Name}"/>
+                                 </a>
+                             </td>
+                             <td><apex:outputField value="{!item.ADvendio__Media_Campaign__r.ADvendio__Account__r.Name}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__from_Date__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__until_Date__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__Billing_category__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__Quantity__c}"/></td>
+                             <td><apex:outputField value="{!item.SomDig_AIClicksSollBisHeute__c}"/></td>
+                             <td><apex:outputField value="{!item.SomDig_AiClicksIst__c}"/></td>
+                             <td><apex:outputField value="{!item.SomDig_Risk__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__PerformanceIndicator__c}"/></td>
+                             <td>
+                                 <apex:outputField value="{!item.Status_Screenshot__c}">
+                                     <apex:inlineEditSupport event="ondblclick"/>
+                                 </apex:outputField>
+                             </td>
+                             <td>
+                                 <apex:outputField value="{!item.SomDig_PAMKommentar2__c}">
+                                     <apex:inlineEditSupport event="ondblclick"/>
+                                 </apex:outputField>
+                             </td>
+                             <td><apex:outputField value="{!item.ADvendio__Amount_B3__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__Amount_net_net__c}"/></td>
+                             <td><apex:outputField value="{!item.ADvendio__eCPC__c}"/></td>
+                             <td>
+                                 <a href="/{!item.ADvendio__Media_Campaign__r.OwnerId}" target="_blank" id="{!item.ADvendio__Media_Campaign__r.OwnerId}" onblur="LookupHoverDetail.getHover('{!item.ADvendio__Media_Campaign__r.OwnerId}').hide();" onfocus="LookupHoverDetail.getHover('{!item.ADvendio__Media_Campaign__r.OwnerId}', '/{!item.ADvendio__Media_Campaign__r.OwnerId}/m?retURL=%2F{!item.ADvendio__Media_Campaign__r.OwnerId}&isAjaxRequest=1').show();" onmouseout="LookupHoverDetail.getHover('{!item.ADvendio__Media_Campaign__r.OwnerId}').hide();" onmouseover="LookupHoverDetail.getHover('{!item.ADvendio__Media_Campaign__r.OwnerId}', '/{!item.ADvendio__Media_Campaign__r.OwnerId}/m?retURL=%2F{!item.ADvendio__Media_Campaign__r.OwnerId}&isAjaxRequest=1').show();">
+                                     <apex:outputField value="{!item.SomDig_Inhaber_Kuerzel__c}"/>
+                                 </a>
+                             </td>
+                         </tr>
+                     </apex:repeat>
+
+                 </apex:repeat>
+             </table>
+           </apex:outputpanel>
+           </apex:facet>
+         </apex:actionStatus>
+         <div style="margin-top: 5px;">
+            <!-- Pagination -->
+            <span class="page-buttons" style="float: left; margin-bottom: 5px;">
+                <apex:commandButton disabled="{!!i_oStandardSetController.hasprevious}" value="Previous" action="{!i_oStandardSetController.previous}" rerender="TablePanel" status="TableUpdateStatus"/>
+                <apex:commandButton disabled="{!!i_oStandardSetController.hasnext}" value="Next" action="{!i_oStandardSetController.next}" rerender="TablePanel" status="TableUpdateStatus"/>
+            </span>
+            <!-- Filter to select Number of Records per Page -->
+            <span style="float: right; margin: 5px 5px 5px 5px;">
+                <apex:outputText value="{!$Label.RecordsPerPage}" />
+                <apex:selectList value="{!i_sRecordPerPage}" size="1">
+                    <apex:selectOptions value="{!i_soListRecordPerPage}" />
+                    <apex:actionSupport event="onchange" action="{!refreshController}" reRender="TablePanel" status="TableUpdateStatus" />
+                </apex:selectList>
+            </span>
+         </div>
+      </apex:pageBlock>
+   </apex:form>
+</apex:page>

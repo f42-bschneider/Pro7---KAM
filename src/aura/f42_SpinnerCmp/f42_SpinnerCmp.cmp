@@ -1,0 +1,12 @@
+<aura:component >
+	<ltng:require styles="/resource/f42_Spinner"></ltng:require>
+
+	<aura:attribute name="visible" type="Boolean" access="public"/>
+            <aura:Attribute name="position" type="String" default="fixed" required="false" access="public" />
+
+	<aura:renderIf isTrue="{!v.visible}">
+               <div class="spinnerOverlay" style="{! 'z-index:9999;position:' + v.position}">
+	       <div class="spinner" style="{! 'z-index:10000;position:' + v.position}"></div>
+	   </div>
+	</aura:renderIf>
+</aura:component>

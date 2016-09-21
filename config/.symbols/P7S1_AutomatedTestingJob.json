@@ -1,0 +1,671 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ctyAAA",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable"
+    ],
+    "key": "01p570000010ctyAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 3
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "SC",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "Future"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "processAsyncResults",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 78
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "checkClassStatus",
+            "parameters": [
+                {
+                    "name": "jobIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 89
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCompletedAsyncJobsIds",
+            "parameters": [
+                {
+                    "name": "groupedTestsByJob",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 123
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "checkMethodStatus",
+            "parameters": [
+                {
+                    "name": "jobIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 155
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "sendTestResultEmail",
+            "parameters": [
+                {
+                    "name": "jobTestResults",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 181
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getTestResultHtmlEmailBody",
+            "parameters": [
+                {
+                    "name": "jobTestResults",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AutomatedTestingJob",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_AutomatedTestingJob",
+        "references": [],
+        "type": "P7S1_AutomatedTestingJob"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "SC",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "cs",
+            "references": [],
+            "type": "P7S1_Settings__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "queuedTests",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "AsyncIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "queuedJob",
+            "references": [],
+            "type": "P7S1_Settings__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "queuedItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "groupedTestsByJob",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "atqi",
+            "references": [],
+            "type": "ApexTestQueueItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "groupedTests",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "groupedTests",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "completedAsyncIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "testResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "groupedTestResultsByJob",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "testResult",
+            "references": [],
+            "type": "ApexTestResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "groupedTestsResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "groupedTestsResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "queuedTestsToDelete",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "jobTestResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "jobIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "item",
+            "references": [],
+            "type": "ApexTestQueueItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "extStatus",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "groupedTestsByJob",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "completedAsyncJobIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "listApexTestQueueItem",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "jobTests",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "allCompleted",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "queuedTest",
+            "references": [],
+            "type": "ApexTestQueueItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "jobIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "results",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "atr",
+            "references": [],
+            "type": "ApexTestResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "jobTestResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "emailAddress1",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 163
+            },
+            "modifiers": [],
+            "name": "toAddresses",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "emailSubject",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "testResultEmailbody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "jobTestResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 190
+            },
+            "modifiers": [],
+            "name": "successTests",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 191
+            },
+            "modifiers": [],
+            "name": "failedTests",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 193
+            },
+            "modifiers": [],
+            "name": "jobTestResult",
+            "references": [],
+            "type": "ApexTestResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "numTestsRun",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "numFailures",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "successNum",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "testResultBody",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

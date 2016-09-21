@@ -1,0 +1,49 @@
+.THIS.container {	width: 100%;
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.THIS .center {
+	margin: 0px auto;
+}
+
+.THIS .content {
+	max-width: 768px;
+	font-size: 12px;
+	color: #3c3d3e;
+}
+
+.THIS th {
+	text-align:center!important;
+}
+
+.THIS .text-right {
+	text-align:right!important;
+}
+
+.THIS .opp-header {
+	background-color: #1D437F;
+	color:white;
+}
+
+.THIS .gmv-header {
+	background-color: #2C64BF;
+	color:white;
+}
+
+.THIS .potential-header {
+	background-color: #12284C;
+	color:white;
+}
+
+.THIS .own-opp {
+	background-color: #D7D7D7;
+}
+
+.THIS .team-opp {
+	background-color: #A6A6A6;
+}
+
+.THIS .smallFont{
+	font-size:10px!important;
+}

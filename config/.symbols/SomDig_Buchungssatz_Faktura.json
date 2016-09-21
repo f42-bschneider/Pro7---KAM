@@ -1,0 +1,826 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomDig_Buchungssatz_Faktura",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgmiIAC",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Stateful",
+        "Database.Batchable",
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000KgmiIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 43
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 53
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 67
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 195
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 204
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "invoices",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 217
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createBuchungssatzForInvoices",
+            "parameters": [
+                {
+                    "name": "invoiceIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 253
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createBuchungssatz",
+            "parameters": [
+                {
+                    "name": "invoice",
+                    "type": "ADvendio__Invoice__c"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Buchungssatz__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 311
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "formatDate",
+            "parameters": [
+                {
+                    "name": "d",
+                    "type": "Date"
+                },
+                {
+                    "name": "format",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 321
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "formatNumber",
+            "parameters": [
+                {
+                    "name": "d",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 331
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getBuchungstext",
+            "parameters": [
+                {
+                    "name": "invoice",
+                    "type": "ADvendio__Invoice__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 340
+            },
+            "modifiers": [
+                "static",
+                "webService",
+                "global"
+            ],
+            "name": "buchungssaetzeErstellen",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Buchungssatz_Faktura",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 7
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "successNumberOfInvoices",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "instanceName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 19
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "errorMessages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batchBaseQuery",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 5
+        },
+        "modifiers": [
+            "without sharing",
+            "global"
+        ],
+        "name": "SomDig_Buchungssatz_Faktura",
+        "references": [],
+        "type": "SomDig_Buchungssatz_Faktura"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Organization"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "job",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "sapDatei",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "accountingEndDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "accountingEndDateTime",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "buchungskreis",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "jahr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "monat",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "tag",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "recordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "toAddresses",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "emailAdress",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 120
+            },
+            "modifiers": [],
+            "name": "htmlbody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "sapDateiClass",
+            "references": [],
+            "type": "SomDig_SapDatei"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "numJobs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "sysTime",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "chronExpression",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 195
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "invoices",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "invoiceIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "invoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "invoiceIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 218
+            },
+            "modifiers": [],
+            "name": "bss",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "invoicesWithBuchungssatz",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "invoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 229
+            },
+            "modifiers": [],
+            "name": "bs",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 237
+            },
+            "modifiers": [],
+            "name": "sp",
+            "references": [],
+            "type": "Savepoint"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 253
+            },
+            "modifiers": [],
+            "name": "invoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 254
+            },
+            "modifiers": [],
+            "name": "recordTypeName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 256
+            },
+            "modifiers": [],
+            "name": "sachkontoTyp",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 268
+            },
+            "modifiers": [],
+            "name": "bs",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 311
+            },
+            "modifiers": [],
+            "name": "d",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 311
+            },
+            "modifiers": [],
+            "name": "format",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 321
+            },
+            "modifiers": [],
+            "name": "d",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "invoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 332
+            },
+            "modifiers": [],
+            "name": "buchungstext",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

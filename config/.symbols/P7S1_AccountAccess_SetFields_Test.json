@@ -1,0 +1,212 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010diHAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010diHAAQ",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "setOwnerAndIndex",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 28
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "setOwnerAndAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccountAccess",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_AccountAccess__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AccountAccess_SetFields_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 55
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "accountAccess_TestData",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 28,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "P7S1_AccountAccess_SetFields_Test",
+        "references": [],
+        "type": "P7S1_AccountAccess_SetFields_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "accountIndex",
+            "references": [],
+            "type": "P7S1_AccountIndex__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "accountIndex",
+            "references": [],
+            "type": "P7S1_AccountIndex__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

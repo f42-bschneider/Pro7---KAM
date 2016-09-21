@@ -1,0 +1,27 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dueAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dueAAA",
+    "methods": [],
+    "name": "P7S1_Liferay_EnumCompanyType",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 13,
+            "line": 8
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Liferay_EnumCompanyType",
+        "references": [],
+        "type": "P7S1_Liferay_EnumCompanyType"
+    },
+    "variables": []
+}

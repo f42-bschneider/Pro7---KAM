@@ -1,0 +1,13 @@
+<apex:page standardController="Contact"  extensions="ContactFlusherController" renderas="html" sideBar="true" showHeader="true">
+    <head>
+        <style type="text/css">   
+        </style>
+    </head>
+    <body>
+    <apex:form style="width:100%;text-align:center">
+    <br/><br/><br/>Kontaktdaten wirklich löschen?<br/>
+    <apex:commandButton value="Ja" action="{!flush}" />
+    <apex:commandButton value="Nein" action="{!backToContact}" />
+    </apex:form>
+    </body>
+</apex:page>

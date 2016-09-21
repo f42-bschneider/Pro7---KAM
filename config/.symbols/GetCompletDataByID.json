@@ -1,0 +1,142 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000K0JLIA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K0JLIA0",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "HttpGet"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "doGet",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "GetCompletDataByID",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "RestResource"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 11
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "GetCompletDataByID",
+        "references": [],
+        "type": "GetCompletDataByID"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "RestResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "pProRexCompanyID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "pProRexPersonID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "ResponseWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "contactdata",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "accountdata",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "addressdata",
+            "references": [],
+            "type": "Map"
+        }
+    ]
+}

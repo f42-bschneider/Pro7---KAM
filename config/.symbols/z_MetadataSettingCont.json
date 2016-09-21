@@ -1,0 +1,192 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "z_MetadataSettingCont",
+            "parameters": [
+                {
+                    "name": "controller",
+                    "type": "StandardSetController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KB9OIAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KB9OIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "deleteSelected",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "deleteAll",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "loadMetadataFromDB",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "loadMetadata",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "z_MetadataSettingCont",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "rPage",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 5
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setCon",
+            "references": [],
+            "type": "StandardSetController"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "z_MetadataSettingCont",
+        "references": [],
+        "type": "z_MetadataSettingCont"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "StandardSetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "dumps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

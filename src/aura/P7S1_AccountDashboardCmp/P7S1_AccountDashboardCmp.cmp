@@ -1,0 +1,107 @@
+<aura:component implements="force:appHostable" controller="P7S1_AccountDashboardCmpCtrl">
+
+    <ltng:require styles="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+                        scripts="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                        /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js" />
+
+    <!-- Attributes -->
+    <aura:attribute name="accountId" type="String" required="true" default="" access="public"/>
+    <aura:attribute name="accountIndexId" type="String" required="false" access="public"/>
+    <aura:attribute name="isAccountIndex" type="Boolean" default="false" required="false" access="public"/>
+    <aura:attribute name="ctrlData" type="Object" required="false" access="public"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.loadData}" />
+
+    <div class="f42">
+
+        <div class="fadingDiv" aura:id="fadiv">
+            <!--  ++++++++++++++++++++++++++++++++++++ -->
+            <!-- Header line wirh button and unit logo -->
+            <table class="table">
+                <tr>
+                    <td class="col-xs-4 tablePad vbot" style="text-align:left;">
+                        <img src="{! '/servlet/servlet.FileDownload?file=' + v.ctrlData.imgId}"  class="image" id="logo"/>
+                    </td>
+                    <td class="col-xs-4 vbot" style="text-align:center;valign: middle">
+
+                        <aura:if isTrue="{! !v.isAccountIndex}">
+                            <div class="{! 'alert alert-' + v.ctrlData.acc.P7S1_Dash_Severity__c + ' bigFont'}" role="alert">
+                                {!v.ctrlData.acc.P7S1_Dash_Message__c}
+                            </div>
+                        </aura:if>
+                    </td>
+                    <td class="col-xs-4 vbot" style="text-align:right;" >
+                        <aura:if isTrue="{!v.isAccountIndex}">
+                            <aura:if isTrue="{!v.ctrlData.hasAccAccess}">
+                                <button type="button" aura:id="accBtn" class="btn btn-default" onclick="{! c.doAccRedirect }" >
+                                    {! $Label.c.P7S1_AccDash_lbl_Go2Acc}
+                                </button>
+                                <aura:set attribute="else">
+
+                                    <div class="droptdown">
+                                      <button class="dropbtn bigFont">{! $Label.c.P7S1_AccDash_lbl_Approval}</button>
+                                      <div class="droptdown-content bigFont">
+                                        <a href="javascript:void(0);" onclick="{!c.doApprovalRedirect}" id="accUeb" >{! $Label.c.P7S1_AccDash_lbl_AccUebernahme}</a>
+                                        <a href="javascript:void(0);" onclick="{!c.doApprovalRedirect}" id="accAuf">{! $Label.c.P7S1_AccDash_lbl_AccTeamAufnahme}</a>
+                                        <a href="javascript:void(0);" onclick="{!c.doApprovalRedirect}" id="logoInt">{! $Label.c.P7S1_AccDash_lbl_LogoIntegration}</a>
+                                      </div>
+                                    </div>
+
+                                    <!-- ******* Bootstrap Dropdown does not work with Locker-Service *********
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            {! $Label.c.P7S1_AccDash_lbl_Approval}&nbsp;
+                                            <span class="caret"></span>
+                                        </button>
+                                            <ul class="dropdown-menu dropdown-menu-right bigFont">
+                                                <li><a href="{!v.ctrlData.urls[0]}" target="_parent">{! $Label.c.P7S1_AccDash_lbl_AccUebernahme}</a></li>
+                                                <li><a href="{!v.ctrlData.urls[1]}" target="_parent">{! $Label.c.P7S1_AccDash_lbl_AccTeamAufnahme}</a></li>
+                                                <li><a href="{!v.ctrlData.urls[2]}" target="_parent">{! $Label.c.P7S1_AccDash_lbl_LogoIntegration}</a></li>
+                                            </ul>
+                                    </div>
+                                    -->
+
+                                </aura:set>
+                            </aura:if>
+                        </aura:if>
+                    </td>
+                </tr>
+            </table>
+
+            <!--  ++++++++++++++++++++++++++++++++++++ -->
+            <!-- Components -->
+            <div class="row">
+                <div class="col-xs-4">
+                    <!--  ++++++++++++++++++++++++++++++++++++ -->
+                    <!-- Main features view -->
+                    <c:P7S1_AccountDashboardOverviewCmp accountId="{!v.accountId}" />
+                </div>
+                <div class="col-xs-4">
+                    <!--  ++++++++++++++++++++++++++++++++++++ -->
+                    <!-- Opportunity view -->
+                    <c:P7S1_AccountDashboardOpportunitiesCmp accountId="{!v.accountId}" isAccountIndex="{!v.isAccountIndex}" />
+                </div>
+                <div class="col-xs-4">
+                    <!--  ++++++++++++++++++++++++++++++++++++ -->
+                    <!-- Media view -->
+                    <c:P7S1_AccountDashboardMediaCmp accountId="{!v.accountId}" />
+                </div>
+            </div>
+
+            <!--  ++++++++++++++++++++++++++++++++++++ -->
+            <!-- Corporating Units -->
+            <div class="row" style="width:100%;padding: 10px 20px;">
+                <div class="col-xs-12">
+                    <aura:if isTrue="{! v.ctrlData.teamUnits.length > 0}">
+                        <ui:outputText value="{! $Label.c.P7S1_AccDash_lbl_AccTeamUnitLogos}" class="bigFont bold" />&nbsp;
+                        <aura:iteration var="img" indexVar="index" items="{!v.ctrlData.teamUnits}" >
+                            <img src="{! '/servlet/servlet.FileDownload?file=' + img}" class="image" style="display:inline;height:30px;"/>&nbsp;&nbsp;
+                        </aura:iteration>
+                    </aura:if>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</aura:component>

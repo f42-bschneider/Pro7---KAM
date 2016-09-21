@@ -1,0 +1,141 @@
+<aura:component >
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js">
+   	</ltng:require>
+
+    <aura:attribute name="oppPipeDetail" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="isValid" type="Boolean" default="true" access="public"></aura:attribute>
+    <aura:attribute name="somLikelihoods" type="Ven_SomLikelihood__c[]" required="true" access="public"></aura:attribute>
+
+    <aura:attribute name="cashYieldValid" type="Boolean" access="public"></aura:attribute>
+    <aura:attribute name="prapYieldValid" type="Boolean" access="public"></aura:attribute>
+    <aura:attribute name="cashInvestValid" type="Boolean" access="public"></aura:attribute>
+    <aura:attribute name="gmvCurrentValid" type="Boolean" access="public"></aura:attribute>
+    <aura:attribute name="gmvNextValid" type="Boolean" access="public"></aura:attribute>
+
+    <aura:attribute name="currencyy" type="String" access="public"></aura:attribute>
+
+
+    <aura:handler name="change" value="{!v.cashYieldValid}" action="{!c.doCheckValid}"></aura:handler>
+    <aura:handler name="change" value="{!v.prapYieldValid}" action="{!c.doCheckValid}"></aura:handler>
+    <aura:handler name="change" value="{!v.cashInvestValid}" action="{!c.doCheckValid}"></aura:handler>
+    <aura:handler name="change" value="{!v.gmvCurrentValid}" action="{!c.doCheckValid}"></aura:handler>
+    <aura:handler name="change" value="{!v.gmvNextValid}" action="{!c.doCheckValid}"></aura:handler>
+
+    <aura:handler name="change" value="{!v.oppPipeDetail.opp.Ven_EstimateCashYieldCurrentYear__c}" action="{!c.doSetEffYield}"></aura:handler>
+    <aura:handler name="change" value="{!v.oppPipeDetail.opp.Ven_EstimatePrapYieldCurrentYear__c}" action="{!c.doSetEffYield}"></aura:handler>
+
+    <aura:handler event="c:Ven_OppPipeDetailOppEvent" action="{!c.doHandleOppPipeDetailOppEvent}"></aura:handler>
+
+	<div class="row">
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Cash+' '} {!$Label.c.Ven_lbl_Yield}</label>
+				<div class="input-group">
+					<c:f42_InputNumber aura:id="cashYield"
+						value="{!v.oppPipeDetail.opp.Ven_EstimateCashYieldCurrentYear__c}"
+						min="0"
+						max="100"
+						required="true"
+						isInteger="false"
+						isValid="{!v.cashYieldValid}"
+						textAlign="right">
+					</c:f42_InputNumber>
+					<span class="input-group-addon">%</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Prap+' '} {!$Label.c.Ven_lbl_Yield}</label>
+				<div class="input-group">
+					<c:f42_InputNumber aura:id="prapYield"
+						value="{!v.oppPipeDetail.opp.Ven_EstimatePrapYieldCurrentYear__c}"
+						min="0"
+						max="100"
+						required="true"
+						isInteger="false"
+						isValid="{!v.prapYieldValid}"
+						textAlign="right">
+					</c:f42_InputNumber>
+					<span class="input-group-addon">%</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Effective +' '} {!$Label.c.Ven_lbl_Yield}</label>
+				<div class="input-group">
+					<ui:outputNumber aura:id="effYield"
+						class="form-control text-right text-disabled"
+						value="{!v.oppPipeDetail.opp.Ven_EffectiveYield__c}"/>
+					<span class="input-group-addon">%</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Cash+' '} {!$Label.c.Ven_lbl_Invest}</label>
+				<div class="input-group">
+					<c:f42_InputNumber aura:id="cashInvest"
+						value="{!v.oppPipeDetail.opp.Ven_CashInvest__c}"
+						required="true"
+						isInteger="true"
+						isValid="{!v.cashInvestValid}"
+						textAlign="right">
+					</c:f42_InputNumber>
+					<span class="input-group-addon">{!v.currencyy}</span>
+				</div>
+			</div>
+		</div>
+
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label>{!$Label.c.Ven_lbl_VariableComponent}</label>
+                <div class="input-group">
+                    <ui:outputText class="form-control" value="EP"/>
+
+                    <span class="input-group-addon">
+                        <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_Ep__c}"/>
+                    </span>
+                </div>
+
+                <div class="input-group">
+                    <ui:outputText class="form-control" value="EP light"/>
+
+                    <span class="input-group-addon">
+                        <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_EpLight__c}"/>
+                    </span>
+                </div>
+
+                <div class="input-group">
+                    <ui:outputText class="form-control" value="Rev Share"/>
+
+                    <span class="input-group-addon">
+                        <ui:inputCheckbox value="{!v.oppPipeDetail.opp.Ven_RevShare__c}"/>
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<label>{!$Label.c.Ven_lbl_Gmv+' '} {!v.oppPipeDetail.currentYear.year}</label>
+	<c:Ven_OppPipeDetailPipeYearCmp oppPipeYear="{!v.oppPipeDetail.currentYear}"
+		effYield="{!v.oppPipeDetail.opp.Ven_EffectiveYield__c}"
+		isValid="{!v.gmvCurrentValid}"
+		somLikelihoods="{!v.somLikelihoods}">>
+	</c:Ven_OppPipeDetailPipeYearCmp>
+
+	<label>{!$Label.c.Ven_lbl_Gmv+' '} {!v.oppPipeDetail.nextYear.year}</label>
+	<c:Ven_OppPipeDetailPipeYearCmp oppPipeYear="{!v.oppPipeDetail.nextYear}"
+		effYield="{!v.oppPipeDetail.opp.Ven_EffectiveYield__c}"
+		isValid="{!v.gmvNextValid}"
+		somLikelihoods="{!v.somLikelihoods}">>
+	</c:Ven_OppPipeDetailPipeYearCmp>
+
+</aura:component>

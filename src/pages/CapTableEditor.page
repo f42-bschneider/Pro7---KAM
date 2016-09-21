@@ -1,0 +1,71 @@
+<apex:page standardController="Account"  extensions="CapTableEditorController">
+<!--  
+
+ @author: ADvendio.com (helge.kosuch@advendio.com)
+
+ -->
+
+	<head>
+        <style type="text/css">
+            table.thin {
+                border-spacing: 0px;
+            }
+            .BorderRight {
+                border-right: 1px solid black;
+            }
+			.BorderBottom {
+                border-bottom: 1px solid black;
+            }
+            .TopLine {
+                border-bottom: 1px solid black;
+            }
+            .ButtonCol {
+            	width: 70px;
+            }
+            .NameCol {
+            	width: 200px;
+            }
+            .SharesCol {
+            	width: 200px;
+            	text-align: center ;
+            }
+            .ShareCol {
+            	width: 75px;
+            	text-align: right;
+            	padding-right:30px
+            }
+            .WertCol {
+            	width: 200px;
+            	text-align: center;
+            	style="text-align: right"
+            }
+        </style>
+	</head>
+	<body>
+		<apex:outputLabel value="{!Account.name}" rendered="false"/>
+        <!--<p>&nbsp;<a href="/{!Account.id}">Zurück zum Account: {!Account.name}</a></p>-->
+		<apex:form >
+			<apex:pageMessages />
+			<apex:outputpanel id="everythingCte">
+                  
+            <apex:panelGrid columns="3" rendered="{!c.roundsExistFlag}">
+				<apex:repeat value="{!c.recordsOfCurrentSetControllerPage}" var="currentlySelectedRound" rendered="{!not(c.EditFlag)}"> 
+					<c:CapTableEditorCore c="{!c}" currentlySelectedRoundCopy="{!currentlySelectedRound}" /> 
+				</apex:repeat>
+
+				<!-- The following is outside the repeat. This is the way it must be,
+				because we want to edit it, but the repeat var is immutable here, because it is from the setControllers
+				current records -->					
+				<c:CapTableEditorCore c="{!c}" currentlySelectedRoundCopy="{!c.newestRound}"             rendered="{!c.EditFlag}"/> 
+           </apex:panelGrid>
+           
+           <apex:outputPanel rendered="{!not(c.roundsExistFlag)}">
+           		<p>Bisher existiert keine Runde im CapTable.</p>
+           		
+         		<apex:commandButton action="{!c.createFirstRound}" style="margin-left: .3cm" value="Runde anlegen" />
+           </apex:outputPanel> 
+
+          </apex:outputpanel>
+        </apex:form>        
+	</body>
+</apex:page>

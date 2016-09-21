@@ -1,0 +1,535 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomDig_DeliverPrio_Check",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010dEBAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dEBAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 12
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 17
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 24
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getChangedItems",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 56
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkDoubleValues",
+            "parameters": [
+                {
+                    "name": "newItemsList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 109
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkPeriods",
+            "parameters": [
+                {
+                    "name": "tmpValidFrom",
+                    "type": "Date"
+                },
+                {
+                    "name": "tmpValidUntil",
+                    "type": "Date"
+                },
+                {
+                    "name": "tmpToInsertValidFrom",
+                    "type": "Date"
+                },
+                {
+                    "name": "tmpToInsertValidUntil",
+                    "type": "Date"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "SomDig_DeliverPrio_Check",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 31,
+            "line": 4
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomDig_DeliverPrio_Check",
+        "references": [],
+        "type": "SomDig_DeliverPrio_Check"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 140,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 114,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "hasChanged",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 129,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "changedItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "auslieferungsprio",
+            "references": [],
+            "type": "SomDig_DeliverPrio__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "newItemsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "allItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "toInsertItem",
+            "references": [],
+            "type": "SomDig_DeliverPrio__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "tmpToInsertUniqueKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "tmpToInsertValidFrom",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "tmpToInsertValidUntil",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "ap",
+            "references": [],
+            "type": "SomDig_DeliverPrio__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "tmpUniqueKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "tmpValidFrom",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "tmpValidUntil",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "isSamePeriod",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "tmpValidFrom",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "tmpValidUntil",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "tmpToInsertValidFrom",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "tmpToInsertValidUntil",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "hasSamePeriod",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+.THIS.container {
+            width: 100%;
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.THIS .center {
+	margin: 0px auto;
+}
+
+.THIS .content {
+	max-width: 768px;
+	font-size: 12px;
+	color: #3c3d3e;
+}
+
+.THIS .image {
+    display: none;
+    height:50px;
+    width:auto;
+    -webkit-box-shadow: 2px 3px 2px 3px rgba(196,192,196,1);
+    -moz-box-shadow: 2px 3px 2px 3px rgba(196,192,196,1);
+    box-shadow: 2px 3px 2px 3px rgba(196,192,196,1);
+}
+
+.THIS .row {
+    padding: 5px;
+}
+
+.THIS .row p{
+    margin: 0;
+}
+
+.THIS .alert{
+    margin: 0 !important;
+}
+
+.THIS .btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.THIS .smallFont, .THIS .bigFont{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.THIS .smallFont {
+    font-size: 12px;
+}
+
+.THIS .bigFont {
+    font-size: 15px;
+}
+
+.THIS .bold{
+    font-weight: bold;
+}
+
+.THIS .table{
+    margin-bottom: 5px !important;
+}
+
+.THIS .tablePad{
+    padding-top: 5px !important;
+}
+
+.THIS .alert{
+    min-height: 50px;
+    max-height: 55px;
+    padding:8px !important;
+}
+
+.THIS .vbot{
+    vertical-align: bottom;
+}
+
+.THIS .fadingDiv{
+    display:block;
+    opacity: 0.0;
+    transition: opacity 2s;
+}
+
+.THIS .fadingIn {
+    opacity: 1;
+}
+
+/* Dropdown button */
+.THIS .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.THIS .droptdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.THIS .droptdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:99;
+}
+
+/* Links inside the dropdown */
+.THIS .droptdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index:99;
+}
+
+/* Change color of dropdown links on hover */
+.THIS .droptdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.THIS .droptdown:hover .droptdown-content {
+    display: block;
+    z-index:99;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.THIS .droptdown:hover .dropbtn {
+    background-color: #F5F5F5 ;
+}

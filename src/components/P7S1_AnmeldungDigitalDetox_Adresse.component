@@ -1,0 +1,108 @@
+<apex:component layout="none" controller="P7S1_AnmeldungDigitalDetox_Components" allowDml="true" language="{!language}">
+  <style type="text/css">
+      .mandatoryField {
+          color: red;
+      }
+  </style>
+  <apex:attribute name="codeString" description="next" type="String" required="false" assignTo="{!code}"/>
+  <apex:attribute name="emailString" description="next" type="String" required="false" assignTo="{!email}"/>
+    <td align="left" valign="top" width="62">
+        <img alt="" border="0" height="41" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/>
+    </td>
+
+    <td align="left" valign="top" width="575">
+        <apex:form id="address_form">
+        <br/>
+            {!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_1}
+            <br/>
+            <br/>
+            <div id="error_holder_address" class="hid error-holder">
+                {!$Label.P7S1_VIRTUALTHEMOUNTAIN_ERROR_REQUIRED}
+            </div>
+            <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="500">
+                <tbody>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_Anrede}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Anrede__c}" id="add_anrede"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_Vorname}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Vorname__c}" id="add_vorname"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_Name}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Name__c}" id="add_name"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_EMail}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_EMail__c}" id="add_email"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_MobilNummer}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Mobil__c}" id="add_mobile"/></td>
+                    </tr>
+                        <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130">&nbsp;&nbsp;&nbsp;<strong>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_Firma}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Firma__c}"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_Strasse}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Strasse__c}" id="add_street"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_PLZ}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_PLZ__c}" id="add_plz"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td width="130"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_Ort}</strong></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Ort__c}" id="add_ort"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="450">
+                <tbody>
+                    <tr>
+                        <td width="350"><strong><span class="mandatoryField">&nbsp;*&nbsp;</span>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_2}&nbsp;<a href="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_LINK_HINWEISE}" target="_blank">{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSE_3}</a></strong></td>
+                        <td width="100"><apex:inputField id="add_agree" value="{!sobjectRecord.P7S1_DatenschutzbedingungenAkzeptiert__c}"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><img alt="" border="0" height="10" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="1"/></td>
+                    </tr>
+                </tbody>
+            </table>
+             <apex:commandButton styleClass="submit" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_Abschicken}" onclick="if (!validateAdsressForm()) { return false; }" action="{!updateRecord}" reRender="address_form" oncomplete="goNextAddress();" status="status_for_all"/>&nbsp;
+        </apex:form>
+    </td>
+
+</apex:component>

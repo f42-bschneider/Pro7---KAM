@@ -1,0 +1,202 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KlzaIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KlzaIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setCaseTeamMembers",
+            "parameters": [
+                {
+                    "name": "listNewCases",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldCases",
+                    "type": "Map"
+                },
+                {
+                    "name": "mapNewCases",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Lcm_CaseTeamMember_Assignment",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Lcm_CaseTeamMember_Assignment",
+        "references": [],
+        "type": "Lcm_CaseTeamMember_Assignment"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "listNewCases",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "mapOldCases",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "mapNewCases",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "ctm_list",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "ctm_ids",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "ctm",
+            "references": [],
+            "type": "CaseTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "ctm_set",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "ctr_map",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "ctr",
+            "references": [],
+            "type": "CaseTeamRole"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "ctm_set",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "co_id",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "ctm",
+            "references": [],
+            "type": "CaseTeamMember"
+        }
+    ]
+}

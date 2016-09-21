@@ -1,0 +1,512 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_AccountHistory_ValidateData",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgnFIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnFIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 21
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 29
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 37
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 47
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "validateData",
+            "parameters": [
+                {
+                    "name": "lstRecords",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 148
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "isValidData",
+            "parameters": [
+                {
+                    "name": "record",
+                    "type": "AccountHistory__c"
+                },
+                {
+                    "name": "mRecords",
+                    "type": "Map"
+                },
+                {
+                    "name": "key",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "SomTv_AccountHistory_ValidateData",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_AccountHistory_ValidateData",
+        "references": [],
+        "type": "SomTv_AccountHistory_ValidateData"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "lstRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "hasError",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "mRecords",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "sIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AccountHistory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "az",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AccountHistory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AccountHistory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "AccountHistory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "mRecords",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "isOK",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "other",
+            "references": [],
+            "type": "AccountHistory__c"
+        }
+    ]
+}

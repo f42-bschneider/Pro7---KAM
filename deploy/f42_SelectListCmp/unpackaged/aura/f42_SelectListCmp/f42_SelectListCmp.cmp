@@ -1,0 +1,57 @@
+<aura:component >
+
+    <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system.min.css">
+    </ltng:require>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="change" value="{!v.required}" action="{!c.doChangeRequired}" />
+
+    <aura:attribute name="options" type="Object[]" required="true" access="public" />
+    <aura:attribute name="selectedId" type="String" required="true"  access="public" />
+    <aura:attribute name="selectedLbl" type="String" default=" - " access="public" />
+    <aura:attribute name="setEmptyOption" type="Boolean" default="true" access="public" />
+    <aura:attribute name="required" type="Boolean" default="false"  access="public" />
+    <aura:attribute name="isValid" type="Boolean" default="true"  access="public" />
+    <aura:attribute name="errorMsg" type="String"  access="private" />
+
+    <aura:registerEvent name="onChange" type="c:f42_Select2Evt"/>
+
+    <div class="slds" >
+        <div class="slds-picklist slds-dropdown-trigger slds-dropdown-trigger--click" aria-expanded="false" aura:id="picklist">
+            <button class="slds-button slds-button--neutral slds-picklist__label" aria-haspopup="true" onclick="{!c.doToggleList}" aura:id="btn" >
+            <span class="slds-truncate" style="float:left" >{!v.selectedLbl}</span>
+            <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#down"
+                        class="slds-icon-text-default" category="utility" size="small" name="down" />
+            </button>
+
+            <div class="slds-dropdown slds-dropdown--left">
+                <ul class="dropdown__list slds-dropdown--length-5" role="menu">
+
+                    <!-- **** Empty option **** -->
+                    <aura:if isTrue="{!v.setEmptyOption}">
+                        <li class="slds-dropdown__item" onclick="{!c.doSelect}" id="emptyOption" >
+                            <a href="javascript:void(0);" role="menuitem">
+                                <p class="slds-truncate"> - </p>
+                            </a>
+                        </li>
+                    </aura:if>
+
+                    <!-- **** Generate selectoptions **** -->
+                    <aura:iteration items="{!v.options}" var="opt">
+                        <li class="slds-dropdown__item" onclick="{!c.doSelect}" id="{!opt.text}">
+                            <a href="javascript:void(0);" role="menuitem" id="{!opt.text + 'a'}">
+                                <p class="slds-truncate"  id="{!opt.text + 'b'}">{!opt.label}</p>
+                            </a>
+                        </li>
+                    </aura:iteration>
+
+                </ul>
+            </div>
+
+            <p style="color:#B22222; padding: 3px;">{!v.errorMsg}</p>
+
+        </div>
+
+    </div>
+
+</aura:component>

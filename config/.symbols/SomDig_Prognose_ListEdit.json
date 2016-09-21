@@ -1,0 +1,267 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomDig_Prognose_ListEdit",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgbJIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgbJIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getListPrognosen",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 39
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cancel",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 47
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "save",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Prognose_ListEdit",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "recordID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sFilter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "bMyRecords",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sSortOrder",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iQ1",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iQ2",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iQ3",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iQ4",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iIP",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iIS",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iTV",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomDig_Prognose_ListEdit",
+        "references": [],
+        "type": "SomDig_Prognose_ListEdit"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "p1",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "objPrognose",
+            "references": [],
+            "type": "SomDig_Prognose__c"
+        }
+    ]
+}

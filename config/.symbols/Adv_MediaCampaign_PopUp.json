@@ -1,0 +1,130 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_MediaCampaign_PopUp",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgmYIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgmYIAS",
+    "methods": [],
+    "name": "Adv_MediaCampaign_PopUp",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_bcheckM",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_surl",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 6
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_MediaCampaign_PopUp",
+        "references": [],
+        "type": "Adv_MediaCampaign_PopUp"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "I_oMediaId",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "I_sPhasesList",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "I_oMediaRecordList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "I_oMediaRecord",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

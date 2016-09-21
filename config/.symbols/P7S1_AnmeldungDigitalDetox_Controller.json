@@ -1,0 +1,254 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_AnmeldungDigitalDetox_Controller",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010e4dAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010e4dAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "increaseWizardPageNumber",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 61
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "decreaseWizardPageNumber",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 70
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setCodeNumber",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "RemoteAction"
+                }
+            ],
+            "location": {
+                "column": 27,
+                "line": 75
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "isfeedback",
+            "parameters": [
+                {
+                    "name": "code",
+                    "type": "String"
+                },
+                {
+                    "name": "email",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AnmeldungDigitalDetox_Controller",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "DEFAULT_LANGUAGE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "feedback",
+            "references": [],
+            "type": "P7S1_B2BAktionsmitgliederFeedback__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "code",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "email",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "language",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "wizardPageNumber",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_AnmeldungDigitalDetox_Controller",
+        "references": [],
+        "type": "P7S1_AnmeldungDigitalDetox_Controller"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "feedbackCode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "feedbackPagenumber",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "pageref",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "code",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

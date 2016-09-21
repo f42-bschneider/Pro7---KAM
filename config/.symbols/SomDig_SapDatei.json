@@ -1,0 +1,472 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnqaAAC",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "sapDateiUploadException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 6
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "sapDateiUploadException",
+                "references": [],
+                "type": "sapDateiUploadException"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [
+        "System.Schedulable",
+        "Database.Stateful",
+        "Database.Batchable"
+    ],
+    "key": "01p57000000KnqaAAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 80
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 147
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 160
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 217
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "webService",
+                "global"
+            ],
+            "name": "buchungssaetzeZuweisen",
+            "parameters": [
+                {
+                    "name": "sapDateiId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 40
+            },
+            "modifiers": [
+                "static",
+                "webService",
+                "global"
+            ],
+            "name": "setUploadStatus",
+            "parameters": [
+                {
+                    "name": "sapDateiId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_SapDatei",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "recordTypeName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sapDateiId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 15
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "zuweisungJob",
+            "references": [],
+            "type": "SomDig_SapDateiZuweisung"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 4
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "SomDig_SapDatei",
+        "references": [],
+        "type": "SomDig_SapDatei"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "sapDatei",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "verrechnungsmonat",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "buchungskreis",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "queryStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "bsListToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "buchungssatz",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sapDateiId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "openJobStatus",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "jobs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "sapDateiClass",
+            "references": [],
+            "type": "SomDig_SapDatei"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "sapDateiId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "datei",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "maxNummer",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "maxNummerDatei",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        }
+    ]
+}

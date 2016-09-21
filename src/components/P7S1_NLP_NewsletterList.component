@@ -1,0 +1,9 @@
+<apex:component >
+    <apex:attribute name="wrappers" type="P7S1_NLP_NewsletterWrapper[]" description="A list of Newsletterwrappers to show."/>
+    <apex:attribute name="showAllFields" type="Boolean" description="Show all fields or just Checkbox and name?" default="false"/>
+        <tbody>
+            <apex:repeat value="{!wrappers}" var="wrapper">  
+                <c:P7S1_NLP_NewsletterEntry wrapper="{!wrapper}" showAllFields="{!showAllFields}"/>
+            </apex:repeat>
+        </tbody>
+</apex:component>

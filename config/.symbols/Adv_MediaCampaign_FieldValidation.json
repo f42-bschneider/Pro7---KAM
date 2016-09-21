@@ -1,0 +1,146 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000001Q9UGAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000001Q9UGAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "validate",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_FieldValidation",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cachedGMList",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_MediaCampaign_FieldValidation",
+        "references": [],
+        "type": "Adv_MediaCampaign_FieldValidation"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "bUserIsTeamlead",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "currentUserID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "GroupMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "auftragRCID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

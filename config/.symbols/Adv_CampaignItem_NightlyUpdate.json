@@ -1,0 +1,265 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 5
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "Adv_CampaignItem_NightlyUpdate",
+            "parameters": [],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "Adv_CampaignItem_NightlyUpdate",
+            "parameters": [
+                {
+                    "name": "p_sQuery",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KghWIAS",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable",
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000KghWIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 14
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "p_BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 27
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "p_scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 41
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "p_BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 44
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "p_sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_NightlyUpdate",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 3
+            },
+            "modifiers": [
+                "final",
+                "global"
+            ],
+            "name": "i_sQuery",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_NightlyUpdate",
+        "references": [],
+        "type": "Adv_CampaignItem_NightlyUpdate"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "p_sQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "p_BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "p_scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "l_oListUpdateLineItem",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "sobj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "l_oLinitem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "p_BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "p_sc",
+            "references": [],
+            "type": "SchedulableContext"
+        }
+    ]
+}

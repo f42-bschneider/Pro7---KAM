@@ -1,0 +1,513 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 18
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "AdfProjektChecker",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1hnIAC",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable",
+        "System.Schedulable",
+        "Database.Stateful"
+    ],
+    "key": "01pD0000000K1hnIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 26
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "setAdfProjektIds",
+            "parameters": [
+                {
+                    "name": "ids",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 35
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 55
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "records",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 265
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 276
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 284
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testAdfProjektChecker",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "AdfProjektChecker",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "batchSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 9
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 12
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 13
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 4
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "AdfProjektChecker",
+        "references": [],
+        "type": "AdfProjektChecker"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "mRecords",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "SomTv_AdfProjekt__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "olis",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "ap",
+            "references": [],
+            "type": "SomTv_AdfProjekt__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "ap",
+            "references": [],
+            "type": "SomTv_AdfProjekt__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 265
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 266
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 276
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 287
+            },
+            "modifiers": [],
+            "name": "recordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 289
+            },
+            "modifiers": [],
+            "name": "r",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "pb",
+            "references": [],
+            "type": "Pricebook2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 297
+            },
+            "modifiers": [],
+            "name": "prod",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 300
+            },
+            "modifiers": [],
+            "name": "pbe",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 303
+            },
+            "modifiers": [],
+            "name": "ap",
+            "references": [],
+            "type": "SomTv_AdfProjekt__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 306
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 309
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 312
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 315
+            },
+            "modifiers": [],
+            "name": "ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 318
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 320
+            },
+            "modifiers": [],
+            "name": "apc",
+            "references": [],
+            "type": "AdfProjektChecker"
+        }
+    ]
+}

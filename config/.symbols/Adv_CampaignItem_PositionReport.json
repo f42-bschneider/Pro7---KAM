@@ -1,0 +1,1357 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 66
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_CampaignItem_PositionReport",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgkNIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgkNIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 106
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "refreshController",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 123
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveInline",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 153
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getMediaCampaign",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 177
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "BuildQuery",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 331
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "BuildWhere",
+            "parameters": [
+                {
+                    "name": "p_sQueryWhere",
+                    "type": "String"
+                },
+                {
+                    "name": "p_sCondition",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 385
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SortToggle",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 405
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getPositionStatus",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 423
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 441
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getCampaign",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 463
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getAgency",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 490
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getAdvertiser",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 519
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getOfferNumber",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 546
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getExportReport",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 562
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "CreateReport",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 770
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getAllPAMUsers",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 347
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "separateSetForDynamicSOQL",
+            "parameters": [
+                {
+                    "name": "p_sSetSeparate",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 366
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "separateSetForDynamicSOQL",
+            "parameters": [
+                {
+                    "name": "p_sSetSeparate",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_PositionReport",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 11
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "i_oListMediaCampaign",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListAlpha",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sAlphaFilter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "i_sQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sRecordPerPage",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_soListRecordPerPage",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListSelectedStatus",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sSortFieldSave",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sSortField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sSortDirection",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_oStandardSetController",
+            "references": [],
+            "type": "StandardSetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 31
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_oCampaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_nPAMStatusSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListSelectedCampaign",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListSelectedAgency",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 35
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListSelectedAdvertiser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 36
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListSelectedOfferNumber",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sListUserselected",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sSearchOfferNumber",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sContentType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sFileName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 43
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sReportData",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 44
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_sSelectedContentType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_oListCampaignItemClone",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 52
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_dFrom",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 53
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_dUntil",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 54
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_oListListCampaignItem",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 55
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_iMediaCampaignId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 56
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_iMediaCampaignOwnerId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 45
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "i_oListMediaCampaignReport",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 48
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "i_nFIRST_BREAK",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 50
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "i_nSUBSEQ_BREAKS",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_PositionReport",
+        "references": [],
+        "type": "Adv_CampaignItem_PositionReport"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "l_oListCampaignItem",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "l_oListCampaignItemUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "media",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "ciClone",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "media",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "campaign",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "l_sQueryWhere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "l_sQuerySubWhere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "l_sQuerySubWhereChild",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 215
+            },
+            "modifiers": [],
+            "name": "l_sStatusFilter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 220
+            },
+            "modifiers": [],
+            "name": "l_sCampaignFilter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "l_dFrom",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "l_sFrom",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 231
+            },
+            "modifiers": [],
+            "name": "l_dUntil",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "l_sUntil",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 260
+            },
+            "modifiers": [],
+            "name": "l_sSetUserId",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 261
+            },
+            "modifiers": [],
+            "name": "l_sUserFilter",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 264
+            },
+            "modifiers": [],
+            "name": "l_sSetUserSelected",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 272
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 277
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "p_sQueryWhere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 331
+            },
+            "modifiers": [],
+            "name": "p_sCondition",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 407
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 409
+            },
+            "modifiers": [],
+            "name": "l_oPickListEntry",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 424
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 427
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 442
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 444
+            },
+            "modifiers": [],
+            "name": "l_sSetCampaign",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 445
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 448
+            },
+            "modifiers": [],
+            "name": "l_sTemporary",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 464
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 466
+            },
+            "modifiers": [],
+            "name": "l_sSetAgency",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 467
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 473
+            },
+            "modifiers": [],
+            "name": "l_sTemporary",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 491
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 493
+            },
+            "modifiers": [],
+            "name": "l_sSetAdvertiser",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 494
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 502
+            },
+            "modifiers": [],
+            "name": "l_sTemporary",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 520
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 522
+            },
+            "modifiers": [],
+            "name": "l_sSetOfferNumber",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 523
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 529
+            },
+            "modifiers": [],
+            "name": "l_sTemporary",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 547
+            },
+            "modifiers": [],
+            "name": "l_oListSelectOption",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 571
+            },
+            "modifiers": [],
+            "name": "l_oPageReference",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 587
+            },
+            "modifiers": [],
+            "name": "l_sCSV",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 610
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 614
+            },
+            "modifiers": [],
+            "name": "l_oCampaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 658
+            },
+            "modifiers": [],
+            "name": "l_dFrom",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 666
+            },
+            "modifiers": [],
+            "name": "l_dUntil",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "p_sSetSeparate",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 349
+            },
+            "modifiers": [],
+            "name": "l_sSeparated",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 350
+            },
+            "modifiers": [],
+            "name": "l_sTemporary",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 366
+            },
+            "modifiers": [],
+            "name": "p_sSetSeparate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 368
+            },
+            "modifiers": [],
+            "name": "l_sSeparated",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 369
+            },
+            "modifiers": [],
+            "name": "l_sTemporary",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

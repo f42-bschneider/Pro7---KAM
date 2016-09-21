@@ -1,0 +1,198 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgklIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgklIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_MediaCampaign_Debitor_Test",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Debitorennr_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 5
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Adv_MediaCampaign_Debitorennr_Test",
+        "references": [],
+        "type": "Adv_MediaCampaign_Debitorennr_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "auftragsTyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "externalId1",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "externalId2",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "eid",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "zahlungsbedingung",
+            "references": [],
+            "type": "SomDig_Zahlungsbedingung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "mediaCampaign1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "mediaCampaign2",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "mediaCampaign3",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mediaCampaigns",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

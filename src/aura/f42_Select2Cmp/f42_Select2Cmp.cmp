@@ -1,0 +1,32 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+	<ltng:require styles="    /resource/f42_select2/select2-3.5.4/select2.css,
+                                /resource/f42_select2/select2-3.5.4/select2-bootstrap.css"
+                   	scripts="   /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                /resource/f42_select2/select2-3.5.4/select2.min.js"
+                    afterScriptsLoaded="{!c.scriptsLoaded}">
+    </ltng:require>
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="change" value="{!v.value}" action="{!c.doChangeValue}"></aura:handler>
+    <aura:handler name="change" value="{!v.required}" action="{!c.doChangeRequired}"></aura:handler>
+
+    <aura:attribute name="options" type="Object[]"  access="public"></aura:attribute>
+    <aura:attribute name="value" type="String" required="true"  access="public"></aura:attribute>
+    <aura:attribute name="required" type="Boolean" default="false"  access="public"></aura:attribute>
+    <aura:attribute name="isValid" type="Boolean" default="true" required="true"  access="public"></aura:attribute>
+    <aura:attribute name="fontSize" type="String" default="null" access="global"/>
+    <aura:attribute name="setEmptyOption" type="Boolean" default="true" access="global"/>
+
+    <aura:registerEvent name="onChange" type="c:f42_Select2Evt"/>
+
+    <ui:inputSelect class="{! (not(v.isValid) ? 'required' : '') + ' form-control'}" aura:id="select2">
+        <aura:if isTrue="{!v.setEmptyOption}">
+            <ui:inputSelectOption text="" label="-" value="{!'' == v.value}"></ui:inputSelectOption>
+        </aura:if>
+
+        <aura:iteration items="{!v.options}" var="opt">
+            <ui:inputSelectOption text="{!opt.text}" label="{!opt.label}" value="{!opt.text == v.value}"></ui:inputSelectOption>
+        </aura:iteration>
+    </ui:inputSelect>
+</aura:component>

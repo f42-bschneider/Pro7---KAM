@@ -1,0 +1,77 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kf2fIAC",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Queueable"
+    ],
+    "key": "01pD0000000Kf2fIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "context",
+                    "type": "QueueableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Emp_UserQueue",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "i_oMapUserQueue",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Emp_UserQueue",
+        "references": [],
+        "type": "P7S1_Emp_UserQueue"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "context",
+            "references": [],
+            "type": "QueueableContext"
+        }
+    ]
+}

@@ -1,0 +1,273 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ContractTerms",
+            "parameters": [
+                {
+                    "name": "vertraege",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000JTIKIA4",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AbschnittsSection",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 14
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "title",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 17
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "displayStandardTerms",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 44,
+                        "line": 20
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "terms",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 13
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AbschnittsSection",
+                "references": [],
+                "type": "AbschnittsSection"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000JTIKIA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 69
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "addTerm",
+            "parameters": [
+                {
+                    "name": "abschnittsSectionsByAbschnitt",
+                    "type": "Map"
+                },
+                {
+                    "name": "term",
+                    "type": "Ven_Contract_Terms__c"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "ContractTerms",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 24
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "abschnittsSectionsByAbschnitt",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "abschnittsSections",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 35
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "INDIVIDUELLE_TERMS_TITLE_STR",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "ContractTerms",
+        "references": [],
+        "type": "ContractTerms"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "vertraege",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "contractTerms",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "term",
+            "references": [],
+            "type": "Ven_Contract_Terms__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "currentAbschnittsSection",
+            "references": [],
+            "type": "AbschnittsSection"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "abschnittsSectionsByAbschnitt",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 116,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "term",
+            "references": [],
+            "type": "Ven_Contract_Terms__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "abschittsTitle",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "currentAbschnittsSection",
+            "references": [],
+            "type": "AbschnittsSection"
+        }
+    ]
+}

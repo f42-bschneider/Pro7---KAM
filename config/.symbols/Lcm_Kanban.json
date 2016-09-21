@@ -1,0 +1,458 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Lcm_Kanban",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KloIIAS",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 110
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "Ticket",
+                    "parameters": [
+                        {
+                            "name": "c",
+                            "type": "Case"
+                        },
+                        {
+                            "name": "photoUrl",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "Ticket",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 107
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "objCase",
+                    "references": [],
+                    "type": "Case"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 108
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "photoUrl",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 105
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "Ticket",
+                "references": [],
+                "type": "Ticket"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 28,
+                        "line": 110
+                    },
+                    "modifiers": [],
+                    "name": "c",
+                    "references": [],
+                    "type": "Case"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 38,
+                        "line": 110
+                    },
+                    "modifiers": [],
+                    "name": "photoUrl",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000KloIIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getReleases",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getProjects",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getUsers",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 54
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getStations",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 64
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getTickets",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 91
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setDefaultReleaseId",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Lcm_Kanban",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sReleaseID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sProject",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sUser",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "mapUser",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 7
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "listReleases",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setUserIDs",
+            "references": [],
+            "type": "Set"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Lcm_Kanban",
+        "references": [],
+        "type": "Lcm_Kanban"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "listOptions",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Lcm_Release__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "listOptions",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "listOptions",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "listUsers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "listStations",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "mapTickets",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "release",
+            "references": [],
+            "type": "Lcm_Release__c"
+        }
+    ]
+}

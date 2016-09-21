@@ -1,0 +1,2571 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Ven_OppPipeline_CmpCtrl",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Ven_OppPipeline_CmpCtrl",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010heWAAQ",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 554
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "ExportData",
+                    "parameters": [
+                        {
+                            "name": "opp",
+                            "type": "Opportunity"
+                        },
+                        {
+                            "name": "currentYear",
+                            "type": "OppPipeDetailYear"
+                        },
+                        {
+                            "name": "nextYear",
+                            "type": "OppPipeDetailYear"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "ExportData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 27,
+                        "line": 546
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "currentYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 27,
+                        "line": 549
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "nextYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 552
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "opp",
+                    "references": [],
+                    "type": "Opportunity"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 544
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "ExportData",
+                "references": [],
+                "type": "ExportData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 39,
+                        "line": 554
+                    },
+                    "modifiers": [],
+                    "name": "opp",
+                    "references": [],
+                    "type": "Opportunity"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 62,
+                        "line": 554
+                    },
+                    "modifiers": [],
+                    "name": "currentYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 93,
+                        "line": 554
+                    },
+                    "modifiers": [],
+                    "name": "nextYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 609
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OppPipeData",
+                    "parameters": [
+                        {
+                            "name": "userId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userName",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userRole",
+                            "type": "String"
+                        },
+                        {
+                            "name": "imRoleId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "scoutRoleId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "analystRoleId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "isInPermissionSet",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "summaryItems",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "selectOptLsts",
+                            "type": "SelectOptionLists"
+                        },
+                        {
+                            "name": "countryId2International",
+                            "type": "Map"
+                        },
+                        {
+                            "name": "austriaRoleId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "switzerlandRoleId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "userId2RoleId",
+                            "type": "Map"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "OppPipeData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 565
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "userId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 568
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "userName",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 571
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "userRole",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 574
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "imRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 577
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "scoutRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 580
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "analystRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 583
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "austriaRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 586
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "switzerlandRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 37,
+                        "line": 589
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "countryId2International",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 592
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "userId2RoleId",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 34,
+                        "line": 595
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "summaryItems",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 34,
+                        "line": 598
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "selectOptLsts",
+                    "references": [],
+                    "type": "SelectOptionLists"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 601
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "isInPermissionSet",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 604
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "currentYear",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 607
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "somLikelihoods",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 563
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OppPipeData",
+                "references": [],
+                "type": "OppPipeData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 609
+                    },
+                    "modifiers": [],
+                    "name": "userId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 610
+                    },
+                    "modifiers": [],
+                    "name": "userName",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 611
+                    },
+                    "modifiers": [],
+                    "name": "userRole",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 612
+                    },
+                    "modifiers": [],
+                    "name": "imRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 613
+                    },
+                    "modifiers": [],
+                    "name": "scoutRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 614
+                    },
+                    "modifiers": [],
+                    "name": "analystRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 37,
+                        "line": 615
+                    },
+                    "modifiers": [],
+                    "name": "isInPermissionSet",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 47,
+                        "line": 616
+                    },
+                    "modifiers": [],
+                    "name": "summaryItems",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 47,
+                        "line": 617
+                    },
+                    "modifiers": [],
+                    "name": "selectOptLsts",
+                    "references": [],
+                    "type": "SelectOptionLists"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 50,
+                        "line": 618
+                    },
+                    "modifiers": [],
+                    "name": "countryId2International",
+                    "references": [],
+                    "type": "Map"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 619
+                    },
+                    "modifiers": [],
+                    "name": "austriaRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 620
+                    },
+                    "modifiers": [],
+                    "name": "switzerlandRoleId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 621
+                    },
+                    "modifiers": [],
+                    "name": "userId2RoleId",
+                    "references": [],
+                    "type": "Map"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 651
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OppPipeDetail",
+                    "parameters": [
+                        {
+                            "name": "opp",
+                            "type": "Opportunity"
+                        },
+                        {
+                            "name": "currentYear",
+                            "type": "OppPipeDetailYear"
+                        },
+                        {
+                            "name": "nextYear",
+                            "type": "OppPipeDetailYear"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "OppPipeDetail",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 28,
+                        "line": 643
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "opp",
+                    "references": [],
+                    "type": "Opportunity"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 34,
+                        "line": 646
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "currentYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 34,
+                        "line": 649
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "nextYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 641
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OppPipeDetail",
+                "references": [],
+                "type": "OppPipeDetail"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 42,
+                        "line": 651
+                    },
+                    "modifiers": [],
+                    "name": "opp",
+                    "references": [],
+                    "type": "Opportunity"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 65,
+                        "line": 651
+                    },
+                    "modifiers": [],
+                    "name": "currentYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 96,
+                        "line": 651
+                    },
+                    "modifiers": [],
+                    "name": "nextYear",
+                    "references": [],
+                    "type": "OppPipeDetailYear"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 674
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OppPipeDetailYear",
+                    "parameters": [
+                        {
+                            "name": "oppPipeMonths",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "totalAmount",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "totalCash",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "year",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "OppPipeDetailYear",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 663
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "oppPipeMonths",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 666
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "totalAmount",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 669
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "totalCash",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 672
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "year",
+                    "references": [],
+                    "type": "String"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 661
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OppPipeDetailYear",
+                "references": [],
+                "type": "OppPipeDetailYear"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 674
+                    },
+                    "modifiers": [],
+                    "name": "oppPipeMonths",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 82,
+                        "line": 674
+                    },
+                    "modifiers": [],
+                    "name": "totalAmount",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 103,
+                        "line": 674
+                    },
+                    "modifiers": [],
+                    "name": "totalCash",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 121,
+                        "line": 674
+                    },
+                    "modifiers": [],
+                    "name": "year",
+                    "references": [],
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 720
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "SelectOptionLists",
+                    "parameters": [
+                        {
+                            "name": "dealTypes",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "subCats",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "countries",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "reasons",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "stageNames",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "ims",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "scouts",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "analysts",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "verticals",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "dealCats",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "currencies",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "targetPls",
+                            "type": "LIST"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "SelectOptionLists",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 685
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "dealTypes",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 688
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "subCats",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 691
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "countries",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 694
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "reasons",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 697
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "stageNames",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 700
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "ims",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 703
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "scouts",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 706
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "analysts",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 709
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "verticals",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 712
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "dealCats",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 715
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "currencies",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 718
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "targetPls",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 683
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "SelectOptionLists",
+                "references": [],
+                "type": "SelectOptionLists"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 720
+                    },
+                    "modifiers": [],
+                    "name": "dealTypes",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 721
+                    },
+                    "modifiers": [],
+                    "name": "subCats",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 722
+                    },
+                    "modifiers": [],
+                    "name": "countries",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 723
+                    },
+                    "modifiers": [],
+                    "name": "reasons",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 724
+                    },
+                    "modifiers": [],
+                    "name": "stageNames",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 725
+                    },
+                    "modifiers": [],
+                    "name": "ims",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 726
+                    },
+                    "modifiers": [],
+                    "name": "scouts",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 727
+                    },
+                    "modifiers": [],
+                    "name": "analysts",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 728
+                    },
+                    "modifiers": [],
+                    "name": "verticals",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 729
+                    },
+                    "modifiers": [],
+                    "name": "dealCats",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 730
+                    },
+                    "modifiers": [],
+                    "name": "currencies",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 70,
+                        "line": 731
+                    },
+                    "modifiers": [],
+                    "name": "targetPls",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010heWAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "redirect",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 41
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "initSettings",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 65
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "saveOppPipeDetail",
+            "parameters": [
+                {
+                    "name": "opp",
+                    "type": "Opportunity"
+                },
+                {
+                    "name": "oppPipes",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 105
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "saveOpps",
+            "parameters": [
+                {
+                    "name": "opps",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 130
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "deleteOppPipeDetail",
+            "parameters": [
+                {
+                    "name": "oppId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 137
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOppPipeDetail",
+            "parameters": [
+                {
+                    "name": "opp",
+                    "type": "Opportunity"
+                }
+            ],
+            "references": [],
+            "returnType": "OppPipeDetail",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 146
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getExportData",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 166
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOppPipeData",
+            "parameters": [],
+            "references": [],
+            "returnType": "OppPipeData",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 239
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "buildUserRoleMap",
+            "parameters": [
+                {
+                    "name": "userIds",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 256
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "buildCountryInternationalMap",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 274
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getCurrencies",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 291
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getUsersByRoleNames",
+            "parameters": [
+                {
+                    "name": "roleNames",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 311
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getCountries",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 330
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getBaseQueryString",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 392
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getExportOpps",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 403
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getOppById",
+            "parameters": [
+                {
+                    "name": "oppId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 414
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getOppsByIds",
+            "parameters": [
+                {
+                    "name": "oppIds",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 425
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAllOpps",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 437
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getOppsByOppTeam",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 454
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getOppId2OppLineYearByYear",
+            "parameters": [
+                {
+                    "name": "oppIds",
+                    "type": "Set"
+                },
+                {
+                    "name": "year",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 505
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getTranslatedStageName",
+            "parameters": [
+                {
+                    "name": "stageName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "Ven_OppPipeline_CmpCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 16
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "oppId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "OPP_STAGES",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 19
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "IMS_ROLES",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 20
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "SCOUT_ROLE",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 21
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "ANALYST_ROLE",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 22
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "IM_ROLE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 23
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "AUSTRIA_ROLE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 24
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "SWITZERLAND_ROLE",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Ven_OppPipeline_CmpCtrl",
+        "references": [],
+        "type": "Ven_OppPipeline_CmpCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "oppPipes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "newOppPipes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "op",
+            "references": [],
+            "type": "Ven_OppPipeline__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "oppId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "currentYear",
+            "references": [],
+            "type": "OppPipeDetailYear"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "nextYear",
+            "references": [],
+            "type": "OppPipeDetailYear"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "oppId2Opp",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "oppId2CurrentYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "oppId2NextYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "exportDatas",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "assigneeIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "psa",
+            "references": [],
+            "type": "PermissionSetAssignment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "oppId2Opp",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "isInPermissionSet",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "summaryItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 188
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 192
+            },
+            "modifiers": [],
+            "name": "stageNames",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 193
+            },
+            "modifiers": [],
+            "name": "stageName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "imOptions",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 199
+            },
+            "modifiers": [],
+            "name": "userIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "iso",
+            "references": [],
+            "type": "InputSelectOpt"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "selectOptLsts",
+            "references": [],
+            "type": "SelectOptionLists"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 239
+            },
+            "modifiers": [],
+            "name": "userIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 241
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 258
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 260
+            },
+            "modifiers": [],
+            "name": "country",
+            "references": [],
+            "type": "P7S1_Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 275
+            },
+            "modifiers": [],
+            "name": "currencyTypes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 277
+            },
+            "modifiers": [],
+            "name": "cy",
+            "references": [],
+            "type": "CurrencyType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 291
+            },
+            "modifiers": [],
+            "name": "roleNames",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 292
+            },
+            "modifiers": [],
+            "name": "users",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "roleId2Role",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 298
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 312
+            },
+            "modifiers": [],
+            "name": "countries",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 314
+            },
+            "modifiers": [],
+            "name": "country",
+            "references": [],
+            "type": "P7S1_Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 393
+            },
+            "modifiers": [],
+            "name": "baseQueryString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 394
+            },
+            "modifiers": [],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 403
+            },
+            "modifiers": [],
+            "name": "oppId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 404
+            },
+            "modifiers": [],
+            "name": "baseQueryString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 405
+            },
+            "modifiers": [],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 414
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 415
+            },
+            "modifiers": [],
+            "name": "baseQueryString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 416
+            },
+            "modifiers": [],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 426
+            },
+            "modifiers": [],
+            "name": "baseQueryString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 428
+            },
+            "modifiers": [],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 438
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 439
+            },
+            "modifiers": [],
+            "name": "otm",
+            "references": [],
+            "type": "OpportunityTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 443
+            },
+            "modifiers": [],
+            "name": "baseQueryString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 445
+            },
+            "modifiers": [],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 454
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 454
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 455
+            },
+            "modifiers": [],
+            "name": "oppId2OppPipelineYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 456
+            },
+            "modifiers": [],
+            "name": "oppId2OppPipelineMonths",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 458
+            },
+            "modifiers": [],
+            "name": "oppPipeline",
+            "references": [],
+            "type": "Ven_OppPipeline__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 472
+            },
+            "modifiers": [],
+            "name": "oppId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 473
+            },
+            "modifiers": [],
+            "name": "totalAmount",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 474
+            },
+            "modifiers": [],
+            "name": "totalCash",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 476
+            },
+            "modifiers": [],
+            "name": "ops",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 478
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 479
+            },
+            "modifiers": [],
+            "name": "opmFound",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 483
+            },
+            "modifiers": [],
+            "name": "op",
+            "references": [],
+            "type": "Ven_OppPipeline__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 494
+            },
+            "modifiers": [],
+            "name": "opy",
+            "references": [],
+            "type": "OppPipeDetailYear"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 505
+            },
+            "modifiers": [],
+            "name": "stageName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

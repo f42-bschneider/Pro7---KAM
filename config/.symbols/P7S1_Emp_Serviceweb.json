@@ -1,0 +1,593 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000Ko9NAAS",
+    "innerClasses": [],
+    "interfaces": [
+        "Messaging.InboundEmailHandler"
+    ],
+    "key": "01p57000000Ko9NAAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 11
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "handleInboundEmail",
+            "parameters": [
+                {
+                    "name": "email",
+                    "type": "InboundEmail"
+                },
+                {
+                    "name": "env",
+                    "type": "InboundEnvelope"
+                }
+            ],
+            "references": [],
+            "returnType": "InboundEmailResult",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 235
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "readEmailValues",
+            "parameters": [
+                {
+                    "name": "sEmailContent",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Emp_Serviceweb",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 9
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_Emp_Serviceweb",
+        "references": [],
+        "type": "P7S1_Emp_Serviceweb"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "InboundEmail"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 112,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "env",
+            "references": [],
+            "type": "InboundEnvelope"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "InboundEmailResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "myPlainText",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "sEmailAddress",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "sFirstname",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "sLastname",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sComment",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "sAustrittsdatum",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "dAustrittsdatum",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "sTitle",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "sWindowsID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "sColleague",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "sOrganisation",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "sManager",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "sFirma",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "sPhone",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "objNewCase",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "objNewEmp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "objContact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "EmailValues",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "listContact",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "objCaseComment",
+            "references": [],
+            "type": "CaseComment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "listUser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "objCaseComment",
+            "references": [],
+            "type": "CaseComment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "listFirma",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "objComp",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "objCaseComment",
+            "references": [],
+            "type": "CaseComment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "sColleagueSplit",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "listColleague",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "objColleague",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "objCaseComment",
+            "references": [],
+            "type": "CaseComment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 173
+            },
+            "modifiers": [],
+            "name": "sManagerSplit",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "listManager",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "objManager",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "objCaseComment",
+            "references": [],
+            "type": "CaseComment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "sMessage",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "objCaseComment",
+            "references": [],
+            "type": "CaseComment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 212
+            },
+            "modifiers": [],
+            "name": "iDublicateIDPos",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 216
+            },
+            "modifiers": [],
+            "name": "sDublicateID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "dublicateID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "sEmailContent",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "EmailValues",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 239
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "iSeparator",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 244
+            },
+            "modifiers": [],
+            "name": "sKey",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "sValue",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

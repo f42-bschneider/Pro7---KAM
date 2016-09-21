@@ -1,0 +1,125 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Batch",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1hoIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K1hoIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getQuery",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "Batch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 2
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batchSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "baseQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Batch",
+        "references": [],
+        "type": "Batch"
+    },
+    "variables": []
+}

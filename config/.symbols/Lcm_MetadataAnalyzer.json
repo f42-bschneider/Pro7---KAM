@@ -1,0 +1,456 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Lcm_MetadataAnalyzer",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gQeAAI",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable"
+    ],
+    "key": "01p570000010gQeAAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "run",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareRoles",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 55
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "compareProfiles",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 85
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "sendEmail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 97
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setMailRecipients",
+            "parameters": [
+                {
+                    "name": "mail",
+                    "type": "SingleEmailMessage"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 101
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setMailSubject",
+            "parameters": [
+                {
+                    "name": "mail",
+                    "type": "SingleEmailMessage"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 105
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setMailBody",
+            "parameters": [
+                {
+                    "name": "mail",
+                    "type": "SingleEmailMessage"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 119
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "context",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Lcm_MetadataAnalyzer",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "data",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "ORG",
+            "references": [],
+            "type": "Organization"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "Lcm_MetadataAnalyzer",
+        "references": [],
+        "type": "Lcm_MetadataAnalyzer"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "picklistMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "roleMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "entry",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "role",
+            "references": [],
+            "type": "UserRole"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "info",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "picklistMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "profileMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "entry",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "info",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "sandbox",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "context",
+            "references": [],
+            "type": "SchedulableContext"
+        }
+    ]
+}

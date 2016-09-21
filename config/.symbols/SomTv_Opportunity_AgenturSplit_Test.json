@@ -1,0 +1,351 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KeOxIAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KeOxIAK",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSaveWithoutAddingAgenturSplit",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 42
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testDeleteAgenturSplit",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 79
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAgenturSplit",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "opportunity",
+                    "type": "Opportunity"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                },
+                {
+                    "name": "anteil",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "SomTv_Agentursplit__c",
+            "type": null
+        }
+    ],
+    "name": "SomTv_Opportunity_AgenturSplit_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "SomTv_Opportunity_AgenturSplit_Test",
+        "references": [],
+        "type": "SomTv_Opportunity_AgenturSplit_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "objAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "objOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "objAS1",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "objAS2",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "objAS3",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "SomTv_Opportunity_AgenturSplit"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "agSUM",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "objAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "objOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "objAS1",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "objAS2",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "objAS3",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "SomTv_Opportunity_AgenturSplit"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "opportunity",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 135,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "anteil",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "AgenturSplit_TestData",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        }
+    ]
+}

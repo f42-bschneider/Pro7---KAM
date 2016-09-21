@@ -1,0 +1,797 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_Opportunity_ValidateData",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgnRIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnRIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 27
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterDelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 36
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 45
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 54
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 66
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeDelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 72
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 78
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 86
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkOpportunity",
+            "parameters": [
+                {
+                    "name": "lstNewOpportunities",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldOpportunities",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 141
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "copyDataToOpportunityLineItems",
+            "parameters": [
+                {
+                    "name": "lstNewOpportunities",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldOpportunities",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 171
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createSnapshotOfLineItems",
+            "parameters": [
+                {
+                    "name": "lstNewOpportunities",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldOpportunities",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 217
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "updateCampaignMN3",
+            "parameters": [
+                {
+                    "name": "lstNewOpportunities",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldOpportunities",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 257
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateMN3OfOpportinityByIds",
+            "parameters": [
+                {
+                    "name": "oppIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_Opportunity_ValidateData",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "CHILDRENRECORDTYPE",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 10
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "PARENTRECORDTYPE",
+            "references": [],
+            "type": "Set"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "SomTv_Opportunity_ValidateData",
+        "references": [],
+        "type": "SomTv_Opportunity_ValidateData"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 114,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "lstNewOpportunities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "mapOldOpportunities",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "mChildRecordType",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "mParentRecordType",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "parentIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "oppToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "amount",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "child",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "lstNewOpportunities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "mapOldOpportunities",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "mOpps",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "olis",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "lstNewOpportunities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "mapOldOpportunities",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "mRecordType",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "lstNewOpportunities",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 94,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "mapOldOpportunities",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "campaignIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 223
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "oldOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 257
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 266
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 268
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        }
+    ]
+}

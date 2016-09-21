@@ -1,0 +1,194 @@
+<!--
+    Page Name    : Adv_CampaignItem_GoodMorningReportCSV
+    Description  : This page is used to export the Good Morning Report in either Excel or CSV format 
+    Created By   : Cognizant Technology Solutions
+    Created On   : 5/7/2014
+-->
+<apex:page controller="Adv_CampaignItem_GoodMorningReport"  cache="true" sidebar="false" ContentType="{!i_sContentType}">
+<apex:outputText rendered="{!IF(i_sSelectedContentType== 'Excel Format',true,false)}">
+<head>
+    <meta http-equiv="Content-Type" content="text/csv;charset=UTF-8" />
+</head>
+</apex:outputText>
+<apex:outputText value="{!i_sReportData}" rendered="{!IF(i_sSelectedContentType== 'CSV Format',true,false)}"/>
+
+<apex:outputPanel rendered="{!IF(i_sSelectedContentType== 'Excel Format',true,false)}">
+
+     <b><apex:outputText value="{!i_sFileName}"/> </b>
+     <br></br>
+     <!-- Display Column Headings of Report -->
+     <table width="100%" border="1">
+            <tr width="100%">
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Status_Pos_GM}"/></b>
+                </td>
+
+                                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Kampagnen_Nr_GM}"/></b>
+                </td>
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Kampagne_GM}"/></b>
+                </td>
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$ObjectType.ADvendio__Campaign_Item__c.Fields.SomDig_Werbetreibender__c.Label}"/></b>
+                </td>
+
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Agentur_GM}"/></b>
+                </td>
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Pos_Nr_GM}"/></b>
+                </td>
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Werbemittel_GM}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Start_GM}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Ende_GM}"/></b>
+                </td>
+
+
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Abrechnungsart_GM}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$ObjectType.ADvendio__Campaign_Item__c.Fields.ADvendio__Quantity__c.Label}"/></b>
+                </td>
+
+
+                 <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.IST_aktuell_GM}"/></b>
+                </td>
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$ObjectType.ADvendio__Campaign_Item__c.Fields.SomDig_Risk__c.Label}"/></b>
+                </td>
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.SOLL_aktuell_GM}"/></b>
+                </td>
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.DFP_Prognose_GM}"/></b>
+                </td>
+
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.DFP_Prognose_Vortag_GM}"/></b>
+                </td>
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.MN2_GM}"/></b>
+                </td>
+
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.eTKP_GM}"/></b>
+                </td>
+
+
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Inhaber_GM}"/></b>
+                </td>
+
+
+
+            </tr>
+        </table>
+
+        <!-- Display Columns of Report -->
+        <table width="100%" border="1">
+        <apex:repeat value="{!i_oListCampaignItemReport}" var="campgnItem">
+        <tr width="100%" border="0">
+
+
+      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+                <apex:outputText value="{!campgnItem.SomDig_PositionStatus__c}" />
+            </td>
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+                <apex:outputText value="{!campgnItem.SomDig_Mediakampagnennummer__c}" />
+            </td>
+
+             <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+                <apex:outputText value="{!campgnItem.ADvendio__Media_Campaign__r.Name}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.SomDig_Werbetreibender__c}" />
+            </td>
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.ADvendio__Media_Campaign__r.ADvendio__Agency__r.Name}" />
+            </td>
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+                <apex:outputText value="{!campgnItem.ADvendio__PositionNumber__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.Name}" />
+            </td>
+
+             <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+              <apex:outputText value="{!campgnItem.ADvendio__from_Date__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+             <apex:outputText value="{!campgnItem.ADvendio__until_Date__c}" />
+            </td>
+
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.ADvendio__Billing_category__c}" />
+            </td>
+
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.ADvendio__Quantity__c}" />
+            </td>
+
+
+
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.SomDig_AiClicksIst__c}" />
+            </td>
+
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.SomDig_Risk__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.SomDig_AIClicksSollBisHeute__c}" />
+            </td>
+
+
+               <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.ADvendio__PerformanceIndicator__c}" />
+            </td>
+
+
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.SomDig_LeistungskennzahlVortag__c}" />
+            </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.ADvendio__Amount_net_net__c}" />
+            </td>
+            <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.ADvendio__eCPC__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputText value="{!campgnItem.SomDig_Inhaber_Kuerzel__c}" />
+            </td>
+
+         </tr>
+         </apex:repeat>
+         </table>
+
+
+
+  </apex:outputPanel>
+</apex:page>

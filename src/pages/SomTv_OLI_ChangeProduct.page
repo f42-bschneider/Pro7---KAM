@@ -1,0 +1,39 @@
+<apex:page controller="SomTv_OLI_ChangeProduct" tabStyle="Opportunity">
+
+    <style type="text/css">
+        select.products-list { max-height: 250px; }
+    </style>
+
+    <apex:pageMessages />
+
+    <apex:outputPanel rendered="{!oli != null}" layout="block">
+        <apex:sectionHeader title="Opportunity Product" subtitle="{!oli.Product2.Name} for {!oli.Opportunity.Name}" />
+
+        <apex:form >
+            <apex:pageBlock title="Neues Produkt auswählen" mode="edit">
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton action="{!changeProduct}" value="Speichern" />
+                    <apex:commandButton action="{!cancel}" value="Abbrechen" immediate="true" />
+                </apex:pageBlockButtons>
+
+                <apex:pageBlockSection columns="1">
+                    <apex:inputText value="{!filterText}" label="Filter" html-autocomplete="off" onkeypress="return handleEnter(event)">
+                        <apex:actionSupport action="{!retrieveProducts}" reRender="available-products" event="onkeyup" />
+                    </apex:inputText>
+
+                    <apex:selectList value="{!oli.SomTv_AdFProductHelper__c}" styleClass="products-list" id="available-products" label="Produkte">
+                        <apex:selectOptions value="{!products}"/>
+                    </apex:selectList>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:outputPanel>
+
+    <script>
+        function handleEnter(e) {
+            var _event = window.event || e;
+            return _event.keyCode != 13;
+        }
+    </script>
+
+</apex:page>

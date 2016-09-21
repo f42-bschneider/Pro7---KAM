@@ -1,0 +1,1258 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "AccountStructure",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000JR9gIAG",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 302
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "ObjectStructureMap",
+                    "parameters": [
+                        {
+                            "name": "nodeId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "levelFlag",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "closeFlag",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "nodeType",
+                            "type": "String"
+                        },
+                        {
+                            "name": "lastNode",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "currentNode",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "a",
+                            "type": "Account"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 276
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getnodeId",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 277
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getlevelFlag",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "LIST",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 278
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getcloseFlag",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "LIST",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 279
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getnodeType",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "String",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 280
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getcurrentNode",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Boolean",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 286
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getaccount",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Account",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 288
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setnodeId",
+                    "parameters": [
+                        {
+                            "name": "n",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 289
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setlevelFlag",
+                    "parameters": [
+                        {
+                            "name": "l",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 290
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setlcloseFlag",
+                    "parameters": [
+                        {
+                            "name": "l",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 291
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setnodeType",
+                    "parameters": [
+                        {
+                            "name": "nt",
+                            "type": "String"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 292
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setcurrentNode",
+                    "parameters": [
+                        {
+                            "name": "cn",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 297
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setaccount",
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "type": "Account"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "ObjectStructureMap",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 265
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "nodeId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 266
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "levelFlag",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 26,
+                        "line": 267
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "closeFlag",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 268
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "nodeType",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 269
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "currentNode",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 274
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "account",
+                    "references": [],
+                    "type": "Account"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 31,
+                    "line": 263
+                },
+                "modifiers": [
+                    "public",
+                    "with sharing"
+                ],
+                "name": "ObjectStructureMap",
+                "references": [],
+                "type": "ObjectStructureMap"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 39,
+                        "line": 288
+                    },
+                    "modifiers": [],
+                    "name": "n",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 289
+                    },
+                    "modifiers": [],
+                    "name": "l",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 44,
+                        "line": 290
+                    },
+                    "modifiers": [],
+                    "name": "l",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 291
+                    },
+                    "modifiers": [],
+                    "name": "nt",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 45,
+                        "line": 292
+                    },
+                    "modifiers": [],
+                    "name": "cn",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 297
+                    },
+                    "modifiers": [],
+                    "name": "a",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "nodeId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 61,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "levelFlag",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 81,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "closeFlag",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 100,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "nodeType",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 118,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "lastNode",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 136,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "currentNode",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 157,
+                        "line": 302
+                    },
+                    "modifiers": [],
+                    "name": "a",
+                    "references": [],
+                    "type": "Account"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000JR9gIAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 41
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setcurrentId",
+            "parameters": [
+                {
+                    "name": "cid",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 49
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getObjectStructure",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 66
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "formatObjectStructure",
+            "parameters": [
+                {
+                    "name": "currentId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 171
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setlevelFlag",
+            "parameters": [
+                {
+                    "name": "nodeElements",
+                    "type": "LIST"
+                },
+                {
+                    "name": "nodeType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 198
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setcloseFlag",
+            "parameters": [
+                {
+                    "name": "cnl",
+                    "type": "LIST"
+                },
+                {
+                    "name": "nnl",
+                    "type": "LIST"
+                },
+                {
+                    "name": "nodeType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 216
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isLastNode",
+            "parameters": [
+                {
+                    "name": "nodeElements",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 243
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "GetTopElement",
+            "parameters": [
+                {
+                    "name": "objId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "AccountStructure",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "currentId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "asm",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "masm",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "maxLevel",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 21
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "AccountStructure",
+        "references": [],
+        "type": "AccountStructure"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "cid",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "currentId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "asm",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "al",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "currentParent",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "nodeList",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "nodeSortList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "levelFlag",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "closeFlag",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "nodeId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "nodeType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "count",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "level",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "endOfStructure",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "pnl",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "cnl",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "nnl",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "pn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "cn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "nn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "tasm",
+            "references": [],
+            "type": "ObjectStructureMap"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "nodeElements",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "nodeType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 173
+            },
+            "modifiers": [],
+            "name": "flagList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 174
+            },
+            "modifiers": [],
+            "name": "searchNode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 175
+            },
+            "modifiers": [],
+            "name": "workNode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "cn",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 198
+            },
+            "modifiers": [],
+            "name": "cnl",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 198
+            },
+            "modifiers": [],
+            "name": "nnl",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 198
+            },
+            "modifiers": [],
+            "name": "nodeType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 200
+            },
+            "modifiers": [],
+            "name": "flagList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "searchNode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "workNode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "cn",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 216
+            },
+            "modifiers": [],
+            "name": "nodeElements",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 218
+            },
+            "modifiers": [],
+            "name": "searchNode",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 219
+            },
+            "modifiers": [],
+            "name": "cn",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 221
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "objId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "top",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gTZAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTZAAY",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 14
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "createPortalLoginEvent",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_PortalLoginEventUtil_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 12
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Liferay_PortalLoginEventUtil_Test",
+        "references": [],
+        "type": "P7S1_Liferay_PortalLoginEventUtil_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        }
+    ]
+}

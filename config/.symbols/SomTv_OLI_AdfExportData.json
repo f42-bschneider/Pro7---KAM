@@ -1,0 +1,517 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_OLI_AdfExportData",
+            "parameters": [
+                {
+                    "name": "adfProjectId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010jTwAAI",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "FactSheetExportException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 11
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "FactSheetExportException",
+                "references": [],
+                "type": "FactSheetExportException"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 96
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "FieldMappingHandler",
+                    "parameters": [],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 101
+                    },
+                    "modifiers": [
+                        "protected",
+                        "abstract"
+                    ],
+                    "name": "init",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "FieldMappingHandler",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 29,
+                        "line": 93
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "fieldPaths",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 94
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "fieldLabels",
+                    "references": [],
+                    "type": "Map"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 27,
+                    "line": 91
+                },
+                "modifiers": [
+                    "public",
+                    "abstract"
+                ],
+                "name": "FieldMappingHandler",
+                "references": [],
+                "type": "FieldMappingHandler"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 106
+                    },
+                    "modifiers": [
+                        "protected",
+                        "override"
+                    ],
+                    "name": "init",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 112
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "addFieldPaths",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 22,
+                        "line": 177
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "addFieldLabels",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "HardCodedFieldMapper",
+            "namespace": null,
+            "parentClass": "FieldMappingHandler",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 104
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "HardCodedFieldMapper",
+                "references": [],
+                "type": "HardCodedFieldMapper"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010jTwAAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 28
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getRecords",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 20,
+                "line": 45
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "buildQuery",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 58
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "formatValue",
+            "parameters": [
+                {
+                    "name": "value",
+                    "type": "Object"
+                }
+            ],
+            "references": [],
+            "returnType": "Object",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 69
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getValue",
+            "parameters": [
+                {
+                    "name": "obj",
+                    "type": "SObject"
+                },
+                {
+                    "name": "fieldPath",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Object",
+            "type": null
+        }
+    ],
+    "name": "SomTv_OLI_AdfExportData",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 13
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "opportunityLineItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "count",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "fsh",
+            "references": [],
+            "type": "FieldMappingHandler"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "adfProjectId",
+            "references": [],
+            "type": "Id"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_OLI_AdfExportData",
+        "references": [],
+        "type": "SomTv_OLI_AdfExportData"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "adfProjectId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "fieldPath",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "fieldValues",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "oli",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "str",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "fieldPath",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "tempPath",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "referencedRecord",
+            "references": [],
+            "type": "SObject"
+        }
+    ]
+}

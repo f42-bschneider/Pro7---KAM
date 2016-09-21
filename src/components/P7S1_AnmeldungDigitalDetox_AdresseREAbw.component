@@ -1,0 +1,37 @@
+<apex:component layout="none" controller="P7S1_AnmeldungDigitalDetox_Components" allowDML="true" language="{!language}">
+    <apex:attribute name="codeString" description="next" type="String" required="false" assignTo="{!code}"/>
+    <apex:attribute name="emailString" description="next" type="String" required="false" assignTo="{!email}"/>
+
+    <td align="left" valign="top" width="62">
+        <img alt="" border="0" height="41" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/>
+    </td>
+
+    <td align="left" valign="top" width="575">
+        <apex:form id="addressrew_form"><br/>
+            <div id="error_holder_reabw" class="hid error-holder">
+            {!$Label.P7S1_VIRTUALTHEMOUNTAIN_ERROR_REQUIRED}
+            </div>
+            {!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSEREABW_1}<br/>
+            <br/>
+            
+            <apex:outputText escape="false" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSEREABW_2}"/>
+            &nbsp;
+            <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="400">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top" style="white-space:nowrap;"><b>{!$Label.P7S1_VIRTUALTHEMOUNTAIN_ADRESSEREABW_Rechnungsadresse}</b></td>
+                        <td><apex:inputField value="{!sobjectRecord.P7S1_Rechnungsadresse__c}" style="height:50px; width: 300px !important; margin-left: 20px !important;"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <br/>
+             <apex:commandButton styleClass="submit" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_Abschicken}" action="{!updateRecordZusage}" reRender="addressrew_form" oncomplete="goNextDanke();" status="status_for_all"/>
+            &nbsp;<input class="prev-input" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_Prev}" onclick="goPrevAddressREAbw();"/>
+
+        </apex:form>
+    </td>
+
+
+</apex:component>

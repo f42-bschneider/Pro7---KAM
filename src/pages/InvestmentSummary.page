@@ -1,0 +1,295 @@
+<apex:page standardController="Opportunity"  extensions="InvestmentSummaryController" renderas="{!IF(pdfGeneratorInstance.renderAsPdf,'pdf','html')}" sideBar="false" showHeader="false" >
+<!-- 
+
+ @author: ADvendio.com (helge.kosuch@advendio.com)
+
+ -->
+
+    <head>
+        <meta http-equiv="content-type" content="charset=UTF-8" />
+        <style type="text/css" media="print,screen">
+        
+        @page { 
+            size: A4 portrait;
+            margin-top: 4cm;
+        
+            @top-center {
+              content:element(eachPDFPageHeader);
+            }           
+        }
+        
+        div.eachPDFPageHeader {
+            position: running(eachPDFPageHeader);   
+        }
+        
+        div.styleEverywhere {
+            {!pdfGeneratorInstance.styleEverywhere}
+        }
+        
+        .sectionTitle {
+            font-size:14pt;
+            font-weight: bold;
+        }
+
+        td.NoBorder {
+            border-style:none;
+        }    
+
+        th {
+            border-style:solid;
+            border-width:1px;
+            font-weight: bold;
+            font-size:14px;
+        }
+        
+        td {
+            vertical-align:top;
+        }
+        
+        td.thinBorder {
+            border-style:solid;
+            border-width:1px;
+        }
+        
+        table.thin {
+            border-width: 1px 1px 1px 1px;
+            border-spacing: 0px;
+            border-style: solid;
+            border-color: black black black black ;
+            border-collapse: separate;
+            background-color: white;
+        }
+        
+        .label {
+            font-weight:bold;
+        }
+        
+        </style>
+    </head>
+    
+    <body style="font-size: 11pt;">
+
+    <apex:pageMessages />
+
+    <div class="eachPDFPageHeader styleEverywhere" style="font-size: 11pt;" >
+        <table width="100%"><tr>
+            <td class="NoBorder">
+                <p style="font-size: 16pt; font-weight: bold"> Investment Summary<br/>(TODO: Labels)
+                    <br/>Opportunistic Deal
+                </p>
+            </td>
+            <td class="NoBorder" style="text-align: right;">
+                <img src="/servlet/servlet.ImageServer?id=015M00000005esS&oid=00DM0000001Xhn4&lastMod=1365170685000"
+                    width="200px" height=""/> 
+            </td>
+        </tr></table>
+    </div>
+        
+    <div class="styleEverywhere">        
+    <apex:outputText rendered="{!not(pdfGeneratorInstance.renderAsPdf)}">
+        <apex:form >
+            <p>This is only a rough preview of the resulting PDF.</p>
+            <apex:commandButton action="{!pdfNewPageReference}" value="View as PDF (will not be saved in Salesforce)" />        
+            <apex:commandButton action="{!pdfSaveAsAttachment}" value="Attach as PDF to the Opportunity" />
+        </apex:form>    
+    </apex:outputText>
+        
+    <!-- Done, delete:Re-insert from: Taken out 1 in https://docs.google.com/a/avendio.de/document/d/1Y3BsBzzJKvKXvRUuEq413HFPyAKM1K7YVTR0JrHLrlU/edit# -->
+
+    <br/>
+
+      <p class="sectionTitle">Final Approval</p>
+      <table class="thin" width="100%">
+          <tr id="FinalApprovalLine1">
+              <td class="label NoBorder">Deal:</td><td>{!Opportunity.name}</td>
+              <td class="label">Deal Team:</td><td>{!teamMembersInstance.dealTeam}</td>
+              <td></td>
+          </tr>
+
+          <tr id="FinalApprovalLine2">
+              <td></td><td></td>
+              <td class="label">Media Expert:</td><td>{!teamMembersInstance.mediaExpert}</td>
+              <td></td>
+          </tr>
+
+          <tr id="FinalApprovalLine3">
+              <td class="label">Company</td><td>{!opp.Account.name}</td>
+              <td class="label">Source Person:</td><td>{!teamMembersInstance.sourcePerson}</td>
+              <td></td>
+          </tr>
+
+          <tr id="FinalApprovalLine4">
+              <td></td><td></td>
+              <td class="label">Sourcing Type:</td>
+              <td>{!Opportunity.Ven_Sourcing_Type__c}</td>
+              <td class="label">{!IF(Opportunity.Ven_Mission_Critical__c,'Mission Crititcal','')}</td>
+          </tr>
+      </table>
+
+      
+
+      <br/>
+
+      <table class="thin" width="100%"><tr><td class="sectionTitle" style="text-align: center;">
+          Executive Summary
+      </td></tr></table>
+
+      <p class="sectionTitle">Detailed Investment Rationale</p>
+      <table class="thin" width="100%"><tr><td style="text-align: justify; min-height:4cm;">
+          <!-- The size of the font of the content is reduced if neccessary to fit inside the box -->
+          <apex:outputText value="{!Opportunity.Ven_Detailed_Investment_Rationale__c}" escape="false"/>
+      </td></tr></table>
+
+      <p class="sectionTitle">USP of Product/Service Offering</p>
+      <table class="thin" width="100%"><tr><td style="text-align: justify; min-height:1.5cm;">
+          <apex:outputText value="{!Opportunity.Ven_USP_of_Product__c}" escape="false"/>
+      </td></tr></table>
+
+      <p class="sectionTitle">Assessment of Investment Manager</p>
+      <table class="thin" width="100%"><tr><td style="text-align: justify; min-height:4cm;">
+          <apex:outputText value="{!Opportunity.Ven_Assessment_of_Investment_Manager__c}" escape="false"/>
+      </td></tr></table>
+            
+      <p><table class="thin" width="100%"><tr><td class="sectionTitle" style="text-align: justify;">
+          Target
+      </td></tr></table></p>
+
+      <p class="sectionTitle">Market</p>
+      <table class="thin" width="100%">
+          <tr>
+              <td class="label">Size</td><td>{!Opportunity.Ven_Market_Size__c}</td>
+          </tr>
+          <tr>
+              <td class="label"></td><td></td>
+          </tr>
+          <tr>
+              <td class="label">Growth</td><td>{!Opportunity.Ven_Market_Growth__c}</td>
+          </tr>
+          <tr>
+              <td class="label">Drivers</td><td><apex:outputText value="{!Opportunity.Ven_Market_Drivers__c}" escape="false"/></td>
+          </tr>
+          <tr>
+              <td class="label"></td><td></td>
+          </tr>
+          <tr>
+              <td class="label">Description</td><td><apex:outputText value="{!Opportunity.Ven_Market_Description__c}" escape="false"/></td>
+          </tr>
+      </table>
+
+    <p class="sectionTitle">Key Players &amp; Competition</p>
+    <table class="thin" width="100%"><tr><td style="min-height:4cm;">
+       <span class="label">Competitors:</span>{!competitorsInstance.listOfNames}
+       <br/><apex:outputText value="{!competitorsInstance.description}" escape="false"/>
+    </td></tr></table>
+      
+    <p class="sectionTitle">Target Company &amp; Product</p>
+    <table class="thin" width="100%">
+       <tr><td class="label">Business Model</td><td>{!Opportunity.Account.Ven_Business_Model__c}</td></tr>
+       <tr><td class="label">USP</td><td>{!Opportunity.Account.Ven_USP__c}</td></tr>
+       <tr><td class="label"></td></tr>
+       <tr><td class="label">Year of Founding</td><td>{!Opportunity.Account.Ven_Year_of_Founding__c}</td></tr>
+    </table>
+
+    <p class="sectionTitle">Management &amp; Shareholders</p> 
+    
+    <p><table class="thin" width="100%"><tr><td class="label">
+        Management Team
+    </td></tr></table></p>    
+    <table class="thin" width="100%"><tr><td class="thinBorder" style="min-height:4cm;">
+        <apex:outputText escape="false" value="{!managementTeam}"/>       
+    </td></tr></table>
+
+    <p><table class="thin" width="100%"><tr><td class="label">
+        Cap Table
+    </td></tr></table></p>    
+    Round:&nbsp;{!currentRound.Ven_Round_Number__c}
+    <!--p><table ><tr> old version, can be deleted:
+        <td class="label">Sum of Shares:</td><td>{!currentRound.Ven_all_Shares__c}</td>
+        <td class="label">Round:</td><td>{!currentRound.Ven_Round_Number__c}</td>
+        <td class="label">Founders equity shares:</td><td>{!currentRound.Ven_Founders_Equity_Share__c}</td>
+        <td class="label">Seven Ventures equity shares:</td><td>{!currentRound.Ven_SV_Equity_Share__c}</td>
+    </tr></table></p-->
+    <p>
+        <table class="thin" width="100%">
+            <tr>
+                <th>Shareholder     </th>       
+                <!--th>Ven_Category__c             </th-->       
+                <th>Shares               </th>       
+                <th>Share                </th>       
+                <!--th>Ven_SV_Equity_Share__c      </th-->  
+            </tr>
+            <apex:repeat value="{!shares}" var="row">
+                <tr>
+                    <td class="thinBorder">{!row.Ven_Shareholder__r.name     }</td>       
+                    <td class="thinBorder">{!row.Ven_Shares__c               }</td>       
+                    <td class="thinBorder">{!row.Ven_Share__c                }</td>       
+                </tr>    
+           </apex:repeat>
+       </table>
+    </p>           
+        
+    <p class="sectionTitle">Key Financials &amp; KPIs (SevenVentures Case incl. Media)</p>    
+     
+    <p><table class="thin" width="100%"><tr><td class="label">
+        Deal
+    </td></tr></table></p>        
+        
+    <p class="sectionTitle">Deal Terms</p>
+    <table class="thin" width="100%"><tr><td class="thinBorder" style="min-height:4cm;">
+    </td></tr></table>
+        
+    <p class="sectionTitle">Media Terms</p>
+    <table class="thin" width="100%"><tr><td class="thinBorder" style="min-height:2cm;">
+    </td></tr></table>
+        
+    <p class="sectionTitle">Returns</p>
+    <table class="thin" width="100%"><tr><td class="thinBorder"  style="min-height:4cm;">
+    </td></tr></table>
+        
+    <p class="sectionTitle">Terms of Similar Deals</p>
+    <table class="thin" width="100%"><tr><td class="thinBorder" style="min-height:3cm;">
+    </td></tr></table>
+
+    <p><table class="thin" width="100%"><tr><td class="label">
+        Deviation from Standard Terms
+    </td></tr></table></p>    
+     <p><b>Must have:</b> Deviation only with the consent of the VIC</p>
+     <p><b>Nice to have:</b> Deviation even without the consent of the VIC</p>
+
+    <p>
+        <table class="thin" width="100%">
+            <apex:repeat value="{!termsInstance.abschnittsSections}" var="abschnittsSection">
+                <tr style="background-color: #cccccc; min-height: 1cm;">
+                    <th>{!abschnittsSection.title}</th>
+                    <th style="text-align:center;">j/n</th>
+                    <th>Kommentar (falls nein)</th>
+                    <th>Abweichender Term</th>
+                </tr>
+                <apex:repeat value="{!abschnittsSection.terms}" var="term">
+                    <tr>
+                        <!-- Only the terms of certain contracts are shown here. At this time: Status must be signed and RecordType must be Medialeistungsvertag -->
+                        
+                        <td class="thinBorder">{!term.Ven_Standard_Term_kurz__r.Ven_Standard_Term_Lang__c}</td>
+                        <td class="thinBorder" style="text-align:center;">{!IF(term.Ven_G_ltig__c,'x','')}</td>
+                        <td class="thinBorder">{!term.Ven_Kommentar_warum_nicht_g_ltig__c}</td>
+                        <td class="thinBorder">{!term.Ven_Abweichender_Term__c}</td>
+                    </tr>    
+               </apex:repeat>
+           </apex:repeat>
+       </table>
+    </p>
+
+    <p><table class="thin" width="100%"><tr><td class="label">
+        Service Level Matrix
+    </td></tr></table></p>  
+    
+    <p><table class="thin" width="100%"><tr><td class="label">
+        Checklist
+    </td></tr></table></p>  
+
+    </div>
+
+    </body>
+    
+    
+</apex:page>

@@ -1,0 +1,65 @@
+<apex:page standardController="P7S1_PortalLogin__c" extensions="P7S1_Liferay_PortalLoginController"  >
+  <apex:includeScript value="{!$Resource.P7S1_Liferay_jQuery}"/>
+    <script src="../../soap/ajax/35.0/connection.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    j$ = jQuery.noConflict();
+    j$( document ).ready(function() {
+      checkStatus();
+    });
+      function checkStatus() {
+          console.log('checking status');
+            sforce.connection.sessionId='{!GETSESSIONID()}';
+            var portalLoginId = getUrlParameter('id');
+            console.log('portalLoginId: ' + portalLoginId);
+            var result = sforce.connection.query("SELECT Id, P7S1_Portal_Status__c FROM P7S1_PortalLogin__c WHERE Id = '"+portalLoginId+"'");
+            var records = result.getArray("records");
+            var record = records[0];
+            if (record.P7S1_Portal_Status__c == 'Gesperrt') {
+                activateSF();
+            } else {
+                alert("Portal Login kann nur im Status 'Gesperrt' aktiviert werden. Er befindet sich aber im Status "+record.P7S1_Portal_Status__c);
+                location = "/"+record.Id;
+            }
+        }
+    function doSF() {
+      activateSF();
+    }
+    function doLR() {
+      activateLiferay();
+    }
+
+        function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+  </script>
+    <apex:form >
+      <div style="width:30px">
+
+            <apex:actionStatus id="LoadingStatusSpinner">
+                <apex:facet name="start">
+                    <div id="loadingDiv" class="loadingDiv" >
+                        <span id="loadingHolder" class="loadingHolder">
+                            <span class="loadingDescription"></span>
+                            <img class="loadingImage" src="/img/loading.gif"/>
+                        </span>
+                    </div>
+                </apex:facet>
+            </apex:actionStatus>
+        </div>
+    <apex:actionFunction action="{!activatePortalLoginUserSF}" name="activateSF" rerender="output" oncomplete="doLR()" status="LoadingStatusSpinner" />
+    <apex:actionFunction action="{!activatePortalLoginUserLiferay}" name="activateLiferay" rerender="output" status="LoadingStatusSpinner" />
+      <br />
+      <apex:outputLabel value="{!output}" id="output"/>
+    </apex:form>
+</apex:page>

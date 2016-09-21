@@ -1,0 +1,589 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dubAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dubAAA",
+    "methods": [],
+    "name": "P7S1_Liferay_Constants",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_SEVEN_ONE_MEDIA",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_SEVEN_ONE_MEDIA_CH",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_SEVEN_ONE_MEDIA_COM",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_ADFACTORY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_UPDATE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_ACTIVATE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_CONFIRM",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_DELETE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_STATUS_UNCONFIRMEND",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 19
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_STATUS_ACTIVE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 20
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_STATUS_LIFERAY_ACTIVE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_STATUS_ADFACTORY_ACTIVE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_STATUS_INACTIVE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_STATUS_DELETED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 25
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_CREATED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 26
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_ACTIVATED_SF",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 27
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_ACTIVATED_LR",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 28
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_ACTIVATED_AF",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_CONFIRMED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_UPDATED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 31
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_DELETED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 32
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_STATUS_DELETED_API",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 34
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_EMAIL_SENT",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 35
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_EMAIL_SENT_OPTIN",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_EMAIL_SENT_ADMIN_ACTIVATION",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 37
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_EMAIL_SENT_WELCOME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 38
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_EMAIL_SENT_DELETE_CONFIRM",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 39
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EVENT_NEWSLETTER_SUBSCRIBE_CONFIRM_SEND",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 41
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EMAIL_TEMPLATE_PREFIX_ADFACTORY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 42
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EMAIL_TEMPLATE_PREFIX_LIFERAY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 44
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EMAIL_TEMPLATE_OPTIN_LINK",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 45
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EMAIL_TEMPLATE_WELCOME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 46
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EMAIL_TEMPLATE_DEL_CONFIRM",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 47
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_EMAIL_TEMPLATE_ADMIN_ACTIVATION",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 49
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_COMPANY_TYPE_SF_NO_MATCH",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 50
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_COMPANY_TYPE_SF_ADVERTISER",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 51
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_COMPANY_TYPE_SF_ADVERTISING_AGENCY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 52
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PORTAL_COMPANY_TYPE_SF_MEDIA_AGENCY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 54
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "NEWSLETTER_ACTION_SUBSCRIBE_EMAIL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 55
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "NEWSLETTER_TEMPLATE_SUBSCRIBE_EMAIL",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_Constants",
+        "references": [],
+        "type": "P7S1_Liferay_Constants"
+    },
+    "variables": []
+}

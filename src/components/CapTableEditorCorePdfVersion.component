@@ -1,0 +1,76 @@
+<apex:component allowDML="true"> 
+
+	<apex:attribute name="c" type="CapTableEditorController" required="true" description="CapTableEditorController"/>
+	<apex:attribute name="currentlySelectedRoundCopy" type="Ven_Round__c" required="true" 
+		description="This is used only for displaying. Any edits inside the component will be discarded."/>
+
+	<table class="thin">
+	    <tr>
+	  	    <apex:outputPanel rendered="{!not(c.renderAsPdf)}">
+	    		<td class="ButtonCol" style="border-style: none;">&nbsp;</td>
+	   		</apex:outputPanel>
+	        <td colspan="999" style="border-style: none; vertical-align: center; width: 900px">
+	            <b>Runde&nbsp;
+	            
+	            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_Round_Number__c}" /></b>
+
+				<apex:outputPanel >
+		            <span style="margin-left: .3cm">Wert pro Anteil:&nbsp;</span>
+		            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_Wert_pro_Anteil__c}" rendered="{!not(c.EditFlag)}"/>
+	            </apex:outputPanel>
+
+				<apex:outputPanel >
+		            <span style="margin-left: .3cm">Gültig ab:&nbsp;</span>
+		            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_G_ltig_ab__c}" rendered="{!not(c.EditFlag)}"/>
+	            </apex:outputPanel>
+	        
+	        </td>
+	    </tr>
+	    <tr>
+	        <apex:outputPanel rendered="{!not(c.renderAsPdf)}">
+		        <th class="ButtonCol"></th>
+		    </apex:outputPanel>
+	        <th class="NameCol"></th>
+	        <th class="SharesCol TopLine">Anteile</th>
+	        <th class="ShareCol TopLine">Anteil</th>
+	        <th class="WertCol TopLine">Wert</th>
+	    </tr>
+	    <apex:repeat value="{!currentlySelectedRoundCopy.Ven_Shares__r}" var="share" rendered="{!not(c.EditFlag)}">
+	        <tr>
+	        	<apex:outputPanel rendered="{!not(c.renderAsPdf)}">
+		            <td class="ButtonCol"></td>
+		        </apex:outputPanel>
+		        
+	            <td class="NameCol">
+	                	<apex:outputText value="{!share.Ven_Shareholder__r.name}"/>
+	            </td> 
+	            
+	        	<td class="SharesCol">
+	                <apex:outputField value="{!share.Ven_Shares__c}" />
+	            </td>                         
+	            <td class="ShareCol"><apex:outputField value="{!share.Ven_Share__c}"/></td>
+	            <td class="WertCol"><apex:outputField value="{!share.Ven_Wert__c}"/></td>
+	        </tr>    
+	    </apex:repeat>
+	    <tr>
+	    	<apex:outputPanel rendered="{!not(c.renderAsPdf)}">
+	        	<td class="ButtonCol" ></td>
+	        </apex:outputPanel>
+	        <td class="NameCol" style="">Total</td>       
+	        <td class="SharesCol" style="border-top: 2px solid black;">
+	            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_all_Shares__c}" rendered="{!not(c.EditFlag)}"/>
+	        </td>       
+	        <td class="ShareCol" style="border-top: 2px solid black;">100,00 %</td>       
+	        <td class="WertCol" style="border-top: 2px solid black;">
+	        	<apex:outputField value="{!currentlySelectedRoundCopy.Ven_Total_Share_Value__c}"/>
+	        </td>       
+	    </tr> 		                
+	    
+	    <tr>
+		    <apex:outputPanel rendered="{!not(c.renderAsPdf)}">
+		    	<td class="ButtonCol"></td>
+		    </apex:outputPanel>
+		    <td class="" colspan="4" style="text-align:center"></td>
+	    </tr>
+	</table>
+</apex:component>

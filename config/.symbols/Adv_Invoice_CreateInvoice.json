@@ -1,0 +1,228 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_Invoice_CreateInvoice",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KghgIAC",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000KghgIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setRecordIds",
+            "parameters": [
+                {
+                    "name": "recIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addRecordId",
+            "parameters": [
+                {
+                    "name": "recId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 40
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createPreInvoice",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 70
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_Invoice_CreateInvoice",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "recIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "DEFAULT_QUERY",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 4
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Adv_Invoice_CreateInvoice",
+        "references": [],
+        "type": "Adv_Invoice_CreateInvoice"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "recIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "recId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "job",
+            "references": [],
+            "type": "GenerateInvoiceBatch"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "job",
+            "references": [],
+            "type": "GenerateInvoiceBatch"
+        }
+    ]
+}

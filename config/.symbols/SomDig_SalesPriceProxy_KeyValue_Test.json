@@ -1,0 +1,1266 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ctoAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ctoAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "campaignItemInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 26
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adSpecWithoutSurcharges",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 56
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "keysForTargetingAndRotationExclusion",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 89
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "keyValuesDeleted",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 134
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "singleKeyValue",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 156
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "multipleKeyValues",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 182
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "singleKeyValueWithoutTargetingProvider",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 201
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "rotationExclusionWithFutureTvAndVideovalis",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 228
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "rotationExclusionWithOnlyFutureTv",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 255
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "rotationExclusionWith4Exclusions",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 282
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "rotationExclusionWith3Exclusions",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 312
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "loadProxy",
+            "parameters": [
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_SalesPriceProxy__c",
+            "type": null
+        }
+    ],
+    "name": "SomDig_SalesPriceProxy_KeyValue_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "SomDig_SalesPriceProxy_KeyValue_Test",
+        "references": [],
+        "type": "SomDig_SalesPriceProxy_KeyValue_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "keyValue1",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "keyValue2",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "keyValue1",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "keyValue2",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "keyValue1",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "keyValue2",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 140
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 162
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "keyValue1",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 173
+            },
+            "modifiers": [],
+            "name": "keyValue2",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 191
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 192
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 216
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 218
+            },
+            "modifiers": [],
+            "name": "keyValue",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 229
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 237
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 244
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "keyValue",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 251
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 256
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 259
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 262
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 264
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 270
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 271
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 272
+            },
+            "modifiers": [],
+            "name": "keyValue",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 278
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 283
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 286
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 289
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 291
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 297
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 298
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 299
+            },
+            "modifiers": [],
+            "name": "keyValue",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 305
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 312
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

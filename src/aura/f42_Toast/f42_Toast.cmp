@@ -1,0 +1,35 @@
+<aura:component >
+
+    <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system.min.css">
+    </ltng:require>
+
+    <aura:attribute name="text" type="String" required="true" default="Info" access="public" />
+
+    <!-- method to call toast -->
+    <aura:method name="callToast" action="{!c.showToast}" access="PUBLIC">
+        <aura:attribute name="type" type="String" default="info" />
+        <aura:attribute name="msg" type="String" default="Info" />
+    </aura:method>
+
+    <div class="slds" >
+
+        <div class="slds-notify_container">
+            <div class="slds-notify slds-notify--alert slds-notify--toast fixed hideIt" role="alert" aura:id="toaster">
+                <span class="slds-assistive-text">Info</span>
+                <button class="slds-button slds-button--icon-inverse slds-notify__close" onclick="{!c.hideToast}">
+
+                    <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#close"
+                        class="" category="utility" size="small" name="close" />
+
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+
+                <div class="slds-notify__content">
+                    <h2 class="slds-text-heading--small">{!v.text}</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</aura:component>

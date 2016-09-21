@@ -1,0 +1,66 @@
+<aura:component controller="P7S1_Lookup_CmpCtrl">
+	<ltng:require styles=" 		/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
+								/resource/f42_ionicons/ionicons/css/ionicons.min.css,
+								/resource/toastr/toastr.min.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js,
+                                /resource/toastr/toastr.min.js"
+
+                    afterScriptsLoaded="{!c.doInitScripts}">
+    </ltng:require>
+
+    <aura:attribute name="lookupObjs" type="Object[]" access="public"></aura:attribute>
+    <aura:attribute name="objId" type="String" access="public"></aura:attribute>
+    <aura:attribute name="objLabel" type="String" access="public"></aura:attribute>
+    <aura:attribute name="objType" type="String" required="true" access="public"></aura:attribute>
+    <aura:attribute name="labelApiName" type="String" required="true" access="public"></aura:attribute>
+    <aura:attribute name="searchTerm" type="String" default="" access="public"></aura:attribute>
+    <aura:attribute name="isValid" type="Boolean" default="true" access="public"></aura:attribute>
+    <aura:attribute name="required" type="Boolean" access="public"></aura:attribute>
+
+    <aura:handler name="change" value="{!v.objId}" action="{!c.doHandleChange}"></aura:handler>
+
+    <div class="f42">
+
+	    <div class="modal fade" aura:id="lookupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content" >
+	            	<div style="margin-top:10px"></div>
+
+	            	<div class="container-fluid">
+						<div class="input-group">
+							<ui:inputText class="form-control" value="{!v.searchTerm}" placeholder="Search ..."></ui:inputText>
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button" onclick="{!c.doSearchLookups}">
+									<i class="ionicons ion-search"></i>
+								</button>
+							</span>
+					    </div>
+
+					    <div style="margin-top:10px"></div>
+
+		                <div class="list-group" style="max-height:200px; overflow-y:scroll">
+		                	<aura:iteration items="{!v.lookupObjs}" var="lookupObj">
+								<a href="#" onclick="{!c.doSelectObj}"  class="list-group-item" data-objid="{!lookupObj.objId}" data-objlabel="{!lookupObj.label}">{!lookupObj.label}</a>
+							</aura:iteration>
+						</div>
+
+						<span class="badge badge-info" style="float:right; margin-bottom:10px">{!'Total: '+ v.lookupObjs.length}</span>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="input-group">
+	    	<ui:inputText aura:id="objOutput" disabled="true" class="form-control" value="{!v.objLabel}"></ui:inputText>
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button" onclick="{!c.doOpenModal}">
+					<i class="ionicons ion-search"></i>
+				</button>
+			</span>
+	    </div>
+	    <span class="err-msg" style="{!v.isValid ? 'display:none' : ''}">Complete this field</span>
+   </div>
+
+</aura:component>

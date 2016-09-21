@@ -1,0 +1,59 @@
+<apex:page id="thePage" standardStylesheets="false" sidebar="false" showHeader="false" controller="P7S1_NLP_PortalPageController" cache="false">
+    <apex:stylesheet value="{!$Resource.P7S1_NLP_Styles}"/>
+    
+    <script>
+    function showOverlay()
+    {
+        document.getElementById('overlay').style.display = 'block';
+    }
+    
+    function hideOverlay()
+    {
+        document.getElementById('overlay').style.display = 'none';
+    }
+    
+    function doSave()
+    {
+        showOverlay();
+        saveChanges();
+    }
+    </script>
+    
+    <apex:messages rendered="false"/>
+    <div id="headline" style="padding-left: 8px;">Bestellung von InfoServices der SevenOne Media</div>
+    <div id="content">
+        <apex:form id="theForm" >
+            <div class="ContentSection"  style="padding-left: 8px;">Ich interessiere mich für folgende Medien, Bereiche und Angebote:</div>
+            <div class="ContentSection"  style="padding-left: 8px;" id="SpecialsAndSender">
+                <div>
+                    <table>
+                        <c:P7S1_NLP_NewsletterList wrappers="{!sender}" showAllFields="false"/>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <c:P7S1_NLP_NewsletterList wrappers="{!specials}" showAllFields="false"/>
+                    </table>
+                </div>
+            </div>
+            <div class="ContentSection SectionEnd" style="padding-left: 8px;">Wählen Sie bitte aus, welche Informationen Sie regelmäßig erhalten möchten. Markieren Sie dazu bitte die Option "Abonnieren" neben dem gewünschten Infoservice. Sie können die Bestellung eines InfoServices jederzeit durch Variation Ihrer Auswahl ändern. Falls Sie einen InfoService nicht mehr nutzen möchten, deaktivieren Sie bitte das Kontrollkästchen neben dem Infoservice, den Sie abbestellen möchten.</div>  
+            <div class="ContentSection" style="padding-left: 8px;"><span style="font-weight:bold;">Newsletter zur Auswahl für die E-Mail:</span>&nbsp;{!LoginEmail}</div>
+            <div class="ContentSection">
+                <table id="newsletters" width="100%">
+                    <thead>
+                        <th class="odd">Abonnieren</th>
+                        <th class="even">Titel</th>
+                        <th class="odd">Beschreibung</th>
+                        <th class="even">Frequenz</th>
+                    </thead>
+                    <c:P7S1_NLP_NewsletterList wrappers="{!newsletters}" showAllFields="true"/>
+                </table>
+                <apex:commandButton styleclass="submitbutton" value="" onclick="doSave()" reRender="theForm" />
+                <apex:actionFunction action="{!save}" name="saveChanges"/>
+            </div>
+        </apex:form>
+    </div>
+    <div id="overlay" onclick="hideOverlay()">
+        <span class="sevenRedBG">Gespeichert</span>
+    </div>
+</apex:page>

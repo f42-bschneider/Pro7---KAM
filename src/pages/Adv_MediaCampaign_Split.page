@@ -1,0 +1,111 @@
+<apex:page id="pageSplit" standardController="ADvendio__MediaCampaign__c" extensions="Adv_MediaCampaign_Split" sideBar="false">
+
+<head>
+    <style type="text/css">
+
+        .cellGray {
+            background-color: gray;
+        }
+
+    </style>
+</head>
+
+<script>
+
+window.onload=function(){
+    activateSplit(false);
+
+}
+
+function activateBtnSplit(form){
+    for (var i = 0; i < form.elements.length; i++) {
+        var el = form.elements[i];
+        if (el.name.search('selectBox')!=-1 && el.type=="checkbox" && el.checked == true) {
+            ///console.log('>>>>>>>>>>>>>activateBtnSplit');
+            activateSplit(true);
+
+            return false;
+        }
+    }
+
+
+    activateSplit(false);
+
+    return false;
+
+}
+
+function activateSplit(activate){
+
+    var btnTop = document.getElementById('pageSplit:frm:pbSplit:pbsButton:btnSplit');
+    var btnButtom = document.getElementById('pageSplit:frm:pbSplit:pbsButton:bottom:btnSplit');
+
+    ///console.log('>>>>>>>>>>>>>activateBtnSplit:activate: '+activate);
+
+    //Map of button attribut value
+    var styleCls = "btn";
+    var attToRemove="disabled";
+
+    if(activate == true){
+        //enable button
+        btnTop.removeAttribute(attToRemove);
+        //Buttom Split at buttom section of pageBlock button
+        btnButtom.removeAttribute(attToRemove);
+    }
+    else {
+        //set attribute to disable button action
+        btnTop.setAttribute(attToRemove,"disabled");
+        btnButtom.setAttribute(attToRemove,"disabled");
+        //style disable
+        styleCls = "btnDisabled";
+
+    }
+
+    ///console.log('>>>>>>>>>>>>>activateBtnSplit:class: '+styleCls);
+
+    btnTop.setAttribute("class",styleCls);
+    btnButtom.setAttribute("class",styleCls);
+
+}
+
+</script>
+
+
+<apex:form id="frm">
+    <apex:pageBlock title="Split Media Campaign" id="pbSplit">
+        <apex:pageMessages id="messages" escape="false"/>
+
+        <apex:pageblockSection title="Campaign Items" collapsible="false" columns="1" id="pbsSelectItem">
+
+            <apex:pageBlockTable value="{!itmWrappers}" var="w">
+
+                <apex:column styleClass="{!IF(w.invoiced,'cellGray','')}">
+                    <apex:facet name="header">{!$ObjectType.ADvendio__Campaign_Item__c.Fields.Name.label}</apex:facet>
+                    <apex:inputCheckbox id="selectBox" value="{!w.selected}" rendered="{!NOT(w.invoiced)}"
+                       onclick="activateBtnSplit(this.form);"
+                    />
+                    <apex:outputText value="{!w.item.Name}"/>
+                </apex:column>
+
+                <apex:column value="{!w.item.SomDig_Preiskriterium__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.SomDig_RabattFreigegeben__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.ADvendio__Period__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.ADvendio__Sales_Price__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.ADvendio__Billing_category__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.ADvendio__Amount_net_net__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.ADvendio__Quantity__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.ADvendio__Available__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.SomDig_MediagattungsSegment__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+                <apex:column value="{!w.item.SomDig_MediagattungsDifferenzierungName__c}" styleClass="{!IF(w.invoiced,'cellGray','')}"/>
+
+            </apex:pageBlockTable>
+
+        </apex:pageblockSection>
+
+        <apex:pageBlockButtons id="pbsButton">
+             <apex:commandButton id="btnSplit" value="{!$Label.BtnSplit}" action="{!split}" style="display:{!IF(showBtnSplit,'visible','none')};"/>
+             <apex:commandButton value="{!$Label.BtnBack}" action="{!back}"/>
+         </apex:pageBlockButtons>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

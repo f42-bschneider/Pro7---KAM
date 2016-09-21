@@ -1,0 +1,28 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010hdeAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010hdeAAA",
+    "methods": [],
+    "name": "Lcm_CaseRank",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Lcm_CaseRank",
+        "references": [],
+        "type": "Lcm_CaseRank"
+    },
+    "variables": []
+}

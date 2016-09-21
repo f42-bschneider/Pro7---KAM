@@ -1,0 +1,294 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ctjAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ctjAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "handleInsertOrUpdate",
+            "parameters": [
+                {
+                    "name": "listCampaignItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldCampaignItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 32
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "insertOrUpdateProxies",
+            "parameters": [
+                {
+                    "name": "listCampaignItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 60
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "considerFcSurcharge",
+            "parameters": [
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 82
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAdPriceMap",
+            "parameters": [
+                {
+                    "name": "listCampaignItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "SomDig_SalesPriceProxy_CampaignItem",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomDig_SalesPriceProxy_CampaignItem",
+        "references": [],
+        "type": "SomDig_SalesPriceProxy_CampaignItem"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 133,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "mapOldCampaignItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "listRelevantCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "helper",
+            "references": [],
+            "type": "Adv_CampaignItem_Helper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "listProxies",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mapAdPrices",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "mapAdPrices",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "setAdPriceIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

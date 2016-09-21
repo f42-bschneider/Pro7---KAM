@@ -1,0 +1,143 @@
+<!--
+    Page Name    : Adv_MediaCampaign_ReportCSV
+    Description  : This page is used to export the Campaign Report in either Excel or CSV format
+    Created By   : Cognizant Technology Solutions
+    Created On   : 5/6/2014
+-->
+<apex:page controller="Adv_MediaCampaign_Report"  cache="true" sidebar="false" contenttype="{!i_sContentType}">
+<apex:outputText rendered="{!IF(i_sSelectedContentType== 'Excel Format',true,false)}">
+<head>
+    <meta http-equiv="Content-Type" content="text/csv;charset=UTF-8" />
+</head>
+</apex:outputText>
+<apex:outputText value="{!i_sReportData}" rendered="{!IF(i_sSelectedContentType== 'CSV Format',true,false)}"/>
+<apex:outputpanel rendered="{!IF(i_sSelectedContentType== 'Excel Format',true,false)}">
+
+     <b><apex:outputText value="{!i_sFileName}"/> </b>
+     <br></br>
+     <!-- Display Column Headings of Report -->
+     <table width="100%" border="1">
+            <tr width="100%">
+
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Status}"/></b>
+                </td>
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Kampagnennummer}"/></b>
+                </td>
+                   <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Kampagne}"/></b>
+
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Werbetreibender}"/></b>
+                </td>
+
+
+                 <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Agentur}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Start}"/></b>
+                </td>
+                 <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Ende}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Abrechnungsart}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.N_chster_Positions_Start}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.N_chster_Positions_Ende}"/></b>
+                </td>
+
+
+                 <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Letzter_Positions_Ende}"/></b>
+                </td>
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Kommentar}"/></b>
+                </td>
+
+                <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;">
+                    <b><apex:outputText value="{!$Label.Inhaber}"/></b>
+                </td>
+
+
+            </tr>
+        </table>
+
+        <!-- Display Columns of Report -->
+        <table width="100%" border="1">
+        <apex:repeat value="{!i_oListMediaCampaignReport}" var="media">
+        <tr width="100%" border="0">
+
+
+             <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+                <apex:outputField value="{!media.SomDig_StatusPAMCockpit__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.ADvendio__Offer_Number__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.Name}" />
+            </td>
+             <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.ADvendio__Account__r.Name}" />
+            </td>
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.ADvendio__Agency__r.Name}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+                <apex:outputField value="{!media.ADvendio__Campaign_Start_Date__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.ADvendio__Campaign_End_Date__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+              <apex:outputField value="{!media.SomDig_Abrechnungsart__c}" />
+            </td>
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+             <apex:outputField value="{!media.SomDigNaechsterPositionStart__c}" />
+            </td>
+
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.SomDigNaechsterPositionEnde__c}" />
+            </td>
+
+
+
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.SomDig_LetzterPositionEnde__c}" />
+            </td>
+
+
+
+
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.SomDig_PAMKommentar__c}" />
+            </td>
+
+
+                      <td width="10%" style="text-align:center;font-family : Arial, Verdana, Helvetica, sans-serif;font-size:8pt;color:#333333;">
+               <apex:outputField value="{!media.SomDig_Inhaber_Kuerzel__c}" />
+            </td>
+
+         </tr>
+         </apex:repeat>
+         </table>
+
+
+    </apex:outputpanel>
+</apex:page>

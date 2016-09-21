@@ -1,0 +1,175 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gTgAAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTgAAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 25
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "unsubscibeNewsletter",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 48
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "unsubscibeNewsletterFail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Newsletter_SiteController_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 23
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Newsletter_SiteController_Test",
+        "references": [],
+        "type": "P7S1_Newsletter_SiteController_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "newsletterUnsubscribe_Url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "abo",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "P7S1_Newsletter_SiteController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "newsletterIdLiferay",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "newsletterUnsubscribe_Url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "P7S1_Newsletter_SiteController"
+        }
+    ]
+}

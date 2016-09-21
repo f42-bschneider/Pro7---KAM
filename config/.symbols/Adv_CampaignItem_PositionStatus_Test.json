@@ -1,0 +1,77 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnnrAAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnnrAAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testCampaignItemPositionStatus",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_PositionStatus_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "Adv_CampaignItem_PositionStatus_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_PositionStatus_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "dtNow",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "objCI",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

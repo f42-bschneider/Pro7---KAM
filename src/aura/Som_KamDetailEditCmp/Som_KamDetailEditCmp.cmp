@@ -1,0 +1,261 @@
+<aura:component controller="Som_Kam_CmpCtrl">
+
+    <!-- **************
+    *
+    * Component to edit acc plan detail and all associated objects
+    *
+    ****************-->
+
+    <aura:attribute name="accId" type="String" access="public" />
+    <aura:attribute name="accPlanDetailId" type="String" access="public"/>
+    <aura:attribute name="data" type="Object" access="private"/>
+
+    <aura:attribute name="renderSpinner" type="Boolean" access="private" default="false"/>
+    <aura:attribute name="selectIsValid" type="Boolean" access="private" default="true"/>
+    <aura:attribute name="isDetailPlanner" type="Boolean" access="private" default="true"/>
+
+
+    <aura:method name="setAccPlanDetailId" action="{!c.onAccPlanDetailIdSet}" access="PUBLIC">
+        <aura:attribute name="accId" type="String"/>
+        <aura:attribute name="accPlanDetailId" type="String"/>
+    </aura:method>
+
+
+    <c:f42_SpinnerCmp visible="{!v.renderSpinner}"></c:f42_SpinnerCmp>
+
+
+    <div class="f42">
+
+        <div class="container-fluid">
+
+            <!-- ### Navbar ### -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <div class="navbar-brand">{!$Label.c.Som_lbl_AccountPlanner}</div>
+                </div>
+
+                <div class="navbar-collapse collapse" style="margin-right:30px; margin-left:20px">
+                    <ul class="nav navbar-nav navbar-left" style="margin-top:8px">
+                        <li>
+                            <button type="button" class="btn btn-default" onclick="{!c.onAccount}">
+                                <i class="ionicons ion-chevron-left btn-icon"></i> {!' '+ $Label.c.Ven_lbl_Account +': ' + v.data.accPlanDetail.Som_Kam__r.Som_Account__r.Name}
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" style="{!v.isDetailPlanner ? 'padding-top:8px' : 'display:none'}">
+                        <li>
+                            <button type="button" class="btn btn-default" onclick="{!c.onSave}">
+                                <i class="ionicons ion-checkmark-round btn-icon"></i> {!' '+ $Label.c.Ven_lbl_Save}
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div style="{!not(v.isDetailPlanner) ? '' : 'display:none'}">
+                <div style="margin-top:30px!important" class="alert alert-danger" role="alert">{!$Label.c.Som_lbl_AccPlanDetailNoAccess}</div>
+            </div>
+
+            <div class="row space-top" style="{!v.isDetailPlanner ? '' : 'display:none'}">
+                <div class="col-md-8">
+
+                    <!-- ### acc plan detail infos ### -->
+                    <div class="panel panel-default">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{!$Label.c.Som_lbl_AccountPlanDetailInfos}</h3>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Ven_lbl_Status}</label>
+                                        <ui:outputDate class="form-control" value="{!v.data.accPlanDetail.Som_Status__c}"/>
+                                    </div>
+                                </div>
+
+                                <aura:if isTrue="{!and(v.data.accPlanDetail.Som_Status__c != 'Review', v.data.accPlanDetail.Som_Status__c != 'Created')}">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>{!$Label.c.Som_lbl_Kickoff}</label>
+                                            <ui:outputDate class="form-control" value="{!v.data.accPlanDetail.Som_Kam__r.Som_Kickoff__c}"/>
+                                        </div>
+                                    </div>
+                                </aura:if>
+
+                                <aura:if isTrue="{!v.data.accPlanDetail.Som_Status__c == 'Review'}">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>{!$Label.c.Som_lbl_Review}</label>
+                                            <ui:outputDate class="form-control" value="{!v.data.accPlanDetail.Som_Kam__r.Som_Review__c}"/>
+                                        </div>
+                                    </div>
+                                </aura:if>
+
+                                <aura:if isTrue="{!and(or(v.data.accPlanDetail.Som_Status__c == 'Invited', v.data.accPlanDetail.Som_Status__c == 'Kickoff'), v.data.accPlanDetail.Som_DaysUnitlKickoff__c >= 0)}">
+                                    <div class="col-md-6">
+                                        <div class="text-right">
+                                            <span class="badge" style="background-color:#337AB7">
+                                                <h5>{!$Label.c.Som_lbl_DaysUntil + ' '} {!$Label.c.Som_lbl_Kickoff}: {!v.data.accPlanDetail.Som_DaysUnitlKickoff__c}</h5>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </aura:if>
+
+                                <aura:if isTrue="{!and(v.data.accPlanDetail.Som_Status__c == 'Review', v.data.accPlanDetail.Som_DaysUntilReview__c >= 0)}">
+                                    <div class="col-md-6">
+                                        <div class="text-right">
+                                            <span class="badge" style="background-color:#337AB7">
+                                                <h5>{!$Label.c.Som_lbl_DaysUntil + ' '} {!$Label.c.Som_lbl_Review}: {!v.data.accPlanDetail.Som_DaysUntilReview__c}</h5>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Ven_lbl_Account}</label>
+                                        <ui:outputText class="form-control" value="{!v.data.accPlanDetail.Som_Kam__r.Som_Account__r.Name}"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Som_lbl_AccountPlanTeam}</label>
+                                        <ui:outputText class="form-control" value="{!v.data.accPlanDetail.Som_KamTeam__r.Name}"/>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Som_lbl_Year}</label>
+                                        <ui:outputText class="form-control" value="{!v.data.accPlanDetail.Som_Kam__r.Som_Year__c}"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Som_lbl_TeamMember}</label>
+
+                                        <c:f42_InputSelect value="{!v.data.accPlanDetail.Som_KamTeamMember__c}"
+                                            options="{!v.data ? v.data.teamMembers : null}"
+                                            required="false"
+                                            isValid="true"
+                                            setEmptyOption="false"/>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Som_lbl_CashIn + ' '} {!v.data.accPlanDetail.Som_Kam__r.Som_Year__c-1}</label>
+
+                                        <aura:if isTrue="{!v.data.accPlanDetail.Som_KamAccountCashIn__c == undefined}">
+                                            <c:f42_InputNumber value="{!v.data.accPlanDetail.Som_PreviousCashIn__c}"
+                                                required="false"
+                                                isInteger="true"
+                                                isValid="{!v.data.accPlanDetail ? v.data.accPlanDetail.isValidPrevCashIn : false}"
+                                                inputSize="input-sm"/>
+                                        </aura:if>
+
+                                        <aura:if isTrue="{!v.data.accPlanDetail.Som_KamAccountCashIn__c != undefined}">
+                                            <ui:outputNumber class="form-control input-sm" value="{!v.data.accPlanDetail.Som_PreviousCashIn__c}"/>
+                                        </aura:if>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Som_lbl_CashExternalYield}</label>
+
+                                        <aura:if isTrue="{!v.data.accPlanDetail.Som_KamAccountCashIn__c == undefined}">
+                                            <c:f42_InputNumber value="{!v.data.accPlanDetail.Som_PreviousCashExternalYield__c}"
+                                                required="false"
+                                                isInteger="true"
+                                                isValid="{!v.data.accPlanDetail ? v.data.accPlanDetail.isValidPrevCashExtYield : false}"
+                                                inputSize="input-sm"/>
+                                        </aura:if>
+
+                                        <aura:if isTrue="{!v.data.accPlanDetail.Som_KamAccountCashIn__c != undefined}">
+                                            <ui:outputNumber class="form-control input-sm" value="{!v.data.accPlanDetail.Som_PreviousCashExternalYield__c}"/>
+                                        </aura:if>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>{!$Label.c.Som_lbl_RatingDealLearnings}</label>
+                                        <ui:inputText class="form-control" value="{!v.data.accPlanDetail.Som_RatingDealLearnings__c}"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br/>
+                            <br/>
+
+                            <label>{!$Label.c.Som_lbl_ThereofCashIns}</label>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th width="18px"></th>
+                                        <th></th>
+                                        <th>{!$Label.c.Som_lbl_CashIn+' '} {!v.data.accPlanDetail.Som_Kam__r.Som_Year__c-1}</th>
+                                        <th>{!$Label.c.Som_lbl_CashExternalYield}</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <c:Som_KamDetailSummaryItem accPlanDetail="{!v.data}" showAccPlanRow="false" aura:id="sumItemCmp"/>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ### Account Dashboard Opp Data ### -->
+                <div class="col-md-4">
+                    <c:P7S1_AccountDashboardMediaCmp aura:id="dashboard" height="325px"/>
+                </div>
+            </div>
+
+
+            <!-- ### Strategy Profiles ### -->
+            <div class="panel panel-default" style="{!v.isDetailPlanner ? '' : 'display:none'}">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">{!$Label.c.Som_lbl_StrategyProfiles}</h3>
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="row">
+                        <aura:iteration items="{!v.data.stratProfileTopics}" var="stratProf">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>{!stratProf.Name}</label>
+                                    <ui:inputTextArea rows="8"
+                                        class="form-control"
+                                        value="{!stratProf.Som_Description__c}"
+                                        resizable="false"/>
+                                </div>
+                            </div>
+                        </aura:iteration>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</aura:component>

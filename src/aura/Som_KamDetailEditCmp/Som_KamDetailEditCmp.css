@@ -1,0 +1,31 @@
+.THIS .table{
+    font-size: 12px!important;
+}
+
+.THIS .uiOutputText{
+    background-color: #E5E5E5!important;
+}
+
+.THIS .uiOutputNumber{
+    background-color: #E5E5E5!important;
+}
+
+.THIS .uiOutputDate{
+    background-color: #E5E5E5!important;
+}
+
+.THIS .space-top{
+    margin-top: 40px;
+}
+
+.THIS .navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.THIS .btn-icon{
+    font-size:18px;
+}

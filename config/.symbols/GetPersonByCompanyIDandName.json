@@ -1,0 +1,175 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000K0JOIA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K0JOIA0",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "HttpGet"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "doGet",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "GetPersonByCompanyIDandName",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "RestResource"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 11
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "GetPersonByCompanyIDandName",
+        "references": [],
+        "type": "GetPersonByCompanyIDandName"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "RestResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "pProRexId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "pLastName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "pFirstName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "ResponseWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "contacts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "Map"
+        }
+    ]
+}

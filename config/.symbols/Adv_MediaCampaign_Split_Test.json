@@ -1,0 +1,187 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgmbIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgmbIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testSplit",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Split_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Adv_MediaCampaign_Split_Test",
+        "references": [],
+        "type": "Adv_MediaCampaign_Split_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "campaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "campaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "items",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "cls",
+            "references": [],
+            "type": "Adv_MediaCampaign_Split"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "w",
+            "references": [],
+            "type": "ItemWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mSplitItem",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "itm1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "l",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

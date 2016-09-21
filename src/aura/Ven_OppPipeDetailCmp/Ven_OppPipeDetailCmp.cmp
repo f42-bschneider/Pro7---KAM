@@ -1,0 +1,58 @@
+<aura:component >
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js">
+    </ltng:require>
+
+    <aura:attribute name="oppPipeDetail" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="somLikelihoods" type="Ven_SomLikelihood__c[]" required="true" access="public"></aura:attribute>
+    <aura:attribute name="isNewOpp" type="Boolean" required="true" access="public"></aura:attribute>
+    <aura:attribute name="selectOptLsts" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="countryInternational" type="Object" access="public" ></aura:attribute>
+    <aura:attribute name="userRoles" type="Object" access="public" ></aura:attribute>
+
+    <aura:attribute name="setProbability" type="Boolean" access="global"/>
+
+    <aura:attribute name="austriaRole" type="String" access="public" ></aura:attribute>
+    <aura:attribute name="switzerlandRole" type="String" access="public" ></aura:attribute>
+
+    <aura:attribute name="isIm" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isScout" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isAnalyst" type="Boolean" default="false" access="public"></aura:attribute>
+
+    <aura:attribute name="oppValid" type="Boolean" required="true" access="public"></aura:attribute>
+    <aura:attribute name="pipeValid" type="Boolean" required="true" access="public"></aura:attribute>
+
+    <div class="f42">
+	    <div class="panel panel-default panel-custom">
+			<div class="panel-heading panel-heading-custom"><b>{!$Label.c.Ven_lbl_Opp}</b></div>
+
+			<div class="panel-body">
+				<c:Ven_OppPipeDetailOppCmp opp="{!v.oppPipeDetail.opp}"
+					selectOptLsts="{!v.selectOptLsts}"
+					countryInternational="{!v.countryInternational}"
+					userRoles="{!v.userRoles}"
+					austriaRole="{!v.austriaRole}"
+					switzerlandRole="{!v.switzerlandRole}"
+					isValid="{!v.oppValid}"
+					isIm="{!v.isIm}"
+					isScout="{!v.isScout}"
+					isAnalyst="{!v.isAnalyst}"
+					isNewOpp="{!v.isNewOpp}"
+                    setProbability="{!v.setProbability}">
+				</c:Ven_OppPipeDetailOppCmp>
+			</div>
+		</div>
+
+		<div class="panel panel-default panel-custom">
+			<div class="panel-heading panel-heading-custom"><b>{!$Label.c.Ven_lbl_Pipeline}</b></div>
+
+			<div class="panel-body">
+				<c:Ven_OppPipeDetailPipeCmp oppPipeDetail="{!v.oppPipeDetail}"
+					isValid="{!v.pipeValid}"
+					somLikelihoods="{!v.somLikelihoods}">
+				</c:Ven_OppPipeDetailPipeCmp>
+			</div>
+		</div>
+	</div>
+</aura:component>

@@ -1,0 +1,94 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010f8FAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010f8FAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createAdServerTeamAssignment",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_SomEntities",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 6
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_MediaCampaign_SomEntities",
+        "references": [],
+        "type": "Adv_MediaCampaign_SomEntities"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "listAdID",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "listNewASTA",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "SObject"
+        }
+    ]
+}

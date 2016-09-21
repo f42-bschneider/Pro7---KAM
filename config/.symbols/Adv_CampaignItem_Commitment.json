@@ -1,0 +1,1300 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010etyAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010etyAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "webService",
+                "global"
+            ],
+            "name": "generateUrl",
+            "parameters": [
+                {
+                    "name": "commId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 34
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setRabatteFreigegebenCheckOnApproved",
+            "parameters": [
+                {
+                    "name": "mcOldMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "mcNewList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 64
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "removeApprovalFromCampaign",
+            "parameters": [
+                {
+                    "name": "newCampaignList",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldCampaignMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 119
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "copyDiscountsToItems",
+            "parameters": [
+                {
+                    "name": "newCampaignList",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldCampaignMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 211
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setCampaignItemDiscounts",
+            "parameters": [
+                {
+                    "name": "newCampaignItemList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 287
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "commitmentDiscountsTracking",
+            "parameters": [
+                {
+                    "name": "oldCampaignItemMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "newCampaignItemList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 364
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createDefaultValues",
+            "parameters": [
+                {
+                    "name": "comm",
+                    "type": "SomDig_Commitment__c"
+                },
+                {
+                    "name": "mediaCamp",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 430
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "campaignItemRequiresApproval",
+            "parameters": [
+                {
+                    "name": "campItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "mediaCamp",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 480
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "discountRestValue",
+            "parameters": [
+                {
+                    "name": "val",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "Decimal",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 490
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "decValueOf",
+            "parameters": [
+                {
+                    "name": "val",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "Decimal",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 499
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getCommitmentsData",
+            "parameters": [
+                {
+                    "name": "commIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 514
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getMediaCampaignData",
+            "parameters": [
+                {
+                    "name": "mcIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 527
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "tranCommitmentToMediaCamp",
+            "parameters": [
+                {
+                    "name": "comm",
+                    "type": "SomDig_Commitment__c"
+                },
+                {
+                    "name": "mediaCamp",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 546
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "compareDiscountsWithCommitment",
+            "parameters": [
+                {
+                    "name": "comm",
+                    "type": "SomDig_Commitment__c"
+                },
+                {
+                    "name": "mediaCamp",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Commitment",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "PREFIX_MEDIA_CAMP",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "INPAGE_IND",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "INSTREAM_IND",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "doneTracking",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 4
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "Adv_CampaignItem_Commitment",
+        "references": [],
+        "type": "Adv_CampaignItem_Commitment"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "commId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "mediaCamp",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "comm",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "urlString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "mValue",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "fldId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mcOldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 140,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mcNewList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "parentApproved",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "campaignItemUpdates",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "newCampaignList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 137,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "oldCampaignMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 161,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "campaignCommitments",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "oldMC",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "newCampaignList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 131,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "oldCampaignMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "mediaCampaigns",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "mcIsNotApproved",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "sonderRabattNamen",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "campaignItemsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "ciUpdate",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "changed",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "newCampaignItemList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 212
+            },
+            "modifiers": [],
+            "name": "mediaCampaigns",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 215
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 220
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 287
+            },
+            "modifiers": [],
+            "name": "oldCampaignItemMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 141,
+                "line": 287
+            },
+            "modifiers": [],
+            "name": "newCampaignItemList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 289
+            },
+            "modifiers": [],
+            "name": "mediaCampaigns",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 292
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 293
+            },
+            "modifiers": [],
+            "name": "oldCi",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 305
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 310
+            },
+            "modifiers": [],
+            "name": "mediaCampaignUpdates",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 311
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 335
+            },
+            "modifiers": [],
+            "name": "alertTasks",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 336
+            },
+            "modifiers": [],
+            "name": "mcUpdId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 337
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 364
+            },
+            "modifiers": [],
+            "name": "comm",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 114,
+                "line": 364
+            },
+            "modifiers": [],
+            "name": "mediaCamp",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 365
+            },
+            "modifiers": [],
+            "name": "LOOKUP_FLDS",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 366
+            },
+            "modifiers": [],
+            "name": "requiredHTML",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 368
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 370
+            },
+            "modifiers": [],
+            "name": "html",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 372
+            },
+            "modifiers": [],
+            "name": "labelToId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 373
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "Matcher"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 375
+            },
+            "modifiers": [],
+            "name": "label",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 376
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 380
+            },
+            "modifiers": [],
+            "name": "params",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 381
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "SObjectField"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 382
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "Object"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 384
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 385
+            },
+            "modifiers": [],
+            "name": "label",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 386
+            },
+            "modifiers": [],
+            "name": "fname",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 388
+            },
+            "modifiers": [],
+            "name": "valueAsString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 396
+            },
+            "modifiers": [],
+            "name": "idValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 430
+            },
+            "modifiers": [],
+            "name": "campItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 121,
+                "line": 430
+            },
+            "modifiers": [],
+            "name": "mediaCamp",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 431
+            },
+            "modifiers": [],
+            "name": "rab2",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 432
+            },
+            "modifiers": [],
+            "name": "rab3",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 433
+            },
+            "modifiers": [],
+            "name": "rab4",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 435
+            },
+            "modifiers": [],
+            "name": "valIndividuellGK",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 439
+            },
+            "modifiers": [],
+            "name": "valCommitmentGK",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 480
+            },
+            "modifiers": [],
+            "name": "val",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 490
+            },
+            "modifiers": [],
+            "name": "val",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 499
+            },
+            "modifiers": [],
+            "name": "commIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 514
+            },
+            "modifiers": [],
+            "name": "mcIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 527
+            },
+            "modifiers": [],
+            "name": "comm",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 527
+            },
+            "modifiers": [],
+            "name": "mediaCamp",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 546
+            },
+            "modifiers": [],
+            "name": "comm",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 546
+            },
+            "modifiers": [],
+            "name": "mediaCamp",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010etzAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010etzAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testTrigger",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 74
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testGenerateUrl",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Commitment_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 6
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "comm",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "mockEditPageBody",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "Adv_CampaignItem_Commitment_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_Commitment_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "editUrl",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

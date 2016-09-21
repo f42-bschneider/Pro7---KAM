@@ -1,0 +1,110 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010frGAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010frGAAQ",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testSetAvailability",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_ResetAvailability_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "Adv_CampaignItem_ResetAvailability_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_ResetAvailability_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "objCIPaket",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "objPlacement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "objSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "objPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "objCIComponent",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

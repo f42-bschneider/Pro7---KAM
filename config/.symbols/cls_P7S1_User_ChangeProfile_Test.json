@@ -1,0 +1,98 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KT72IAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KT72IAG",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 32,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testCoverageView",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 32,
+                "line": 19
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testCoverageUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_User_ChangeProfile_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "cls_P7S1_User_ChangeProfile_Test",
+        "references": [],
+        "type": "cls_P7S1_User_ChangeProfile_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "l_oTest",
+            "references": [],
+            "type": "cls_P7S1_User_ChangeProfile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "l_oTest",
+            "references": [],
+            "type": "cls_P7S1_User_ChangeProfile"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+<apex:page showHeader="false" sidebar="false" standardController="Account" extensions="Som_Kam_RedirectCtrl" action="{!redirect}">
+
+    <apex:stylesheet value="{!URLFOR($Resource.f42_BootstrapPack, '/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.f42_ionicons, '/ionicons/css/ionicons.min.css')}"/>
+
+    <style>
+        .navbar-brand{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            margin:0 auto;
+        }
+
+        .navbar-buttons{
+            margin-right:30px;
+            margin-left:20px;
+        }
+    </style>
+
+
+    <div class="f42">
+
+        <div class="container">
+            <apex:form >
+
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">Account Planner</div>
+                    </div>
+
+
+                    <div class="navbar-buttons" >
+                        <ul class="nav navbar-nav navbar-left" style="margin-top:8px">
+                            <li>
+                                <button type="button" class="btn btn-default" onclick="window.location.href = '/{!Account.Id}'">
+                                    <i class="ionicons ion-chevron-left btn-icon"></i> {! $Label.Ven_lbl_Account + ': ' + Account.Name}
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <div style="margin-top: 70px;"/>
+
+                <apex:outputPanel rendered="{!msg != null}">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>{!msg}</strong>
+                    </div>
+                </apex:outputPanel>
+
+                <apex:outputPanel rendered="{!accountPlan != null}">
+                    <div class="well" style="text-align:center;">
+                        <h4>
+                            <a href="{!accountPlan.accPlanUrl}">Account Plan</a>
+                        </h4>
+                    </div>
+                </apex:outputPanel>
+
+                <apex:repeat value="{!accountPlanDetails}" var="accPlanDetail">
+                    <div class="well" style="text-align:center;">
+                        <h5><a href="{!accPlanDetail.accPlanDetailUrl}">{!accPlanDetail.accPlanDetail.Som_KamTeam__r.Name}</a></h5>
+                    </div>
+                </apex:repeat>
+            </apex:form>
+        </div>
+    </div>
+
+</apex:page>

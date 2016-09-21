@@ -1,0 +1,266 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 5
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "z_BatchableMetadataDump1",
+            "parameters": [],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 10
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "z_BatchableMetadataDump1",
+            "parameters": [
+                {
+                    "name": "executeBatch2",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KB9JIAW",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable",
+        "Database.Stateful"
+    ],
+    "key": "01pD0000000KB9JIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 14
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 18
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 32
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "z_BatchableMetadataDump1",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 3
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "executeBatch2",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "z_BatchableMetadataDump1",
+        "references": [],
+        "type": "z_BatchableMetadataDump1"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "executeBatch2",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "z_SchemaTemp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "recordid",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "coreExpression",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

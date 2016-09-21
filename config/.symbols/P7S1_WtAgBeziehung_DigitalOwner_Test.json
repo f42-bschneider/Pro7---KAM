@@ -1,0 +1,171 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gHNAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gHNAAY",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 42
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testAccountWtAgBeziehung",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 61
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "generateTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_WtAgBeziehung_DigitalOwner_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 38
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "wt",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 39
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "WTNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 40
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "AGNAME",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 36
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_WtAgBeziehung_DigitalOwner_Test",
+        "references": [],
+        "type": "P7S1_WtAgBeziehung_DigitalOwner_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "accIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "testAccounts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "groupedResults",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

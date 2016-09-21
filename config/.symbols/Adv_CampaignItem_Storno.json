@@ -1,0 +1,153 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gXGAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gXGAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateFields",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Storno",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 5
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_CampaignItem_Storno",
+        "references": [],
+        "type": "Adv_CampaignItem_Storno"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "setCIIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "setUpdateRelatedCIs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "setUpdateNegativeCIs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "listNegativeCIs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+<apex:component allowDML="true"> 
+
+	<apex:attribute name="c" type="CapTableEditorController" required="true" description="CapTableEditorController"/>
+	<!--currentlySelectedRoundCopy is filled from the single element of recordsOfCurrentSetControllerPage --> 
+	<apex:attribute name="currentlySelectedRoundCopy" type="Ven_Round__c" required="true" 
+		description="This is used only for displaying. Any edits inside the component will be discarded."/>
+
+		<apex:outputpanel id="nextPrevRerender">
+			<table class="thin">
+			<tr>
+	    		<td class="ButtonCol" style="border-style: none;">&nbsp;</td>
+				<td colspan="999" style="border-style: none; vertical-align: top; horizontal-align: center; width: 700px">
+	
+						<!-- Most recent round -->
+						<apex:commandButton value="Edit" style="margin-left: 200px" action="{!c.edit}" id="editButton" disabled="{!c.EditFlag || c.setController.hasPrevious}" />
+						<apex:commandButton value="Runde löschen" style="margin-left: .3cm" action="{!c.deleteRoundButton}" disabled="{!c.EditFlag || c.setController.hasPrevious}" />
+						<apex:commandButton value="Speichern" style="margin-left: .3cm" action="{!c.saveRoundButton}" id="saveButton" disabled="{!not(c.EditFlag)}" />
+						<apex:commandButton value="Abbrechen" style="margin-left: .3cm" action="{!c.cancel}" id="cancelButton" disabled="{!not(c.EditFlag)}" />
+						<apex:commandButton action="{!c.newRound}" style="margin-left: .3cm" value="Neue Runde" disabled="{!c.EditFlag || c.setController.hasPrevious}" />
+						<apex:commandButton action="{!c.newShare}" style="margin-left: .3cm" value="Neuer Investor" 
+						disabled="{!c.EditFlag || c.setController.hasPrevious}" /> <!-- MUST be disabled when editFlag==true, because it would fail in this case -->
+				</td>
+				<td></td>
+			</tr>	
+		    <tr>
+	    		<td class="ButtonCol" style="border-style: none;">&nbsp;</td>
+		   		
+		        <td colspan="999" style="border-style: none; vertical-align: center; width:1000px">
+		
+		           <!-- Move first, previous, next, last links -->
+		           <apex:outputPanel rendered="{!not(c.EditFlag)}">
+		               <apex:outputpanel id="clickablePrev"  rendered="{!c.setController.hasNext}">
+		                   <apex:commandLink action="{!c.setController.last}" reRender="nextPrevRerender" >
+		                       <apex:image url="{!URLFOR($Resource.Paginators, 'move_first.gif')}" title="Erste Runde" />
+		                   </apex:commandlink> 
+		                   <apex:commandLink action="{!c.setController.next}" reRender="nextPrevRerender" >
+		                       <apex:image url="{!URLFOR($Resource.Paginators, 'move_previous.gif')}" title="Ältere Runde" />
+		                   </apex:commandlink>
+		               </apex:outputpanel>
+		               <apex:outputpanel id="unclickablePrev" rendered="{!NOT(c.setController.hasNext)}">
+		                   <apex:image url="{!URLFOR($Resource.Paginators, 'move_first_dis.gif')}"/>
+		                   <apex:image url="{!URLFOR($Resource.Paginators, 'move_previous_dis.gif')}" />
+		               </apex:outputpanel>
+		           </apex:outputPanel>        
+		        
+		            <b>Runde&nbsp;
+		            
+		            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_Round_Number__c}" /></b>
+	
+					<apex:outputLabel rendered="{!not(c.EditFlag)}">
+						<apex:outputpanel id="clickableNext"
+							rendered="{!c.setController.hasPrevious}">
+							<apex:commandLink action="{!c.setController.previous}"
+								reRender="nextPrevRerender" >
+								<apex:image url="{!URLFOR($Resource.Paginators, 'move_next.gif')}"
+									title="Neuere Runde" />
+								</apex:commandlink>
+								<apex:commandLink action="{!c.setController.first}"
+									reRender="nextPrevRerender" >
+									<apex:image url="{!URLFOR($Resource.Paginators, 'move_last.gif')}"
+										title="Neuste Runde" />
+									</apex:commandlink>
+						</apex:outputpanel>
+						<apex:outputpanel id="unclickableNext"
+							rendered="{!NOT(c.setController.hasPrevious)}">
+							<apex:image url="{!URLFOR($Resource.Paginators, 'move_next_dis.gif')}" />
+							<apex:image url="{!URLFOR($Resource.Paginators, 'move_last_dis.gif')}" />
+						</apex:outputpanel>
+					</apex:outputLabel>
+		        	<apex:outputPanel >
+			            <span style="margin-left: .3cm">Wert pro Anteil:&nbsp;</span>
+			            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_Wert_pro_Anteil__c}" rendered="{!not(c.EditFlag)}"/>
+		            	<apex:inputField value="{!c.newestRound.Ven_Wert_pro_Anteil__c}" rendered="{!    c.EditFlag }"/>
+					</apex:outputPanel>            	
+	
+					<apex:outputPanel >
+			            <span style="margin-left: .3cm">Gültig&nbsp;ab:&nbsp;</span>
+			            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_G_ltig_ab__c}" rendered="{!not(c.EditFlag)}"/>
+		            	<apex:inputField value="{!c.newestRound.Ven_G_ltig_ab__c}" rendered="{!    c.EditFlag }"/>
+					</apex:outputPanel>      	        
+	
+		        </td>
+		    </tr>
+		    <tr>
+		        <th class="ButtonCol"></th>
+		        <th class="NameCol"></th>
+		        <th class="SharesCol TopLine">Anteile</th>
+		        <th class="ShareCol TopLine">Anteil</th>
+		        <th class="WertCol TopLine">Wert</th>
+		    </tr>
+		    <apex:outputText rendered="{!c.showSVAndFoundersFieldsFlag}">
+			    <tr>
+		        	<td class="ButtonCol"></td>
+			        <td class="NameCol"><apex:outputText value="{!c.sevenVenturesAcc.name}"/></td>         
+			        <td class="SharesCol">
+			            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_SV_Equity_Share__c}" rendered="{!not(c.EditFlag)}"/>
+			            <apex:inputField value="{!c.newestRound.Ven_SV_Equity_Share__c}"               rendered="{!    c.EditFlag }"/>
+			        </td>       
+			        <td class="ShareCol"><apex:outputField value="{!currentlySelectedRoundCopy.Ven_SV_Share__c}"/> </td>       
+			        <td class="WertCol"><apex:outputField value="{!currentlySelectedRoundCopy.Ven_Wert_SV__c}"/></td>       
+			    </tr> 
+			    <tr>
+		        	<td class="ButtonCol"></td>
+			        <td class="NameCol"><apex:outputText value="{!c.acc.name}"/></td>       
+			        <td class="SharesCol">
+			            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_Founders_Equity_Share__c}" rendered="{!not(c.EditFlag)}"/>
+			            <apex:inputField value="{!c.newestRound.Ven_Founders_Equity_Share__c}"               rendered="{!    c.EditFlag }"/>
+			        </td>       
+			        <td class="ShareCol"> </td>       
+			        <td class="WertCol"><apex:outputField value="{!currentlySelectedRoundCopy.Ven_Wert_Founder__c}"/></td>
+			        <td><!-- This is important, otherwise you have stretching of the other cells --></td>       
+			    </tr> 
+		    </apex:outputText>
+		    <!--currentlySelectedRoundCopy is filled from the single element of CapTableEditorController.setController.getRecords()
+		    The shares are sorted by CreatedDate. When creating the shares, the shares of SevenVentures and the Founders are always
+		    added first and therefore have the earliest CreatedDate and are displayed first. 
+		    --> 
+		    <apex:repeat value="{!currentlySelectedRoundCopy.Ven_Shares__r}" var="share" rendered="{!not(c.EditFlag)}">
+		        <tr>
+		            <td class="ButtonCol">
+		            	<apex:commandLink action="{!c.deleteShare}" style="margin-left: 0cm" value="Löschen" rendered="{!not(c.setController.hasPrevious)}">
+			                <apex:param name="shareToBeDeletedId" value="{!share.id}" />
+			                <!-- Gotcha: Don't change commandLink to commandButton! That will probably fail because of a SF bug -->
+		            	</apex:commandLink>
+		            	&nbsp;
+		            </td>
+		            <td class="NameCol">
+		                <apex:outputLink onClick="window.open ('/{!share.Ven_Shareholder__c}');">
+		                	<apex:outputText value="{!share.Ven_Shareholder__r.name}"/>
+		                </apex:outputLink>
+		            </td> 
+		            
+		        	<td class="SharesCol"><apex:outputField value="{!share.Ven_Shares__c}" /></td>                         
+		            <td class="ShareCol"><apex:outputField value="{!share.Ven_Share__c}"/></td>
+		            <td class="WertCol"><apex:outputField value="{!share.Ven_Wert__c}"/></td>
+		        </tr>    
+		    </apex:repeat>
+		    
+		    <apex:repeat value="{!c.newestRoundShares}" var="share" rendered="{!c.EditFlag}"> 
+		    
+		        <tr>
+		           	<td class="ButtonCol"></td>
+		            <td class="NameCol">
+		                <apex:inputField value="{!share.Ven_Shareholder__c}"/>
+		            </td> 
+		            
+		        	<td class="SharesCol">
+	        	        <apex:inputField value="{!share.Ven_Shares__c}"/>
+		            </td>                         
+		            <td class="ShareCol"><apex:outputField value="{!share.Ven_Share__c}"/></td>
+		            <td class="WertCol"><apex:outputField value="{!share.Ven_Wert__c}"/></td>
+		        </tr>    
+		    </apex:repeat>    
+		    
+		    <tr>&nbsp;</tr>
+		    
+		    <tr>
+	        	<td class="ButtonCol" ></td>
+		        <td class="NameCol" style="">Total</td>       
+		        <td class="SharesCol" style="border-top: 2px solid black;">
+		            <apex:outputField value="{!currentlySelectedRoundCopy.Ven_all_Shares__c}" rendered="{!not(c.EditFlag)}"/>
+		        </td>       
+		        <td class="ShareCol" style="border-top: 2px solid black;">100,00 %</td>       
+		        <td class="WertCol" style="border-top: 2px solid black;">
+		        	<apex:outputField value="{!currentlySelectedRoundCopy.Ven_Total_Share_Value__c}"/>
+		        </td>       
+		    </tr> 		                
+		    
+		    <tr>
+		    	<td class="ButtonCol"></td>
+			    <td class="" colspan="4" style="text-align:center"></td>
+		    </tr>
+		</table>
+	</apex:outputpanel>
+</apex:component>

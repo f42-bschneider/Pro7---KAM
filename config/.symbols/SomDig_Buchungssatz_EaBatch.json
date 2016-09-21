@@ -1,0 +1,1223 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 130
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomDig_Buchungssatz_EaBatch",
+            "parameters": [
+                {
+                    "name": "processType",
+                    "type": "String"
+                },
+                {
+                    "name": "runningDate",
+                    "type": "Date"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010czmAAA",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Stateful",
+        "Database.Batchable"
+    ],
+    "key": "01p570000010czmAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 158
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getAccountingMonthSAP",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 166
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setInvoiceItemIds",
+            "parameters": [
+                {
+                    "name": "invoiceItemIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 196
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getQueryString",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 253
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 277
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "records",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 392
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 537
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createRecords",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 578
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createProjectedAccountingRecordsForInvoice",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 692
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "createHtmlAnchorTag",
+            "parameters": [
+                {
+                    "name": "aMc",
+                    "type": "ADvendio__MediaCampaign__c"
+                },
+                {
+                    "name": "anInvoice",
+                    "type": "ADvendio__Invoice__c"
+                },
+                {
+                    "name": "anInvoiceItem",
+                    "type": "ADvendio__InvoiceItem__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Buchungssatz_EaBatch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 55
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "batchSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 58
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "invoiceItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 61
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 64
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 67
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalNumberOfInvoices",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 70
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "successNumberOfInvoices",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 73
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalNumberOfAccountingRecords",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 76
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "instanceName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 79
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "processRunningType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 82
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "processRunningDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 85
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 88
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentInvoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 91
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentInvoiceInterrupted",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 94
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentYongestInvoiceItemAccountingDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 97
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentAccountingRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 100
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentPRAPRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 103
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "errorMessages",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 104
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "errorMessagesIA",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 107
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "useProjectionRecordsByInvoiceItem",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 110
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "isInvoiceUsingProjection",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 113
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "accountingEndTime",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 116
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "accountingMonth",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 119
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "accountingMonthSAP",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "PROCESS_ULTIMO_MINUS_5",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "PROCESS_ULTIMO_PLUS_4",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 16
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "QUERY_INVOICEITEM_FIELDS",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 8
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "SomDig_Buchungssatz_EaBatch",
+        "references": [],
+        "type": "SomDig_Buchungssatz_EaBatch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "processType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "runningDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "accountingEndDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Organization"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "invoiceItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 202
+            },
+            "modifiers": [],
+            "name": "processRunningTime",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "aDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "firstInvoiceDate",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "lastInvoiceDate",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "lastPreInvoiceDate",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 222
+            },
+            "modifiers": [],
+            "name": "prapInvoiceItemDate",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 6,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "eaRecordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 226
+            },
+            "modifiers": [],
+            "name": "hrRecordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "queryStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 253
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 254
+            },
+            "modifiers": [],
+            "name": "queryStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 277
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 277
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 284
+            },
+            "modifiers": [],
+            "name": "invoiceItem",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 306
+            },
+            "modifiers": [],
+            "name": "eaBase",
+            "references": [],
+            "type": "SomDig_Buchungssatz_EaBase"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 317
+            },
+            "modifiers": [],
+            "name": "rdr",
+            "references": [],
+            "type": "RevenueDistributionResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 322
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "ProcessMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 342
+            },
+            "modifiers": [],
+            "name": "namePrefix",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 343
+            },
+            "modifiers": [],
+            "name": "groupIdx",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 344
+            },
+            "modifiers": [],
+            "name": "arg",
+            "references": [],
+            "type": "AccountingRecordsGroup"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "recIdx",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "ar",
+            "references": [],
+            "type": "AccountingRecord"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 362
+            },
+            "modifiers": [],
+            "name": "prap",
+            "references": [],
+            "type": "PRAP"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 392
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 393
+            },
+            "modifiers": [],
+            "name": "job",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 401
+            },
+            "modifiers": [],
+            "name": "sapDatei",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 403
+            },
+            "modifiers": [],
+            "name": "buchungskreis",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 404
+            },
+            "modifiers": [],
+            "name": "jahr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 405
+            },
+            "modifiers": [],
+            "name": "monat",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 406
+            },
+            "modifiers": [],
+            "name": "tag",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 407
+            },
+            "modifiers": [],
+            "name": "recordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 415
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 439
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 441
+            },
+            "modifiers": [],
+            "name": "toAddresses",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 446
+            },
+            "modifiers": [],
+            "name": "htmlbody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 472
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 497
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 539
+            },
+            "modifiers": [],
+            "name": "sp",
+            "references": [],
+            "type": "Savepoint"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 542
+            },
+            "modifiers": [],
+            "name": "projectionAccountingRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 579
+            },
+            "modifiers": [],
+            "name": "projectionAccountingRecords",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 607
+            },
+            "modifiers": [],
+            "name": "amount",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 608
+            },
+            "modifiers": [],
+            "name": "standardAccount",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 611
+            },
+            "modifiers": [],
+            "name": "isPureDL",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 612
+            },
+            "modifiers": [],
+            "name": "creditAccountType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 616
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 620
+            },
+            "modifiers": [],
+            "name": "bs",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 646
+            },
+            "modifiers": [],
+            "name": "groupIdx",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 647
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 648
+            },
+            "modifiers": [],
+            "name": "tmpBS",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 692
+            },
+            "modifiers": [],
+            "name": "aMc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 692
+            },
+            "modifiers": [],
+            "name": "anInvoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 126,
+                "line": 692
+            },
+            "modifiers": [],
+            "name": "anInvoiceItem",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 693
+            },
+            "modifiers": [],
+            "name": "url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 696
+            },
+            "modifiers": [],
+            "name": "text",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

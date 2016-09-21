@@ -1,0 +1,270 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgkrIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgkrIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "media_Campaign_Should_Receive_Wt_Ag_Lookups_On_Insert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 20
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "media_Campaign_Should_Receive_Wt_Ag_Lookups_On_Update",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 49
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reload_MediaCampaign_And_Assert_WtAg_Lookups",
+            "parameters": [
+                {
+                    "name": "p_oMediaCampaign",
+                    "type": "ADvendio__MediaCampaign__c"
+                },
+                {
+                    "name": "p_oWerbetreibender",
+                    "type": "Account"
+                },
+                {
+                    "name": "p_oAgentur",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_WtAgBeziehung_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Adv_MediaCampaign_WtAgBeziehung_Test",
+        "references": [],
+        "type": "Adv_MediaCampaign_WtAgBeziehung_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "l_oWerbetreibender",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "l_oAgentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "l_oWtAgBeziehung",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "l_oWerbetreibender_1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "l_oWerbetreibender_2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "l_oAgentur_1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "l_oAgentur_2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "l_oWtAgBeziehung_1",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "l_oWtAgBeziehung_2",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "p_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "p_oWerbetreibender",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 143,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "p_oAgentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

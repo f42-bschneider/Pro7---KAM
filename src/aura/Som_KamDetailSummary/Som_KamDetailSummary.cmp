@@ -1,0 +1,48 @@
+<aura:component >
+
+    <aura:attribute name="accPlanDetails" type="Object[]" access="public"/>
+    <aura:attribute name="thisYear" type="Decimal" access="private"/>
+    <aura:attribute name="showSubItems" type="Boolean" access="public" default="false"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <div class="f42">
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th style="min-width:35px">
+                        <button type="button" style="{!not(v.showSubItems) ? '':'display:none'}" class="btn btn-primary btn-xs enable" onclick="{!c.onShowSubItems}">
+                            <i class="ionicons ion-chevron-down"></i>
+                        </button>
+
+                        <button type="button" style="{!v.showSubItems ? '':'display:none'}" class="btn btn-primary btn-xs enable" onclick="{!c.onHideSubItems}">
+                            <i class="ionicons ion-chevron-up"></i>
+                        </button>
+                    </th>
+                    <th width="200px">{!$Label.c.Som_lbl_AccountTeam}</th>
+                    <th>{!$Label.c.Som_lbl_TeamMember}</th>
+                    <th>{!$Label.c.Ven_lbl_Status}</th>
+                    <th>{!$Label.c.Som_lbl_CashIn} {!' '+(v.thisYear-1)}</th>
+                    <th>{!$Label.c.Som_lbl_CashExternalYield}</th>
+                    <th>{!$Label.c.Som_lbl_RatingDealLearnings}</th>
+                    <th>{!$Label.c.Som_lbl_TargetCashIn} {!' '+v.thisYear}</th>
+                    <th>{!$Label.c.Som_lbl_ClosedOpps}</th>
+                    <th>{!$Label.c.Som_lbl_OpenOpps}</th>
+                    <th>{!$Label.c.Som_lbl_Gap}</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <aura:iteration items="{!v.accPlanDetails ? v.accPlanDetails : null}" var="accPlanDetail">
+                    <c:Som_KamDetailSummaryItem accPlanDetail="{!accPlanDetail ? accPlanDetail : null}"
+                        showSubItems="{!v.showSubItems}"
+                        fireChangeEvent="true"
+                        />
+                </aura:iteration>
+            </tbody>
+        </table>
+
+    </div>
+
+</aura:component>

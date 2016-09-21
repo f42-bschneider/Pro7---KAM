@@ -1,0 +1,110 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgkMIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgkMIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 17
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testCampgnItemsGoodMrngController",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_GoodMorningReport_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 8
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Adv_CampaignItem_GoodMorningReport_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_GoodMorningReport_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "l_oMediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "l_oCampaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "l_oCampgnItemsGoodMrngRprtController",
+            "references": [],
+            "type": "Adv_CampaignItem_GoodMorningReport"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "l_iListUser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

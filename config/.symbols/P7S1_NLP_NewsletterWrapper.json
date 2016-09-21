@@ -1,0 +1,290 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 31
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_NLP_NewsletterWrapper",
+            "parameters": [
+                {
+                    "name": "newsletter",
+                    "type": "P7S1_Newsletter__c"
+                },
+                {
+                    "name": "pagectrl",
+                    "type": "P7S1_NLP_PortalPageController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010jJRAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010jJRAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 9
+            },
+            "modifiers": [
+                "public",
+                "override"
+            ],
+            "name": "toString",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 40
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setChecked",
+            "parameters": [
+                {
+                    "name": "value",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_NLP_NewsletterWrapper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 3
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "pagectrl",
+            "references": [],
+            "type": "P7S1_NLP_PortalPageController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "abonement",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newsletter",
+            "references": [],
+            "type": "P7S1_Newsletter__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "isChanged",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 7
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checked",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "isChecked",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 59
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 66
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Beschreibung",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 74
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Frequenz",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 82
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Version",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 90
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Textfarbe",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 98
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Textfett",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_NLP_NewsletterWrapper",
+        "references": [],
+        "type": "P7S1_NLP_NewsletterWrapper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "output",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "newsletter",
+            "references": [],
+            "type": "P7S1_Newsletter__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "pagectrl",
+            "references": [],
+            "type": "P7S1_NLP_PortalPageController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

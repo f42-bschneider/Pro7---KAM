@@ -1,0 +1,99 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KghhIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KghhIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 29,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testAdv_Invoice_CreateInvoice",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_Invoice_CreateInvoice_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "Adv_Invoice_CreateInvoice_Test",
+        "references": [],
+        "type": "Adv_Invoice_CreateInvoice_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "mc1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "ci1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Adv_Invoice_CreateInvoice"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "sch",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

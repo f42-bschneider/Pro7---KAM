@@ -1,0 +1,482 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_OpportunityTeamMember_Handler",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010heUAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010heUAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 34
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 45
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 55
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "upsertOppTeamMembers",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 99
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "InsertOppTeamMember",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 126
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "checkUserForTeamMember",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "P7S1_OpportunityTeamMember_Handler",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 38,
+                "line": 98
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "RECTYP_OPP",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_OpportunityTeamMember_Handler",
+        "references": [],
+        "type": "P7S1_OpportunityTeamMember_Handler"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "otms",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "rtMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "oppTeamList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "recTypeIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "r",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "otm",
+            "references": [],
+            "type": "OpportunityTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "roleNames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "createTeamMember",
+            "references": [],
+            "type": "Boolean"
+        }
+    ]
+}

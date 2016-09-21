@@ -1,0 +1,265 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_User",
+            "parameters": [],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_User",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                },
+                {
+                    "name": "status",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_User",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Long"
+                },
+                {
+                    "name": "status",
+                    "type": "Integer"
+                },
+                {
+                    "name": "deleted",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010duyAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010duyAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "toJson",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "parse",
+            "parameters": [
+                {
+                    "name": "json",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Liferay_User",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_User",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "status",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "deleted",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "STATUS_ACTIVE",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "STATUS_INACTIVE",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_User",
+        "references": [],
+        "type": "P7S1_Liferay_User"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "status",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "status",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "deleted",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "json",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

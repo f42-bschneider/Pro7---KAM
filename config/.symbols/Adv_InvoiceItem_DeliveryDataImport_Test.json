@@ -1,0 +1,275 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgbAIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgbAIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testDeliveryDataImport",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 90
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testDeliveryDataImportBatchSchedule",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_InvoiceItem_DeliveryDataImport_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 28,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_InvoiceItem_DeliveryDataImport_Test",
+        "references": [],
+        "type": "Adv_InvoiceItem_DeliveryDataImport_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "zb1",
+            "references": [],
+            "type": "SomDig_Zahlungsbedingung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "acc1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "pl1",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "rt",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "login1",
+            "references": [],
+            "type": "ADvendio__AdServer_Logins__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "adtype1",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "spec1",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "price1",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "mc1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "ci1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "rss",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "rs",
+            "references": [],
+            "type": "ADvendio__Revenue_Schedule__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "invoice1",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "invoiceItem1",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "ddi",
+            "references": [],
+            "type": "Adv_InvoiceItem_DeliveryDataImport"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "invoiceItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "ddi",
+            "references": [],
+            "type": "Adv_InvoiceItem_DeliveryDataImport"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "sch",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

@@ -1,0 +1,658 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_OptimizingChange_DynamicQuantity",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010f8BAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010f8BAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 8
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 12
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 24
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "calculateQuantityOfPacketComponentItem",
+            "parameters": [
+                {
+                    "name": "triggerNew",
+                    "type": "LIST"
+                },
+                {
+                    "name": "triggerOldMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 88
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "addCisAndApplyRelevantChanges",
+            "parameters": [
+                {
+                    "name": "cis",
+                    "type": "Map"
+                },
+                {
+                    "name": "changes",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 109
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "applyTriggerChanges",
+            "parameters": [
+                {
+                    "name": "cis",
+                    "type": "Map"
+                },
+                {
+                    "name": "changes",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 124
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "generateProratedChanges",
+            "parameters": [
+                {
+                    "name": "components",
+                    "type": "LIST"
+                },
+                {
+                    "name": "changes",
+                    "type": "LIST"
+                },
+                {
+                    "name": "newChangesIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_DynamicQuantity",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_OptimizingChange_DynamicQuantity",
+        "references": [],
+        "type": "Adv_OptimizingChange_DynamicQuantity"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 128,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 148,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 93,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 144,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "triggerOldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "updatedCiIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "newChangesIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "optimizerVersionId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "change",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "cis",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "otherChanges",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "proratedChanges",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "packetItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "hasYoutube",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "components",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "availabilitySum",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "componentItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "cis",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 125,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "changes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "change",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "cis",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "changes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "change",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 106,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "components",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 154,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "changes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "newChangesIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "changesToUpsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "quantityChange",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "proratedChange",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "lastForecastChange",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "change",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        }
+    ]
+}

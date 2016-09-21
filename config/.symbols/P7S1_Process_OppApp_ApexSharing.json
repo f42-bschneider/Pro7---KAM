@@ -1,0 +1,321 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d49AAA",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "OppAppVar",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 13,
+                        "line": 60
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OppAppId",
+                    "references": [],
+                    "type": "Id"
+                },
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 13,
+                        "line": 62
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "AccountOwner",
+                    "references": [],
+                    "type": "Id"
+                },
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 13,
+                        "line": 64
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "TvKundenVerk",
+                    "references": [],
+                    "type": "Id"
+                },
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 13,
+                        "line": 66
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "TvEinkAgVerk",
+                    "references": [],
+                    "type": "Id"
+                },
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 13,
+                        "line": 68
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "TvPlanAgVerk",
+                    "references": [],
+                    "type": "Id"
+                },
+                {
+                    "annotations": [
+                        {
+                            "name": "InvocableVariable"
+                        }
+                    ],
+                    "location": {
+                        "column": 13,
+                        "line": 70
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "DigSales",
+                    "references": [],
+                    "type": "Id"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 58
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OppAppVar",
+                "references": [],
+                "type": "OppAppVar"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010d49AAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "InvocableMethod"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ShareOpportunityApproval",
+            "parameters": [
+                {
+                    "name": "OppAppVars",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 49
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "OppAppShare",
+            "parameters": [
+                {
+                    "name": "oaid",
+                    "type": "Id"
+                },
+                {
+                    "name": "uid",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_OpportunityApproval__Share",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Process_OppApp_ApexSharing",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_Process_OppApp_ApexSharing",
+        "references": [],
+        "type": "P7S1_Process_OppApp_ApexSharing"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "OppAppVars",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "oav",
+            "references": [],
+            "type": "OppAppVar"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "uids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "oaid",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "ApexShares",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "oaid",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "uid",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "oas",
+            "references": [],
+            "type": "P7S1_OpportunityApproval__Share"
+        }
+    ]
+}

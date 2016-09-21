@@ -1,0 +1,42 @@
+<apex:page controller="cls_P7S1_User_ChangeProfile" action="{!initialize}" sidebar="false">
+	
+	<style>
+		.p7s1_profileswitch .pbHeader .pbTitle { width: 98%; }
+		.p7s1_profileswitch .pbSubExtra { display: none; }
+		.p7s1_profileswitch .pbSubsection { padding: 0px; }
+		.p7s1_profileswitch .apexp .editPage .pbBottomButtons { margin-top: 10px !important; }
+	</style>
+	
+	<apex:outputpanel styleClass="p7s1_profileswitch" rendered="{!ShowPanel == 'Tester'}">
+	    <apex:form id="pFormT">
+	        <apex:pageBlock mode="edit" title="Profile für Testing">
+	        	<apex:pageBlockButtons location="bottom">
+				<apex:commandButton action="{!selectProfile}" value="Ändern"/>
+				</apex:pageBlockButtons>
+	            <apex:pageMessage severity="confirm" strength="1" title="Aktuelles Profil" summary="{!currentUser.Profile.Name}" />
+	        	<apex:pageblockSection title="Profil wählen" columns="1" collapsible="false">
+		            <apex:selectList value="{!SelectedProfile}" size="1">
+			            <apex:selectOptions value="{!Profiles}"/>
+			        </apex:selectList>
+	            </apex:pageblockSection>
+	        </apex:pageBlock>
+	    </apex:form>
+	</apex:outputpanel>
+
+	<apex:outputpanel styleClass="p7s1_profileswitch" rendered="{!ShowPanel == 'Admin'}">
+	    <apex:form id="pFormA">
+	        <apex:pageBlock mode="edit" title="Testbenutzer">
+	        	<apex:pageBlockButtons location="bottom">
+				<apex:commandButton action="{!LoginAsTester}" value="Login"/>
+				</apex:pageBlockButtons>
+	            <apex:pageMessage severity="confirm" strength="1" title="Aktueller Benutzer" summary="{!currentUser.Name}" />
+	        	<apex:pageblockSection title="Benutzer wählen" columns="1" collapsible="false">
+		            <apex:selectList value="{!SelectedUserId}" size="1">
+			            <apex:selectOptions value="{!TestUser}"/>
+			        </apex:selectList>
+	            </apex:pageblockSection>
+	        </apex:pageBlock>
+	    </apex:form>
+	</apex:outputpanel>
+	
+</apex:page>

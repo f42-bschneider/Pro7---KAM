@@ -1,0 +1,845 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KhiMIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KhiMIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSomDig_Commitment",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSomDigRtbDataAggr",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testAdvRtbAccount",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 21,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testAccountForecast",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 34
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testRollup",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 131
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testRollupBatch",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 179
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createRollup",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "sParentObject",
+                    "type": "String"
+                },
+                {
+                    "name": "sChildObject",
+                    "type": "String"
+                },
+                {
+                    "name": "sRelationfield",
+                    "type": "String"
+                },
+                {
+                    "name": "sChildCalculationField",
+                    "type": "String"
+                },
+                {
+                    "name": "sParentResultField",
+                    "type": "String"
+                },
+                {
+                    "name": "sWhereCondition",
+                    "type": "String"
+                },
+                {
+                    "name": "sType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Rollup__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 196
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAgenturSplit",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "opportunity",
+                    "type": "Opportunity"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                },
+                {
+                    "name": "anteil",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "SomTv_Agentursplit__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 206
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestRtbDataAggr",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_RtbDataAggr__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 213
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdvRtbAccount",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__RTBAccount__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Rollup_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "P7S1_Rollup_Test",
+        "references": [],
+        "type": "P7S1_Rollup_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "l_oAccWt",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "l_oAccAg",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "l_oWtAg",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "l_oComm",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "fc1",
+            "references": [],
+            "type": "SomTv_ForecastTV__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "objAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "objOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "listAS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "objAS1",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "objAS2",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "objAS3",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "newMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "dSum",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "listASOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "oldMapUpdate",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "objAS3AfterUpdate",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "listASNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "newMapUpdate",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "objNewOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "objAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "objOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "listAS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "objAS1",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "objAS2",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "objAS3",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "objRollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "P7S1_Rollup"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sParentObject",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sChildObject",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 119,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sRelationfield",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 142,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sChildCalculationField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 173,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sParentResultField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 200,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sWhereCondition",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 224,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "rollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "opportunity",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 135,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "anteil",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "AgenturSplit_TestData",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "RtbDataAggr_TestData",
+            "references": [],
+            "type": "SomDig_RtbDataAggr__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 213
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "RtbAccount_TestData",
+            "references": [],
+            "type": "ADvendio__RTBAccount__c"
+        }
+    ]
+}

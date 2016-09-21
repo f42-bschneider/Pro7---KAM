@@ -1,0 +1,435 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_CampaignItem_Remoter",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p57000000KoDjAAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KoDjAAK",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "RemoteAction"
+                }
+            ],
+            "location": {
+                "column": 26,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "checkAvailability",
+            "parameters": [
+                {
+                    "name": "recordIDs",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 176
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "GetUserIdsFromGroup",
+            "parameters": [
+                {
+                    "name": "groupId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Remoter",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "campaignID",
+            "references": [],
+            "type": "Id"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 3
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_Remoter",
+        "references": [],
+        "type": "Adv_CampaignItem_Remoter"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "recordIDs",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "setCampIDs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "listCI",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "sRabatt",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "listCICPM",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "setCPMIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "setOptimizedCIs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "listCPMNotOptimized",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "listNoAvailability",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "iNumberOfIncreasedDates",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "bDurationNotChangedAfterLastBookingProcess",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "h",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__History"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "listGroup",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "setUsersinGroup",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "groupId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "userType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "groupType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "GroupMember"
+        }
+    ]
+}

@@ -1,0 +1,194 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010e4eAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010e4eAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "TestSetup"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "prepareData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 33
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_P7S1_AnmeldungDigitalDetoxController",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 56
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_P7S1_AnmeldungDigitalDetoxNienController",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 73
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_P7S1_ComponentController",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AnmeldungDigitalDetox_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_AnmeldungDigitalDetox_Test",
+        "references": [],
+        "type": "P7S1_AnmeldungDigitalDetox_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "newCampaign",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "aContact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "member",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "feedback",
+            "references": [],
+            "type": "P7S1_B2BAktionsmitgliederFeedback__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "P7S1_AnmeldungDigitalDetox_Controller"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "P7S1_AnmeldungDigitalDetox_Absage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "P7S1_AnmeldungDigitalDetox_Components"
+        }
+    ]
+}

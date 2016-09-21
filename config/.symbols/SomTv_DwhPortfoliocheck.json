@@ -1,0 +1,176 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgmqIAC",
+    "innerClasses": [],
+    "interfaces": [
+        "Messaging.InboundEmailHandler"
+    ],
+    "key": "01pD0000000KgmqIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 3
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "handleInboundEmail",
+            "parameters": [
+                {
+                    "name": "email",
+                    "type": "InboundEmail"
+                },
+                {
+                    "name": "envelope",
+                    "type": "InboundEnvelope"
+                }
+            ],
+            "references": [],
+            "returnType": "InboundEmailResult",
+            "type": null
+        }
+    ],
+    "name": "SomTv_DwhPortfoliocheck",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "SomTv_DwhPortfoliocheck",
+        "references": [],
+        "type": "SomTv_DwhPortfoliocheck"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "email",
+            "references": [],
+            "type": "InboundEmail"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "envelope",
+            "references": [],
+            "type": "InboundEnvelope"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "InboundEmailResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "log",
+            "references": [],
+            "type": "Lcm_Log__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "folderID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "listDocuments",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "listDoc",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "objExistingDoc",
+            "references": [],
+            "type": "Document"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "bAttachment",
+            "references": [],
+            "type": "BinaryAttachment"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "objDoc",
+            "references": [],
+            "type": "Document"
+        }
+    ]
+}

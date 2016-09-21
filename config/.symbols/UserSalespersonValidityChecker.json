@@ -1,0 +1,496 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000K1i2IAC",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable",
+        "Database.Batchable",
+        "Database.Stateful"
+    ],
+    "key": "01pD0000000K1i2IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setUserIds",
+            "parameters": [
+                {
+                    "name": "uIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addUserId",
+            "parameters": [
+                {
+                    "name": "uId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 37
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 56
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "records",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 108
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 123
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 21,
+                "line": 131
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testUserSalespersonValidityChecker",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "UserSalespersonValidityChecker",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 6
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "batchSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 9
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "userIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 4
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "UserSalespersonValidityChecker",
+        "references": [],
+        "type": "UserSalespersonValidityChecker"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "uIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "uId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "uIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "mVerkaeuferzuordnung",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "walker",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "zuordnung",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "toUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "acc1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "kab1",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "vz1",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "usvc",
+            "references": [],
+            "type": "UserSalespersonValidityChecker"
+        }
+    ]
+}

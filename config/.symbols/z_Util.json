@@ -1,0 +1,277 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KB9TIAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KB9TIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "log",
+            "parameters": [
+                {
+                    "name": "str",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "convertToStringForScheduler",
+            "parameters": [
+                {
+                    "name": "dt",
+                    "type": "Datetime"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "executeBatchableMetadataDump1",
+            "parameters": [
+                {
+                    "name": "executeDump2",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "executeBatchableMetadataDump2",
+            "parameters": [
+                {
+                    "name": "executeDump3",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "executeBatchableMetadataDump3",
+            "parameters": [],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 28
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "cleanData1",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "cleanData2",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 45
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "prepareMetadataDump",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "z_Util",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "z_Util",
+        "references": [],
+        "type": "z_Util"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "str",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "executeDump2",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "executeDump3",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "objs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "objs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "settings",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "setting",
+            "references": [],
+            "type": "z_MetaDumpSetting__c"
+        }
+    ]
+}

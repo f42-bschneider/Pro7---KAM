@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT">
+	<aura:attribute name="opp" type="Object"  access="public"></aura:attribute>
+    <aura:attribute name="oppId" type="String"  access="public"></aura:attribute>
+</aura:event>

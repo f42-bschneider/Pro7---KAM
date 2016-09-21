@@ -1,0 +1,629 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 43
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cls_P7S1_User_ChangeProfile",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KT71IAG",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KT71IAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 16
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "SiteUrl",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 26
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "LoginUrl",
+            "parameters": [
+                {
+                    "name": "s",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 46
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "initialize",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "initializeView",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 91
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getProfiles",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 101
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getSelectedProfile",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 102
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setSelectedProfile",
+            "parameters": [
+                {
+                    "name": "s",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getTestUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 114
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getSelectedUserId",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 115
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setSelectedUserId",
+            "parameters": [
+                {
+                    "name": "s",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 118
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "initializeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 136
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectProfile",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 166
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "LoginAsTester",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_User_ChangeProfile",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 6
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "PUBLIC_SITE_ROOT",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "currentUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "profileList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "userList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "site",
+            "references": [],
+            "type": "Site"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "org",
+            "references": [],
+            "type": "Organization"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ShowPanel",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "debug",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 39
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "debugRequestURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 40
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "debugResponseBody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 100
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selProfile",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 113
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selUserId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "PAGE_URL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "SITE_NAME",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "cls_P7S1_User_ChangeProfile",
+        "references": [],
+        "type": "cls_P7S1_User_ChangeProfile"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "url",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "profileId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "p",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "options",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "profileId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "profileId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 140
+            },
+            "modifiers": [],
+            "name": "remoteURL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "httpRequest",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "httpResponse",
+            "references": [],
+            "type": "HttpResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "pr",
+            "references": [],
+            "type": "PageReference"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+<apex:component >
+    <apex:attribute name="wrapper" type="P7S1_NLP_NewsletterWrapper" description="A Newsletterwrappers to show."/>
+    <apex:attribute name="showAllFields" type="Boolean" description="A Newsletterwrappers to show." default="false"/>
+    <tr>
+        <apex:variable var="textfarbe" value="{! If(!IsNull(wrapper.Textfarbe),'color:#'+wrapper.Textfarbe+'; ','')}"/>
+        <apex:variable var="textfett" value="{! If(wrapper.Textfett,'font-weight:bold; ','')}"/>
+        <apex:outputPanel rendered="{! !showAllFields}" layout="none">
+            
+            <td class="simple odd"><apex:inputCheckbox value="{!wrapper.isChecked}"/></td>
+            <td class="simple even"><apex:outputText style="{! textfarbe + textfett}" value="{!wrapper.Name}"/></td>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{! showAllFields}" layout="none">
+            <td class="full odd NewsletterChecked">
+                <apex:inputCheckbox value="{!wrapper.isChecked}"/>
+            </td>
+            <td class="full even NewsletterTitle">
+                <apex:outputText style="{! textfarbe + textfett}" value="{!wrapper.Name}"/>
+            </td>
+            <td class="full odd NewsletterDescription">
+                <apex:outputText value="{!wrapper.Beschreibung}"/>
+            </td>
+            <td class="full even NewsletterFrequency">
+                <apex:outputText value="{!wrapper.Frequenz &' / '& wrapper.Version & '-Version'}"/>
+            </td>
+        </apex:outputPanel>
+    </tr>
+</apex:component>

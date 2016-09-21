@@ -1,0 +1,520 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Adv_InvoiceItem_DeliveryDataImport",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000Kgb9IAC",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable",
+        "Database.Batchable"
+    ],
+    "key": "01pD0000000Kgb9IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setRecordIds",
+            "parameters": [
+                {
+                    "name": "recIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addRecordId",
+            "parameters": [
+                {
+                    "name": "recId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 49
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 77
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "records",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 141
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 152
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 166
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getRsInvoiceQuantityMap",
+            "parameters": [
+                {
+                    "name": "campaignItemIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "Adv_InvoiceItem_DeliveryDataImport",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "batchSize",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 9
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "recIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 15
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 4
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "Adv_InvoiceItem_DeliveryDataImport",
+        "references": [],
+        "type": "Adv_InvoiceItem_DeliveryDataImport"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "recIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "recId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "campaignItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "invoiceItem",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "rsInvoiceQuantityMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "invoiceItemsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "invoiceItem",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "keyList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "firstOfStartDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "firstOfEndDate",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "monthsBetween",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "deliveredQuantity",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "campaignItemIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "rsInvoiceQuantityMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "revenueSchedule",
+            "references": [],
+            "type": "ADvendio__Revenue_Schedule__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

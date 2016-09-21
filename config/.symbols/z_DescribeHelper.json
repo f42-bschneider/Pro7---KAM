@@ -1,0 +1,500 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KB9MIAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KB9MIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createChildRelationshipRecord",
+            "parameters": [
+                {
+                    "name": "parentId",
+                    "type": "Id"
+                },
+                {
+                    "name": "schema",
+                    "type": "ChildRelationship"
+                }
+            ],
+            "references": [],
+            "returnType": "z_ChildRelationship__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "insertSObjectDescriptionRecord",
+            "parameters": [
+                {
+                    "name": "objName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 47
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createFieldDescriptionRecord",
+            "parameters": [
+                {
+                    "name": "objid",
+                    "type": "Id"
+                },
+                {
+                    "name": "objname",
+                    "type": "String"
+                },
+                {
+                    "name": "fieldname",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "z_FieldDescription__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 129
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFieldNames",
+            "parameters": [
+                {
+                    "name": "objName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        }
+    ],
+    "name": "z_DescribeHelper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "z_DescribeHelper",
+        "references": [],
+        "type": "z_DescribeHelper"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "parentId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 111,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "schema",
+            "references": [],
+            "type": "ChildRelationship"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "z_ChildRelationship__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "objName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "sobj",
+            "references": [],
+            "type": "z_SObjectDescription__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "childRelationList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "childRelation",
+            "references": [],
+            "type": "ChildRelationship"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "objid",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 87,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "objname",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "fieldname",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "fMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "fTokens",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "fd",
+            "references": [],
+            "type": "z_FieldDescription__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "l_sInlineHelptext",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "picklistentries",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "entry",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "label",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "value",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "isActive",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "isDefaultValue",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "line",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "objName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "result",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "SObjectType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "fMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "fTokens",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "DescribeFieldResult"
+        }
+    ]
+}

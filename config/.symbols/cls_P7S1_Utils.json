@@ -1,0 +1,885 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KZoVIAW",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KZoVIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 34
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getSandboxname",
+            "parameters": [
+                {
+                    "name": "p_bWithDot",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 83
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRecordType",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                },
+                {
+                    "name": "developerName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "RecordType",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 94
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRecordTypeId",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                },
+                {
+                    "name": "developerName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 103
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRecordTypeName",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                },
+                {
+                    "name": "developerName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 138
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getProfileId",
+            "parameters": [
+                {
+                    "name": "p_sProfileName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 147
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "multiPicklist_AddValue",
+            "parameters": [
+                {
+                    "name": "p_sMultiPick",
+                    "type": "String"
+                },
+                {
+                    "name": "p_sAddValue",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 180
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getSObjectDescribeResult",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "DescribeSObjectResult",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 192
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFieldDescribeResults",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 203
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFields",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 206
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFields",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                },
+                {
+                    "name": "modifier",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 235
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCreateableFields",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 243
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getUpdateableFields",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 251
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAllFields",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 268
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getStandardQuery",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 271
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getStandardQuery",
+            "parameters": [
+                {
+                    "name": "sObjectType",
+                    "type": "String"
+                },
+                {
+                    "name": "additional_fields",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_Utils",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 12
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "SANDBOXNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 55
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "RECORD_TYPE_MAP",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 119
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "PROFILE_MAP",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "cls_P7S1_Utils",
+        "references": [],
+        "type": "cls_P7S1_Utils"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "l_sSearch",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "l_sUser",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "p_bWithDot",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "l_sSandbox",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "temp_map",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "record_types",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "record_type",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "developerName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "record_type",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "developerName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "record_type",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "developerName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "record_type",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "temp_map",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "l_oProfile",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "p_sProfileName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "p_sMultiPick",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "p_sAddValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "l_bFound",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "l_oLstElems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 155
+            },
+            "modifiers": [],
+            "name": "l_sElem",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 192
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 193
+            },
+            "modifiers": [],
+            "name": "describeResult",
+            "references": [],
+            "type": "DescribeSObjectResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "modifier",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "fields",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "fieldsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 212
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "DescribeFieldResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 251
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 268
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 271
+            },
+            "modifiers": [],
+            "name": "sObjectType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 271
+            },
+            "modifiers": [],
+            "name": "additional_fields",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 272
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 273
+            },
+            "modifiers": [],
+            "name": "fields",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

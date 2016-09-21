@@ -1,0 +1,844 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KhiLIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KhiLIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 220
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "recalculate",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "startRollup",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                },
+                {
+                    "name": "triggerOld",
+                    "type": "LIST"
+                },
+                {
+                    "name": "triggerNew",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "newMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "bIsInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "bIsUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "bIsDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "bIsUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "bIsAfter",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 127
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRollupsForChild",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 136
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRollupsForParent",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 145
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createQuery",
+            "parameters": [
+                {
+                    "name": "objRollup",
+                    "type": "P7S1_Rollup__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 162
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFieldsFromObject",
+            "parameters": [
+                {
+                    "name": "objectName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 177
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "mapRollupsWithFields",
+            "parameters": [
+                {
+                    "name": "listAllRollups",
+                    "type": "LIST"
+                },
+                {
+                    "name": "setFieldsOfObject",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 204
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "bFieldChanged",
+            "parameters": [
+                {
+                    "name": "setChangedFields",
+                    "type": "Set"
+                },
+                {
+                    "name": "setUsedFieldsFromRollup",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Rollup",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cachedRollupsList",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Rollup",
+        "references": [],
+        "type": "P7S1_Rollup"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 222
+            },
+            "modifiers": [],
+            "name": "rollupID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 225
+            },
+            "modifiers": [],
+            "name": "objRollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "batchInstanceId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "p1",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "triggerOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "triggerNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 126,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 150,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "newMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 167,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "bIsInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 186,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "bIsUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 205,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "bIsDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 224,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "bIsUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 245,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "bIsAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "listTrigger",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "setFieldsOfObject",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "listParentRollups",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "objRollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "listChildRollups",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "mapRollupFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "fieldsChanged",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "r",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "parentIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "parentRecords",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "parentId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "objParent",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "dValue",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "rollupsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "rollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "rollupsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "rollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 145
+            },
+            "modifiers": [],
+            "name": "objRollup",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "sQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 162
+            },
+            "modifiers": [],
+            "name": "objectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "fMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "selectFields",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "SObjectField"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "listAllRollups",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "setFieldsOfObject",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "mapRollupFields",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "r",
+            "references": [],
+            "type": "P7S1_Rollup__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 194
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "setChangedFields",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "setUsedFieldsFromRollup",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "bFieldChanged",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

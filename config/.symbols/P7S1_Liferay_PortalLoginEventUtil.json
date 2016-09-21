@@ -1,0 +1,88 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gTYAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTYAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createPortalLoginEvent",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "name": "eventType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLoginEvent__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_PortalLoginEventUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 10
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_PortalLoginEventUtil",
+        "references": [],
+        "type": "P7S1_Liferay_PortalLoginEventUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "eventType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        }
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010diGAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010diGAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setOwnerAndIndexOrAccount",
+            "parameters": [
+                {
+                    "name": "newAccountAccessesList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 23
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "setOwnerAndIndex",
+            "parameters": [
+                {
+                    "name": "accountAccessesList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 52
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "setOwnerAndAccout",
+            "parameters": [
+                {
+                    "name": "accountAccessesList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AccountAccess_SetFields",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_AccountAccess_SetFields",
+        "references": [],
+        "type": "P7S1_AccountAccess_SetFields"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "newAccountAccessesList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "accountAccessesWithoutIndexList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "accountAccessesWithoutAccountList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "accountAccessesList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "accountIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "accountIdAccountIndexMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "accountIndex",
+            "references": [],
+            "type": "P7S1_AccountIndex__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "accountAccessesList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "accountIndexIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "accountIndexMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "accountAccess",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        }
+    ]
+}

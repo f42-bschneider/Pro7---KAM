@@ -1,0 +1,236 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_BatchAccountTeamMember",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010gHUAAY",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Stateful",
+        "System.Schedulable",
+        "Database.Batchable"
+    ],
+    "key": "01p570000010gHUAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 27
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "SC",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 35
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 43
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "lstObjects",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 49
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_BatchAccountTeamMember",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batchHelper",
+            "references": [],
+            "type": "P7S1_BatchAccountTeamMemberHelper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 14
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_BatchAccountTeamMember",
+        "references": [],
+        "type": "P7S1_BatchAccountTeamMember"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "SC",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "b",
+            "references": [],
+            "type": "P7S1_BatchAccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "lstObjects",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        }
+    ]
+}

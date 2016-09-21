@@ -1,0 +1,35 @@
+<apex:component layout="none" controller="P7S1_AnmeldungDigitalDetox_Components" language="{!language}">
+    <apex:attribute name="codeString" description="next" type="String" required="false" assignTo="{!code}"/>
+    <apex:attribute name="emailString" description="next" type="String" required="false" assignTo="{!email}"/>
+
+        <td align="left" valign="top" width="62">
+            <img alt="" border="0" height="41" src="https://news.sevenonemedia.de/art_resource.php?sid=1heul.2co0mo1" width="62"/>
+        </td>
+        <td align="left" valign="top" width="575">
+            <apex:form id="Lasy_form"><br/>
+                {!sobjectRecord.P7S1_AnredeBrief__c},<br/>
+                <br/>
+                <apex:outputText escape="false" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_DANKE_1}"/>
+                &nbsp;
+                <table border="0" cellpadding="0" cellspacing="0" summary="" width="350">
+                    <tbody>
+                        <tr class="even first ">
+                            <td><img alt="" src="https://news.sevenonemedia.de/art_resource.php?sid=1iktr.1b6l4ob"/></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="odd ">
+                            <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">{!$Label.P7S1_VIRTUALTHEMOUNTAIN_DANKE_2}</td>
+                            <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">&nbsp;</td>
+                        </tr>
+                        <tr class="even last ">
+                            <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">
+                               <apex:outputText escape="false" value="{!$Label.P7S1_VIRTUALTHEMOUNTAIN_DANKE_3}"/>
+                                
+                            </td>
+                            <td style="line-height: 13px; font-family: arial; color: rgb(102, 102, 102); font-size: 12px;">&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </apex:form>
+        </td>
+</apex:component>

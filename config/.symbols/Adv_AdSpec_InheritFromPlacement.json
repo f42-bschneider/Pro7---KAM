@@ -1,0 +1,503 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnZSAA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnZSAA0",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromAdSpecTrigger",
+            "parameters": [
+                {
+                    "name": "adSpecsList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 29
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromAdSpecTrigger",
+            "parameters": [
+                {
+                    "name": "adSpecsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 44
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runFromPlacementTrigger",
+            "parameters": [
+                {
+                    "name": "newPlacementsMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "oldPlacementsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 96
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "updateAdSpecs",
+            "parameters": [
+                {
+                    "name": "newPlacementsMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "oldPlacementsMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "adSpecsList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 160
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "updateAdServerIdAdSpecAssignments",
+            "parameters": [
+                {
+                    "name": "placementsMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "adSpecsMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdSpec_InheritFromPlacement",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_AdSpec_InheritFromPlacement",
+        "references": [],
+        "type": "Adv_AdSpec_InheritFromPlacement"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "placementIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "adSpecsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "placementIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "newPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 130,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "oldPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "changedPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "changedAdServerIdPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "placementIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "newPlacement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "adSpecsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "newPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 121,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "oldPlacementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 167,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "adSpecsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "newPlacement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "oldPlacement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "changed",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "placementsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 137,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "adSpecsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 161
+            },
+            "modifiers": [],
+            "name": "existingAssignments",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "newAssignments",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        }
+    ]
+}

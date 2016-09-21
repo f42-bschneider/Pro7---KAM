@@ -1,0 +1,374 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ccNAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ccNAAQ",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "setLineDescriptionOnInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 25
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "setLineDescriptionOnUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 57
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "setAdServerStatusOnInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 74
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "setAdServerStatusOnUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 98
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reloadCampaignItem",
+            "parameters": [
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Campaign_Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 109
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediaCampaign",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "pricelist",
+                    "type": "ADvendio__Pricelist__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__MediaCampaign__c",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_FieldChanges_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_FieldChanges_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_FieldChanges_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 93,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 115,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        }
+    ]
+}

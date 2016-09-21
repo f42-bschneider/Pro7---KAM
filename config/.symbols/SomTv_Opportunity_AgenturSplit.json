@@ -1,0 +1,576 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_Opportunity_AgenturSplit",
+            "parameters": [
+                {
+                    "name": "con",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KeOwIAK",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 181
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "agenturWrapper",
+                    "parameters": [
+                        {
+                            "name": "objAS",
+                            "type": "SomTv_Agentursplit__c"
+                        },
+                        {
+                            "name": "bPlaceHolder",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 188
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "agenturWrapper",
+                    "parameters": [
+                        {
+                            "name": "objAS",
+                            "type": "SomTv_Agentursplit__c"
+                        },
+                        {
+                            "name": "bPlaceHolder",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "iIndex",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AgenturWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 177
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "iIndex",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 38,
+                        "line": 178
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "objAS",
+                    "references": [],
+                    "type": "SomTv_Agentursplit__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 179
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "bPlaceHolder",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 175
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AgenturWrapper",
+                "references": [],
+                "type": "AgenturWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 181
+                    },
+                    "modifiers": [],
+                    "name": "objAS",
+                    "references": [],
+                    "type": "SomTv_Agentursplit__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 68,
+                        "line": 181
+                    },
+                    "modifiers": [],
+                    "name": "bPlaceHolder",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 188
+                    },
+                    "modifiers": [],
+                    "name": "objAS",
+                    "references": [],
+                    "type": "SomTv_Agentursplit__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 68,
+                        "line": 188
+                    },
+                    "modifiers": [],
+                    "name": "bPlaceHolder",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 90,
+                        "line": 188
+                    },
+                    "modifiers": [],
+                    "name": "iIndex",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000KeOwIAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 64
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "initListAgenturWrapper",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 80
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveAgentursplits",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 147
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addRow",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 155
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getHighestIndex",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 165
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "delAgenturSplit",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "SomTv_Opportunity_AgenturSplit",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setAgenturSplitIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "listWrapper",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "iDelIndex",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "iRowIndex",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_Opportunity_AgenturSplit",
+        "references": [],
+        "type": "SomTv_Opportunity_AgenturSplit"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "idOpp",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "sRetUrlParam",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "sRecordID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "idAS",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "objAS",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "idAS",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "objAS",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "SomTv_Agentursplit__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "listUpdateAS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "listInsertAS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "iSum",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "AgenturWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "listdeleteAS",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "iHighestIndex",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 157
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "AgenturWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        }
+    ]
+}

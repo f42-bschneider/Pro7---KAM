@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="fires when clientlikelihood or currency gets changed">
+	<aura:attribute name="currency" type="String" access="public"></aura:attribute>
+	<aura:attribute name="clientLikelihood" type="Integer" access="public" ></aura:attribute>
+</aura:event>

@@ -1,0 +1,443 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gHLAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gHLAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "generateTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 97
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "populatePrognose",
+            "parameters": [
+                {
+                    "name": "wtagID",
+                    "type": "Id"
+                },
+                {
+                    "name": "proValue",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Prognose__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 109
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "populateUmsatz",
+            "parameters": [
+                {
+                    "name": "wtagID",
+                    "type": "Id"
+                },
+                {
+                    "name": "umsValue",
+                    "type": "Integer"
+                },
+                {
+                    "name": "quartal",
+                    "type": "String"
+                },
+                {
+                    "name": "mediaGattung",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Umsatz__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_TestdatageneratorAtmWtAg",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 2
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "WTNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "AGNAME",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_TestdatageneratorAtmWtAg",
+        "references": [],
+        "type": "P7S1_TestdatageneratorAtmWtAg"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "wt",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "accList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "wtagList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "progList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "umsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "SomDig_Mediagattung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "a_Agentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "a_Agentur2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "a_Agentur3",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "a_Agentur4",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "a_Werbetreibender",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "a_Werbetreibender2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "a_WerbetreibenderDel",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "wtag",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "wtag2",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "wtag3",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "wtag4",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "wtag5",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "wtagID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "proValue",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "pro",
+            "references": [],
+            "type": "SomDig_Prognose__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "wtagID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "umsValue",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "quartal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "mediaGattung",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "ums",
+            "references": [],
+            "type": "SomDig_Umsatz__c"
+        }
+    ]
+}

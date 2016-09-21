@@ -1,0 +1,520 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d3pAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010d3pAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 26
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testAccountTeamAufnahme",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 93
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 146
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestUser",
+            "parameters": [
+                {
+                    "name": "i",
+                    "type": "Integer"
+                },
+                {
+                    "name": "idProfile",
+                    "type": "Id"
+                },
+                {
+                    "name": "idRole",
+                    "type": "String"
+                },
+                {
+                    "name": "unit",
+                    "type": "String"
+                },
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AccountSetTeamAndShare_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 17
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cntRecords",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cntAccounts",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 19
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "insertUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 20
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "userIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 21
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "unitStr",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 15
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_AccountSetTeamAndShare_Test",
+        "references": [],
+        "type": "P7S1_AccountSetTeamAndShare_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "lstAccTeam",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "team",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "lstAccShare",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "mapAcc2NewOwner",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "accShare",
+            "references": [],
+            "type": "AccountShare"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "lstAccUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "lstAccAccessUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "mapUnit2Roles",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "ur",
+            "references": [],
+            "type": "UserRole"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "lstUser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "idProfile",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "unit",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "accountsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "j",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 124
+            },
+            "modifiers": [],
+            "name": "mapUserId2Account",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "j",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "lstAccAccess",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "idProfile",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "idRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "unit",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

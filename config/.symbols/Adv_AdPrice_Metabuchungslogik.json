@@ -1,0 +1,218 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnfcAAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnfcAAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "checkAdPriceConfiguration",
+            "parameters": [
+                {
+                    "name": "listAdPrices",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 29
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "findValidMbl",
+            "parameters": [
+                {
+                    "name": "adPrice",
+                    "type": "ADvendio__Ad_price__c"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Metabuchungslogik__c",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdPrice_Metabuchungslogik",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ERROR_MSG",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "METABUCHUNGSLOGIK",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 33,
+                "line": 6
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "manuallyEnabledForTesting",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_AdPrice_Metabuchungslogik",
+        "references": [],
+        "type": "Adv_AdPrice_Metabuchungslogik"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "activeMBLQuery",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "listAdPrices",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "mbl",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "validMbl",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "mbl",
+            "references": [],
+            "type": "SomDig_Metabuchungslogik__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "abrechnungsartenSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "rotationstypenSet",
+            "references": [],
+            "type": "Set"
+        }
+    ]
+}

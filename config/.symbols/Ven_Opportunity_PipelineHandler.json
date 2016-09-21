@@ -1,0 +1,533 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Ven_Opportunity_PipelineHandler",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010heYAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010heYAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 20
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 35
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "updateTotalValues",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 68
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "buildOppId2Opp",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 85
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "buildTotalMaps",
+            "parameters": [
+                {
+                    "name": "oppIds",
+                    "type": "Set"
+                },
+                {
+                    "name": "oppId2TotalGmvCurrentYear",
+                    "type": "Map"
+                },
+                {
+                    "name": "oppId2TotalCashCurrentYear",
+                    "type": "Map"
+                },
+                {
+                    "name": "oppId2TotalGmvNextYear",
+                    "type": "Map"
+                },
+                {
+                    "name": "oppId2TotalCashNextYear",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Ven_Opportunity_PipelineHandler",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Ven_Opportunity_PipelineHandler",
+        "references": [],
+        "type": "Ven_Opportunity_PipelineHandler"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "oppId2Opp",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "oppId2TotalGmvCurrentYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "oppId2TotalCashCurrentYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "oppId2TotalGmvNextYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "oppId2TotalCashNextYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "oppId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "somLikelihood",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "oppId2Opp",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "oppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "oppId2TotalGmvCurrentYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "oppId2TotalCashCurrentYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 154,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "oppId2TotalGmvNextYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 195,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "oppId2TotalCashNextYear",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "thisYear",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "nextYear",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "ar",
+            "references": [],
+            "type": "AggregateResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "ar",
+            "references": [],
+            "type": "AggregateResult"
+        }
+    ]
+}

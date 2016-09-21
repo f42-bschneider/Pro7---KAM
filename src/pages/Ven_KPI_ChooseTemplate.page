@@ -1,0 +1,269 @@
+<apex:page id="page" standardController="Ven_KeyPerformanceIndicatorTemplate__c" extensions="Ven_KPI_ChooseTemplate">
+<html>
+<head>
+    <style>
+        table.kpi {
+            border-collapse: collapse;
+        }
+        
+        table.kpi td {
+            vertical-align: middle;
+        }
+        
+        td.kpi-section-label {
+            padding-left: 50px;
+            padding-right: 10px;
+        }
+        
+        td.kpi-section-firstLabel {
+            padding-right: 10px;
+        }
+        
+        .kpiBlocks {
+            margin-top: 20px;
+        }
+    </style>
+    
+    <script>
+        function removeKPIBlock(kpiBlockIdToRemove) {
+            document.getElementById("page:form:kpiBlockIdToRemove").value = kpiBlockIdToRemove;
+            
+            actionRemoveKPIBlock();
+        }
+        
+        function checkSelectAll() {
+            var selectAllElement = document.getElementById("page:form:pb-kpiRows:pbt-kpiRows:select-all");
+            
+            if (selectAllElement.checked == true) {
+                selectAllElement.checked = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <apex:form id="form">
+        <apex:pageMessages id="pageMessages" />
+        
+        <apex:pageBlock id="pb-kpiTemplate" title="KPI Template" rendered="{!renderKPITemplatePB}">
+            <table class="kpi">
+                <tr>
+                    <td>
+                        <apex:commandButton image="{!$Resource.ImgAdd}" action="{!actionNewKPITemplate}" immediate="true" reRender="form" status="status" />
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="KPI Template: " for="kpiteInputHelperKPITemplate" />
+                    </td>
+                    <td>
+                        <apex:inputField required="true" value="{!kpiteInputHelper.Ven_KeyPerformanceIndicatorTemplate__c}" id="kpiteInputHelperKPITemplate" />
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="Date: " for="oppInputHelperDate" />
+                    </td>
+                    <td>
+                        <apex:inputField value="{!oppInputHelper.CloseDate}" id="oppInputHelperDate" />
+                    </td>
+                </tr>
+            </table>
+            
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!openStrategicReport}" value="Open Strategic Report" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pb-newKpiTemplate" title="New KPI Template" rendered="{!renderNewKPITemplatePB}">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!backToKPITemplatePB}" value="Back" reRender="form" status="status" />
+                <apex:commandButton action="{!saveNewKPITemplate}" value="Save" reRender="form" status="status" />
+            </apex:pageBlockButtons>
+            
+            <table class="kpi">
+                <tr>
+                    <td class="kpi-section-firstLabel">
+                        <apex:outputLabel value="Template Name: " for="kpiTemplateName" />
+                    </td>
+                    <td>
+                        <div class="requiredInput">
+                            <div class="requiredBlock"></div>
+                            <apex:inputField value="{!newKPITemplate.Name}" id="kpiTemplateName" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+            <apex:pageBlockTable id="pbt-kpiBlocks" styleClass="kpiBlocks" value="{!kpiBlockMap}" var="keyStr" rendered="{!renderAddedKPIBlocks}">
+                <apex:column style="width:50px;">
+                    <apex:commandButton image="{!$Resource.ImgDel}" onclick="removeKPIBlock('{!kpiBlockMap[keyStr].Id}')" reRender="pbt-kpiBlocks" status="status" />
+                </apex:column>
+                
+                <apex:column value="{!kpiBlockMap[keyStr].Name}" />
+                <apex:column value="{!kpiBlockMap[keyStr].Ven_MonthlyView__c}" />
+                <apex:column value="{!kpiBlockMap[keyStr].Ven_YearToDateView__c}" />
+                <apex:column value="{!kpiBlockMap[keyStr].Ven_FullYearView__c}" />
+                <apex:column value="{!kpiBlockMap[keyStr].Ven_Last6MonthsView__c}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pb-kpiBlock" title="KPI Block" rendered="{!renderNewKPITemplatePB}">
+            <table class="kpi">
+                <tr>
+                    <td>
+                        <apex:commandButton image="{!$Resource.ImgAdd}" action="{!actionNewKPIBlock}" reRender="form" status="status" />
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="KPI Block: " for="kpiteInputHelperKPIBlock" />
+                    </td>
+                    <td>
+                        <apex:inputField value="{!kpiteInputHelper.Ven_KeyPerformanceIndicatorBlock__c}" id="kpiteInputHelperKPIBlock" />
+                    </td>
+                </tr>
+            </table>
+            
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!actionAddToKPITemplate}" value="Add To New KPI Template" reRender="form" status="status" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pb-newKpiBlock" title="New KPI Block" rendered="{!renderNewKPIBlockPB}">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!backToNewKPITemplatePB}" value="Back" reRender="form" status="status" />
+                <apex:commandButton action="{!saveNewKPIBlock}" value="Save" reRender="form" status="status" />
+            </apex:pageBlockButtons>
+            
+            <table class="kpi">
+                <tr>
+                    <td class="kpi-section-firstLabel">
+                        <apex:outputLabel value="Block Name: " for="kpiBlockName" />
+                    </td>
+                    <td>
+                        <div class="requiredInput">
+                            <div class="requiredBlock"></div>
+                            <apex:inputField value="{!newKPIBlock.Name}" id="kpiBlockName" />
+                        </div>
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="Monthly View: " for="kpiBlockMonthlyView" />
+                    </td>
+                    <td>
+                        <apex:inputField value="{!newKPIBlock.Ven_MonthlyView__c}" id="kpiBlockMonthlyView" />
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="Year-to-Date View: " for="kpiBlockYearToDateView" />
+                    </td>
+                    <td>
+                        <apex:inputField value="{!newKPIBlock.Ven_YearToDateView__c}" id="kpiBlockYearToDateView" />
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="Full Year View: " for="kpiBlockFullYearView" />
+                    </td>
+                    <td>
+                        <apex:inputField value="{!newKPIBlock.Ven_FullYearView__c}" id="kpiBlockFullYearView" />
+                    </td>
+                    <td class="kpi-section-label">
+                        <apex:outputLabel value="Last 6 months View: " for="kpiBlockLast6MonthsView" />
+                    </td>
+                    <td>
+                        <apex:inputField value="{!newKPIBlock.Ven_Last6MonthsView__c}" id="kpiBlockLast6MonthsView" />
+                    </td>
+                </tr>
+            </table>
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="pb-kpiRows" title="KPIs" rendered="{!renderNewKPIBlockPB}">
+            <apex:pageBlockTable id="pbt-kpiRows" value="{!currentKPIrows}" var="kpiRow">
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:inputCheckbox id="select-all" value="{!inputSelectAllChecked}">
+                            <apex:actionSupport event="onchange" action="{!toggleCheckboxes}" reRender="pb-kpiRows" status="status" />
+                        </apex:inputCheckbox>
+                    </apex:facet>
+                    
+                    <apex:inputCheckbox value="{!kpiRow.checked}" onchange="checkSelectAll();" />
+                </apex:column>
+                
+                <apex:column value="{!kpiRow.kpi.Name}" />
+                <apex:column value="{!kpiRow.kpi.Ven_Category_KPI__c}" />
+                <apex:column value="{!kpiRow.kpi.Ven_Description__c}" />
+                <apex:column value="{!kpiRow.kpi.Ven_Filter__c}" />
+                <apex:column value="{!kpiRow.kpi.Ven_Sub_Category__c}" />
+                <apex:column value="{!kpiRow.kpi.Ven_Supplier__c}" />
+                <apex:column value="{!kpiRow.kpi.Ven_Unit__c}" />
+            </apex:pageBlockTable>
+            
+            <!-- Pagination -->
+            <apex:outputpanel >
+                <apex:panelGrid columns="3" id="thePagination" width="100%">
+                    <!-- Select list of number of records to display per page -->
+                    <apex:panelGrid columns="3" id="theNumDisplayRecore" style="font-weight:bold;">
+                        <apex:outputLabel value="Display " />
+                        
+                        <apex:inputText value="{!pageSize}" size="2">
+                            <apex:actionSupport event="onchange" action="{!setPageSize}" reRender="pb-kpiRows" status="status" />
+                        </apex:inputText>
+                        
+                        <apex:outputLabel value=" Records per Page" />
+                    </apex:panelGrid>
+                    
+                    <!-- Move first, previous, next, last links -->
+                    <apex:panelGrid columns="3" id="thePaginator">
+                        <apex:outputLabel >
+                            <apex:outputpanel id="clickablePrev"  rendered="{!setController.hasPrevious}">
+                                <apex:commandLink action="{!first}" reRender="pb-kpiRows" status="status">
+                                    <apex:image url="{!URLFOR($Resource.Paginators, 'move_first.gif')}" title="First Page" />
+                                </apex:commandlink>
+                                <apex:commandLink action="{!previous}" reRender="pb-kpiRows" status="status">
+                                    <apex:image url="{!URLFOR($Resource.Paginators, 'move_previous.gif')}" title="Previous Page}" />
+                                </apex:commandlink>
+                            </apex:outputpanel>
+                            <apex:outputpanel id="unclickablePrev" rendered="{!NOT(setController.hasPrevious)}">
+                                <apex:image url="{!URLFOR($Resource.Paginators, 'move_first_dis.gif')}"/>
+                                <apex:image url="{!URLFOR($Resource.Paginators, 'move_previous_dis.gif')}" />
+                            </apex:outputpanel>
+                        </apex:outputLabel>
+                        
+                        <apex:panelGrid columns="2" id="theRecordIndex" style="font-weight:bold;">
+                            <apex:outputLabel value="{!currentResultSizeFrom} - {!currentResultSizeTo}" />
+                            <apex:outputLabel value=" of {!setController.resultSize} Records" />
+                        </apex:panelGrid>
+                        
+                        <apex:outputLabel > 
+                            <apex:outputpanel id="clickableNext" rendered="{!setController.hasNext}">
+                                <apex:commandLink action="{!next}" reRender="pb-kpiRows" status="status">
+                                    <apex:image url="{!URLFOR($Resource.Paginators, 'move_next.gif')}" title="Next" />
+                                </apex:commandlink>
+                                <apex:commandLink action="{!last}" reRender="pb-kpiRows" status="status">
+                                    <apex:image url="{!URLFOR($Resource.Paginators, 'move_last.gif')}" title="Last Page" />
+                                </apex:commandlink>
+                            </apex:outputpanel>
+                            <apex:outputpanel id="unclickableNext" rendered="{!NOT(setController.hasNext)}">
+                                <apex:image url="{!URLFOR($Resource.Paginators, 'move_next_dis.gif')}" />
+                                <apex:image url="{!URLFOR($Resource.Paginators, 'move_last_dis.gif')}" />
+                            </apex:outputpanel>
+                        </apex:outputLabel>
+                    </apex:panelGrid>
+                    
+                    <apex:panelGrid columns="1" id="thePageNum" style="font-weight:bold;text-align:right;" width="100%">
+                        <apex:outputPanel >
+                            <apex:outputLabel value="Page {!setController.pageNumber}" />
+                            <apex:outputLabel value=" of {!pageNumberSize}" /> 
+                        </apex:outputPanel>
+                    </apex:panelGrid>
+                </apex:panelGrid>
+            </apex:outputpanel>
+        </apex:pageBlock>
+        
+        <apex:actionFunction name="setPageSize" action="{!setPageSize}" reRender="pb-kpiRows" status="status" />
+        <apex:actionFunction name="actionRemoveKPIBlock" action="{!actionRemoveKPIBlock}" />
+        
+        <apex:inputHidden value="{!kpiBlockIdToRemove}" id="kpiBlockIdToRemove"/>
+    </apex:form>
+    
+    <!-- Loading Div -->
+    <apex:actionStatus id="status">
+        <apex:facet name="start">
+            <c:Load BackColor="#efefef" borderColor="#336699" borderSize="3" height="50px" width="120px" Message="Loading..." messageStyle="color:darkred;font-size:11pt;font-weight:bold;" ImageUrl="/img/loading.gif"/>
+        </apex:facet>
+    </apex:actionStatus>
+</body>
+</html>
+</apex:page>

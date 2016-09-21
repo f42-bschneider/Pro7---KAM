@@ -1,0 +1,81 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010jnvAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010jnvAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testDwhSoqlQueries",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_DwhSoqlCheck_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "DWH_INTERFACE_USER_NAME",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 3
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_DwhSoqlCheck_Test",
+        "references": [],
+        "type": "P7S1_DwhSoqlCheck_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

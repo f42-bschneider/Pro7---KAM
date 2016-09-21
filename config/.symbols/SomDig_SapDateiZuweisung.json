@@ -1,0 +1,404 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 28
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomDig_SapDateiZuweisung",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p57000001Q9icAAC",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable",
+        "Database.Stateful"
+    ],
+    "key": "01p57000001Q9icAAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 40
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 66
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 103
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_SapDateiZuweisung",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "bsByName",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 5
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalBatchs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 8
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "totalRecords",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "instanceName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "recordTypeName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "currentMaxGroupNumber",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 20
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "currentGroupName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sapDateiId",
+            "references": [],
+            "type": "Id"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "SomDig_SapDateiZuweisung",
+        "references": [],
+        "type": "SomDig_SapDateiZuweisung"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Organization"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "bsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "bsNames",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "bsName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "bsName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "bsListToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "buchungssatz",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "token",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "grpName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "job",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "mail",
+            "references": [],
+            "type": "SingleEmailMessage"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "toAddresses",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "htmlbody",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

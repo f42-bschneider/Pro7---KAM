@@ -1,0 +1,342 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d3sAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010d3sAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAccIdsFromAccount",
+            "parameters": [
+                {
+                    "name": "lstAcc",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 39
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAccIdsFromAccountAccess",
+            "parameters": [
+                {
+                    "name": "lstAA",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 52
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAccIdsFromOpportunityApproval",
+            "parameters": [
+                {
+                    "name": "lstOA",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 71
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setAccountSalesFields",
+            "parameters": [
+                {
+                    "name": "setAccIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_SetSalesFields",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "runTwice",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "FILTER_UNIT",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 15
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_Account_SetSalesFields",
+        "references": [],
+        "type": "P7S1_Account_SetSalesFields"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "lstAcc",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "setAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "lstAA",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "setAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "lstOA",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "setAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "setOppIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "oa",
+            "references": [],
+            "type": "P7S1_OpportunityApproval__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "setAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "mapRole2Field",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "mapAcc2ATM",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "lstUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        }
+    ]
+}

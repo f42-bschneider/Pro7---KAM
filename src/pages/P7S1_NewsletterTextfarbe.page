@@ -1,0 +1,3 @@
+<apex:page standardController="P7S1_Newsletter__c" showHeader="false" sidebar="false">
+    <font style="color: {!IF(P7S1_Newsletter__c.P7S1_Textfarbe__c = '' , '#000000' , '#'+P7S1_Newsletter__c.P7S1_Textfarbe__c)}; font-weight:{!IF(P7S1_Newsletter__c.P7S1_Textfett__c = true , 'bold' , 'standard')}">{!P7S1_Newsletter__c.Name}</font>
+</apex:page>

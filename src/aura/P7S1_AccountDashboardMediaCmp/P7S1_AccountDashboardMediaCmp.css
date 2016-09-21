@@ -1,0 +1,63 @@
+.THIS.container {	width: 100%;
+	padding: 10px 0px;
+	margin: 0px;
+}
+
+.THIS .center {
+	margin: 0px auto;
+}
+
+.THIS .content {
+	max-width: 768px;
+	font-size: 12px;
+	color: #3c3d3e;
+}
+
+.THIS .around {
+    position:relative;
+    padding: 10px;
+    -webkit-box-shadow: 5px 5px 5px grey;
+    -moz-box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
+    border-top: solid 4px #B00000 ;
+    min-height: 430px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-left: solid 1px grey;
+}
+
+.THIS .smallFont, .THIS .bigFont{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.THIS .smallFont {
+    font-size: 12px;
+}
+
+.THIS .bigFont {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.THIS td{
+    padding: 2px !important;
+}
+
+.THIS .noMargin {
+    margin: 0px !important;
+    height: 15px !important;
+}
+
+.THIS .table{
+    margin: 10px 0px !important;
+}
+
+.THIS .error{
+    text-align: center;
+    display: none;
+}
+
+.THIS .errorFadingIn{
+    display: block;
+}

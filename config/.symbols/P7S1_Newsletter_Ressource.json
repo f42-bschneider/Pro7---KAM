@@ -1,0 +1,200 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gTdAAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTdAAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "HttpPost"
+                }
+            ],
+            "location": {
+                "column": 26,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "postNewsletter",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 57
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getPortalLoginById",
+            "parameters": [
+                {
+                    "name": "portalLoginId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLogin__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Newsletter_Ressource",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "newsletterService",
+            "references": [],
+            "type": "P7S1_Newsletter_NewsletterServcie"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "RestResource"
+            }
+        ],
+        "location": {
+            "column": 30,
+            "line": 9
+        },
+        "modifiers": [
+            "without sharing",
+            "global"
+        ],
+        "name": "P7S1_Newsletter_Ressource",
+        "references": [],
+        "type": "P7S1_Newsletter_Ressource"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "portalLoginId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "action",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "restRequestBody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "newsLetterSubscribeUrl",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "upsertResult",
+            "references": [],
+            "type": "SaveResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "portalLoginId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        }
+    ]
+}

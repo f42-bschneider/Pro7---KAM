@@ -1,0 +1,274 @@
+<aura:component >
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js">
+    </ltng:require>
+
+    <aura:attribute name="opp" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="countryInternational" type="Object" access="public"></aura:attribute>
+    <aura:attribute name="userRoles" type="Object" access="public"></aura:attribute>
+    <aura:attribute name="selectOptLsts" type="Object" required="true" access="public"></aura:attribute>
+    <aura:attribute name="isValid" type="Boolean" access="public" ></aura:attribute>
+    <aura:attribute name="isNewOpp" type="Boolean" default="false" access="public"></aura:attribute>
+
+    <aura:attribute name="austriaRole" type="String"  access="public"></aura:attribute>
+    <aura:attribute name="switzerlandRole" type="String" access="public" ></aura:attribute>
+
+    <aura:attribute name="setProbability" type="Boolean" access="global"/>
+
+    <aura:handler name="change" value="{!v.opp.Name}" action="{!c.doHandleNameChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.StageName}" action="{!c.doHandleStatusChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.Ven_Country__c}" action="{!c.doHandleCountryChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.OwnerId}" action="{!c.doHandleOwnerChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.CurrencyIsoCode}" action="{!c.doHandleCurrencyChange}"></aura:handler>
+    <aura:handler name="change" value="{!v.opp.Probability}" action="{!c.doHandleClientLikelihoodChange}"></aura:handler>
+
+    <aura:attribute name="isLostCancelled" type="Boolean" access="public"></aura:attribute>
+
+    <aura:attribute name="isIm" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isScout" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isAnalyst" type="Boolean" default="false" access="public"></aura:attribute>
+
+    <aura:attribute name="accValid" type="Boolean" default="true" access="public"></aura:attribute>
+    <aura:attribute name="oppNameValid" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="closedValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="verticalValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="subCatValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="dealTypeValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="dealCatValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="statusValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="reasonValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="im1Valid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="countryValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="currencyValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="clientLikelihoodValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="targetPlValid" type="Boolean" default="true" access="public"></aura:attribute>
+
+	<aura:handler name="change" value="{!v.accValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.oppNameValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.closedValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.verticalValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.subCatValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.dealTypeValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.dealCatValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.statusValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.reasonValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.im1Valid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.countryValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.currencyValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.clientLikelihoodValid}" action="{!c.doHandleChange}"></aura:handler>
+	<aura:handler name="change" value="{!v.targetPlValid}" action="{!c.doHandleChange}"></aura:handler>
+
+	<aura:registerEvent name="ccyLikelihoodChanged" type="c:Ven_OppPipeDetailOppEvent"></aura:registerEvent>
+
+    <div class="row">
+    	<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Account}</label>
+				<c:f42_LookupCmp objType="Account"
+					labelApiName="Name"
+					objId="{!v.opp.AccountId}"
+					objLabel="{!v.opp.Account.Name}"
+					isValid="{!v.accValid}"
+					required="true"/>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Opp} Name</label>
+				<ui:inputText aura:id="oppName" class="form-control" value="{!v.opp.Name}"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Status}</label>
+				<c:f42_Select2Cmp value="{!v.opp.StageName}"
+					options="{!v.selectOptLsts.stageNames}"
+					required="true"
+					isValid="{!v.statusValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_ClientLikelihood}</label>
+				<div class="input-group">
+					<c:f42_InputNumber value="{!v.opp.Probability}"
+						min="0"
+						max="100"
+						required="true"
+						isInteger="true"
+						isValid="{!v.clientLikelihoodValid}"
+						textAlign="right">
+					</c:f42_InputNumber>
+					<span class="input-group-addon">%</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="col-sm-3" style="{!v.isLostCancelled ? '' : 'display:none'}">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_ReasonLostCancelled}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_Stage_Finished_Subcategory__c}"
+					options="{!v.selectOptLsts.reasons}"
+					required="{!v.isLostCancelled}"
+					isValid="{!v.reasonValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3" style="{!v.isLostCancelled ? '' : 'display:none'}">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_CommentLostCancelled}</label>
+				<textarea class="form-control" onchange="{!c.doHandleCommentChange}" value="{!v.opp.Ven_Comment__c}" style="height:auto!important"></textarea>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Vertical}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_Vertical__c}"
+					options="{!v.selectOptLsts.verticals}"
+					required="true"
+					isValid="{!v.verticalValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<!--
+		changed MS factory42 27.04.16
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_SubCat}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_SubCategory__c}"
+					options="{!v.selectOptLsts.subCats}"
+					required="true"
+					isValid="{!v.subCatValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+		-->
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_DealType}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_DealType__c}"
+					options="{!v.selectOptLsts.dealTypes}"
+					required="false"
+					isValid="{!v.dealTypeValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_DealIndustry}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_DealCategory__c}"
+					options="{!v.selectOptLsts.dealCats}"
+					required="true"
+					isValid="{!v.dealCatValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Country}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_Country__c}"
+					options="{!v.selectOptLsts.countries}"
+					required="true"
+					isValid="{!v.countryValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_International}</label>
+				<ui:inputCheckbox disabled="true" value="{!v.opp.Ven_International__c}" class="form-control"></ui:inputCheckbox>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Currency}</label>
+				<c:f42_Select2Cmp value="{!v.opp.CurrencyIsoCode}"
+					options="{!v.selectOptLsts.currencies}"
+					required="true"
+					isValid="{!v.currencyValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_TargetPl}</label>
+
+				<!--<ui:outputText value="{!v.opp.targetPL}" class="form-control"></ui:outputText>-->
+				<c:f42_Select2Cmp value="{!v.opp.Ven_TargetPL__c}"
+					options="{!v.selectOptLsts.targetPls}"
+					required="true"
+					isValid="{!v.targetPlValid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Im}1</label>
+				<c:f42_Select2Cmp value="{!v.opp.OwnerId}"
+					options="{!v.selectOptLsts.ims}"
+					required="true"
+					isValid="{!v.im1Valid}">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Im}2</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_Im2__c}"
+					options="{!v.selectOptLsts.ims}"
+					required="false"
+					isValid="true">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Scout}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_Scout__c}"
+					options="{!v.selectOptLsts.scouts}"
+					required="{!and(v.isScout, v.isNewOpp)}"
+					isValid="true">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="form-group">
+				<label>{!$Label.c.Ven_lbl_Analyst}</label>
+				<c:f42_Select2Cmp value="{!v.opp.Ven_Analyst__c}"
+					options="{!v.selectOptLsts.analysts}"
+					required="{!and(v.isAnalyst, v.isNewOpp)}"
+					isValid="true">
+				</c:f42_Select2Cmp>
+			</div>
+		</div>
+	</div>
+
+</aura:component>

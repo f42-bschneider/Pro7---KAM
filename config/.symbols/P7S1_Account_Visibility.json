@@ -1,0 +1,150 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kka0IAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kka0IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateVisibility",
+            "parameters": [
+                {
+                    "name": "mapAccount",
+                    "type": "Map"
+                },
+                {
+                    "name": "listAccount",
+                    "type": "LIST"
+                },
+                {
+                    "name": "bIsInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "bIsUpdate",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_Visibility",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Account_Visibility",
+        "references": [],
+        "type": "P7S1_Account_Visibility"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "mapAccount",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "listAccount",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 106,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "bIsInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 125,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "bIsUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "mapChangedAccounts",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "listContacts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        }
+    ]
+}

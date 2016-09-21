@@ -1,0 +1,514 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 44
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "z_DumpFrontPageCont",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KB9NIAW",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 170
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "BatchJob",
+                    "parameters": [],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "BatchJob",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 29,
+                        "line": 166
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "aj",
+                    "references": [],
+                    "type": "AsyncApexJob"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 167
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "Percent",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 168
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "Job_Type",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 169
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "isCompleted",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 165
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "BatchJob",
+                "references": [],
+                "type": "BatchJob"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000KB9NIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getDisableDumpBtn",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getShowProgressBar",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getShowStatusBlock",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 51
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "init",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 63
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getJobs",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 131
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "updateProgress",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 152
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "executeDump",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "z_DumpFrontPageCont",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "batch1ClassId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "batch2ClassId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "batch3ClassId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 4
+            },
+            "modifiers": [
+                "public",
+                "final"
+            ],
+            "name": "NOT_START",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 5
+            },
+            "modifiers": [
+                "public",
+                "final"
+            ],
+            "name": "PROCESSING",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 6
+            },
+            "modifiers": [
+                "public",
+                "final"
+            ],
+            "name": "FINISHED",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batch1Status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batch2Status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batch3Status",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batch1Id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batch2Id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "batch3Id",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "message",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "messageCode",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "errornum",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "z_DumpFrontPageCont",
+        "references": [],
+        "type": "z_DumpFrontPageCont"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "apexJobs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "jobs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "job",
+            "references": [],
+            "type": "AsyncApexJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "bj",
+            "references": [],
+            "type": "BatchJob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "d",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "settings",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

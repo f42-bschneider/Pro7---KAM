@@ -1,0 +1,74 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KB9QIAW",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000KB9QIAW",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 3
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "z_SchedulableBatchableMetadataDump2",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "z_SchedulableBatchableMetadataDump2",
+        "references": [],
+        "type": "z_SchedulableBatchableMetadataDump2"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "Id"
+        }
+    ]
+}

@@ -1,0 +1,216 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dupAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dupAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 15
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testSerialize",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 26,
+                "line": 24
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testParse",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 26,
+                "line": 69
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testObjectConversion",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 26,
+                "line": 94
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "getP7S1_UnternehmensartFromEnum",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 102
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createNewLifeRayRegistrationFormBean",
+            "parameters": [],
+            "references": [],
+            "returnType": "P7S1_Liferay_RegistrationFormBean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 116
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getJsonStringForObject",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_RegistrationFormBean_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 13
+        },
+        "modifiers": [
+            "testMethod",
+            "global"
+        ],
+        "name": "P7S1_Liferay_RegistrationFormBean_Test",
+        "references": [],
+        "type": "P7S1_Liferay_RegistrationFormBean_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "lifeRayRegistrationFormBean",
+            "references": [],
+            "type": "P7S1_Liferay_RegistrationFormBean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "jsonObjectRepresentation",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "P7S1_Liferay_RegistrationFormBean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "obj",
+            "references": [],
+            "type": "P7S1_Liferay_RegistrationFormBean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "lifeRayRegistrationFormBean",
+            "references": [],
+            "type": "P7S1_Liferay_RegistrationFormBean"
+        }
+    ]
+}

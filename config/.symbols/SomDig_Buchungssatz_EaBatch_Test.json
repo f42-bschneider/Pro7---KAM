@@ -1,0 +1,67 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010cznAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010cznAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 21,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testEaBatch",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Buchungssatz_EaBatch_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "SomDig_Buchungssatz_EaBatch_Test",
+        "references": [],
+        "type": "SomDig_Buchungssatz_EaBatch_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "SomDig_Buchungssatz_EaBatch"
+        }
+    ]
+}

@@ -1,0 +1,437 @@
+<apex:page controller="SomDig_Prognose_ListEdit" tabStyle="SomDig_Prognose__c" sidebar="false"> 
+
+    <style>
+        .hidden{
+            display:none;        
+        }
+        .shown{
+            inline;
+        }        
+        .columnClassCurrency{
+            width:110px;
+        }
+        .columnClassInfos{
+            width:110px;        
+        }        
+        .columnButton{
+            min-width:150px;        
+        }                
+        .inputField{
+            width:80px;        
+        }
+        .sumsOK{
+          font-weight:bold;
+          color: green;
+          padding: 3px;
+          text-align: center;                
+        }
+        .sumsNotOK{
+          font-weight:bold;
+          color: red;
+          padding: 3px;
+          text-align: center;        
+        }
+        .diff{
+          text-align: center;                
+          font-weight:bold;   
+          color:black;       
+        }
+        .restButton{
+            color:blue;
+            cursor:pointer;
+            text-decoration:underline;
+        }
+    </style>
+
+  <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"/>
+  <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"/>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />
+  <apex:includeScript value="{!$Resource.jQueryAccounting}"/>  
+
+
+  <script type="text/javascript">
+      var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+                onReady();  
+      }); 
+      
+      
+      function onReady(){
+          $j(".inputField").keypress(function (e) {
+             if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                alert('Bitte nur ganze Zahlen eingeben!');
+                return false;
+            }
+           });   
+      }
+      
+      
+      // Edit link clicked          
+      function editOrCancelClicked(clickedID, bCancel) {
+      
+             if(bCancel){
+                var r = confirm("Sind Sie sicher? Ihre Änderungen gehen verloren.");
+                if (r == true) {
+                    resetValues(clickedID);
+                }else{
+                    return false;
+                }      
+             }       
+      
+             // Hide outputs, show inputs , and vice versa
+             $j('[id$=' + clickedID + ']').toggleClass('hidden');
+             $j('.editButton').toggleClass('hidden');  
+             
+             calculateSum(clickedID);  
+      }         
+      
+      function resetValues(clickedID){
+          $j('#q1-input-' + clickedID).val($j('#q1-hidden-' + clickedID).val());
+          $j('#q2-input-' + clickedID).val($j('#q2-hidden-' + clickedID).val());
+          $j('#q3-input-' + clickedID).val($j('#q3-hidden-' + clickedID).val());
+          $j('#q4-input-' + clickedID).val($j('#q4-hidden-' + clickedID).val());  
+          
+          $j('#ip-input-' + clickedID).val($j('#ip-hidden-' + clickedID).val());
+          $j('#is-input-' + clickedID).val($j('#is-hidden-' + clickedID).val());
+          $j('#tv-input-' + clickedID).val($j('#tv-hidden-' + clickedID).val());            
+          
+          calculateSum(clickedID);
+      }
+   
+      
+      function saveClicked(ID){
+           
+           var sumQuarters  = getSumQuarters(ID);
+           var sumOthers    = getSumOthers(ID);
+                           
+           if(sumQuarters != sumOthers){
+               alert('Die Summen stimmen nicht überein.');
+           }else{
+           
+                var q1 = getVal('q1', ID);
+                var q2 = getVal('q2', ID);            
+                var q3 = getVal('q3', ID);
+                var q4 = getVal('q4', ID);            
+                var ip = getVal('ip', ID);
+                var is = getVal('is', ID);
+                var tv = getVal('tv', ID);
+
+                
+                if(q1 < 0 || q2 < 0 || q3 < 0 || q4 < 0 || ip < 0 || is < 0 || tv < 0)
+                    alert("Bitte nur positive Zahlen eingeben.");
+                else{
+                    save(ID, q1, q2, q3, q4, ip, is, tv);
+                }
+           }
+      }
+      
+      function getVal(field, ID){
+          return $j('#' + field + '-input-' + ID).val();
+      }   
+      
+      
+      function getSumQuarters(ID){
+            var q1 = getVal('q1', ID);
+            var q2 = getVal('q2', ID);            
+            var q3 = getVal('q3', ID);
+            var q4 = getVal('q4', ID);                        
+            
+            q1 = q1 != '' ? parseInt(q1) : 0;
+            q2 = q2 != '' ? parseInt(q2) : 0;
+            q3 = q3 != '' ? parseInt(q3) : 0;
+            q4 = q4 != '' ? parseInt(q4) : 0;                                    
+                         
+            var sum = q1 + q2 + q3 + q4;                              
+            return sum;
+      }
+      
+      function getSumOthers(ID){
+      
+            var ip = getVal('ip', ID);
+            var is = getVal('is', ID);
+            var tv = getVal('tv', ID);   
+            
+            ip = ip != '' ? parseInt(ip) : 0;
+            is = is != '' ? parseInt(is) : 0;
+            tv = tv != '' ? parseInt(tv) : 0;                                                                            
+            
+            var sum = ip + is + tv;
+            
+            return sum;
+      }
+      
+      function calculateSum(ID){
+      
+          var sumQuarters  = getSumQuarters(ID);
+          var sumOthers    = getSumOthers(ID);    
+          var diff         = sumQuarters - sumOthers;  
+          if(diff < 0)
+              diff = diff * (-1);
+          
+          $j('#' + ID + '-sums').html(accounting.formatMoney(sumQuarters, "EUR ", 2, ".", ",") + ' / ' + accounting.formatMoney(sumOthers, "EUR ", 2, ".", ","));
+          $j('#' + ID + '-diff').html(accounting.formatMoney(diff, "EUR ", 2, ".", ","));          
+
+          
+          if(sumOthers == sumQuarters){
+              $j('#' + ID + '-sums').addClass('sumsOK');              
+              $j('#' + ID + '-sums').removeClass('sumsNotOK');                            
+          }else{
+              $j('#' + ID + '-sums').addClass('sumsNotOK');              
+              $j('#' + ID + '-sums').removeClass('sumsOK');                            
+          }
+          
+          highlighting(ID);
+      }
+      
+      function highlighting(ID){
+            highlightSingleInput('q1', ID, getVal('q1', ID));
+            highlightSingleInput('q2', ID, getVal('q2', ID));
+            highlightSingleInput('q3', ID, getVal('q3', ID));
+            highlightSingleInput('q4', ID, getVal('q4', ID));
+            highlightSingleInput('ip', ID, getVal('ip', ID));
+            highlightSingleInput('is', ID, getVal('is', ID));
+            highlightSingleInput('tv', ID, getVal('tv', ID));                                                                        
+      }
+      
+      /* Highlight if negative red, else white*/
+      function highlightSingleInput(field, ID, val){
+          if(val < 0)
+              $j('#' + field + '-input-' + ID).css({'background-color' : '#F7819F'});
+          else
+              $j('#' + field + '-input-' + ID).css({'background-color' : '#FFFFFF'}); 
+      }
+      
+      
+      function addRest(inputID, ID, type){
+          
+          var sumQuarters  = getSumQuarters(ID);
+          var sumOthers    = getSumOthers(ID);    
+          var diff         = sumQuarters - sumOthers;
+          var val          = parseInt($j('#' + inputID).val());
+          
+          if(!$j.isNumeric(val))
+              val = 0;
+          
+          /* Calculate value to insert in input, where rest clicked */
+          var newVal = 0;
+          if(type == 'quarter')
+              newVal = val - diff;
+          if(type == 'other')
+              newVal = val + diff;          
+
+          $j('#' + inputID).val(newVal);
+           
+          highlighting(ID); 
+          calculateSum(ID);                
+      }
+  </script>
+
+    
+<apex:form >
+
+    <apex:actionStatus id="status">
+        <apex:facet name="start">
+            <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.25; z-index: 1000; background-color: black;">
+                &nbsp;
+            </div>
+            <div style="position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 15% 50%">
+                <div style="display: inline-block; padding: 2px; background-color: #fff; width: 125px;">
+                    <img src="/img/loading.gif" style="float: left; margin: 8px;" />
+                    <span style="display: inline-block; padding: 10px 0px;">Bitte warten...</span>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionStatus>    
+
+    <apex:sectionHeader title="Prognosen" subtitle="Prognosen Listview"/>
+
+
+    <apex:actionFunction action="{!save}" name="save" rerender="table" status="status" oncomplete="onReady()">
+        <apex:param name="ID" assignTo="{!recordID}" value="" />
+        <apex:param name="iQ1" assignTo="{!iQ1}" value="" />
+        <apex:param name="iQ2" assignTo="{!iQ2}" value="" />
+        <apex:param name="iQ3" assignTo="{!iQ3}" value="" />
+        <apex:param name="iQ4" assignTo="{!iQ4}" value="" />    
+        
+        <apex:param name="iIP" assignTo="{!iIP}" value="" />
+        <apex:param name="iIS" assignTo="{!iIS}" value="" />
+        <apex:param name="iTV" assignTo="{!iTV}" value="" />                                
+    </apex:actionFunction>
+    
+    <apex:actionFunction name="refresh" reRender="table" status="status" oncomplete="onReady()" />
+
+    <apex:pagemessages />
+    <apex:pageblock > 
+
+          <apex:pageBlockButtons location="top" >                  
+                <apex:commandbutton action="{!cancel}" value="Zurück zu Prognosen"/>  
+           </apex:pageblockbuttons>  
+          
+          <apex:pageblocksection columns="1">  
+          
+          
+          
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Meine Prognosen</apex:outputLabel>
+                <apex:inputCheckbox value="{!bMyRecords}" onchange="refresh()" />
+            </apex:pageBlockSectionItem>
+
+          
+          
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Vertriebsteam</apex:outputLabel>
+                <apex:selectList value="{!sFilter}" multiselect="false" size="1" onchange="refresh()">
+                    <apex:selectOption itemValue="all" itemLabel="Alle Prognosen"/>
+                    <apex:selectOption itemValue="Vertrieb Berlin" itemLabel="Vertriebsteam BER"/>
+                    <apex:selectOption itemValue="Vertrieb Düsseldorf" itemLabel="Vertriebsteam DUS"/>
+                    <apex:selectOption itemValue="Vertrieb ECC" itemLabel="Vertriebsteam ECC"/>                
+                    <apex:selectOption itemValue="Vertrieb Frankfurt" itemLabel="Vertriebsteam FRA"/>                
+                    <apex:selectOption itemValue="Vertrieb Hamburg" itemLabel="Vertriebsteam HH"/>                
+                    <apex:selectOption itemValue="Vertrieb München" itemLabel="Vertriebsteam MUC"/>                                                                
+                    <apex:selectOption itemValue="Vertrieb RTA" itemLabel="Vertriebsteam RTA"/>                                                                
+                </apex:selectList>
+            </apex:pageBlockSectionItem>          
+            
+            
+            <apex:pageblockSectionItem >
+                <apex:outputLabel >Sortieren nach</apex:outputLabel>            
+                <apex:selectList value="{!sSortOrder}" multiselect="false" size="1" onchange="refresh()">
+                    <apex:selectOption itemValue="Name" itemLabel="Name"/>
+                    <apex:selectOption itemValue="SomDig_PrognoseQ1__c" itemLabel="Q1"/>
+                    <apex:selectOption itemValue="SomDig_PrognoseQ2__c" itemLabel="Q2"/>
+                    <apex:selectOption itemValue="SomDig_PrognoseQ3__c" itemLabel="Q3"/>
+                    <apex:selectOption itemValue="SomDig_PrognoseQ4__c" itemLabel="Q4"/>                                
+                    <apex:selectOption itemValue="SomDig_PrognoseGesamt__c" itemLabel="Prognose Gesamt"/>                                                
+                    <apex:selectOption itemValue="SomDig_MedDiffInPage__c" itemLabel="InPage"/>                                                
+                    <apex:selectOption itemValue="SomDig_MedDiffInStream__c" itemLabel="InStream"/>                                                
+                    <apex:selectOption itemValue="SomDig_MedDiffRest__c" itemLabel="Digital TV"/>                                                                                                 
+                    <apex:selectOption itemValue="SomDig_Inhaber__c" itemLabel="Inhaber"/>                                                
+                    <apex:selectOption itemValue="SomDig_AccountBeziehungsname__c" itemLabel="Account Beziehungsname"/>                                                
+                    <apex:selectOption itemValue="SomDig_Vertriebsteam__c" itemLabel="Vertriebsteam"/>                                                                                                 
+                </apex:selectList>  
+            </apex:pageblockSectionItem>                                      
+
+            <apex:outputPanel id="table">
+              <apex:pageBlockTable value="{!ListPrognosen}" var="o" style="width:1690px">  
+              
+                  <apex:column styleClass="columnButton">  
+                        <span style="background:#FF0033; color:white" class="editButton btn" onclick="editOrCancelClicked('{!o.ID}', false)">Bearbeiten</span>
+                        
+                        <span class="hidden btn" id="cancel-{!o.ID}" onclick="editOrCancelClicked('{!o.ID}', true)">Abbrechen</span>
+                        <span class="hidden btn" id="save-{!o.ID}" onclick="saveClicked('{!o.ID}')">Speichern</span>                        
+                  </apex:column>  
+              
+                  <apex:column headerValue="Account Beziehungsname" styleClass="columnClassInfos">
+                          <apex:outputfield value="{!o.SomDig_AccountBeziehungsname__c}" />                    
+                  </apex:column> 
+                  
+                  <apex:column style="width:40px" headerValue="Name">                                      
+                     <apex:outputLink value="/{!o.Id}" id="object" target="_blank">
+                         <apex:outputText value="{!o.Name}"/>
+                     </apex:outputLink>                      
+                  </apex:column>  
+                  
+                  <apex:column headerValue="Umsatz AJ" style="width:110px">
+                          <apex:outputfield value="{!o.SomDig_WtAgBeziehung__r.SomDig_UmsatzGesamtAj__c}" />                    
+                  </apex:column>
+                  
+                  <apex:column headervalue="Q1" styleClass="columnClassCurrency">  
+                      <div id="q1-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_PrognoseQ1__c}" />  
+                          <input type="hidden" value="{!o.SomDig_PrognoseQ1__c}" id="q1-hidden-{!o.ID}" />
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="q1-input-{!o.ID}" type="text" value="{!o.SomDig_PrognoseQ1__c}" class="hidden inputField" />
+                      
+                      <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('q1-input-{!o.ID}', '{!o.ID}', 'quarter')">+ Rest</span>
+                  </apex:column>  
+                  
+                  
+                  <apex:column headervalue="Q2" styleClass="columnClassCurrency">  
+                      <div id="q2-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_PrognoseQ2__c}" />  
+                          <input type="hidden" value="{!o.SomDig_PrognoseQ2__c}" id="q2-hidden-{!o.ID}" />                          
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="q2-input-{!o.ID}" type="text" value="{!o.SomDig_PrognoseQ2__c}" class="hidden inputField" />
+                      
+                     <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('q2-input-{!o.ID}', '{!o.ID}', 'quarter')">+ Rest</span>                      
+                  </apex:column>     
+                  
+                  
+                  <apex:column headervalue="Q3" styleClass="columnClassCurrency">  
+                      <div id="q3-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_PrognoseQ3__c}" />  
+                          <input type="hidden" value="{!o.SomDig_PrognoseQ3__c}" id="q3-hidden-{!o.ID}" />                          
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="q3-input-{!o.ID}" type="text" value="{!o.SomDig_PrognoseQ3__c}" class="hidden inputField" />
+                      
+                      <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('q3-input-{!o.ID}', '{!o.ID}', 'quarter')">+ Rest</span>                      
+                  </apex:column>    
+                  
+                  <apex:column headervalue="Q4" styleClass="columnClassCurrency">  
+                      <div id="q4-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_PrognoseQ4__c}" /> 
+                          <input type="hidden" value="{!o.SomDig_PrognoseQ4__c}" id="q4-hidden-{!o.ID}" />                           
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="q4-input-{!o.ID}" type="text" value="{!o.SomDig_PrognoseQ4__c}" class="hidden inputField" />
+                      
+                      <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('q4-input-{!o.ID}', '{!o.ID}', 'quarter')">+ Rest</span>                      
+                  </apex:column>                      
+                  
+                  <apex:column headervalue="Summen" style="width:260px">                                                            
+                        <div id="{!o.ID}-sums" class="sumsOK">
+                            <apex:outputfield value="{!o.SomDig_PrognoseGesamt__c}" />&nbsp;/&nbsp;<apex:outputfield value="{!o.SomDig_PrognoseGesamt__c}" /> 
+                        </div>
+                        
+                        <div class="diff" id="{!o.ID}-diff">EUR 0,00</div>
+                  </apex:column>                    
+                  
+                  <apex:column headervalue="InPage"  styleClass="columnClassCurrency">  
+                      <div id="ip-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_MedDiffInPage__c}" />  
+                          <input type="hidden" value="{!o.SomDig_MedDiffInPage__c}" id="ip-hidden-{!o.ID}" />                                                     
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="ip-input-{!o.ID}" type="text" value="{!o.SomDig_MedDiffInPage__c}" class="hidden inputField" />
+                      
+                      <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('ip-input-{!o.ID}', '{!o.ID}', 'other')">+ Rest</span>
+                  </apex:column>      
+                  
+
+                  <apex:column headervalue="InStream"  styleClass="columnClassCurrency">  
+                      <div id="is-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_MedDiffInStream__c}" />  
+                          <input type="hidden" value="{!o.SomDig_MedDiffInStream__c}" id="is-hidden-{!o.ID}" />                                                                               
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="is-input-{!o.ID}" type="text" value="{!o.SomDig_MedDiffInStream__c}" class="hidden inputField" />
+                      
+                      <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('is-input-{!o.ID}', '{!o.ID}', 'other')">+ Rest</span>                      
+                  </apex:column>            
+                  
+
+                  <apex:column headervalue="Digital TV"  styleClass="columnClassCurrency">  
+                      <div id="tv-{!o.ID}" class="outputFields">
+                          <apex:outputfield value="{!o.SomDig_MedDiffRest__c}" />  
+                          <input type="hidden" value="{!o.SomDig_MedDiffRest__c}" id="tv-hidden-{!o.ID}" />                                                                                                         
+                      </div>    
+                      <input onkeyup="calculateSum('{!o.ID}')" id="tv-input-{!o.ID}" type="text" value="{!o.SomDig_MedDiffRest__c}" class="hidden inputField" />
+                      
+                      <br/><span class="hidden restButton" id="rest-{!o.ID}" onclick="addRest('tv-input-{!o.ID}', '{!o.ID}', 'other')">+ Rest</span>                                            
+                  </apex:column>        
+                  
+                       
+                  <apex:column headerValue="Inhaber" styleClass="columnClassInfos">
+                          <apex:outputfield value="{!o.SomDig_Inhaber__c}" />                    
+                  </apex:column>                  
+                                   
+                  <apex:column headerValue="Vertriebsteam" styleClass="columnClassInfos">
+                          <apex:outputfield value="{!o.SomDig_Vertriebsteam__c}" />                    
+                  </apex:column>
+                  
+              </apex:pageblocktable>
+            </apex:outputPanel>
+               
+          </apex:pageblocksection>  
+    </apex:pageblock>
+    
+</apex:form>
+</apex:page>

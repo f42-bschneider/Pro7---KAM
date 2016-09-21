@@ -1,0 +1,207 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000K0JJIA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K0JJIA0",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "HttpGet"
+                }
+            ],
+            "location": {
+                "column": 21,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "doGet",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 76
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "queryGetCompanyByID",
+            "parameters": [
+                {
+                    "name": "pProRexId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "GetCompanyByID",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "RestResource"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 9
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "GetCompanyByID",
+        "references": [],
+        "type": "GetCompanyByID"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "RestRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "RestResponse"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "pProRexId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "ResponseWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "record",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "pProRexId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "accounts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "rec",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "p7s1records",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "p7s1",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "p7s1rec",
+            "references": [],
+            "type": "Map"
+        }
+    ]
+}

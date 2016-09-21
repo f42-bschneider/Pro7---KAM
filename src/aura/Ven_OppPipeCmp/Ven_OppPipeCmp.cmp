@@ -1,0 +1,176 @@
+<aura:component controller="Ven_OppPipeline_CmpCtrl" implements="force:appHostable">
+	<ltng:require styles=" 	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
+								/resource/f42_ionicons/ionicons/css/ionicons.min.css,
+								/resource/toastr/toastr.min.css"
+
+                   	scripts="	/resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
+                                /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js,
+                                /resource/toastr/toastr.min.js"
+                    afterScriptsLoaded="{!c.doInitScripts}">
+    </ltng:require>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+
+    <aura:handler name="summaryItemClick" event="c:Ven_OppPipeSummaryEvt" action="{!c.doHandleOppPipeSummaryEvt}"/>
+    <aura:handler name="summaryItemChanged" event="c:Ven_OppPipeSummaryEvt" action="{!c.onSummaryItemChange}"/>
+
+    <aura:attribute name="setProbability" type="Boolean" default="false" access="public"/>
+    <aura:attribute name="summaryItemsCopy" type="Object[]" access="private"/>
+    <aura:attribute name="summaryItemsChanged" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="changedOppIds" type="String[]"  access="private"/>
+
+    <aura:attribute name="oppPipeData" type="Object" access="public"></aura:attribute>
+    <aura:attribute name="oppPipeDetail" type="Object" access="public"></aura:attribute>
+	<aura:attribute name="renderSpinner" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="isSummary" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="isNewOpp" type="Boolean" default="false" access="public"></aura:attribute>
+	<aura:attribute name="isOppValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="isPipeValid" type="Boolean" default="true" access="public"></aura:attribute>
+	<aura:attribute name="showButtons" type="Boolean" default="false" access="private"/>
+	<aura:attribute name="isPipeBtnSelected" type="Boolean" default="true" access="private"/>
+	<aura:attribute name="isPrePipeBtnSelected" type="Boolean" default="false" access="private"/>
+
+
+
+	<aura:attribute name="isIm" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isScout" type="Boolean" default="false" access="public"></aura:attribute>
+    <aura:attribute name="isAnalyst" type="Boolean" default="false" access="public"></aura:attribute>
+
+	<c:f42_SpinnerCmp visible="{!v.renderSpinner}"></c:f42_SpinnerCmp>
+
+	<div class="f42">
+
+   		<div class="container-fluid">
+
+   			<div class="modal fade" aura:id="deleteModal" id="deleteModal" tabindex="-1" role="dialog">
+		        <div class="modal-dialog" role="document">
+		            <div class="modal-content" >
+		            	<div class="modal-body">
+		            		{!$Label.c.Ven_lbl_DeleteOpp}
+		            	</div>
+
+		            	<div class="modal-footer">
+			            	<button type="button" class="btn btn-danger btn-sm" onclick="{!c.doDelete}" data-dismiss="modal">
+			            		<i class="ionicons ion-trash-b"></i> {!' '+$Label.c.Ven_lbl_Delete}
+			            	</button>
+			            	<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+			            		<i class="ionicons ion-close-round"></i> {!' '+$Label.c.Ven_lbl_Cancel}
+			            	</button>
+			            </div>
+		            </div>
+		        </div>
+		    </div>
+
+	   		<nav class="navbar navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="navbar-brand"><img src="/resource/Ven_Logo"></img></div>
+	  					<!--<a class="navbar-brand" href="#">{!$Label.c.Ven_lbl_Opp+' '} {!$Label.c.Ven_lbl_Pipeline}</a>-->
+					</div>
+
+					<div>
+
+	  					<ul class="nav navbar-nav navbar-right" style="margin-right:0px">
+
+	  						<li style="{!(v.isSummary &amp;&amp; v.showButtons &amp;&amp; v.summaryItemsChanged) ? '' : 'display:none'}">
+	  							<div class="btn-group" role="group" style="margin-right:10px;margin-top:2px">
+		                            <button aura:id="saveTable" type="button" class="btn navbar-btn btn-success" onclick="{!c.onTableSave}">
+		                            	Save
+		                            </button>
+
+	  								<button aura:id="cancelTable" type="button" class="btn navbar-btn btn-warning" onclick="{!c.onTableCancel}">
+		                            	Cancel
+		                            </button>
+	  							</div>
+
+	        				</li>
+
+
+	  						<li style="{!(v.isSummary &amp;&amp; v.showButtons &amp;&amp; v.isPrePipeBtnSelected &amp;&amp; !v.summaryItemsChanged) ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-success navbar-btn btn-sm" onclick="{!c.doNewOpp}">
+	                                <i class="ionicons ion-plus-round"></i> {!' '+$Label.c.Ven_lbl_New+' '} {!$Label.c.Ven_lbl_Opp}
+	                            </button>
+	        				</li>
+
+	  						<li style="{!(v.isSummary &amp;&amp; v.showButtons &amp;&amp; !v.summaryItemsChanged) ? '' : 'display:none'}">
+	  							<div class="btn-group" role="group" style="margin-right:10px;margin-top:2px">
+		                            <button aura:id="prePipeBtn" type="button" class="btn navbar-btn btn-default" onclick="{!c.onPrePipeBtnClick}">
+		                            	Pre-Pipeline
+		                            </button>
+
+	  								<button aura:id="pipeBtn" type="button" class="btn navbar-btn btn-primary" onclick="{!c.onPipeBtnClick}">
+		                            	Pipeline
+		                            </button>
+	  							</div>
+
+	        				</li>
+
+  							<li style="{!(v.isSummary &amp;&amp; v.showButtons &amp;&amp; !v.summaryItemsChanged) ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-info navbar-btn btn-sm" onclick="{!c.doInit}">
+	                                <i class="ionicons ion-loop"></i> {!' '+$Label.c.Ven_lbl_Refresh}
+	                            </button>
+	        				</li>
+
+	        				<li style="{!(v.isSummary &amp;&amp; v.oppPipeData.isInPermissionSet &amp;&amp; v.showButtons &amp;&amp; !v.summaryItemsChanged) ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-primary navbar-btn btn-sm" onclick="{!c.doExport}">
+	                                <i class="ionicons ion-android-download"></i> {!' '+$Label.c.Ven_lbl_Export}
+	                            </button>
+	        				</li>
+
+  							<li style="{!v.isSummary ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-default navbar-btn btn-sm" onclick="{!c.doHome}">
+	                               <i class="ionicons ion-home"></i> {!' '+$Label.c.Ven_lbl_Home}
+	                            </button>
+	        				</li>
+
+	        				<li style="{!not(v.isSummary) ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-success navbar-btn btn-sm" onclick="{!c.doSave}">
+	                                <i class="ionicons ion-checkmark-round"></i> {!' '+$Label.c.Ven_lbl_Save}
+	                            </button>
+	        				</li>
+
+	        				<li style="{!not(v.isSummary) ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-default navbar-btn btn-sm" onclick="{!c.doCancel}">
+	                                <i class="ionicons ion-close-round"></i> {!' '+$Label.c.Ven_lbl_Cancel}
+	                            </button>
+	        				</li>
+	        				<li style="{!and(not(v.isSummary), not(v.isNewOpp)) ? '' : 'display:none'}">
+	                            <button type="button" style="margin-right:10px;" class="btn btn-danger navbar-btn btn-sm" data-toggle="modal" data-target="#deleteModal">
+	                                <i class="ionicons ion-trash-b"></i> {!' '+$Label.c.Ven_lbl_Delete}
+	                            </button>
+	        				</li>
+	  					</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div style="height:70px"></div>
+
+			<div style="{!v.isSummary ? '' : 'display:none'}">
+				<c:Ven_OppPipeSummaryCmp summaryItems="{!v.oppPipeData.summaryItems}"
+					userId="{!v.oppPipeData.userId}"
+					stageNames="{!v.oppPipeData.selectOptLsts.stageNames}"
+					itemChanged="{!v.summaryItemsChanged}"/>
+			</div>
+
+			<div style="{!not(v.isSummary) ? '' : 'display:none'}" >
+
+				<c:Ven_OppPipeDetailCmp oppPipeDetail="{!v.oppPipeDetail}"
+					countryInternational="{!v.oppPipeData.countryId2International}"
+					userRoles="{!v.oppPipeData.userId2RoleId}"
+					austriaRole="{!v.oppPipeData.austriaRoleId}"
+					switzerlandRole="{!v.oppPipeData.switzerlandRoleId}"
+					isNewOpp="{!v.isNewOpp}"
+					selectOptLsts="{!v.oppPipeData.selectOptLsts}"
+					oppValid="{!v.isOppValid}"
+					pipeValid="{!v.isPipeValid}"
+					isIm="{!v.isIm}"
+					isScout="{!v.isScout}"
+					isAnalyst="{!v.isAnalyst}"
+					somLikelihoods="{!v.oppPipeData.somLikelihoods}"
+					setProbability="{!v.setProbability}"/>
+
+			</div>
+		</div>
+	</div>
+</aura:component>

@@ -1,0 +1,699 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010duqAAA",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "LiferayRestDynamicUpdateException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 17,
+                    "line": 124
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "LiferayRestDynamicUpdateException",
+                "references": [],
+                "type": "LiferayRestDynamicUpdateException"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010duqAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 32
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getIdFromURI",
+            "parameters": [
+                {
+                    "name": "requestURI",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getActionFromURI",
+            "parameters": [
+                {
+                    "name": "requestURI",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 41
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "dynamicJsonUpdate",
+            "parameters": [
+                {
+                    "name": "portalLoginToUpdate",
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "name": "jsonFieldsToUpdate",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLogin__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 94
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getStringValueByKey",
+            "parameters": [
+                {
+                    "name": "key",
+                    "type": "String"
+                },
+                {
+                    "name": "requestBody",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 109
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getBooleanValueByKey",
+            "parameters": [
+                {
+                    "name": "key",
+                    "type": "String"
+                },
+                {
+                    "name": "requestBody",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_ResourceUtil",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_UPDATE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_ACTIVATE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ACTION_CONFIRM",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_TITLE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_LASTNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_FIRSTNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 10
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_MALE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_EMAIL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYFAX",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 14
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYPHONE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 15
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYSTREETADDRESS",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYSTREETNUMBER",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYZIP",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 18
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYCITY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 19
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYCOUNTRY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 20
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_DATEOFBIRTH",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_MOBILE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_AREA",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_JOBTITLE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 24
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_COMPANYTYPE",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 25
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_NEWSLETTER",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 28
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_CONFIRM_DELETE_URL",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "JSON_FIELD_NEWSLETTER_SUBSCRIBE_URL",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_ResourceUtil",
+        "references": [],
+        "type": "P7S1_Liferay_ResourceUtil"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "requestURI",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "requestURI",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "actionAndId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "portalLoginToUpdate",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "jsonFieldsToUpdate",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "parser",
+            "references": [],
+            "type": "JSONParser"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "requestBody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "fieldValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "parser",
+            "references": [],
+            "type": "JSONParser"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 99
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "requestBody",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "fieldValue",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "parser",
+            "references": [],
+            "type": "JSONParser"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

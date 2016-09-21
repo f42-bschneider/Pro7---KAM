@@ -1,0 +1,811 @@
+{
+    "constructors": [
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 13,
+                "line": 37
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "P7S1_NLP_PortalPageController",
+            "parameters": [
+                {
+                    "name": "PortalloginId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_NLP_PortalPageController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010jJSAAY",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "NLPException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 3
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "NLPException",
+                "references": [],
+                "type": "NLPException"
+            },
+            "variables": []
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 148
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "NewsletterlistHandler",
+                    "parameters": [
+                        {
+                            "name": "newsletters",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "ctrl",
+                            "type": "P7S1_NLP_PortalPageController"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "NewsletterlistHandler",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 144
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "sender",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 145
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "special",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 146
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "newsletter",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 142
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "NewsletterlistHandler",
+                "references": [],
+                "type": "NewsletterlistHandler"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 63,
+                        "line": 148
+                    },
+                    "modifiers": [],
+                    "name": "newsletters",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 106,
+                        "line": 148
+                    },
+                    "modifiers": [],
+                    "name": "ctrl",
+                    "references": [],
+                    "type": "P7S1_NLP_PortalPageController"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 154
+                    },
+                    "modifiers": [],
+                    "name": "nl",
+                    "references": [],
+                    "type": "P7S1_Newsletter__c"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 170
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "NewsletterChangeHandler",
+                    "parameters": [],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 175
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "addWrapper",
+                    "parameters": [
+                        {
+                            "name": "wrapper",
+                            "type": "P7S1_NLP_NewsletterWrapper"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 180
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "removeWrapper",
+                    "parameters": [
+                        {
+                            "name": "wrapper",
+                            "type": "P7S1_NLP_NewsletterWrapper"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 185
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "saveChanges",
+                    "parameters": [
+                        {
+                            "name": "login",
+                            "type": "P7S1_PortalLogin__c"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                }
+            ],
+            "name": "NewsletterChangeHandler",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [
+                        {
+                            "name": "TestVisible"
+                        }
+                    ],
+                    "location": {
+                        "column": 49,
+                        "line": 168
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "changedWrappers",
+                    "references": [],
+                    "type": "Set"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 35,
+                    "line": 165
+                },
+                "modifiers": [
+                    "private",
+                    "without sharing"
+                ],
+                "name": "NewsletterChangeHandler",
+                "references": [],
+                "type": "NewsletterChangeHandler"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 175
+                    },
+                    "modifiers": [],
+                    "name": "wrapper",
+                    "references": [],
+                    "type": "P7S1_NLP_NewsletterWrapper"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 62,
+                        "line": 180
+                    },
+                    "modifiers": [],
+                    "name": "wrapper",
+                    "references": [],
+                    "type": "P7S1_NLP_NewsletterWrapper"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 185
+                    },
+                    "modifiers": [],
+                    "name": "login",
+                    "references": [],
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 38,
+                        "line": 187
+                    },
+                    "modifiers": [],
+                    "name": "abonementsToUpsert",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 188
+                    },
+                    "modifiers": [],
+                    "name": "wrapper",
+                    "references": [],
+                    "type": "P7S1_NLP_NewsletterWrapper"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 36,
+                        "line": 190
+                    },
+                    "modifiers": [],
+                    "name": "abo",
+                    "references": [],
+                    "type": "P7S1_Abonnement__c"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010jJSAAY",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 28
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "init",
+            "parameters": [
+                {
+                    "name": "PortalloginId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 49
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "addToChangeHandler",
+            "parameters": [
+                {
+                    "name": "nl",
+                    "type": "P7S1_NLP_NewsletterWrapper"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 54
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "removeFromChangeHandler",
+            "parameters": [
+                {
+                    "name": "nl",
+                    "type": "P7S1_NLP_NewsletterWrapper"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 59
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getLoginEmail",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 64
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getSender",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 69
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getSpecials",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 74
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getNewsletters",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 79
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "save",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 90
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAllActiveNewsletters",
+            "parameters": [
+                {
+                    "name": "login",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 109
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "isNewsletterActive",
+            "parameters": [
+                {
+                    "name": "newsletter",
+                    "type": "P7S1_Newsletter__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 114
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "encryptId",
+            "parameters": [
+                {
+                    "name": "portalLoginId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 128
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "decryptId",
+            "parameters": [
+                {
+                    "name": "encrPortalLoginId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        }
+    ],
+    "name": "P7S1_NLP_PortalPageController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 37,
+                "line": 10
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "changeHandler",
+            "references": [],
+            "type": "NewsletterChangeHandler"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 11
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "listHandler",
+            "references": [],
+            "type": "NewsletterlistHandler"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 12
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [
+                {
+                    "name": "TestVisible"
+                }
+            ],
+            "location": {
+                "column": 16,
+                "line": 14
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "portalLoginId",
+            "references": [],
+            "type": "Id"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_NLP_PortalPageController",
+        "references": [],
+        "type": "P7S1_NLP_PortalPageController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "PortalloginId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "newsletters",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "PortalloginId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "nl",
+            "references": [],
+            "type": "P7S1_NLP_NewsletterWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "nl",
+            "references": [],
+            "type": "P7S1_NLP_NewsletterWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "login",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "newsletter",
+            "references": [],
+            "type": "P7S1_Newsletter__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "portalLoginId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "login",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "encrPortalLoginId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "login",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        }
+    ]
+}

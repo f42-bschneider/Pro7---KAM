@@ -1,0 +1,83 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 35
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ResponseWrapper",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K0JQIA0",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000K0JQIA0",
+    "methods": [],
+    "name": "ResponseWrapper",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "request",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "status",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "results",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 27
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "ResponseWrapper",
+        "references": [],
+        "type": "ResponseWrapper"
+    },
+    "variables": []
+}

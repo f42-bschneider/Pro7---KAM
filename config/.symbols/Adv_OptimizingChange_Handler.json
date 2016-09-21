@@ -1,0 +1,614 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ejZAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ejZAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 9
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createOC",
+            "parameters": [
+                {
+                    "name": "ciID",
+                    "type": "Id"
+                },
+                {
+                    "name": "optiID",
+                    "type": "Id"
+                },
+                {
+                    "name": "sField",
+                    "type": "String"
+                },
+                {
+                    "name": "sOrigValue",
+                    "type": "String"
+                },
+                {
+                    "name": "sOptiValue",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__OptimizingChange__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createOC",
+            "parameters": [
+                {
+                    "name": "ciID",
+                    "type": "Id"
+                },
+                {
+                    "name": "optiID",
+                    "type": "Id"
+                },
+                {
+                    "name": "sField",
+                    "type": "String"
+                },
+                {
+                    "name": "sOrigValue",
+                    "type": "String"
+                },
+                {
+                    "name": "sOptiValue",
+                    "type": "String"
+                },
+                {
+                    "name": "ciIdentifier",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__OptimizingChange__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 35
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCIOptiMap",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 51
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCIOptiMapNewOnly",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 67
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCIOptiMapAll",
+            "parameters": [
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 84
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "isSingleOptimizingVersion",
+            "parameters": [
+                {
+                    "name": "listOCs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 96
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOptimizingVersion",
+            "parameters": [
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__OptimizingVersion__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 101
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOptimizingChange",
+            "parameters": [
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "objOV",
+                    "type": "ADvendio__OptimizingVersion__c"
+                },
+                {
+                    "name": "objCI",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__OptimizingChange__c",
+            "type": null
+        }
+    ],
+    "name": "Adv_OptimizingChange_Handler",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "listNewOCs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 94
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "optimizingVersion_TestData",
+            "references": [],
+            "type": "ADvendio__OptimizingVersion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 95
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "optimizingChange_TestData",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 4
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_OptimizingChange_Handler",
+        "references": [],
+        "type": "Adv_OptimizingChange_Handler"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "ciID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "optiID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "sField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "sOrigValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "sOptiValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "objOC",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "ciID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "optiID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sOrigValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sOptiValue",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "ciIdentifier",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "objOC",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "mapCIOpti",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 127,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "mapCIOpti",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 123,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "mapCIOpti",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "identifier",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "listOCs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "ovIdsSet",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "oc",
+            "references": [],
+            "type": "ADvendio__OptimizingChange__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 125,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "objOV",
+            "references": [],
+            "type": "ADvendio__OptimizingVersion__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 159,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "objCI",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        }
+    ]
+}

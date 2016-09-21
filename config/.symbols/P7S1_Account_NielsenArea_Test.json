@@ -1,0 +1,202 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KkY0IAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KkY0IAK",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "AccountNielsenAreaTest",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 59
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPostalCode2State",
+            "parameters": [
+                {
+                    "name": "bIsInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "sPostalCodeFrom",
+                    "type": "String"
+                },
+                {
+                    "name": "sPostalCodeTo",
+                    "type": "String"
+                },
+                {
+                    "name": "sNielsenArea",
+                    "type": "String"
+                },
+                {
+                    "name": "sState",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PostalCode2State__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_NielsenArea_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "P7S1_Account_NielsenArea_Test",
+        "references": [],
+        "type": "P7S1_Account_NielsenArea_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "objAccount1",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "objAccount2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "objAccount3",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "objAccount4",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "bIsInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "sPostalCodeFrom",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 121,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "sPostalCodeTo",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 143,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "sNielsenArea",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 164,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "sState",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "objPC2State",
+            "references": [],
+            "type": "P7S1_PostalCode2State__c"
+        }
+    ]
+}

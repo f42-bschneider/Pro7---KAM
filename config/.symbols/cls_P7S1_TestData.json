@@ -1,0 +1,5752 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KLCSIA4",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KLCSIA4",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 116
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccount",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 119
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccount",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "P7S1_Sphere",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 122
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccount",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "P7S1_Sphere",
+                    "type": "String"
+                },
+                {
+                    "name": "recordTypeId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 138
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestWTAG",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "WT",
+                    "type": "Account"
+                },
+                {
+                    "name": "AG",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_WtAgBeziehung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 147
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createSomDigCommitment",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_oWtAg",
+                    "type": "SomDig_WtAgBeziehung__c"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Commitment__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 156
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestExternalId",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_ExternalId__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 167
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestContact",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Contact",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 170
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestContact",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "Contact",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 179
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCase",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Case",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 182
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCase",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "recordTypeId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Case",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 193
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestBetreuerTeam",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_BetreuerTeam__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 201
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestTask",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Task",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 214
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestFirma",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Comp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 217
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestFirma",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Comp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 224
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMitarbeiter",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 227
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMitarbeiter",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "firma",
+                    "type": "P7S1_Comp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 230
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMitarbeiter",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "firma",
+                    "type": "P7S1_Comp__c"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 245
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMitarbeiterWithContact",
+            "parameters": [
+                {
+                    "name": "contact",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 248
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMitarbeiterWithUserAndContact",
+            "parameters": [
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "contact",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 251
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMitarbeiterWithUserAndContact",
+            "parameters": [
+                {
+                    "name": "firma",
+                    "type": "P7S1_Comp__c"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "contact",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 267
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKontaktbericht",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "contact",
+                    "type": "Contact"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "reason",
+                    "type": "String"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "Datetime"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_Kontaktbericht__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 282
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKontaktberichtTeilnehmer",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "kb",
+                    "type": "Som_Kontaktbericht__c"
+                },
+                {
+                    "name": "contact",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_KontaktberichtContact__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 294
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestProduct2",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Product2",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 304
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPricebookEntry",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "PricebookEntry",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 307
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPricebookEntry",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "product2",
+                    "type": "Product2"
+                }
+            ],
+            "references": [],
+            "returnType": "PricebookEntry",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 317
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunity",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 320
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunity",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 323
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunity",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "recordtype",
+                    "type": "RecordType"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 326
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunity",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                },
+                {
+                    "name": "recordtype",
+                    "type": "RecordType"
+                }
+            ],
+            "references": [],
+            "returnType": "Opportunity",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 337
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunityLineItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "OpportunityLineItem",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 340
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunityLineItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "opportunity",
+                    "type": "Opportunity"
+                }
+            ],
+            "references": [],
+            "returnType": "OpportunityLineItem",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 343
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunityLineItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "pricebook_entry",
+                    "type": "PricebookEntry"
+                }
+            ],
+            "references": [],
+            "returnType": "OpportunityLineItem",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 346
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestOpportunityLineItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "opportunity",
+                    "type": "Opportunity"
+                },
+                {
+                    "name": "pricebook_entry",
+                    "type": "PricebookEntry"
+                }
+            ],
+            "references": [],
+            "returnType": "OpportunityLineItem",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 362
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestZahlungsbedingung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Zahlungsbedingung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 371
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAuftragstyp",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Auftragstyp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 374
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAuftragstyp",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Auftragstyp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 385
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPricelist",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Pricelist__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 388
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPricelist",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "auftragstyp",
+                    "type": "SomDig_Auftragstyp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Pricelist__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 399
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAuslieferungsprioritaet",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "mediagattungsDifferenzierung",
+                    "type": "SomDig_MediagattungsDifferenzierung__c"
+                },
+                {
+                    "name": "auftragstyp",
+                    "type": "SomDig_Auftragstyp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_DeliverPrio__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 417
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediagattung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Mediagattung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 420
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediagattung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Mediagattung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 426
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediagattungsDifferenzierung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_MediagattungsDifferenzierung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 429
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediagattungsDifferenzierung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_MediagattungsDifferenzierung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 435
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediagattungsSegment",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_MediagattungsSegment__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 438
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediagattungsSegment",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_MediagattungsSegment__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 449
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediaCampaign",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__MediaCampaign__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 452
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediaCampaign",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "WTAG",
+                    "type": "SomDig_WtAgBeziehung__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__MediaCampaign__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 455
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediaCampaign",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "invoiceAccount",
+                    "type": "Account"
+                },
+                {
+                    "name": "pricelist",
+                    "type": "ADvendio__Pricelist__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__MediaCampaign__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 458
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestMediaCampaign",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "invoiceAccount",
+                    "type": "Account"
+                },
+                {
+                    "name": "pricelist",
+                    "type": "ADvendio__Pricelist__c"
+                },
+                {
+                    "name": "WTAG",
+                    "type": "SomDig_WtAgBeziehung__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__MediaCampaign__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 477
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestSite",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Site__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 484
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPlacement",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Placement__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 487
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestPlacement",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "site",
+                    "type": "ADvendio__Site__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Placement__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 496
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdType",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Type__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 499
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdType",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "mediagattungsDifferenzierung",
+                    "type": "SomDig_MediagattungsDifferenzierung__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Type__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 507
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdSpec",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Specs__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 510
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdSpec",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "placement",
+                    "type": "ADvendio__Placement__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Specs__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 513
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdSpec",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "adType",
+                    "type": "ADvendio__Ad_Type__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Specs__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 516
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdSpec",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "placement",
+                    "type": "ADvendio__Placement__c"
+                },
+                {
+                    "name": "adType",
+                    "type": "ADvendio__Ad_Type__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Specs__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 525
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdPrice",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "adSpec",
+                    "type": "ADvendio__Ad_Specs__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_price__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 528
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdPrice",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "pricelist",
+                    "type": "ADvendio__Pricelist__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_price__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 531
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdPrice",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "adSpec",
+                    "type": "ADvendio__Ad_Specs__c"
+                },
+                {
+                    "name": "pricelist",
+                    "type": "ADvendio__Pricelist__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_price__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 541
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaignItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Campaign_Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 544
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaignItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "mediaCampaign",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Campaign_Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 547
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaignItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "adPrice",
+                    "type": "ADvendio__Ad_price__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Campaign_Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 550
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCampaignItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "mediaCampaign",
+                    "type": "ADvendio__MediaCampaign__c"
+                },
+                {
+                    "name": "adPrice",
+                    "type": "ADvendio__Ad_price__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Campaign_Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 564
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestInvoice",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "mediaCampaign",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Invoice__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 574
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestInvoiceItem",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "invoice",
+                    "type": "ADvendio__Invoice__c"
+                },
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__InvoiceItem__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 589
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdServerLogin",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__AdServer_Logins__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 592
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdServerLogin",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "recordtype",
+                    "type": "RecordType"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__AdServer_Logins__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 601
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAdServerID",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__AdServer_ID__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 608
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKeyLine",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__KeyLine__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 616
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKey",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Key__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 619
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKey",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "adServerID",
+                    "type": "ADvendio__AdServer_ID__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Key__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 622
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKey",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "targetingType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Key__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 625
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKey",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "adServerID",
+                    "type": "ADvendio__AdServer_ID__c"
+                },
+                {
+                    "name": "targetingType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Key__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 634
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKeyValue",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "keyLine",
+                    "type": "ADvendio__KeyLine__c"
+                },
+                {
+                    "name": "key",
+                    "type": "ADvendio__Key__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__KeyValue__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 643
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKeyAdPriceAssignment",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "key",
+                    "type": "ADvendio__Key__c"
+                },
+                {
+                    "name": "adPrice",
+                    "type": "ADvendio__Ad_price__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__KeyAdPriceAssignment__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 655
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCountry",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Country__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 662
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestRegion",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Region__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 665
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestRegion",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "country",
+                    "type": "ADvendio__Country__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Region__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 673
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestCity",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__City__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 680
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAreacode",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__AreaCode__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 687
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestSelectedCountry",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "country",
+                    "type": "ADvendio__Country__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Selected_Country__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 695
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestSelectedRegion",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "region",
+                    "type": "ADvendio__Region__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Selected_Region__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 703
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestSelectedCity",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "city",
+                    "type": "ADvendio__City__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Selected_City__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 711
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestSelectedAreacode",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "campaignItem",
+                    "type": "ADvendio__Campaign_Item__c"
+                },
+                {
+                    "name": "areacode",
+                    "type": "ADvendio__AreaCode__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Selected_Areacode__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 723
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKPI",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_Key_Performance_Indicator__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 730
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKPIBlock",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_KeyPerformanceIndicatorBlock__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 737
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKPIBlockEntry",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "testKpi",
+                    "type": "Ven_Key_Performance_Indicator__c"
+                },
+                {
+                    "name": "testKpiBlock",
+                    "type": "Ven_KeyPerformanceIndicatorBlock__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_KeyPerformanceIndicatorBlockEntry__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 745
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKPITemplate",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_KeyPerformanceIndicatorTemplate__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 752
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestKPITemplateEntry",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "testKpiTemplate",
+                    "type": "Ven_KeyPerformanceIndicatorTemplate__c"
+                },
+                {
+                    "name": "testKpiBlock",
+                    "type": "Ven_KeyPerformanceIndicatorBlock__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_KeyPerformanceIndicatorTemplateEntry__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 760
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestFinancialModelVersion",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "recordTypeID",
+                    "type": "Id"
+                },
+                {
+                    "name": "testOpp",
+                    "type": "Opportunity"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_Financial_Model_Version__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 768
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestFinancialModelData",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "testKpi",
+                    "type": "Ven_Key_Performance_Indicator__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Ven_Financial_Model_Data__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 784
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestUser",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "profileId",
+                    "type": "Id"
+                },
+                {
+                    "name": "i",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 795
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccountTeamMember",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "accId",
+                    "type": "Id"
+                },
+                {
+                    "name": "role",
+                    "type": "String"
+                },
+                {
+                    "name": "userId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "AccountTeamMember",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 809
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccountPlan",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "accId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_Kam__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 824
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccountPlanDetail",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "accPlanId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_KamDetail__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 836
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccountPlanTeam",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "teamName",
+                    "type": "String"
+                },
+                {
+                    "name": "defaultUserId",
+                    "type": "Id"
+                },
+                {
+                    "name": "teamRoles",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_KamTeam__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 850
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAnnualAccountCashIn",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "accId",
+                    "type": "Id"
+                },
+                {
+                    "name": "accPlanTeamId",
+                    "type": "Id"
+                },
+                {
+                    "name": "year",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_KamAccountCashIn__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 865
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAnnualAccountCashInDetail",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "annualAccCashInId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_KamAccountCashInDetail__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 878
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestStrategyProfileTopic",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isTemplate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Som_KamStrategyProfileTopic__c",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_TestData",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 20
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Account_TestData",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "WTAGBeziehung_TestData",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 22
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SomDigCommitment_TestData",
+            "references": [],
+            "type": "SomDig_Commitment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "ExternalId_TestData",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 24
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Contact_TestData",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 25
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Case_TestData",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 26
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "BetreuerTeam_TestData",
+            "references": [],
+            "type": "SomDig_BetreuerTeam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 27
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "task_TestData",
+            "references": [],
+            "type": "Task"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Firma_TestData",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 31
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Mitarbeiter_TestData",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 32
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Kontaktbericht_TestData",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 33
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "KontaktberichtTeilnehmer_TestData",
+            "references": [],
+            "type": "Som_KontaktberichtContact__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Product2_TestData",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 37
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PricebookEntry_TestData",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 38
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Opportunity_TestData",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 39
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "OpportunityLineItem_TestData",
+            "references": [],
+            "type": "OpportunityLineItem"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 42
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Zahlungsbedingung_TestData",
+            "references": [],
+            "type": "SomDig_Zahlungsbedingung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 43
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Auftragstyp_TestData",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 44
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Pricelist_TestData",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 45
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Auslieferungsprioritaet_TestData",
+            "references": [],
+            "type": "SomDig_DeliverPrio__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 48
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Mediagattung_TestData",
+            "references": [],
+            "type": "SomDig_Mediagattung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 49
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "MediagattungsSegment_TestData",
+            "references": [],
+            "type": "SomDig_MediagattungsSegment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 50
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "MediagattungsDifferenzierung_TestData",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 53
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "MediaCampaign_TestData",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 54
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Site_TestData",
+            "references": [],
+            "type": "ADvendio__Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 55
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Placement_TestData",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AdType_TestData",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 57
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AdSpec_TestData",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 58
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AdPrice_TestData",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 59
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "CampaignItem_TestData",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 60
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Invoice_TestData",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 61
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "InvoiceItem_TestData",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 64
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AdServerLogin_TestData",
+            "references": [],
+            "type": "ADvendio__AdServer_Logins__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 65
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AdServerID_TestData",
+            "references": [],
+            "type": "ADvendio__AdServer_ID__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 66
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "KeyLine_TestData",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 67
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Key_TestData",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 68
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "KeyValue_TestData",
+            "references": [],
+            "type": "ADvendio__KeyValue__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 69
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "KeyAdPriceAssignment_TestData",
+            "references": [],
+            "type": "ADvendio__KeyAdPriceAssignment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 72
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Country_TestData",
+            "references": [],
+            "type": "ADvendio__Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 73
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Region_TestData",
+            "references": [],
+            "type": "ADvendio__Region__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 74
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "City_TestData",
+            "references": [],
+            "type": "ADvendio__City__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 75
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Areacode_TestData",
+            "references": [],
+            "type": "ADvendio__AreaCode__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 76
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SelectedCountry_TestData",
+            "references": [],
+            "type": "ADvendio__Selected_Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 77
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SelectedRegion_TestData",
+            "references": [],
+            "type": "ADvendio__Selected_Region__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 78
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SelectedCity_TestData",
+            "references": [],
+            "type": "ADvendio__Selected_City__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 79
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "SelectedAreacode_TestData",
+            "references": [],
+            "type": "ADvendio__Selected_Areacode__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 82
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "kpi_TestData",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 83
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "kpiBlock_TestData",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 84
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "kpiBlockEntry_TestData",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlockEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 85
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "kpiTemplate_TestData",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplate__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 86
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "kpiTemplateEntry_TestData",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplateEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 87
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "financialModelVersion_TestData",
+            "references": [],
+            "type": "Ven_Financial_Model_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 88
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "financialModelData_TestData",
+            "references": [],
+            "type": "Ven_Financial_Model_Data__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 91
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AccountPlan_TestData",
+            "references": [],
+            "type": "Som_Kam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 92
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AccountPlanDetail_TestData",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 93
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AccountPlanDetailCashIn_TestData",
+            "references": [],
+            "type": "Som_KamDetailCashIn__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 94
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AccountPlanTeam_TestData",
+            "references": [],
+            "type": "Som_KamTeam__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 95
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AnnualAccountCashIn_TestData",
+            "references": [],
+            "type": "Som_KamAccountCashIn__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 96
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AnnualAccountCashInDetail_TestData",
+            "references": [],
+            "type": "Som_KamAccountCashInDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 97
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "StrategyProfileTopic_TestData",
+            "references": [],
+            "type": "Som_KamStrategyProfileTopic__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 100
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "USER_MAP_PROFILE",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 101
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "USER_MAP_SPHERE",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 102
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "USER_FOR_PROFILE",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 103
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "USER_FOR_SPHERE",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 17
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "cls_P7S1_TestData",
+        "references": [],
+        "type": "cls_P7S1_TestData"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "P7S1_Sphere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "P7S1_Sphere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "recordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "WT",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "AG",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 111,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "p_oWtAg",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "recordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 193
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 201
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 224
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 245
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 251
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 251
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 251
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 123,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "reason",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 140,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 282
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 127,
+                "line": 282
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 282
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 304
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 307
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 307
+            },
+            "modifiers": [],
+            "name": "product2",
+            "references": [],
+            "type": "Product2"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 317
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 320
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 320
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 323
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 323
+            },
+            "modifiers": [],
+            "name": "recordtype",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 326
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 326
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 326
+            },
+            "modifiers": [],
+            "name": "recordtype",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 337
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 340
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 340
+            },
+            "modifiers": [],
+            "name": "opportunity",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 343
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 106,
+                "line": 343
+            },
+            "modifiers": [],
+            "name": "pricebook_entry",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "opportunity",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 131,
+                "line": 346
+            },
+            "modifiers": [],
+            "name": "pricebook_entry",
+            "references": [],
+            "type": "PricebookEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 362
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 371
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 374
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 374
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 385
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 388
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 106,
+                "line": 388
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 399
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 136,
+                "line": 399
+            },
+            "modifiers": [],
+            "name": "mediagattungsDifferenzierung",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 188,
+                "line": 399
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 417
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 420
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 94,
+                "line": 420
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 426
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 429
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 126,
+                "line": 429
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 435
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 438
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 438
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 449
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 452
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 116,
+                "line": 452
+            },
+            "modifiers": [],
+            "name": "WTAG",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 455
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 455
+            },
+            "modifiers": [],
+            "name": "invoiceAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 455
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 458
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 458
+            },
+            "modifiers": [],
+            "name": "invoiceAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 458
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 174,
+                "line": 458
+            },
+            "modifiers": [],
+            "name": "WTAG",
+            "references": [],
+            "type": "SomDig_WtAgBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 477
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 484
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 487
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 487
+            },
+            "modifiers": [],
+            "name": "site",
+            "references": [],
+            "type": "ADvendio__Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 496
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 499
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 499
+            },
+            "modifiers": [],
+            "name": "mediagattungsDifferenzierung",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 507
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 510
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 510
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 513
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 101,
+                "line": 513
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 516
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 516
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 135,
+                "line": 516
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 525
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 525
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 528
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 528
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 531
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 531
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 134,
+                "line": 531
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 541
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 544
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 544
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 547
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 547
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 550
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 550
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 155,
+                "line": 550
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 564
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 107,
+                "line": 564
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 574
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 109,
+                "line": 574
+            },
+            "modifiers": [],
+            "name": "invoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 145,
+                "line": 574
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 589
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 80,
+                "line": 592
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 592
+            },
+            "modifiers": [],
+            "name": "recordtype",
+            "references": [],
+            "type": "RecordType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 601
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 608
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 107,
+                "line": 608
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 616
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 619
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 619
+            },
+            "modifiers": [],
+            "name": "adServerID",
+            "references": [],
+            "type": "ADvendio__AdServer_ID__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 622
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 622
+            },
+            "modifiers": [],
+            "name": "targetingType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 625
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 625
+            },
+            "modifiers": [],
+            "name": "adServerID",
+            "references": [],
+            "type": "ADvendio__AdServer_ID__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 116,
+                "line": 625
+            },
+            "modifiers": [],
+            "name": "targetingType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 634
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 103,
+                "line": 634
+            },
+            "modifiers": [],
+            "name": "keyLine",
+            "references": [],
+            "type": "ADvendio__KeyLine__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 129,
+                "line": 634
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 643
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 123,
+                "line": 643
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 150,
+                "line": 643
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 655
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 662
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 665
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 99,
+                "line": 665
+            },
+            "modifiers": [],
+            "name": "country",
+            "references": [],
+            "type": "ADvendio__Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 673
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 680
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 687
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 124,
+                "line": 687
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 159,
+                "line": 687
+            },
+            "modifiers": [],
+            "name": "country",
+            "references": [],
+            "type": "ADvendio__Country__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 695
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 122,
+                "line": 695
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 156,
+                "line": 695
+            },
+            "modifiers": [],
+            "name": "region",
+            "references": [],
+            "type": "ADvendio__Region__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 703
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 118,
+                "line": 703
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 150,
+                "line": 703
+            },
+            "modifiers": [],
+            "name": "city",
+            "references": [],
+            "type": "ADvendio__City__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 85,
+                "line": 711
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 126,
+                "line": 711
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 162,
+                "line": 711
+            },
+            "modifiers": [],
+            "name": "areacode",
+            "references": [],
+            "type": "ADvendio__AreaCode__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 723
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 730
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 737
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 139,
+                "line": 737
+            },
+            "modifiers": [],
+            "name": "testKpi",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 184,
+                "line": 737
+            },
+            "modifiers": [],
+            "name": "testKpiBlock",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 745
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 752
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 151,
+                "line": 752
+            },
+            "modifiers": [],
+            "name": "testKpiTemplate",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplate__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 204,
+                "line": 752
+            },
+            "modifiers": [],
+            "name": "testKpiBlock",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 760
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 107,
+                "line": 760
+            },
+            "modifiers": [],
+            "name": "recordTypeID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 133,
+                "line": 760
+            },
+            "modifiers": [],
+            "name": "testOpp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 84,
+                "line": 768
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 131,
+                "line": 768
+            },
+            "modifiers": [],
+            "name": "testKpi",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 784
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 784
+            },
+            "modifiers": [],
+            "name": "profileId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 83,
+                "line": 784
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 785
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 795
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 795
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 795
+            },
+            "modifiers": [],
+            "name": "role",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 795
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 796
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 809
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 809
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 824
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 824
+            },
+            "modifiers": [],
+            "name": "accPlanId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 836
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 836
+            },
+            "modifiers": [],
+            "name": "teamName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 102,
+                "line": 836
+            },
+            "modifiers": [],
+            "name": "defaultUserId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 124,
+                "line": 836
+            },
+            "modifiers": [],
+            "name": "teamRoles",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 850
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 850
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 850
+            },
+            "modifiers": [],
+            "name": "accPlanTeamId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 131,
+                "line": 850
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 93,
+                "line": 865
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 110,
+                "line": 865
+            },
+            "modifiers": [],
+            "name": "annualAccCashInId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 878
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 111,
+                "line": 878
+            },
+            "modifiers": [],
+            "name": "isTemplate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 130,
+                "line": 878
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

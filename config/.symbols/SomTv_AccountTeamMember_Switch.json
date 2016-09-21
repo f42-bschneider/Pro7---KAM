@@ -1,0 +1,581 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_AccountTeamMember_Switch",
+            "parameters": [
+                {
+                    "name": "objCon",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KkvwIAC",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 207
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "BeziehungWrapper",
+                    "parameters": [
+                        {
+                            "name": "objVZ",
+                            "type": "SomTv_Verkaeuferzuordnung__c"
+                        },
+                        {
+                            "name": "bChecked",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "BeziehungWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 204
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "bChecked",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 45,
+                        "line": 205
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "objVZ",
+                    "references": [],
+                    "type": "SomTv_Verkaeuferzuordnung__c"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 202
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "BeziehungWrapper",
+                "references": [],
+                "type": "BeziehungWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 62,
+                        "line": 207
+                    },
+                    "modifiers": [],
+                    "name": "objVZ",
+                    "references": [],
+                    "type": "SomTv_Verkaeuferzuordnung__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 77,
+                        "line": 207
+                    },
+                    "modifiers": [],
+                    "name": "bChecked",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000KkvwIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getRollen",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getOldUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getNewUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 64
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "initListBeziehungWrapper",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 94
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "save",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 192
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createNewVZ",
+            "parameters": [
+                {
+                    "name": "objVZ",
+                    "type": "SomTv_Verkaeuferzuordnung__c"
+                }
+            ],
+            "references": [],
+            "returnType": "SomTv_Verkaeuferzuordnung__c",
+            "type": null
+        }
+    ],
+    "name": "SomTv_AccountTeamMember_Switch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sRolle",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "objAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sOldUserID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 6
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sNewUserID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 7
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "listBW",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sBeziehungType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sReturnToID",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomTv_AccountTeamMember_Switch",
+        "references": [],
+        "type": "SomTv_AccountTeamMember_Switch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "objCon",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "listRoles",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "PicklistEntry"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "listUsers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "listUsers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "vz",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "vz",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "listNewVZ",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "listUpdateVZ",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "b",
+            "references": [],
+            "type": "BeziehungWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "myMsg",
+            "references": [],
+            "type": "Message"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 152
+            },
+            "modifiers": [],
+            "name": "iNumberOfVZs",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "listATM",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "p1",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "p1",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 192
+            },
+            "modifiers": [],
+            "name": "objVZ",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 194
+            },
+            "modifiers": [],
+            "name": "objNewVZ",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        }
+    ]
+}

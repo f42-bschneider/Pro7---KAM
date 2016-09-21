@@ -1,0 +1,18 @@
+<apex:page standardController="Account" sidebar="false" showHeader="false" standardStylesheets="false" >
+	
+	<apex:includeScript value="/lightning/lightning.out.js" />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:P7S1_AccountDashboardApp", function() {
+          $Lightning.createComponent("c:P7S1_AccountDashboardCmp",
+          { accountId : "{!Account.Id}" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>
+	
+</apex:page>

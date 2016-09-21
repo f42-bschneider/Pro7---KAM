@@ -1,0 +1,381 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kf2gIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kf2gIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestUser",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_sP7S1_Sphere",
+                    "type": "String"
+                },
+                {
+                    "name": "p_sProfileName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 37
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "nameIsFormatted",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 50
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertDoesNothing",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 70
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "updateEmpSyncExistingUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 231
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reloadEmp",
+            "parameters": [
+                {
+                    "name": "p_oEmp",
+                    "type": "P7S1_Emp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Emp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 235
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reloadUser",
+            "parameters": [
+                {
+                    "name": "p_oUser",
+                    "type": "User"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Emp_User_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "User_TestData",
+            "references": [],
+            "type": "User"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Emp_User_Test",
+        "references": [],
+        "type": "P7S1_Emp_User_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "p_sP7S1_Sphere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "p_sProfileName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "l_sSandbox",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "l_nCountUser",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "l_sUsername",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "l_nCountUser",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "firma",
+            "references": [],
+            "type": "P7S1_Comp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 231
+            },
+            "modifiers": [],
+            "name": "p_oEmp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "p_oUser",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

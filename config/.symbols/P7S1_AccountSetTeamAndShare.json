@@ -1,0 +1,476 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d3oAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010d3oAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 21
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getRoleForUnit",
+            "parameters": [
+                {
+                    "name": "unit",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 34
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "filterRecords",
+            "parameters": [
+                {
+                    "name": "lstNew",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 60
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "removeTeamAndShare",
+            "parameters": [
+                {
+                    "name": "lstIn",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 114
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "addToTeamAndShare",
+            "parameters": [
+                {
+                    "name": "lstIn",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AccountSetTeamAndShare",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "RECTYPE_ACC_UEBERNAHME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "RECTYPE_AUFNAHME_ACC_TEAM",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 19
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "UNIT_ROLE_MAPPING",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 14
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_AccountSetTeamAndShare",
+        "references": [],
+        "type": "P7S1_AccountSetTeamAndShare"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "unit",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "role_prefix",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "mapping",
+            "references": [],
+            "type": "P7S1_UnitRoleMapping__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "lstNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "lstUebernahme",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "lstAufnahme",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "lstIn",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "setAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "mapId2Account",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "lstRemoveATM",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "mapUserId2AccShare",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "setUserIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "AccountShare"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "lstRemoveAccShare",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "u",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "lstIn",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "setUserIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "setAccIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 125
+            },
+            "modifiers": [],
+            "name": "mapId2User",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "lstNewAccTeamMember",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "aa",
+            "references": [],
+            "type": "P7S1_AccountAccess__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 131
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 143
+            },
+            "modifiers": [],
+            "name": "lstUpdateAccShare",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "accShare",
+            "references": [],
+            "type": "AccountShare"
+        }
+    ]
+}

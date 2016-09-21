@@ -1,0 +1,2813 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d3mAAA",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 119
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "NielsenData",
+                    "parameters": [
+                        {
+                            "name": "header",
+                            "type": "String"
+                        },
+                        {
+                            "name": "mediaData",
+                            "type": "LIST"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "NielsenData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 115
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "header",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 117
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "mediaData",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 113
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "NielsenData",
+                "references": [],
+                "type": "NielsenData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 119
+                    },
+                    "modifiers": [],
+                    "name": "header",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 119
+                    },
+                    "modifiers": [],
+                    "name": "mediaData",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 139
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "MediaData",
+                    "parameters": [
+                        {
+                            "name": "media",
+                            "type": "String"
+                        },
+                        {
+                            "name": "period",
+                            "type": "String"
+                        },
+                        {
+                            "name": "percent",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "value",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "css",
+                            "type": "String"
+                        },
+                        {
+                            "name": "cnt",
+                            "type": "Integer"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [
+                "System.Comparable"
+            ],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 149
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "compareTo",
+                    "parameters": [
+                        {
+                            "name": "compareTo",
+                            "type": "Object"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                }
+            ],
+            "name": "MediaData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 127
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "media",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 129
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "period",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 131
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "percent",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 133
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "value",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 135
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "css",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 137
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "cnt",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 125
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "MediaData",
+                "references": [],
+                "type": "MediaData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "media",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 47,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "period",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 63,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "percent",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 80,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 94,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "css",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 107,
+                        "line": 139
+                    },
+                    "modifiers": [],
+                    "name": "cnt",
+                    "references": [],
+                    "type": "Integer"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 149
+                    },
+                    "modifiers": [],
+                    "name": "compareTo",
+                    "references": [],
+                    "type": "Object"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 150
+                    },
+                    "modifiers": [],
+                    "name": "other",
+                    "references": [],
+                    "type": "MediaData"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 151
+                    },
+                    "modifiers": [],
+                    "name": "returnValue",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 256
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OppData",
+                    "parameters": [
+                        {
+                            "name": "showYield",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "tableData",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "sumClosed",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "sumOpen",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "target",
+                            "type": "Decimal"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "OppData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 244
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "showYield",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 246
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "tableData",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 248
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "sumClosed",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 250
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "sumOpen",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 252
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "target",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 254
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "targetReached",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 242
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OppData",
+                "references": [],
+                "type": "OppData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 256
+                    },
+                    "modifiers": [],
+                    "name": "showYield",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 256
+                    },
+                    "modifiers": [],
+                    "name": "tableData",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 78,
+                        "line": 256
+                    },
+                    "modifiers": [],
+                    "name": "sumClosed",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 97,
+                        "line": 256
+                    },
+                    "modifiers": [],
+                    "name": "sumOpen",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 114,
+                        "line": 256
+                    },
+                    "modifiers": [],
+                    "name": "target",
+                    "references": [],
+                    "type": "Decimal"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 279
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "TableData",
+                    "parameters": [
+                        {
+                            "name": "unit",
+                            "type": "String"
+                        },
+                        {
+                            "name": "closed",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "open",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "yield",
+                            "type": "Decimal"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "TableData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 271
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "unit",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 273
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "closed",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 275
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "open",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 277
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "yield",
+                    "references": [],
+                    "type": "Decimal"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 269
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "TableData",
+                "references": [],
+                "type": "TableData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 279
+                    },
+                    "modifiers": [],
+                    "name": "unit",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 47,
+                        "line": 279
+                    },
+                    "modifiers": [],
+                    "name": "closed",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 63,
+                        "line": 279
+                    },
+                    "modifiers": [],
+                    "name": "open",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 77,
+                        "line": 279
+                    },
+                    "modifiers": [],
+                    "name": "yield",
+                    "references": [],
+                    "type": "Decimal"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 415
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "OvData",
+                    "parameters": [
+                        {
+                            "name": "label",
+                            "type": "String"
+                        },
+                        {
+                            "name": "value",
+                            "type": "String"
+                        },
+                        {
+                            "name": "isLink",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "linkValue",
+                            "type": "String"
+                        },
+                        {
+                            "name": "showValue",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "showOrder",
+                            "type": "Decimal"
+                        },
+                        {
+                            "name": "grp",
+                            "type": "Decimal"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [
+                "System.Comparable"
+            ],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 426
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "compareTo",
+                    "parameters": [
+                        {
+                            "name": "compareTo",
+                            "type": "Object"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "Integer",
+                    "type": null
+                }
+            ],
+            "name": "OvData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 401
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "label",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 403
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "value",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 405
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "isLink",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 407
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "linkValue",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 409
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "showValue",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 411
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "showOrder",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 413
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "grp",
+                    "references": [],
+                    "type": "Decimal"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 399
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "OvData",
+                "references": [],
+                "type": "OvData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 30,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "label",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 44,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "value",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 59,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "isLink",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 74,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "linkValue",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 93,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "showValue",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 112,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "showOrder",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 131,
+                        "line": 415
+                    },
+                    "modifiers": [],
+                    "name": "grp",
+                    "references": [],
+                    "type": "Decimal"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 41,
+                        "line": 426
+                    },
+                    "modifiers": [],
+                    "name": "compareTo",
+                    "references": [],
+                    "type": "Object"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 20,
+                        "line": 427
+                    },
+                    "modifiers": [],
+                    "name": "ovData",
+                    "references": [],
+                    "type": "OvData"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 21,
+                        "line": 428
+                    },
+                    "modifiers": [],
+                    "name": "returnValue",
+                    "references": [],
+                    "type": "Integer"
+                }
+            ]
+        },
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 592
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "AccessData",
+                    "parameters": [
+                        {
+                            "name": "hasAccess",
+                            "type": "Boolean"
+                        },
+                        {
+                            "name": "imgId",
+                            "type": "String"
+                        },
+                        {
+                            "name": "acc",
+                            "type": "Account"
+                        },
+                        {
+                            "name": "teamUnits",
+                            "type": "LIST"
+                        },
+                        {
+                            "name": "urls",
+                            "type": "LIST"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "AccessData",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 582
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "hasAccAccess",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 584
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "imgId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 586
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "acc",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 29,
+                        "line": 588
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "teamUnits",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 29,
+                        "line": 590
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "urls",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 580
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "AccessData",
+                "references": [],
+                "type": "AccessData"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 35,
+                        "line": 592
+                    },
+                    "modifiers": [],
+                    "name": "hasAccess",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 53,
+                        "line": 592
+                    },
+                    "modifiers": [],
+                    "name": "imgId",
+                    "references": [],
+                    "type": "String"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 68,
+                        "line": 592
+                    },
+                    "modifiers": [],
+                    "name": "acc",
+                    "references": [],
+                    "type": "Account"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 86,
+                        "line": 592
+                    },
+                    "modifiers": [],
+                    "name": "teamUnits",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 110,
+                        "line": 592
+                    },
+                    "modifiers": [],
+                    "name": "urls",
+                    "references": [],
+                    "type": "LIST"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p570000010d3mAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getMediaData",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "NielsenData",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 28
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "loadNielsenData",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                },
+                {
+                    "name": "year",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "NielsenData",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 105
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "decimalNull",
+            "parameters": [
+                {
+                    "name": "input",
+                    "type": "Decimal"
+                }
+            ],
+            "references": [],
+            "returnType": "Decimal",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 165
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOpportunityData",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                },
+                {
+                    "name": "isAccountIndex",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "OppData",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 203
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "loadOpportunityData",
+            "parameters": [
+                {
+                    "name": "accId",
+                    "type": "String"
+                },
+                {
+                    "name": "open",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "mapData",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 227
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "loadOpportunityDataDigital",
+            "parameters": [
+                {
+                    "name": "accId",
+                    "type": "String"
+                },
+                {
+                    "name": "mapData",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 292
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getOverviewData",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 344
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getValueFromRelation",
+            "parameters": [
+                {
+                    "name": "a",
+                    "type": "Account"
+                },
+                {
+                    "name": "relation",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 368
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getLastContacted",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 392
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFieldsFromFieldset",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 445
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "userIsAuthorized",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 473
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getLogoForUnit",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 489
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getAccessData",
+            "parameters": [
+                {
+                    "name": "accountId",
+                    "type": "String"
+                },
+                {
+                    "name": "accountIndexId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "AccessData",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 553
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getUnit2AdditionalLogoField",
+            "parameters": [],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 564
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "hasAccess2CustomPermission",
+            "parameters": [
+                {
+                    "name": "user2Check",
+                    "type": "String"
+                },
+                {
+                    "name": "permissionDevName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AccountDashboardCmpCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "QUEUE_MEDIABOARD",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "FOLDER_LOGOS",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "DEFAULT_LOGO",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 6
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "AA_ACCOUNT_FIELD_ID",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 7
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "RECID_AI_AU",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 8
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "RECID_AI_AT",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 9
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "RECID_AI_LI",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 10
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "PREFIX_AA",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "P7S1_AccountDashboardCmpCtrl",
+        "references": [],
+        "type": "P7S1_AccountDashboardCmpCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "monthJan",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "monthEnd",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "yearStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "lastYearStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "years",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "periods",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "mapPeriod2Label",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "cnt",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "lstCss",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "lstData",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "nda",
+            "references": [],
+            "type": "P7S1_NielsenDataAggr__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 53
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "dateEnd",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "header",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "period",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "input",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "isAccountIndex",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "showYield",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "mapData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "sumOpen",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "sumClosed",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 180
+            },
+            "modifiers": [],
+            "name": "lstTable",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "td",
+            "references": [],
+            "type": "TableData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "open",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 203
+            },
+            "modifiers": [],
+            "name": "mapData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 214
+            },
+            "modifiers": [],
+            "name": "ar",
+            "references": [],
+            "type": "AggregateResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 215
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 216
+            },
+            "modifiers": [],
+            "name": "amount",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 89,
+                "line": 227
+            },
+            "modifiers": [],
+            "name": "mapData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 228
+            },
+            "modifiers": [],
+            "name": "digitalAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 230
+            },
+            "modifiers": [],
+            "name": "digUmsatz",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 231
+            },
+            "modifiers": [],
+            "name": "digPrognose",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "digAbweichung",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 292
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "isAuthorized",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 295
+            },
+            "modifiers": [],
+            "name": "isGerman",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 298
+            },
+            "modifiers": [],
+            "name": "mapAPI2OvData",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 299
+            },
+            "modifiers": [],
+            "name": "mapAPI2Special",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 300
+            },
+            "modifiers": [],
+            "name": "adf",
+            "references": [],
+            "type": "P7S1_AccountDashboardFields__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 308
+            },
+            "modifiers": [],
+            "name": "fieldNames",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 309
+            },
+            "modifiers": [],
+            "name": "s",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 313
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 318
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 319
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 329
+            },
+            "modifiers": [],
+            "name": "lstOv",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 344
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 344
+            },
+            "modifiers": [],
+            "name": "relation",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 348
+            },
+            "modifiers": [],
+            "name": "elements",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 349
+            },
+            "modifiers": [],
+            "name": "sobj",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 350
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 368
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 370
+            },
+            "modifiers": [],
+            "name": "query",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 371
+            },
+            "modifiers": [],
+            "name": "setFields",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 374
+            },
+            "modifiers": [],
+            "name": "f",
+            "references": [],
+            "type": "FieldSetMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 380
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 382
+            },
+            "modifiers": [],
+            "name": "dt",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 383
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 445
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 447
+            },
+            "modifiers": [],
+            "name": "currentUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 448
+            },
+            "modifiers": [],
+            "name": "accUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 451
+            },
+            "modifiers": [],
+            "name": "adminId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 452
+            },
+            "modifiers": [],
+            "name": "admin",
+            "references": [],
+            "type": "Profile"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 455
+            },
+            "modifiers": [],
+            "name": "mediaBoardMember",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 456
+            },
+            "modifiers": [],
+            "name": "grp",
+            "references": [],
+            "type": "Group"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 457
+            },
+            "modifiers": [],
+            "name": "gm",
+            "references": [],
+            "type": "GroupMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 474
+            },
+            "modifiers": [],
+            "name": "mapUnit2Logo",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 476
+            },
+            "modifiers": [],
+            "name": "folder",
+            "references": [],
+            "type": "Folder"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 477
+            },
+            "modifiers": [],
+            "name": "doc",
+            "references": [],
+            "type": "Document"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 489
+            },
+            "modifiers": [],
+            "name": "accountId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 489
+            },
+            "modifiers": [],
+            "name": "accountIndexId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 492
+            },
+            "modifiers": [],
+            "name": "hasAccess",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 493
+            },
+            "modifiers": [],
+            "name": "ura",
+            "references": [],
+            "type": "UserRecordAccess"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 498
+            },
+            "modifiers": [],
+            "name": "mapUnit2Field",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 499
+            },
+            "modifiers": [],
+            "name": "setNamingFields",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 502
+            },
+            "modifiers": [],
+            "name": "soql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 503
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 505
+            },
+            "modifiers": [],
+            "name": "listUrls",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 507
+            },
+            "modifiers": [],
+            "name": "accIndex",
+            "references": [],
+            "type": "P7S1_AccountIndex__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 508
+            },
+            "modifiers": [],
+            "name": "urlFirst",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 515
+            },
+            "modifiers": [],
+            "name": "mapUnit2Logo",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 518
+            },
+            "modifiers": [],
+            "name": "unit",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 538
+            },
+            "modifiers": [],
+            "name": "imgId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 541
+            },
+            "modifiers": [],
+            "name": "setTeamUntits",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 542
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 543
+            },
+            "modifiers": [],
+            "name": "logoName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 554
+            },
+            "modifiers": [],
+            "name": "mapUnit2Field",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 555
+            },
+            "modifiers": [],
+            "name": "ld",
+            "references": [],
+            "type": "P7S1_AccDash_Logo_Dependencies__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 564
+            },
+            "modifiers": [],
+            "name": "user2Check",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 564
+            },
+            "modifiers": [],
+            "name": "permissionDevName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 566
+            },
+            "modifiers": [],
+            "name": "lstCPs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 569
+            },
+            "modifiers": [],
+            "name": "setCPIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 571
+            },
+            "modifiers": [],
+            "name": "lstAccess",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

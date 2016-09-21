@@ -1,0 +1,585 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dunAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dunAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 16
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "init",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 26
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "activatePortalLoginUserSF",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 54
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "activatePortalLoginUserLiferay",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 92
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "activatePortalLoginUserAdfactory",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 133
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendActivationEmailToAdmin",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 160
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendWelcomeEmailToLiferayUser",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 183
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendDeleteConfirmEmail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 207
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendWelcomeEmailToLiferayUserException",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 236
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendOptInLinkEmail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 258
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "sendOptInLinkEmailEmailWithException",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_PortalLoginServiceImpl_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 9
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Liferay_PortalLoginServiceImpl_Test",
+        "references": [],
+        "type": "P7S1_Liferay_PortalLoginServiceImpl_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "portalLoginFromDb",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "portalLoginFromDb",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "portalLoginEvents",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "portalLoginFromDb",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "portalLoginEvents",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 138
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 162
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 185
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 193
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 209
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 218
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 238
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 239
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 243
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 260
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 261
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "portalLoginEvents",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

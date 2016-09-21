@@ -1,0 +1,187 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010cthAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010cthAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "transferDataFromProxy",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 36
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getProxies",
+            "parameters": [
+                {
+                    "name": "setCampaignItemIDs",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 45
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getCampaignItems",
+            "parameters": [
+                {
+                    "name": "setCampaignItemIDs",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "Map",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_SalesPrice",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_SalesPrice",
+        "references": [],
+        "type": "Adv_CampaignItem_SalesPrice"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "mapCampaignItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "listAllProxies",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "listCampaignItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "proxy",
+            "references": [],
+            "type": "SomDig_SalesPriceProxy__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "campaignItem",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "changed",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIDs",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 81,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "setCampaignItemIDs",
+            "references": [],
+            "type": "Set"
+        }
+    ]
+}

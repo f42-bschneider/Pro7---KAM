@@ -1,0 +1,318 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gHTAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gHTAAY",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 17
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSalesTeamEditorAgentur",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 46
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSalesTeamEditorKunde",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 70
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createAccountTeamMember",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "sRole",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "AccountTeamMember",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_SalesTeamEditor_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 15
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_Account_SalesTeamEditor_Test",
+        "references": [],
+        "type": "P7S1_Account_SalesTeamEditor_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "AccAgentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "AccKunde",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "userIDSales",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "UserSales",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "ATMSales",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "userIDAF",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "UserAf",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "ATMAf",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "P7S1_Account_SalesTeamEditorCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "AccAgentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "AccKunde",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "P7S1_Account_SalesTeamEditorCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "sRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "AccountTeamMember",
+            "references": [],
+            "type": "AccountTeamMember"
+        }
+    ]
+}

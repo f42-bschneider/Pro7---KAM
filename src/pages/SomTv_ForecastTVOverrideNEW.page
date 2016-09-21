@@ -1,0 +1,1 @@
+<apex:page standardController="SomTv_ForecastTV__c" action="{!URLFOR($Action.SomTv_ForecastTV__c.New, null, ['Name'='wird automatisch gefüllt','00N57000006I8MD'=YEAR(TODAY()),'nooverride'='true'], true)}" />

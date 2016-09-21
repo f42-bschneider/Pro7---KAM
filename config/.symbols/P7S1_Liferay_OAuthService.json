@@ -1,0 +1,61 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dufAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010dufAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 2
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "getBasicAuthRequest",
+            "parameters": [
+                {
+                    "name": "endpoint",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "HttpRequest",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_OAuthService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 18,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Liferay_OAuthService",
+        "references": [],
+        "type": "P7S1_Liferay_OAuthService"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 2
+            },
+            "modifiers": [],
+            "name": "endpoint",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

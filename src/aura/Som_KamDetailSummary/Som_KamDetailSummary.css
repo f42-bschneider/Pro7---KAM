@@ -1,0 +1,8 @@
+.THIS .table{
+    font-size: 12px!important;
+}
+
+.THIS .enable{
+    pointer-events:all;
+    position: relative!important;
+}

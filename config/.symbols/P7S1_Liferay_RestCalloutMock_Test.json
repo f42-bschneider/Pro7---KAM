@@ -1,0 +1,154 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 14
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "P7S1_Liferay_RestCalloutMock_Test",
+            "parameters": [
+                {
+                    "name": "bodyString",
+                    "type": "String"
+                },
+                {
+                    "name": "statusInt",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010durAAA",
+    "innerClasses": [],
+    "interfaces": [
+        "System.HttpCalloutMock"
+    ],
+    "key": "01p570000010durAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 19
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "respond",
+            "parameters": [
+                {
+                    "name": "request",
+                    "type": "HttpRequest"
+                }
+            ],
+            "references": [],
+            "returnType": "HttpResponse",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_RestCalloutMock_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "body",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 12
+            },
+            "modifiers": [
+                "static",
+                "global"
+            ],
+            "name": "status",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 9
+        },
+        "modifiers": [
+            "testMethod",
+            "global"
+        ],
+        "name": "P7S1_Liferay_RestCalloutMock_Test",
+        "references": [],
+        "type": "P7S1_Liferay_RestCalloutMock_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "bodyString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "statusInt",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "response",
+            "references": [],
+            "type": "HttpResponse"
+        }
+    ]
+}

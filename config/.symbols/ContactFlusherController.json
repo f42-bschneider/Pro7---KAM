@@ -1,0 +1,889 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 70
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ContactFlusherController",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 74
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ContactFlusherController",
+            "parameters": [
+                {
+                    "name": "contactIdParam",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 78
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "ContactFlusherController",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1hrIAC",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "ContactFlusherException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 66
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "ContactFlusherException",
+                "references": [],
+                "type": "ContactFlusherException"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [
+        "Database.Batchable",
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000K1hrIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 35
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "log",
+            "parameters": [
+                {
+                    "name": "str",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 40
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 45
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "SC",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 49
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 63
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 82
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "flush",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 98
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "backToContact",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 102
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "flushContact",
+            "parameters": [
+                {
+                    "name": "c",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 155
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "logErrors",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 14,
+                "line": 267
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 14,
+                "line": 281
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBatch",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 324
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "newTestAccount",
+            "parameters": [
+                {
+                    "name": "userId",
+                    "type": "Id"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 347
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "queryOne",
+            "parameters": [
+                {
+                    "name": "sObjectName",
+                    "type": "String"
+                },
+                {
+                    "name": "fieldname",
+                    "type": "String"
+                },
+                {
+                    "name": "searchedContent",
+                    "type": "String"
+                },
+                {
+                    "name": "extrafields",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SObject",
+            "type": null
+        }
+    ],
+    "name": "ContactFlusherController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 22
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "log",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 5,
+                "line": 68
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "contactId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 3
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "recordTypeAusgeschiedenId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 24
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "CONTACT_BASE_QUERY",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 26
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "TO_BE_FLUSHED_QUERY_STR",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 175
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "fieldNames",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "ContactFlusherController",
+        "references": [],
+        "type": "ContactFlusherController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "str",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "SC",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "contactIdParam",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "fieldCsv",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 89
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "developerName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "recordTypes",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "log",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 156
+            },
+            "modifiers": [],
+            "name": "log",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "fieldName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 270
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 272
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 275
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "ContactFlusherController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 283
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 285
+            },
+            "modifiers": [],
+            "name": "c1",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 290
+            },
+            "modifiers": [],
+            "name": "c2",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 295
+            },
+            "modifiers": [],
+            "name": "cList1",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 298
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "ContactFlusherController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 299
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 324
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 324
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 325
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "sObjectName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 72,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "fieldname",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "searchedContent",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 120,
+                "line": 347
+            },
+            "modifiers": [],
+            "name": "extrafields",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 348
+            },
+            "modifiers": [],
+            "name": "queryStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 351
+            },
+            "modifiers": [],
+            "name": "sObjectList",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgdxIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgdxIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "deleteOldVersions",
+            "parameters": [
+                {
+                    "name": "listFMVs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Ven_FinancialModelVersion_CleanUp",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Ven_FinancialModelVersion_CleanUp",
+        "references": [],
+        "type": "Ven_FinancialModelVersion_CleanUp"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "listFMVs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "types",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "opps",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "ids",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "fmv",
+            "references": [],
+            "type": "Ven_Financial_Model_Version__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "fmvsToDelete",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "fmv",
+            "references": [],
+            "type": "Ven_Financial_Model_Version__c"
+        }
+    ]
+}

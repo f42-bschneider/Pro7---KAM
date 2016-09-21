@@ -1,0 +1,77 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kka1IAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kka1IAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testAccountVisibility",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Account_Visibility_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "P7S1_Account_Visibility_Test",
+        "references": [],
+        "type": "P7S1_Account_Visibility_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "objAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "objContact",
+            "references": [],
+            "type": "Contact"
+        }
+    ]
+}

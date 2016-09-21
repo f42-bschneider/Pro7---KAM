@@ -1,0 +1,405 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "SomTv_KundeAgenturBez_ValidateData",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgnJIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnJIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 22
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 30
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runBeforeUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 38
+            },
+            "modifiers": [
+                "protected",
+                "override"
+            ],
+            "name": "runAfterUndelete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 45
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "validateData",
+            "parameters": [
+                {
+                    "name": "newkaBezs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_KundeAgenturBez_ValidateData",
+    "namespace": null,
+    "parentClass": "TriggerController",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 42
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "VALIDATION_DUPLICATE_KABEZ_IN_LIST",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 43
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "VALIDATION_DUPLICATE_KABEZ_IN_SF",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "SomTv_KundeAgenturBez_ValidateData",
+        "references": [],
+        "type": "SomTv_KundeAgenturBez_ValidateData"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "newkaBezs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "errorMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "kaBezByKundeId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "kaBez",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "error",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "tmpKaBez",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "kaBez",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "tmpKaBez",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "kaBez",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        }
+    ]
+}

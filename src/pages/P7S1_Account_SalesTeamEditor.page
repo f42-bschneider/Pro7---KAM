@@ -1,0 +1,366 @@
+<!-- /**
+* ===================================================================
+* (c) factory42 GmbH 2015, Germany, All rights reserved
+* P7S1_Account_SalesTeamEditor
+* @Author       : BS
+* @Email        : bschneider@factory42.com
+* @Version      : V0.1
+* @Date         : 2016-01-18
+* @Last Change  :
+* @Description: :  VF-Page to control Sales-Team
+* =================================================================
+*/ -->
+<apex:page showHeader="true" sidebar="true" controller="P7S1_Account_SalesTeamEditorCtrl" tabStyle="SomTv_KundeAgenturBeziehung__c" >-
+
+    <apex:includeScript value="{!URLFOR($Resource.jQuery1100, 'jquery.min.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.jQuery1100, 'jquery-ui.min.js')}" />
+    <apex:styleSheet value="{!URLFOR($Resource.jQuery1100, 'jquery-ui.css')}" />
+
+    <style>
+        /*******************************************
+        ******* Styles for autocomplete ********/
+        .displayNone {
+            display:none;
+        }
+        .displayBlock {
+            display:block;
+        }
+        .ui-autocomplete-loading {
+            background: white url(/img/loading32.gif) right center no-repeat;
+            background-size:15px 15px;
+        }
+        .placeHolder {
+            font-style: italic;
+        }
+        .ui-autocomplete {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            float: left;
+            display: none;
+            min-width: 160px;
+            padding: 4px 0;
+            margin: 0 0 10px 25px;
+            list-style: none;
+            background-color: #ffffff;
+            border-color: #ccc;
+            border-color: rgba(0, 0, 0, 0.2);
+            border-style: solid;
+            border-width: 1px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            -webkit-background-clip: padding-box;
+            -moz-background-clip: padding;
+            background-clip: padding-box;
+            *border-right-width: 2px;
+            *border-bottom-width: 2px;
+        }
+
+        .ui-menu-item > a.ui-corner-all {
+            display: block;
+            padding: 3px 15px;
+            clear: both;
+            font-weight: normal;
+            line-height: 18px;
+            color: #555555;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+
+        .ui-state-hover, .ui-state-active {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #0088cc;
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            background-image: none;
+        }
+
+        .ui-menu .ui-menu-item a:hover
+        {
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #D8D8D8;
+        }
+
+        .ui-state-focus{
+            background-color: #D8D8D8;
+        }
+
+        /*****************************************
+        ******* Styles for modal panel ********/
+        .custPopup{
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            z-index: 9999;
+            left: 50%;
+            padding:10px;
+            position: absolute;
+            width: 500px;
+            margin-left: -250px;
+            top:130px;
+        }
+        .popupBackground{
+            background-color:black;
+            opacity: 0.30;
+            filter: alpha(opacity = 30);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+    </style>
+
+    <apex:form >
+
+        <apex:sectionHeader subtitle="Sales-Team Controlling" title="{!currentAccount.Name}" />
+        <apex:pageMessages id="msg" />
+
+        <!-- ******* No Access *******-->
+        <div style="text-align:center; width:100%; display:{! if(hasAccess, 'none', 'block')}" >
+            <apex:commandButton action="{!cancel}" value="{!$Label.P7S1_AccSalesTeamEdit_Cancel}" />
+        </div>
+
+        <!-- ******* Complete pageBlock *******-->
+        <apex:pageBlock rendered="{!hasAccess}">
+
+            <!-- ******* Buttons *******-->
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!checkBeforeSave}" value="{!$Label.P7S1_AccSalesTeamEdit_Save}" reRender="msg, kabSection, modal" oncomplete="initAutocomplete();"/>
+                <apex:commandButton action="{!changeAccOwner}" value="{!$Label.P7S1_AccSalesTeamEdit_EditKAM}" />
+                <apex:commandButton action="{!cancel}" value="{!$Label.P7S1_AccSalesTeamEdit_Cancel}" immediate="true" />
+            </apex:pageBlockButtons>
+
+            <!-- ******* General Info *******-->
+            <apex:pageBlockSection title="Verkäufer Info" collapsible="false" id="tvSalesEavSec">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!if(accType == 'customer', $Label.P7S1_AccSalesTeamEdit_TVK, $Label.P7S1_AccSalesTeamEditEAV)}" for="userTextBoxId" />
+                    <apex:actionRegion >
+                    <apex:outputPanel >
+                            <apex:inputText value="{!tvSalesEavName}" id="userTextBoxId" styleClass="placeHolder, autoInput" onblur="changeTvEav('{!accType}');"/>
+                            <apex:inputHidden id="searchUserId" value="{!tvSalesEavId}" />
+                    </apex:outputPanel>
+                    </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="{!$Label.P7S1_AccSalesTeamCreate}" for="boolKab"/>
+                        <apex:actionRegion >
+                        <apex:inputCheckbox value="{!showKAB}" id="boolKab" >
+                            <apex:actionSupport event="onchange" action="{!prefillEavPav}" rerender="tvSalesEavSec,kabSection, msg" oncomplete="initAutocomplete();changeTvEav('{!accType}');"/>
+                        </apex:inputCheckbox>
+                        </apex:actionRegion>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+            <!-- ******* KAB Info *******-->
+            <apex:outputPanel id="kabSection" >
+                <apex:pageBlockSection title="{!$Label.P7S1_AccSalesTeamAInfo}" rendered="{!showKAB}" collapsible="false">
+
+                    <apex:inputField value="{!objKAB.Kunde__c}" id="custId" rendered="{!accType == 'agency'}">
+                        <apex:actionSupport event="onchange" action="{!prefillKVK}" rerender="kabSection, msg" oncomplete="initAutocomplete();"/>
+                    </apex:inputField>
+                    <apex:outputField value="{!objKAB.Kunde__c}" rendered="{!accType == 'customer'}"/>
+                    <apex:inputField value="{!objKAB.Agentur__c}" required="true" id="agencyId" rendered="{!accType == 'customer'}" />
+                    <apex:outputField value="{!objKAB.Agentur__c}" id="agencyIdOut" rendered="{!accType == 'agency'}"/>
+                    <apex:inputField value="{!objKAB.GueltigVon__c}"/>
+                    <apex:inputField value="{!objKAB.GueltigBis__c}"/>
+                    <apex:inputField value="{!objKAB.SomTv_RelevanteBeziehung__c}"/>
+                </apex:pageBlockSection>
+
+                <apex:pageBlockSection title="{!$Label.P7S1_AccSalesTeamEInfo}" rendered="{!showKAB}" collapsible="false" >
+                    <apex:repeat var="vkz" value="{!lstVkZ}" >
+                        <apex:outputText value="{!vkz.vkz.SomTv_Verkaeuferrolle__c}" />
+
+                        <!-- ******* Autocomplete field *******-->
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="{!$Label.P7S1_AccSalesTeamSell} {!vkz.type}"/>
+                            <apex:outputPanel >
+                                <apex:inputText value="{!vkz.text}" styleClass="placeHolder, {!vkz.type}, autoInput" onblur="changeVK('{!vkz.type}', '{!accType}')" />
+                                <apex:inputHidden value="{!vkz.id}" />
+                                &nbsp;
+                                <apex:image value="/img/msg_icons/error16.png" rendered="{!vkz.showError}"/>
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+
+                        <apex:inputField value="{!vkz.vkz.SomTv_GueltigVon__c}" required="true" />
+                        <apex:inputField value="{!vkz.vkz.SomTv_GueltigBis__c}"/>
+                        <apex:pageBlockSectionItem />
+                        <apex:pageBlockSectionItem />
+                    </apex:repeat>
+                </apex:pageBlockSection>
+
+            </apex:outputPanel>
+
+            <!-- ******* KAM Info *******-->
+            <apex:pageBlockSection title="{!$Label.P7S1_AccSalesTeamKeyAcc}" collapsible="false" id="kamSection">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="KAM" for="kam"/>
+                    <apex:outputText value="{!currentAccount.Owner.Name}" id="kam"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+
+        </apex:pageBlock>
+
+        <apex:outputPanel id="modal">
+            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!showModal}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!showModal}" style="text-align:center">
+                <apex:pageMessage summary="{!$Label.P7S1_AccSalesTeamKeyRelation}" severity="warning" strength="2" />
+                <apex:pageBlock >
+                <apex:pageBlockTable value="{!lstKAB}" var="kab" rowClasses="odd,even" styleClass="tableClass">
+                    <apex:column value="{!kab.Kunde__c}"/>
+                    <apex:column value="{!kab.Agentur__c}"/>
+                    <apex:column value="{!kab.GueltigVon__c}"/>
+                    <apex:column value="{!kab.GueltigBis__c}"/>
+                </apex:pageBlockTable>
+                </apex:pageBlock>
+
+                <apex:commandButton action="{!saveRelevant}" value="{!$Label.P7S1_AccSalesTeamKeySaveOver}" reRender="msg, kabSection, modal"/>
+                <apex:commandButton action="{!saveNotRelevant}" value="{!$Label.P7S1_AccSalesTeamKeySaveKeep}" reRender="msg, kabSection, modal"/>
+                <apex:commandButton action="{!closeModal}" value="{!$Label.P7S1_AccSalesTeamEdit_Cancel}" rerender="modal"/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+
+    </apex:form>
+
+    <!-- ******************************************-->
+    <!-- ******* Script for autocomplete *******-->
+    <script type="text/javascript">
+
+        $( document ).ready(function() {
+            initAutocomplete();
+
+            //Prevent default behaviour onkeypress (enter)
+            $(window).keydown(function(event){
+                if(event.keyCode == 13) {
+                  event.preventDefault();
+                  return false;
+                }
+            });
+        });
+
+        var textt;
+        var idt;
+
+        function initAutocomplete(){
+            var PLACEHOLDER = '...';
+            var userObjects;
+            var queryTerm;
+
+            $('.autoInput').each(function(i, obj) {
+                $(this).autocomplete({
+                    minLength: 2,
+                    source: function(request, response) {
+                                queryTerm = request.term;
+                                var agencyStr = '';
+                                if($('[id$=agencyId_lkid]').length){
+                                    agencyStr = $('[id$=agencyId_lkid]').val();
+                                }else{
+                                    agencyStr = "{!currentAccount.ID}";
+                                }
+                                var customerStr = '';
+                                if($('[id$=custId_lkid]').length){
+                                    customerStr = $('[id$=custId_lkid]').val();
+                                }
+                                P7S1_Account_SalesTeamEditorCtrl.searchUser(request.term, i, agencyStr, customerStr,"{!currentAccount.ID}", "{!accType}", function(result, event){
+                                    if(event.type == 'exception') {
+                                          alert(event.message);
+                                    } else {
+                                        userObjects = result;
+                                        if(userObjects.length == 0){
+                                            response([{Name:"No Matches found", Id:""}]);
+                                        }else{
+                                            response(userObjects);
+                                        }
+                                    }
+                                });
+                           },
+                    focus: function( event, ui ) {
+                            $(this).val( ui.item.Name );
+                            return false;
+                            },
+                    select: function( event, ui ) {
+                                $(this).val( ui.item.Name );
+                                $(this).next().next().val( ui.item.Id );
+                                textt = $(this).val();
+                                idt = $(this).next().next().val();
+                                return false;
+                            },
+                 })
+                 .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+                    var entry = "<a>" + item.Name;
+
+                    entry = entry + "</a>";
+                    entry = entry.replace(queryTerm, "<b>" + queryTerm + "</b>");
+                    return $( "<li></li>" )
+                        .data( "item.autocomplete", item )
+                        .append( entry )
+                        .appendTo( ul );
+                };
+            });
+
+            // Add or remove placeholder values
+            $('.autoInput').each(function(i, obj) {
+                if( $(this).val().length === 0){
+                    $(this).val(PLACEHOLDER);
+                }
+                $(this).on("focus",  function(event){
+                    $tgt = $(event.target);
+                    if($tgt.val() === PLACEHOLDER ){
+                        $tgt.val('');
+                        $tgt.removeClass('placeHolder');
+                    }
+                });
+                $(this).on( "blur",  function(event){
+                    $tgt = $(event.target);
+                    if($tgt.val() === '' ){
+                        $tgt.val(PLACEHOLDER);
+                        $tgt.addClass('placeHolder');
+                    }
+                });
+            });
+        };
+
+        function changeTvEav(acct){
+            $('.autoInput').each(function(i, obj) {
+                var check = $(this).attr('Class');
+                if((check.indexOf('KVK') > -1 & acct.indexOf('customer') > -1) | ((check.indexOf('EAV') > -1 | check.indexOf('PAV') > -1) & acct.indexOf('agency') > -1)){
+                    $(this).val( $('[id$=userTextBoxId]').val());
+                    $(this).next().next().val( $('[id$=searchUserId]').val());
+                }
+            });
+        };
+
+        function changeVK(vkType, acct){
+            if((acct.indexOf('customer') > -1 & vkType.indexOf('KVK') > -1) | (acct.indexOf('agency') > -1 & vkType.indexOf('EAV') > -1)){
+                $('[id$=userTextBoxId]').val( textt );
+                $('[id$=userTextBoxId]').next().next().val( idt );
+            }
+            if(vkType.indexOf('EAV') > -1){
+                var check2 = ''; //Needed if value is erased
+                $('.autoInput').each(function(i, obj) {
+                    var check = $(this).attr('Class');
+                    if(check.indexOf('EAV') > -1){
+                        check2 = $(this).val();
+                    }
+                    if(check.indexOf('PAV') > -1 & check2 != ''){
+                        $(this).val( textt);
+                        $(this).next().next().val( idt );
+                    }
+                });
+            }
+        }
+    </script>
+
+</apex:page>

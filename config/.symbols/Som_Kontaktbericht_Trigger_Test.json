@@ -1,0 +1,1036 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Ki8ZIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Ki8ZIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 6
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertKontaktbericht",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 36
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertKontaktberichtWithDuplicateTeilnehmer",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 58
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertMultipleKontaktberichte",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 93
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertKontaktberichtWithoutMitarbeiter",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 116
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertKontaktberichtWithoutBereich",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 139
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "updateKontaktberichtGrundDesKontakts",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 176
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "deleteKontaktbericht",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 204
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertKontaktberichtTeilnehmer",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 234
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "insertKontaktberichtTeilnehmerWithoutMitarbeiter",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 257
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "deleteKontaktberichtTeilnehmer",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 290
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "reloadAccount",
+            "parameters": [
+                {
+                    "name": "acc",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        }
+    ],
+    "name": "Som_Kontaktbericht_Trigger_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Som_Kontaktbericht_Trigger_Test",
+        "references": [],
+        "type": "Som_Kontaktbericht_Trigger_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "conTv",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "teilnehmer",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "con1",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "con2",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "conTv",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "conAt",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "userTv",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "userAt",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "timestamp1",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 72
+            },
+            "modifiers": [],
+            "name": "timestamp2",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "kb1",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 81
+            },
+            "modifiers": [],
+            "name": "kb2",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 96
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 109
+            },
+            "modifiers": [],
+            "name": "kbContacts",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "conSgn",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 121
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "modified",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 140
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 142
+            },
+            "modifiers": [],
+            "name": "conAt",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 144
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 179
+            },
+            "modifiers": [],
+            "name": "conDig",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 184
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 185
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 205
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "conDig",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 208
+            },
+            "modifiers": [],
+            "name": "conTv",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 210
+            },
+            "modifiers": [],
+            "name": "userDig",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 211
+            },
+            "modifiers": [],
+            "name": "userTv",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 216
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 217
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 235
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 236
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 237
+            },
+            "modifiers": [],
+            "name": "conWithoutEmp",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 239
+            },
+            "modifiers": [],
+            "name": "userAdF",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 241
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 242
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 258
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 259
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 260
+            },
+            "modifiers": [],
+            "name": "conTv",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 261
+            },
+            "modifiers": [],
+            "name": "conDig",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 263
+            },
+            "modifiers": [],
+            "name": "userTv",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 264
+            },
+            "modifiers": [],
+            "name": "userDig",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 269
+            },
+            "modifiers": [],
+            "name": "timestamp",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 270
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 271
+            },
+            "modifiers": [],
+            "name": "tn",
+            "references": [],
+            "type": "Som_KontaktberichtContact__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 290
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        }
+    ]
+}

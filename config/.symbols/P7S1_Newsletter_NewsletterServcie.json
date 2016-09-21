@@ -1,0 +1,221 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gTaAAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gTaAAI",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 10
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "getStandardNewsletter",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Newsletter__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 11
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "createOrGetNewsletterAbo",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Abonnement__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 12
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "createNewNewsletterAbo",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Abonnement__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 13
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "subscribe",
+            "parameters": [
+                {
+                    "name": "abo",
+                    "type": "P7S1_Abonnement__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 14
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "unsubscribe",
+            "parameters": [
+                {
+                    "name": "abo",
+                    "type": "P7S1_Abonnement__c"
+                }
+            ],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 15
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "sendNewsletterSubscribeEmail",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLoginEvent__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Newsletter_NewsletterServcie",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 18,
+            "line": 8
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Newsletter_NewsletterServcie",
+        "references": [],
+        "type": "P7S1_Newsletter_NewsletterServcie"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "abo",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "abo",
+            "references": [],
+            "type": "P7S1_Abonnement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        }
+    ]
+}

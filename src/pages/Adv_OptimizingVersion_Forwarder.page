@@ -1,0 +1,2 @@
+<apex:page standardController="ADvendio__OptimizingVersion__c" extensions="Adv_OptimizingVersion_Forwarder" action="{!forward}">
+</apex:page>

@@ -1,0 +1,75 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p3E0000004aBrQAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p3E0000004aBrQAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "TestSetup"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 27
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_delete",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Som_KamDetail_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 30,
+            "line": 15
+        },
+        "modifiers": [
+            "public",
+            "without sharing",
+            "testMethod"
+        ],
+        "name": "Som_KamDetail_Test",
+        "references": [],
+        "type": "Som_KamDetail_Test"
+    },
+    "variables": []
+}

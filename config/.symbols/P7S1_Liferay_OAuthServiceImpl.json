@@ -1,0 +1,167 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010dugAAA",
+    "innerClasses": [],
+    "interfaces": [
+        "P7S1_Liferay_OAuthService"
+    ],
+    "key": "01p570000010dugAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getBasicAuthRequest",
+            "parameters": [
+                {
+                    "name": "endpoint",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "HttpRequest",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 19
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getBasicAauthorizationHeader",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_OAuthServiceImpl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "USERNAME",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "PASSWORD",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "HEADER_KEY_AUTHORIZATION",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "AUTHORIZATION_TYPE_BASIC",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 1
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Liferay_OAuthServiceImpl",
+        "references": [],
+        "type": "P7S1_Liferay_OAuthServiceImpl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "endpoint",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "request",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "headerValue",
+            "references": [],
+            "type": "Blob"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "authorizationHeader",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

@@ -1,0 +1,231 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kf2cIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kf2cIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "sync",
+            "parameters": [
+                {
+                    "name": "newEmpMap",
+                    "type": "Map"
+                },
+                {
+                    "name": "oldEmpMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Emp_Contact",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Emp_Contact",
+        "references": [],
+        "type": "P7S1_Emp_Contact"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "newEmpMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "oldEmpMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "empMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "emailAddresses",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "contactsToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "contactsToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "emailAddressesContactsMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "empId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "contactsForEmp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 66
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+.THIS .space-top{
+    margin-top: 40px!important;
+}
+
+.THIS .navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.THIS .btn-icon{
+    font-size:18px;
+}
+
+.THIS .outputtext{
+    background-color: #E5E5E5!important;
+    pointer-events: none;
+}

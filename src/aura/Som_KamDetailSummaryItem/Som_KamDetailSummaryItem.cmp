@@ -1,0 +1,177 @@
+<aura:component >
+
+    <aura:attribute name="showAccPlanRow" type="Boolean" access="public" default="true"/>
+    <aura:attribute name="gap" type="String" access="private" default=""/>
+    <aura:attribute name="showSubItems" type="Boolean" access="public" default="true"/>
+    <aura:attribute name="fireChangeEvent" type="Boolean" access="public" default="false"/>
+
+    <aura:attribute name="accPlanDetail" type="Map" access="public" default="{
+        isValidPrevCashIn : true,
+        isValidPrevCashExtYield : true,
+        isValidTargetCashIn : true}"/>
+
+    <aura:attribute name="newCashIn" type="Map" access="private" default="{
+        Name : '',
+        Som_PreviousCashIn__c : 0,
+        Som_PreviousCashExternalYield__c : 0,
+        Som_Cashin__c : 0,
+        isValidPrevCashIn : true,
+        isValidPrevCashExtYield : true,
+        isValidTargetCashIn : true}"/>
+
+    <!-- *** Workarround for rendering problems with Locker Service and pushing data into lists *** -->
+    <aura:attribute name="tempList" type="Object[]" access="private" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="changeTempItem" event="c:Som_KamChangeEvent" action="{!c.getItemsFromTempList}"/>
+
+    <aura:method name="getItemsFromTempList" action="{!c.getItemsFromTempList}" access="PUBLIC" />
+    <aura:method name="initiateTempList" action="{!c.onInitiateTempList}" access="PUBLIC" />
+
+
+    <aura:if isTrue="{!v.showAccPlanRow}">
+        <tr>
+            <td></td>
+            <td><b>{!v.accPlanDetail.accPlanDetail.Som_KamTeam__r.Name}</b></td>
+
+            <td>
+                {!v.accPlanDetail.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + v.accPlanDetail.accPlanDetail.Som_KamTeamMember__r.LastName}
+            </td>
+
+            <td style="{!
+                if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Invited',
+                    'background-color:#F9C209;',
+                    if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Kickoff',
+                        'background-color:#2865AC;',
+                        if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Review',
+                            'background-color:#4CAE42;',
+                            if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Created',
+                                'background-color:#FF0033;',
+                                ''
+                            )
+                        )
+                    )
+                ) + 'color:white;'}">
+                <b>{!v.accPlanDetail.accPlanDetail.Som_Status__c}</b>
+            </td>
+
+            <td>
+                <aura:if isTrue="{!v.accPlanDetail.accPlanDetail.Som_KamAccountCashIn__c == undefined}">
+                    <c:f42_InputNumber value="{!v.accPlanDetail.accPlanDetail.Som_PreviousCashIn__c}"
+                        required="false"
+                        isInteger="true"
+                        isValid="{!v.accPlanDetail ? v.accPlanDetail.isValidPrevCashIn : false}"
+                        replaceNull="false"
+                        inputSize="input-sm"/>
+                </aura:if>
+
+                <aura:if isTrue="{!v.accPlanDetail.accPlanDetail.Som_KamAccountCashIn__c != undefined}">
+                    <ui:outputNumber class="form-control input-sm" value="{!v.accPlanDetail.accPlanDetail.Som_PreviousCashIn__c}"/>
+                </aura:if>
+            </td>
+
+
+            <td>
+                <aura:if isTrue="{!v.accPlanDetail.accPlanDetail.Som_KamAccountCashIn__c == undefined}">
+                    <c:f42_InputNumber value="{!v.accPlanDetail.accPlanDetail.Som_PreviousCashExternalYield__c}"
+                        required="false"
+                        isInteger="true"
+                        isValid="{!v.accPlanDetail ? v.accPlanDetail.isValidPrevCashExtYield : false}"
+                        replaceNull="false"
+                        inputSize="input-sm"/>
+                </aura:if>
+
+                <aura:if isTrue="{!v.accPlanDetail.accPlanDetail.Som_KamAccountCashIn__c != undefined}">
+                    <ui:outputNumber class="form-control input-sm" value="{!v.accPlanDetail.accPlanDetail.Som_PreviousCashExternalYield__c}"/>
+                </aura:if>
+            </td>
+
+            <td>
+                <ui:inputText value="{!v.accPlanDetail.accPlanDetail.Som_RatingDealLearnings__c}" class="input-sm form-control"/>
+            </td>
+
+            <td>
+                <c:f42_InputNumber value="{!v.accPlanDetail.accPlanDetail.Som_TargetCashIn__c}"
+                    required="false"
+                    isInteger="true"
+                    isValid="{!v.accPlanDetail ? v.accPlanDetail.isValidTargetCashIn : false}"
+                    replaceNull="false"
+                    inputSize="input-sm"/>
+            </td>
+
+            <td><ui:outputNumber class="form-control input-sm" value="{!v.accPlanDetail.optInClosed != undefined ? v.accPlanDetail.optInClosed : 0}"/></td>
+            <td><ui:outputNumber class="form-control input-sm" value="{!v.accPlanDetail.optInOpen != undefined ? v.accPlanDetail.optInOpen : 0}"/></td>
+            <td><ui:outputNumber class="form-control input-sm" value="{!v.gap}" aura:id="gapOutput"/></td>
+        </tr>
+    </aura:if>
+
+
+
+
+    <!--<aura:iteration items="{!v.accPlanDetail.accPlanDetailCashIn}" var="cashIn">
+        <c:Som_KamDetailSummarySubItem accPlanDetailCashIn="{!cashIn ? cashIn : null}"
+            showEmptyCells="{!v.showAccPlanRow}"
+            hide="{!not(v.showSubItems)}"/>
+    </aura:iteration>-->
+
+    <!-- *** Workarround for rendering problems with Locker Service and pushing data into lists *** -->
+    <aura:iteration items="{!v.tempList}" var="cashIn">
+        <c:Som_KamDetailSummarySubItem accPlanDetailCashIn="{!cashIn}"
+            showEmptyCells="{!v.showAccPlanRow}"
+            hide="{!not(v.showSubItems)}"
+            fireChangeEvent="{!v.fireChangeEvent}"/>
+    </aura:iteration>
+
+    <tr style="{!v.showSubItems ? '' : 'display:none'}">
+        <td>
+            <button class="btn btn-success btn-xs" type="button" onclick="{!c.onAddAccPlanDetailCashIn}">
+                <i class="ionicons ion-plus-round"></i>
+            </button>
+        </td>
+
+        <td>
+            <ui:inputText change="{!c.onNewCashInNameChange}"
+                aura:id="newCashInName"
+                value="{!v.newCashIn.Name}"
+                class="input-sm form-control text-right"/>
+        </td>
+
+        <aura:if isTrue="{!v.showAccPlanRow}">
+            <td></td>
+            <td></td>
+        </aura:if>
+
+        <td>
+            <c:f42_InputNumber value="{!v.newCashIn.Som_PreviousCashIn__c}"
+                required="false"
+                isInteger="true"
+                isValid="{!v.newCashIn.isValidPrevCashIn}"
+                inputSize="input-sm"/>
+        </td>
+
+        <td>
+            <c:f42_InputNumber value="{!v.newCashIn.Som_PreviousCashExternalYield__c}"
+                required="false"
+                isInteger="true"
+                isValid="{!v.newCashIn.isValidPrevCashExtYield}"
+                inputSize="input-sm"/>
+        </td>
+
+        <aura:if isTrue="{!v.showAccPlanRow}">
+            <td></td>
+
+            <td>
+                <c:f42_InputNumber value="{!v.newCashIn.Som_Cashin__c}"
+                    required="false"
+                    isInteger="true"
+                    isValid="{!v.newCashIn.isValidTargetCashIn}"
+                    inputSize="input-sm"/>
+            </td>
+
+            <td></td>
+            <td></td>
+            <td></td>
+        </aura:if>
+    </tr>
+
+</aura:component>

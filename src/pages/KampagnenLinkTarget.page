@@ -1,0 +1,5 @@
+<apex:page id="myPage" controller="KampagnenLinkTargetController" action="{!updateMember}">
+	<apex:pageBlock title="Update Status Of Campaign Member" id="StatusOfCampaignMember">
+		<apex:pageMessages id="Messages" escape="false"/>
+	</apex:pageBlock>
+</apex:page>

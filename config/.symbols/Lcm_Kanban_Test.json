@@ -1,0 +1,142 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KloJIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KloJIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testKanban",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 30
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestRelease",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Lcm_Release__c",
+            "type": null
+        }
+    ],
+    "name": "Lcm_Kanban_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "Lcm_Kanban_Test",
+        "references": [],
+        "type": "Lcm_Kanban_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "objRelease",
+            "references": [],
+            "type": "Lcm_Release__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "objCase",
+            "references": [],
+            "type": "Case"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Lcm_Kanban"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "release_TestData",
+            "references": [],
+            "type": "Lcm_Release__c"
+        }
+    ]
+}

@@ -1,0 +1,711 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000nRM7AAM",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000nRM7AAM",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adPriceInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adPriceInsertWithInvalidBillingCategory",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 58
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adPriceBulk",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 99
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "adPriceUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 129
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "placementUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 157
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "placementBulk",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_AdPrice_AssignKeys_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_AdPrice_AssignKeys_Test",
+        "references": [],
+        "type": "Adv_AdPrice_AssignKeys_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "key3",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "key3",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "key",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 63
+            },
+            "modifiers": [],
+            "name": "mgdiff",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "adPricesList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 100
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "key3",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 130
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 139
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 141
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "key1",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 160
+            },
+            "modifiers": [],
+            "name": "key2",
+            "references": [],
+            "type": "ADvendio__Key__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "mgdiff",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 166
+            },
+            "modifiers": [],
+            "name": "site",
+            "references": [],
+            "type": "ADvendio__Site__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "placementsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "adSpecsList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 177
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 182
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 185
+            },
+            "modifiers": [],
+            "name": "adPricesList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 187
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 197
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        }
+    ]
+}

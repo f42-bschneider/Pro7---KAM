@@ -1,0 +1,366 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010heXAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010heXAAQ",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_IncreaseCoverage",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 37
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_insertOppPipeDetail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 91
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_LoadOppData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 133
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "buildOppPipeList",
+            "parameters": [
+                {
+                    "name": "year",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 148
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "buildSomLikelihoodCustomSetting",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Ven_OppPipeline_CmpCtrl_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 30,
+            "line": 15
+        },
+        "modifiers": [
+            "public",
+            "without sharing",
+            "testMethod"
+        ],
+        "name": "Ven_OppPipeline_CmpCtrl_Test",
+        "references": [],
+        "type": "Ven_OppPipeline_CmpCtrl_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "Ven_OppPipeline_CmpCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "ctrl2",
+            "references": [],
+            "type": "Ven_OppPipeline_CmpCtrl"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "recTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "oppNew",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "oppPipesNew",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 64
+            },
+            "modifiers": [],
+            "name": "op",
+            "references": [],
+            "type": "Ven_OppPipeline__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "recTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 108
+            },
+            "modifiers": [],
+            "name": "otm",
+            "references": [],
+            "type": "OpportunityTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "oppPipeData",
+            "references": [],
+            "type": "OppPipeData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "oppPipeDetail",
+            "references": [],
+            "type": "OppPipeDetail"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "lstExData",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 133
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "lstOppPipeline",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 149
+            },
+            "modifiers": [],
+            "name": "somLikelihood",
+            "references": [],
+            "type": "Ven_SomLikelihood__c"
+        }
+    ]
+}

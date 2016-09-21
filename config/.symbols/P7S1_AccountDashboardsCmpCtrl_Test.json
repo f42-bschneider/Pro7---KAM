@@ -1,0 +1,547 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d3nAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010d3nAAA",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 11
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testAccAccess",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 31
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testOverviewCmp",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 50
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testOpportunityViewCmp",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 70
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testMediaViewCmp",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 91
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestData",
+            "parameters": [
+                {
+                    "name": "i",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 147
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestNielsenDaten",
+            "parameters": [
+                {
+                    "name": "inserObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "accId",
+                    "type": "String"
+                },
+                {
+                    "name": "year",
+                    "type": "String"
+                },
+                {
+                    "name": "period",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_NielsenDataAggr__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 171
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestAccountDashboardFields",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "label",
+                    "type": "String"
+                },
+                {
+                    "name": "labelEn",
+                    "type": "String"
+                },
+                {
+                    "name": "isLink",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "needsAuth",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "field",
+                    "type": "String"
+                },
+                {
+                    "name": "linkField",
+                    "type": "String"
+                },
+                {
+                    "name": "cnt",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_AccountDashboardFields__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_AccountDashboardsCmpCtrl_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "cntRecords",
+            "references": [],
+            "type": "Integer"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_AccountDashboardsCmpCtrl_Test",
+        "references": [],
+        "type": "P7S1_AccountDashboardsCmpCtrl_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "ad",
+            "references": [],
+            "type": "AccessData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "lstOV",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 46,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "oppData",
+            "references": [],
+            "type": "OppData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "nielsen",
+            "references": [],
+            "type": "NielsenData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "md",
+            "references": [],
+            "type": "MediaData"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 91
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 107
+            },
+            "modifiers": [],
+            "name": "adf",
+            "references": [],
+            "type": "P7S1_AccountDashboardFields__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 115
+            },
+            "modifiers": [],
+            "name": "lstOpp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "recordTypeId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 117
+            },
+            "modifiers": [],
+            "name": "j",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "lstNielsenDaten",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "inserObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 94,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "year",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 121,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "period",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "nda",
+            "references": [],
+            "type": "P7S1_NielsenDataAggr__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 112,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "label",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 126,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "labelEn",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 143,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "isLink",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 159,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "needsAuth",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 177,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 191,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "linkField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 210,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "cnt",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "adf",
+            "references": [],
+            "type": "P7S1_AccountDashboardFields__c"
+        }
+    ]
+}

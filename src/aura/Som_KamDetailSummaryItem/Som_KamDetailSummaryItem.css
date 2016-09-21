@@ -1,0 +1,21 @@
+.THIS .uiOutputNumber{
+    background-color: #E5E5E5!important;
+    font-size:12px!important;
+}
+
+.THIS .uiOutputText{
+    background-color: #E5E5E5!important;
+    font-size:12px!important;
+}
+
+.THIS .text-right{
+    text-align: right!important;
+}
+
+.THIS .uiInputText{
+    font-size:12px!important;
+}
+
+.THIS .redFont{
+    color:red !important;
+}

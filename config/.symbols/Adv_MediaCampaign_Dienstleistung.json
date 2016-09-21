@@ -1,0 +1,88 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgmWIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgmWIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "handlePopUpFieldsBeforeUpdate",
+            "parameters": [
+                {
+                    "name": "newList",
+                    "type": "LIST"
+                },
+                {
+                    "name": "oldMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_MediaCampaign_Dienstleistung",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Adv_MediaCampaign_Dienstleistung",
+        "references": [],
+        "type": "Adv_MediaCampaign_Dienstleistung"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 87,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "newList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 132,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "oldMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "I_oMC",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        }
+    ]
+}

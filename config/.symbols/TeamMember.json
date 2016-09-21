@@ -1,0 +1,710 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "TeamMember",
+            "parameters": [],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1i1IAC",
+    "innerClasses": [],
+    "interfaces": [
+        "Database.Batchable",
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000K1i1IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "chooseBatch",
+            "parameters": [
+                {
+                    "name": "batchName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 34
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "start",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "QueryLocator",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 38
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "BC",
+                    "type": "BatchableContext"
+                },
+                {
+                    "name": "scope",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 45
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "finish",
+            "parameters": [
+                {
+                    "name": "bc",
+                    "type": "BatchableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 48
+            },
+            "modifiers": [
+                "global"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "sc",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 57
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "startBatch",
+            "parameters": [
+                {
+                    "name": "batchName",
+                    "type": "String"
+                },
+                {
+                    "name": "whereClause",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 67
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getExistingAccountTeamMember",
+            "parameters": [
+                {
+                    "name": "accIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 76
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "somTv_AccountTeamMemberUpdate",
+            "parameters": [
+                {
+                    "name": "accIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 135
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "somTv_AccountTeamMemberUpdate",
+            "parameters": [
+                {
+                    "name": "accs",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 22,
+                "line": 145
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testValidation",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "TeamMember",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 10
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "batchTypByName",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "selectedBatch",
+            "references": [],
+            "type": "Batch"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "AUTOMATED_SOM_TV_ATM_ROLES",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 11
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "final"
+            ],
+            "name": "BATCH_SOMTV_UPDATE_ACCOUNT_TEAM_MEMBER",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 5
+        },
+        "modifiers": [
+            "without sharing",
+            "global"
+        ],
+        "name": "TeamMember",
+        "references": [],
+        "type": "TeamMember"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "tvATM_Update",
+            "references": [],
+            "type": "Batch"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "batchName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "BC",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "scope",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "bc",
+            "references": [],
+            "type": "BatchableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "tm",
+            "references": [],
+            "type": "TeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "batchName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "whereClause",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 78
+            },
+            "modifiers": [],
+            "name": "validVKZs",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "vkz",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "atmToDelete",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "existingATM",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "atm",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 118
+            },
+            "modifiers": [],
+            "name": "atmToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 119
+            },
+            "modifiers": [],
+            "name": "accId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 120
+            },
+            "modifiers": [],
+            "name": "userId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 60,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "accs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "accIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "kunde",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 147
+            },
+            "modifiers": [],
+            "name": "agentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 150
+            },
+            "modifiers": [],
+            "name": "kaBez1",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 151
+            },
+            "modifiers": [],
+            "name": "kaBez2",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 153
+            },
+            "modifiers": [],
+            "name": "vkz1",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 154
+            },
+            "modifiers": [],
+            "name": "vkz2",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 158
+            },
+            "modifiers": [],
+            "name": "tm",
+            "references": [],
+            "type": "TeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 159
+            },
+            "modifiers": [],
+            "name": "invalidUser",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 164
+            },
+            "modifiers": [],
+            "name": "atms1",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 170
+            },
+            "modifiers": [],
+            "name": "atms2",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "atms3",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 183
+            },
+            "modifiers": [],
+            "name": "atms4",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 190
+            },
+            "modifiers": [],
+            "name": "atms5",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

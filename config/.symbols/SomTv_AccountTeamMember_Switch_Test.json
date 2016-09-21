@@ -1,0 +1,502 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KkvxIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KkvxIAC",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 35,
+                "line": 5
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSaveWithoutAddingAgenturSplit",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 101
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createAccountTeamMember",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "account",
+                    "type": "Account"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "sRole",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "AccountTeamMember",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 110
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createSomTvKundeAgenturBeziehung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "accountAgentur",
+                    "type": "Account"
+                },
+                {
+                    "name": "accountKunde",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "returnType": "SomTv_KundeAgenturBeziehung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 122
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createSomTvVerkaeuferzuordnung",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "beziehung",
+                    "type": "SomTv_KundeAgenturBeziehung__c"
+                },
+                {
+                    "name": "user",
+                    "type": "User"
+                },
+                {
+                    "name": "sRole",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomTv_Verkaeuferzuordnung__c",
+            "type": null
+        }
+    ],
+    "name": "SomTv_AccountTeamMember_Switch_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "SomTv_AccountTeamMember_Switch_Test",
+        "references": [],
+        "type": "SomTv_AccountTeamMember_Switch_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "sRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "objAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "objAcc2",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "userIDSales",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "objUserSales",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "objATMSales",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "objBeziehung",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "objVerkaeuferzuordnung",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "userIDAF",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "objUserAf",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "objATMAf",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "sc",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 42
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "SomTv_AccountTeamMember_Switch"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "listRoles",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "listOldUser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "listNewUser",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "BeziehungWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 90,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "account",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 104,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 117,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "sRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 102
+            },
+            "modifiers": [],
+            "name": "AccountTeamMember",
+            "references": [],
+            "type": "AccountTeamMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 91,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 112,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "accountAgentur",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 136,
+                "line": 110
+            },
+            "modifiers": [],
+            "name": "accountKunde",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "KundeAgenturBeziehung",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 87,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 132,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "beziehung",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 148,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 161,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "sRole",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 123
+            },
+            "modifiers": [],
+            "name": "verkaeuferzuordnung",
+            "references": [],
+            "type": "SomTv_Verkaeuferzuordnung__c"
+        }
+    ]
+}

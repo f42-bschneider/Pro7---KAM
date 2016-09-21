@@ -1,0 +1,23 @@
+<apex:page controller="SomTv_OLI_Clone">
+    <apex:pageMessages id="msg" escape="false"/>
+    <apex:form >
+        <apex:pageBlock title="Clone Opportunity Products">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!startClone}" value="{!$Label.SomTv_StartClone}" rerender="msg"/>
+                <apex:commandButton action="{!back}" value="{!$Label.SomTv_Back}"/>
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockTable value="{!listOppLineItem}" var="lineItem" >
+                <apex:column >
+                    <apex:facet name="header">{!$ObjectType.OpportunityLineItem.fields.SomTv_NumberOfTimesToClone__c.label}</apex:facet>
+                    <apex:inputField value="{!lineItem.SomTv_NumberOfTimesToClone__c}"/>
+                </apex:column>
+                <apex:column value="{!lineItem.PricebookEntry.Product2.Name}"/>
+                <apex:column value="{!lineItem.Quantity}"/>
+                <apex:column value="{!lineItem.ListPrice}"/>
+                <apex:column value="{!lineItem.UnitPrice}"/>
+                <apex:column value="{!lineItem.TotalPrice}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

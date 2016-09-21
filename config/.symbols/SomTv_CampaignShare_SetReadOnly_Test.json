@@ -1,0 +1,110 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gK8AAI",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gK8AAI",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 29,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "CampaignMember_UpdateSharingRecords",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_CampaignShare_SetReadOnly_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "SomTv_CampaignShare_SetReadOnly_Test",
+        "references": [],
+        "type": "SomTv_CampaignShare_SetReadOnly_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "profileID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "cam",
+            "references": [],
+            "type": "Campaign"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "cs",
+            "references": [],
+            "type": "CampaignShare"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "csUpdated",
+            "references": [],
+            "type": "CampaignShare"
+        }
+    ]
+}

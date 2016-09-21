@@ -1,0 +1,353 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010gHKAAY",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010gHKAAY",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 23
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "test_Batch",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 47
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testScheduleForBatch",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 83
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBatchMethod_Execute",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 100
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBatchMethod_Finish",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 114
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_BatchAccountTeamTest",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 16
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "dateToday",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 17
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "maxNumber",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 18
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "lstAccount",
+            "references": [],
+            "type": "LIST"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 15
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "P7S1_BatchAccountTeamTest",
+        "references": [],
+        "type": "P7S1_BatchAccountTeamTest"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "a",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "newBatch",
+            "references": [],
+            "type": "P7S1_BatchAccountTeam"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "dtToday",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "dtNextRun",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "ss",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "mm",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "hh",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "d",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "m",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "y",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "jobName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "ScheduleParam",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "jobId",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 68
+            },
+            "modifiers": [],
+            "name": "ct",
+            "references": [],
+            "type": "CronTrigger"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "batchHelper",
+            "references": [],
+            "type": "P7S1_BatchAccountTeamHelper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 104
+            },
+            "modifiers": [],
+            "name": "batchHelper",
+            "references": [],
+            "type": "P7S1_BatchAccountTeamHelper"
+        }
+    ]
+}

@@ -1,0 +1,1478 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgmjIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgmjIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getSachkonto",
+            "parameters": [
+                {
+                    "name": "typ",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Sachkonto__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 29
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getMediagattungsSegment",
+            "parameters": [
+                {
+                    "name": "typ",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_MediagattungsSegment__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 34
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getZahlungsbedingung",
+            "parameters": [],
+            "references": [],
+            "returnType": "SomDig_Zahlungsbedingung__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 39
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAccount",
+            "parameters": [
+                {
+                    "name": "intern",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "Account",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 46
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAuftragstyp",
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Auftragstyp__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 50
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getPricelist",
+            "parameters": [
+                {
+                    "name": "auftragstyp",
+                    "type": "SomDig_Auftragstyp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Pricelist__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 55
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getMediaCampaign",
+            "parameters": [
+                {
+                    "name": "acc",
+                    "type": "Account"
+                },
+                {
+                    "name": "plist",
+                    "type": "ADvendio__Pricelist__c"
+                },
+                {
+                    "name": "zahlungsbedingung",
+                    "type": "SomDig_Zahlungsbedingung__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__MediaCampaign__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 61
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getPlacement",
+            "parameters": [
+                {
+                    "name": "mgs",
+                    "type": "SomDig_MediagattungsSegment__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Placement__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 67
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAdSpec",
+            "parameters": [
+                {
+                    "name": "pl",
+                    "type": "ADvendio__Placement__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_Specs__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 71
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getAdPrice",
+            "parameters": [
+                {
+                    "name": "asp",
+                    "type": "ADvendio__Ad_Specs__c"
+                },
+                {
+                    "name": "plist",
+                    "type": "ADvendio__Pricelist__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Ad_price__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 75
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getCampaignItem",
+            "parameters": [
+                {
+                    "name": "mc",
+                    "type": "ADvendio__MediaCampaign__c"
+                },
+                {
+                    "name": "ap",
+                    "type": "ADvendio__Ad_price__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Campaign_Item__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 82
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getInvoice",
+            "parameters": [
+                {
+                    "name": "mc",
+                    "type": "ADvendio__MediaCampaign__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__Invoice__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 87
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getInvoiceItem",
+            "parameters": [
+                {
+                    "name": "inv",
+                    "type": "ADvendio__Invoice__c"
+                },
+                {
+                    "name": "ci",
+                    "type": "ADvendio__Campaign_Item__c"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__InvoiceItem__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 150
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 17,
+                "line": 257
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testBuchungssatzFaktura",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 313
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testSAPDateiUpload",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Buchungssatz_Faktura_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 98
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "plMedia",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 99
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "plNoMedia",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 100
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "accIntern",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 101
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "accExtern",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 102
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "auftBarter",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 103
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "auftNoBarter",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 104
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "plistBarter",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 105
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "plistNoBarter",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 106
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcInternBarter1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 107
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcInternNoBarter1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 108
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternBarter1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 109
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternNoBarter1",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 110
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternNoBarter2",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 111
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mgsMedia",
+            "references": [],
+            "type": "SomDig_MediagattungsSegment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 43,
+                "line": 112
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mgsNoMedia",
+            "references": [],
+            "type": "SomDig_MediagattungsSegment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 113
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "asMedia",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 114
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "asNoMedia",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 115
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "priceNoMediaNoBarter",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 116
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "priceNoMediaBarter",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 117
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "priceMediaNoBarter",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 118
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "priceMediaBarter",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 119
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcInternBarter1_ciMedia1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 120
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcInternBarter1_ciMedia2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 121
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcInternNoBarter1_ciMedia1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 122
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcInternNoBarter1_ciMedia2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 123
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternBarter1_ciMedia1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 124
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternBarter1_ciMedia2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 125
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternNoBarter1_ciNoMedia1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 126
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternNoBarter1_ciNoMedia2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 127
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternNoBarter2_ciMedia1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 128
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "mcExternNoBarter2_ciNoMedia2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 130
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceInternBarter",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 131
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceInternNoBarter",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 132
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternBarter",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 133
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternNoBarter",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 134
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternNoBarter2",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 135
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceInternItemBarterMedia1",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 136
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceInternItemBarterMedia2",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 137
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceItemInternNoBarterMedia1",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 138
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceItemInternNoBarterMedia2",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 139
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternItemBarterMedia1",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 140
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternItemBarterMedia2",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 141
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternItemNoBarterNoMedia1",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 142
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternItemNoBarterNoMedia2",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 143
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternItemNoBarterMedia",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 144
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "invoiceExternItemNoBarterNoMedia",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 145
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "skBarter",
+            "references": [],
+            "type": "SomDig_Sachkonto__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 146
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "skIntern",
+            "references": [],
+            "type": "SomDig_Sachkonto__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 147
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "skMedia",
+            "references": [],
+            "type": "SomDig_Sachkonto__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 148
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "skNonMedia",
+            "references": [],
+            "type": "SomDig_Sachkonto__c"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 27,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "SomDig_Buchungssatz_Faktura_Test",
+        "references": [],
+        "type": "SomDig_Buchungssatz_Faktura_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 4
+            },
+            "modifiers": [],
+            "name": "typ",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 5
+            },
+            "modifiers": [],
+            "name": "sk",
+            "references": [],
+            "type": "SomDig_Sachkonto__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 74,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "typ",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "mgs",
+            "references": [],
+            "type": "SomDig_MediagattungsSegment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "zb",
+            "references": [],
+            "type": "SomDig_Zahlungsbedingung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 39,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "intern",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "plist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 92,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "plist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 127,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "zahlungsbedingung",
+            "references": [],
+            "type": "SomDig_Zahlungsbedingung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 79,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "mgs",
+            "references": [],
+            "type": "SomDig_MediagattungsSegment__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "pl",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 67
+            },
+            "modifiers": [],
+            "name": "pl",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "asp",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "plist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 75
+            },
+            "modifiers": [],
+            "name": "ap",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 76
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "mc",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "inv",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 73,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "inv",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 105,
+                "line": 87
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "ii",
+            "references": [],
+            "type": "ADvendio__InvoiceItem__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 188
+            },
+            "modifiers": [],
+            "name": "zahlungsbedingung",
+            "references": [],
+            "type": "SomDig_Zahlungsbedingung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 264
+            },
+            "modifiers": [],
+            "name": "ext",
+            "references": [],
+            "type": "P7S1_ExternalId__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 271
+            },
+            "modifiers": [],
+            "name": "invs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 291
+            },
+            "modifiers": [],
+            "name": "faktura",
+            "references": [],
+            "type": "SomDig_Buchungssatz_Faktura"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 292
+            },
+            "modifiers": [],
+            "name": "invoices",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 296
+            },
+            "modifiers": [],
+            "name": "invoice",
+            "references": [],
+            "type": "ADvendio__Invoice__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 315
+            },
+            "modifiers": [],
+            "name": "bs1",
+            "references": [],
+            "type": "SomDig_Buchungssatz__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 321
+            },
+            "modifiers": [],
+            "name": "sapDatei0",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 322
+            },
+            "modifiers": [],
+            "name": "sapDatei1",
+            "references": [],
+            "type": "SomDig_SapDatei__c"
+        }
+    ]
+}

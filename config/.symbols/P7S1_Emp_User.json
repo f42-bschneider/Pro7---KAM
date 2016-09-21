@@ -1,0 +1,564 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000Kf2eIAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000Kf2eIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "syncInsert",
+            "parameters": [
+                {
+                    "name": "newEmpList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 23
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setName",
+            "parameters": [
+                {
+                    "name": "newEmpList",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 30
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getFormattedName",
+            "parameters": [
+                {
+                    "name": "emp",
+                    "type": "P7S1_Emp__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 36
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "sync",
+            "parameters": [
+                {
+                    "name": "newEmpMap",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 132
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "fillValues",
+            "parameters": [
+                {
+                    "name": "p_oUsr",
+                    "type": "User"
+                },
+                {
+                    "name": "p_oEmp",
+                    "type": "P7S1_Emp__c"
+                },
+                {
+                    "name": "p_bInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_sSandbox",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Emp_User",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "i_bIsTest",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 11
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "i_oMapRoles",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 14
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "i_oMapUserQueue",
+            "references": [],
+            "type": "Map"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_Emp_User",
+        "references": [],
+        "type": "P7S1_Emp_User"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "newEmpList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "newEmpList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "formattedName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "newEmpMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "l_sSandbox",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 41
+            },
+            "modifiers": [],
+            "name": "l_oRole",
+            "references": [],
+            "type": "UserRole"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 54
+            },
+            "modifiers": [],
+            "name": "empMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "l_sSetUsernames",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 69
+            },
+            "modifiers": [],
+            "name": "usersToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "usersToUpdate",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "l_oMapUsernameUser",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 74
+            },
+            "modifiers": [],
+            "name": "emp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "usr",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "empId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "l_oEmp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 85
+            },
+            "modifiers": [],
+            "name": "usersForEmp",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 90
+            },
+            "modifiers": [],
+            "name": "l_oUsr",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 97
+            },
+            "modifiers": [],
+            "name": "l_oUsr",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 106
+            },
+            "modifiers": [],
+            "name": "dlo",
+            "references": [],
+            "type": "DMLOptions"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "usr",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "l_oQueue",
+            "references": [],
+            "type": "P7S1_Emp_UserQueue"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 127
+            },
+            "modifiers": [],
+            "name": "jobID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "p_oUsr",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "p_oEmp",
+            "references": [],
+            "type": "P7S1_Emp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 78,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "p_bInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 96,
+                "line": 132
+            },
+            "modifiers": [],
+            "name": "p_sSandbox",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 135
+            },
+            "modifiers": [],
+            "name": "l_sAlias",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "l_oUserQueue",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 176
+            },
+            "modifiers": [],
+            "name": "listManager",
+            "references": [],
+            "type": "LIST"
+        }
+    ]
+}

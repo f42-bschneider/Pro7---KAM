@@ -1,0 +1,584 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010duoAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010duoAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 46
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "toSfPortalLogin",
+            "parameters": [],
+            "references": [],
+            "returnType": "P7S1_PortalLogin__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 39
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "parse",
+            "parameters": [
+                {
+                    "name": "json",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_Liferay_RegistrationFormBean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 83
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getP7S1_UnternehmensartFromEnum",
+            "parameters": [
+                {
+                    "name": "companyType",
+                    "type": "P7S1_Liferay_EnumCompanyType"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 98
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getP7S1_UnternehmensartFromString",
+            "parameters": [
+                {
+                    "name": "companyType",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 111
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getCountryLabelForLiferayCountryId",
+            "parameters": [
+                {
+                    "name": "liferayCountryId",
+                    "type": "Long"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_RegistrationFormBean",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "male",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "id",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "portal",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 12
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "activationLink",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 13
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "title",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "firstName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "lastName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 16
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "jobTitle",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 17
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "area",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 18
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyType",
+            "references": [],
+            "type": "P7S1_Liferay_EnumCompanyType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 20
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyAddressPOBox",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 21
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyStreetAddress",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 22
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyStreetNumber",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 23
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyCity",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 24
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyZip",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 25
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyPOBox",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 26
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyPhone",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 27
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "dateOfBirth",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 28
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyFax",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 29
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "email",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "password",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 31
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "passwordRepeat",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 32
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "requestObs",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "acceptTerms",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 34
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "acceptPrivacyTerms",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 35
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "companyCountry",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 36
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "mobile",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 37
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newsletter",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 7
+        },
+        "modifiers": [
+            "global",
+            "with sharing"
+        ],
+        "name": "P7S1_Liferay_RegistrationFormBean",
+        "references": [],
+        "type": "P7S1_Liferay_RegistrationFormBean"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "json",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 88,
+                "line": 83
+            },
+            "modifiers": [],
+            "name": "companyType",
+            "references": [],
+            "type": "P7S1_Liferay_EnumCompanyType"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "unternahemnsArt",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 98
+            },
+            "modifiers": [],
+            "name": "companyType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 111
+            },
+            "modifiers": [],
+            "name": "liferayCountryId",
+            "references": [],
+            "type": "Long"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "countryList",
+            "references": [],
+            "type": "P7S1_Liferay_Countrylist__c"
+        }
+    ]
+}

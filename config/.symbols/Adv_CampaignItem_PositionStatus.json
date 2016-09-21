@@ -1,0 +1,438 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p57000000KnnqAAC",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p57000000KnnqAAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "setStatus",
+            "parameters": [
+                {
+                    "name": "isAfter",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isBefore",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isDelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isInsert",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUndelete",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "isUpdate",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "lstNewItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapNewItems",
+                    "type": "Map"
+                },
+                {
+                    "name": "lstOldItems",
+                    "type": "LIST"
+                },
+                {
+                    "name": "mapOldItems",
+                    "type": "Map"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_PositionStatus",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 6
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "Adv_CampaignItem_PositionStatus",
+        "references": [],
+        "type": "Adv_CampaignItem_PositionStatus"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isAfter",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isBefore",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isDelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 95,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isInsert",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 113,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isUndelete",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 133,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "isUpdate",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 157,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "lstNewItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 187,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "mapNewItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 214,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "lstOldItems",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 244,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "mapOldItems",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "mapRecordTypes",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "ci",
+            "references": [],
+            "type": "SObject"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "o",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "bMotivGebucht",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "sADServerStatus",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "sBillingCat",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "sSubmitStatus",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "sOptiExclusion",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 22
+            },
+            "modifiers": [],
+            "name": "sRT",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "dDeliveredImp",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "dDeliveredClick",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "dSollbisHeute",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "dQuan",
+            "references": [],
+            "type": "Double"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "dtNull",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "Now",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 32
+            },
+            "modifiers": [],
+            "name": "BD",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 33
+            },
+            "modifiers": [],
+            "name": "AOD",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 34
+            },
+            "modifiers": [],
+            "name": "UFD",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "SAD",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "SAS",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 37
+            },
+            "modifiers": [],
+            "name": "Until",
+            "references": [],
+            "type": "Datetime"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "FromDate",
+            "references": [],
+            "type": "Datetime"
+        }
+    ]
+}

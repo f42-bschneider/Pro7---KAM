@@ -1,0 +1,668 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KghRIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KghRIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "TestSetup"
+                }
+            ],
+            "location": {
+                "column": 17,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "createTestData",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 25
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "addingPreismerkmal",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 47
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "addingMediagattungsDifferenzierung",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 69
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "addingAuftragstyp",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 91
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "addingRotationstyp",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 28,
+                "line": 112
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "addingWerbeformdatensatztyp",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 137
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestInventarklasse",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "nummer",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "SomDig_Inventarklasse__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 146
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestRateCategory",
+            "parameters": [
+                {
+                    "name": "insertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "name",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "ADvendio__RateCategory__c",
+            "type": null
+        }
+    ],
+    "name": "Adv_CampaignItem_Inventarklasse_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 136
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "Inventarklasse_TestData",
+            "references": [],
+            "type": "SomDig_Inventarklasse__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 145
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "RateCategory_TestData",
+            "references": [],
+            "type": "ADvendio__RateCategory__c"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 28,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod",
+            "with sharing"
+        ],
+        "name": "Adv_CampaignItem_Inventarklasse_Test",
+        "references": [],
+        "type": "Adv_CampaignItem_Inventarklasse_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "pricelist",
+            "references": [],
+            "type": "ADvendio__Pricelist__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "mgDiff",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "preismerkmal",
+            "references": [],
+            "type": "ADvendio__RateCategory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "adType",
+            "references": [],
+            "type": "ADvendio__Ad_Type__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "placement",
+            "references": [],
+            "type": "ADvendio__Placement__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "adSpec",
+            "references": [],
+            "type": "ADvendio__Ad_Specs__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "campaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "preismerkmal",
+            "references": [],
+            "type": "ADvendio__RateCategory__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "inventarklasse",
+            "references": [],
+            "type": "SomDig_Inventarklasse__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 40
+            },
+            "modifiers": [],
+            "name": "campaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 48
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "campaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "mgDiff",
+            "references": [],
+            "type": "SomDig_MediagattungsDifferenzierung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "inventarklasse",
+            "references": [],
+            "type": "SomDig_Inventarklasse__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 62
+            },
+            "modifiers": [],
+            "name": "campaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 70
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 71
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 73
+            },
+            "modifiers": [],
+            "name": "campaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 79
+            },
+            "modifiers": [],
+            "name": "auftragstyp",
+            "references": [],
+            "type": "SomDig_Auftragstyp__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 80
+            },
+            "modifiers": [],
+            "name": "inventarklasse",
+            "references": [],
+            "type": "SomDig_Inventarklasse__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "campaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 93
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 95
+            },
+            "modifiers": [],
+            "name": "campaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 101
+            },
+            "modifiers": [],
+            "name": "inventarklasse",
+            "references": [],
+            "type": "SomDig_Inventarklasse__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "campaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 113
+            },
+            "modifiers": [],
+            "name": "mediaCampaign",
+            "references": [],
+            "type": "ADvendio__MediaCampaign__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "adPrice",
+            "references": [],
+            "type": "ADvendio__Ad_price__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 116
+            },
+            "modifiers": [],
+            "name": "campaignItem1",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "inventarklasse",
+            "references": [],
+            "type": "SomDig_Inventarklasse__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 126
+            },
+            "modifiers": [],
+            "name": "campaignItem2",
+            "references": [],
+            "type": "ADvendio__Campaign_Item__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 77,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 98,
+                "line": 137
+            },
+            "modifiers": [],
+            "name": "nummer",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "insertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 97,
+                "line": 146
+            },
+            "modifiers": [],
+            "name": "name",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+<!--
+    Page Name    : Adv_CampaignItem_PositionReportCSV
+    Description  : This page is used to export the Position Report in either Excel or CSV format
+    Created By   : Cognizant Technology Solutions
+    Created On   : 5/12/2014
+-->
+<apex:page controller="Adv_CampaignItem_PositionReport"  cache="true" sidebar="false" contenttype="{!i_sContentType}">
+<apex:outputText rendered="{!IF(i_sSelectedContentType== 'Excel Format',true,false)}">
+<head>
+    <meta http-equiv="Content-Type" content="text/csv;charset=UTF-8" />
+</head>
+</apex:outputText>
+<apex:outputText value="{!i_sReportData}" rendered="{!IF(i_sSelectedContentType== 'CSV Format',true,false)}"/>
+
+<apex:outputPanel rendered="{!IF(i_sSelectedContentType== 'Excel Format',true,false)}">
+
+     <b><apex:outputText value="{!i_sFileName}"/> </b>
+     <br></br>
+       <!-- Display Column Headings of Report -->
+       <table style="border:1px solid black;border-collapse:collapse;">
+             <tr class="headerRow" style="border:1px solid black;">
+                <th style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Status_Pos}{!IF(i_sSortField=='SomDig_PositionStatus__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Pos_Nr_PR}{!IF(i_sSortField=='ADvendio__PositionNumber__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.DFP_Pos_Nr_PR}{!IF(i_sSortField=='SomDig_LineItemInAdServer__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Werbemittel_PR}{!IF(i_sSortField=='Name',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Werbetreibender_PR}{!IF(i_sSortField=='ADvendio__Media_Campaign__r.ADvendio__Account__r.Name',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+
+                 </th>
+                 <th style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Start_PR}{!IF(i_sSortField=='ADvendio__from_Date__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+
+                 </th>
+                    <th style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Ende_PR}{!IF(i_sSortField=='ADvendio__until_Date__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                   </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Abrechnungsart_PR}{!IF(i_sSortField=='ADvendio__Billing_category__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Menge_PR}{!IF(i_sSortField=='ADvendio__Quantity__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.SOLL_aktuell_PR}{!IF(i_sSortField=='SomDig_AIClicksSollBisHeute__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.IST_aktuell_PR}{!IF(i_sSortField=='SomDig_AiClicksIst__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.risk}{!IF(i_sSortField=='SomDig_Risk__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.DFP_Prognose_PR}{!IF(i_sSortField=='ADvendio__PerformanceIndicator__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Screenshot_PR}{!IF(i_sSortField=='Status_Screenshot__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Kommentar_PR}{!IF(i_sSortField=='SomDig_PAMKommentar__c',IF(i_sSortDirection='asc','▲','▼'),'')}"/>
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.MB3_PR}"/>
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.MN2_PR}"/>
+                 </th>
+                 <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.eTKP_PR}"/>
+                 </th>
+                  <th class="headerRow" style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;">
+                         <apex:outputText value="{!$Label.Inhaber}{!IF(i_sSortField=='SomDig_Inhaber_Kuerzel__c',IF(i_sSortDirection='asc','▲','▼'),'')}" />
+                 </th>
+                 </tr>
+                 <apex:repeat value="{!i_oListMediaCampaignReport}" var="media">
+                     <!-- Display Grouped Row by Campaign Name -->
+                     <tr bgcolor="#ddddee" class="dataRow even  first  last" >
+
+                         <td class="dataCell" colspan="19" style="border:2px solid black;text-align:left;font-family : Arial;color:#333333;font-size:8pt;">
+                        <b><u>
+                         <apex:outputField value="{!media.ADvendio__Offer_Number__c}"/> / {!media.ADvendio__Account__r.Name} /
+                        {!media.Name}</u></b>
+                        - {!media.ADvendio__Advertising_Media__r.size} records
+                         </td>
+
+                     </tr>
+                     <!-- Display Columns of Report -->
+                     <apex:repeat value="{!media.ADvendio__Advertising_Media__r}" var="item">
+                         <tr>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_PositionStatus__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__PositionNumber__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_LineItemInAdServer__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.Name}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__Media_Campaign__r.ADvendio__Account__r.Name}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__from_Date__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__until_Date__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__Billing_category__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__Quantity__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_AIClicksSollBisHeute__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_AiClicksIst__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_Risk__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__PerformanceIndicator__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.Status_Screenshot__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_PAMKommentar__c}" /></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__Amount_B3__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__Amount_net_net__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.ADvendio__eCPC__c}"/></td>
+                             <td style="border:2px solid black;text-align:center;font-family : Arial;color:#333333;font-size:8pt;"><apex:outputField value="{!item.SomDig_Inhaber_Kuerzel__c}"/></td>
+                         </tr>
+                     </apex:repeat>
+
+                 </apex:repeat>
+             </table>
+
+
+  </apex:outputPanel>
+</apex:page>

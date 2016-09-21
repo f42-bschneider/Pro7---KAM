@@ -1,0 +1,451 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cls_Som_Kontaktbericht",
+            "parameters": [
+                {
+                    "name": "controller",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000K1i5IAC",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "KontaktberichtException",
+            "namespace": null,
+            "parentClass": "Exception",
+            "properties": [],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 161
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "KontaktberichtException",
+                "references": [],
+                "type": "KontaktberichtException"
+            },
+            "variables": []
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000K1i5IAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 23
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setMessage",
+            "parameters": [
+                {
+                    "name": "severity",
+                    "type": "Severity"
+                },
+                {
+                    "name": "msg",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 31
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setError",
+            "parameters": [
+                {
+                    "name": "msg",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 38
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "backToEvent",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createVisitReport",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 32,
+                "line": 163
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "createVisitReportTest",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_Som_Kontaktbericht",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 11
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "eventId",
+            "references": [],
+            "type": "Id"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 8
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "cls_Som_Kontaktbericht",
+        "references": [],
+        "type": "cls_Som_Kontaktbericht"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 61,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "severity",
+            "references": [],
+            "type": "Severity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 43
+            },
+            "modifiers": [],
+            "name": "idString",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 38,
+                "line": 44
+            },
+            "modifiers": [],
+            "name": "tnList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "attendeeByConId",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "vreport",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "existingVR",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 49
+            },
+            "modifiers": [],
+            "name": "event",
+            "references": [],
+            "type": "Event"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 55
+            },
+            "modifiers": [],
+            "name": "vr",
+            "references": [],
+            "type": "Som_Kontaktbericht__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "att",
+            "references": [],
+            "type": "Som_KontaktberichtContact__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "attendee",
+            "references": [],
+            "type": "EventAttendee"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 35,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "tn",
+            "references": [],
+            "type": "Som_KontaktberichtContact__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "user",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 103
+            },
+            "modifiers": [],
+            "name": "contact",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 165
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 167
+            },
+            "modifiers": [],
+            "name": "opp",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 178
+            },
+            "modifiers": [],
+            "name": "con",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 186
+            },
+            "modifiers": [],
+            "name": "event_1",
+            "references": [],
+            "type": "Event"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 191
+            },
+            "modifiers": [],
+            "name": "ctrl",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 192
+            },
+            "modifiers": [],
+            "name": "kb",
+            "references": [],
+            "type": "cls_Som_Kontaktbericht"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 32,
+                "line": 195
+            },
+            "modifiers": [],
+            "name": "ctrl2",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 196
+            },
+            "modifiers": [],
+            "name": "kb2",
+            "references": [],
+            "type": "cls_Som_Kontaktbericht"
+        }
+    ]
+}

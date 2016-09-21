@@ -1,0 +1,128 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010d2ZAAQ",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010d2ZAAQ",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "CheckSharing",
+            "parameters": [
+                {
+                    "name": "listCampaignMember",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "P7S1_CampaignMember_ReadOnlyBlock",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 6
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "P7S1_CampaignMember_ReadOnlyBlock",
+        "references": [],
+        "type": "P7S1_CampaignMember_ReadOnlyBlock"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "listCampaignMember",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "userID",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "userOrGroupIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "gm",
+            "references": [],
+            "type": "GroupMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 23
+            },
+            "modifiers": [],
+            "name": "cm",
+            "references": [],
+            "type": "CampaignMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "cs",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 39
+            },
+            "modifiers": [],
+            "name": "camMem",
+            "references": [],
+            "type": "CampaignMember"
+        }
+    ]
+}

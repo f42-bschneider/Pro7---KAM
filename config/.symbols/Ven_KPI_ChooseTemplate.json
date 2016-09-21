@@ -1,0 +1,1003 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 57
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "Ven_KPI_ChooseTemplate",
+            "parameters": [
+                {
+                    "name": "controller",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000KgdyIAC",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 468
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "KPIrow",
+                    "parameters": [
+                        {
+                            "name": "kpi",
+                            "type": "Ven_Key_Performance_Indicator__c"
+                        },
+                        {
+                            "name": "checked",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "KPIrow",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 49,
+                        "line": 465
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "kpi",
+                    "references": [],
+                    "type": "Ven_Key_Performance_Indicator__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 466
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "checked",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 464
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "KPIrow",
+                "references": [],
+                "type": "KPIrow"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 56,
+                        "line": 468
+                    },
+                    "modifiers": [],
+                    "name": "kpi",
+                    "references": [],
+                    "type": "Ven_Key_Performance_Indicator__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 69,
+                        "line": 468
+                    },
+                    "modifiers": [],
+                    "name": "checked",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000KgdyIAC",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 68
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "showKPITemplatePB",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 82
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "actionNewKPITemplate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 94
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "showNewKPITemplate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 110
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "openStrategicReport",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 132
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "actionAddToKPITemplate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 149
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "actionNewKPIBlock",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 168
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getKPIrows",
+            "parameters": [
+                {
+                    "name": "kpis",
+                    "type": "LIST"
+                }
+            ],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 189
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "showNewKPIBlock",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 199
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveNewKPITemplate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 231
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "actionRemoveKPIBlock",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 247
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "backToKPITemplatePB",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 260
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveNewKPIBlock",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 293
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "checkSelIdSet",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 314
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "backToNewKPITemplatePB",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 323
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "toggleCheckboxes",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 338
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "toggleCurrentCheckboxes",
+            "parameters": [
+                {
+                    "name": "inputValue",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 350
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getAllKPIIds",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 366
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "getKPIQueryStr",
+            "parameters": [],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 382
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "first",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 391
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "last",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 400
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "next",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 409
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "previous",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 418
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setPageSize",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 431
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getCurrentResultSizeFrom",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 442
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getCurrentResultSizeTo",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 453
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getPageNumberSize",
+            "parameters": [],
+            "references": [],
+            "returnType": "Integer",
+            "type": null
+        }
+    ],
+    "name": "Ven_KPI_ChooseTemplate",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 56,
+                "line": 4
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "kpiteInputHelper",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplateEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 5
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "oppInputHelper",
+            "references": [],
+            "type": "Opportunity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 8
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "renderKPITemplatePB",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 9
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "renderNewKPITemplatePB",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 10
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "renderAddedKPIBlocks",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "renderNewKPIBlockPB",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 51,
+                "line": 14
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newKPITemplate",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplate__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 15
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newKPIBlock",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 18
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "oppIdStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 21
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "selKPIIds",
+            "references": [],
+            "type": "Set"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 57,
+                "line": 30
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "kpiBlockMap",
+            "references": [],
+            "type": "Map"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 33
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "kpiBlockIdToRemove",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 36
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setController",
+            "references": [],
+            "type": "StandardSetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 39
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "currentKPIrows",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 19,
+                "line": 42
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "pageSize",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 45
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "inputSelectAllChecked",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Ven_KPI_ChooseTemplate",
+        "references": [],
+        "type": "Ven_KPI_ChooseTemplate"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 57
+            },
+            "modifiers": [],
+            "name": "controller",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "pageRef",
+            "references": [],
+            "type": "PageReference"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 55,
+                "line": 134
+            },
+            "modifiers": [],
+            "name": "kpiBlocks",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 76,
+                "line": 168
+            },
+            "modifiers": [],
+            "name": "kpis",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 169
+            },
+            "modifiers": [],
+            "name": "kpiRows",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 171
+            },
+            "modifiers": [],
+            "name": "kpi",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 172
+            },
+            "modifiers": [],
+            "name": "checked",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 204
+            },
+            "modifiers": [],
+            "name": "kpiTemplateEntriesToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 58,
+                "line": 206
+            },
+            "modifiers": [],
+            "name": "kpiBlock",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlock__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 65,
+                "line": 207
+            },
+            "modifiers": [],
+            "name": "newKPITemplateEntry",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorTemplateEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 64,
+                "line": 267
+            },
+            "modifiers": [],
+            "name": "kpiBlockEntriesToInsert",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 269
+            },
+            "modifiers": [],
+            "name": "selKPIId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 270
+            },
+            "modifiers": [],
+            "name": "newKPIBlockEntry",
+            "references": [],
+            "type": "Ven_KeyPerformanceIndicatorBlockEntry__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 294
+            },
+            "modifiers": [],
+            "name": "kpiRow",
+            "references": [],
+            "type": "KPIrow"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 338
+            },
+            "modifiers": [],
+            "name": "inputValue",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 339
+            },
+            "modifiers": [],
+            "name": "kpiRow",
+            "references": [],
+            "type": "KPIrow"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 18,
+                "line": 351
+            },
+            "modifiers": [],
+            "name": "allKPIIds",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 353
+            },
+            "modifiers": [],
+            "name": "kpi",
+            "references": [],
+            "type": "Ven_Key_Performance_Indicator__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 367
+            },
+            "modifiers": [],
+            "name": "kpiQueryStr",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 432
+            },
+            "modifiers": [],
+            "name": "currentResultSizeFrom",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 443
+            },
+            "modifiers": [],
+            "name": "currentResultSizeTo",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 454
+            },
+            "modifiers": [],
+            "name": "pageNumberSize",
+            "references": [],
+            "type": "Integer"
+        }
+    ]
+}

@@ -1,0 +1,336 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KaJtIAK",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KaJtIAK",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 6
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "createTestUser",
+            "parameters": [
+                {
+                    "name": "p_bInsertObject",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "p_sSphere",
+                    "type": "String"
+                },
+                {
+                    "name": "p_sProfileId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "User",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 30
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "checkGroupMember",
+            "parameters": [
+                {
+                    "name": "p_oUser",
+                    "type": "User"
+                },
+                {
+                    "name": "p_sGroupType",
+                    "type": "String"
+                },
+                {
+                    "name": "p_sGroupName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 45
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testInsert",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 25,
+                "line": 58
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "testMethod"
+            ],
+            "name": "testUpdate",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "cls_P7S1_GroupMember_SphereProfile_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 4
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "User_TestData",
+            "references": [],
+            "type": "User"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 15,
+            "line": 2
+        },
+        "modifiers": [
+            "private",
+            "testMethod"
+        ],
+        "name": "cls_P7S1_GroupMember_SphereProfile_Test",
+        "references": [],
+        "type": "cls_P7S1_GroupMember_SphereProfile_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "p_bInsertObject",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 68,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "p_sSphere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 82,
+                "line": 6
+            },
+            "modifiers": [],
+            "name": "p_sProfileId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 7
+            },
+            "modifiers": [],
+            "name": "l_sRandomName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 37,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "p_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "p_sGroupType",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 30
+            },
+            "modifiers": [],
+            "name": "p_sGroupName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 35
+            },
+            "modifiers": [],
+            "name": "l_oGroupMember",
+            "references": [],
+            "type": "GroupMember"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "l_sSoql",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "l_oGroupMembers",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "l_sSphere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "l_sProfileId1",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 51
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "l_sSphere",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 60
+            },
+            "modifiers": [],
+            "name": "l_sProfileId1",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 61
+            },
+            "modifiers": [],
+            "name": "l_sProfileId2",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 8,
+                "line": 65
+            },
+            "modifiers": [],
+            "name": "l_oUser",
+            "references": [],
+            "type": "User"
+        }
+    ]
+}

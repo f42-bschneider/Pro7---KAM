@@ -1,0 +1,990 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 181
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "CapTableEditorController",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 184
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "CapTableEditorController",
+            "parameters": [
+                {
+                    "name": "accParam",
+                    "type": "Account"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01pD0000000JUdmIAG",
+    "innerClasses": [
+        {
+            "constructors": [],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 80
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getNewestRound",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "Ven_Round__c",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 15,
+                        "line": 83
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "setNewestRound",
+                    "parameters": [
+                        {
+                            "name": "newValue",
+                            "type": "Ven_Round__c"
+                        }
+                    ],
+                    "references": [],
+                    "returnType": "void",
+                    "type": null
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 29,
+                        "line": 88
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "getNewestRoundShares",
+                    "parameters": [],
+                    "references": [],
+                    "returnType": "LIST",
+                    "type": null
+                }
+            ],
+            "name": "NewestRoundWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 78
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "newestRound",
+                    "references": [],
+                    "type": "Ven_Round__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 18,
+                        "line": 86
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "newestRoundIsInDatabase",
+                    "references": [],
+                    "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 29,
+                        "line": 91
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "newestRoundShares",
+                    "references": [],
+                    "type": "LIST"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 23,
+                        "line": 101
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "previousNewestRound",
+                    "references": [],
+                    "type": "Ven_Round__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 32,
+                        "line": 104
+                    },
+                    "modifiers": [
+                        "private"
+                    ],
+                    "name": "sharesOfNewestRoundById",
+                    "references": [],
+                    "type": "Map"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 15,
+                    "line": 77
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "NewestRoundWrapper",
+                "references": [],
+                "type": "NewestRoundWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 43,
+                        "line": 83
+                    },
+                    "modifiers": [],
+                    "name": "newValue",
+                    "references": [],
+                    "type": "Ven_Round__c"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01pD0000000JUdmIAG",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 51
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getC",
+            "parameters": [],
+            "references": [],
+            "returnType": "CapTableEditorController",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 57
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getRecordsOfCurrentSetControllerPage",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 68
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getOldRoundsExistFlag",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 106
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getNewestRoundShares",
+            "parameters": [],
+            "references": [],
+            "returnType": "LIST",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 111
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getNewestRound",
+            "parameters": [],
+            "references": [],
+            "returnType": "Ven_Round__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 114
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "getRoundsExistFlag",
+            "parameters": [],
+            "references": [],
+            "returnType": "Boolean",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 122
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setMessage",
+            "parameters": [
+                {
+                    "name": "severity",
+                    "type": "Severity"
+                },
+                {
+                    "name": "msg",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 129
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setError",
+            "parameters": [
+                {
+                    "name": "msg",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 136
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "setInfo",
+            "parameters": [
+                {
+                    "name": "msg",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 143
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "requery",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 178
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "sharesOfNewestRoundByIdRefresh",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 189
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "saveRoundButton",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 215
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "saveRoundButtonFail",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 228
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "recalcSumOfShares",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 232
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "recalcSumOfShares",
+            "parameters": [
+                {
+                    "name": "shareId",
+                    "type": "Id"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 246
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "deleteShare",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 267
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "deleteRoundButton",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 297
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "saveRound",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 356
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "createFirstRound",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 384
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newRound",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 428
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "cancel",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 452
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "edit",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 457
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newShare",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        }
+    ],
+    "name": "CapTableEditorController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 40
+            },
+            "modifiers": [
+                "public",
+                "final"
+            ],
+            "name": "SEVEN_VENTURES_ACCOUNTNUMBER",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 43
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "sevenVenturesAcc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 49
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "renderAsPdf",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 63
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "showSVAndFoundersFieldsFlag",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 64
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "pageSize",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 41,
+                "line": 65
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "setController",
+            "references": [],
+            "type": "StandardSetController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 66
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "editFlag",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 67
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 76
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "roundsOld",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 109
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "newestRoundWrapperInstance",
+            "references": [],
+            "type": "NewestRoundWrapper"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 378
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "roundToBeDeletedIfCanceled",
+            "references": [],
+            "type": "Ven_Round__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 379
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "previousNewestRoundShares",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 456
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "newShare",
+            "references": [],
+            "type": "Ven_Share__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 39
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "DEBUG",
+            "references": [],
+            "type": "Boolean"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 38
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "CapTableEditorController",
+        "references": [],
+        "type": "CapTableEditorController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 45
+            },
+            "modifiers": [],
+            "name": "accList",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 45,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "severity",
+            "references": [],
+            "type": "Severity"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 62,
+                "line": 122
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 129
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 30,
+                "line": 136
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 29,
+                "line": 148
+            },
+            "modifiers": [],
+            "name": "roundsAll",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 63,
+                "line": 181
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 42,
+                "line": 184
+            },
+            "modifiers": [],
+            "name": "accParam",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 190
+            },
+            "modifiers": [],
+            "name": "newestRoundGueltigAbBuffered",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 191
+            },
+            "modifiers": [],
+            "name": "prevRoundBuffered",
+            "references": [],
+            "type": "Ven_Round__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 192
+            },
+            "modifiers": [],
+            "name": "previousNewestRoundGueltigAbBuffered",
+            "references": [],
+            "type": "Date"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 232
+            },
+            "modifiers": [],
+            "name": "shareId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 234
+            },
+            "modifiers": [],
+            "name": "sum",
+            "references": [],
+            "type": "Decimal"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 236
+            },
+            "modifiers": [],
+            "name": "share",
+            "references": [],
+            "type": "Ven_Share__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 7,
+                "line": 248
+            },
+            "modifiers": [],
+            "name": "shareId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 20,
+                "line": 316
+            },
+            "modifiers": [],
+            "name": "newestRoundShares",
+            "references": [],
+            "type": "LIST"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 317
+            },
+            "modifiers": [],
+            "name": "share",
+            "references": [],
+            "type": "Ven_Share__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 392
+            },
+            "modifiers": [],
+            "name": "newRound",
+            "references": [],
+            "type": "Ven_Round__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 413
+            },
+            "modifiers": [],
+            "name": "share",
+            "references": [],
+            "type": "Ven_Share__c"
+        }
+    ]
+}

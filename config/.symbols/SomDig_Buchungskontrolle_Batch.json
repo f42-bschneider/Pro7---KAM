@@ -1,0 +1,160 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KlxZIAS",
+    "innerClasses": [],
+    "interfaces": [
+        "System.Schedulable"
+    ],
+    "key": "01pD0000000KlxZIAS",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 3
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "execute",
+            "parameters": [
+                {
+                    "name": "SC",
+                    "type": "SchedulableContext"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [
+                {
+                    "name": "Future"
+                }
+            ],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "startBuchungskontrolle",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomDig_Buchungskontrolle_Batch",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "SomDig_Buchungskontrolle_Batch",
+        "references": [],
+        "type": "SomDig_Buchungskontrolle_Batch"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 44,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "SC",
+            "references": [],
+            "type": "SchedulableContext"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "username",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 10
+            },
+            "modifiers": [],
+            "name": "password",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "token",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "endpoint",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "binding",
+            "references": [],
+            "type": "Http"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "req",
+            "references": [],
+            "type": "HttpRequest"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "res",
+            "references": [],
+            "type": "HttpResponse"
+        }
+    ]
+}

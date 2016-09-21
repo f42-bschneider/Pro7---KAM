@@ -1,0 +1,254 @@
+{
+    "constructors": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 19
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "P7S1_Liferay_PortalLoginController",
+            "parameters": [
+                {
+                    "name": "stdController",
+                    "type": "StandardController"
+                }
+            ],
+            "references": [],
+            "type": null
+        }
+    ],
+    "externalReferences": [],
+    "id": "01p570000010duhAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010duhAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 56
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "activatePortalLoginUserSF",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 69
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "activatePortalLoginUserLiferay",
+            "parameters": [],
+            "references": [],
+            "returnType": "PageReference",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 27,
+                "line": 82
+            },
+            "modifiers": [
+                "static",
+                "webService",
+                "global"
+            ],
+            "name": "deletePortalLogin",
+            "parameters": [
+                {
+                    "name": "id",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 105
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "getPortalLoginById",
+            "parameters": [
+                {
+                    "name": "portalLoginId",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLogin__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_PortalLoginController",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 9
+            },
+            "modifiers": [
+                "private"
+            ],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 49,
+                "line": 10
+            },
+            "modifiers": [
+                "private",
+                "final"
+            ],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 11
+            },
+            "modifiers": [
+                "public"
+            ],
+            "name": "output",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 8
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "MSG_DEL_FAILED",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 7
+        },
+        "modifiers": [
+            "global"
+        ],
+        "name": "P7S1_Liferay_PortalLoginController",
+        "references": [],
+        "type": "P7S1_Liferay_PortalLoginController"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 75,
+                "line": 19
+            },
+            "modifiers": [],
+            "name": "stdController",
+            "references": [],
+            "type": "StandardController"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 52,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "id",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 84
+            },
+            "modifiers": [],
+            "name": "portalLoginService",
+            "references": [],
+            "type": "P7S1_Liferay_PortalLoginService"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 86
+            },
+            "modifiers": [],
+            "name": "msg",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "ple",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 105
+            },
+            "modifiers": [],
+            "name": "portalLoginId",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

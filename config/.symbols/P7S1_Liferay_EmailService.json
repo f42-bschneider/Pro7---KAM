@@ -1,0 +1,232 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p570000010ducAAA",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01p570000010ducAAA",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 6,
+                "line": 16
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "templateIdByName",
+            "parameters": [
+                {
+                    "name": "developerName",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "Id",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 24
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "getEmailTemplatePrefix",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 36
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "sendEmailFromTemplate",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "name": "portalLoginEvent",
+                    "type": "P7S1_PortalLoginEvent__c"
+                },
+                {
+                    "name": "emailTemplateId",
+                    "type": "Id"
+                },
+                {
+                    "name": "emailAddress",
+                    "type": "String"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLoginEvent__c",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 28,
+                "line": 47
+            },
+            "modifiers": [
+                "public",
+                "abstract"
+            ],
+            "name": "sendEmailFromTemplate",
+            "parameters": [
+                {
+                    "name": "portalLogin",
+                    "type": "P7S1_PortalLogin__c"
+                },
+                {
+                    "name": "emailTemplateId",
+                    "type": "Id"
+                },
+                {
+                    "name": "portalLoginEvent",
+                    "type": "P7S1_PortalLoginEvent__c"
+                }
+            ],
+            "references": [],
+            "returnType": "P7S1_PortalLoginEvent__c",
+            "type": null
+        }
+    ],
+    "name": "P7S1_Liferay_EmailService",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 18,
+            "line": 8
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "P7S1_Liferay_EmailService",
+        "references": [],
+        "type": "P7S1_Liferay_EmailService"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "developerName",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 24
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 108,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 129,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "emailTemplateId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 153,
+                "line": 36
+            },
+            "modifiers": [],
+            "name": "emailAddress",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "portalLogin",
+            "references": [],
+            "type": "P7S1_PortalLogin__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 86,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "emailTemplateId",
+            "references": [],
+            "type": "Id"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 128,
+                "line": 47
+            },
+            "modifiers": [],
+            "name": "portalLoginEvent",
+            "references": [],
+            "type": "P7S1_PortalLoginEvent__c"
+        }
+    ]
+}

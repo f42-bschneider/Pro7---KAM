@@ -1,0 +1,130 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01pD0000000KgnKIAS",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "01pD0000000KgnKIAS",
+    "methods": [
+        {
+            "annotations": [
+                {
+                    "name": "IsTest"
+                }
+            ],
+            "location": {
+                "column": 33,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public",
+                "testMethod"
+            ],
+            "name": "testValidation",
+            "parameters": [],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "SomTv_KundeAgenturBez_ValidateData_Test",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 4
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "VALIDATION_DUPLICATE_KABEZ_IN_LIST",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 5
+            },
+            "modifiers": [
+                "private",
+                "static",
+                "final"
+            ],
+            "name": "VALIDATION_DUPLICATE_KABEZ_IN_SF",
+            "references": [],
+            "type": "String"
+        }
+    ],
+    "tableDeclaration": {
+        "annotations": [
+            {
+                "name": "IsTest"
+            }
+        ],
+        "location": {
+            "column": 14,
+            "line": 2
+        },
+        "modifiers": [
+            "public",
+            "testMethod"
+        ],
+        "name": "SomTv_KundeAgenturBez_ValidateData_Test",
+        "references": [],
+        "type": "SomTv_KundeAgenturBez_ValidateData_Test"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 8
+            },
+            "modifiers": [],
+            "name": "acc",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 11
+            },
+            "modifiers": [],
+            "name": "kaBez1",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 12
+            },
+            "modifiers": [],
+            "name": "kaBez2",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 36,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "kaBez3",
+            "references": [],
+            "type": "SomTv_KundeAgenturBeziehung__c"
+        }
+    ]
+}
