@@ -4,6 +4,11 @@
     <apex:stylesheet value="{!URLFOR($Resource.f42_ionicons, '/ionicons/css/ionicons.min.css')}"/>
 
     <style>
+
+        body{
+            background-color: #eef1f6;
+        }
+
         .navbar-brand{
             position: absolute;
             width: 100%;
@@ -16,6 +21,71 @@
             margin-right:30px;
             margin-left:20px;
         }
+
+        .backWhite{
+            background-color: white;
+            font-size: 18px; !important;
+        }
+
+        .backWhite:hover{
+            background-color: #e7e7e7;
+        }
+
+        .redBack{
+            background-color: #ff234f !important;
+        }
+
+        .ulLogo{
+            height:50px;
+            padding:10px 35px 10px 15px !important;
+            background-color: white
+        }
+
+        .accName{
+            float:left;
+            padding-top: 15px;
+            padding-left: 20px;
+            color:white;
+            font-size:18px;
+        }
+
+        .heading{
+            margin-top: 100px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 25px;
+            color: #636363;
+        }
+
+        .boxstyle{
+            width: 350px;
+            height: 120px;
+            background-color: white;
+            color: #ff234f;
+            font-size:20px;
+            text-align: center;
+            border: solid 2px #BDBDBD
+        }
+
+        .boxstyle a{
+            position:relative;
+            display:block;
+            height:100%;
+            width:100%;
+        }
+
+        .boxstyle p{
+            position: absolute;
+            top:50%;
+            left:50%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pufferBox{
+            height: 136px;
+        }
+
     </style>
 
 
@@ -24,6 +94,7 @@
         <div class="container">
             <apex:form >
 
+                <!-- *** Nvigation - Old Style ***
                 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="navbar-header">
                         <div class="navbar-brand">Account Planner</div>
@@ -39,17 +110,97 @@
                             </li>
                         </ul>
                     </div>
+                </nav>-->
+
+                <!-- *** Nvigation - New Style *** -->
+                <nav class="redBack navbar navbar-default navbar-fixed-top" role="navigation">
+
+                    <div class="navbar-header">
+                        <div style="color:white" class="navbar-brand">Account Planner</div>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li style="margin-left: 0" class="backWhite">
+                            <a href="/{!Account.Id}">
+                                <i class="ionicons ion-chevron-left btn-icon"></i>
+                                &nbsp;
+                                Zurück
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="accName" >
+                        {!Account.Name}
+                    </p>
+
+                    <ul class="nav navbar-nav navbar-right ulLogo" >
+                            <apex:image value="{!$Resource.f42_Icon_Red}" width="30px" height="30px"/>
+                    </ul>
+
                 </nav>
 
+                <!-- *** Header *** -->
+                <apex:outputPanel rendered="{!accountPlan != null || accountPlanDetails.size>0}">
+                    <div class="heading">
+                        Access Accountplan as
+                    </div>
+                </apex:outputPanel>
 
-                <div style="margin-top: 70px;"/>
-
+                <!-- *** Message *** -->
                 <apex:outputPanel rendered="{!msg != null}">
                     <div class="alert alert-warning" role="alert">
                         <strong>{!msg}</strong>
                     </div>
                 </apex:outputPanel>
 
+                <!-- *** Selection area - New Style*** -->
+                <div class="container">
+                    <div class="row">
+
+                        <apex:outputPanel rendered="{!accountPlan != null || accountPlanDetails.size>1}">
+                            <div class="col-sm-2 pufferBox"></div>
+                        </apex:outputPanel>
+
+                        <apex:outputPanel rendered="{! (accountPlan != null && accountPlanDetails.size<=0) || (accountPlan == null && accountPlanDetails.size == 1)}">
+                            <div class="col-sm-4 pufferBox"></div>
+                        </apex:outputPanel>
+
+                        <!-- Accountmanager -->
+                        <apex:outputPanel rendered="{!accountPlan != null}">
+                            <div class="col-sm-4" style="padding: 8px;">
+                                <div class="boxstyle">
+                                    <a href="{!accountPlan.accPlanUrl}" style="color: #ff234f; text-decoration: none;" >
+                                        <p>Accountmanager</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+
+                        <!-- Accountteams -->
+                        <apex:variable value="{!1}" var="rowNum"/>
+                        <apex:repeat value="{!accountPlanDetails}" var="accPlanDetail">
+
+                            <div class="col-sm-4" style="padding: 8px;">
+                                <div class="boxstyle">
+                                    <a href="{!accPlanDetail.accPlanDetailUrl}" style="color: #BDBDBD; text-decoration: none;" >
+                                        <p>{!accPlanDetail.accPlanDetail.Som_KamTeam__r.Name}</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <apex:outputPanel rendered="{! (accountPlan != null && ( MOD(rowNum,2) == 1)) || (accountPlan == null && ( MOD(rowNum,2) == 0))}">
+                                <div class="col-sm-2 pufferBox"></div>
+                                <div class="col-sm-2 pufferBox"></div>
+                            </apex:outputPanel>
+
+                            <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+
+                        </apex:repeat>
+
+                    </div>
+                </div>
+
+                <!-- *** Selection area - Old Style***
                 <apex:outputPanel rendered="{!accountPlan != null}">
                     <div class="well" style="text-align:center;">
                         <h4>
@@ -62,7 +213,8 @@
                     <div class="well" style="text-align:center;">
                         <h5><a href="{!accPlanDetail.accPlanDetailUrl}">{!accPlanDetail.accPlanDetail.Som_KamTeam__r.Name}</a></h5>
                     </div>
-                </apex:repeat>
+                </apex:repeat>-->
+
             </apex:form>
         </div>
     </div>
