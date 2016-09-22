@@ -12,7 +12,7 @@
 * =================================================================
 */
 public with sharing class Som_Kam_RedirectCtrl {
-	public Id accId{get;set;}
+    public Id accId{get;set;}
     public String msg{get;set;}
     public String parameter{get;set;}
 

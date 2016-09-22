@@ -121,7 +121,7 @@
 
                     <ul class="nav navbar-nav navbar-left">
                         <li style="margin-left: 0" class="backWhite">
-                            <a href="#">
+                            <a href="/{!Account.Id}">
                                 <i class="ionicons ion-chevron-left btn-icon"></i>
                                 &nbsp;
                                 Zurück
@@ -140,9 +140,11 @@
                 </nav>
 
                 <!-- *** Header *** -->
-                <div class="heading">
-                    Access Accountplan as
-                </div>
+                <apex:outputPanel rendered="{!accountPlan != null || accountPlanDetails.size>0}">
+                    <div class="heading">
+                        Access Accountplan as
+                    </div>
+                </apex:outputPanel>
 
                 <!-- *** Message *** -->
                 <apex:outputPanel rendered="{!msg != null}">
@@ -194,8 +196,6 @@
                             <apex:variable var="rowNum" value="{!rowNum + 1}"/>
 
                         </apex:repeat>
-
-                        <div class="col-sm-2"></div>
 
                     </div>
                 </div>
