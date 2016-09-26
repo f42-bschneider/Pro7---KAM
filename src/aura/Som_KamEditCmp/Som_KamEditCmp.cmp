@@ -19,6 +19,9 @@
     <aura:attribute name="inviteAll" type="Boolean" access="private" default="false"/>
     <aura:attribute name="isMainView" type="Boolean" access="private" default="true"/>
 
+    <aura:attribute name="selectedYear" type="String" access="public" />
+    <aura:attribute name="years" type="String" access="public" default="" />
+
     <!-- event listeners for the strategy profile section -->
     <aura:handler name="okClicked" event="c:Som_KamStrategyProfileSummaryEvent" action="{!c.onStratProfOk}"/>
     <aura:handler name="cancelClicked" event="c:Som_KamStrategyProfileSummaryEvent" action="{!c.onStratProfCancel}"/>
@@ -221,7 +224,55 @@
             <!-- ### Main View => without Review Strategy Profiles Section ### -->
             <div style="{!v.isMainView ? '' : 'display:none'}">
 
-                <!-- ### Navbar ### -->
+                <!-- ### Navbar - New Style ### -->
+                <nav class="redBack navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="navbar-header">
+                        <div style="color:white" class="navbar-brand">
+                            {!$Label.c.Som_lbl_AccountPlanner}
+                        </div>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li style="margin-left: 0" class="whiteBack">
+                            <a href="#" onclick="{!c.onAccount}">
+                                <i class="ionicons ion-chevron-left btn-icon"></i>
+                                &nbsp;
+                                Zurück
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="accName" >
+                        {!v.data.accPlan.accPlan.Som_Account__r.Name}
+                    </p>
+
+                    <ul class="nav navbar-nav navbar-right ulLogo" >
+                            <img src="/resource/f42_Icon_Red" height="30" width="30"/>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="whiteBack navButton">
+                            <ui:inputSelect class="navSelect" value="{!v.selectedYear}" options="{!v.years}"/>
+                        </li>
+
+                        <li class="whiteBack navButton">
+                            <a href="#" style="padding: 3px 10px 3px 10px;">
+                                Copy data from last year
+                                <i class="ionicons ion-ios-copy btn-icon redColor" ></i>
+                            </a>
+                        </li>
+                        <li class="whiteBack navButton">
+                            <a href="#" onclick="{!c.onSave}" style="padding: 3px 10px 3px 10px;">
+                                Save
+                                <i class="ionicons ion-android-done btn-icon redColor" ></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+                <!-- ### Navbar - Old Style ###
                 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="navbar-header">
                         <div class="navbar-brand">{!$Label.c.Som_lbl_AccountPlanner}</div>
@@ -250,6 +301,7 @@
                                     <button type="button" class="btn btn-default" onclick="{!c.onCancel}" style="{!not(v.isRead) ? '' : 'display:none'}">
                                         <i class="ionicons ion-close-round btn-icon"></i> {!' '+$Label.c.Ven_lbl_Cancel}
                                     </button>
+                                    ### Navbar - Old Style ### -->
 
                                     <!-- OLD Delete button not needed anymore
                                     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#deleteModal" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}">
@@ -266,6 +318,7 @@
                                         <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_Review}
                                     </button>-->
 
+                                    <!-- ### Navbar - Old Style ###
                                     <button type="button" class="btn btn-default" style="{!and(v.accPlanId != null, v.isRead) ? '' : 'display:none'}" onclick="{!c.showKickoffModal}">
                                         <i class="ionicons ion-email btn-icon"></i> {!' '+$Label.c.Som_lbl_Kickoff}
                                     </button>
@@ -278,6 +331,7 @@
                         </ul>
                     </div>
                 </nav>
+                ### Navbar - Old Style ### -->
 
                 <!-- ### show all ### -->
                 <div style="{!v.showAll ? '' : 'display:none'}">

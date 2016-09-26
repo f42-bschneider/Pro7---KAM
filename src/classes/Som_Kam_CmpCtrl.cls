@@ -168,9 +168,7 @@ public without sharing class Som_Kam_CmpCtrl {
     *************************/
     private static AccountPlanEditData buildAccountPlanEditData(String accId, String accPlanId){
 
-        Som_Kam__c accPlan = new Som_Kam__c(
-            Som_Year__c = Date.today().year(),
-            Som_Account__c = accId);
+        Som_Kam__c accPlan = new Som_Kam__c( Som_Year__c = Date.today().year(), Som_Account__c = accId);
 
         List<AccountPlanDetail> accPlanDetails = new List<AccountPlanDetail>();
         List<Som_KamStrategyProfileTopic__c> strategyProfiles = new List<Som_KamStrategyProfileTopic__c>();
@@ -790,9 +788,6 @@ public without sharing class Som_Kam_CmpCtrl {
             }
 
             List<Som_KamStrategyProfileTopic__c> stratsUpsert = new List<Som_KamStrategyProfileTopic__c>();
-
-            system.debug(LoggingLevel.ERROR, accPlanDetailIdsDelete);
-
 
             // remove strat profs from the upsert list that belong to an account plan detail that has been deleted
             for(Som_KamStrategyProfileTopic__c spt : accPlanDetailStrategies){

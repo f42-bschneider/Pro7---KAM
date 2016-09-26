@@ -50,6 +50,11 @@
                         component.set("v.showButtons", false);
                         component.set("v.showAll", false);
                     }
+
+                    //TODO Load years from controller
+                    var years =[{label: "2016", value: "2016", selected: "true"},{label: "2017", value: "2017"}];
+                    component.set("v.years", years);
+
                 }else {
                     var errorStr = $A.get("$Label.c.Ven_lbl_ContactAdmin") + " - " + result.message;
                     $A.get("e.c:f42_ToastEvt").setParams({"type": "error", "msg" : errorStr}).fire();
