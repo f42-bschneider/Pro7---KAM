@@ -1,7 +1,86 @@
 ({
-    onAccIdAndAccPlanIdSet : function(component, event) {
+    /**** BS - 27.09.2016 - NEW function ****/
+    onCopyFromLastYear : function(component, event, helper){
+        var accId = component.get("v.accId"),
+        selYear = component.get("v.selectedYear");
+
+        component.set("v.renderSpinner", true);
+
+        var copyData = component.get("c.copyDataFromLastYear");
+
+        copyData.setParams({
+            "accId"     : accId,
+            "selectedYear" : selYear
+        });
+
+        copyData.setCallback(this, function(resp){
+            var result = resp.getReturnValue();
+
+            if(component.isValid() && result.isSuccess && resp.getState() === "SUCCESS"){
+
+                component.set("v.data", result.values.data);
+
+            }else {
+                var errorStr = $A.get("$Label.c.Ven_lbl_ContactAdmin") + " - " + result.message;
+                $A.get("e.c:f42_ToastEvt").setParams({"type": "error", "msg" : errorStr}).fire();
+                //toastr.error($A.get("$Label.c.Ven_lbl_ContactAdmin"));
+                //toastr.info(result.message);
+            }
+
+            component.set("v.renderSpinner", false);
+        });
+
+        $A.enqueueAction(copyData);
+
+    },
+
+    /**** BS - 27.09.2016 - NEW show different years ****/
+    onChangeYear : function(component, event, helper){
+        var accId = component.get("v.accId"),
+        accPlanId = component.get("v.accPlanId"),
+        selYear = component.get("v.selectedYear");
+
+        component.set("v.renderSpinner", true);
+
+        var getAccountPlanEditData = component.get("c.getAccountPlanEditData");
+
+        getAccountPlanEditData.setParams({
+            "accId"     : accId,
+            "accPlanId" : accPlanId,
+            "selectedYear" : selYear
+        });
+
+        getAccountPlanEditData.setCallback(this, function(resp){
+            var result = resp.getReturnValue();
+
+            if(component.isValid() && result.isSuccess && resp.getState() === "SUCCESS"){
+
+                component.set("v.data", result.values.data);
+                if(! $A.util.isEmpty(result.values.data.accPlan.accPlan.Id)){
+                    component.set("v.accPlanId", result.values.data.accPlan.accPlan.Id);
+                    component.set("v.showCopy", false);
+                }else{
+                    component.set("v.showCopy", true);
+                }
+
+            }else {
+                var errorStr = $A.get("$Label.c.Ven_lbl_ContactAdmin") + " - " + result.message;
+                $A.get("e.c:f42_ToastEvt").setParams({"type": "error", "msg" : errorStr}).fire();
+                //toastr.error($A.get("$Label.c.Ven_lbl_ContactAdmin"));
+                //toastr.info(result.message);
+            }
+
+            component.set("v.renderSpinner", false);
+        });
+
+        $A.enqueueAction(getAccountPlanEditData);
+    },
+
+
+    onAccIdAndAccPlanIdSet : function(component, event, helper) {
         var accId,
         accPlanId,
+        selYear,
         params = event.getParam('arguments');
 
         component.set("v.renderSpinner", true);
@@ -9,7 +88,7 @@
         if(params){
             accId = params.accId;
             accPlanId = params.accPlanId;
-
+            selYear = component.get("v.selectedYear")
 
             // SET ACCOUNT DASH BOARD ACC ID
             component.find("dashboard").setAccountId(accId);
@@ -21,7 +100,8 @@
 
             getAccountPlanEditData.setParams({
                 "accId"     : accId,
-                "accPlanId" : accPlanId
+                "accPlanId" : accPlanId,
+                "selectedYear" : selYear
             });
 
             getAccountPlanEditData.setCallback(this, function(resp){
@@ -32,6 +112,11 @@
                     if(accPlanId === null){
                         component.set("v.isRead", false);
                     }
+
+                    //Build list with available years and set selected year
+                    var selYear = component.get("v.selectedYear");
+                    helper.buildYearList(component, result.values.data.years);
+                    component.set("v.selectedYear", result.values.data.accPlan.accPlan.Som_Year__c);
 
                     // user is kam/sek => write mode
                     if(result.values.isKamSek){
@@ -51,10 +136,6 @@
                         component.set("v.showAll", false);
                     }
 
-                    //TODO Load years from controller
-                    var years =[{label: "2016", value: "2016", selected: "true"},{label: "2017", value: "2017"}];
-                    component.set("v.years", years);
-
                 }else {
                     var errorStr = $A.get("$Label.c.Ven_lbl_ContactAdmin") + " - " + result.message;
                     $A.get("e.c:f42_ToastEvt").setParams({"type": "error", "msg" : errorStr}).fire();
@@ -67,12 +148,6 @@
 
             $A.enqueueAction(getAccountPlanEditData);
         }
-    },
-
-    onEdit : function(component){
-        component.set("v.dataTmpMain", JSON.parse(JSON.stringify(component.get("v.data"))));
-        component.set("v.dataTmpStratProf", JSON.parse(JSON.stringify(component.get("v.data"))));
-        component.set("v.isRead", false);
     },
 
     onSave : function(component, event, helper){
@@ -169,7 +244,8 @@
             "accPlanTeamIds" : accPlanTeamIds,
             "accPlanId" : accPlan.Id,
             "accId" : accPlan.Som_Account__c,
-            "hostUrl" : helper.getHostUrl()
+            "hostUrl" : helper.getHostUrl(),
+            "selectedYear" : accPlan.Som_Year__c
         });
 
         inviteForReview.setCallback(this, function(resp){
@@ -240,7 +316,8 @@
             "accPlanTeamIds" : accPlanTeamIds,
             "accPlanId" : accPlan.Id,
             "accId" : accPlan.Som_Account__c,
-            "hostUrl" : helper.getHostUrl()
+            "hostUrl" : helper.getHostUrl(),
+            "selectedYear" : accPlan.Som_Year__c
         });
 
         inviteForKickoff.setCallback(this, function(resp){
@@ -328,7 +405,22 @@
          //Toggle CSS styles for hiding Modal
         helper.toggleClassInverse(component, 'backdrop', 'slds-backdrop--');
         helper.toggleClassInverse(component, 'reviewModal', 'slds-fade-in-');
+    },
+
+    showDetailSection : function(component, event, helper){
+        $A.util.toggleClass(component.find("detailSection"), 'dontShowSection');
+    },
+
+    showStratProfileSection : function(component, event, helper){
+        $A.util.toggleClass(component.find("stratProfileSection"), 'dontShowSection');
     }
+
+    /**** Not needed BS - 27.09.2016 *****
+    onEdit : function(component){
+        component.set("v.dataTmpMain", JSON.parse(JSON.stringify(component.get("v.data"))));
+        component.set("v.dataTmpStratProf", JSON.parse(JSON.stringify(component.get("v.data"))));
+        component.set("v.isRead", false);
+    },*/
 
     /*** OLD Delete function not needed anymore
     onDelete : function(component){

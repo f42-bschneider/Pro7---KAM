@@ -100,12 +100,28 @@ public without sharing class Som_Kam_CmpCtrl {
         return users.size() > 0 ? true : false;
     }
 
+    /*************************
+    * Copy data from last year
+    *************************/
+    @AuraEnabled
+    public static P7S1_ApexResponse copyDataFromLastYear(String accId, String selectedYear){
+        P7S1_ApexResponse resp;
+
+        //TODO KLärung mit Ralf, was alles kopiert werden soll und überprüfung Umsetzung
+
+        String yearBefore = String.valueOf(Integer.valueOf(selectedYear)-1);
+        AccountPlanEditData data = buildAccountPlanEditData(accId, '', yearBefore);
+
+        resp = new P7S1_ApexResponse('data', data);
+
+        return resp;
+    }
 
     /*************************
     * gets data for Som_AccountPlanEditCmp.cmp
     *************************/
     @AuraEnabled
-    public static P7S1_ApexResponse getAccountPlanEditData(String accId, String accPlanId){
+    public static P7S1_ApexResponse getAccountPlanEditData(String accId, String accPlanId, String selectedYear){
 
         P7S1_ApexResponse resp;
 
@@ -122,7 +138,7 @@ public without sharing class Som_Kam_CmpCtrl {
                 result.put('userUnitInvited', true);
             }
 
-            result.put('data', buildAccountPlanEditData(accId, accPlanId));
+            result.put('data', buildAccountPlanEditData(accId, accPlanId, selectedYear));
 
             resp = new P7S1_ApexResponse(result);
         }
@@ -166,7 +182,7 @@ public without sharing class Som_Kam_CmpCtrl {
     /*************************
     * builds all needed data for Som_AccountPlanEditCmp.cmp
     *************************/
-    private static AccountPlanEditData buildAccountPlanEditData(String accId, String accPlanId){
+    private static AccountPlanEditData buildAccountPlanEditData(String accId, String accPlanId, String selectedYear){
 
         Som_Kam__c accPlan = new Som_Kam__c( Som_Year__c = Date.today().year(), Som_Account__c = accId);
 
@@ -176,9 +192,17 @@ public without sharing class Som_Kam_CmpCtrl {
         // set acc plan, acc plan detail and stratProfs if user acc plan exists
         // if not => user is creating a new acc plan
         if(accPlanId != null){
-            accPlan             = getAccPlanById(accPlanId);
-            accPlanDetails      = getAccPlanDetails(accPlanId, null);
-            strategyProfiles    = getStrategyProfilesByAccPlanId(accPlanId);
+            if(selectedYear != null && selectedYear != ''){
+                accPlan             = getAccPlanByYear(selectedYear, accId);
+            }else{
+                accPlan             = getAccPlanById(accPlanId);
+            }
+            if(accPlan != null){
+                accPlanDetails      = getAccPlanDetails(accPlan.Id, null);
+                strategyProfiles    = getStrategyProfilesByAccPlanId(accPlan.Id);
+            }else{
+                accPlan = new Som_Kam__c( Som_Year__c = Integer.valueOf(selectedYear), Som_Account__c = accId);
+            }
         }
 
         AccountPlan ap = new AccountPlan(accPlan, accPlanDetails, strategyProfiles);
@@ -188,11 +212,24 @@ public without sharing class Som_Kam_CmpCtrl {
         // build list of acc plan teams for Som_AccountPlanTeamAssignmentCmp.cmp
         List<AccountPlanTeam> accPlanTeams = getAccountPlanTeamsByAccountId(acc, accPlanDetails);
 
-        AccountPlanEditData data = new AccountPlanEditData(ap, accPlanTeams, acc.Name);
+        AccountPlanEditData data = new AccountPlanEditData(ap, accPlanTeams, acc.Name, getAvailableYears(acc.Id));
         return data;
     }
 
+    /*************************
+    * Get available years per Account
+    *************************/
+    private static List<String> getAvailableYears(String accId){
+        Set<String> years = new Set<String>();
 
+        for(Som_Kam__c kam : [SELECT Som_Year__c FROM Som_Kam__c WHERE Som_Account__c = :accId ORDER BY Som_Year__c]){
+            if(kam.Som_Year__c != null) years.add(String.valueOf(kam.Som_Year__c));
+        }
+        years.add(String.valueOf(Date.today().year()));
+        years.add(String.valueOf(Date.today().year() + 1));
+
+        return new List<String>(years);
+    }
 
 
     /*************************
@@ -213,6 +250,32 @@ public without sharing class Som_Kam_CmpCtrl {
                 Som_Kam__c
             WHERE
                 Id = :accPlanId];
+    }
+
+    private static Som_Kam__c getAccPlanByYear(String selectedYear, String accId){
+        Integer year = Integer.valueOf(selectedYear);
+        Som_Kam__c kamBack = null;
+        for(Som_Kam__c kam : [SELECT
+                Id,
+                Name,
+                Som_Account__c,
+                Som_Account__r.Name,
+                Som_EmailText__c,
+                Som_Kickoff__c,
+                Som_Year__c,
+                Som_Review__c
+            FROM
+                Som_Kam__c
+            WHERE
+                Som_Year__c = :year
+            AND
+                Som_Account__c = :accId
+            LIMIT 1]){
+
+            kamBack = kam;
+        }
+
+         return kamBack;
     }
 
 
@@ -608,13 +671,13 @@ public without sharing class Som_Kam_CmpCtrl {
     * invites acc plan detail team member for kickoff meeting
     *************************/
     @AuraEnabled
-    public static P7S1_ApexResponse inviteForKickoff(List<String> accPlanTeamIds, String accPlanId, String accId, String hostUrl){
+    public static P7S1_ApexResponse inviteForKickoff(List<String> accPlanTeamIds, String accPlanId, String accId, String hostUrl, String selectedYear){
         P7S1_ApexResponse resp;
         Savepoint sp = Database.setSavepoint();
 
         try{
             sendMails(accPlanId, accPlanTeamIds, hostUrl, true);
-            resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accId, accPlanId));
+            resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accId, accPlanId, selectedYear));
         }
         catch(Exception e){
             system.debug(LoggingLevel.ERROR, 'Some error occured: '+ e.getLineNumber() + ' => ' + e.getMessage());
@@ -630,13 +693,13 @@ public without sharing class Som_Kam_CmpCtrl {
     * invites acc plan detail team member for review meeting
     *************************/
     @AuraEnabled
-    public static P7S1_ApexResponse inviteForReview(List<String> accPlanTeamIds, String accPlanId, String accId, String hostUrl){
+    public static P7S1_ApexResponse inviteForReview(List<String> accPlanTeamIds, String accPlanId, String accId, String hostUrl, String selectedYear){
         P7S1_ApexResponse resp;
         Savepoint sp = Database.setSavepoint();
 
         try{
             sendMails(accPlanId, accPlanTeamIds, hostUrl, false);
-            resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accId, accPlanId));
+            resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accId, accPlanId, selectedYear));
         }
         catch(Exception e){
             system.debug(LoggingLevel.ERROR, 'Some error occured: '+ e.getLineNumber() + ' => ' + e.getMessage());
@@ -804,7 +867,7 @@ public without sharing class Som_Kam_CmpCtrl {
             upsert cashInsUpsert;
             delete accPlanDetailCashInsDelete;
 
-            resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accPlan.Som_Account__c, accPlan.Id));
+            resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accPlan.Som_Account__c, accPlan.Id, String.valueOf(accPlan.Som_Year__c)));
         }
         catch(Exception e){
             system.debug(LoggingLevel.ERROR, 'Some error occured: '+ e.getLineNumber() + ' => ' + e.getMessage());
@@ -939,10 +1002,14 @@ public without sharing class Som_Kam_CmpCtrl {
         @AuraEnabled
         public String accName{get;set;}
 
-        public AccountPlanEditData(AccountPlan accPlan, List<AccountPlanTeam> accPlanTeams, String accName){
+        @AuraEnabled
+        public List<String> years{get;set;}
+
+        public AccountPlanEditData(AccountPlan accPlan, List<AccountPlanTeam> accPlanTeams, String accName, List<String> years){
             this.accPlan        = accPlan;
             this.accPlanTeams   = accPlanTeams;
             this.accName        = accName;
+            this.years              = years;
         }
     }
 

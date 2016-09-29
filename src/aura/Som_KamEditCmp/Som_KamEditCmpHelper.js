@@ -267,6 +267,14 @@
         }
     },
 
+    buildYearList : function(component, years){
+        var yearList = [];
+        for(var i=0; i<years.length; i+=1){
+            yearList.push({label: years[i], value: years[i]});
+        }
+        component.set("v.years", yearList);
+    },
+
     toggleClass: function(component, componentId, className) {
         var modal = component.find(componentId);
         $A.util.removeClass(modal, className+'hide');

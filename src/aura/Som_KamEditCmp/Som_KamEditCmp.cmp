@@ -18,6 +18,7 @@
     <aura:attribute name="showButtons" type="Boolean" access="private" default="false"/>
     <aura:attribute name="inviteAll" type="Boolean" access="private" default="false"/>
     <aura:attribute name="isMainView" type="Boolean" access="private" default="true"/>
+    <aura:attribute name="showCopy" type="Boolean" access="private" default="false" />
 
     <aura:attribute name="selectedYear" type="String" access="public" />
     <aura:attribute name="years" type="String" access="public" default="" />
@@ -253,21 +254,26 @@
                     <ul class="nav navbar-nav navbar-right">
 
                         <li class="whiteBack navButton">
-                            <ui:inputSelect class="navSelect" value="{!v.selectedYear}" options="{!v.years}"/>
+                            <ui:inputSelect class="navSelect" value="{!v.selectedYear}" options="{!v.years}" change="{!c.onChangeYear}" />
                         </li>
 
-                        <li class="whiteBack navButton">
-                            <a href="#" style="padding: 3px 10px 3px 10px;">
-                                Copy data from last year
-                                <i class="ionicons ion-ios-copy btn-icon redColor" ></i>
-                            </a>
-                        </li>
-                        <li class="whiteBack navButton">
-                            <a href="#" onclick="{!c.onSave}" style="padding: 3px 10px 3px 10px;">
-                                Save
-                                <i class="ionicons ion-android-done btn-icon redColor" ></i>
-                            </a>
-                        </li>
+                        <aura:if isTrue="{!v.showCopy}" >
+                            <li class="whiteBack navButton">
+                                <a href="#" onclick="{!c.onCopyFromLastYear}" style="padding: 3px 10px 3px 10px;">
+                                    Copy data from last year {!v.data.accPlan.Id}
+                                    <i class="ionicons ion-ios-copy btn-icon redColor" ></i>
+                                </a>
+                            </li>
+                        </aura:if>
+
+                        <aura:if isTrue="{! and(v.isRead, v.accPlanId != null)}" >
+                            <li class="whiteBack navButton">
+                                <a href="#" onclick="{!c.onSave}" style="padding: 3px 10px 3px 10px;">
+                                    Save
+                                    <i class="ionicons ion-android-done btn-icon redColor"></i>
+                                </a>
+                            </li>
+                        </aura:if>
                     </ul>
 
                 </nav>
@@ -335,10 +341,127 @@
 
                 <!-- ### show all ### -->
                 <div style="{!v.showAll ? '' : 'display:none'}">
+                    <div class="row">
+                        <div class="space-top sectionHeader">
+                            {!$Label.c.Som_lbl_AccountPlanInfos}
+                            <button type="button" class="btn btn-link pull-right magTop10" onclick="{!c.showDetailSection}">
+                                <i class="ionicons ion-chevron-down btn-icon redColor"></i>
+                            </button>
+                        </div>
 
-                    <!-- ### Account Plan Informations ### -->
+                        <div aura:id="detailSection">
+
+                            <div class="col-md-8 space-top detailText">
+
+                                <div class="col-md-3 goRight">
+                                    {!$Label.c.Som_lbl_Year}:
+                                </div>
+                                <div class="col-md-3 goRight">
+                                    <ui:outputNumber value="{!v.data.accPlan.accPlan.Som_Year__c}" />
+                                </div>
+                                <div class="col-md-6">
+                                    {!$Label.c.Som_lbl_EmailText}
+                                </div>
+
+                                <div class="col-md-3 goRight">
+                                    Cash-In 2015:
+                                </div>
+                                <div class="col-md-3 goRight">
+                                    <ui:outputNumber value="1100000" />
+                                </div>
+                                <div class="col-md-6" style="font-size: 14px;">
+                                   <ui:inputText  placeholder="Subject..." class="fullWidth borderInfo"/>
+                                </div>
+
+                                <div class="col-md-6" style="padding: 0px">
+
+                                    <div class="row">
+                                        <div class="col-md-6 goRight">
+                                            Target Cash-In 2016:
+                                        </div>
+                                        <div class="col-md-6 goRight">
+                                            <ui:outputNumber value="800000" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 goRight" style="padding-top:17px;">
+                                        {!$Label.c.Som_lbl_Kickoff}:
+                                    </div>
+                                    <div class="col-md-6" >
+                                        <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Kickoff__c}" displayDatePicker="true"/>
+                                    </div>
+
+                                    <div class="col-md-6 goRight" style="padding-top:17px;">
+                                        {!$Label.c.Som_lbl_Review}:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Review__c}" displayDatePicker="true"/>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6" style="font-size: 14px;">
+                                   <ui:inputTextArea placeholder="E-Mail Text..." value="{!v.data.accPlan.accPlan.Som_EmailText__c}" resizable="false" rows="17" class="fullWidth borderInfo"/>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 space-top borderInfo accDash" style="background-color:white;">
+                                <c:P7S1_AccountDashboardMediaCmp aura:id="dashboard" height="325px" />
+                            </div>
+
+                            <div class="col-md-12 space-top doubleRedBottom" />
+
+                        </div>
+                    </div>
+
+                    <!-- ### Account Plan Strategy Profile Summary - New Style###-->
+                    <div class="row">
+
+                        <div class="sectionHeader">
+                            {!$Label.c.Som_lbl_StrategyProfileSummary}
+
+                            <button type="button" class="btn btn-link pull-right magTop10" onclick="{!c.showStratProfileSection}">
+                                <i class="ionicons ion-chevron-down btn-icon redColor"></i>
+                            </button>
+
+                            <ul class="nav navbar-nav navbar-right magTop20">
+                                <li class="whiteBack navButton">
+                                    <a href="#" onclick="{!c.onReviewStrategies}" style="padding: 5px 10px 5px 10px;color:#848484">
+                                        {!$Label.c.Som_lbl_Review +' '} {!$Label.c.Som_lbl_StrategyProfiles}
+                                        <i class="ionicons ion-edit btn-icon redColor" style="margin-left: 5px"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div style="height:20px"/>
+
+                        <div aura:id="stratProfileSection">
+
+                                <aura:iteration items="{!v.data.accPlan.stratProfileTopics}" var="stratProf">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="fullWidth borderInfo detailText pad10 stratHead" >
+                                                {!stratProf.Name}
+                                            </div>
+                                            <ui:inputTextArea rows="20"
+                                                class="fullWidth borderInfo pad10 stratText"
+                                                value="{!stratProf.Som_Description__c}"
+                                                change="{!c.onStratProfChange}"
+                                                resizable="false"/>
+                                        </div>
+                                    </div>
+                                </aura:iteration>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ### Account Plan Informations - Old Style###-->
                     <div class="row space-top">
 
+                        <!--
                         <div class="{!v.isRead ? 'col-md-8 overlay-read' : 'col-md-8'}">
 
                             <div class="panel panel-default space-top">
@@ -388,33 +511,35 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
-                        <div class="col-md-4 space-top">
+                        <!--<div class="col-md-4 space-top">
                             <c:P7S1_AccountDashboardMediaCmp aura:id="dashboard" height="325px"/>
-                        </div>
+                        </div>-->
                     </div>
 
 
                     <!-- ### Account Plan Team Assignments ### -->
-                    <div class="{!v.isRead ? 'overlay-read' : ''}">
-                        <div class="panel panel-default">
+                    <div class="row space-top">
+                        <div class="{!v.isRead ? 'overlay-read' : ''}">
+                            <div class="panel panel-default space-top">
 
-                            <div class="panel-heading">
-                                <h3 class="panel-title">{!$Label.c.Som_lbl_AccPlanTeamAssigns}</h3>
-                            </div>
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">{!$Label.c.Som_lbl_AccPlanTeamAssigns}</h3>
+                                </div>
 
-                            <div class="panel-body" id="accPlanTeams">
-                                <h5 style="color:orange">*{!$Label.c.Som_lbl_AtLeast1AccTeamSelected}</h5>
+                                <div class="panel-body" id="accPlanTeams">
+                                    <h5 style="color:orange">*{!$Label.c.Som_lbl_AtLeast1AccTeamSelected}</h5>
 
-                                <div class="row">
-                                    <aura:iteration items="{!v.data.accPlanTeams}" var="accPlanTeam">
-                                        <div class="col-md-3">
-                                            <div class="well" style="height:160px">
-                                                <c:Som_KamTeamAssignmentCmp accPlanTeam="{!accPlanTeam}"/>
+                                    <div class="row">
+                                        <aura:iteration items="{!v.data.accPlanTeams}" var="accPlanTeam">
+                                            <div class="col-md-3">
+                                                <div class="well" style="height:160px">
+                                                    <c:Som_KamTeamAssignmentCmp accPlanTeam="{!accPlanTeam}"/>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </aura:iteration>
+                                        </aura:iteration>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -433,7 +558,7 @@
                         </div>
                     </div>
 
-                    <!-- ### Account Plan Strategy Profile Summary ### -->
+                    <!-- ### Account Plan Strategy Profile Summary - Old Style ###
                     <div class="{!v.isRead ? 'overlay-read' : ''}" style="{!v.data.accPlan.stratProfileTopics.length > 0 ? '' : 'display:none'}">
 
                         <div class="panel panel-default">
@@ -467,7 +592,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
 

@@ -4,7 +4,7 @@
     "id": "893ee1c0-3c62-11e6-848f-bbd982069fa7",
     "namespace": "",
     "environment": "sandbox",
-    "loginUrl": "https://test.salesforce.com/",
+    "loginUrl": "",
     "workspace": "/Users/benjaminschneider/Documents/dev/Workspace_Sublime",
     "subscription": [
         "ApexClass",

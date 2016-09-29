@@ -34,8 +34,8 @@
 }
 
 
-
-
+/****************************************************************************/
+/******************** NEW Brush-Up Style ******************************/
 .THIS .redColor{
     color:#ff234f;
 }
@@ -103,3 +103,100 @@
     outline:none
 }
 
+/******** Sections *******/
+.THIS .sectionHeader{
+    font-size:18px;
+    color:#636363;
+    width:100%;
+    margin-top: 40px;
+    padding:10px;
+    border-bottom: solid 1px #636363;
+}
+
+.THIS .dontShowSection{
+    display: none;
+}
+
+/******** Info section *******/
+.THIS .detailText{
+    font-size: 16px;
+    color:#636363;
+}
+
+.THIS .detailText div{
+    padding: 10px 20px;
+}
+
+.THIS .detailText span{
+    font-weight: bold;
+}
+
+.THIS .goRight{
+    text-align: right;
+}
+
+.THIS .fullWidth{
+    width: 100%;
+}
+
+.THIS .datePick{
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+
+.THIS .doubleRedBottom{
+    height: 2px;
+    border-bottom: 4px double #ff234f;
+}
+
+.THIS .borderInfo{
+    border: solid 1px #636363;
+}
+
+/******** Mediamix component *******/
+.THIS .accDash .around{
+    background-color: white !important;
+    border: 0 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.THIS .accDash .uiOutputText{
+    background-color: transparent !important;
+}
+
+.THIS .accDash .bigFont{
+    color: #636363;
+    font-weight: normal !important;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif !important;
+}
+
+.THIS .accDash .alert{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/******** Strategy profile summary *******/
+.THIS .magTop10{
+    margin-top: -10px !important;
+}
+
+.THIS .magTop20{
+    margin-top: -20px !important;
+}
+
+.THIS .pad10{
+    padding: 10px;
+}
+
+.THIS .stratText{
+    font-size: 12px;
+    color:#636363;
+}
+
+.THIS .stratHead{
+    background-color:white;
+    border-bottom: 0;
+}
