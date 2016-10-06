@@ -8,17 +8,26 @@
     <aura:attribute name="showEmptyCells" type="Boolean" access="public" default="false"/>
     <aura:attribute name="hide" type="Boolean" access="public" default="false"/>
     <aura:attribute name="fireChangeEvent" type="Boolean" access="public" default="false"/>
+    <aura:attribute name="showAddItem" type="Boolean" access="public" default="false" />
 
     <!-- *** Workarround for rendering problems with Locker Service and pushing data into lists *** -->
     <aura:handler name="change" value="{!v.accPlanDetailCashIn}" action="{!c.onChangeItem}"/>
     <aura:registerEvent name="changeTempItem" type="c:Som_KamChangeEvent" />
+    <aura:registerEvent name="addSubItem" type="c:Som_KamChangeEvent" />
 
     <tr style="{!or(v.accPlanDetailCashIn.isDeleted, v.hide) ? 'display:none' : ''}">
-        <td>
+        <td class="noBorder">
             <aura:if isTrue="{!v.accPlanDetailCashIn.accPlanDetailCashIn.Som_KamAccountCashInDetail__c == undefined}">
+
+                <button type="button" class="btn btn-link" onclick="{!c.onRemoveSubItemClick}">
+                    <i class="ionicons ion-trash-a btn-icon redColor"></i>
+                </button>
+
+                <!-- *** Old Style ***
                 <button class="btn btn-danger btn-xs" type="button" onclick="{!c.onRemoveSubItemClick}" >
                     <i class="ionicons ion-minus-round"></i>
-                </button>
+                </button>-->
+
             </aura:if>
         </td>
 
@@ -80,6 +89,13 @@
             <td></td>
             <td></td>
         </aura:if>
+
+        <td style="{! v.showAddItem ? '' : 'display:none;' }" class="noBorder" >
+            <button type="button" class="btn btn-link" onclick="{!c.onAddSubItem}">
+                <i class="ionicons ion-plus-round btn-icon redColor"></i>
+            </button>
+        </td>
+
     </tr>
 
 

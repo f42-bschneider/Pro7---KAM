@@ -1068,6 +1068,9 @@ public without sharing class Som_Kam_CmpCtrl {
         @AuraEnabled
         public Boolean isValidTargetCashIn{get;set;}
 
+        @AuraEnabled
+        public Decimal gap{get;set;}
+
         public AccountPlanDetail(Som_KamDetail__c accPlanDetail, List<AccountPlanDetailCashIn> accPlanDetailCashIn, List<Som_KamStrategyProfileTopic__c> stratProfileTopics, List<Ven_Utility.InputSelectOpt> teamMembers, Decimal optInOpen, Decimal optInClosed){
             this.accPlanDetail              = accPlanDetail;
             this.accPlanDetailCashIn        = accPlanDetailCashIn;
@@ -1078,6 +1081,7 @@ public without sharing class Som_Kam_CmpCtrl {
             this.isValidTargetCashIn        = true;
             this.optInOpen                  = optInOpen;
             this.optInClosed                = optInClosed;
+            this.gap                        = 0;
         }
     }
 

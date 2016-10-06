@@ -22,6 +22,102 @@
 
         <div class="container-fluid">
 
+            <!-- ### Navbar - New Style ### -->
+            <nav class="redBack navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <div style="color:white" class="navbar-brand">
+                        {!$Label.c.Som_lbl_Review +' '} {!$Label.c.Som_lbl_StrategyProfiles}
+                    </div>
+                </div>
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li style="margin-left: 0" class="whiteBack">
+                        <a href="#" onclick="{!c.onCancel}">
+                            <i class="ionicons ion-chevron-left btn-icon"></i>
+                            &nbsp;
+                            Zurück
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="accName" >
+                    {!$Label.c.Som_lbl_AccountPlanner}
+                </p>
+
+                <ul class="nav navbar-nav navbar-right ulLogo" >
+                        <img src="/resource/f42_Icon_Red" height="30" width="30"/>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <aura:if isTrue="{! not(v.isRead)}" >
+                        <li class="whiteBack navButton">
+                            <a href="#" onclick="{!c.onOk}" style="padding: 3px 10px 3px 10px;">
+                                Save
+                                <i class="ionicons ion-android-done btn-icon redColor"></i>
+                            </a>
+                        </li>
+                    </aura:if>
+                </ul>
+
+            </nav>
+
+            <!-- ### Strategy Profile View - New Style###-->
+            <div class="row">
+
+                <div class="sectionHeader">
+                    {!$Label.c.Som_lbl_StrategyProfile}
+
+                    <!-- *** Topic *** -->
+                    <ul class="nav navbar-nav navbar-right magTop20">
+                        <li class="whiteBack navButton" style="margin-right: 5px">
+                            <ui:inputSelect class="navSelect" aura:id="topic"  change="{!c.onTopicChange}" />
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="height:20px"/>
+
+                <div class="row">
+
+                    <div class="col-md-5">
+
+                        <div class="form-group" id="{!v.profSummary.stratProfId}">
+                            <div class="fullWidth borderInfo detailText pad10 stratHead" >
+                                {!$Label.c.Som_lbl_Summary}
+                            </div>
+                            <c:f42_InputTextArea aura:id="summary"
+                                referenceId="{!v.profSummary.stratProfId}"
+                                change="{!c.onSummaryDescriptionChange}"
+                                resizable="false"
+                                rows="22"
+                                class="fullWidth borderInfo pad10 stratText"
+                                value="{!v.profSummary.Description}"/>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-7" style="{!'height:'+v.innerHeight}">
+                        <aura:iteration items="{!v.profDetails}" var="profDetail">
+                            <div class="form-group" id="{!profDetail.stratProfId}">
+                                <div class="fullWidth borderInfo detailText pad10 stratHead" >
+                                    {!profDetail.Name}
+                                </div>
+                                <c:f42_InputTextArea change="{!c.onDetailDescriptionChange}"
+                                    referenceId="{!profDetail.stratProfId}"
+                                    rows="8"
+                                    resizable="false"
+                                    class="fullWidth borderInfo pad10 stratText"
+                                    value="{!profDetail.Description}"/>
+                            </div>
+                        </aura:iteration>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ### Navbar - Old Style ###
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
                     <div class="navbar-brand">{!$Label.c.Som_lbl_AccountPlanner}</div>
@@ -42,8 +138,9 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav>-->
 
+            <!-- ### Strategy Profile View - Old Style###
             <div class="panel panel-default space-top">
 
                 <div class="panel-heading">
@@ -89,7 +186,8 @@
 
                     </div>
                 </div>
-            </div>
+            </div>-->
+
         </div>
 
     </div>

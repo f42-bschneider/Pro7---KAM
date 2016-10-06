@@ -6,3 +6,49 @@
     pointer-events:all;
     position: relative!important;
 }
+
+/****************************************************************************/
+/******************** NEW Brush-Up Style ******************************/
+.THIS .redColor{
+    color:#ff234f;
+}
+
+/******** Table *******/
+.THIS .teamTable{
+    border: 0 !important;
+}
+
+.THIS .teamTable input, .THIS .teamTable span{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.THIS th{
+    background-color: white;
+    font-weight: bold;
+}
+
+.THIS th p{
+    color: #bbb;
+}
+
+.THIS tr{
+    background-color: #eef1f6 !important;
+}
+
+.THIS .tdRight{
+    text-align: right;
+}
+
+.THIS .noBorder{
+    border: 0 !important;
+}
+
+.THIS tfoot td{
+    font-weight: bold;
+}
+
+.THIS .redFont{
+    color: red;
+}

@@ -14,6 +14,9 @@
     },
 
     onAddAccPlanDetailCashIn : function(component, event, helper){
+
+        debugger;
+
         var accPlanDetail = component.get("v.accPlanDetail"),
         newAccPlanDetail = component.get("v.newCashIn"),
         result,
@@ -75,16 +78,14 @@
         }
     },
 
-    onTargetCashInChange : function(component, event, helper){
-        if(component.isValid()){
-            helper.calcGap(component);
-        }
-    },
-
     getItemsFromTempList : function(component, event, helper){
-
         var lstTemp = component.get("v.tempList");
         component.set("v.accPlanDetail.accPlanDetailCashIn", lstTemp);
+    },
 
+    onChangeValueForSum : function(component, event, helper){
+        helper.calcGap(component);
+        var changeEvt = component.getEvent("changeValueForSum");
+        changeEvt.fire();
     }
 })

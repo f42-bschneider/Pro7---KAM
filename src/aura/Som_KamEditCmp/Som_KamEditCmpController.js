@@ -374,7 +374,10 @@
     },
 
     onStratProfCancel : function(component){
-        component.set("v.data", component.get("v.dataTmpStratProf"));
+        var isRead = component.get("v.isRead");
+        if(!isRead){
+            component.set("v.data", component.get("v.dataTmpStratProf"));
+        }
         component.set("v.isMainView", true);
     },
 
@@ -413,6 +416,10 @@
 
     showStratProfileSection : function(component, event, helper){
         $A.util.toggleClass(component.find("stratProfileSection"), 'dontShowSection');
+    },
+
+    showTeamSection : function(component, event, helper){
+        $A.util.toggleClass(component.find("teamSection"), 'dontShowSection');
     }
 
     /**** Not needed BS - 27.09.2016 *****

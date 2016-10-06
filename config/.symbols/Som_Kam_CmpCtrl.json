@@ -295,7 +295,7 @@
                     "annotations": [],
                     "location": {
                         "column": 16,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [
                         "public"
@@ -457,6 +457,19 @@
                     "name": "isValidTargetCashIn",
                     "references": [],
                     "type": "Boolean"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 1072
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "gap",
+                    "references": [],
+                    "type": "Decimal"
                 }
             ],
             "tableDeclaration": {
@@ -477,7 +490,7 @@
                     "annotations": [],
                     "location": {
                         "column": 51,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [],
                     "name": "accPlanDetail",
@@ -488,7 +501,7 @@
                     "annotations": [],
                     "location": {
                         "column": 96,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [],
                     "name": "accPlanDetailCashIn",
@@ -499,7 +512,7 @@
                     "annotations": [],
                     "location": {
                         "column": 154,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [],
                     "name": "stratProfileTopics",
@@ -510,7 +523,7 @@
                     "annotations": [],
                     "location": {
                         "column": 207,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [],
                     "name": "teamMembers",
@@ -521,7 +534,7 @@
                     "annotations": [],
                     "location": {
                         "column": 228,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [],
                     "name": "optInOpen",
@@ -532,7 +545,7 @@
                     "annotations": [],
                     "location": {
                         "column": 247,
-                        "line": 1071
+                        "line": 1074
                     },
                     "modifiers": [],
                     "name": "optInClosed",
@@ -547,7 +560,7 @@
                     "annotations": [],
                     "location": {
                         "column": 16,
-                        "line": 1106
+                        "line": 1110
                     },
                     "modifiers": [
                         "public"
@@ -577,7 +590,7 @@
                     "annotations": [],
                     "location": {
                         "column": 39,
-                        "line": 1089
+                        "line": 1093
                     },
                     "modifiers": [
                         "public"
@@ -590,7 +603,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1092
+                        "line": 1096
                     },
                     "modifiers": [
                         "public"
@@ -603,7 +616,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1095
+                        "line": 1099
                     },
                     "modifiers": [
                         "public"
@@ -616,7 +629,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1098
+                        "line": 1102
                     },
                     "modifiers": [
                         "public"
@@ -629,7 +642,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1101
+                        "line": 1105
                     },
                     "modifiers": [
                         "public"
@@ -642,7 +655,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1104
+                        "line": 1108
                     },
                     "modifiers": [
                         "public"
@@ -656,7 +669,7 @@
                 "annotations": [],
                 "location": {
                     "column": 18,
-                    "line": 1087
+                    "line": 1091
                 },
                 "modifiers": [
                     "public"
@@ -670,7 +683,7 @@
                     "annotations": [],
                     "location": {
                         "column": 63,
-                        "line": 1106
+                        "line": 1110
                     },
                     "modifiers": [],
                     "name": "apdci",
@@ -685,7 +698,7 @@
                     "annotations": [],
                     "location": {
                         "column": 16,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [
                         "public"
@@ -739,7 +752,7 @@
                     "annotations": [],
                     "location": {
                         "column": 31,
-                        "line": 1123
+                        "line": 1127
                     },
                     "modifiers": [
                         "public"
@@ -752,7 +765,7 @@
                     "annotations": [],
                     "location": {
                         "column": 49,
-                        "line": 1126
+                        "line": 1130
                     },
                     "modifiers": [
                         "public"
@@ -765,7 +778,7 @@
                     "annotations": [],
                     "location": {
                         "column": 23,
-                        "line": 1129
+                        "line": 1133
                     },
                     "modifiers": [
                         "public"
@@ -778,7 +791,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1132
+                        "line": 1136
                     },
                     "modifiers": [
                         "public"
@@ -791,7 +804,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1135
+                        "line": 1139
                     },
                     "modifiers": [
                         "public"
@@ -804,7 +817,7 @@
                     "annotations": [],
                     "location": {
                         "column": 24,
-                        "line": 1138
+                        "line": 1142
                     },
                     "modifiers": [
                         "public"
@@ -817,7 +830,7 @@
                     "annotations": [],
                     "location": {
                         "column": 23,
-                        "line": 1141
+                        "line": 1145
                     },
                     "modifiers": [
                         "public"
@@ -830,7 +843,7 @@
                     "annotations": [],
                     "location": {
                         "column": 29,
-                        "line": 1144
+                        "line": 1148
                     },
                     "modifiers": [
                         "public"
@@ -843,7 +856,7 @@
                     "annotations": [],
                     "location": {
                         "column": 33,
-                        "line": 1147
+                        "line": 1151
                     },
                     "modifiers": [
                         "public"
@@ -857,7 +870,7 @@
                 "annotations": [],
                 "location": {
                     "column": 18,
-                    "line": 1120
+                    "line": 1124
                 },
                 "modifiers": [
                     "public"
@@ -871,7 +884,7 @@
                     "annotations": [],
                     "location": {
                         "column": 47,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "accPlanTeam",
@@ -882,7 +895,7 @@
                     "annotations": [],
                     "location": {
                         "column": 93,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "teamMembers",
@@ -893,7 +906,7 @@
                     "annotations": [],
                     "location": {
                         "column": 113,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "selectedUserId",
@@ -904,7 +917,7 @@
                     "annotations": [],
                     "location": {
                         "column": 137,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "isSelected",
@@ -915,7 +928,7 @@
                     "annotations": [],
                     "location": {
                         "column": 156,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "status",
@@ -926,7 +939,7 @@
                     "annotations": [],
                     "location": {
                         "column": 181,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "apdAccTeam",
@@ -937,7 +950,7 @@
                     "annotations": [],
                     "location": {
                         "column": 206,
-                        "line": 1149
+                        "line": 1153
                     },
                     "modifiers": [],
                     "name": "allStatus",

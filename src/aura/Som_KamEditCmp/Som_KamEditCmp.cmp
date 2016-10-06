@@ -22,6 +22,7 @@
 
     <aura:attribute name="selectedYear" type="String" access="public" />
     <aura:attribute name="years" type="String" access="public" default="" />
+    <aura:attribute name="summaries" type="Integer[]" access="public" default="0,0,0" />
 
     <!-- event listeners for the strategy profile section -->
     <aura:handler name="okClicked" event="c:Som_KamStrategyProfileSummaryEvent" action="{!c.onStratProfOk}"/>
@@ -341,6 +342,8 @@
 
                 <!-- ### show all ### -->
                 <div style="{!v.showAll ? '' : 'display:none'}">
+
+                    <!-- ### Account Plan Informations - New Style###-->
                     <div class="row">
                         <div class="space-top sectionHeader">
                             {!$Label.c.Som_lbl_AccountPlanInfos}
@@ -357,17 +360,17 @@
                                     {!$Label.c.Som_lbl_Year}:
                                 </div>
                                 <div class="col-md-3 goRight">
-                                    <ui:outputNumber value="{!v.data.accPlan.accPlan.Som_Year__c}" />
+                                    <ui:outputText value="{!v.data.accPlan.accPlan.Som_Year__c}" />
                                 </div>
                                 <div class="col-md-6">
                                     {!$Label.c.Som_lbl_EmailText}
                                 </div>
 
                                 <div class="col-md-3 goRight">
-                                    Cash-In 2015:
+                                    Cash-In {!v.data.accPlan.accPlan.Som_Year__c - 1}:
                                 </div>
                                 <div class="col-md-3 goRight">
-                                    <ui:outputNumber value="1100000" />
+                                    <ui:outputNumber value="{!v.summaries[0]}" />
                                 </div>
                                 <div class="col-md-6" style="font-size: 14px;">
                                    <ui:inputText  placeholder="Subject..." class="fullWidth borderInfo"/>
@@ -377,10 +380,10 @@
 
                                     <div class="row">
                                         <div class="col-md-6 goRight">
-                                            Target Cash-In 2016:
+                                            Target Cash-In {!v.data.accPlan.accPlan.Som_Year__c}:
                                         </div>
                                         <div class="col-md-6 goRight">
-                                            <ui:outputNumber value="800000" />
+                                            <ui:outputNumber value="{!v.summaries[1]}" />
                                         </div>
                                     </div>
 
@@ -412,6 +415,35 @@
                             <div class="col-md-12 space-top doubleRedBottom" />
 
                         </div>
+                    </div>
+
+                    <!-- ### Account Plan Team Assignment - New Style###-->
+                    <div class="row">
+                        <div class="sectionHeader">
+                            {!$Label.c.Som_lbl_AccPlanTeamAssigns}
+
+                            <button type="button" class="btn btn-link pull-right magTop10" onclick="{!c.showTeamSection}">
+                                <i class="ionicons ion-chevron-down btn-icon redColor"></i>
+                            </button>
+
+                        </div>
+
+                        <div style="height:20px"/>
+
+                        <div aura:id="teamSection">
+                            <div style="padding: 5px 18px;">
+
+                                <p class="secondHeader">{!$Label.c.Som_lbl_Kickoff}/{!$Label.c.Som_lbl_Review}</p>
+
+                                <aura:if isTrue="{! v.data.accPlan.accPlanDetails.length > 0}" >
+                                    <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" summaries="{!v.summaries}" aura:id="accPlanDetailSummary"/>
+                                </aura:if>
+
+                            </div>
+
+                            <div class="col-md-12 space-top doubleRedBottom" />
+                        </div>
+
                     </div>
 
                     <!-- ### Account Plan Strategy Profile Summary - New Style###-->
@@ -458,10 +490,9 @@
 
                     </div>
 
-                    <!-- ### Account Plan Informations - Old Style###-->
+                    <!-- ### Account Plan Informations - Old Style###
                     <div class="row space-top">
 
-                        <!--
                         <div class="{!v.isRead ? 'col-md-8 overlay-read' : 'col-md-8'}">
 
                             <div class="panel panel-default space-top">
@@ -511,15 +542,15 @@
 
                                 </div>
                             </div>
-                        </div>-->
+                        </div>
 
-                        <!--<div class="col-md-4 space-top">
+                        <div class="col-md-4 space-top">
                             <c:P7S1_AccountDashboardMediaCmp aura:id="dashboard" height="325px"/>
-                        </div>-->
-                    </div>
+                        </div>
+                    </div>-->
 
 
-                    <!-- ### Account Plan Team Assignments ### -->
+                    <!-- ### Account Plan Team Assignments ###
                     <div class="row space-top">
                         <div class="{!v.isRead ? 'overlay-read' : ''}">
                             <div class="panel panel-default space-top">
@@ -543,10 +574,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
 
-                    <!-- ### Account Plan Details Summary ### -->
+                    <!-- ### Account Plan Details Summary ###
                     <div class="{!v.isRead ? 'overlay-read' : ''}" style="{!v.data.accPlan.accPlanDetails.length > 0 ? '' : 'display:none'}">
                         <div class="panel panel-default">
 
@@ -556,7 +587,7 @@
 
                             <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" aura:id="accPlanDetailSummary"/>
                         </div>
-                    </div>
+                    </div>-->
 
                     <!-- ### Account Plan Strategy Profile Summary - Old Style ###
                     <div class="{!v.isRead ? 'overlay-read' : ''}" style="{!v.data.accPlan.stratProfileTopics.length > 0 ? '' : 'display:none'}">

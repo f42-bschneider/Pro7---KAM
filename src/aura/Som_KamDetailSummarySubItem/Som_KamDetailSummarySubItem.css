@@ -1,2 +1,7 @@
-.THIS {
+.THIS .redColor{
+    color:#ff234f;
+}
+
+.THIS .noBorder{
+    border: 0 !important;
 }

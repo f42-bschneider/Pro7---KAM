@@ -18,3 +18,103 @@
     background-color: #E5E5E5!important;
     pointer-events: none;
 }
+
+/****************************************************************************/
+/******************** NEW Brush-Up Style ******************************/
+.THIS .redColor{
+    color:#ff234f;
+}
+
+.THIS .navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.THIS .navbar-buttons{
+    margin-right:30px;
+    margin-left:20px
+}
+
+.THIS .redBack{
+    background-color: #ff234f !important;
+}
+
+.THIS .whiteBack{
+    background-color: white;
+    font-size: 18px !important;
+}
+
+.THIS .whiteBack:hover{
+    background-color: #e7e7e7;
+}
+
+.THIS .accName{
+    float:left;
+    padding-top: 15px;
+    padding-left: 20px;
+    color:white;
+    font-size:18px;
+}
+
+.THIS .ulLogo{
+    height:50px;
+    padding:10px 35px 10px 15px !important;
+    background-color: white
+}
+
+.THIS .navButton{
+    margin-top:10px;
+    margin-right:20px;
+    border: solid 1px #848484;
+    font-size:14px !important;
+}
+
+.THIS .navSelect{
+    background: url(/resource/f42_Icon_Down) no-repeat right;
+    height:27px !important;
+    width:200px !important;
+    padding:5px;
+    padding-right: 20px;
+    padding-left: 10px;
+    line-height:1;
+    border: 0;
+    background-color: white;
+    color:#848484;
+    font-size:13px;
+    -webkit-appearance:none;
+    outline:none
+}
+
+/******** Sections *******/
+.THIS .sectionHeader{
+    font-size:18px;
+    color:#636363;
+    width:100%;
+    margin-top: 40px;
+    padding:10px;
+    border-bottom: solid 1px #636363;
+}
+
+.THIS .detailText{
+    font-size: 16px;
+    color:#636363;
+}
+
+.THIS .detailText div{
+    padding: 10px 20px;
+}
+
+.THIS .detailText span{
+    font-weight: bold;
+}
+
+.THIS .fullWidth{
+    width: 100%;
+}
+
+.THIS .borderInfo{
+    border: solid 1px #636363;
+}

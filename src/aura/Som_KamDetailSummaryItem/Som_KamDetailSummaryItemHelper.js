@@ -77,5 +77,8 @@
         }
 
         component.set("v.gap", gap);
+        if(!$A.util.isEmpty(component.get("v.accPlanDetail.gap"))){
+            component.set("v.accPlanDetail.gap", gap);
+        }
     }
 })

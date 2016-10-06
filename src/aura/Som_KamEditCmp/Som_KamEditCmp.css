@@ -178,6 +178,12 @@
     border-radius: 0px;
 }
 
+/******** Team assignment *******/
+.THIS .secondHeader{
+    font-size:18px;
+    color:#636363;
+}
+
 /******** Strategy profile summary *******/
 .THIS .magTop10{
     margin-top: -10px !important;

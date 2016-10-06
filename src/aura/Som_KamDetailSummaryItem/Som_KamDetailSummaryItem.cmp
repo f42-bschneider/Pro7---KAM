@@ -24,6 +24,10 @@
 
     <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
     <aura:handler name="changeTempItem" event="c:Som_KamChangeEvent" action="{!c.getItemsFromTempList}"/>
+    <aura:handler name="addSubItem" event="c:Som_KamChangeEvent" action="{!c.onAddAccPlanDetailCashIn}"/>
+
+    <aura:handler name="change" value="{!v.accPlanDetail.accPlanDetail}" action="{!c.onChangeValueForSum}"/>
+    <aura:registerEvent name="changeValueForSum" type="c:Som_KamChangeEvent" />
 
     <aura:method name="getItemsFromTempList" action="{!c.getItemsFromTempList}" access="PUBLIC" />
     <aura:method name="initiateTempList" action="{!c.onInitiateTempList}" access="PUBLIC" />
@@ -40,18 +44,18 @@
 
             <td style="{!
                 if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Invited',
-                    'background-color:#F9C209;',
+                    'color:#F9C209;',
                     if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Kickoff',
-                        'background-color:#2865AC;',
+                        'color:#2865AC;',
                         if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Review',
-                            'background-color:#4CAE42;',
+                            'color:#4CAE42;',
                             if(v.accPlanDetail.accPlanDetail.Som_Status__c == 'Created',
-                                'background-color:#FF0033;',
+                                'color:#FF0033;',
                                 ''
                             )
                         )
                     )
-                ) + 'color:white;'}">
+                )}">
                 <b>{!v.accPlanDetail.accPlanDetail.Som_Status__c}</b>
             </td>
 
@@ -105,9 +109,6 @@
         </tr>
     </aura:if>
 
-
-
-
     <!--<aura:iteration items="{!v.accPlanDetail.accPlanDetailCashIn}" var="cashIn">
         <c:Som_KamDetailSummarySubItem accPlanDetailCashIn="{!cashIn ? cashIn : null}"
             showEmptyCells="{!v.showAccPlanRow}"
@@ -115,13 +116,15 @@
     </aura:iteration>-->
 
     <!-- *** Workarround for rendering problems with Locker Service and pushing data into lists *** -->
-    <aura:iteration items="{!v.tempList}" var="cashIn">
+    <aura:iteration items="{!v.tempList}" var="cashIn" indexVar="index">
         <c:Som_KamDetailSummarySubItem accPlanDetailCashIn="{!cashIn}"
             showEmptyCells="{!v.showAccPlanRow}"
             hide="{!not(v.showSubItems)}"
-            fireChangeEvent="{!v.fireChangeEvent}"/>
+            fireChangeEvent="{!v.fireChangeEvent}"
+            showAddItem="{! (index+1) == v.tempList.length}" />
     </aura:iteration>
 
+    <!-- *** New style needs to show this option in subitem ***
     <tr style="{!v.showSubItems ? '' : 'display:none'}">
         <td>
             <button class="btn btn-success btn-xs" type="button" onclick="{!c.onAddAccPlanDetailCashIn}">
@@ -172,6 +175,6 @@
             <td></td>
             <td></td>
         </aura:if>
-    </tr>
+    </tr>-->
 
 </aura:component>

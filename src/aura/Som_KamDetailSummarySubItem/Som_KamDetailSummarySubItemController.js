@@ -10,5 +10,10 @@
             var changeEvt = component.getEvent("changeTempItem");
             changeEvt.fire();
         }
+    },
+
+    onAddSubItem : function(component, event){
+        var addEvt = component.getEvent("addSubItem");
+        addEvt.fire();
     }
 })

@@ -4,32 +4,61 @@
     <aura:attribute name="thisYear" type="Decimal" access="private"/>
     <aura:attribute name="showSubItems" type="Boolean" access="public" default="false"/>
 
+    <aura:attribute name="summaries" type="Integer[]" access="public" default="0,0,0" />
+
     <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:handler name="changeValueForSum" event="c:Som_KamChangeEvent" action="{!c.onCalcSum}"/>
 
     <div class="f42">
 
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped teamTable">
             <thead>
                 <tr>
                     <th style="min-width:35px">
+
+                        <aura:if isTrue="{! not(v.showSubItems)}" >
+                            <button type="button" class="btn btn-link" onclick="{!c.onShowSubItems}">
+                                <i class="ionicons ion-chevron-down btn-icon redColor"></i>
+                            </button>
+                        </aura:if>
+
+                        <aura:if isTrue="{! v.showSubItems}" >
+                            <button type="button" class="btn btn-link" onclick="{!c.onHideSubItems}">
+                                <i class="ionicons ion-chevron-up btn-icon redColor"></i>
+                            </button>
+                        </aura:if>
+
+                        <!-- Old style buttons
                         <button type="button" style="{!not(v.showSubItems) ? '':'display:none'}" class="btn btn-primary btn-xs enable" onclick="{!c.onShowSubItems}">
                             <i class="ionicons ion-chevron-down"></i>
                         </button>
 
                         <button type="button" style="{!v.showSubItems ? '':'display:none'}" class="btn btn-primary btn-xs enable" onclick="{!c.onHideSubItems}">
                             <i class="ionicons ion-chevron-up"></i>
-                        </button>
+                        </button>-->
                     </th>
                     <th width="200px">{!$Label.c.Som_lbl_AccountTeam}</th>
                     <th>{!$Label.c.Som_lbl_TeamMember}</th>
                     <th>{!$Label.c.Ven_lbl_Status}</th>
-                    <th>{!$Label.c.Som_lbl_CashIn} {!' '+(v.thisYear-1)}</th>
-                    <th>{!$Label.c.Som_lbl_CashExternalYield}</th>
+                    <th class="tdRight">
+                        <p>€</p>
+                        {!$Label.c.Som_lbl_CashIn} {!' '+(v.thisYear-1)}
+                    </th>
+                    <th class="tdRight">
+                        <p>%</p>
+                        {!$Label.c.Som_lbl_CashExternalYield}
+                    </th>
                     <th>{!$Label.c.Som_lbl_RatingDealLearnings}</th>
-                    <th>{!$Label.c.Som_lbl_TargetCashIn} {!' '+v.thisYear}</th>
-                    <th>{!$Label.c.Som_lbl_ClosedOpps}</th>
-                    <th>{!$Label.c.Som_lbl_OpenOpps}</th>
-                    <th>{!$Label.c.Som_lbl_Gap}</th>
+                    <th class="tdRight">
+                        <p>€</p>
+                        {!$Label.c.Som_lbl_TargetCashIn} {!' '+v.thisYear}
+                    </th>
+                    <th class="tdRight">{!$Label.c.Som_lbl_ClosedOpps}</th>
+                    <th class="tdRight">{!$Label.c.Som_lbl_OpenOpps}</th>
+                    <th class="tdRight">
+                        <p>€</p>
+                        {!$Label.c.Som_lbl_Gap}
+                    </th>
                 </tr>
             </thead>
 
@@ -37,10 +66,33 @@
                 <aura:iteration items="{!v.accPlanDetails ? v.accPlanDetails : null}" var="accPlanDetail">
                     <c:Som_KamDetailSummaryItem accPlanDetail="{!accPlanDetail ? accPlanDetail : null}"
                         showSubItems="{!v.showSubItems}"
-                        fireChangeEvent="true"
-                        />
+                        fireChangeEvent="true"/>
                 </aura:iteration>
             </tbody>
+
+            <!-- *** New Style - Summary row *** -->
+            <tfoot>
+                <tr><td class="noBorder"></td></tr>
+                <tr style="border-top: 2px solid #bbb;">
+                    <td class="noBorder">Sum</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdRight">
+                        <ui.outputNumber value="{!v.summaries[0]}" />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdRight">
+                        <ui.outputNumber value="{!v.summaries[1]}" />
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td class="tdRight" aura:id="gapSum">
+                        <ui.outputNumber value="{!v.summaries[2]}" />
+                    </td>
+                </tr>
+            </tfoot>
         </table>
 
     </div>
