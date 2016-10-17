@@ -49,41 +49,60 @@
 
                     <div class="slds-modal__container">
 
+                        <div class="slds-modal__header modalHeadFoot">
+                            <button class="slds-button slds-modal__close slds-button--icon-inverse closeBtn" onclick="{!c.hideKickoffModal}">
+                                <i class="ionicons ion-close-round btn-icon"></i>
+                            </button>
+                            <p class="secondHeader" >Invite E-Mail for Kickoff - {!v.data.accPlan.accPlan.Som_Kickoff__c} - {!v.data.accPlan.accPlan.Som_Account__r.Name}</p>
+                            <div class="modHeaderLine" />
+                        </div>
+
                         <div class="slds-modal__content slds-p-around--medium">
-                            <div class="form-group">
-                                <label>{!$Label.c.Som_lbl_Kickoff}</label>
-                                <ui:outputDate class="form-control outputtext"
-                                    value="{!v.data.accPlan.accPlan.Som_Kickoff__c}"/>
+
+                            <div class="form-group slds-grid">
+                                <div class="slds-large-size--2-of-12 detailText">
+                                    Recipients:
+                                </div>
+                                <div class="slds-p-horizontal--small slds-large-size--10-of-12 borderInfo stratText pad10" >
+                                    <aura:iteration items="{!v.data.accPlan.accPlanDetails}" var="team" indexVar="teamIndex">
+                                        <aura:if isTrue="{! teamIndex != 0}">
+                                            ,
+                                        </aura:if>
+                                        {!team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName}
+                                    </aura:iteration>
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label>{!$Label.c.Som_lbl_EmailText}</label>
-                                <ui:inputTextArea class="form-control outputtext"
+                                <ui:inputText class="fullWidth borderInfo stratText pad10" value="{!v.data.accPlan.accPlan.Som_EmailSubject__c}" />
+                            </div>
+
+                            <div class="form-group">
+                                <ui:inputTextArea class="fullWidth borderInfo stratText pad10"
                                     resizable="false"
-                                    rows="10"
+                                    rows="15"
                                     value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
                             </div>
 
-                            <p>
+                            <p class="detailText">
                                 <ui:inputRadio aura:id="r1" value="true" name="inviteKickoff" text="inviteUninvited" change="{!c.onInviteKickoffChange}"/>
                                 {!' '+$Label.c.Som_lbl_InviteUninvitedAccPlanTeams}
                             </p>
 
-                            <p>
+                            <p class="detailText">
                                 <ui:inputRadio aura:id="r0" name="inviteKickoff" text="inviteAll" change="{!c.onInviteKickoffChange}"/>
                                 {!' '+$Label.c.Som_lbl_InviteAllAccPlanTeams}
                             </p>
                         </div>
 
-                        <div class="slds-modal__footer">
-                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.hideKickoffModal}">
-                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#logout" class="" category="utility" size="small" name="down" />
-                                Cancel
-                            </button>
-                            &nbsp;
-                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.onInviteKickoff}">
-                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#email" class="" category="utility" size="small" name="down" />
+                        <div class="slds-modal__footer modalHeadFoot" >
+                            <button type="button" class="whiteBack navButton padButton" onclick="{!c.onInviteKickoff}">
                                 {!' '+$Label.c.Som_lbl_InviteFor +' '} {!$Label.c.Som_lbl_Kickoff}
+                                <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
+                            </button>
+                            <button type="button" class="whiteBack navButton padButton" onclick="{!c.hideKickoffModal}" style="margin-right: 0 !important">
+                                Cancel
+                                <i class="ionicons ion-close-round btn-icon redColor" style="margin-left: 5px"></i>
                             </button>
                         </div>
                     </div>
@@ -95,33 +114,54 @@
 
                     <div class="slds-modal__container">
 
+                        <div class="slds-modal__header modalHeadFoot">
+                            <button class="slds-button slds-modal__close slds-button--icon-inverse closeBtn" onclick="{!c.hideReviewModal}">
+                                <i class="ionicons ion-close-round btn-icon"></i>
+                            </button>
+                            <p class="secondHeader" >Invite E-Mail for Review - {!v.data.accPlan.accPlan.Som_Review__c} - {!v.data.accPlan.accPlan.Som_Account__r.Name}</p>
+                            <div class="modHeaderLine" />
+                        </div>
+
                         <div class="slds-modal__content slds-p-around--medium">
-                            <div class="form-group">
-                                <label>{!$Label.c.Som_lbl_Review}</label>
-                                <ui:outputDate class="form-control outputtext"
-                                    value="{!v.data.accPlan.accPlan.Som_Review__c}"/>
+
+                            <div class="form-group slds-grid">
+                                <div class="slds-large-size--2-of-12 detailText">
+                                    Recipients:
+                                </div>
+                                <div class="slds-p-horizontal--small slds-large-size--10-of-12 borderInfo stratText pad10" >
+                                    <aura:iteration items="{!v.data.accPlan.accPlanDetails}" var="team" indexVar="teamIndex">
+                                        <aura:if isTrue="{! teamIndex != 0}">
+                                            ,
+                                        </aura:if>
+                                        {!team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName}
+                                    </aura:iteration>
+                                </div>
                             </div>
 
                             <div class="form-group">
-                                <label>{!$Label.c.Som_lbl_EmailText}</label>
-                                <ui:inputTextArea class="form-control outputtext"
-                                    rows="10"
+                                <ui:inputText class="fullWidth borderInfo stratText pad10" value="{!v.data.accPlan.accPlan.Som_EmailSubject__c}" />
+                            </div>
+
+                            <div class="form-group">
+                                <ui:inputTextArea class="fullWidth borderInfo stratText pad10"
                                     resizable="false"
+                                    rows="15"
                                     value="{!v.data.accPlan.accPlan.Som_EmailText__c}"/>
                             </div>
+
                         </div>
 
-                        <div class="slds-modal__footer">
-                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.hideReviewModal}">
-                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#logout" class="" category="utility" size="small" name="down" />
-                                Cancel
-                            </button>
-                            &nbsp;
-                            <button type="button" class="btn btn-primary btn-sm" onclick="{!c.onInviteReview}" >
-                                <c:f42_Svg svgPath="/resource/SLDS/assets/icons/utility-sprite/svg/symbols.svg#email" class="" category="utility" size="small" name="down" />
+                        <div class="slds-modal__footer modalHeadFoot" >
+                            <button type="button" class="whiteBack navButton padButton" onclick="{!c.onInviteReview}">
                                 {!' '+$Label.c.Som_lbl_InviteFor +' '} {!$Label.c.Som_lbl_Review}
+                                <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
+                            </button>
+                            <button type="button" class="whiteBack navButton padButton" onclick="{!c.hideReviewModal}" style="margin-right: 0 !important">
+                                Cancel
+                                <i class="ionicons ion-close-round btn-icon redColor" style="margin-left: 5px"></i>
                             </button>
                         </div>
+
                     </div>
 
                 </div>
@@ -354,63 +394,52 @@
 
                         <div aura:id="detailSection">
 
-                            <div class="col-md-8 space-top detailText">
+                            <div class="col-md-6 space-top detailText">
 
-                                <div class="col-md-3 goRight">
+                                <div class="col-md-6 goRight">
                                     {!$Label.c.Som_lbl_Year}:
                                 </div>
-                                <div class="col-md-3 goRight">
+                                <div class="col-md-6 goRight">
                                     <ui:outputText value="{!v.data.accPlan.accPlan.Som_Year__c}" />
                                 </div>
-                                <div class="col-md-6">
-                                    {!$Label.c.Som_lbl_EmailText}
-                                </div>
 
-                                <div class="col-md-3 goRight">
+                                <div class="col-md-6 goRight">
                                     Cash-In {!v.data.accPlan.accPlan.Som_Year__c - 1}:
                                 </div>
-                                <div class="col-md-3 goRight">
+                                <div class="col-md-6 goRight">
                                     <ui:outputNumber value="{!v.summaries[0]}" />
                                 </div>
-                                <div class="col-md-6" style="font-size: 14px;">
-                                   <ui:inputText  placeholder="Subject..." class="fullWidth borderInfo"/>
+
+                                <div class="col-md-6 goRight">
+                                    Target Cash-In {!v.data.accPlan.accPlan.Som_Year__c}:
+                                </div>
+                                <div class="col-md-6 goRight">
+                                    <ui:outputNumber value="{!v.summaries[1]}" />
                                 </div>
 
-                                <div class="col-md-6" style="padding: 0px">
-
-                                    <div class="row">
-                                        <div class="col-md-6 goRight">
-                                            Target Cash-In {!v.data.accPlan.accPlan.Som_Year__c}:
-                                        </div>
-                                        <div class="col-md-6 goRight">
-                                            <ui:outputNumber value="{!v.summaries[1]}" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 goRight" style="padding-top:17px;">
-                                        {!$Label.c.Som_lbl_Kickoff}:
-                                    </div>
-                                    <div class="col-md-6" >
-                                        <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Kickoff__c}" displayDatePicker="true"/>
-                                    </div>
-
-                                    <div class="col-md-6 goRight" style="padding-top:17px;">
-                                        {!$Label.c.Som_lbl_Review}:
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Review__c}" displayDatePicker="true"/>
-                                    </div>
-
+                                <div class="col-md-6 goRight" style="padding-top:25px;">
+                                    {!$Label.c.Som_lbl_Kickoff}:
                                 </div>
-                                <div class="col-md-6" style="font-size: 14px;">
-                                   <ui:inputTextArea placeholder="E-Mail Text..." value="{!v.data.accPlan.accPlan.Som_EmailText__c}" resizable="false" rows="17" class="fullWidth borderInfo"/>
+                                <div class="col-md-6 goRight" style="padding-right: 0; padding-left:100px;">
+                                    <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Kickoff__c}" displayDatePicker="true"/>
+                                </div>
+
+                                <div class="col-md-6 goRight" style="padding-top:25px;">
+                                    {!$Label.c.Som_lbl_Review}:
+                                </div>
+                                <div class="col-md-6 goRight" style="padding-right: 0;padding-left:100px;">
+                                    <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Review__c}" displayDatePicker="true"/>
                                 </div>
 
                             </div>
+
+                            <div class="col-md-1" />
 
                             <div class="col-md-4 space-top borderInfo accDash" style="background-color:white;">
                                 <c:P7S1_AccountDashboardMediaCmp aura:id="dashboard" height="325px" />
                             </div>
+
+                            <div class="col-md-1" />
 
                             <div class="col-md-12 space-top doubleRedBottom" />
 
@@ -436,12 +465,30 @@
                                 <p class="secondHeader">{!$Label.c.Som_lbl_Kickoff}/{!$Label.c.Som_lbl_Review}</p>
 
                                 <aura:if isTrue="{! v.data.accPlan.accPlanDetails.length > 0}" >
-                                    <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" summaries="{!v.summaries}" aura:id="accPlanDetailSummary"/>
+                                    <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" accPlanTeamMap="{!v.data.mapId2Team}" summaries="{!v.summaries}" aura:id="accPlanDetailSummary"/>
                                 </aura:if>
 
                             </div>
 
+                            <div class="col-md-12 space-top">
+                                <ul class="nav navbar-nav navbar-right magTop20">
+                                    <li class="whiteBack navButton">
+                                        <a href="#" onclick="{!c.showKickoffModal}" style="padding: 5px 10px 5px 10px;color:#848484">
+                                            {!' '+$Label.c.Som_lbl_Kickoff}
+                                            <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
+                                        </a>
+                                    </li>
+                                    <li class="whiteBack navButton">
+                                        <a href="#" onclick="{!c.showReviewModal}" style="padding: 5px 10px 5px 10px;color:#848484">
+                                            {!' '+$Label.c.Som_lbl_Review}
+                                            <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <div class="col-md-12 space-top doubleRedBottom" />
+
                         </div>
 
                     </div>

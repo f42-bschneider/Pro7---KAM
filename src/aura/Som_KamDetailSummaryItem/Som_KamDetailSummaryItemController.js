@@ -7,6 +7,9 @@
         /*** Workarround for rendering problems with Locker Service and pushing data into lists ***
         *** http://salesforce.stackexchange.com/questions/130418/auraiteration-doesnt-rerender-when-changing-attribute-object-under-locker-se ***/
        helper.fillTempListWithItems(component);
+
+       /*** Get AccountPlanTeam 2 Id ***/
+       helper.getAccPlanTeam2Id(component);
     },
 
     onInitiateTempList : function(component, event, helper){
@@ -14,8 +17,6 @@
     },
 
     onAddAccPlanDetailCashIn : function(component, event, helper){
-
-        debugger;
 
         var accPlanDetail = component.get("v.accPlanDetail"),
         newAccPlanDetail = component.get("v.newCashIn"),
@@ -87,5 +88,14 @@
         helper.calcGap(component);
         var changeEvt = component.getEvent("changeValueForSum");
         changeEvt.fire();
+    },
+
+    onUpdateTeamMap : function(component, event, helper){
+        helper.updateTeamMap(component, event);
+        helper.setIsValid(component);
+    },
+
+    onChangeSelectIsValid : function(component, event, helper){
+        helper.setIsValid(component);
     }
 })

@@ -243,6 +243,7 @@ public without sharing class Som_Kam_CmpCtrl {
                 Som_Account__c,
                 Som_Account__r.Name,
                 Som_EmailText__c,
+                Som_EmailSubject__c,
                 Som_Kickoff__c,
                 Som_Year__c,
                 Som_Review__c
@@ -261,6 +262,7 @@ public without sharing class Som_Kam_CmpCtrl {
                 Som_Account__c,
                 Som_Account__r.Name,
                 Som_EmailText__c,
+                Som_EmailSubject__c,
                 Som_Kickoff__c,
                 Som_Year__c,
                 Som_Review__c
@@ -607,6 +609,7 @@ public without sharing class Som_Kam_CmpCtrl {
                 Som_Kickoff__c,
                 Som_Review__c,
                 Som_EmailText__c,
+                Som_EmailSubject__c,
                 Som_Account__c,
                 Som_Account__r.Name
             FROM
@@ -799,7 +802,6 @@ public without sharing class Som_Kam_CmpCtrl {
             List<Som_KamStrategyProfileTopic__c> newProfiles = new List<Som_KamStrategyProfileTopic__c>();
 
             Som_Kam__c apTemp = (Som_Kam__c) accPlan;
-
             upsert accPlan;
 
             // acc plan is new => create strat profs
@@ -999,6 +1001,10 @@ public without sharing class Som_Kam_CmpCtrl {
         @AuraEnabled
         public List<AccountPlanTeam> accPlanTeams{get;set;}
 
+        //TODO Test
+        @AuraEnabled
+        public Map<String,AccountPlanTeam> mapId2Team{get;set;}
+
         @AuraEnabled
         public String accName{get;set;}
 
@@ -1010,6 +1016,13 @@ public without sharing class Som_Kam_CmpCtrl {
             this.accPlanTeams   = accPlanTeams;
             this.accName        = accName;
             this.years              = years;
+
+            this.mapId2Team = new map<String,AccountPLanTeam>();
+            if(accPlanTeams != null && accPlanTeams.size() > 0){
+                for(AccountPLanTeam t : accPlanTeams){
+                    this.mapId2Team.put(t.accPlanTeam.Id ,t);
+                }
+            }
         }
     }
 

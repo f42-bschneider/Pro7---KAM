@@ -153,6 +153,9 @@
     onSave : function(component, event, helper){
         component.set("v.renderSpinner", true);
 
+        /*** Update changed AccountPlanTeamList ***/
+        helper.updateAccPlanTeamList(component);
+
         if(!helper.validateAccPlan(component)){
             component.set("v.renderSpinner", false);
             return;
@@ -197,6 +200,9 @@
 
     onInviteReview : function(component, event, helper){
         component.set("v.renderSpinner", true);
+
+        /*** Update changed AccountPlanTeamList ***/
+        helper.updateAccPlanTeamList(component);
 
         var accPlan = component.get("v.data.accPlan.accPlan"),
         isValid = true,
@@ -270,6 +276,9 @@
 
     onInviteKickoff : function(component, event, helper){
         component.set("v.renderSpinner", true);
+
+        /*** Update changed AccountPlanTeamList ***/
+        helper.updateAccPlanTeamList(component);
 
         var accPlan = component.get("v.data.accPlan.accPlan"),
         isValid = true,
@@ -387,6 +396,7 @@
     },
 
     showKickoffModal: function(component, event, helper) {
+        helper.initiateEmailTemplate(component, true);
         //Toggle CSS styles for opening Modal
         helper.toggleClass(component, 'backdrop', 'slds-backdrop--');
         helper.toggleClass(component, 'kickoffModal', 'slds-fade-in-');
@@ -399,6 +409,7 @@
     },
 
     showReviewModal: function(component, event, helper) {
+        helper.initiateEmailTemplate(component, false);
         //Toggle CSS styles for opening Modal
         helper.toggleClass(component, 'backdrop', 'slds-backdrop--');
         helper.toggleClass(component, 'reviewModal', 'slds-fade-in-');

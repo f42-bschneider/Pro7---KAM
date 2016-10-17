@@ -206,3 +206,31 @@
     background-color:white;
     border-bottom: 0;
 }
+
+/******** Strategy profile summary *******/
+.THIS .modalHeadFoot{
+    background-color: white;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.THIS .modHeaderLine{
+    width:95%;
+    heigth:1px;
+    border-bottom: solid 1px black;
+    margin: 0 auto
+}
+
+/******** Modal panels *******/
+.THIS .padButton{
+    color:#636363;
+    padding: 7px 10px;
+}
+
+.THIS .closeBtn{
+    top:5px; right:3px;
+}
+
+.THIS .closeBtn i{
+    color: #D8D8D8;
+}

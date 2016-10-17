@@ -10,12 +10,12 @@
         inputSelect.set("v.errors", null);
         component.set("v.isValid", true);
 
-        if(!this.isValueInOptions(value, options) && typeof valueInit !== 'undefined' && valueInit !== null){ // initial value was undefined => just check for required
+        if(!this.isValueInOptions(valueInit, options) && typeof valueInit !== 'undefined' && valueInit !== null){ // initial value was undefined => just check for required
             errors.push({"message" : "Invalid value: "+ valueInit});
             component.set("v.isValid", false);
         }
 
-        if(this.isValueNullButRequired(value, required)){
+        if(this.isValueNullButRequired(valueInit, required)){
             errors.push({"message" : "Select a value"});
             component.set("v.isValid", false);
         }

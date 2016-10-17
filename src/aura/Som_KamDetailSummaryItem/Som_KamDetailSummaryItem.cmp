@@ -22,11 +22,20 @@
     <!-- *** Workarround for rendering problems with Locker Service and pushing data into lists *** -->
     <aura:attribute name="tempList" type="Object[]" access="private" />
 
+    <!-- *** New style attributes *** -->
+    <aura:attribute name="accPlanTeamMap" type="Map" access="public" />
+    <aura:attribute name="currentTeam" type="Object" access="private" />
+    <aura:attribute name="selectIsValid" type="Boolean" access="private"/>
+
+
     <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
     <aura:handler name="changeTempItem" event="c:Som_KamChangeEvent" action="{!c.getItemsFromTempList}"/>
     <aura:handler name="addSubItem" event="c:Som_KamChangeEvent" action="{!c.onAddAccPlanDetailCashIn}"/>
 
+    <!-- *** New style handler *** -->
+    <aura:handler name="change" value="{!v.selectIsValid}" action="{!c.onChangeSelectIsValid}"/>
     <aura:handler name="change" value="{!v.accPlanDetail.accPlanDetail}" action="{!c.onChangeValueForSum}"/>
+
     <aura:registerEvent name="changeValueForSum" type="c:Som_KamChangeEvent" />
 
     <aura:method name="getItemsFromTempList" action="{!c.getItemsFromTempList}" access="PUBLIC" />
@@ -35,11 +44,17 @@
 
     <aura:if isTrue="{!v.showAccPlanRow}">
         <tr>
-            <td></td>
+            <td style="text-align:center">
+                <ui:inputCheckbox value="{!v.currentTeam.isSelected}" change="{!c.onUpdateTeamMap}"/>
+            </td>
             <td><b>{!v.accPlanDetail.accPlanDetail.Som_KamTeam__r.Name}</b></td>
 
             <td>
-                {!v.accPlanDetail.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + v.accPlanDetail.accPlanDetail.Som_KamTeamMember__r.LastName}
+                <c:f42_InputSelect
+                    value="{!v.currentTeam.selectedUserId}"
+                    options="{!v.currentTeam.teamMembers}"
+                    required="{!v.currentTeam.isSelected}"
+                    isValid="{!v.selectIsValid}"/>
             </td>
 
             <td style="{!

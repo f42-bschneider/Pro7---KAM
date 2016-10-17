@@ -80,5 +80,41 @@
         if(!$A.util.isEmpty(component.get("v.accPlanDetail.gap"))){
             component.set("v.accPlanDetail.gap", gap);
         }
+    },
+
+    getAccPlanTeam2Id : function(component){
+        var mapTeams = component.get("v.accPlanTeamMap"),
+        teamId = component.get("v.accPlanDetail.accPlanDetail.Som_KamTeam__c");
+
+        if(!$A.util.isEmpty(teamId) && !$A.util.isEmpty(mapTeams)){
+            component.set("v.currentTeam", mapTeams[teamId]);
+        }
+
+        //Check if selected Team Member is valid
+        var accPlanTeam = component.get("v.currentTeam");
+        if(typeof accPlanTeam.selectedUserId === 'undefined'){
+            component.set("v.currentTeam.isValid", false);
+        }
+    },
+
+    updateTeamMap : function(component, event){
+        var mapTeams = component.get("v.accPlanTeamMap"),
+        currentTeam = component.get("v.currentTeam");
+
+        mapTeams[currentTeam.accPlanTeam.Id] = currentTeam;
+        component.set("v.accPlanTeamMap", mapTeams);
+    },
+
+    setIsValid : function(component){
+        if(component.isValid()){
+            var isSelected = component.get("v.currentTeam.isSelected"),
+            selectIsValid = component.get("v.selectIsValid");
+
+            component.set("v.currentTeam.isValid", false);
+
+            if(isSelected && selectIsValid){
+                component.set("v.currentTeam.isValid", true);
+            }
+        }
     }
 })

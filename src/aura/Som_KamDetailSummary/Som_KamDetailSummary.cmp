@@ -4,7 +4,9 @@
     <aura:attribute name="thisYear" type="Decimal" access="private"/>
     <aura:attribute name="showSubItems" type="Boolean" access="public" default="false"/>
 
+    <!-- *** New style attributes *** -->
     <aura:attribute name="summaries" type="Integer[]" access="public" default="0,0,0" />
+    <aura:attribute name="accPlanTeamMap" type="Map" access="public" />
 
     <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
     <aura:handler name="changeValueForSum" event="c:Som_KamChangeEvent" action="{!c.onCalcSum}"/>
@@ -66,7 +68,8 @@
                 <aura:iteration items="{!v.accPlanDetails ? v.accPlanDetails : null}" var="accPlanDetail">
                     <c:Som_KamDetailSummaryItem accPlanDetail="{!accPlanDetail ? accPlanDetail : null}"
                         showSubItems="{!v.showSubItems}"
-                        fireChangeEvent="true"/>
+                        fireChangeEvent="true"
+                        accPlanTeamMap="{!v.accPlanTeamMap}"/>
                 </aura:iteration>
             </tbody>
 

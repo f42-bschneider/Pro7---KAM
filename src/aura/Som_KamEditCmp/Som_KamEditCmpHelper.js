@@ -14,7 +14,8 @@
             "Som_Year__c"       : accPlan.Som_Year__c,
             "Som_Kickoff__c"    : accPlan.Som_Kickoff__c,
             "Som_Review__c"     : accPlan.Som_Review__c,
-            "Som_EmailText__c"  : accPlan.Som_EmailText__c
+            "Som_EmailText__c"  : accPlan.Som_EmailText__c,
+            "Som_EmailSubject__c"  : accPlan.Som_EmailSubject__c
         };
 
         return result;
@@ -285,6 +286,30 @@
         var modal = component.find(componentId);
         $A.util.addClass(modal, className+'hide');
         $A.util.removeClass(modal, className+'open');
+    },
+
+    updateAccPlanTeamList : function(component){
+        var mapTeams = component.get("v.data.mapId2Team"),
+        listTeams = component.get("v.data.accPlanTeams"),
+        newListTeams = [];
+
+        for(var key in mapTeams){
+            newListTeams.push(mapTeams[key]);
+        }
+
+        component.set("v.data.accPlanTeams", newListTeams);
+    },
+
+    initiateEmailTemplate : function(component, kickoff){
+        var text = '',
+        subject = '';
+
+        if(kickoff){
+
+        }else{
+
+        }
+
     }
 
 })
