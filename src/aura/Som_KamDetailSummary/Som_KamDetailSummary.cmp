@@ -7,6 +7,7 @@
     <!-- *** New style attributes *** -->
     <aura:attribute name="summaries" type="Integer[]" access="public" default="0,0,0" />
     <aura:attribute name="accPlanTeamMap" type="Map" access="public" />
+    <aura:attribute name="onlyCreated" type="Boolean" access=" public" default="false" />
 
     <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
     <aura:handler name="changeValueForSum" event="c:Som_KamChangeEvent" action="{!c.onCalcSum}"/>
@@ -39,8 +40,8 @@
                             <i class="ionicons ion-chevron-up"></i>
                         </button>-->
                     </th>
-                    <th width="200px">{!$Label.c.Som_lbl_AccountTeam}</th>
-                    <th>{!$Label.c.Som_lbl_TeamMember}</th>
+                    <th width="180px">{!$Label.c.Som_lbl_AccountTeam}</th>
+                    <th width="170px">{!$Label.c.Som_lbl_TeamMember}</th>
                     <th>{!$Label.c.Ven_lbl_Status}</th>
                     <th class="tdRight">
                         <p>€</p>
@@ -66,15 +67,18 @@
 
             <tbody>
                 <aura:iteration items="{!v.accPlanDetails ? v.accPlanDetails : null}" var="accPlanDetail">
-                    <c:Som_KamDetailSummaryItem accPlanDetail="{!accPlanDetail ? accPlanDetail : null}"
-                        showSubItems="{!v.showSubItems}"
-                        fireChangeEvent="true"
-                        accPlanTeamMap="{!v.accPlanTeamMap}"/>
+                    <aura:if isTrue="{! or( and(v.onlyCreated,accPlanDetail.accPlanDetail.Som_Status__c == 'Created'),
+                                                       and(not(v.onlyCreated),accPlanDetail.accPlanDetail.Som_Status__c != 'Created'))}">
+                        <c:Som_KamDetailSummaryItem accPlanDetail="{!accPlanDetail ? accPlanDetail : null}"
+                            showSubItems="{!v.showSubItems}"
+                            fireChangeEvent="true"
+                            accPlanTeamMap="{!v.accPlanTeamMap}"/>
+                    </aura:if>
                 </aura:iteration>
             </tbody>
 
             <!-- *** New Style - Summary row *** -->
-            <tfoot>
+            <tfoot style="{! if(v.onlyCreated, 'display:none;', '')}">
                 <tr><td class="noBorder"></td></tr>
                 <tr style="border-top: 2px solid #bbb;">
                     <td class="noBorder">Sum</td>

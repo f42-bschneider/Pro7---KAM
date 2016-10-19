@@ -5,3 +5,8 @@
 .THIS .btn-icon{
     font-size:1px;
 }
+
+.THIS .teamDiv{
+    border: solid 1px #D8D8D8;
+    min-height: 50px !important;
+}

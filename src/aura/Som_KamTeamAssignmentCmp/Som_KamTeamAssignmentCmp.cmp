@@ -15,6 +15,29 @@
     <aura:handler name="change" value="{!v.selectIsValid}" action="{!c.setIsValid}"/>
 
     <div class="f42">
+
+        <!-- ### Account Team Assignment - New Style### -->
+        <div class="row" style="margin-top: 10px;padding:10px;">
+
+            <div class="col-md-1 teamDiv" style="padding-top: 13px;">
+                <ui:inputCheckbox change="{!c.setIsValid}"  value="{!v.accPlanTeam.isSelected}"/>
+            </div>
+
+            <div class="col-md-5 teamDiv" style="padding-top: 15px;font-weight:bold;">
+                {!' '+ v.accPlanTeam.accPlanTeam.Name}
+            </div>
+
+            <div class="col-md-6 teamDiv" style="padding-top: 5px;">
+                <c:f42_InputSelect aura:id="select2"
+                    value="{!v.accPlanTeam.selectedUserId}"
+                    options="{!v.accPlanTeam.teamMembers}"
+                    required="{!v.accPlanTeam.isSelected}"
+                    isValid="{!v.selectIsValid}"/>
+            </div>
+
+        </div>
+
+        <!-- ### Account Team Assignment - Old Style###
         <div class="row" style="height:28px">
             <div class="col-sm-12" style="{!and(v.accPlanTeam.isSelected, not(v.isNew)) ? '' : 'display:none'}">
                 <div style="float:right; margin-bottom:5px;">
@@ -46,7 +69,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <ui:inputCheckbox change="{!c.setIsValid}"  value="{!v.accPlanTeam.isSelected}"/> {!' '+ v.accPlanTeam.accPlanTeam.Name}
+                <ui:inputCheckbox change="{!c.setIsValid}"  value="{!v.accPlanTeam.isSelected}"/>
             </div>
         </div>
 
@@ -58,7 +81,7 @@
                     required="{!v.accPlanTeam.isSelected}"
                     isValid="{!v.selectIsValid}"/>
             </div>
-        </div>
+        </div>-->
 
     </div>
 

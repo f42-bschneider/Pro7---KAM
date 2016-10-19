@@ -1,8 +1,8 @@
 <aura:component implements="force:appHostable" controller="P7S1_AccountDashboardCmpCtrl">
 
-    <ltng:require styles="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
-                        scripts="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
-                                        /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js" />
+    <ltng:require styles="{! $Resource.f42_BootstrapPack + '/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css' }"
+                        scripts="{! join(',', $Resource.f42_BootstrapPack + '/f42_BootstrapPack/f42-jquery/jquery.min.js',
+                                        $Resource.f42_BootstrapPack + 'f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js')}" />
 
     <!-- Attributes -->
     <aura:attribute name="accountId" type="String" required="true" default="" access="public"/>

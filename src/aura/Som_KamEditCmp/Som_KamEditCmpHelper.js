@@ -293,6 +293,16 @@
         listTeams = component.get("v.data.accPlanTeams"),
         newListTeams = [];
 
+        for(var i=0; i<listTeams.length; i+=1){
+            var team = listTeams[i];
+            if(team.accPlanTeam.Id in mapTeams){
+                if(!team.wasSelected && team.isSelected){
+                    mapTeams[team.accPlanTeam.Id].isSelected = true;
+                    mapTeams[team.accPlanTeam.Id].selectedUserId = team.selectedUserId;
+                }
+            }
+        }
+
         for(var key in mapTeams){
             newListTeams.push(mapTeams[key]);
         }
@@ -302,13 +312,30 @@
 
     initiateEmailTemplate : function(component, kickoff){
         var text = '',
-        subject = '';
+        subject = '',
+        meetingDate = '',
+        dateOfString,
+        accPlan = component.get("v.data.accPlan.accPlan");
 
         if(kickoff){
+            if(!$A.util.isEmpty(accPlan.Som_Kickoff__c)){
+                dateOfString  = new Date(accPlan.Som_Kickoff__c);
+                meetingDate = dateOfString.getDate() +'.'+ (dateOfString.getMonth()+1) +'.'+ dateOfString.getFullYear();
+            }
+            subject = $A.get("$Label.c.Som_lbl_AccountPlan") +' '+ accPlan.Som_Account__r.Name +': Kickoff {{TeamName}}'+' '+ meetingDate ;
+            text = $A.get("$Label.c.Som_lbl_EmailKickoff");
 
         }else{
-
+            if(!$A.util.isEmpty(accPlan.Som_Review__c)){
+                dateOfString  = new Date(accPlan.Som_Review__c);
+                meetingDate = dateOfString.getDate() +'.'+ (dateOfString.getMonth()+1) +'.'+ dateOfString.getFullYear();
+            }
+            subject = $A.get("$Label.c.Som_lbl_AccountPlan") +' '+ accPlan.Som_Account__r.Name +': Review {{TeamName}}'+' '+ meetingDate;
+            text = $A.get("$Label.c.Som_lbl_EmailReview");
         }
+
+        component.set("v.data.accPlan.accPlan.Som_EmailSubject__c", subject);
+        component.set("v.data.accPlan.accPlan.Som_EmailText__c", text);
 
     }
 

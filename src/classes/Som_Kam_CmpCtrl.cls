@@ -191,27 +191,41 @@ public without sharing class Som_Kam_CmpCtrl {
 
         // set acc plan, acc plan detail and stratProfs if user acc plan exists
         // if not => user is creating a new acc plan
+
+        system.debug('Test ' + (selectedYear != null));
+        Boolean test = (selectedYear != '');
+        system.debug(test);
+
+system.debug('Hallo1');
         if(accPlanId != null){
+            system.debug('Hallo1.0');
+            system.debug(selectedYear != null);
+            system.debug(selectedYear != '');
             if(selectedYear != null && selectedYear != ''){
+                system.debug('Hallo1.1');
                 accPlan             = getAccPlanByYear(selectedYear, accId);
             }else{
+                system.debug('Hallo1.2');
                 accPlan             = getAccPlanById(accPlanId);
             }
+            system.debug('Hallo22');
             if(accPlan != null){
+                system.debug('Hallo1.3');
                 accPlanDetails      = getAccPlanDetails(accPlan.Id, null);
                 strategyProfiles    = getStrategyProfilesByAccPlanId(accPlan.Id);
             }else{
+                system.debug('Hallo1.4');
                 accPlan = new Som_Kam__c( Som_Year__c = Integer.valueOf(selectedYear), Som_Account__c = accId);
             }
         }
-
+system.debug('Hallo2');
         AccountPlan ap = new AccountPlan(accPlan, accPlanDetails, strategyProfiles);
-
+system.debug('Hallo3');
         Account acc = [SELECT Id, Name, Som_Kam__c, Som_Sek__c FROM Account WHERE Id = :accId];
 
         // build list of acc plan teams for Som_AccountPlanTeamAssignmentCmp.cmp
         List<AccountPlanTeam> accPlanTeams = getAccountPlanTeamsByAccountId(acc, accPlanDetails);
-
+system.debug('Hallo4');
         AccountPlanEditData data = new AccountPlanEditData(ap, accPlanTeams, acc.Name, getAvailableYears(acc.Id));
         return data;
     }
@@ -602,7 +616,8 @@ public without sharing class Som_Kam_CmpCtrl {
     /*************************
     *
     *************************/
-    private static void sendMails(String accPlanId, List<String> accPlanTeamIds, String hostUrl, Boolean isKickoff){
+    private static void sendMails(String accPlanId, Som_Kam__c accPlanFromCmp, List<String> accPlanTeamIds, String hostUrl, Boolean isKickoff){
+
         Som_Kam__c accPlan = [
             SELECT
                 Id,
@@ -635,28 +650,36 @@ public without sharing class Som_Kam_CmpCtrl {
         List<Messaging.SingleEmailMessage> messages = new List<Messaging.SingleEmailMessage>();
 
         String accDetailUrl;
-        String emailText = accPlan.Som_EmailText__c;
+        //String emailText = accPlan.Som_EmailText__c;
+        String emailText = accPlanFromCmp.Som_EmailText__c;
         String htmlBody;
         String meetingDate;
 
         for(Som_KamDetail__c apd : apds){
             // build url for the link in the email
-            accDetailUrl = hostUrl + '/c/Som_AccountPlannerApp.app' + '?accId='+ accPlan.Som_Account__c + '&accPlanDetailId='+ apd.Id;
+            accDetailUrl = hostUrl + '/c/Som_KamApp.app' + '?accId='+ accPlan.Som_Account__c + '&accPlanDetailId='+ apd.Id;
             htmlBody = emailText.replace('\n', '<br></br>') + '<br></br><br></br><a href="'+ accDetailUrl + '">Go to Account Plan Detail</a>';
 
             Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
             message.toAddresses = new String[] { apd.Som_KamTeamMember__c };
 
+            //*** New - Using subject and message from app ***
+            message.subject = accPlanFromCmp.Som_EmailSubject__c.replace('{{TeamName}}', apd.Som_KamTeam__r.Name);
+
             // if inviting for kickoff => set status to Invited
             if(isKickoff){
+                /*** Old - Now using subject and message from app ***
                 meetingDate = accPlan.Som_Kickoff__c.day() + '.' + accPlan.Som_Kickoff__c.month() + '.' + accPlan.Som_Kickoff__c.year();
                 message.subject = Label.Som_lbl_AccountPlan +' '+ accPlan.Som_Account__r.Name +': Kickoff '+ apd.Som_KamTeam__r.Name +' '+ meetingDate;
+                */
                 apd.Som_Status__c = 'Invited';
             }
             // if inviting for review => set status to Review
             else {
+                /*** Old - Now using subject and message from app ***
                 meetingDate = accPlan.Som_Review__c.day() + '.' + accPlan.Som_Review__c.month() + '.' + accPlan.Som_Review__c.year();
                 message.subject = Label.Som_lbl_AccountPlan +' '+ accPlan.Som_Account__r.Name +': Review '+ apd.Som_KamTeam__r.Name +' '+ meetingDate;
+                */
                 apd.Som_Status__c = 'Review';
             }
 
@@ -664,7 +687,8 @@ public without sharing class Som_Kam_CmpCtrl {
             messages.add(message);
         }
 
-        Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
+        //TODO
+        //Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
 
         update apds;
     }
@@ -674,12 +698,13 @@ public without sharing class Som_Kam_CmpCtrl {
     * invites acc plan detail team member for kickoff meeting
     *************************/
     @AuraEnabled
-    public static P7S1_ApexResponse inviteForKickoff(List<String> accPlanTeamIds, String accPlanId, String accId, String hostUrl, String selectedYear){
+    public static P7S1_ApexResponse inviteForKickoff(List<String> accPlanTeamIds, String accPlanId, Som_Kam__c accPlan, String accId, String hostUrl, String selectedYear){
+
         P7S1_ApexResponse resp;
         Savepoint sp = Database.setSavepoint();
 
         try{
-            sendMails(accPlanId, accPlanTeamIds, hostUrl, true);
+            sendMails(accPlanId, accPlan, accPlanTeamIds, hostUrl, true);
             resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accId, accPlanId, selectedYear));
         }
         catch(Exception e){
@@ -696,12 +721,12 @@ public without sharing class Som_Kam_CmpCtrl {
     * invites acc plan detail team member for review meeting
     *************************/
     @AuraEnabled
-    public static P7S1_ApexResponse inviteForReview(List<String> accPlanTeamIds, String accPlanId, String accId, String hostUrl, String selectedYear){
+    public static P7S1_ApexResponse inviteForReview(List<String> accPlanTeamIds, String accPlanId, Som_Kam__c accPlan, String accId, String hostUrl, String selectedYear){
         P7S1_ApexResponse resp;
         Savepoint sp = Database.setSavepoint();
 
         try{
-            sendMails(accPlanId, accPlanTeamIds, hostUrl, false);
+            sendMails(accPlanId, accPlan, accPlanTeamIds, hostUrl, false);
             resp = new P7S1_ApexResponse('data', buildAccountPlanEditData(accId, accPlanId, selectedYear));
         }
         catch(Exception e){
@@ -856,7 +881,6 @@ public without sharing class Som_Kam_CmpCtrl {
 
             // remove strat profs from the upsert list that belong to an account plan detail that has been deleted
             for(Som_KamStrategyProfileTopic__c spt : accPlanDetailStrategies){
-                system.debug(LoggingLevel.ERROR, spt.Som_KamDetail__c);
 
                 if(!accPlanDetailIdsDelete.contains(spt.Som_KamDetail__c)){
 

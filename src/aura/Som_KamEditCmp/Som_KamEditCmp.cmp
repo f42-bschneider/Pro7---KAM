@@ -65,9 +65,7 @@
                                 </div>
                                 <div class="slds-p-horizontal--small slds-large-size--10-of-12 borderInfo stratText pad10" >
                                     <aura:iteration items="{!v.data.accPlan.accPlanDetails}" var="team" indexVar="teamIndex">
-                                        <aura:if isTrue="{! teamIndex != 0}">
-                                            ,
-                                        </aura:if>
+                                        {! if(greaterthan(teamIndex, 0), ', ', '')  }
                                         {!team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName}
                                     </aura:iteration>
                                 </div>
@@ -93,6 +91,7 @@
                                 <ui:inputRadio aura:id="r0" name="inviteKickoff" text="inviteAll" change="{!c.onInviteKickoffChange}"/>
                                 {!' '+$Label.c.Som_lbl_InviteAllAccPlanTeams}
                             </p>
+
                         </div>
 
                         <div class="slds-modal__footer modalHeadFoot" >
@@ -130,9 +129,7 @@
                                 </div>
                                 <div class="slds-p-horizontal--small slds-large-size--10-of-12 borderInfo stratText pad10" >
                                     <aura:iteration items="{!v.data.accPlan.accPlanDetails}" var="team" indexVar="teamIndex">
-                                        <aura:if isTrue="{! teamIndex != 0}">
-                                            ,
-                                        </aura:if>
+                                        {! if(greaterthan(teamIndex, 0), ', ', '')  }
                                         {!team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName}
                                     </aura:iteration>
                                 </div>
@@ -417,18 +414,24 @@
                                     <ui:outputNumber value="{!v.summaries[1]}" />
                                 </div>
 
-                                <div class="col-md-6 goRight" style="padding-top:25px;">
-                                    {!$Label.c.Som_lbl_Kickoff}:
-                                </div>
-                                <div class="col-md-6 goRight" style="padding-right: 0; padding-left:100px;">
-                                    <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Kickoff__c}" displayDatePicker="true"/>
-                                </div>
+                                <div class="col-md-12 space-top" />
 
-                                <div class="col-md-6 goRight" style="padding-top:25px;">
-                                    {!$Label.c.Som_lbl_Review}:
-                                </div>
-                                <div class="col-md-6 goRight" style="padding-right: 0;padding-left:100px;">
-                                    <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Review__c}" displayDatePicker="true"/>
+                                <div class="col-md-12">
+
+                                    <div class="col-md-2 goRight" style="padding-top:25px;" >
+                                        {!$Label.c.Som_lbl_Kickoff}:
+                                    </div>
+                                    <div class="col-md-4 goRight">
+                                        <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Kickoff__c}" displayDatePicker="true"/>
+                                    </div>
+
+                                    <div class="col-md-2 goRight" style="padding-top:25px;">
+                                        {!$Label.c.Som_lbl_Review}:
+                                    </div>
+                                    <div class="col-md-4 goRight" >
+                                        <ui:inputDate aura:id="kickoffDate" class="form-control datePick" value="{!v.data.accPlan.accPlan.Som_Review__c}" displayDatePicker="true"/>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -460,12 +463,38 @@
                         <div style="height:20px"/>
 
                         <div aura:id="teamSection">
+
+                            <!-- ### Invited to Kickoff (Status Kickoff, Invited, Review) ###-->
                             <div style="padding: 5px 18px;">
 
-                                <p class="secondHeader">{!$Label.c.Som_lbl_Kickoff}/{!$Label.c.Som_lbl_Review}</p>
+                                <p class="secondHeader">Invited to Kickoff</p>
 
                                 <aura:if isTrue="{! v.data.accPlan.accPlanDetails.length > 0}" >
-                                    <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" accPlanTeamMap="{!v.data.mapId2Team}" summaries="{!v.summaries}" aura:id="accPlanDetailSummary"/>
+                                    <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" accPlanTeamMap="{!v.data.mapId2Team}"
+                                        summaries="{!v.summaries}" aura:id="accPlanDetailSummary"/>
+                                </aura:if>
+
+                            </div>
+
+                            <div class="col-md-12 space-top">
+                                <ul class="nav navbar-nav navbar-right magTop20">
+                                    <li class="whiteBack navButton">
+                                        <a href="#" onclick="{!c.showReviewModal}" style="padding: 5px 10px 5px 10px;color:#848484">
+                                            {!' '+$Label.c.Som_lbl_Review}
+                                            <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- ### Not invited to Kickoff (Status Created) ###-->
+                            <div style="padding: 5px 18px;">
+
+                                <p class="secondHeader">Not invited to Kickoff</p>
+
+                                <aura:if isTrue="{! v.data.accPlan.accPlanDetails.length > 0}" >
+                                    <c:Som_KamDetailSummary accPlanDetails="{!v.data.accPlan.accPlanDetails}" accPlanTeamMap="{!v.data.mapId2Team}"
+                                        summaries="{!v.summaries}" aura:id="accPlanDetailSummary" onlyCreated="true"/>
                                 </aura:if>
 
                             </div>
@@ -478,13 +507,22 @@
                                             <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
                                         </a>
                                     </li>
-                                    <li class="whiteBack navButton">
-                                        <a href="#" onclick="{!c.showReviewModal}" style="padding: 5px 10px 5px 10px;color:#848484">
-                                            {!' '+$Label.c.Som_lbl_Review}
-                                            <i class="ionicons ion-email btn-icon redColor" style="margin-left: 5px"></i>
-                                        </a>
-                                    </li>
                                 </ul>
+                            </div>
+
+                            <!-- ### Not invited to Kickoff (Status Created) ###-->
+                            <div style="padding: 5px 18px;">
+
+                                <p class="secondHeader">New Account Plan Teams</p>
+
+                                <aura:iteration items="{!v.data.accPlanTeams}" var="accPlanTeam">
+
+                                    <div class="col-md-4" style="{! if(not(accPlanTeam.wasSelected), '', 'display:none')}" >
+                                        <c:Som_KamTeamAssignmentCmp accPlanTeam="{!accPlanTeam}"/>
+                                    </div>
+
+                                </aura:iteration>
+
                             </div>
 
                             <div class="col-md-12 space-top doubleRedBottom" />

@@ -249,9 +249,10 @@
         inviteForReview.setParams({
             "accPlanTeamIds" : accPlanTeamIds,
             "accPlanId" : accPlan.Id,
+            "accPlan" : accPlan,
             "accId" : accPlan.Som_Account__c,
             "hostUrl" : helper.getHostUrl(),
-            "selectedYear" : accPlan.Som_Year__c
+            "selectedYear" : accPlan.Som_Year__c.toString()
         });
 
         inviteForReview.setCallback(this, function(resp){
@@ -269,6 +270,8 @@
             }
 
             component.set("v.renderSpinner", false);
+            helper.toggleClassInverse(component, 'backdrop', 'slds-backdrop--');
+            helper.toggleClassInverse(component, 'reviewModal', 'slds-fade-in-');
         });
 
         $A.enqueueAction(inviteForReview);
@@ -324,12 +327,15 @@
         inviteForKickoff.setParams({
             "accPlanTeamIds" : accPlanTeamIds,
             "accPlanId" : accPlan.Id,
+            "accPlan" : accPlan,
             "accId" : accPlan.Som_Account__c,
             "hostUrl" : helper.getHostUrl(),
-            "selectedYear" : accPlan.Som_Year__c
+            "selectedYear" : accPlan.Som_Year__c.toString()
         });
 
         inviteForKickoff.setCallback(this, function(resp){
+            helper.toggleClassInverse(component, 'backdrop', 'slds-backdrop--');
+            helper.toggleClassInverse(component, 'kickoffModal', 'slds-fade-in-');
             var result = resp.getReturnValue();
 
             if(result.isSuccess && resp.getState() === 'SUCCESS'){

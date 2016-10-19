@@ -5,11 +5,14 @@
     * Wrapper commponent for the account planner app
     *
     ****************-->
+    <ltng:require styles="{! join(',', $Resource.f42_BootstrapPack + '/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css',
+                                        $Resource.f42_ionicons + '/ionicons/css/ionicons.min.css')}"
+        scripts="{! $Resource.jquery}" />
 
+    <!--
     <ltng:require styles="/resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css,
         /resource/f42_ionicons/ionicons/css/ionicons.min.css"
-
-        scripts="/resource/jquery"/>
+        scripts="/resource/jquery"/>-->
 
         <!-- /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery-1.9.1.js *** Replaced by newer JS version 2.2.4-->
         <!-- /resource/toastr/toastr.min.js, /resource/toastr/toastr.min.css *** Does not work with Locker-Service-->

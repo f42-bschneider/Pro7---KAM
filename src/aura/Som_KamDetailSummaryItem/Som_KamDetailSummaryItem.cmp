@@ -50,8 +50,7 @@
             <td><b>{!v.accPlanDetail.accPlanDetail.Som_KamTeam__r.Name}</b></td>
 
             <td>
-                <c:f42_InputSelect
-                    value="{!v.currentTeam.selectedUserId}"
+                <c:f42_InputSelect value="{!v.currentTeam.selectedUserId}"
                     options="{!v.currentTeam.teamMembers}"
                     required="{!v.currentTeam.isSelected}"
                     isValid="{!v.selectIsValid}"/>

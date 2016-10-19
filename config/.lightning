@@ -1617,6 +1617,40 @@
     {
         "attributes": {
             "type": "AuraDefinition",
+            "url": "/services/data/v34.0/tooling/sobjects/AuraDefinition/0Ad3E0000000c1QSAQ"
+        },
+        "Id": "0Ad3E0000000c1QSAQ",
+        "AuraDefinitionBundleId": "0Ab57000000PAu1CAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v34.0/tooling/sobjects/AuraDefinitionBundle/0Ab57000000PAu1CAG"
+            },
+            "DeveloperName": "P7S1_AccountDashboardApp"
+        },
+        "DefType": "HELPER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
+            "url": "/services/data/v34.0/tooling/sobjects/AuraDefinition/0Ad3E0000000c1aSAA"
+        },
+        "Id": "0Ad3E0000000c1aSAA",
+        "AuraDefinitionBundleId": "0Ab57000000PAu1CAG",
+        "AuraDefinitionBundle": {
+            "attributes": {
+                "type": "AuraDefinitionBundle",
+                "url": "/services/data/v34.0/tooling/sobjects/AuraDefinitionBundle/0Ab57000000PAu1CAG"
+            },
+            "DeveloperName": "P7S1_AccountDashboardApp"
+        },
+        "DefType": "RENDERER",
+        "Format": "JS"
+    },
+    {
+        "attributes": {
+            "type": "AuraDefinition",
             "url": "/services/data/v34.0/tooling/sobjects/AuraDefinition/0Ad3E0000009GXHSA2"
         },
         "Id": "0Ad3E0000009GXHSA2",
