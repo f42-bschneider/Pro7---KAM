@@ -6,14 +6,16 @@
         sumGap = 0;
 
         for(var i=0; i<details.length; i+=1){
-            if(! $A.util.isEmpty(details[i].accPlanDetail.Som_PreviousCashIn__c)){
-                sumCashLastYear += details[i].accPlanDetail.Som_PreviousCashIn__c;
-            }
-            if(! $A.util.isEmpty(details[i].accPlanDetail.Som_TargetCashIn__c)){
-                sumCashThisYear += details[i].accPlanDetail.Som_TargetCashIn__c;
-            }
-            if(! $A.util.isEmpty(details[i].gap)){
-                sumGap += details[i].gap;
+            if(details[i].accPlanDetail.Som_Status__c != 'Created'){
+                if(! $A.util.isEmpty(details[i].accPlanDetail.Som_PreviousCashIn__c)){
+                    sumCashLastYear += details[i].accPlanDetail.Som_PreviousCashIn__c;
+                }
+                if(! $A.util.isEmpty(details[i].accPlanDetail.Som_TargetCashIn__c)){
+                    sumCashThisYear += details[i].accPlanDetail.Som_TargetCashIn__c;
+                }
+                if(! $A.util.isEmpty(details[i].gap)){
+                    sumGap += details[i].gap;
+                }
             }
         }
 

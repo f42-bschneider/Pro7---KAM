@@ -1,0 +1,191 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "01p3E0000005NdbQAE",
+    "innerClasses": [
+        {
+            "constructors": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 16,
+                        "line": 59
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "testWrapper",
+                    "parameters": [
+                        {
+                            "name": "detail",
+                            "type": "Som_KamDetail__c"
+                        },
+                        {
+                            "name": "check",
+                            "type": "Boolean"
+                        }
+                    ],
+                    "references": [],
+                    "type": null
+                }
+            ],
+            "externalReferences": [],
+            "id": null,
+            "innerClasses": [],
+            "interfaces": [],
+            "key": null,
+            "methods": [],
+            "name": "testWrapper",
+            "namespace": null,
+            "parentClass": "",
+            "properties": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 33,
+                        "line": 53
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "detail",
+                    "references": [],
+                    "type": "Som_KamDetail__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 24,
+                        "line": 56
+                    },
+                    "modifiers": [
+                        "public"
+                    ],
+                    "name": "check",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ],
+            "tableDeclaration": {
+                "annotations": [],
+                "location": {
+                    "column": 18,
+                    "line": 50
+                },
+                "modifiers": [
+                    "public"
+                ],
+                "name": "testWrapper",
+                "references": [],
+                "type": "testWrapper"
+            },
+            "variables": [
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 45,
+                        "line": 59
+                    },
+                    "modifiers": [],
+                    "name": "detail",
+                    "references": [],
+                    "type": "Som_KamDetail__c"
+                },
+                {
+                    "annotations": [],
+                    "location": {
+                        "column": 61,
+                        "line": 59
+                    },
+                    "modifiers": [],
+                    "name": "check",
+                    "references": [],
+                    "type": "Boolean"
+                }
+            ]
+        }
+    ],
+    "interfaces": [],
+    "key": "01p3E0000005NdbQAE",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 31,
+                "line": 7
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "getData",
+            "parameters": [],
+            "references": [],
+            "returnType": "testWrapper",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 46
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "doSave",
+            "parameters": [
+                {
+                    "name": "som",
+                    "type": "Som_KamDetail__c"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "LS_TestCtrl",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 30,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "without sharing"
+        ],
+        "name": "LS_TestCtrl",
+        "references": [],
+        "type": "LS_TestCtrl"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 26,
+                "line": 9
+            },
+            "modifiers": [],
+            "name": "som",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 46
+            },
+            "modifiers": [],
+            "name": "som",
+            "references": [],
+            "type": "Som_KamDetail__c"
+        }
+    ]
+}

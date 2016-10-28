@@ -1,8 +1,6 @@
 <aura:component controller="P7S1_AccountDashboardCmpCtrl" >
 
-    <ltng:require styles="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"
-                        scripts="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-jquery/jquery.min.js,
-                                        /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/js/bootstrap.min.js" />
+    <ltng:require styles="  /resource/f42_BootstrapPack/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css"/>
 
     <!-- Attributes -->
     <aura:attribute name="accountId" type="String" required="true" />

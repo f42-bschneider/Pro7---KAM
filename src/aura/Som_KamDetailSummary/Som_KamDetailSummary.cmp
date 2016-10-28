@@ -56,8 +56,14 @@
                         <p>€</p>
                         {!$Label.c.Som_lbl_TargetCashIn} {!' '+v.thisYear}
                     </th>
-                    <th class="tdRight">{!$Label.c.Som_lbl_ClosedOpps}</th>
-                    <th class="tdRight">{!$Label.c.Som_lbl_OpenOpps}</th>
+                    <th class="tdRight">
+                        <p>€</p>
+                        {!$Label.c.Som_lbl_ClosedOpps}
+                    </th>
+                    <th class="tdRight">
+                        <p>€</p>
+                        {!$Label.c.Som_lbl_OpenOpps}
+                    </th>
                     <th class="tdRight">
                         <p>€</p>
                         {!$Label.c.Som_lbl_Gap}
@@ -67,13 +73,12 @@
 
             <tbody>
                 <aura:iteration items="{!v.accPlanDetails ? v.accPlanDetails : null}" var="accPlanDetail">
-                    <aura:if isTrue="{! or( and(v.onlyCreated,accPlanDetail.accPlanDetail.Som_Status__c == 'Created'),
-                                                       and(not(v.onlyCreated),accPlanDetail.accPlanDetail.Som_Status__c != 'Created'))}">
                         <c:Som_KamDetailSummaryItem accPlanDetail="{!accPlanDetail ? accPlanDetail : null}"
                             showSubItems="{!v.showSubItems}"
                             fireChangeEvent="true"
-                            accPlanTeamMap="{!v.accPlanTeamMap}"/>
-                    </aura:if>
+                            accPlanTeamMap="{!v.accPlanTeamMap}"
+                            showInTable="{! or( and(v.onlyCreated,accPlanDetail.accPlanDetail.Som_Status__c == 'Created'),
+                                                            and(not(v.onlyCreated),accPlanDetail.accPlanDetail.Som_Status__c != 'Created'))}"/>
                 </aura:iteration>
             </tbody>
 

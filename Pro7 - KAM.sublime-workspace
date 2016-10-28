@@ -4,16 +4,96 @@
 		"selected_items":
 		[
 			[
+				"SomKa",
+				"Som_KamDetail__c"
+			],
+			[
+				"Som_K",
+				"Som_KamDetail	[Custom Apex Class]"
+			],
+			[
+				"sho",
+				"showAccPlanRow"
+			],
+			[
+				"s",
+				"selectedUserId"
+			],
+			[
+				"slec",
+				"selectedYear"
+			],
+			[
+				"SOm",
+				"Som_Kam__c"
+			],
+			[
+				"get",
+				"getHostUrl"
+			],
+			[
+				"dat",
+				"dateOfString"
+			],
+			[
+				"is",
+				"isTrue"
+			],
+			[
+				"outp",
+				"outputText"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"init",
+				"valueInit"
+			],
+			[
+				"value",
+				"valueInit"
+			],
+			[
+				"set",
+				"setIsValid"
+			],
+			[
+				"se",
+				"selectIsValid"
+			],
+			[
+				"accpl",
+				"accPlanTeamMap"
+			],
+			[
+				"inde",
+				"indexVar"
+			],
+			[
+				"accPlan",
+				"accPlanTeam"
+			],
+			[
+				"Accountp",
+				"AccountPLanTeam"
+			],
+			[
+				"AccPlan",
+				"accPlanTeam"
+			],
+			[
+				"si",
+				"PUBLIC size() 	Integer"
+			],
+			[
 				"sum",
 				"sumGap"
 			],
 			[
 				"sumc",
 				"sumCashThisYear"
-			],
-			[
-				"border",
-				"border-color"
 			],
 			[
 				"font",
@@ -52,10 +132,6 @@
 				"onclick"
 			],
 			[
-				"sho",
-				"showCopy"
-			],
-			[
 				"Som_",
 				"Som_Year__c"
 			],
@@ -78,10 +154,6 @@
 			[
 				"sel",
 				"selectedYear"
-			],
-			[
-				"SOm",
-				"Som_Year__c"
 			],
 			[
 				"padding",
@@ -148,10 +220,6 @@
 				"function"
 			],
 			[
-				"se",
-				"selectedId"
-			],
-			[
 				"val",
 				"validateSelect"
 			],
@@ -162,10 +230,6 @@
 			[
 				"sour",
 				"sourceLbl"
-			],
-			[
-				"get",
-				"getLabel2Id"
 			],
 			[
 				"backg",
@@ -194,10 +258,6 @@
 			[
 				"setqu",
 				"setQuoteKeys"
-			],
-			[
-				"set",
-				"setQuoteNr"
 			],
 			[
 				"setQu",
@@ -380,10 +440,6 @@
 				"tvSalesEavName"
 			],
 			[
-				"value",
-				"PUBLIC getValue() 	String"
-			],
-			[
 				"sa",
 				"salesType"
 			],
@@ -414,10 +470,6 @@
 			[
 				"V",
 				"value"
-			],
-			[
-				"is",
-				"isInteger"
 			],
 			[
 				"p",
@@ -462,84 +514,40 @@
 			[
 				"Setup",
 				"SetupEntityId"
-			],
-			[
-				"Setu",
-				"SetupEntityAccess"
-			],
-			[
-				"Cu",
-				"CustomPermission"
-			],
-			[
-				"dig",
-				"digAbweichung"
-			],
-			[
-				"tvs",
-				"tvSalesEavId"
-			],
-			[
-				"tvsal",
-				"tvSalesEavName"
-			],
-			[
-				"Accout",
-				"AccountTeamMember"
-			],
-			[
-				"add",
-				"addErrorKVKOnCustomer"
-			],
-			[
-				"AccountTeam",
-				"AccountTeamMember"
-			],
-			[
-				"cua",
-				"curAccId"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"Kun",
-				"Kunde__c"
-			],
-			[
-				"AccountTea",
-				"AccountTeamMember"
-			],
-			[
-				"Account",
-				"AccountTeamMember"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/aura/Som_KamEditCmp/Som_KamEditCmp.cmp",
-			"settings":
-			{
-				"buffer_size": 34892,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/aura/Som_KamEditCmp/Som_KamEditCmpHelper.js",
-			"settings":
-			{
-				"buffer_size": 10653,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/classes/Som_Kam_CmpCtrl.cls",
 			"settings":
 			{
-				"buffer_size": 41892,
+				"buffer_size": 42826,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/aura/Som_KamEditCmp/Som_KamEditCmp.cmp",
+			"settings":
+			{
+				"buffer_size": 39563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/aura/Som_KamEditCmp/Som_KamEditCmpController.js",
+			"settings":
+			{
+				"buffer_size": 19493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/aura/Som_KamDetailSummary/Som_KamDetailSummary.cmp",
+			"settings":
+			{
+				"buffer_size": 5046,
 				"line_ending": "Unix"
 			}
 		}
@@ -610,30 +618,47 @@
 	[
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/config",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/deploy",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp"
 	],
 	"file_history":
 	[
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItemHelper.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItemController.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItem.cmp",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummary/Som_KamDetailSummary.cmp",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummary/Som_KamDetailSummaryController.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItem.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItem.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummary/Som_KamDetailSummaryHelper.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamCmp/Som_KamCmp.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailEditCmp/Som_KamDetailEditCmp.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputNumber/f42_InputNumber.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputSelect/f42_InputSelect.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmp.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmpRenderer.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmpHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmpController.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/P7S1_AccountDashboardCmp/P7S1_AccountDashboardCmp.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/P7S1_AccountDashboardApp/P7S1_AccountDashboardApp.app",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamApp/Som_KamAppHelper.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamApp/Som_KamAppRenderer.js",
+		"/Users/benjaminschneider/Desktop/f42_BootstrapPack/f42-bootstrap/css/f42-bootstrap.css",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/classes/Som_Kam_CmpCtrl.cls",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamTeamAssignmentCmp/Som_KamTeamAssignmentCmp.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummary/Som_KamDetailSummary.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamTeamAssignmentCmp/Som_KamTeamAssignmentCmp.css",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItem.cmp",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/classes/Som_KamDetail.cls",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmp.css",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItemController.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputSelect/f42_InputSelectHelper.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputSelect/f42_InputSelectController.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItemController.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItemHelper.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItemRenderer.js",
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItemHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamTeamAssignmentCmp/Som_KamTeamAssignmentCmpController.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamTeamAssignmentCmp/Som_KamTeamAssignmentCmpHelper.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummary/Som_KamDetailSummaryHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummary/Som_KamDetailSummary.css",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/classes/Som_Kam_CmpCtrl.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItemController.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItem.css",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmp.css",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamEditCmp/Som_KamEditCmp.cmp",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummaryItem/Som_KamDetailSummaryItem.css",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamStrategyProfileSummary/Som_KamStrategyProfileSummaryController.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamStrategyProfileSummary/Som_KamStrategyProfileSummary.cmp",
@@ -644,10 +669,7 @@
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamCmp/Som_KamCmp.css",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/classes/Som_Kam_RedirectCtrl.cls",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailEditCmp/Som_KamDetailEditCmpController.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailSummarySubItem/Som_KamDetailSummarySubItemHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailEditCmp/Som_KamDetailEditCmpHelper.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamDetailEditCmp/Som_KamDetailEditCmp.cmp",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamCmp/Som_KamCmp.cmp",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamChangeEvent/Som_KamChangeEvent.evt",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamStrategyProfileSummaryEvent/Som_KamStrategyProfileSummaryEvent.evt",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/classes/P7S1_ApexResponse.cls",
@@ -669,12 +691,8 @@
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_Toast/f42_Toast.css",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/P7S1_AccountDashboardOverviewCmp/P7S1_AccountDashboardOverviewCmp.cmp",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamApp/Som_KamAppController.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/Som_KamApp/Som_KamAppHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputNumber/f42_InputNumberController.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputNumber/f42_InputNumberHelper.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputNumber/f42_InputNumber.cmp",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputSelect/f42_InputSelectHelper.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_InputSelect/f42_InputSelectController.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_SelectListCmp/f42_SelectListCmpController.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_SelectListCmp/f42_SelectListCmpHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - KAM/src/aura/f42_SelectListCmp/f42_SelectListCmp.css",
@@ -734,16 +752,7 @@
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/Ven_Utility.cls",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/aura/Ven_OppPipeCmp/Ven_OppPipeCmpHelper.js",
 		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/aura/Ven_OppPipeCmp/Ven_OppPipeCmpController.js",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/aura/Ven_OppPipeCmp/Ven_OppPipeCmp.cmp",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/aura/Ven_OppPipeDetailOppCmp/Ven_OppPipeDetailOppCmp.cmp",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/P7S1_BatchAccountTeamMember.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/P7S1_BatchAccountTeamMemberHelper.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1314/src/classes/P7S1_BatchAccountTeamMember_Test.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/cls_P7S1_TestData.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/P7S1_OpportunityTeamMember_Handler.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/P7S1_OpportunityTeamMember_Handler_Test.cls",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/triggers/Som_AccountPlanDetail.trigger",
-		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/classes/Som_AccountPlanDetailTrigger.cls"
+		"/Users/benjaminschneider/Documents/dev/Workspace_Sublime/Pro7 - f1920/src/aura/Ven_OppPipeCmp/Ven_OppPipeCmp.cmp"
 	],
 	"find":
 	{
@@ -771,6 +780,99 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getAccPlanDetails",
+			"buildAccountPlanEditData",
+			"getAccPlanDetails",
+			"buildAccountPlanEditData",
+			"getAccPlanDetails",
+			"system.debug",
+			"buildAccountPlanEditData",
+			"showAccPlanRow",
+			"bootstrappack",
+			"f42_ToggleBtnCmp",
+			"f42_SpinnerCmp",
+			"f42_SelectListCmp",
+			"f42_Select2Cmp",
+			"f42_LookupCmp",
+			"summar",
+			"summarc",
+			"debugger;",
+			"dashboard",
+			"istrue",
+			"isture",
+			"istrue",
+			"isTrue",
+			"sendmail",
+			"iteration",
+			"debugger",
+			"data",
+			"childNotes",
+			"selectedYear",
+			"seöectedYear",
+			"buildAccountPlanEditData",
+			"hallo1.0",
+			"system.debug",
+			"buildAccountPlanEditData",
+			"sendMails",
+			"sendmai",
+			"sendMails",
+			"debugger",
+			"hideReviewModal",
+			"sendMails",
+			"sendmails",
+			"todo",
+			"kickoff",
+			"send",
+			"sendMails",
+			"templa",
+			"f42_BootstrapPack",
+			"template",
+			"send",
+			"lbl_Kick",
+			"lbl_Rev",
+			"accPlanDetails",
+			"testbla",
+			"Som_KamDetail__c",
+			"font-size",
+			"detail",
+			"tabl",
+			"oninv",
+			"buildAccPlan",
+			"Som_EmailSubject__c",
+			"buildAccPlan",
+			"Som_EmailSubject__c",
+			"buildAccPlan",
+			"EmailText__c",
+			"save",
+			"Som_EmailText",
+			"Som_Kam__c",
+			"sendMails",
+			".send",
+			"color",
+			"paddin",
+			"send",
+			"valueInit",
+			"select",
+			"debugger;",
+			"data",
+			"getAccPlanTeam2Id",
+			"component.get(\"v.data.accPlanTeams\")",
+			"setIsInvited",
+			"component.get(\"v.data.accPlanTeams\")",
+			"isOneAccPlanTeamSelected",
+			"component.get(\"v.data.accPlanTeams\")",
+			"validateAccPlan",
+			"isAccPlanTeamsValid",
+			"component.get(\"v.data.accPlanTeams\")",
+			"buildAccPlanDetailsDelete",
+			"component.get(\"v.data.accPlanTeams\")",
+			"buildAccPlanDetailsUpsert",
+			"component.get(\"v.data.accPlanTeams\")",
+			"accPlanTeam",
+			"newCashIn",
+			"type=\"Map\"",
+			"Som_KamDetailSummary",
+			"summary",
 			"accPlanTeam",
 			"AccountPlanTeam",
 			"getAccountPlanTeamsByAccountId",
@@ -805,100 +907,7 @@
 			"AccountPlan",
 			"getAccPlanByYear",
 			"save",
-			"getAccPlanByYear",
-			"buildAccountPlanEditData",
-			"getAccPlanById",
-			"buildAccountPlanEditData",
-			"inviteForKickoff",
-			"buildAccountPlanEditData",
-			"invite",
-			"save",
-			"buildAccountPlanEditData",
-			"getAccPlanById",
-			"buildAccountPlanEditData",
-			"getAccountPlanEditData",
-			"year",
-			"AccountPlanEditData",
-			"year",
-			"buildAccountPlanEditData",
-			"new AccountPlanEditData",
-			"AccountPlanEditData",
-			"buildAccountPlanEditData",
-			"getAccountPlanEditData",
-			"form-control",
-			"AccountPlanEditData",
-			"buildAccountPlanEditData",
-			"createAccountPlanDetailData",
-			"getAccPlanById",
-			"buildAccountPlanEditData",
-			"Som_Year__c",
-			"buildAccountPlanEditData",
-			"onAccIdAndAccPlanIdSet",
-			"buildAccountPlanEditData",
-			"ff234f",
-			"colo",
-			"label",
-			"ion",
-			"in",
-			"initiateTempList",
-			"onInitiateTempList",
-			"isvalid",
-			"aura:id",
-			"valid",
-			"Som_KamDetailSummarySubItem",
-			"c:Som_KamDetailSummary ",
-			"c:Som_KamDetailSummary",
-			"summary",
-			"c:som_",
-			"sumItemCmp",
-			"console.log",
-			"initiateTempList",
-			"c:",
-			"event",
-			"c:",
-			"length",
-			"save",
-			"getAccountPlanEditData",
-			"summary",
-			"isValid=\"{",
-			"\"accPlanDetail\"",
-			"component.get(\"accPlanDetail\")",
-			"\"v.accPlanDetail\"",
-			"\"accPlanDetail\"",
-			"cmp.get(\"v.accPlanDetail\")",
-			"cmp.get(\"accPlanDetail\")",
-			"cmp.get(\"accPlanDetail\")? ",
-			"cmp.get(\"accPlanDetail\") ? ",
-			"cmp.get(\"accPlanDetail\")?cmp.get(\"accPlanDetail\"):null",
-			"newCashIn",
-			"validateNewAccPlanDetailCashIn",
-			"onAddAccPlanDetailCashIn",
-			"subitem",
-			"ion-plus",
-			"button",
-			"f42_InputNumber",
-			"inputnumber",
-			"inpurnumber",
-			"InputNumber",
-			"inputNumber",
-			"accPlanDetailCashIn",
-			"profilesum",
-			"currentTarget",
-			"curretnTarget",
-			"targetSource",
-			"parent",
-			"onDelete",
-			"kickoffModal",
-			"button",
-			"kick",
-			"component, helper",
-			"parentNode",
-			"<c:",
-			"c:Som_KamDetailSummarySubItem",
-			"c:Som_KamDetailSummary",
-			"helper.calcGap",
-			"getElement().parentNode",
-			"<c:"
+			"getAccPlanByYear"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -917,247 +926,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/aura/Som_KamEditCmp/Som_KamEditCmp.cmp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 34892,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								31478,
-								31478
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-								},
-								"icon":
-								{
-								},
-								"open":
-								{
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4521.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/aura/Som_KamEditCmp/Som_KamEditCmpHelper.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10653,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1060,
-								1063
-							]
-						],
-						"settings":
-						{
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										2864,
-										2865
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1042,
-										1043
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 725.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "src/classes/Som_Kam_CmpCtrl.cls",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 41892,
+						"buffer_size": 42826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								40661,
-								40672
+								432,
+								432
 							]
 						],
 						"settings":
@@ -1167,99 +953,446 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										40681,
-										40682
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/curly_bracket.png",
-										"brackethighlighter.default"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										40672,
-										40673
-									]
 								},
 								"unmatched":
 								{
+									"1":
+									[
+										431,
+										432
+									]
 								}
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 24722.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/aura/Som_KamEditCmp/Som_KamEditCmp.cmp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 39563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								362
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										362,
+										363
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										355,
+										356
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 5.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/aura/Som_KamEditCmp/Som_KamEditCmpController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4271,
+								4271
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										5250,
+										5251
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										3821,
+										3822
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/aura/Som_KamDetailSummary/Som_KamDetailSummary.cmp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								73
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										74,
+										75
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										73,
+										74
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1321,6 +1454,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"som_kam_",
+				"src/classes/Som_Kam_CmpCtrl.cls"
+			],
 			[
 				"som_kam_c",
 				"src/classes/Som_Kam_CmpCtrl.cls"

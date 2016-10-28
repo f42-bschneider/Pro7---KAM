@@ -19,3 +19,7 @@
 .THIS .redFont{
     color:red !important;
 }
+
+.THIS .noBorder{
+    border: 0 !important;
+}

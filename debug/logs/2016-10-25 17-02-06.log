@@ -1,0 +1,307 @@
+35.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+17:02:06.0 (98227)|USER_INFO|[EXTERNAL]|00557000005jeEC|p7s1.bschneider@factory42.com.kam|Mitteleuropäische Normalzeit|GMT+02:00
+17:02:06.0 (134892)|EXECUTION_STARTED
+17:02:06.0 (140730)|CODE_UNIT_STARTED|[EXTERNAL]|TRIGGERS
+17:02:06.0 (173431)|CODE_UNIT_STARTED|[EXTERNAL]|01q3E0000004F1v|Som_KamDetail on Som_KamDetail trigger event BeforeUpdate for [a2U3E00000085Ui]
+17:02:06.0 (240621)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:02:06.0 (314611)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:02:06.0 (701691)|HEAP_ALLOCATE|[72]|Bytes:3
+17:02:06.0 (758233)|HEAP_ALLOCATE|[77]|Bytes:152
+17:02:06.0 (776436)|HEAP_ALLOCATE|[342]|Bytes:408
+17:02:06.0 (794381)|HEAP_ALLOCATE|[355]|Bytes:408
+17:02:06.0 (811849)|HEAP_ALLOCATE|[467]|Bytes:48
+17:02:06.0 (847279)|HEAP_ALLOCATE|[139]|Bytes:6
+17:02:06.0 (873580)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:02:06.0 (885132)|VARIABLE_SCOPE_BEGIN|[14]|this|Som_KamDetail|true|false
+17:02:06.0 (948091)|VARIABLE_ASSIGNMENT|[14]|this|{}|0x5369d399
+17:02:06.0 (984573)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:02:06.0 (992841)|VARIABLE_SCOPE_BEGIN|[14]|this|Som_KamDetail|true|false
+17:02:06.0 (1004791)|VARIABLE_ASSIGNMENT|[14]|this|{}|0x5369d399
+17:02:06.0 (1011583)|STATEMENT_EXECUTE|[14]
+17:02:06.0 (1013380)|STATEMENT_EXECUTE|[19]
+17:02:06.0 (7296064)|HEAP_ALLOCATE|[16]|Bytes:8
+17:02:06.0 (7347190)|METHOD_ENTRY|[14]|01p3E0000004aBm|Som_KamDetail.Som_KamDetail()
+17:02:06.0 (7351795)|STATEMENT_EXECUTE|[14]
+17:02:06.0 (7356467)|STATEMENT_EXECUTE|[14]
+17:02:06.0 (7394742)|HEAP_ALLOCATE|[50]|Bytes:5
+17:02:06.0 (7424781)|HEAP_ALLOCATE|[56]|Bytes:5
+17:02:06.0 (7433989)|HEAP_ALLOCATE|[64]|Bytes:7
+17:02:06.0 (7472812)|HEAP_ALLOCATE|[16]|Bytes:5
+17:02:06.0 (7485810)|METHOD_EXIT|[14]|Som_KamDetail
+17:02:06.0 (7492537)|HEAP_ALLOCATE|[16]|Bytes:44
+17:02:06.0 (7731885)|CONSTRUCTOR_ENTRY|[16]|01p3E0000004aBm|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (7772166)|VARIABLE_SCOPE_BEGIN|[16]|this|Som_KamDetail|true|false
+17:02:06.0 (7808743)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x722a824
+17:02:06.0 (7817012)|VARIABLE_SCOPE_BEGIN|[16]|isAfter|Boolean|false|false
+17:02:06.0 (7823871)|VARIABLE_ASSIGNMENT|[16]|isAfter|false
+17:02:06.0 (7827462)|VARIABLE_SCOPE_BEGIN|[16]|isBefore|Boolean|false|false
+17:02:06.0 (7830655)|VARIABLE_ASSIGNMENT|[16]|isBefore|true
+17:02:06.0 (7833780)|VARIABLE_SCOPE_BEGIN|[16]|isDelete|Boolean|false|false
+17:02:06.0 (7836551)|VARIABLE_ASSIGNMENT|[16]|isDelete|false
+17:02:06.0 (7839447)|VARIABLE_SCOPE_BEGIN|[16]|isInsert|Boolean|false|false
+17:02:06.0 (7842151)|VARIABLE_ASSIGNMENT|[16]|isInsert|false
+17:02:06.0 (7844986)|VARIABLE_SCOPE_BEGIN|[16]|isUndelete|Boolean|false|false
+17:02:06.0 (7847920)|VARIABLE_ASSIGNMENT|[16]|isUndelete|false
+17:02:06.0 (7851195)|VARIABLE_SCOPE_BEGIN|[16]|isUpdate|Boolean|false|false
+17:02:06.0 (7854005)|VARIABLE_ASSIGNMENT|[16]|isUpdate|true
+17:02:06.0 (7856980)|VARIABLE_SCOPE_BEGIN|[16]|lstNewItems|List<SObject>|true|false
+17:02:06.0 (18319313)|VARIABLE_ASSIGNMENT|[16]|lstNewItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x4957b5a6
+17:02:06.0 (18335037)|VARIABLE_SCOPE_BEGIN|[16]|mapNewItems|Map<Id,SObject>|true|false
+17:02:06.0 (18509881)|VARIABLE_ASSIGNMENT|[16]|mapNewItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x2c7f07de
+17:02:06.0 (18521592)|VARIABLE_SCOPE_BEGIN|[16]|lstOldItems|List<SObject>|true|false
+17:02:06.0 (19064446)|VARIABLE_ASSIGNMENT|[16]|lstOldItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x686379ca
+17:02:06.0 (19079323)|VARIABLE_SCOPE_BEGIN|[16]|mapOldItems|Map<Id,SObject>|true|false
+17:02:06.0 (19237299)|VARIABLE_ASSIGNMENT|[16]|mapOldItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x5f111015
+17:02:06.0 (19252873)|HEAP_ALLOCATE|[20]|Bytes:5
+17:02:06.0 (19257597)|STATEMENT_EXECUTE|[14]
+17:02:06.0 (19260339)|HEAP_ALLOCATE|[20]|Bytes:5
+17:02:06.0 (19264823)|STATEMENT_EXECUTE|[20]
+17:02:06.0 (19274817)|HEAP_ALLOCATE|[20]|Bytes:41
+17:02:06.0 (19280020)|HEAP_ALLOCATE|[20]|Bytes:99
+17:02:06.0 (19298456)|METHOD_ENTRY|[7]|01pD0000000IsYO|TriggerController.TriggerController()
+17:02:06.0 (19301402)|STATEMENT_EXECUTE|[7]
+17:02:06.0 (19304745)|STATEMENT_EXECUTE|[7]
+17:02:06.0 (19740087)|SYSTEM_MODE_ENTER|false
+17:02:06.0 (19748679)|HEAP_ALLOCATE|[20]|Bytes:5
+17:02:06.0 (19755470)|SYSTEM_MODE_EXIT|false
+17:02:06.0 (19764211)|METHOD_EXIT|[7]|TriggerController
+17:02:06.0 (19780676)|CONSTRUCTOR_ENTRY|[20]|01pD0000000IsYO|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (19888945)|VARIABLE_SCOPE_BEGIN|[68]|this|TriggerController|true|false
+17:02:06.0 (19918643)|VARIABLE_ASSIGNMENT|[68]|this|{}|0x722a824
+17:02:06.0 (19926739)|VARIABLE_SCOPE_BEGIN|[68]|isAfter|Boolean|false|false
+17:02:06.0 (19932472)|VARIABLE_ASSIGNMENT|[68]|isAfter|false
+17:02:06.0 (19935968)|VARIABLE_SCOPE_BEGIN|[68]|isBefore|Boolean|false|false
+17:02:06.0 (19938988)|VARIABLE_ASSIGNMENT|[68]|isBefore|true
+17:02:06.0 (19942041)|VARIABLE_SCOPE_BEGIN|[68]|isDelete|Boolean|false|false
+17:02:06.0 (19944803)|VARIABLE_ASSIGNMENT|[68]|isDelete|false
+17:02:06.0 (19947786)|VARIABLE_SCOPE_BEGIN|[68]|isInsert|Boolean|false|false
+17:02:06.0 (19950452)|VARIABLE_ASSIGNMENT|[68]|isInsert|false
+17:02:06.0 (19953246)|VARIABLE_SCOPE_BEGIN|[68]|isUndelete|Boolean|false|false
+17:02:06.0 (19956171)|VARIABLE_ASSIGNMENT|[68]|isUndelete|false
+17:02:06.0 (19959744)|VARIABLE_SCOPE_BEGIN|[68]|isUpdate|Boolean|false|false
+17:02:06.0 (19965292)|VARIABLE_ASSIGNMENT|[68]|isUpdate|true
+17:02:06.0 (19972157)|VARIABLE_SCOPE_BEGIN|[68]|lstNewItems|List<SObject>|true|false
+17:02:06.0 (20188193)|VARIABLE_ASSIGNMENT|[68]|lstNewItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x4957b5a6
+17:02:06.0 (20200352)|VARIABLE_SCOPE_BEGIN|[68]|mapNewItems|Map<Id,SObject>|true|false
+17:02:06.0 (20362086)|VARIABLE_ASSIGNMENT|[68]|mapNewItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x2c7f07de
+17:02:06.0 (20374076)|VARIABLE_SCOPE_BEGIN|[68]|lstOldItems|List<SObject>|true|false
+17:02:06.0 (20520528)|VARIABLE_ASSIGNMENT|[68]|lstOldItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x686379ca
+17:02:06.0 (20532055)|VARIABLE_SCOPE_BEGIN|[68]|mapOldItems|Map<Id,SObject>|true|false
+17:02:06.0 (20680911)|VARIABLE_ASSIGNMENT|[68]|mapOldItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x5f111015
+17:02:06.0 (20693079)|SYSTEM_MODE_ENTER|false
+17:02:06.0 (20698912)|HEAP_ALLOCATE|[10]|Bytes:5
+17:02:06.0 (20703867)|STATEMENT_EXECUTE|[7]
+17:02:06.0 (20706676)|HEAP_ALLOCATE|[10]|Bytes:5
+17:02:06.0 (20709657)|STATEMENT_EXECUTE|[10]
+17:02:06.0 (20716655)|HEAP_ALLOCATE|[10]|Bytes:5
+17:02:06.0 (20720194)|STATEMENT_EXECUTE|[13]
+17:02:06.0 (20722671)|HEAP_ALLOCATE|[13]|Bytes:5
+17:02:06.0 (20724773)|STATEMENT_EXECUTE|[16]
+17:02:06.0 (20726868)|HEAP_ALLOCATE|[16]|Bytes:5
+17:02:06.0 (20728779)|STATEMENT_EXECUTE|[19]
+17:02:06.0 (20730824)|HEAP_ALLOCATE|[19]|Bytes:5
+17:02:06.0 (20733113)|STATEMENT_EXECUTE|[22]
+17:02:06.0 (20735339)|HEAP_ALLOCATE|[22]|Bytes:5
+17:02:06.0 (20737270)|STATEMENT_EXECUTE|[25]
+17:02:06.0 (20739301)|HEAP_ALLOCATE|[25]|Bytes:5
+17:02:06.0 (20741183)|STATEMENT_EXECUTE|[28]
+17:02:06.0 (20743775)|STATEMENT_EXECUTE|[33]
+17:02:06.0 (20745628)|STATEMENT_EXECUTE|[38]
+17:02:06.0 (20747223)|STATEMENT_EXECUTE|[43]
+17:02:06.0 (20759063)|HEAP_ALLOCATE|[43]|Bytes:6
+17:02:06.0 (20785331)|STATEMENT_EXECUTE|[70]
+17:02:06.0 (20787355)|STATEMENT_EXECUTE|[71]
+17:02:06.0 (20791490)|HEAP_ALLOCATE|[71]|Bytes:5
+17:02:06.0 (20794181)|STATEMENT_EXECUTE|[72]
+17:02:06.0 (20796303)|HEAP_ALLOCATE|[72]|Bytes:5
+17:02:06.0 (20798374)|STATEMENT_EXECUTE|[73]
+17:02:06.0 (20800386)|HEAP_ALLOCATE|[73]|Bytes:5
+17:02:06.0 (20802214)|STATEMENT_EXECUTE|[74]
+17:02:06.0 (20804368)|HEAP_ALLOCATE|[74]|Bytes:5
+17:02:06.0 (20806138)|STATEMENT_EXECUTE|[75]
+17:02:06.0 (20808164)|HEAP_ALLOCATE|[75]|Bytes:5
+17:02:06.0 (20809900)|STATEMENT_EXECUTE|[76]
+17:02:06.0 (20811849)|HEAP_ALLOCATE|[76]|Bytes:5
+17:02:06.0 (20813861)|STATEMENT_EXECUTE|[77]
+17:02:06.0 (20815824)|STATEMENT_EXECUTE|[78]
+17:02:06.0 (20817365)|STATEMENT_EXECUTE|[79]
+17:02:06.0 (20818802)|STATEMENT_EXECUTE|[80]
+17:02:06.0 (20822686)|SYSTEM_MODE_EXIT|false
+17:02:06.0 (20838108)|CONSTRUCTOR_EXIT|[20]|01pD0000000IsYO|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (20841805)|STATEMENT_EXECUTE|[19]
+17:02:06.0 (20851825)|CONSTRUCTOR_EXIT|[16]|01p3E0000004aBm|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (20874073)|METHOD_ENTRY|[19]|01pD0000000IsYO|TriggerController.run()
+17:02:06.0 (20896438)|VARIABLE_SCOPE_BEGIN|[102]|this|TriggerController|true|false
+17:02:06.0 (20935388)|VARIABLE_ASSIGNMENT|[102]|this|{"isAfter":false,"isBefore":true,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"lstNewItems":"0x4957b5a6","lstOldItems":"0x686379ca","mapNewItems":"0x2c7f07de","mapOldItems":"0x5f111015"}|0x722a824
+17:02:06.0 (20951111)|SYSTEM_MODE_ENTER|false
+17:02:06.0 (20956594)|HEAP_ALLOCATE|[103]|Bytes:5
+17:02:06.0 (20960927)|STATEMENT_EXECUTE|[102]
+17:02:06.0 (20966997)|STATEMENT_EXECUTE|[103]
+17:02:06.0 (20969751)|STATEMENT_EXECUTE|[110]
+17:02:06.0 (20970694)|STATEMENT_EXECUTE|[111]
+17:02:06.0 (20981390)|METHOD_ENTRY|[111]|01pD0000000IsYO|TriggerController.runBeforeUpdate()
+17:02:06.0 (21003985)|VARIABLE_SCOPE_BEGIN|[165]|this|TriggerController|true|false
+17:02:06.0 (21034289)|VARIABLE_ASSIGNMENT|[165]|this|{"isAfter":false,"isBefore":true,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"lstNewItems":"0x4957b5a6","lstOldItems":"0x686379ca","mapNewItems":"0x2c7f07de","mapOldItems":"0x5f111015"}|0x722a824
+17:02:06.0 (21044395)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:02:06.0 (21048310)|STATEMENT_EXECUTE|[165]
+17:02:06.0 (21056885)|METHOD_EXIT|[111]|01pD0000000IsYO|TriggerController.runBeforeUpdate()
+17:02:06.0 (21061659)|SYSTEM_MODE_EXIT|false
+17:02:06.0 (21068349)|METHOD_EXIT|[19]|01pD0000000IsYO|TriggerController.run()
+17:02:06.21 (21082003)|CUMULATIVE_LIMIT_USAGE
+17:02:06.21 (21082003)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:02:06.21 (21082003)|CUMULATIVE_LIMIT_USAGE_END
+
+17:02:06.0 (23079902)|CODE_UNIT_FINISHED|Som_KamDetail on Som_KamDetail trigger event BeforeUpdate for [a2U3E00000085Ui]
+17:02:06.0 (44302700)|CODE_UNIT_STARTED|[EXTERNAL]|01q3E0000004F1v|Som_KamDetail on Som_KamDetail trigger event AfterUpdate for [a2U3E00000085Ui]
+17:02:06.0 (44330150)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:02:06.0 (44357657)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+17:02:06.0 (44407961)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:02:06.0 (44414302)|VARIABLE_SCOPE_BEGIN|[14]|this|Som_KamDetail|true|false
+17:02:06.0 (44431180)|VARIABLE_ASSIGNMENT|[14]|this|{}|0x1e658830
+17:02:06.0 (44451171)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+17:02:06.0 (44455492)|VARIABLE_SCOPE_BEGIN|[14]|this|Som_KamDetail|true|false
+17:02:06.0 (44465580)|VARIABLE_ASSIGNMENT|[14]|this|{}|0x1e658830
+17:02:06.0 (44469421)|STATEMENT_EXECUTE|[14]
+17:02:06.0 (44470856)|STATEMENT_EXECUTE|[19]
+17:02:06.0 (44475360)|HEAP_ALLOCATE|[16]|Bytes:44
+17:02:06.0 (44528667)|CONSTRUCTOR_ENTRY|[16]|01p3E0000004aBm|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (44535026)|VARIABLE_SCOPE_BEGIN|[16]|this|Som_KamDetail|true|false
+17:02:06.0 (44555329)|VARIABLE_ASSIGNMENT|[16]|this|{}|0x360c29dd
+17:02:06.0 (44560525)|VARIABLE_SCOPE_BEGIN|[16]|isAfter|Boolean|false|false
+17:02:06.0 (44564976)|VARIABLE_ASSIGNMENT|[16]|isAfter|true
+17:02:06.0 (44567072)|VARIABLE_SCOPE_BEGIN|[16]|isBefore|Boolean|false|false
+17:02:06.0 (44569672)|VARIABLE_ASSIGNMENT|[16]|isBefore|false
+17:02:06.0 (44572034)|VARIABLE_SCOPE_BEGIN|[16]|isDelete|Boolean|false|false
+17:02:06.0 (44574375)|VARIABLE_ASSIGNMENT|[16]|isDelete|false
+17:02:06.0 (44576085)|VARIABLE_SCOPE_BEGIN|[16]|isInsert|Boolean|false|false
+17:02:06.0 (44578326)|VARIABLE_ASSIGNMENT|[16]|isInsert|false
+17:02:06.0 (44580048)|VARIABLE_SCOPE_BEGIN|[16]|isUndelete|Boolean|false|false
+17:02:06.0 (44582865)|VARIABLE_ASSIGNMENT|[16]|isUndelete|false
+17:02:06.0 (44584673)|VARIABLE_SCOPE_BEGIN|[16]|isUpdate|Boolean|false|false
+17:02:06.0 (44586885)|VARIABLE_ASSIGNMENT|[16]|isUpdate|true
+17:02:06.0 (44588436)|VARIABLE_SCOPE_BEGIN|[16]|lstNewItems|List<SObject>|true|false
+17:02:06.0 (45175829)|VARIABLE_ASSIGNMENT|[16]|lstNewItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T15:02:06.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T15:02:06.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x5db639d8
+17:02:06.0 (45185186)|VARIABLE_SCOPE_BEGIN|[16]|mapNewItems|Map<Id,SObject>|true|false
+17:02:06.0 (45353212)|VARIABLE_ASSIGNMENT|[16]|mapNewItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T15:02:06.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T15:02:06.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x42a009f3
+17:02:06.0 (45361510)|VARIABLE_SCOPE_BEGIN|[16]|lstOldItems|List<SObject>|true|false
+17:02:06.0 (45891340)|VARIABLE_ASSIGNMENT|[16]|lstOldItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x70362d9f
+17:02:06.0 (45899868)|VARIABLE_SCOPE_BEGIN|[16]|mapOldItems|Map<Id,SObject>|true|false
+17:02:06.0 (46060168)|VARIABLE_ASSIGNMENT|[16]|mapOldItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x27a3b085
+17:02:06.0 (46073906)|HEAP_ALLOCATE|[20]|Bytes:5
+17:02:06.0 (46078343)|STATEMENT_EXECUTE|[14]
+17:02:06.0 (46081047)|HEAP_ALLOCATE|[20]|Bytes:5
+17:02:06.0 (46085286)|STATEMENT_EXECUTE|[20]
+17:02:06.0 (46100199)|CONSTRUCTOR_ENTRY|[20]|01pD0000000IsYO|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (46105808)|VARIABLE_SCOPE_BEGIN|[68]|this|TriggerController|true|false
+17:02:06.0 (46125795)|VARIABLE_ASSIGNMENT|[68]|this|{}|0x360c29dd
+17:02:06.0 (46129861)|VARIABLE_SCOPE_BEGIN|[68]|isAfter|Boolean|false|false
+17:02:06.0 (46133937)|VARIABLE_ASSIGNMENT|[68]|isAfter|true
+17:02:06.0 (46136141)|VARIABLE_SCOPE_BEGIN|[68]|isBefore|Boolean|false|false
+17:02:06.0 (46138658)|VARIABLE_ASSIGNMENT|[68]|isBefore|false
+17:02:06.0 (46140536)|VARIABLE_SCOPE_BEGIN|[68]|isDelete|Boolean|false|false
+17:02:06.0 (46142947)|VARIABLE_ASSIGNMENT|[68]|isDelete|false
+17:02:06.0 (46144628)|VARIABLE_SCOPE_BEGIN|[68]|isInsert|Boolean|false|false
+17:02:06.0 (46147026)|VARIABLE_ASSIGNMENT|[68]|isInsert|false
+17:02:06.0 (46148763)|VARIABLE_SCOPE_BEGIN|[68]|isUndelete|Boolean|false|false
+17:02:06.0 (46151131)|VARIABLE_ASSIGNMENT|[68]|isUndelete|false
+17:02:06.0 (46153203)|VARIABLE_SCOPE_BEGIN|[68]|isUpdate|Boolean|false|false
+17:02:06.0 (46155583)|VARIABLE_ASSIGNMENT|[68]|isUpdate|true
+17:02:06.0 (46157046)|VARIABLE_SCOPE_BEGIN|[68]|lstNewItems|List<SObject>|true|false
+17:02:06.0 (46315959)|VARIABLE_ASSIGNMENT|[68]|lstNewItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T15:02:06.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T15:02:06.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x5db639d8
+17:02:06.0 (46323630)|VARIABLE_SCOPE_BEGIN|[68]|mapNewItems|Map<Id,SObject>|true|false
+17:02:06.0 (46482935)|VARIABLE_ASSIGNMENT|[68]|mapNewItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T15:02:06.000Z","IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T15:02:06.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x42a009f3
+17:02:06.0 (46491126)|VARIABLE_SCOPE_BEGIN|[68]|lstOldItems|List<SObject>|true|false
+17:02:06.0 (46635683)|VARIABLE_ASSIGNMENT|[68]|lstOldItems|{"s":1,"v":[{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}]}|0x70362d9f
+17:02:06.0 (46644275)|VARIABLE_SCOPE_BEGIN|[68]|mapOldItems|Map<Id,SObject>|true|false
+17:02:06.0 (46791636)|VARIABLE_ASSIGNMENT|[68]|mapOldItems|{"s":1,"v":{"a2U3E00000085UiUAI":{"Som_PreviousCashExte (12 more) ...":45,"LastModifiedDate":"2016-10-25T14:57:14.000Z","Som_PreviousCashIn__ (1 more) ...":17.00,"IsDeleted":false,"Som_KamTeamMember__c":"00557000005jeECAAY","Som_KamTeam__c":"a1P3E0000008iD5UAI","Som_RatingDealLearni (6 more) ...":"15","Som_Kam__c":"a093E000000sCLFQA2","Som_TargetCashIn__c":15.00,"CurrencyIsoCode":"EUR","Som_DaysUntilReview_ (2 more) ...":-80,"Som_Account__c":"Test-Account RH","Som_DaysUnitlKickoff (3 more) ...":32,"Name":"APD_2016-000160","SystemModstamp":"2016-10-25T14:57:14.000Z","Som_Status__c":"Invited","CreatedById":"00557000005jeECAAY","CreatedDate":"2016-10-20T14:31:18.000Z","Som_Year__c":"2016","Id":"a2U3E00000085UiUAI","LastModifiedById":"00557000005jeECAAY"}}}|0x27a3b085
+17:02:06.0 (47168733)|SYSTEM_MODE_ENTER|false
+17:02:06.0 (47177204)|HEAP_ALLOCATE|[10]|Bytes:5
+17:02:06.0 (47182200)|STATEMENT_EXECUTE|[7]
+17:02:06.0 (47185583)|HEAP_ALLOCATE|[10]|Bytes:5
+17:02:06.0 (47187599)|STATEMENT_EXECUTE|[10]
+17:02:06.0 (47190906)|HEAP_ALLOCATE|[10]|Bytes:5
+17:02:06.0 (47194523)|STATEMENT_EXECUTE|[13]
+17:02:06.0 (47196594)|HEAP_ALLOCATE|[13]|Bytes:5
+17:02:06.0 (47198479)|STATEMENT_EXECUTE|[16]
+17:02:06.0 (47200477)|HEAP_ALLOCATE|[16]|Bytes:5
+17:02:06.0 (47202601)|STATEMENT_EXECUTE|[19]
+17:02:06.0 (47204585)|HEAP_ALLOCATE|[19]|Bytes:5
+17:02:06.0 (47206614)|STATEMENT_EXECUTE|[22]
+17:02:06.0 (47208482)|HEAP_ALLOCATE|[22]|Bytes:5
+17:02:06.0 (47210287)|STATEMENT_EXECUTE|[25]
+17:02:06.0 (47212234)|HEAP_ALLOCATE|[25]|Bytes:5
+17:02:06.0 (47214102)|STATEMENT_EXECUTE|[28]
+17:02:06.0 (47215809)|STATEMENT_EXECUTE|[33]
+17:02:06.0 (47217246)|STATEMENT_EXECUTE|[38]
+17:02:06.0 (47218578)|STATEMENT_EXECUTE|[43]
+17:02:06.0 (47237099)|STATEMENT_EXECUTE|[70]
+17:02:06.0 (47238785)|STATEMENT_EXECUTE|[71]
+17:02:06.0 (47241550)|HEAP_ALLOCATE|[71]|Bytes:5
+17:02:06.0 (47244215)|STATEMENT_EXECUTE|[72]
+17:02:06.0 (47246200)|HEAP_ALLOCATE|[72]|Bytes:5
+17:02:06.0 (47248049)|STATEMENT_EXECUTE|[73]
+17:02:06.0 (47249931)|HEAP_ALLOCATE|[73]|Bytes:5
+17:02:06.0 (47251782)|STATEMENT_EXECUTE|[74]
+17:02:06.0 (47253705)|HEAP_ALLOCATE|[74]|Bytes:5
+17:02:06.0 (47255459)|STATEMENT_EXECUTE|[75]
+17:02:06.0 (47257299)|HEAP_ALLOCATE|[75]|Bytes:5
+17:02:06.0 (47259131)|STATEMENT_EXECUTE|[76]
+17:02:06.0 (47261225)|HEAP_ALLOCATE|[76]|Bytes:5
+17:02:06.0 (47263083)|STATEMENT_EXECUTE|[77]
+17:02:06.0 (47264677)|STATEMENT_EXECUTE|[78]
+17:02:06.0 (47266049)|STATEMENT_EXECUTE|[79]
+17:02:06.0 (47267444)|STATEMENT_EXECUTE|[80]
+17:02:06.0 (47270586)|SYSTEM_MODE_EXIT|false
+17:02:06.0 (47285808)|CONSTRUCTOR_EXIT|[20]|01pD0000000IsYO|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (47289255)|STATEMENT_EXECUTE|[19]
+17:02:06.0 (47299116)|CONSTRUCTOR_EXIT|[16]|01p3E0000004aBm|<init>(Boolean,Boolean,Boolean,Boolean,Boolean,Boolean,List<SObject>,Map<Id,SObject>,List<SObject>,Map<Id,SObject>)
+17:02:06.0 (47306792)|METHOD_ENTRY|[19]|01pD0000000IsYO|TriggerController.run()
+17:02:06.0 (47310953)|VARIABLE_SCOPE_BEGIN|[102]|this|TriggerController|true|false
+17:02:06.0 (47342532)|VARIABLE_ASSIGNMENT|[102]|this|{"isAfter":true,"isBefore":false,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"lstNewItems":"0x5db639d8","lstOldItems":"0x70362d9f","mapNewItems":"0x42a009f3","mapOldItems":"0x27a3b085"}|0x360c29dd
+17:02:06.0 (47351103)|SYSTEM_MODE_ENTER|false
+17:02:06.0 (47355809)|HEAP_ALLOCATE|[103]|Bytes:5
+17:02:06.0 (47359503)|STATEMENT_EXECUTE|[102]
+17:02:06.0 (47362980)|STATEMENT_EXECUTE|[114]
+17:02:06.0 (47365619)|STATEMENT_EXECUTE|[121]
+17:02:06.0 (47366697)|STATEMENT_EXECUTE|[122]
+17:02:06.0 (47377617)|METHOD_ENTRY|[122]|01pD0000000IsYO|TriggerController.runAfterUpdate()
+17:02:06.0 (47401609)|VARIABLE_SCOPE_BEGIN|[145]|this|TriggerController|true|false
+17:02:06.0 (47432363)|VARIABLE_ASSIGNMENT|[145]|this|{"isAfter":true,"isBefore":false,"isDelete":false,"isInsert":false,"isUndelete":false,"isUpdate":true,"lstNewItems":"0x5db639d8","lstOldItems":"0x70362d9f","mapNewItems":"0x42a009f3","mapOldItems":"0x27a3b085"}|0x360c29dd
+17:02:06.0 (47441733)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:5
+17:02:06.0 (47445772)|STATEMENT_EXECUTE|[145]
+17:02:06.0 (47453661)|METHOD_EXIT|[122]|01pD0000000IsYO|TriggerController.runAfterUpdate()
+17:02:06.0 (47457840)|SYSTEM_MODE_EXIT|false
+17:02:06.0 (47462445)|METHOD_EXIT|[19]|01pD0000000IsYO|TriggerController.run()
+17:02:06.47 (47471435)|CUMULATIVE_LIMIT_USAGE
+17:02:06.47 (47471435)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+17:02:06.47 (47471435)|CUMULATIVE_LIMIT_USAGE_END
+
+17:02:06.0 (48754286)|CODE_UNIT_FINISHED|Som_KamDetail on Som_KamDetail trigger event AfterUpdate for [a2U3E00000085Ui]
+17:02:06.0 (55499372)|CODE_UNIT_FINISHED|TRIGGERS
+17:02:06.0 (55508851)|EXECUTION_FINISHED

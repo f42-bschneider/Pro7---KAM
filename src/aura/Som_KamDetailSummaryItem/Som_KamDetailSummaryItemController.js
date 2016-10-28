@@ -9,7 +9,10 @@
        helper.fillTempListWithItems(component);
 
        /*** Get AccountPlanTeam 2 Id ***/
-       helper.getAccPlanTeam2Id(component);
+       var doMapAssignment = component.get("v.showAccPlanRow");
+       if(doMapAssignment){
+            helper.getAccPlanTeam2Id(component);
+       }
     },
 
     onInitiateTempList : function(component, event, helper){
@@ -24,11 +27,12 @@
         resetNewCashIn;
 
         if(component.isValid()){
+            /*
             if(!helper.validateNewAccPlanDetailCashIn(component)){
                 $A.get("e.c:f42_ToastEvt").setParams({"type": "warning", "msg" : $A.get("$Label.c.Ven_lbl_CompleteFields")}).fire();
                 //toastr.warning($A.get("$Label.c.Ven_lbl_CompleteFields"));
                 return;
-            }
+            }*/
 
             result = {
                 "accPlanDetailCashIn" : {
@@ -53,7 +57,7 @@
             //component.set("v.accPlanDetail", accPlanDetail);
 
             resetNewCashIn = {
-                "Name"                              : '',
+                "Name"                              : 'Naming',
                 "Som_PreviousCashIn__c"             : 0,
                 "Som_PreviousCashExternalYield__c"  : 0,
                 "Som_Cashin__c"                     : 0,

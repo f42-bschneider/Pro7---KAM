@@ -29,3 +29,207 @@
 .THIS .btn-icon{
     font-size:18px;
 }
+
+/****************************************************************************/
+/******************** NEW Brush-Up Style ******************************/
+.THIS .redColor{
+    color:#ff234f;
+}
+
+.THIS .navbar-brand{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+
+.THIS .navbar-buttons{
+    margin-right:30px;
+    margin-left:20px
+}
+
+.THIS .redBack{
+    background-color: #ff234f !important;
+}
+
+.THIS .whiteBack{
+    background-color: white;
+    font-size: 18px !important;
+}
+
+.THIS .whiteBack:hover{
+    background-color: #e7e7e7;
+}
+
+.THIS .accName{
+    float:left;
+    padding-top: 15px;
+    padding-left: 20px;
+    color:white;
+    font-size:18px;
+}
+
+.THIS .ulLogo{
+    height:50px;
+    padding:10px 35px 10px 15px !important;
+    background-color: white
+}
+
+.THIS .navButton{
+    margin-top:10px;
+    margin-right:20px;
+    border: solid 1px #848484;
+    font-size:14px !important;
+}
+
+.THIS .navSelect{
+    background: url(/resource/f42_Icon_Down) no-repeat right;
+    height:27px !important;
+    width:65px;
+    padding:5px;
+    padding-right: 20px;
+    padding-left: 10px;
+    line-height:1;
+    border: 0;
+    background-color: white;
+    color:#848484;
+    font-size:13px;
+    -webkit-appearance:none;
+    outline:none
+}
+
+/******** Info section *******/
+.THIS .detailText{
+    font-size: 16px;
+    color:#636363;
+}
+
+.THIS .detailText div{
+    padding: 5px 5px;
+}
+
+.THIS .detailText span{
+    font-weight: bold;
+    background-color: transparent !important;
+}
+
+.THIS .goRight{
+    text-align: right;
+}
+
+.THIS .fullWidth{
+    width: 100%;
+}
+
+.THIS .datePick{
+    border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+}
+
+.THIS .doubleRedBottom{
+    height: 2px;
+    border-bottom: 4px double #ff234f;
+}
+
+.THIS .borderInfo{
+    border: solid 1px #636363;
+}
+
+/******** Mediamix component *******/
+.THIS .accDash .around{
+    background-color: white !important;
+    border: 0 !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.THIS .accDash .uiOutputText{
+    background-color: transparent !important;
+}
+
+.THIS .accDash .bigFont{
+    color: #636363;
+    font-weight: normal !important;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif !important;
+}
+
+.THIS .accDash .alert{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/******** Sections *******/
+.THIS .sectionHeader{
+    font-size:18px;
+    color:#636363;
+    width:100%;
+    margin-top: 40px;
+    padding:10px;
+    border-bottom: solid 1px #636363;
+}
+
+.THIS .dontShowSection{
+    display: none;
+}
+
+/******** Strategy profile summary *******/
+.THIS .magTop10{
+    margin-top: -10px !important;
+}
+
+.THIS .magTop20{
+    margin-top: -20px !important;
+}
+
+.THIS .pad10{
+    padding: 10px;
+}
+
+.THIS .stratText{
+    font-size: 12px;
+    color:#636363;
+}
+
+.THIS .stratHead{
+    background-color:white;
+    border-bottom: 0;
+}
+
+/******** Table *******/
+.THIS .teamTable{
+    border: 0 !important;
+}
+
+.THIS .teamTable input, .THIS .teamTable span{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+.THIS th{
+    background-color: white;
+    font-weight: bold;
+}
+
+.THIS th p{
+    color: #bbb;
+}
+
+.THIS tr{
+    background-color: #eef1f6 !important;
+}
+
+.THIS .tdRight{
+    text-align: right;
+}
+
+.THIS .noBorder{
+    border: 0 !important;
+}
+
+.THIS tfoot td{
+    font-weight: bold;
+}

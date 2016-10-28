@@ -107,5 +107,17 @@
         });
 
         $A.enqueueAction(saveAccPlanDetail);
+    },
+
+    showDetailSection : function(component, event, helper){
+        $A.util.toggleClass(component.find("detailSection"), 'dontShowSection');
+    },
+
+    showStratProfileSection : function(component, event, helper){
+        $A.util.toggleClass(component.find("stratProfileSection"), 'dontShowSection');
+    },
+
+    showCashInsSection : function(component, event, helper){
+        $A.util.toggleClass(component.find("cashInsSection"), 'dontShowSection');
     }
 })

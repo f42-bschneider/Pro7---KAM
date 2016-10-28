@@ -65,8 +65,8 @@
                                 </div>
                                 <div class="slds-p-horizontal--small slds-large-size--10-of-12 borderInfo stratText pad10" >
                                     <aura:iteration items="{!v.data.accPlan.accPlanDetails}" var="team" indexVar="teamIndex">
-                                        {! if(greaterthan(teamIndex, 0), ', ', '')  }
-                                        {!team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName}
+                                        {! if( or(team.accPlanDetail.Som_Status__c == 'Created', v.inviteAll ),
+                                            team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName + ', ', '') }
                                     </aura:iteration>
                                 </div>
                             </div>
@@ -129,8 +129,8 @@
                                 </div>
                                 <div class="slds-p-horizontal--small slds-large-size--10-of-12 borderInfo stratText pad10" >
                                     <aura:iteration items="{!v.data.accPlan.accPlanDetails}" var="team" indexVar="teamIndex">
-                                        {! if(greaterthan(teamIndex, 0), ', ', '')  }
-                                        {!team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName}
+                                        {! if( or(team.accPlanDetail.Som_Status__c == 'Kickoff', team.accPlanDetail.Som_Status__c == 'Review'),
+                                            team.accPlanDetail.Som_KamTeamMember__r.FirstName + ' ' + team.accPlanDetail.Som_KamTeamMember__r.LastName + ', ', '') }
                                     </aura:iteration>
                                 </div>
                             </div>

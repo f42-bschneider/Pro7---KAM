@@ -192,41 +192,26 @@ public without sharing class Som_Kam_CmpCtrl {
         // set acc plan, acc plan detail and stratProfs if user acc plan exists
         // if not => user is creating a new acc plan
 
-        system.debug('Test ' + (selectedYear != null));
-        Boolean test = (selectedYear != '');
-        system.debug(test);
-
-system.debug('Hallo1');
         if(accPlanId != null){
-            system.debug('Hallo1.0');
-            system.debug(selectedYear != null);
-            system.debug(selectedYear != '');
             if(selectedYear != null && selectedYear != ''){
-                system.debug('Hallo1.1');
                 accPlan             = getAccPlanByYear(selectedYear, accId);
             }else{
-                system.debug('Hallo1.2');
                 accPlan             = getAccPlanById(accPlanId);
             }
-            system.debug('Hallo22');
             if(accPlan != null){
-                system.debug('Hallo1.3');
                 accPlanDetails      = getAccPlanDetails(accPlan.Id, null);
                 strategyProfiles    = getStrategyProfilesByAccPlanId(accPlan.Id);
             }else{
-                system.debug('Hallo1.4');
                 accPlan = new Som_Kam__c( Som_Year__c = Integer.valueOf(selectedYear), Som_Account__c = accId);
             }
         }
-system.debug('Hallo2');
         AccountPlan ap = new AccountPlan(accPlan, accPlanDetails, strategyProfiles);
-system.debug('Hallo3');
-        Account acc = [SELECT Id, Name, Som_Kam__c, Som_Sek__c FROM Account WHERE Id = :accId];
+        Account acc = [SELECT Id, Name, Som_Kam__c, Som_Sek__c, Som_Kam__r.Name, Som_Sek__r.Name FROM Account WHERE Id = :accId];
+        String kamSek = (acc.Som_Sek__c != null ? acc.Som_Sek__r.Name : acc.Som_Kam__r.Name);
 
         // build list of acc plan teams for Som_AccountPlanTeamAssignmentCmp.cmp
         List<AccountPlanTeam> accPlanTeams = getAccountPlanTeamsByAccountId(acc, accPlanDetails);
-system.debug('Hallo4');
-        AccountPlanEditData data = new AccountPlanEditData(ap, accPlanTeams, acc.Name, getAvailableYears(acc.Id));
+        AccountPlanEditData data = new AccountPlanEditData(ap, accPlanTeams, acc.Name, kamSek, getAvailableYears(acc.Id));
         return data;
     }
 
@@ -314,6 +299,7 @@ system.debug('Hallo4');
                 Som_Kam__r.Som_Year__c,
                 Som_KamTeam__c,
                 Som_KamTeam__r.Name,
+                Som_KamTeam__r.Som_FinancialDetailsAllowed__c,
                 Som_KamTeamMember__c,
                 Som_KamTeamMember__r.Firstname,
                 Som_KamTeamMember__r.Lastname,
@@ -331,8 +317,16 @@ system.debug('Hallo4');
                 Som_KamDetail__c
             WHERE
                 Som_Kam__c = :accPlanId OR
-                Id = :accPlanDetailId]);
+                Id = :accPlanDetailId
+            ORDER BY Som_KamTeam__r.Som_OrderIndex__c]);
 
+        for(Som_KamDetail__c det : apdId2Apd.values()){
+            if(det.Som_TargetCashIn__c == null) det.Som_TargetCashIn__c = 0;
+            if(det.Som_PreviousCashIn__c == null) det.Som_PreviousCashIn__c = 0;
+            if(det.Som_PreviousCashExternalYield__c == null) det.Som_PreviousCashExternalYield__c = 0;
+            if(det.Som_RatingDealLearnings__c == null) det.Som_RatingDealLearnings__c = '';
+            if(det.Som_CashExternalYield__c == null) det.Som_CashExternalYield__c = 0;
+        }
 
         Map<Id, List<Som_KamDetailCashIn__c>> apdId2CashIns = new Map<Id, List<Som_KamDetailCashIn__c>>();
 
@@ -343,7 +337,7 @@ system.debug('Hallo4');
                 Name,
                 Som_KamDetail__c,
                 Som_KamAccountCashInDetail__c,
-               Som_CashExternalYield__c,
+                Som_CashExternalYield__c,
                 Som_Cashin__c,
                 Som_PreviousCashExternalYield__c,
                 Som_PreviousCashIn__c
@@ -360,7 +354,6 @@ system.debug('Hallo4');
                 apdId2CashIns.put(apdci.Som_KamDetail__c, new List<Som_KamDetailCashIn__c>{apdci});
             }
         }
-
 
         Map<Id, List<Som_KamStrategyProfileTopic__c>> apdId2StratProfTopics = new Map<Id, List<Som_KamStrategyProfileTopic__c>>();
 
@@ -468,7 +461,7 @@ system.debug('Hallo4');
 
         Som_KamTeam__c accPlanTeam = [
             SELECT
-                Id, Name, Som_DefaultAccountTeamMember__c, Som_TeamMemberRoles__c
+                Id, Name, Som_DefaultAccountTeamMember__c, Som_TeamMemberRoles__c, Som_FinancialDetailsAllowed__c
             FROM
                 Som_KamTeam__c
             WHERE
@@ -512,7 +505,7 @@ system.debug('Hallo4');
         Map<Id, Som_KamTeam__c> accPlanTeamId2AccPlanTeam = new Map<Id, Som_KamTeam__c>();
 
         // get all account plan teams, acc team member roles to acc plan team
-        for(Som_KamTeam__c apt : [SELECT Id, Name, Som_DefaultAccountTeamMember__c, Som_TeamMemberRoles__c FROM Som_KamTeam__c ORDER BY Name]){
+        for(Som_KamTeam__c apt : [SELECT Id, Name, Som_DefaultAccountTeamMember__c, Som_TeamMemberRoles__c, Som_FinancialDetailsAllowed__c FROM Som_KamTeam__c ORDER BY Som_OrderIndex__c, Name]){
             accPlanTeamId2AccPlanTeam.put(apt.Id, apt);
 
             List<String> accTeamRoles = new List<String>();
@@ -1025,7 +1018,6 @@ system.debug('Hallo4');
         @AuraEnabled
         public List<AccountPlanTeam> accPlanTeams{get;set;}
 
-        //TODO Test
         @AuraEnabled
         public Map<String,AccountPlanTeam> mapId2Team{get;set;}
 
@@ -1033,12 +1025,16 @@ system.debug('Hallo4');
         public String accName{get;set;}
 
         @AuraEnabled
+        public String kamSek{get;set;}
+
+        @AuraEnabled
         public List<String> years{get;set;}
 
-        public AccountPlanEditData(AccountPlan accPlan, List<AccountPlanTeam> accPlanTeams, String accName, List<String> years){
+        public AccountPlanEditData(AccountPlan accPlan, List<AccountPlanTeam> accPlanTeams, String accName, String kamSek, List<String> years){
             this.accPlan        = accPlan;
             this.accPlanTeams   = accPlanTeams;
             this.accName        = accName;
+            this.kamSek         = kamSek;
             this.years              = years;
 
             this.mapId2Team = new map<String,AccountPLanTeam>();

@@ -1,10 +1,14 @@
-<aura:application >
+<aura:application controller="LS_TestCtrl">
 
     <ltng:require styles="/resource/SLDS/assets/styles/salesforce-lightning-design-system.min.css">
     </ltng:require>
 
     <aura:attribute name="value" type="Integer" access="public" default=""/>
     <aura:attribute name="options" type="Object[]" access="public" default="[{'text' : '1', 'label' : 'Buhu'}, {'text' : '2', 'label' : 'Blaha'}]"/>
+
+    <aura:attribute name="testDetail" type="Object" access="public" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
 
     <!--<aura:handler event="c:f42_Select2Evt" action="{!c.myAction}" /> -->
 
@@ -13,6 +17,29 @@
     <!--<c:f42_Toast aura:id="toaster" />-->
 
     <button onclick="{!c.showOppmodal}" > Hallo </button>
+
+    <br/>
+    <br/>
+
+    <c:f42_InputNumber value="{!v.testDetail.Som_TargetCashIn__c}"
+                    required="false"
+                    isInteger="true"
+                    replaceNull="false"
+                    inputSize="input-sm"/>
+
+    <br/>
+    <br/>
+
+    <c:f42_InputNumber value="{!v.testDetail.Som_PreviousCashIn__c}"
+                        required="false"
+                        isInteger="true"
+                        replaceNull="false"
+                        inputSize="input-sm"/>
+
+    <br/>
+    <br/>
+
+    <button onclick="{!c.onSave}" > Save </button>
 
     <div class="slds">
         <div aria-hidden="true" tabindex="-1" aria-labelledby="header43" role="dialog" class="slds-modal slds-fade-in-hide" aura:id="modaldialog">

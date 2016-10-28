@@ -13,11 +13,13 @@
     <aura:attribute name="textAlign" type="String" default="left" access="public"/>
     <aura:attribute name="inputSize" type="String" default="" access="public"/> <!-- input-lg, input-sm-->
     <aura:attribute name="replaceNull" type="Boolean" default="true" access="public"/>
+    <aura:attribute name="format" type="String" default="###,###,##0" access="public" />
 
     <aura:attribute name="onChange" type="Aura.Action" default="{!c.defaultChange}" access="global"/>
 
    	<ui:inputNumber aura:id="inputNumber"
       change="{!v.onChange}"
       value="{!v.value}"
+      format="{!v.format}"
       class="{!(if(v.textAlign == 'left', 'text-left', if(v.textAlign == 'right', 'text-right', 'text-center')))+' form-control '+ v.inputSize}"/>
 </aura:component>

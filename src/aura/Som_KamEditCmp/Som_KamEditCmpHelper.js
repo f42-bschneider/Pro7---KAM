@@ -315,7 +315,8 @@
         subject = '',
         meetingDate = '',
         dateOfString,
-        accPlan = component.get("v.data.accPlan.accPlan");
+        accPlan = component.get("v.data.accPlan.accPlan"),
+        kamSek = component.get("v.data.kamSek");
 
         if(kickoff){
             if(!$A.util.isEmpty(accPlan.Som_Kickoff__c)){
@@ -333,6 +334,8 @@
             subject = $A.get("$Label.c.Som_lbl_AccountPlan") +' '+ accPlan.Som_Account__r.Name +': Review {{TeamName}}'+' '+ meetingDate;
             text = $A.get("$Label.c.Som_lbl_EmailReview");
         }
+
+        text = text.replace("{{kamSek}}", kamSek);
 
         component.set("v.data.accPlan.accPlan.Som_EmailSubject__c", subject);
         component.set("v.data.accPlan.accPlan.Som_EmailText__c", text);

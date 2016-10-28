@@ -64,7 +64,9 @@
             <aura:if isTrue="{!v.accPlanDetailCashIn.accPlanDetailCashIn.Som_KamAccountCashInDetail__c == undefined}">
                 <c:f42_InputNumber value="{!v.accPlanDetailCashIn.accPlanDetailCashIn.Som_PreviousCashExternalYield__c}"
                     required="false"
-                    isInteger="true"
+                    isInteger="false"
+                    decimalPlaces="2"
+                    format="0.00"
                     isValid="{!v.accPlanDetailCashIn ? v.accPlanDetailCashIn.isValidPrevCashExtYield : false}"
                     inputSize="input-sm"/>
             </aura:if>
@@ -90,11 +92,12 @@
             <td></td>
         </aura:if>
 
+        <!--
         <td style="{! v.showAddItem ? '' : 'display:none;' }" class="noBorder" >
             <button type="button" class="btn btn-link" onclick="{!c.onAddSubItem}">
                 <i class="ionicons ion-plus-round btn-icon redColor"></i>
             </button>
-        </td>
+        </td>-->
 
     </tr>
 
